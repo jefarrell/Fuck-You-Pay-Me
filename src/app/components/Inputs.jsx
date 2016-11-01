@@ -1,38 +1,55 @@
 import React from 'react';
-const Select = require('react-select');
-import 'react-select/dist/react-select.css'
+import Select from 'react-select';
+import 'react-select/dist/react-select.css';
 
-let options = [
-	{value: 'one', label: 'One'},
-	{value: 'two', label: 'Two'},
-	{value: 'three', label: 'Three'},
-	{value: 'four', label: '4'}
-];
+
 
 class Inputs extends React.Component {
 
 	constructor(props) {
 		super(props);
 		this.state = {
-			currentValue: ''
+			input1: '',
+			input2: ''
 		};
-		this.handleChange = this.handleChange.bind(this);
 	}
 
-	handleChange(val) {
-		this.setState({currentValue: val});
+	handleChange(name, e) {
+		let change = {};
+		change[name] = e.value;
+		this.setState(change);
 	}
 
 
 	render() {
+
+		let options = [
+			{value: 'one', label: 'One'},
+			{value: 'two', label: 'Two'},
+			{value: 'three', label: 'Three'},
+			{value: 'four', label: '4'}
+		];
+
 		return (
-			<div>
-				<Select
-					name="form-field-name"
-					options={options}
-					value={this.state.currentValue}
-					onChange={this.handleChange}
-				/>
+			<div className="section">
+				<div>
+					<h3 className="sectionHead" value="First Thing"/>
+					<Select
+						name="form-field-name"
+						options={options}
+						value={this.state.input1}
+						onChange={this.handleChange.bind(this, 'input1')}
+					/>
+				</div>
+				<div>
+					<h3 className="sectionHead" value="Second Thing"/>
+					<Select
+						name="form-field-name"
+						options={options}
+						value={this.state.input2}
+						onChange={this.handleChange.bind(this, 'input2')}
+					/>
+				</div>
 			</div>
 			)
 	}
