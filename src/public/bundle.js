@@ -21575,79 +21575,93 @@
 
 				return _react2.default.createElement(
 					'div',
-					{ className: 'section' },
+					{ className: 'container-fluid' },
 					_react2.default.createElement(
 						'div',
-						{ className: 'row' },
+						{ className: 'section' },
 						_react2.default.createElement(
 							'div',
-							{ className: 'col-md-4' },
+							{ className: 'row' },
 							_react2.default.createElement(
-								'h3',
-								{ className: 'sectionHead' },
-								' First Thing '
+								'div',
+								{ className: 'col-xs-4' },
+								_react2.default.createElement(
+									'h3',
+									{ className: 'sectionHead' },
+									' First Thing '
+								)
+							),
+							_react2.default.createElement(
+								'div',
+								{ className: 'col-xs-8' },
+								_react2.default.createElement(_reactSelect2.default, {
+									name: 'form-field-name',
+									options: options,
+									value: this.state.input1,
+									clearable: false
+									//onChange={this.handleChange}
+									, onChange: this.handleChange.bind(this, 'input1')
+								})
 							)
 						),
 						_react2.default.createElement(
 							'div',
-							{ className: 'col-md-8' },
-							_react2.default.createElement(_reactSelect2.default, {
-								name: 'form-field-name',
-								options: options,
-								value: this.state.input1,
-								clearable: false
-								//onChange={this.handleChange}
-								, onChange: this.handleChange.bind(this, 'input1')
-							})
-						)
-					),
-					_react2.default.createElement(
-						'div',
-						{ className: 'row' },
-						_react2.default.createElement(
-							'div',
-							{ className: 'col-md-4' },
+							{ className: 'row' },
 							_react2.default.createElement(
-								'h3',
-								{ className: 'sectionHead' },
-								' Second Thing '
+								'div',
+								{ className: 'col-xs-4' },
+								_react2.default.createElement(
+									'h3',
+									{ className: 'sectionHead' },
+									' Second Thing '
+								)
+							),
+							_react2.default.createElement(
+								'div',
+								{ className: 'col-xs-8' },
+								_react2.default.createElement(_reactSelect2.default, {
+									name: 'form-field-name',
+									options: options,
+									value: this.state.input2,
+									clearable: false
+									//onChange={this.handleChange}
+									, onChange: this.handleChange.bind(this, 'input2')
+								})
 							)
 						),
+						tester,
 						_react2.default.createElement(
 							'div',
-							{ className: 'col-md-8' },
-							_react2.default.createElement(_reactSelect2.default, {
-								name: 'form-field-name',
-								options: options,
-								value: this.state.input2,
-								clearable: false
-								//onChange={this.handleChange}
-								, onChange: this.handleChange.bind(this, 'input2')
-							})
-						)
-					),
-					tester,
-					_react2.default.createElement(
-						'div',
-						{ className: 'row' },
-						_react2.default.createElement(
-							'div',
-							{ className: 'col-md-4' },
+							{ className: 'row' },
 							_react2.default.createElement(
-								'h3',
-								{ className: 'sectionHead' },
-								' Third Thing '
+								'div',
+								{ className: 'col-xs-4' },
+								_react2.default.createElement(
+									'h3',
+									{ className: 'sectionHead' },
+									' Third Thing '
+								)
+							),
+							_react2.default.createElement(
+								'div',
+								{ className: 'col-xs-8' },
+								_react2.default.createElement(
+									'div',
+									{ className: 'input-group' },
+									_react2.default.createElement(
+										'span',
+										{ className: 'input-group-addon' },
+										'$'
+									),
+									_react2.default.createElement('input', {
+										type: 'text',
+										className: 'form-control',
+										placeholder: 'Your Salary',
+										value: this.state.input3,
+										onChange: this.textChange
+									})
+								)
 							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 'col-md-8' },
-							_react2.default.createElement('input', {
-								type: 'text',
-								placeholder: 'Your Salary',
-								value: this.state.input3,
-								onChange: this.textChange
-							})
 						)
 					)
 				);
@@ -24357,7 +24371,7 @@
 
 
 	// module
-	exports.push([module.id, "#root {\n  margin: 2em auto; }\n", ""]);
+	exports.push([module.id, "#root {\n  margin: 2em auto; }\n\n.col-xs-8 {\n  margin-top: 1em; }\n\n.Select-control, .input-group {\n  border-radius: 0;\n  border: 2px solid #000;\n  color: #000; }\n\n.Select-arrow {\n  border-color: #000 transparent transparent;\n  border-width: 10px 10px 0px;\n  margin-right: 1.5em; }\n\n.form-control, .input-group-addon {\n  border: 1px solid transparent; }\n\n.input-group .form-control {\n  z-index: 0; }\n\n.input-group-addon {\n  background-color: #FFF; }\n\n.form-control:focus {\n  border: none !important; }\n", ""]);
 
 	// exports
 

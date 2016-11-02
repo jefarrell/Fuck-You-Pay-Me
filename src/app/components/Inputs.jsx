@@ -43,49 +43,55 @@ class Inputs extends React.Component {
 		console.log(this.state)
 		
 		return (
-			<div className="section">
-				<div className="row">
-					<div className="col-md-4">
-						<h3 className="sectionHead"> First Thing </h3>
+			<div className="container-fluid">
+				<div className="section">
+					<div className="row">
+						<div className="col-xs-4">
+							<h3 className="sectionHead"> First Thing </h3>
+						</div>
+						<div className="col-xs-8">
+							<Select
+								name="form-field-name"
+								options={options}
+								value={this.state.input1}
+								clearable={false}
+								//onChange={this.handleChange}
+								onChange={this.handleChange.bind(this, 'input1')}
+							/>
+						</div>
 					</div>
-					<div className="col-md-8">
-						<Select
-							name="form-field-name"
-							options={options}
-							value={this.state.input1}
-							clearable={false}
-							//onChange={this.handleChange}
-							onChange={this.handleChange.bind(this, 'input1')}
-						/>
+					<div className="row">
+						<div className="col-xs-4">
+							<h3 className="sectionHead"> Second Thing </h3>
+						</div>
+						<div className="col-xs-8">
+							<Select
+								name="form-field-name"
+								options={options}
+								value={this.state.input2}
+								clearable={false}
+								//onChange={this.handleChange}
+								onChange={this.handleChange.bind(this, 'input2')}
+							/>
+						</div>
 					</div>
-				</div>
-				<div className="row">
-					<div className="col-md-4">
-						<h3 className="sectionHead"> Second Thing </h3>
-					</div>
-					<div className="col-md-8">
-						<Select
-							name="form-field-name"
-							options={options}
-							value={this.state.input2}
-							clearable={false}
-							//onChange={this.handleChange}
-							onChange={this.handleChange.bind(this, 'input2')}
-						/>
-					</div>
-				</div>
-				{tester}
-				<div className="row">
-					<div className="col-md-4">
-						<h3 className="sectionHead"> Third Thing </h3>
-					</div>
-					<div className="col-md-8">
-						<input
-							type="text"
-							placeholder="Your Salary"
-							value={this.state.input3}
-							onChange={this.textChange}
-						/>
+					{tester}
+					<div className="row">
+						<div className="col-xs-4">
+							<h3 className="sectionHead"> Third Thing </h3>
+						</div>
+						<div className="col-xs-8">
+							<div className="input-group">
+								<span className="input-group-addon">$</span>
+								<input
+									type="text"
+									className="form-control"
+									placeholder="Your Salary"
+									value={this.state.input3}
+									onChange={this.textChange}
+								/>
+							</div>							
+						</div>
 					</div>
 				</div>
 			</div>
