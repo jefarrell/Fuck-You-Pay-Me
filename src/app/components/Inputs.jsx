@@ -10,8 +10,10 @@ class Inputs extends React.Component {
 		super(props);
 		this.state = {
 			input1: '',
-			input2: ''
+			input2: '',
+			input3: ''
 		};
+		this.textChange = this.textChange.bind(this);
 	}
 
 	handleChange(name, e) {
@@ -20,6 +22,9 @@ class Inputs extends React.Component {
 		this.setState(change);
 	}
 
+	textChange(e) {
+		this.setState({input3: e.target.value})
+	}
 
 	render() {
 
@@ -30,25 +35,58 @@ class Inputs extends React.Component {
 			{value: 'four', label: '4'}
 		];
 
+		let tester = null;
+		if (this.state.input2) {
+			tester = <h3> here now </h3>
+		}
+
+		console.log(this.state)
+		
 		return (
 			<div className="section">
-				<div>
-					<h3 className="sectionHead" value="First Thing"/>
-					<Select
-						name="form-field-name"
-						options={options}
-						value={this.state.input1}
-						onChange={this.handleChange.bind(this, 'input1')}
-					/>
+				<div className="row">
+					<div className="col-md-4">
+						<h3 className="sectionHead"> First Thing </h3>
+					</div>
+					<div className="col-md-8">
+						<Select
+							name="form-field-name"
+							options={options}
+							value={this.state.input1}
+							clearable={false}
+							//onChange={this.handleChange}
+							onChange={this.handleChange.bind(this, 'input1')}
+						/>
+					</div>
 				</div>
-				<div>
-					<h3 className="sectionHead" value="Second Thing"/>
-					<Select
-						name="form-field-name"
-						options={options}
-						value={this.state.input2}
-						onChange={this.handleChange.bind(this, 'input2')}
-					/>
+				<div className="row">
+					<div className="col-md-4">
+						<h3 className="sectionHead"> Second Thing </h3>
+					</div>
+					<div className="col-md-8">
+						<Select
+							name="form-field-name"
+							options={options}
+							value={this.state.input2}
+							clearable={false}
+							//onChange={this.handleChange}
+							onChange={this.handleChange.bind(this, 'input2')}
+						/>
+					</div>
+				</div>
+				{tester}
+				<div className="row">
+					<div className="col-md-4">
+						<h3 className="sectionHead"> Third Thing </h3>
+					</div>
+					<div className="col-md-8">
+						<input
+							type="text"
+							placeholder="Your Salary"
+							value={this.state.input3}
+							onChange={this.textChange}
+						/>
+					</div>
 				</div>
 			</div>
 			)
