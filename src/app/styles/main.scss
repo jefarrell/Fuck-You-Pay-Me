@@ -1,7 +1,12 @@
+@import 'FYPM';
+
 $white: #FFF;
 $black: #000;
 $accent: #FFD700;
 
+body {
+	padding: 3em;
+}
 
 #root {
 	margin: 2em auto;
@@ -20,7 +25,7 @@ $accent: #FFD700;
 .Select-arrow {
 	border-color: $black transparent transparent;
 	border-width: 10px 10px 0px;
-	margin-right: 1.5em;
+	margin-right: 1em;
 }
 
 .form-control, .input-group-addon {
@@ -35,6 +40,7 @@ $accent: #FFD700;
 	background-color: $white;
 }
 
-.form-control:focus {
+.form-control:focus, .Select, .Select--single, .is-searchable, .has-value {
 	border:none !important;
 }
+

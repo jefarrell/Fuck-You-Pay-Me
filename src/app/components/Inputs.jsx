@@ -2,6 +2,8 @@ import React from 'react';
 import Select from 'react-select';
 import 'react-select/dist/react-select.css';
 
+const STATES = require('../assets/states');
+const JOBS = require('../assets/jobs');
 
 
 class Inputs extends React.Component {
@@ -27,32 +29,25 @@ class Inputs extends React.Component {
 	}
 
 	render() {
-
-		let options = [
-			{value: 'one', label: 'One'},
-			{value: 'two', label: 'Two'},
-			{value: 'three', label: 'Three'},
-			{value: 'four', label: '4'}
-		];
-
-		let tester = null;
+		
 		if (this.state.input2) {
-			tester = <h3> here now </h3>
+			$('#metroArea').slideDown(400);
 		}
 
 		console.log(this.state)
-		
+
+
 		return (
 			<div className="container-fluid">
 				<div className="section">
 					<div className="row">
-						<div className="col-xs-4">
-							<h3 className="sectionHead"> First Thing </h3>
+						<div className="col-xs-6">
+							<h3 className="sectionHead"> You Work As </h3>
 						</div>
-						<div className="col-xs-8">
+						<div className="col-xs-6">
 							<Select
 								name="form-field-name"
-								options={options}
+								options={JOBS['titles']}
 								value={this.state.input1}
 								clearable={false}
 								//onChange={this.handleChange}
@@ -61,13 +56,13 @@ class Inputs extends React.Component {
 						</div>
 					</div>
 					<div className="row">
-						<div className="col-xs-4">
-							<h3 className="sectionHead"> Second Thing </h3>
+						<div className="col-xs-6">
+							<h3 className="sectionHead"> You live in </h3>
 						</div>
-						<div className="col-xs-8">
+						<div className="col-xs-6">
 							<Select
 								name="form-field-name"
-								options={options}
+								options={STATES['US']}
 								value={this.state.input2}
 								clearable={false}
 								//onChange={this.handleChange}
@@ -75,12 +70,27 @@ class Inputs extends React.Component {
 							/>
 						</div>
 					</div>
-					{tester}
-					<div className="row">
-						<div className="col-xs-4">
-							<h3 className="sectionHead"> Third Thing </h3>
+					<div className="row" id="metroArea">
+						<div className="col-xs-6">
+							<h3 className="sectionHead"> Which Part? </h3>
 						</div>
-						<div className="col-xs-8">
+						<div className="col-xs-6">
+							<Select
+								name="form-field-name"
+								options={STATES['US']}
+								value={this.state.input2}
+								clearable={false}
+								//onChange={this.handleChange}
+								onChange={this.handleChange.bind(this, 'input2')}
+							/>
+						</div>
+					</div>
+					
+					<div className="row">
+						<div className="col-xs-6">
+							<h3 className="sectionHead"> What was your Starting Salary? </h3>
+						</div>
+						<div className="col-xs-6">
 							<div className="input-group">
 								<span className="input-group-addon">$</span>
 								<input
