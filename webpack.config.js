@@ -24,6 +24,10 @@ module.exports = {
       {
         test: /\.s?css$/,
         loaders: ['style', 'css', 'sass']
+      },
+      {
+        test: /\.(eot|svg|ttf|woff|woff2)$/,
+        loader: 'file-loader?name=src/app/assets/fonts/[name].[ext]'
       }
     ]
   },

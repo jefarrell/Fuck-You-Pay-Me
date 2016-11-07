@@ -4,15 +4,35 @@ $white: #FFF;
 $black: #000;
 $accent: #FFD700;
 
+
+// @font-face {
+// 	font-family: FoundersGrotesk;
+// 	src: url('/assets/fonts/FoundersGroteskWeb-Regular.eot');
+// 	src: url('../assets/fonts/FoundersGroteskWeb-Regular.woff') format('woff'),
+// 		url('/assets/fonts/FoundersGroteskWeb-Regular.woff2') format('woff2');
+// 	font-weight: normal;
+// }
+
+@font-face {
+	font-family: FoundersGrotesk;
+	src: url('/assets/fonts/FoundersGroteskWeb-Bold.eot');
+	src: url('../assets/fonts/FoundersGroteskWeb-Bold.woff') format('woff'),
+		url('/assets/fonts/FoundersGroteskWeb-Bold.woff2') format('woff2');
+	font-weight: bold;
+}
+
+
 body {
 	padding: 3em;
+	font-family: FoundersGrotesk;
+	font-weight: bold;
 }
 
 #root {
 	margin: 2em auto;
 }
 
-.col-xs-8 {
+.selector {
 	margin-top: 1em;
 }
 
@@ -28,8 +48,14 @@ body {
 	margin-right: 1em;
 }
 
+.Select:focus {
+	outline: none;
+}
+
 .form-control, .input-group-addon {
 	border: 1px solid transparent;
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
 
 .input-group .form-control {
@@ -38,9 +64,11 @@ body {
 
 .input-group-addon {
 	background-color: $white;
+	color: $black;
 }
 
-.form-control:focus, .Select, .Select--single, .is-searchable, .has-value {
+.form-control:focus {
 	border:none !important;
+	box-shadow: none;
+	-webkit-box-shadow: none;
 }
-
