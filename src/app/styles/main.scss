@@ -26,6 +26,11 @@ body {
 	padding: 3em;
 	font-family: FoundersGrotesk;
 	font-weight: bold;
+	color: $black;
+}
+
+input {
+	line-height: 2.5em;
 }
 
 #root {
