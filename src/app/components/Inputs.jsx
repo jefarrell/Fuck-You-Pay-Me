@@ -3,6 +3,13 @@ import Select from 'react-select';
 import 'react-select/dist/react-select.css';
 
 
+import Grid from "react-bootstrap/lib/Grid";
+import Row from "react-bootstrap/lib/Row";
+import Col from "react-bootstrap/lib/Col";
+
+
+import DatePicker from 'react-bootstrap-date-picker';
+
 
 const Slider = require('rc-slider');
 require('rc-slider/assets/index.css');
@@ -60,11 +67,11 @@ class Inputs extends React.Component {
 				<div className="section">
 
 					{/* Industry Block */}
-					<div className="row">
-						<div className="col-xs-6">
+					<Row>
+						<Col xs={6}>
 							<h3 className="sectionHead"> You Work As </h3>
-						</div>
-						<div className="col-xs-6 selector">
+						</Col>
+						<Col xs={6} className="selector">
 							<Select
 								name="form-field-name"
 								options={JOBS['titles']}
@@ -72,15 +79,15 @@ class Inputs extends React.Component {
 								clearable={false}
 								onChange={this.handleChange.bind(this, 'job')}
 							/>
-						</div>
-					</div>
+						</Col>
+					</Row>
 
 					{/* State Block */}
-					<div className="row">
-						<div className="col-xs-6">
+					<Row>
+						<Col xs={6}>
 							<h3 className="sectionHead"> You live in </h3>
-						</div>
-						<div className="col-xs-6 selector">
+						</Col>
+						<Col xs={6} className="selector">
 							<Select
 								name="form-field-name"
 								options={STATES['US']}
@@ -89,15 +96,15 @@ class Inputs extends React.Component {
 								//onChange={this.handleChange}
 								onChange={this.handleChange.bind(this, 'state')}
 							/>
-						</div>
-					</div>
+						</Col>
+					</Row>
 
 					{/* Area Block */}
-					<div className="row" id="metroArea">
-						<div className="col-xs-6">
+					<Row id="metroArea">
+						<Col xs={6}>
 							<h3 className="sectionHead"> Which Part? </h3>
-						</div>
-						<div className="col-xs-6 selector">
+						</Col>
+						<Col xs={6} className="selector">
 							<Select
 								name="form-field-name"
 								options={metroOptions}
@@ -106,25 +113,26 @@ class Inputs extends React.Component {
 								//onChange={this.handleChange}
 								onChange={this.handleChange.bind(this, 'area')}
 							/>
-						</div>
-					</div>
+						</Col>
+					</Row>
 
 					{/* Date Block */}
-					<div className="row">
-						<div className="col-xs-6">
+					<Row>
+						<Col xs={6}>
 							<h3 className="sectionHead"> When Did You Start? </h3>
-						</div>
-						<div className="col-xs-6 selector">
-						</div>
-					</div>
+						</Col>
+						<Col xs={6} className="selector">
+							<DatePicker />
+						</Col>
+					</Row>
 					
 					{/* Salary Start Block*/}
-					<div className="row">
-						<div className="col-xs-6">
+					<Row>
+						<Col xs={6}>
 							<h3 className="sectionHead"> What was your Starting Salary? </h3>
-						</div>
-						<div className="col-xs-1 slideStart" id="lowerRange">0</div>
-						<div className="col-xs-4 slideStart">
+						</Col>
+						<Col xs={1} className="slideStart" id="lowerRange">0</Col>
+						<Col xs={4} className="slideStart">
 							<Slider 
 								tipTransitionName="rc-slider-tooltip-zoom-down"
 								min={0}
@@ -132,17 +140,17 @@ class Inputs extends React.Component {
 								step={1000}
 								tipFormatter={this.formatDollars}
 							/>
-						</div>
-						<div className="col-xs-1 slideStart" id="upperRange">200k</div>
-					</div>
+						</Col>
+						<Col xs={1} className="slideStart" id="upperRange">200k</Col>
+					</Row>
 
 					{/* Salary Now Block */}
-					<div className="row">
-						<div className="col-xs-6">
+					<Row>
+						<Col xs={6}>
 							<h3 className="sectionHead"> What's Your Current Salary? </h3>
-						</div>
-						<div className="col-xs-1 slideStart" id="lowerRange">0</div>
-						<div className="col-xs-4 slideStart">
+						</Col>
+						<Col xs={1} className="slideStart" id="lowerRange">0</Col>
+						<Col xs={4} className="slideStart">
 							<Slider 
 								tipTransitionName="rc-slider-tooltip-zoom-down"
 								min={0}
@@ -150,16 +158,16 @@ class Inputs extends React.Component {
 								step={1000}
 								tipFormatter={this.formatDollars}
 							/>
-						</div>
-						<div className="col-xs-1 slideStart" id="upperRange">200k</div>
-					</div>
+						</Col>
+						<Col xs={1} className="slideStart" id="upperRange">200k</Col>
+					</Row>
 
 				</div>
 			</div>
 			)
 	}
 
-
+//<DatePicker value={this.state.startDate} onChange={this.dateChange} />
 }
 
 export default Inputs;
