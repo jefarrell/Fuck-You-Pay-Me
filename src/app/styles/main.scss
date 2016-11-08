@@ -30,6 +30,14 @@ body {
 	color: $black;
 }
 
+h3 {
+	font-size: 2.5em;
+}
+
+.row {
+	margin-bottom: 1em;
+}
+
 input {
 	line-height: 2.5em;
 }
@@ -39,7 +47,7 @@ input {
 }
 
 .selector {
-	margin-top: 1em;
+	margin-top: 1.5em;
 }
 
 .Select-control, .input-group {

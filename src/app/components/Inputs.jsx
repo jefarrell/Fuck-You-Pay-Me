@@ -8,27 +8,28 @@ import Row from "react-bootstrap/lib/Row";
 import Col from "react-bootstrap/lib/Col";
 
 
-import DatePicker from 'react-bootstrap-date-picker';
+//import DatePicker from 'react-bootstrap-date-picker';
 
 const STATES = require('../assets/data/states');
 const JOBS = require('../assets/data/jobs');
 const STATE_AREAS = require('../assets/data/state_areas.js');
-
+const YEARS = require('../assets/data/years');
+const MONTHS = require('../assets/data/months');
 
 class Inputs extends React.Component {
 
 	constructor(props) {
 		super(props);
-		let value = new Date().toISOString();
 		this.state = {
 			job: '',
 			state: '',
 			area: '',
-			startDate: value,
-			salary_start:'',
-			salary_current:''
+			year: '',
+			month: '',
+			salary_start:'0',
+			salary_current:'0'
 		};
-		this.dateChange = this.dateChange.bind(this);
+
 		this.sliderChange = this.sliderChange.bind(this);
 	}
 
@@ -40,6 +41,7 @@ class Inputs extends React.Component {
 
 	sliderChange(e) {
 		let target = e.target.id;
+
 		if (target === 'sal_curr') {
 			this.setState({salary_current: e.target.value});
 		} else {
@@ -48,13 +50,10 @@ class Inputs extends React.Component {
 		
 	}
 
-	dateChange(date) {
-		this.setState({startDate: date});
-	}
 
 	formatDollars(amount) {
 		let number = amount.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
-		return '$'+number;
+		return number;
 	}
 
 	render() {
@@ -66,24 +65,25 @@ class Inputs extends React.Component {
 			$('#metroArea').slideDown(400);
 		};
 
-		console.log(this.state)
+		let currFormat = this.formatDollars(this.state.salary_current);
+		let startFormat = this.formatDollars(this.state.salary_start);
 
 		return (
-
 			<div className="container-fluid">
 				<div className="section">
 
 					{/* Industry Block */}
 					<Row>
-						<Col xs={6}>
+						<Col xs={5}>
 							<h3 className="sectionHead"> Your Work </h3>
 						</Col>
-						<Col xs={6} className="selector">
+						<Col xs={7} className="selector">
 							<Select
 								name="form-field-name"
 								options={JOBS['titles']}
 								value={this.state.job}
 								clearable={false}
+								placeholder="Select a job"
 								onChange={this.dropdownChange.bind(this, 'job')}
 							/>
 						</Col>
@@ -91,16 +91,16 @@ class Inputs extends React.Component {
 
 					{/* State Block */}
 					<Row>
-						<Col xs={6}>
-							<h3 className="sectionHead"> You live in </h3>
+						<Col xs={5}>
+							<h3 className="sectionHead"> You Live In </h3>
 						</Col>
-						<Col xs={6} className="selector">
+						<Col xs={7} className="selector">
 							<Select
 								name="form-field-name"
 								options={STATES['US']}
 								value={this.state.state}
 								clearable={false}
-								//onChange={this.dropdownChange}
+								placeholder="Select state"
 								onChange={this.dropdownChange.bind(this, 'state')}
 							/>
 						</Col>
@@ -108,16 +108,16 @@ class Inputs extends React.Component {
 
 					{/* Area Block */}
 					<Row id="metroArea">
-						<Col xs={6}>
+						<Col xs={5}>
 							<h3 className="sectionHead"> Which Part? </h3>
 						</Col>
-						<Col xs={6} className="selector">
+						<Col xs={7} className="selector">
 							<Select
 								name="form-field-name"
 								options={metroOptions}
 								value={this.state.area}
 								clearable={false}
-								//onChange={this.dropdownChange}
+								placeholder="Select region"
 								onChange={this.dropdownChange.bind(this, 'area')}
 							/>
 						</Col>
@@ -125,58 +125,69 @@ class Inputs extends React.Component {
 
 					{/* Date Block */}
 					<Row>
-						<Col xs={6}>
-							<h3 className="sectionHead"> When Did You Start? </h3>
+						<Col xs={12} md={5}>
+							<h3 className="sectionHead"> When You Started Work </h3>
 						</Col>
-						<Col xs={6} className="selector">
-							<DatePicker />
+						<Col xs={7} md={4}className="selector">
+							<Select
+								name="form-field-name"
+								options={MONTHS['MONTHS']}
+								value={this.state.month}
+								clearable={false}
+								placeholder="Select Month"
+								onChange={this.dropdownChange.bind(this,'month')}
+							/>
+						</Col>						
+						<Col xs={5} md={3}className="selector">
+							<Select
+								name="form-field-name"
+								options={YEARS['YEARS']}
+								value={this.state.year}
+								clearable={false}
+								placeholder="Select Year"
+								onChange={this.dropdownChange.bind(this,'year')}
+							/>
 						</Col>
 					</Row>
 					
-					{/* Salary Start Block*/}
+					{/* Salary Now Block*/}
 					<Row>
-						<Col xs={6}>
-							<h3 className="sectionHead"> What was your Starting Salary? </h3>
+						<Col md={5} xs={12}>
+							<h3 className="sectionHead"> Current Salary: ${currFormat}</h3>
 						</Col>
-						<Col xs={1} className="slideStart" id="lowerRange">$0</Col>
-						<Col xs={4} className="slideStart">
-							<input
-								id="sal_start"
-								type="range"
-								min="0" max="200000"
-								value={this.state.salary_start}
-								onChange={this.sliderChange}
-								step="1"
-							/>
-						</Col>
-						<Col xs={1} className="slideStart" id="upperRange">$200k</Col>
-					</Row>
-
-					{/* Salary Now Block */}
-					<Row>
-						<Col xs={6}>
-							<h3 className="sectionHead"> What's Your Current Salary? </h3>
-						</Col>
-						<Col xs={1} className="slideStart" id="lowerRange">$0</Col>
-						<Col xs={4} className="slideStart">
+						<Col md={7} xs={12} className="slideStart">
 							<input
 								id="sal_curr"
 								type="range"
 								min="0" max="200000"
 								value={this.state.salary_current}
 								onChange={this.sliderChange}
-								step="1"
+								step="1000"
 							/>
 						</Col>
-						<Col xs={1} className="slideStart" id="upperRange">$200k</Col>
+					</Row>
+
+					{/* Salary Start Block */}
+					<Row>
+						<Col md={5} xs={12}>
+							<h3 className="sectionHead"> Starting Salary: ${startFormat}</h3>
+						</Col>
+						<Col md={7} xs={12}className="slideStart">
+							<input
+								id="sal_start"
+								type="range"
+								min="0" max="200000"
+								value={this.state.salary_start}
+								onChange={this.sliderChange}
+								step="1000"
+							/>
+						</Col>
 					</Row>
 
 				</div>
 			</div>
 			)
 	}
-
-//<DatePicker value={this.state.startDate} onChange={this.dateChange} />
 }
 
 export default Inputs;
