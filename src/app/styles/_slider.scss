@@ -1,5 +1,5 @@
 $track_background: #000;
-$track_background_focus: #FFD700;
+$thumb_background_focus: #FFD700;
 $track_border: #000;
 
 
@@ -43,6 +43,11 @@ input[type=range] {
 		@include thumb;
 	}
 
+	&:focus::-webkit-slider-thumb {
+		background-color: $thumb_background_focus;
+		border: 4px solid black;
+	}
+
 	&::-moz-range-thumb {
 		@include thumb;
 	}
@@ -56,10 +61,10 @@ input[type=range] {
 		@include track;
 	}
 
-	&:focus::-webkit-slider-runnable-track {
-		background: $track_background_focus;
-		border-color: $track_background_focus;
-	}
+	// &:focus::-webkit-slider-runnable-track {
+	// 	background: $track_background;
+	// 	border-color: $track_background_focus;
+	// }
 
 	&::-moz-range-track {
 		@include track;

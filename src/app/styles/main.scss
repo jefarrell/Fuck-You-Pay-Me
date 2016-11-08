@@ -22,6 +22,9 @@ $accent: #FFD700;
 	font-weight: bold;
 }
 
+#root {
+	margin: 2em auto;
+}
 
 body {
 	padding: 3em;
@@ -30,25 +33,42 @@ body {
 	color: $black;
 }
 
+
+/* Main sizing things */
 h3 {
 	font-size: 2.5em;
 }
 
 .row {
-	margin-bottom: 1em;
+	margin-bottom: 3em;
 }
 
-input {
-	line-height: 2.5em;
+.Select {
+	line-height: 5em;
+
 }
 
-#root {
-	margin: 2em auto;
+.Select-placeholder, .Select-value-label {
+	font-size: 2em;
+	margin-top: 0.6em;
 }
 
-.selector {
+.Select-value {
 	margin-top: 1.5em;
 }
+
+/********************/
+
+.Select-placeholder, .Select--single > .Select-control .Select-value {
+	max-width: 90%;
+	color: $black;
+}
+
+
+.has-value.Select--single > .Select-control .Select-value .Select-value-label, .has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {
+	color: $black;
+}
+
 
 .Select-control, .input-group {
 	border-radius: 0;
@@ -86,3 +106,10 @@ input {
 	box-shadow: none;
 	-webkit-box-shadow: none;
 }
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+// @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+// 	font-size: 1.5em;
+// }
