@@ -1,12 +1,8 @@
 import React from 'react';
 import Select from 'react-select';
 import 'react-select/dist/react-select.css';
-import DayPicker from 'react-day-picker';
 
-import 'react-day-picker/lib/style.css';
-// const DatePicker = require('react-datepicker');
-// const moment = require('moment');
-// require('react-datepicker/dist/react-datepicker.css');
+
 
 const Slider = require('rc-slider');
 require('rc-slider/assets/index.css');
@@ -119,10 +115,6 @@ class Inputs extends React.Component {
 							<h3 className="sectionHead"> When Did You Start? </h3>
 						</div>
 						<div className="col-xs-6 selector">
-							<DayPicker
-								value = {this.state.startDate}
-								onChange = {this.dateChange}
-							/>
 						</div>
 					</div>
 					
