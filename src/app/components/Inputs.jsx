@@ -10,10 +10,6 @@ import Col from "react-bootstrap/lib/Col";
 
 import DatePicker from 'react-bootstrap-date-picker';
 
-
-const Slider = require('rc-slider');
-require('rc-slider/assets/index.css');
-
 const STATES = require('../assets/data/states');
 const JOBS = require('../assets/data/jobs');
 const STATE_AREAS = require('../assets/data/state_areas.js');
@@ -33,12 +29,23 @@ class Inputs extends React.Component {
 			salary_current:''
 		};
 		this.dateChange = this.dateChange.bind(this);
+		this.sliderChange = this.sliderChange.bind(this);
 	}
 
-	handleChange(name, e) {
+	dropdownChange(name, e) {
 		let change = {};
 		change[name] = e.value;
 		this.setState(change);
+	}
+
+	sliderChange(e) {
+		let target = e.target.id;
+		if (target === 'sal_curr') {
+			this.setState({salary_current: e.target.value});
+		} else {
+			this.setState({salary_start: e.target.value});
+		}
+		
 	}
 
 	dateChange(date) {
@@ -69,7 +76,7 @@ class Inputs extends React.Component {
 					{/* Industry Block */}
 					<Row>
 						<Col xs={6}>
-							<h3 className="sectionHead"> You Work As </h3>
+							<h3 className="sectionHead"> Your Work </h3>
 						</Col>
 						<Col xs={6} className="selector">
 							<Select
@@ -77,7 +84,7 @@ class Inputs extends React.Component {
 								options={JOBS['titles']}
 								value={this.state.job}
 								clearable={false}
-								onChange={this.handleChange.bind(this, 'job')}
+								onChange={this.dropdownChange.bind(this, 'job')}
 							/>
 						</Col>
 					</Row>
@@ -93,8 +100,8 @@ class Inputs extends React.Component {
 								options={STATES['US']}
 								value={this.state.state}
 								clearable={false}
-								//onChange={this.handleChange}
-								onChange={this.handleChange.bind(this, 'state')}
+								//onChange={this.dropdownChange}
+								onChange={this.dropdownChange.bind(this, 'state')}
 							/>
 						</Col>
 					</Row>
@@ -110,8 +117,8 @@ class Inputs extends React.Component {
 								options={metroOptions}
 								value={this.state.area}
 								clearable={false}
-								//onChange={this.handleChange}
-								onChange={this.handleChange.bind(this, 'area')}
+								//onChange={this.dropdownChange}
+								onChange={this.dropdownChange.bind(this, 'area')}
 							/>
 						</Col>
 					</Row>
@@ -131,17 +138,18 @@ class Inputs extends React.Component {
 						<Col xs={6}>
 							<h3 className="sectionHead"> What was your Starting Salary? </h3>
 						</Col>
-						<Col xs={1} className="slideStart" id="lowerRange">0</Col>
+						<Col xs={1} className="slideStart" id="lowerRange">$0</Col>
 						<Col xs={4} className="slideStart">
-							<Slider 
-								tipTransitionName="rc-slider-tooltip-zoom-down"
-								min={0}
-								max={200000}
-								step={1000}
-								tipFormatter={this.formatDollars}
+							<input
+								id="sal_start"
+								type="range"
+								min="0" max="200000"
+								value={this.state.salary_start}
+								onChange={this.sliderChange}
+								step="1"
 							/>
 						</Col>
-						<Col xs={1} className="slideStart" id="upperRange">200k</Col>
+						<Col xs={1} className="slideStart" id="upperRange">$200k</Col>
 					</Row>
 
 					{/* Salary Now Block */}
@@ -149,17 +157,18 @@ class Inputs extends React.Component {
 						<Col xs={6}>
 							<h3 className="sectionHead"> What's Your Current Salary? </h3>
 						</Col>
-						<Col xs={1} className="slideStart" id="lowerRange">0</Col>
+						<Col xs={1} className="slideStart" id="lowerRange">$0</Col>
 						<Col xs={4} className="slideStart">
-							<Slider 
-								tipTransitionName="rc-slider-tooltip-zoom-down"
-								min={0}
-								max={200000}
-								step={1000}
-								tipFormatter={this.formatDollars}
+							<input
+								id="sal_curr"
+								type="range"
+								min="0" max="200000"
+								value={this.state.salary_current}
+								onChange={this.sliderChange}
+								step="1"
 							/>
 						</Col>
-						<Col xs={1} className="slideStart" id="upperRange">200k</Col>
+						<Col xs={1} className="slideStart" id="upperRange">$200k</Col>
 					</Row>
 
 				</div>

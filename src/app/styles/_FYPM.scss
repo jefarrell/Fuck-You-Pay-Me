@@ -1,0 +1,45 @@
+#metroArea {
+	display:none;
+}
+
+.react-datepicker__input-container {
+	width: 100%;
+
+	input {
+		width: 100%;
+		border: 2px solid #000;
+
+	}
+}
+
+.slideStart {
+	margin-top: 2.5em;
+}
+
+#lowerRange {
+	padding-left: 1.3em;
+}
+
+#upperRange {
+	padding-left: 0;
+}
+
+.col-xs-1 {
+	width: 5%;
+	margin-top: 25px;
+}
+
+.col-xs-4 {
+	width: 40%
+}
+
+.input-group-addon {
+	div {
+		margin-right: 0.5em;
+		font-size: 1.5em;
+	}
+}
+
+.form-control {
+	color: #000;
+}
