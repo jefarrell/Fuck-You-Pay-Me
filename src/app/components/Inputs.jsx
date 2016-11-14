@@ -1,14 +1,11 @@
 import React from 'react';
 import Select from 'react-select';
+import Output from './Output.jsx'
 import 'react-select/dist/react-select.css';
-
 
 import Grid from "react-bootstrap/lib/Grid";
 import Row from "react-bootstrap/lib/Row";
 import Col from "react-bootstrap/lib/Col";
-
-
-//import DatePicker from 'react-bootstrap-date-picker';
 
 const STATES = require('../assets/data/states');
 const JOBS = require('../assets/data/jobs');
@@ -26,8 +23,8 @@ class Inputs extends React.Component {
 			area: '',
 			year: '',
 			month: '',
-			salary_start:'0',
-			salary_current:'0'
+			salary_start:'34000',
+			salary_current:'48000'
 		};
 
 		this.sliderChange = this.sliderChange.bind(this);
@@ -70,8 +67,7 @@ class Inputs extends React.Component {
 
 		return (
 			<div className="container-fluid">
-				<div className="section">
-
+				<div className="inputBlock">
 					{/* Industry Block */}
 					<Row>
 						<Col xs={5}>
@@ -83,7 +79,7 @@ class Inputs extends React.Component {
 								options={JOBS['titles']}
 								value={this.state.job}
 								clearable={false}
-								placeholder="Select a job"
+								placeholder="Select job"
 								onChange={this.dropdownChange.bind(this, 'job')}
 							/>
 						</Col>
@@ -92,7 +88,7 @@ class Inputs extends React.Component {
 					{/* State Block */}
 					<Row>
 						<Col xs={5}>
-							<h3 className="sectionHead"> You Live In </h3>
+							<h3 className="sectionHead"> Where You Live </h3>
 						</Col>
 						<Col xs={7} className="selector">
 							<Select
@@ -109,7 +105,7 @@ class Inputs extends React.Component {
 					{/* Area Block */}
 					<Row id="metroArea">
 						<Col xs={5}>
-							<h3 className="sectionHead"> Which Part? </h3>
+
 						</Col>
 						<Col xs={7} className="selector">
 							<Select
@@ -117,7 +113,7 @@ class Inputs extends React.Component {
 								options={metroOptions}
 								value={this.state.area}
 								clearable={false}
-								placeholder="Select region"
+								placeholder="Select area"
 								onChange={this.dropdownChange.bind(this, 'area')}
 							/>
 						</Col>
@@ -128,6 +124,16 @@ class Inputs extends React.Component {
 						<Col xs={12} md={5}>
 							<h3 className="sectionHead"> When You Started Work </h3>
 						</Col>
+						<Col xs={5} md={3}className="selector">
+							<Select
+								name="form-field-name"
+								options={YEARS['YEARS']}
+								value={this.state.year}
+								clearable={false}
+								placeholder="Select Year"
+								onChange={this.dropdownChange.bind(this,'year')}
+							/>
+						</Col>						
 						<Col xs={7} md={4}className="selector">
 							<Select
 								name="form-field-name"
@@ -138,16 +144,6 @@ class Inputs extends React.Component {
 								onChange={this.dropdownChange.bind(this,'month')}
 							/>
 						</Col>						
-						<Col xs={5} md={3}className="selector">
-							<Select
-								name="form-field-name"
-								options={YEARS['YEARS']}
-								value={this.state.year}
-								clearable={false}
-								placeholder="Select Year"
-								onChange={this.dropdownChange.bind(this,'year')}
-							/>
-						</Col>
 					</Row>
 					
 					{/* Salary Now Block*/}
@@ -183,8 +179,8 @@ class Inputs extends React.Component {
 							/>
 						</Col>
 					</Row>
-
 				</div>
+				<Output job={this.state.job} />
 			</div>
 			)
 	}

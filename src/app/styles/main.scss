@@ -6,13 +6,13 @@ $black: #000;
 $accent: #FFD700;
 
 
-// @font-face {
-// 	font-family: FoundersGrotesk;
-// 	src: url('/assets/fonts/FoundersGroteskWeb-Regular.eot');
-// 	src: url('../assets/fonts/FoundersGroteskWeb-Regular.woff') format('woff'),
-// 		url('/assets/fonts/FoundersGroteskWeb-Regular.woff2') format('woff2');
-// 	font-weight: normal;
-// }
+@font-face {
+	font-family: FoundersGrotesk;
+	src: url('/assets/fonts/FoundersGroteskWeb-Regular.eot');
+	src: url('../assets/fonts/FoundersGroteskWeb-Regular.woff') format('woff'),
+		url('/assets/fonts/FoundersGroteskWeb-Regular.woff2') format('woff2');
+	font-weight: normal;
+}
 
 @font-face {
 	font-family: FoundersGrotesk;
@@ -29,7 +29,7 @@ $accent: #FFD700;
 body {
 	padding: 3em;
 	font-family: FoundersGrotesk;
-	font-weight: bold;
+	font-weight: normal;
 	color: $black;
 }
 
@@ -37,6 +37,7 @@ body {
 /* Main sizing things */
 h3 {
 	font-size: 2.5em;
+	font-weight: bold;
 }
 
 .row {
@@ -55,6 +56,7 @@ h3 {
 
 .Select-value {
 	margin-top: 1.5em;
+	font-weight: bold;
 }
 
 /********************/
@@ -64,6 +66,13 @@ h3 {
 	color: $black;
 }
 
+.Select {
+	.is-open {
+		color: #FF0000;
+		font-size:2em;
+	}
+	
+}
 
 .has-value.Select--single > .Select-control .Select-value .Select-value-label, .has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {
 	color: $black;

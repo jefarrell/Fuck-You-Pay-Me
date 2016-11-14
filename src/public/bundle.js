@@ -21517,6 +21517,10 @@
 
 	var _reactSelect2 = _interopRequireDefault(_reactSelect);
 
+	var _Output = __webpack_require__(451);
+
+	var _Output2 = _interopRequireDefault(_Output);
+
 	__webpack_require__(186);
 
 	var _Grid = __webpack_require__(190);
@@ -21539,8 +21543,6 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	//import DatePicker from 'react-bootstrap-date-picker';
-
 	var STATES = __webpack_require__(442);
 	var JOBS = __webpack_require__(443);
 	var STATE_AREAS = __webpack_require__(444);
@@ -21561,8 +21563,8 @@
 				area: '',
 				year: '',
 				month: '',
-				salary_start: '0',
-				salary_current: '0'
+				salary_start: '34000',
+				salary_current: '48000'
 			};
 
 			_this.sliderChange = _this.sliderChange.bind(_this);
@@ -21612,7 +21614,7 @@
 					{ className: 'container-fluid' },
 					_react2.default.createElement(
 						'div',
-						{ className: 'section' },
+						{ className: 'inputBlock' },
 						_react2.default.createElement(
 							_Row2.default,
 							null,
@@ -21633,7 +21635,7 @@
 									options: JOBS['titles'],
 									value: this.state.job,
 									clearable: false,
-									placeholder: 'Select a job',
+									placeholder: 'Select job',
 									onChange: this.dropdownChange.bind(this, 'job')
 								})
 							)
@@ -21647,7 +21649,7 @@
 								_react2.default.createElement(
 									'h3',
 									{ className: 'sectionHead' },
-									' You Live In '
+									' Where You Live '
 								)
 							),
 							_react2.default.createElement(
@@ -21666,15 +21668,7 @@
 						_react2.default.createElement(
 							_Row2.default,
 							{ id: 'metroArea' },
-							_react2.default.createElement(
-								_Col2.default,
-								{ xs: 5 },
-								_react2.default.createElement(
-									'h3',
-									{ className: 'sectionHead' },
-									' Which Part? '
-								)
-							),
+							_react2.default.createElement(_Col2.default, { xs: 5 }),
 							_react2.default.createElement(
 								_Col2.default,
 								{ xs: 7, className: 'selector' },
@@ -21683,7 +21677,7 @@
 									options: metroOptions,
 									value: this.state.area,
 									clearable: false,
-									placeholder: 'Select region',
+									placeholder: 'Select area',
 									onChange: this.dropdownChange.bind(this, 'area')
 								})
 							)
@@ -21702,18 +21696,6 @@
 							),
 							_react2.default.createElement(
 								_Col2.default,
-								{ xs: 7, md: 4, className: 'selector' },
-								_react2.default.createElement(_reactSelect2.default, {
-									name: 'form-field-name',
-									options: MONTHS['MONTHS'],
-									value: this.state.month,
-									clearable: false,
-									placeholder: 'Select Month',
-									onChange: this.dropdownChange.bind(this, 'month')
-								})
-							),
-							_react2.default.createElement(
-								_Col2.default,
 								{ xs: 5, md: 3, className: 'selector' },
 								_react2.default.createElement(_reactSelect2.default, {
 									name: 'form-field-name',
@@ -21722,6 +21704,18 @@
 									clearable: false,
 									placeholder: 'Select Year',
 									onChange: this.dropdownChange.bind(this, 'year')
+								})
+							),
+							_react2.default.createElement(
+								_Col2.default,
+								{ xs: 7, md: 4, className: 'selector' },
+								_react2.default.createElement(_reactSelect2.default, {
+									name: 'form-field-name',
+									options: MONTHS['MONTHS'],
+									value: this.state.month,
+									clearable: false,
+									placeholder: 'Select Month',
+									onChange: this.dropdownChange.bind(this, 'month')
 								})
 							)
 						),
@@ -21777,7 +21771,8 @@
 								})
 							)
 						)
-					)
+					),
+					_react2.default.createElement(_Output2.default, { job: this.state.job })
 				);
 			}
 		}]);
@@ -31634,7 +31629,7 @@
 
 	"use strict";
 
-	exports.YEARS = [{ label: 1900, value: 1900 }, { label: 1901, value: 1901 }, { label: 1902, value: 1902 }, { label: 1903, value: 1903 }, { label: 1904, value: 1904 }, { label: 1905, value: 1905 }, { label: 1906, value: 1906 }, { label: 1907, value: 1907 }, { label: 1908, value: 1908 }, { label: 1909, value: 1909 }, { label: 1910, value: 1910 }, { label: 1911, value: 1911 }, { label: 1912, value: 1912 }, { label: 1913, value: 1913 }, { label: 1914, value: 1914 }, { label: 1915, value: 1915 }, { label: 1916, value: 1916 }, { label: 1917, value: 1917 }, { label: 1918, value: 1918 }, { label: 1919, value: 1919 }, { label: 1920, value: 1920 }, { label: 1921, value: 1921 }, { label: 1922, value: 1922 }, { label: 1923, value: 1923 }, { label: 1924, value: 1924 }, { label: 1925, value: 1925 }, { label: 1926, value: 1926 }, { label: 1927, value: 1927 }, { label: 1928, value: 1928 }, { label: 1929, value: 1929 }, { label: 1930, value: 1930 }, { label: 1931, value: 1931 }, { label: 1932, value: 1932 }, { label: 1933, value: 1933 }, { label: 1934, value: 1934 }, { label: 1935, value: 1935 }, { label: 1936, value: 1936 }, { label: 1937, value: 1937 }, { label: 1938, value: 1938 }, { label: 1939, value: 1939 }, { label: 1940, value: 1940 }, { label: 1941, value: 1941 }, { label: 1942, value: 1942 }, { label: 1943, value: 1943 }, { label: 1944, value: 1944 }, { label: 1945, value: 1945 }, { label: 1946, value: 1946 }, { label: 1947, value: 1947 }, { label: 1948, value: 1948 }, { label: 1949, value: 1949 }, { label: 1950, value: 1950 }, { label: 1951, value: 1951 }, { label: 1952, value: 1952 }, { label: 1953, value: 1953 }, { label: 1954, value: 1954 }, { label: 1955, value: 1955 }, { label: 1956, value: 1956 }, { label: 1957, value: 1957 }, { label: 1958, value: 1958 }, { label: 1959, value: 1959 }, { label: 1960, value: 1960 }, { label: 1961, value: 1961 }, { label: 1962, value: 1962 }, { label: 1963, value: 1963 }, { label: 1964, value: 1964 }, { label: 1965, value: 1965 }, { label: 1966, value: 1966 }, { label: 1967, value: 1967 }, { label: 1968, value: 1968 }, { label: 1969, value: 1969 }, { label: 1970, value: 1970 }, { label: 1971, value: 1971 }, { label: 1972, value: 1972 }, { label: 1973, value: 1973 }, { label: 1974, value: 1974 }, { label: 1975, value: 1975 }, { label: 1976, value: 1976 }, { label: 1977, value: 1977 }, { label: 1978, value: 1978 }, { label: 1979, value: 1979 }, { label: 1980, value: 1980 }, { label: 1981, value: 1981 }, { label: 1982, value: 1982 }, { label: 1983, value: 1983 }, { label: 1984, value: 1984 }, { label: 1985, value: 1985 }, { label: 1986, value: 1986 }, { label: 1987, value: 1987 }, { label: 1988, value: 1988 }, { label: 1989, value: 1989 }, { label: 1990, value: 1990 }, { label: 1991, value: 1991 }, { label: 1992, value: 1992 }, { label: 1993, value: 1993 }, { label: 1994, value: 1994 }, { label: 1995, value: 1995 }, { label: 1996, value: 1996 }, { label: 1997, value: 1997 }, { label: 1998, value: 1998 }, { label: 1999, value: 1999 }, { label: 2000, value: 2000 }, { label: 2001, value: 2001 }, { label: 2002, value: 2002 }, { label: 2003, value: 2003 }, { label: 2004, value: 2004 }, { label: 2005, value: 2005 }, { label: 2006, value: 2006 }, { label: 2007, value: 2007 }, { label: 2008, value: 2008 }, { label: 2009, value: 2009 }, { label: 2010, value: 2010 }, { label: 2011, value: 2011 }, { label: 2012, value: 2012 }, { label: 2013, value: 2013 }, { label: 2014, value: 2014 }, { label: 2015, value: 2015 }, { label: 2016, value: 2016 }];
+	exports.YEARS = [{ label: 2016, value: 2016 }, { label: 2015, value: 2015 }, { label: 2014, value: 2014 }, { label: 2013, value: 2013 }, { label: 2012, value: 2012 }, { label: 2011, value: 2011 }, { label: 2010, value: 2010 }, { label: 2009, value: 2009 }, { label: 2008, value: 2008 }, { label: 2007, value: 2007 }, { label: 2006, value: 2006 }, { label: 2005, value: 2005 }, { label: 2004, value: 2004 }, { label: 2003, value: 2003 }, { label: 2002, value: 2002 }, { label: 2001, value: 2001 }, { label: 2000, value: 2000 }, { label: 1999, value: 1999 }, { label: 1998, value: 1998 }, { label: 1997, value: 1997 }, { label: 1996, value: 1996 }, { label: 1995, value: 1995 }, { label: 1994, value: 1994 }, { label: 1993, value: 1993 }, { label: 1992, value: 1992 }, { label: 1991, value: 1991 }, { label: 1990, value: 1990 }, { label: 1989, value: 1989 }, { label: 1988, value: 1988 }, { label: 1987, value: 1987 }, { label: 1986, value: 1986 }, { label: 1985, value: 1985 }, { label: 1984, value: 1984 }, { label: 1983, value: 1983 }, { label: 1982, value: 1982 }, { label: 1981, value: 1981 }, { label: 1980, value: 1980 }, { label: 1979, value: 1979 }, { label: 1978, value: 1978 }, { label: 1977, value: 1977 }, { label: 1976, value: 1976 }, { label: 1975, value: 1975 }, { label: 1974, value: 1974 }, { label: 1973, value: 1973 }, { label: 1972, value: 1972 }, { label: 1971, value: 1971 }, { label: 1970, value: 1970 }, { label: 1969, value: 1969 }, { label: 1968, value: 1968 }, { label: 1967, value: 1967 }, { label: 1966, value: 1966 }, { label: 1965, value: 1965 }, { label: 1964, value: 1964 }, { label: 1963, value: 1963 }, { label: 1962, value: 1962 }, { label: 1961, value: 1961 }, { label: 1960, value: 1960 }, { label: 1959, value: 1959 }, { label: 1958, value: 1958 }, { label: 1957, value: 1957 }, { label: 1956, value: 1956 }, { label: 1955, value: 1955 }, { label: 1954, value: 1954 }, { label: 1953, value: 1953 }, { label: 1952, value: 1952 }, { label: 1951, value: 1951 }, { label: 1950, value: 1950 }, { label: 1949, value: 1949 }, { label: 1948, value: 1948 }, { label: 1947, value: 1947 }, { label: 1946, value: 1946 }, { label: 1945, value: 1945 }, { label: 1944, value: 1944 }, { label: 1943, value: 1943 }, { label: 1942, value: 1942 }, { label: 1941, value: 1941 }, { label: 1940, value: 1940 }, { label: 1939, value: 1939 }, { label: 1938, value: 1938 }, { label: 1937, value: 1937 }, { label: 1936, value: 1936 }, { label: 1935, value: 1935 }, { label: 1934, value: 1934 }, { label: 1933, value: 1933 }, { label: 1932, value: 1932 }, { label: 1931, value: 1931 }, { label: 1930, value: 1930 }, { label: 1929, value: 1929 }, { label: 1928, value: 1928 }, { label: 1927, value: 1927 }, { label: 1926, value: 1926 }, { label: 1925, value: 1925 }, { label: 1924, value: 1924 }, { label: 1923, value: 1923 }, { label: 1922, value: 1922 }, { label: 1921, value: 1921 }, { label: 1920, value: 1920 }, { label: 1919, value: 1919 }, { label: 1918, value: 1918 }, { label: 1917, value: 1917 }, { label: 1916, value: 1916 }, { label: 1915, value: 1915 }, { label: 1914, value: 1914 }, { label: 1913, value: 1913 }, { label: 1912, value: 1912 }, { label: 1911, value: 1911 }, { label: 1910, value: 1910 }, { label: 1909, value: 1909 }, { label: 1908, value: 1908 }, { label: 1907, value: 1907 }, { label: 1906, value: 1906 }, { label: 1905, value: 1905 }, { label: 1904, value: 1904 }, { label: 1903, value: 1903 }, { label: 1902, value: 1902 }, { label: 1901, value: 1901 }, { label: 1900, value: 1900 }];
 
 /***/ },
 /* 446 */
@@ -31671,7 +31666,7 @@
 
 
 	// module
-	exports.push([module.id, "#metroArea {\n  display: none; }\n\n.slideStart {\n  margin-top: 3em; }\n\n#lowerRange {\n  padding-left: 1.3em; }\n\n#upperRange {\n  padding-left: 0; }\n\n.col-xs-1 {\n  width: 5%;\n  margin-top: 25px; }\n\n.col-xs-4 {\n  width: 40%; }\n\n.input-group-addon div {\n  margin-right: 0.5em;\n  font-size: 1.5em; }\n\n.form-control {\n  color: #000; }\n\ninput[type=range] {\n  -webkit-appearance: none;\n  width: 100%;\n  background: transparent;\n  /* thumb section */\n  /* track section */ }\n  input[type=range]:focus {\n    outline: none; }\n  input[type=range]-webkit-slider {\n    -webkit-appearance: none; }\n  input[type=range]::-webkit-slider-thumb {\n    -webkit-appearance: none;\n    margin-top: -1em;\n    border: 1px solid #000;\n    border-radius: 0;\n    height: 2em;\n    width: 5em;\n    background: #000;\n    cursor: pointer; }\n  input[type=range]:focus::-webkit-slider-thumb {\n    background-color: #FFD700;\n    border: 4px solid black; }\n  input[type=range]::-moz-range-thumb {\n    border: 1px solid #000;\n    border-radius: 0;\n    height: 2em;\n    width: 5em;\n    background: #000;\n    cursor: pointer; }\n  input[type=range]::-ms-thumb {\n    border: 1px solid #000;\n    border-radius: 0;\n    height: 2em;\n    width: 5em;\n    background: #000;\n    cursor: pointer; }\n  input[type=range]::-webkit-slider-runnable-track {\n    width: 100%;\n    height: 5px;\n    cursor: pointer;\n    background: #000;\n    border: 2px solid #000;\n    border-radius: 0; }\n  input[type=range]::-moz-range-track {\n    width: 100%;\n    height: 5px;\n    cursor: pointer;\n    background: #000;\n    border: 2px solid #000;\n    border-radius: 0; }\n\n@font-face {\n  font-family: FoundersGrotesk;\n  src: url(\"/assets/fonts/FoundersGroteskWeb-Bold.eot\");\n  src: url(" + __webpack_require__(448) + ") format(\"woff\"), url(\"/assets/fonts/FoundersGroteskWeb-Bold.woff2\") format(\"woff2\");\n  font-weight: bold; }\n\n#root {\n  margin: 2em auto; }\n\nbody {\n  padding: 3em;\n  font-family: FoundersGrotesk;\n  font-weight: bold;\n  color: #000; }\n\n/* Main sizing things */\nh3 {\n  font-size: 2.5em; }\n\n.row {\n  margin-bottom: 3em; }\n\n.Select {\n  line-height: 5em; }\n\n.Select-placeholder, .Select-value-label {\n  font-size: 2em;\n  margin-top: 0.6em; }\n\n.Select-value {\n  margin-top: 1.5em; }\n\n/********************/\n.Select-placeholder, .Select--single > .Select-control .Select-value {\n  max-width: 90%;\n  color: #000; }\n\n.has-value.Select--single > .Select-control .Select-value .Select-value-label, .has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {\n  color: #000; }\n\n.Select-control, .input-group {\n  border-radius: 0;\n  border: 2px solid #000;\n  color: #000; }\n\n.Select-arrow {\n  border-color: #000 transparent transparent;\n  border-width: 10px 10px 0px;\n  margin-right: 1em; }\n\n.Select:focus {\n  outline: none; }\n\n.form-control, .input-group-addon {\n  border: 1px solid transparent;\n  -webkit-box-shadow: none;\n  box-shadow: none; }\n\n.input-group .form-control {\n  z-index: 0; }\n\n.input-group-addon {\n  background-color: #FFF;\n  color: #000; }\n\n.form-control:focus {\n  border: none !important;\n  box-shadow: none;\n  -webkit-box-shadow: none; }\n\n/* Smartphones (portrait and landscape) ----------- */\n", ""]);
+	exports.push([module.id, "#metroArea {\n  display: none; }\n\n.slideStart {\n  margin-top: 3em; }\n\n#lowerRange {\n  padding-left: 1.3em; }\n\n#upperRange {\n  padding-left: 0; }\n\n.col-xs-1 {\n  width: 5%;\n  margin-top: 25px; }\n\n.col-xs-4 {\n  width: 40%; }\n\n.input-group-addon div {\n  margin-right: 0.5em;\n  font-size: 1.5em; }\n\n.form-control {\n  color: #000; }\n\n.certificateBlock {\n  border: 20px solid #FFD700;\n  outline: 2px solid #000;\n  width: 100%;\n  height: 20em;\n  font-size: 3em; }\n\n.initial {\n  text-align: center;\n  padding: 2em; }\n\ninput[type=range] {\n  -webkit-appearance: none;\n  width: 100%;\n  background: transparent;\n  /* thumb section */\n  /* track section */ }\n  input[type=range]:focus {\n    outline: none; }\n  input[type=range]-webkit-slider {\n    -webkit-appearance: none; }\n  input[type=range]::-webkit-slider-thumb {\n    -webkit-appearance: none;\n    margin-top: -1em;\n    border: 1px solid #000;\n    border-radius: 0;\n    height: 2em;\n    width: 5em;\n    background: #000;\n    cursor: pointer; }\n  input[type=range]:focus::-webkit-slider-thumb {\n    background-color: #FFD700;\n    border: 4px solid black; }\n  input[type=range]::-moz-range-thumb {\n    border: 1px solid #000;\n    border-radius: 0;\n    height: 2em;\n    width: 5em;\n    background: #000;\n    cursor: pointer; }\n  input[type=range]::-ms-thumb {\n    border: 1px solid #000;\n    border-radius: 0;\n    height: 2em;\n    width: 5em;\n    background: #000;\n    cursor: pointer; }\n  input[type=range]::-webkit-slider-runnable-track {\n    width: 100%;\n    height: 5px;\n    cursor: pointer;\n    background: #000;\n    border: 2px solid #000;\n    border-radius: 0; }\n  input[type=range]::-moz-range-track {\n    width: 100%;\n    height: 5px;\n    cursor: pointer;\n    background: #000;\n    border: 2px solid #000;\n    border-radius: 0; }\n\n@font-face {\n  font-family: FoundersGrotesk;\n  src: url(\"/assets/fonts/FoundersGroteskWeb-Regular.eot\");\n  src: url(" + __webpack_require__(450) + ") format(\"woff\"), url(\"/assets/fonts/FoundersGroteskWeb-Regular.woff2\") format(\"woff2\");\n  font-weight: normal; }\n\n@font-face {\n  font-family: FoundersGrotesk;\n  src: url(\"/assets/fonts/FoundersGroteskWeb-Bold.eot\");\n  src: url(" + __webpack_require__(448) + ") format(\"woff\"), url(\"/assets/fonts/FoundersGroteskWeb-Bold.woff2\") format(\"woff2\");\n  font-weight: bold; }\n\n#root {\n  margin: 2em auto; }\n\nbody {\n  padding: 3em;\n  font-family: FoundersGrotesk;\n  font-weight: normal;\n  color: #000; }\n\n/* Main sizing things */\nh3 {\n  font-size: 2.5em;\n  font-weight: bold; }\n\n.row {\n  margin-bottom: 3em; }\n\n.Select {\n  line-height: 5em; }\n\n.Select-placeholder, .Select-value-label {\n  font-size: 2em;\n  margin-top: 0.6em; }\n\n.Select-value {\n  margin-top: 1.5em;\n  font-weight: bold; }\n\n/********************/\n.Select-placeholder, .Select--single > .Select-control .Select-value {\n  max-width: 90%;\n  color: #000; }\n\n.Select .is-open {\n  color: #FF0000;\n  font-size: 2em; }\n\n.has-value.Select--single > .Select-control .Select-value .Select-value-label, .has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {\n  color: #000; }\n\n.Select-control, .input-group {\n  border-radius: 0;\n  border: 2px solid #000;\n  color: #000; }\n\n.Select-arrow {\n  border-color: #000 transparent transparent;\n  border-width: 10px 10px 0px;\n  margin-right: 1em; }\n\n.Select:focus {\n  outline: none; }\n\n.form-control, .input-group-addon {\n  border: 1px solid transparent;\n  -webkit-box-shadow: none;\n  box-shadow: none; }\n\n.input-group .form-control {\n  z-index: 0; }\n\n.input-group-addon {\n  background-color: #FFF;\n  color: #000; }\n\n.form-control:focus {\n  border: none !important;\n  box-shadow: none;\n  -webkit-box-shadow: none; }\n\n/* Smartphones (portrait and landscape) ----------- */\n", ""]);
 
 	// exports
 
@@ -31689,6 +31684,67 @@
 	'use strict';
 
 	exports.MONTHS = [{ value: 'January', label: 'January' }, { value: 'February', label: 'February' }, { value: 'March', label: 'March' }, { value: 'April', label: 'April' }, { value: 'May', label: 'May' }, { value: 'June', label: 'June' }, { value: 'July', label: 'July' }, { value: 'August', label: 'August' }, { value: 'September', label: 'September' }, { value: 'October', label: 'October' }, { value: 'November', label: 'November' }, { value: 'December', label: 'December' }];
+
+/***/ },
+/* 450 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "src/app/assets/fonts/FoundersGroteskWeb-Regular.woff";
+
+/***/ },
+/* 451 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Output = function (_React$Component) {
+		_inherits(Output, _React$Component);
+
+		function Output(props) {
+			_classCallCheck(this, Output);
+
+			var _this = _possibleConstructorReturn(this, (Output.__proto__ || Object.getPrototypeOf(Output)).call(this, props));
+
+			_this.state = {
+				status: 'initial'
+			};
+			return _this;
+		}
+
+		_createClass(Output, [{
+			key: 'render',
+			value: function render() {
+
+				return _react2.default.createElement(
+					'div',
+					{ className: 'certificateBlock initial' },
+					'Fill out the the questions above to see your results'
+				);
+			}
+		}]);
+
+		return Output;
+	}(_react2.default.Component);
+
+	exports.default = Output;
 
 /***/ }
 /******/ ]);
