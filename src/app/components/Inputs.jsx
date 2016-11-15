@@ -18,13 +18,14 @@ class Inputs extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			job: '',
-			state: '',
-			area: '',
-			year: '',
-			month: '',
+			job: null,
+			state: null,
+			area: null,
+			year: null,
+			month: null,
 			salary_start:'34000',
-			salary_current:'48000'
+			salary_current:'48000',
+			status: 'initial'
 		};
 
 		this.sliderChange = this.sliderChange.bind(this);
@@ -44,7 +45,19 @@ class Inputs extends React.Component {
 		} else {
 			this.setState({salary_start: e.target.value});
 		}
+
+		// Maybe not the best but works for now.  Test more
+		if (this.state.job && this.state.salary_start !== '34000' && this.state.salary_current !== '48000') {
+			this.setState({status: 'ready'})
+		} 
+		else return;
 		
+	}
+
+	componentDidUpdate() {	
+		if (this.state.status === 'initial') {
+			this.setState({status: 'updated'});
+		}
 	}
 
 
@@ -54,6 +67,8 @@ class Inputs extends React.Component {
 	}
 
 	render() {
+
+
 
 		let metroOptions = null;
 
@@ -180,7 +195,16 @@ class Inputs extends React.Component {
 						</Col>
 					</Row>
 				</div>
-				<Output job={this.state.job} />
+				<Output 
+					job={this.state.job} 
+					state={this.state.state} 
+					area={this.state.area} 
+					year={this.state.year} 
+					month={this.state.month} 
+					salary_start={this.state.salary_start} 
+					salary_current={this.state.salary_current} 
+					status={this.state.status} 
+				/>
 			</div>
 			)
 	}

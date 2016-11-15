@@ -45,9 +45,49 @@ $accent: #FFD700;
 	width: 100%;
 	height: 20em;
 	font-size: 3em;
+	padding: 2em 1em;
 }
 
 .initial {
 	text-align: center;
 	padding: 2em;
 }
+
+#initialArrow {
+	height: 100%;
+	background-image: url('../assets/fonts/arrow.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: contain;
+	-moz-bacbkground-size: contain;
+	background-size: contain;
+}
+
+#initialText {
+	padding-right: 3em;
+	font-size: 1.2em;
+	text-align: left;
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	
+	#initialText {
+		padding-right: 0;
+		font-size: 1em;
+		color: red;
+	}
+
+	#initialArrow {
+		height: 60%;
+		margin-top: 2em;
+	}
+
+	.certificateBlock {
+		height: 15em;
+	}
+
+}
+
+

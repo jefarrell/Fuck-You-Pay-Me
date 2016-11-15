@@ -8,17 +8,17 @@ $accent: #FFD700;
 
 @font-face {
 	font-family: FoundersGrotesk;
-	src: url('/assets/fonts/FoundersGroteskWeb-Regular.eot');
+	src: url('../assets/fonts/FoundersGroteskWeb-Regular.eot');
 	src: url('../assets/fonts/FoundersGroteskWeb-Regular.woff') format('woff'),
-		url('/assets/fonts/FoundersGroteskWeb-Regular.woff2') format('woff2');
+		url('../assets/fonts/FoundersGroteskWeb-Regular.woff2') format('woff2');
 	font-weight: normal;
 }
 
 @font-face {
 	font-family: FoundersGrotesk;
-	src: url('/assets/fonts/FoundersGroteskWeb-Bold.eot');
+	src: url('../assets/fonts/FoundersGroteskWeb-Bold.eot');
 	src: url('../assets/fonts/FoundersGroteskWeb-Bold.woff') format('woff'),
-		url('/assets/fonts/FoundersGroteskWeb-Bold.woff2') format('woff2');
+		url('../assets/fonts/FoundersGroteskWeb-Bold.woff2') format('woff2');
 	font-weight: bold;
 }
 
