@@ -8,39 +8,58 @@ class Output extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			job: '',
+			job: '_____',
 			state: '',
-			area: '',
-			year: '',
-			month: '',
-			salary_start:'',
+			area: '_____',
 			salary_current:'',
 			status: 'initial'
 		};
 	}
 
-	componentWillUpdate(nextProps) {
-		if (this.state.status !== nextProps.status) {
-		this.setState({status: nextProps.status})
-	}
+	componentWillReceiveProps(nextProps) {
+		if (this.props !== nextProps) {
+			for (var property in nextProps) {
+				if (nextProps.hasOwnProperty(property)){
+					this.setState(nextProps);
+				}
+			}
 
+		} else return
 	}
 
 	render() {
-		var status = 'initial';
+
+		let status = 
+			<Col xs={12}>
+				<Col xs={6} id="initialArrow" className="initialBlock"></Col>
+				<Col xs={6} id="initialText" className="initialBlock">
+					<p>Fill out the the questions above to see your results</p>
+				</Col>
+			</Col>
 
 		if (this.state.status === 'updated') {
-			status = 'updated!'
+
+			status = 
+				<Col xs={12} className="updatedBlock">
+					<Col xs={12}>
+						<h1>YOUR EMPLOYER'S RESULTS</h1>
+					</Col>
+					<Col xs={12} className="updatedContent">
+						<p>{this.state.job} in the {this.state.area} area make an average
+						of _____ per year, according to the Bureau of Labor Statistics.</p>
+					</Col>
+					<Col xs={12} className="updatedContent">
+						<p> Fill out all questions to see your full results.</p>
+					</Col>
+				</Col>
+
 		} else if (this.state.status === 'ready') {
 			status = 'ready to roll'
 		}
-		console.log("status ", status)
+
 		return(
 			<Row className="certificateBlock">
-				<Col xs={6} id="initialArrow" className="initial"></Col>
-				<Col xs={6} id="initialText" className="initial">
-					<p>Fill out the the questions above to see your results</p>
-				</Col>
+				{status}
 			</Row>
 			)
 	}

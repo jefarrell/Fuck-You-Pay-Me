@@ -6,7 +6,6 @@ $accent: #FFD700;
 	display:none;
 }
 
-
 .slideStart {
 	margin-top: 3em;
 }
@@ -46,15 +45,14 @@ $accent: #FFD700;
 	height: 20em;
 	font-size: 3em;
 	padding: 2em 1em;
+	margin-left: 0;
 }
 
-.initial {
-	text-align: center;
-	padding: 2em;
-}
+
+/* Certificate Initial ----------- */
 
 #initialArrow {
-	height: 100%;
+	height: 10em;
 	background-image: url('../assets/fonts/arrow.svg');
 	background-repeat: no-repeat;
 	background-position: center;
@@ -69,25 +67,64 @@ $accent: #FFD700;
 	text-align: left;
 }
 
+/* Certificate Updated ----------- */
+
+.col-xs-12 {
+	h1 {
+		font-weight: bold;
+		text-align: center;
+		font-size: 1.8em;
+		margin-top: -0.5em;
+	}
+}
+
+.updatedBlock {
+	text-align: center;
+}
+
+.updatedContent {
+	margin-top: 1.5em;
+}
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
 	
 	#initialText {
 		padding-right: 0;
 		font-size: 1em;
-		color: red;
 	}
 
 	#initialArrow {
-		height: 60%;
-		margin-top: 2em;
+		//height: 60%;
+		//margin-top: 2em;
 	}
 
 	.certificateBlock {
 		height: 15em;
 	}
 
+	.col-xs-12 {
+		h1 {
+			font-size: 1.2em;
+		}
+	}
+	.updatedContent {
+		margin-top: 0.5em;
+		font-size: 0.9em;
+	}
 }
 
 
+/* iPad portrait ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+
+	#initialText {
+		padding-right: 0;
+		font-size: 1em;
+	}
+
+}

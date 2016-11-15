@@ -18,9 +18,9 @@ class Inputs extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			job: null,
+			job: '_____',
 			state: null,
-			area: null,
+			area: '_____',
 			year: null,
 			month: null,
 			salary_start:'34000',
@@ -67,8 +67,6 @@ class Inputs extends React.Component {
 	}
 
 	render() {
-
-
 
 		let metroOptions = null;
 
@@ -199,9 +197,6 @@ class Inputs extends React.Component {
 					job={this.state.job} 
 					state={this.state.state} 
 					area={this.state.area} 
-					year={this.state.year} 
-					month={this.state.month} 
-					salary_start={this.state.salary_start} 
 					salary_current={this.state.salary_current} 
 					status={this.state.status} 
 				/>

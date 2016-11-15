@@ -21558,9 +21558,9 @@
 			var _this = _possibleConstructorReturn(this, (Inputs.__proto__ || Object.getPrototypeOf(Inputs)).call(this, props));
 
 			_this.state = {
-				job: null,
+				job: '_____',
 				state: null,
-				area: null,
+				area: '_____',
 				year: null,
 				month: null,
 				salary_start: '34000',
@@ -21789,9 +21789,6 @@
 						job: this.state.job,
 						state: this.state.state,
 						area: this.state.area,
-						year: this.state.year,
-						month: this.state.month,
-						salary_start: this.state.salary_start,
 						salary_current: this.state.salary_current,
 						status: this.state.status
 					})
@@ -24165,12 +24162,9 @@
 			var _this = _possibleConstructorReturn(this, (Output.__proto__ || Object.getPrototypeOf(Output)).call(this, props));
 
 			_this.state = {
-				job: '',
+				job: '_____',
 				state: '',
-				area: '',
-				year: '',
-				month: '',
-				salary_start: '',
+				area: '_____',
 				salary_current: '',
 				status: 'initial'
 			};
@@ -24178,36 +24172,79 @@
 		}
 
 		_createClass(Output, [{
-			key: "componentWillUpdate",
-			value: function componentWillUpdate(nextProps) {
-				if (this.state.status !== nextProps.status) {
-					this.setState({ status: nextProps.status });
-				}
+			key: "componentWillReceiveProps",
+			value: function componentWillReceiveProps(nextProps) {
+				if (this.props !== nextProps) {
+					for (var property in nextProps) {
+						if (nextProps.hasOwnProperty(property)) {
+							this.setState(nextProps);
+						}
+					}
+				} else return;
 			}
 		}, {
 			key: "render",
 			value: function render() {
-				var status = 'initial';
 
-				if (this.state.status === 'updated') {
-					status = 'updated!';
-				} else if (this.state.status === 'ready') {
-					status = 'ready to roll';
-				}
-				console.log("status ", status);
-				return _react2.default.createElement(
-					_Row2.default,
-					{ className: "certificateBlock" },
-					_react2.default.createElement(_Col2.default, { xs: 6, id: "initialArrow", className: "initial" }),
+				var status = _react2.default.createElement(
+					_Col2.default,
+					{ xs: 12 },
+					_react2.default.createElement(_Col2.default, { xs: 6, id: "initialArrow", className: "initialBlock" }),
 					_react2.default.createElement(
 						_Col2.default,
-						{ xs: 6, id: "initialText", className: "initial" },
+						{ xs: 6, id: "initialText", className: "initialBlock" },
 						_react2.default.createElement(
 							"p",
 							null,
 							"Fill out the the questions above to see your results"
 						)
 					)
+				);
+
+				if (this.state.status === 'updated') {
+
+					status = _react2.default.createElement(
+						_Col2.default,
+						{ xs: 12, className: "updatedBlock" },
+						_react2.default.createElement(
+							_Col2.default,
+							{ xs: 12 },
+							_react2.default.createElement(
+								"h1",
+								null,
+								"YOUR EMPLOYER'S RESULTS"
+							)
+						),
+						_react2.default.createElement(
+							_Col2.default,
+							{ xs: 12, className: "updatedContent" },
+							_react2.default.createElement(
+								"p",
+								null,
+								this.state.job,
+								" in the ",
+								this.state.area,
+								" area make an average of _____ per year, according to the Bureau of Labor Statistics."
+							)
+						),
+						_react2.default.createElement(
+							_Col2.default,
+							{ xs: 12, className: "updatedContent" },
+							_react2.default.createElement(
+								"p",
+								null,
+								" Fill out all questions to see your full results."
+							)
+						)
+					);
+				} else if (this.state.status === 'ready') {
+					status = 'ready to roll';
+				}
+
+				return _react2.default.createElement(
+					_Row2.default,
+					{ className: "certificateBlock" },
+					status
 				);
 			}
 		}]);
@@ -31637,7 +31674,7 @@
 
 
 	// module
-	exports.push([module.id, "#metroArea {\n  display: none; }\n\n.slideStart {\n  margin-top: 3em; }\n\n#lowerRange {\n  padding-left: 1.3em; }\n\n#upperRange {\n  padding-left: 0; }\n\n.col-xs-1 {\n  width: 5%;\n  margin-top: 25px; }\n\n.col-xs-4 {\n  width: 40%; }\n\n.input-group-addon div {\n  margin-right: 0.5em;\n  font-size: 1.5em; }\n\n.form-control {\n  color: #000; }\n\n.certificateBlock {\n  border: 20px solid #FFD700;\n  outline: 2px solid #000;\n  width: 100%;\n  height: 20em;\n  font-size: 3em;\n  padding: 2em 1em; }\n\n.initial {\n  text-align: center;\n  padding: 2em; }\n\n#initialArrow {\n  height: 100%;\n  background-image: url(" + __webpack_require__(294) + ");\n  background-repeat: no-repeat;\n  background-position: center;\n  -webkit-background-size: contain;\n  -moz-bacbkground-size: contain;\n  background-size: contain; }\n\n#initialText {\n  padding-right: 3em;\n  font-size: 1.2em;\n  text-align: left; }\n\n/* Smartphones (portrait and landscape) ----------- */\n@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {\n  #initialText {\n    padding-right: 0;\n    font-size: 1em;\n    color: red; }\n  #initialArrow {\n    height: 60%;\n    margin-top: 2em; }\n  .certificateBlock {\n    height: 15em; } }\n\ninput[type=range] {\n  -webkit-appearance: none;\n  width: 100%;\n  background: transparent;\n  /* thumb section */\n  /* track section */ }\n  input[type=range]:focus {\n    outline: none; }\n  input[type=range]-webkit-slider {\n    -webkit-appearance: none; }\n  input[type=range]::-webkit-slider-thumb {\n    -webkit-appearance: none;\n    margin-top: -1em;\n    border: 1px solid #000;\n    border-radius: 0;\n    height: 2em;\n    width: 5em;\n    background: #000;\n    cursor: pointer; }\n  input[type=range]:focus::-webkit-slider-thumb {\n    background-color: #FFD700;\n    border: 4px solid black; }\n  input[type=range]::-moz-range-thumb {\n    border: 1px solid #000;\n    border-radius: 0;\n    height: 2em;\n    width: 5em;\n    background: #000;\n    cursor: pointer; }\n  input[type=range]::-ms-thumb {\n    border: 1px solid #000;\n    border-radius: 0;\n    height: 2em;\n    width: 5em;\n    background: #000;\n    cursor: pointer; }\n  input[type=range]::-webkit-slider-runnable-track {\n    width: 100%;\n    height: 5px;\n    cursor: pointer;\n    background: #000;\n    border: 2px solid #000;\n    border-radius: 0; }\n  input[type=range]::-moz-range-track {\n    width: 100%;\n    height: 5px;\n    cursor: pointer;\n    background: #000;\n    border: 2px solid #000;\n    border-radius: 0; }\n\n@font-face {\n  font-family: FoundersGrotesk;\n  src: url(" + __webpack_require__(295) + ");\n  src: url(" + __webpack_require__(296) + ") format(\"woff\"), url(" + __webpack_require__(297) + ") format(\"woff2\");\n  font-weight: normal; }\n\n@font-face {\n  font-family: FoundersGrotesk;\n  src: url(" + __webpack_require__(298) + ");\n  src: url(" + __webpack_require__(299) + ") format(\"woff\"), url(" + __webpack_require__(300) + ") format(\"woff2\");\n  font-weight: bold; }\n\n#root {\n  margin: 2em auto; }\n\nbody {\n  padding: 3em;\n  font-family: FoundersGrotesk;\n  font-weight: normal;\n  color: #000; }\n\n/* Main sizing things */\nh3 {\n  font-size: 2.5em;\n  font-weight: bold; }\n\n.row {\n  margin-bottom: 3em; }\n\n.Select {\n  line-height: 5em; }\n\n.Select-placeholder, .Select-value-label {\n  font-size: 2em;\n  margin-top: 0.6em; }\n\n.Select-value {\n  margin-top: 1.5em;\n  font-weight: bold; }\n\n/********************/\n.Select-placeholder, .Select--single > .Select-control .Select-value {\n  max-width: 90%;\n  color: #000; }\n\n.Select .is-open {\n  color: #FF0000;\n  font-size: 2em; }\n\n.has-value.Select--single > .Select-control .Select-value .Select-value-label, .has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {\n  color: #000; }\n\n.Select-control, .input-group {\n  border-radius: 0;\n  border: 2px solid #000;\n  color: #000; }\n\n.Select-arrow {\n  border-color: #000 transparent transparent;\n  border-width: 10px 10px 0px;\n  margin-right: 1em; }\n\n.Select:focus {\n  outline: none; }\n\n.form-control, .input-group-addon {\n  border: 1px solid transparent;\n  -webkit-box-shadow: none;\n  box-shadow: none; }\n\n.input-group .form-control {\n  z-index: 0; }\n\n.input-group-addon {\n  background-color: #FFF;\n  color: #000; }\n\n.form-control:focus {\n  border: none !important;\n  box-shadow: none;\n  -webkit-box-shadow: none; }\n\n/* Smartphones (portrait and landscape) ----------- */\n", ""]);
+	exports.push([module.id, "#metroArea {\n  display: none; }\n\n.slideStart {\n  margin-top: 3em; }\n\n#lowerRange {\n  padding-left: 1.3em; }\n\n#upperRange {\n  padding-left: 0; }\n\n.col-xs-1 {\n  width: 5%;\n  margin-top: 25px; }\n\n.col-xs-4 {\n  width: 40%; }\n\n.input-group-addon div {\n  margin-right: 0.5em;\n  font-size: 1.5em; }\n\n.form-control {\n  color: #000; }\n\n.certificateBlock {\n  border: 20px solid #FFD700;\n  outline: 2px solid #000;\n  width: 100%;\n  height: 20em;\n  font-size: 3em;\n  padding: 2em 1em;\n  margin-left: 0; }\n\n/* Certificate Initial ----------- */\n#initialArrow {\n  height: 10em;\n  background-image: url(" + __webpack_require__(294) + ");\n  background-repeat: no-repeat;\n  background-position: center;\n  -webkit-background-size: contain;\n  -moz-bacbkground-size: contain;\n  background-size: contain; }\n\n#initialText {\n  padding-right: 3em;\n  font-size: 1.2em;\n  text-align: left; }\n\n/* Certificate Updated ----------- */\n.col-xs-12 h1 {\n  font-weight: bold;\n  text-align: center;\n  font-size: 1.8em;\n  margin-top: -0.5em; }\n\n.updatedBlock {\n  text-align: center; }\n\n.updatedContent {\n  margin-top: 1.5em; }\n\n/* Smartphones (portrait and landscape) ----------- */\n@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {\n  #initialText {\n    padding-right: 0;\n    font-size: 1em; }\n  .certificateBlock {\n    height: 15em; }\n  .col-xs-12 h1 {\n    font-size: 1.2em; }\n  .updatedContent {\n    margin-top: 0.5em;\n    font-size: 0.9em; } }\n\n/* iPad portrait ----------- */\n@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {\n  #initialText {\n    padding-right: 0;\n    font-size: 1em; } }\n\ninput[type=range] {\n  -webkit-appearance: none;\n  width: 100%;\n  background: transparent;\n  /* thumb section */\n  /* track section */ }\n  input[type=range]:focus {\n    outline: none; }\n  input[type=range]-webkit-slider {\n    -webkit-appearance: none; }\n  input[type=range]::-webkit-slider-thumb {\n    -webkit-appearance: none;\n    margin-top: -1em;\n    border: 1px solid #000;\n    border-radius: 0;\n    height: 2em;\n    width: 5em;\n    background: #000;\n    cursor: pointer; }\n  input[type=range]:focus::-webkit-slider-thumb {\n    background-color: #FFD700;\n    border: 4px solid black; }\n  input[type=range]::-moz-range-thumb {\n    border: 1px solid #000;\n    border-radius: 0;\n    height: 2em;\n    width: 5em;\n    background: #000;\n    cursor: pointer; }\n  input[type=range]::-ms-thumb {\n    border: 1px solid #000;\n    border-radius: 0;\n    height: 2em;\n    width: 5em;\n    background: #000;\n    cursor: pointer; }\n  input[type=range]::-webkit-slider-runnable-track {\n    width: 100%;\n    height: 5px;\n    cursor: pointer;\n    background: #000;\n    border: 2px solid #000;\n    border-radius: 0; }\n  input[type=range]::-moz-range-track {\n    width: 100%;\n    height: 5px;\n    cursor: pointer;\n    background: #000;\n    border: 2px solid #000;\n    border-radius: 0; }\n\n@font-face {\n  font-family: FoundersGrotesk;\n  src: url(" + __webpack_require__(295) + ");\n  src: url(" + __webpack_require__(296) + ") format(\"woff\"), url(" + __webpack_require__(297) + ") format(\"woff2\");\n  font-weight: normal; }\n\n@font-face {\n  font-family: FoundersGrotesk;\n  src: url(" + __webpack_require__(298) + ");\n  src: url(" + __webpack_require__(299) + ") format(\"woff\"), url(" + __webpack_require__(300) + ") format(\"woff2\");\n  font-weight: bold; }\n\n#root {\n  margin: 2em auto; }\n\nbody {\n  padding: 3em;\n  font-family: FoundersGrotesk;\n  font-weight: normal;\n  color: #000; }\n\n/* Main sizing things */\nh3 {\n  font-size: 2.5em;\n  font-weight: bold; }\n\n.row {\n  margin-bottom: 3em; }\n\n.Select {\n  line-height: 5em; }\n\n.Select-placeholder, .Select-value-label {\n  font-size: 2em;\n  margin-top: 0.6em; }\n\n.Select-value {\n  margin-top: 1.5em;\n  font-weight: bold; }\n\n/********************/\n.Select-placeholder, .Select--single > .Select-control .Select-value {\n  max-width: 90%;\n  color: #000; }\n\n.Select .is-open {\n  color: #FF0000;\n  font-size: 2em; }\n\n.has-value.Select--single > .Select-control .Select-value .Select-value-label, .has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {\n  color: #000; }\n\n.Select-control, .input-group {\n  border-radius: 0;\n  border: 2px solid #000;\n  color: #000; }\n\n.Select-arrow {\n  border-color: #000 transparent transparent;\n  border-width: 10px 10px 0px;\n  margin-right: 1em; }\n\n.Select:focus {\n  outline: none; }\n\n.form-control, .input-group-addon {\n  border: 1px solid transparent;\n  -webkit-box-shadow: none;\n  box-shadow: none; }\n\n.input-group .form-control {\n  z-index: 0; }\n\n.input-group-addon {\n  background-color: #FFF;\n  color: #000; }\n\n.form-control:focus {\n  border: none !important;\n  box-shadow: none;\n  -webkit-box-shadow: none; }\n\n/* Smartphones (portrait and landscape) ----------- */\n", ""]);
 
 	// exports
 
