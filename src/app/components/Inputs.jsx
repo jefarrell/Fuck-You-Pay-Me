@@ -80,126 +80,130 @@ class Inputs extends React.Component {
 
 		return (
 			<div className="container-fluid">
-				<div className="inputBlock">
-					{/* Industry Block */}
-					<Row>
-						<Col xs={5}>
-							<h3 className="sectionHead"> Your Work </h3>
-						</Col>
-						<Col xs={7} className="selector">
-							<Select
-								name="form-field-name"
-								options={JOBS['titles']}
-								value={this.state.job}
-								clearable={false}
-								placeholder="Select job"
-								onChange={this.dropdownChange.bind(this, 'job')}
-							/>
-						</Col>
-					</Row>
+				<Col xs={12} md={4}>
+					<div className="inputBlock">
+						{/* Industry Block */}
+						<Row>
+							<Col xs={6}>
+								<h3 className="sectionHead"> Your Work </h3>
+							</Col>
+							<Col xs={6} className="selector">
+								<Select
+									name="form-field-name"
+									options={JOBS['titles']}
+									value={this.state.job}
+									clearable={false}
+									placeholder="Select job"
+									onChange={this.dropdownChange.bind(this, 'job')}
+								/>
+							</Col>
+						</Row>
 
-					{/* State Block */}
-					<Row>
-						<Col xs={5}>
-							<h3 className="sectionHead"> Where You Live </h3>
-						</Col>
-						<Col xs={7} className="selector">
-							<Select
-								name="form-field-name"
-								options={STATES['US']}
-								value={this.state.state}
-								clearable={false}
-								placeholder="Select state"
-								onChange={this.dropdownChange.bind(this, 'state')}
-							/>
-						</Col>
-					</Row>
+						{/* State Block */}
+						<Row>
+							<Col xs={6}>
+								<h3 className="sectionHead"> Where You Live </h3>
+							</Col>
+							<Col xs={6} className="selector">
+								<Select
+									name="form-field-name"
+									options={STATES['US']}
+									value={this.state.state}
+									clearable={false}
+									placeholder="Select state"
+									onChange={this.dropdownChange.bind(this, 'state')}
+								/>
+							</Col>
+						</Row>
 
-					{/* Area Block */}
-					<Row id="metroArea">
-						<Col xs={5}>
+						{/* Area Block */}
+						<Row id="metroArea">
+							<Col xs={5}>
 
-						</Col>
-						<Col xs={7} className="selector">
-							<Select
-								name="form-field-name"
-								options={metroOptions}
-								value={this.state.area}
-								clearable={false}
-								placeholder="Select area"
-								onChange={this.dropdownChange.bind(this, 'area')}
-							/>
-						</Col>
-					</Row>
+							</Col>
+							<Col xs={7} className="selector">
+								<Select
+									name="form-field-name"
+									options={metroOptions}
+									value={this.state.area}
+									clearable={false}
+									placeholder="Select area"
+									onChange={this.dropdownChange.bind(this, 'area')}
+								/>
+							</Col>
+						</Row>
 
-					{/* Date Block */}
-					<Row>
-						<Col xs={12} md={5}>
-							<h3 className="sectionHead"> When You Started Work </h3>
-						</Col>
-						<Col xs={5} md={3}className="selector">
-							<Select
-								name="form-field-name"
-								options={YEARS['YEARS']}
-								value={this.state.year}
-								clearable={false}
-								placeholder="Select Year"
-								onChange={this.dropdownChange.bind(this,'year')}
-							/>
-						</Col>						
-						<Col xs={7} md={4}className="selector">
-							<Select
-								name="form-field-name"
-								options={MONTHS['MONTHS']}
-								value={this.state.month}
-								clearable={false}
-								placeholder="Select Month"
-								onChange={this.dropdownChange.bind(this,'month')}
-							/>
-						</Col>						
-					</Row>
-					
-					{/* Salary Now Block*/}
-					<Row>
-						<Col md={5} xs={12}>
-							<h3 className="sectionHead"> Current Salary: ${currFormat}</h3>
-						</Col>
-						<Col md={7} xs={12} className="slideStart">
-							<input
-								id="sal_curr"
-								type="range"
-								min="0" max="200000"
-								value={this.state.salary_current}
-								onChange={this.sliderChange}
-								step="1000"
-							/>
-						</Col>
-					</Row>
+						{/* Date Block */}
+						<Row>
+							<Col xs={12}>
+								<h3 className="sectionHead"> When You Started Work </h3>
+							</Col>
+							<Col xs={6}className="selector">
+								<Select
+									name="form-field-name"
+									options={YEARS['YEARS']}
+									value={this.state.year}
+									clearable={false}
+									placeholder="Select Year"
+									onChange={this.dropdownChange.bind(this,'year')}
+								/>
+							</Col>						
+							<Col xs={6}className="selector">
+								<Select
+									name="form-field-name"
+									options={MONTHS['MONTHS']}
+									value={this.state.month}
+									clearable={false}
+									placeholder="Select Month"
+									onChange={this.dropdownChange.bind(this,'month')}
+								/>
+							</Col>						
+						</Row>
+						
+						{/* Salary Now Block*/}
+						<Row>
+							<Col xs={12}>
+								<h3 className="sectionHead"> Current Salary: ${currFormat}</h3>
+							</Col>
+							<Col xs={12} className="slideStart">
+								<input
+									id="sal_curr"
+									type="range"
+									min="0" max="200000"
+									value={this.state.salary_current}
+									onChange={this.sliderChange}
+									step="1000"
+								/>
+							</Col>
+						</Row>
 
-					{/* Salary Start Block */}
-					<Row>
-						<Col md={5} xs={12}>
-							<h3 className="sectionHead"> Starting Salary: ${startFormat}</h3>
-						</Col>
-						<Col md={7} xs={12}className="slideStart">
-							<input
-								id="sal_start"
-								type="range"
-								min="0" max="200000"
-								value={this.state.salary_start}
-								onChange={this.sliderChange}
-								step="1000"
-							/>
-						</Col>
-					</Row>
-				</div>
-				<Output 
-					job={this.state.job} 
-					state={this.state.state} 
-					area={this.state.area} 
-					salary_current={this.state.salary_current} 
-					status={this.state.status} 
-				/>
+						{/* Salary Start Block */}
+						<Row>
+							<Col xs={12}>
+								<h3 className="sectionHead"> Starting Salary: ${startFormat}</h3>
+							</Col>
+							<Col xs={12}className="slideStart">
+								<input
+									id="sal_start"
+									type="range"
+									min="0" max="200000"
+									value={this.state.salary_start}
+									onChange={this.sliderChange}
+									step="1000"
+								/>
+							</Col>
+						</Row>
+					</div>
+				</Col>
+				<Col xs={12} md={8}>
+					<Output 
+						job={this.state.job} 
+						state={this.state.state} 
+						area={this.state.area} 
+						salary_current={this.state.salary_current} 
+						status={this.state.status} 
+					/>
+				</Col>
 			</div>
 			)
 	}

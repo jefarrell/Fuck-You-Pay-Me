@@ -1,5 +1,6 @@
 @import 'FYPM';
 @import 'slider';
+@import 'mobile';
 
 $white: #FFF;
 $black: #000;
@@ -27,7 +28,7 @@ $accent: #FFD700;
 }
 
 body {
-	padding: 3em;
+	//padding: 3em;
 	font-family: FoundersGrotesk;
 	font-weight: normal;
 	color: $black;
@@ -36,26 +37,28 @@ body {
 
 /* Main sizing things */
 h3 {
-	font-size: 2.5em;
+	//font-size: 2.5em;
 	font-weight: bold;
+	margin-top: 10px;
+	// line-height: 1.5;
 }
 
 .row {
-	margin-bottom: 3em;
+	margin-bottom: 2em;
 }
 
 .Select {
-	line-height: 5em;
+	line-height: 3em;
 
 }
 
 .Select-placeholder, .Select-value-label {
-	font-size: 2em;
-	margin-top: 0.6em;
+	font-size: 1.5em;
+	margin-top: 0.1em;
 }
 
 .Select-value {
-	margin-top: 1.5em;
+	margin-top: 0.6em;
 	font-weight: bold;
 }
 

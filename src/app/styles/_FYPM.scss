@@ -2,6 +2,11 @@ $white: #FFF;
 $black: #000;
 $accent: #FFD700;
 
+.inputBlock {
+	font-size: 0.9em;
+}
+
+
 #metroArea {
 	display:none;
 }
@@ -38,11 +43,13 @@ $accent: #FFD700;
 	color: #000;
 }
 
+
+
 .certificateBlock {
 	border: 20px solid $accent;
 	outline: 2px solid $black;
 	width: 100%;
-	height: 20em;
+	height: 12em;
 	font-size: 3em;
 	padding: 2em 1em;
 	margin-left: 0;
@@ -52,7 +59,7 @@ $accent: #FFD700;
 /* Certificate Initial ----------- */
 
 #initialArrow {
-	height: 10em;
+	height: 8em;
 	background-image: url('../assets/fonts/arrow.svg');
 	background-repeat: no-repeat;
 	background-position: center;
@@ -62,10 +69,12 @@ $accent: #FFD700;
 }
 
 #initialText {
-	padding-right: 3em;
-	font-size: 1.2em;
+	// padding-right: 3em;
+	// font-size: 1.2em;
 	text-align: left;
+	margin-top: 2em;
 }
+
 
 /* Certificate Updated ----------- */
 
@@ -86,45 +95,15 @@ $accent: #FFD700;
 	margin-top: 1.5em;
 }
 
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-	
-	#initialText {
-		padding-right: 0;
-		font-size: 1em;
-	}
 
-	#initialArrow {
-		//height: 60%;
-		//margin-top: 2em;
-	}
+/* Certificate Ready ----------- */
 
-	.certificateBlock {
-		height: 15em;
-	}
-
-	.col-xs-12 {
-		h1 {
-			font-size: 1.2em;
-		}
-	}
-	.updatedContent {
-		margin-top: 0.5em;
-		font-size: 0.9em;
-	}
+#test {
+	background-color: $white;
 }
 
+// #readyHeader {
+// 	background-color: $accent;
+// 	color: $black;
+// }
 
-/* iPad portrait ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px)  { 
-
-	#initialText {
-		padding-right: 0;
-		font-size: 1em;
-	}
-
-}

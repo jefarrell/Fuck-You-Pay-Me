@@ -54,7 +54,24 @@ class Output extends React.Component {
 				</Col>
 
 		} else if (this.state.status === 'ready') {
-			status = 'ready to roll'
+
+			//$('.certificateBlock').css('background-color','#FFD700')
+
+			status =
+				<Col xs={12} className="readyBlock">
+					<Col xs={12} id="readyHeader">
+						<h1>NOTICE OF UNDERPAYMENT</h1>
+					</Col>
+					<Row id="test">
+						<Col xs={12} className="readyContent">
+							<p>{this.state.job} in the {this.state.area} area make an average
+							of _____ per year, according to the Bureau of Labor Statistics.</p>
+						</Col>
+						<Col xs={12} className="readyContent">
+							<p> Will undervaluing your employee pay off?</p>
+						</Col>
+					</Row>
+				</Col>
 		}
 
 		return(

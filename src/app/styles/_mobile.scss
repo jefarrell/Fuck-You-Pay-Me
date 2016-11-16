@@ -1,0 +1,80 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	
+	h3 {
+		font-size: 2.5em;
+	}
+	#initialText {
+		padding-right: 0;
+		font-size: 1em;
+	}
+
+	#initialArrow {
+		height: 10em;
+	}
+
+	.certificateBlock {
+		height: 15em;
+	}
+
+	.col-xs-12 {
+		h1 {
+			font-size: 1.2em;
+		}
+	}
+	.updatedContent {
+		margin-top: 0.5em;
+		font-size: 0.9em;
+	}
+
+	.Select {
+		line-height: 5em;
+
+	}
+
+	.Select-placeholder, .Select-value-label {
+		font-size: 2em;
+		margin-top: 0.6em;
+	}
+
+	.Select-value {
+		margin-top: 1.5em;
+		font-weight: bold;
+	}
+
+	/********************/
+
+	.Select-placeholder, .Select--single > .Select-control .Select-value {
+		max-width: 90%;
+		color: $black;
+	}
+
+	.Select {
+		.is-open {
+			color: #FF0000;
+			font-size:2em;
+		}
+		
+	}
+
+	
+}
+
+
+
+
+
+
+/* iPad portrait ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+
+	#initialText {
+		padding-right: 0;
+		font-size: 1em;
+	}
+
+}

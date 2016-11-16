@@ -21626,172 +21626,180 @@
 					'div',
 					{ className: 'container-fluid' },
 					_react2.default.createElement(
-						'div',
-						{ className: 'inputBlock' },
+						_Col2.default,
+						{ xs: 12, md: 4 },
 						_react2.default.createElement(
-							_Row2.default,
-							null,
+							'div',
+							{ className: 'inputBlock' },
 							_react2.default.createElement(
-								_Col2.default,
-								{ xs: 5 },
+								_Row2.default,
+								null,
 								_react2.default.createElement(
-									'h3',
-									{ className: 'sectionHead' },
-									' Your Work '
+									_Col2.default,
+									{ xs: 6 },
+									_react2.default.createElement(
+										'h3',
+										{ className: 'sectionHead' },
+										' Your Work '
+									)
+								),
+								_react2.default.createElement(
+									_Col2.default,
+									{ xs: 6, className: 'selector' },
+									_react2.default.createElement(_reactSelect2.default, {
+										name: 'form-field-name',
+										options: JOBS['titles'],
+										value: this.state.job,
+										clearable: false,
+										placeholder: 'Select job',
+										onChange: this.dropdownChange.bind(this, 'job')
+									})
 								)
 							),
 							_react2.default.createElement(
-								_Col2.default,
-								{ xs: 7, className: 'selector' },
-								_react2.default.createElement(_reactSelect2.default, {
-									name: 'form-field-name',
-									options: JOBS['titles'],
-									value: this.state.job,
-									clearable: false,
-									placeholder: 'Select job',
-									onChange: this.dropdownChange.bind(this, 'job')
-								})
-							)
-						),
-						_react2.default.createElement(
-							_Row2.default,
-							null,
-							_react2.default.createElement(
-								_Col2.default,
-								{ xs: 5 },
+								_Row2.default,
+								null,
 								_react2.default.createElement(
-									'h3',
-									{ className: 'sectionHead' },
-									' Where You Live '
+									_Col2.default,
+									{ xs: 6 },
+									_react2.default.createElement(
+										'h3',
+										{ className: 'sectionHead' },
+										' Where You Live '
+									)
+								),
+								_react2.default.createElement(
+									_Col2.default,
+									{ xs: 6, className: 'selector' },
+									_react2.default.createElement(_reactSelect2.default, {
+										name: 'form-field-name',
+										options: STATES['US'],
+										value: this.state.state,
+										clearable: false,
+										placeholder: 'Select state',
+										onChange: this.dropdownChange.bind(this, 'state')
+									})
 								)
 							),
 							_react2.default.createElement(
-								_Col2.default,
-								{ xs: 7, className: 'selector' },
-								_react2.default.createElement(_reactSelect2.default, {
-									name: 'form-field-name',
-									options: STATES['US'],
-									value: this.state.state,
-									clearable: false,
-									placeholder: 'Select state',
-									onChange: this.dropdownChange.bind(this, 'state')
-								})
-							)
-						),
-						_react2.default.createElement(
-							_Row2.default,
-							{ id: 'metroArea' },
-							_react2.default.createElement(_Col2.default, { xs: 5 }),
-							_react2.default.createElement(
-								_Col2.default,
-								{ xs: 7, className: 'selector' },
-								_react2.default.createElement(_reactSelect2.default, {
-									name: 'form-field-name',
-									options: metroOptions,
-									value: this.state.area,
-									clearable: false,
-									placeholder: 'Select area',
-									onChange: this.dropdownChange.bind(this, 'area')
-								})
-							)
-						),
-						_react2.default.createElement(
-							_Row2.default,
-							null,
-							_react2.default.createElement(
-								_Col2.default,
-								{ xs: 12, md: 5 },
+								_Row2.default,
+								{ id: 'metroArea' },
+								_react2.default.createElement(_Col2.default, { xs: 5 }),
 								_react2.default.createElement(
-									'h3',
-									{ className: 'sectionHead' },
-									' When You Started Work '
+									_Col2.default,
+									{ xs: 7, className: 'selector' },
+									_react2.default.createElement(_reactSelect2.default, {
+										name: 'form-field-name',
+										options: metroOptions,
+										value: this.state.area,
+										clearable: false,
+										placeholder: 'Select area',
+										onChange: this.dropdownChange.bind(this, 'area')
+									})
 								)
 							),
 							_react2.default.createElement(
-								_Col2.default,
-								{ xs: 5, md: 3, className: 'selector' },
-								_react2.default.createElement(_reactSelect2.default, {
-									name: 'form-field-name',
-									options: YEARS['YEARS'],
-									value: this.state.year,
-									clearable: false,
-									placeholder: 'Select Year',
-									onChange: this.dropdownChange.bind(this, 'year')
-								})
-							),
-							_react2.default.createElement(
-								_Col2.default,
-								{ xs: 7, md: 4, className: 'selector' },
-								_react2.default.createElement(_reactSelect2.default, {
-									name: 'form-field-name',
-									options: MONTHS['MONTHS'],
-									value: this.state.month,
-									clearable: false,
-									placeholder: 'Select Month',
-									onChange: this.dropdownChange.bind(this, 'month')
-								})
-							)
-						),
-						_react2.default.createElement(
-							_Row2.default,
-							null,
-							_react2.default.createElement(
-								_Col2.default,
-								{ md: 5, xs: 12 },
+								_Row2.default,
+								null,
 								_react2.default.createElement(
-									'h3',
-									{ className: 'sectionHead' },
-									' Current Salary: $',
-									currFormat
+									_Col2.default,
+									{ xs: 12 },
+									_react2.default.createElement(
+										'h3',
+										{ className: 'sectionHead' },
+										' When You Started Work '
+									)
+								),
+								_react2.default.createElement(
+									_Col2.default,
+									{ xs: 6, className: 'selector' },
+									_react2.default.createElement(_reactSelect2.default, {
+										name: 'form-field-name',
+										options: YEARS['YEARS'],
+										value: this.state.year,
+										clearable: false,
+										placeholder: 'Select Year',
+										onChange: this.dropdownChange.bind(this, 'year')
+									})
+								),
+								_react2.default.createElement(
+									_Col2.default,
+									{ xs: 6, className: 'selector' },
+									_react2.default.createElement(_reactSelect2.default, {
+										name: 'form-field-name',
+										options: MONTHS['MONTHS'],
+										value: this.state.month,
+										clearable: false,
+										placeholder: 'Select Month',
+										onChange: this.dropdownChange.bind(this, 'month')
+									})
 								)
 							),
 							_react2.default.createElement(
-								_Col2.default,
-								{ md: 7, xs: 12, className: 'slideStart' },
-								_react2.default.createElement('input', {
-									id: 'sal_curr',
-									type: 'range',
-									min: '0', max: '200000',
-									value: this.state.salary_current,
-									onChange: this.sliderChange,
-									step: '1000'
-								})
-							)
-						),
-						_react2.default.createElement(
-							_Row2.default,
-							null,
-							_react2.default.createElement(
-								_Col2.default,
-								{ md: 5, xs: 12 },
+								_Row2.default,
+								null,
 								_react2.default.createElement(
-									'h3',
-									{ className: 'sectionHead' },
-									' Starting Salary: $',
-									startFormat
+									_Col2.default,
+									{ xs: 12 },
+									_react2.default.createElement(
+										'h3',
+										{ className: 'sectionHead' },
+										' Current Salary: $',
+										currFormat
+									)
+								),
+								_react2.default.createElement(
+									_Col2.default,
+									{ xs: 12, className: 'slideStart' },
+									_react2.default.createElement('input', {
+										id: 'sal_curr',
+										type: 'range',
+										min: '0', max: '200000',
+										value: this.state.salary_current,
+										onChange: this.sliderChange,
+										step: '1000'
+									})
 								)
 							),
 							_react2.default.createElement(
-								_Col2.default,
-								{ md: 7, xs: 12, className: 'slideStart' },
-								_react2.default.createElement('input', {
-									id: 'sal_start',
-									type: 'range',
-									min: '0', max: '200000',
-									value: this.state.salary_start,
-									onChange: this.sliderChange,
-									step: '1000'
-								})
+								_Row2.default,
+								null,
+								_react2.default.createElement(
+									_Col2.default,
+									{ xs: 12 },
+									_react2.default.createElement(
+										'h3',
+										{ className: 'sectionHead' },
+										' Starting Salary: $',
+										startFormat
+									)
+								),
+								_react2.default.createElement(
+									_Col2.default,
+									{ xs: 12, className: 'slideStart' },
+									_react2.default.createElement('input', {
+										id: 'sal_start',
+										type: 'range',
+										min: '0', max: '200000',
+										value: this.state.salary_start,
+										onChange: this.sliderChange,
+										step: '1000'
+									})
+								)
 							)
 						)
 					),
-					_react2.default.createElement(_Output2.default, {
-						job: this.state.job,
-						state: this.state.state,
-						area: this.state.area,
-						salary_current: this.state.salary_current,
-						status: this.state.status
-					})
+					_react2.default.createElement(
+						_Col2.default,
+						{ xs: 12, md: 8 },
+						_react2.default.createElement(_Output2.default, {
+							job: this.state.job,
+							state: this.state.state,
+							area: this.state.area,
+							salary_current: this.state.salary_current,
+							status: this.state.status
+						})
+					)
 				);
 			}
 		}]);
@@ -24238,7 +24246,47 @@
 						)
 					);
 				} else if (this.state.status === 'ready') {
-					status = 'ready to roll';
+
+					//$('.certificateBlock').css('background-color','#FFD700')
+
+					status = _react2.default.createElement(
+						_Col2.default,
+						{ xs: 12, className: "readyBlock" },
+						_react2.default.createElement(
+							_Col2.default,
+							{ xs: 12, id: "readyHeader" },
+							_react2.default.createElement(
+								"h1",
+								null,
+								"NOTICE OF UNDERPAYMENT"
+							)
+						),
+						_react2.default.createElement(
+							_Row2.default,
+							{ id: "test" },
+							_react2.default.createElement(
+								_Col2.default,
+								{ xs: 12, className: "readyContent" },
+								_react2.default.createElement(
+									"p",
+									null,
+									this.state.job,
+									" in the ",
+									this.state.area,
+									" area make an average of _____ per year, according to the Bureau of Labor Statistics."
+								)
+							),
+							_react2.default.createElement(
+								_Col2.default,
+								{ xs: 12, className: "readyContent" },
+								_react2.default.createElement(
+									"p",
+									null,
+									" Will undervaluing your employee pay off?"
+								)
+							)
+						)
+					);
 				}
 
 				return _react2.default.createElement(
@@ -27292,2522 +27340,2453 @@
 /* 288 */
 /***/ function(module, exports) {
 
-	'use strict';
+	"use strict";
 
 	exports.titles = [{
-	  label: 'All Occupations',
-	  value: 'All Occupations'
+	  value: "Chief Executives",
+	  label: "Chief Executives"
 	}, {
-	  label: 'Management Occupations',
-	  value: 'Management Occupations'
+	  value: "General and Operations Managers",
+	  label: "General and Operations Managers"
 	}, {
-	  label: 'Chief Executives',
-	  value: 'Chief Executives'
+	  value: "Advertising and Promotions Managers",
+	  label: "Advertising and Promotions Managers"
 	}, {
-	  label: 'General and Operations Managers',
-	  value: 'General and Operations Managers'
+	  value: "Marketing Managers",
+	  label: "Marketing Managers"
 	}, {
-	  label: 'Advertising and Promotions Managers',
-	  value: 'Advertising and Promotions Managers'
+	  value: "Sales Managers",
+	  label: "Sales Managers"
 	}, {
-	  label: 'Marketing Managers',
-	  value: 'Marketing Managers'
+	  value: "Public Relations and Fundraising Managers",
+	  label: "Public Relations and Fundraising Managers"
 	}, {
-	  label: 'Sales Managers',
-	  value: 'Sales Managers'
+	  value: "Administrative Services Managers",
+	  label: "Administrative Services Managers"
 	}, {
-	  label: 'Public Relations and Fundraising Managers',
-	  value: 'Public Relations and Fundraising Managers'
+	  value: "Computer and Information Systems Managers",
+	  label: "Computer and Information Systems Managers"
 	}, {
-	  label: 'Administrative Services Managers',
-	  value: 'Administrative Services Managers'
+	  value: "Financial Managers",
+	  label: "Financial Managers"
 	}, {
-	  label: 'Computer and Information Systems Managers',
-	  value: 'Computer and Information Systems Managers'
+	  value: "Industrial Production Managers",
+	  label: "Industrial Production Managers"
 	}, {
-	  label: 'Financial Managers',
-	  value: 'Financial Managers'
+	  value: "Purchasing Managers",
+	  label: "Purchasing Managers"
 	}, {
-	  label: 'Industrial Production Managers',
-	  value: 'Industrial Production Managers'
+	  value: "Transportation, Storage, and Distribution Managers",
+	  label: "Transportation, Storage, and Distribution Managers"
 	}, {
-	  label: 'Purchasing Managers',
-	  value: 'Purchasing Managers'
+	  value: "Human Resources Managers",
+	  label: "Human Resources Managers"
 	}, {
-	  label: 'Transportation, Storage, and Distribution Managers',
-	  value: 'Transportation, Storage, and Distribution Managers'
+	  value: "Training and Development Managers",
+	  label: "Training and Development Managers"
 	}, {
-	  label: 'Human Resources Managers',
-	  value: 'Human Resources Managers'
+	  value: "Construction Managers",
+	  label: "Construction Managers"
 	}, {
-	  label: 'Training and Development Managers',
-	  value: 'Training and Development Managers'
+	  value: "Education Administrators, Preschool and Childcare Center/Program",
+	  label: "Education Administrators, Preschool and Childcare Center/Program"
 	}, {
-	  label: 'Construction Managers',
-	  value: 'Construction Managers'
+	  value: "Education Administrators, Elementary and Secondary School",
+	  label: "Education Administrators, Elementary and Secondary School"
 	}, {
-	  label: 'Education Administrators, Preschool and Childcare Center/Program',
-	  value: 'Education Administrators, Preschool and Childcare Center/Program'
+	  value: "Education Administrators, Postsecondary",
+	  label: "Education Administrators, Postsecondary"
 	}, {
-	  label: 'Education Administrators, Elementary and Secondary School',
-	  value: 'Education Administrators, Elementary and Secondary School'
+	  value: "Education Administrators, All Other",
+	  label: "Education Administrators, All Other"
 	}, {
-	  label: 'Education Administrators, Postsecondary',
-	  value: 'Education Administrators, Postsecondary'
+	  value: "Architectural and Engineering Managers",
+	  label: "Architectural and Engineering Managers"
 	}, {
-	  label: 'Education Administrators, All Other',
-	  value: 'Education Administrators, All Other'
+	  value: "Food Service Managers",
+	  label: "Food Service Managers"
 	}, {
-	  label: 'Architectural and Engineering Managers',
-	  value: 'Architectural and Engineering Managers'
+	  value: "Lodging Managers",
+	  label: "Lodging Managers"
 	}, {
-	  label: 'Food Service Managers',
-	  value: 'Food Service Managers'
+	  value: "Medical and Health Services Managers",
+	  label: "Medical and Health Services Managers"
 	}, {
-	  label: 'Lodging Managers',
-	  value: 'Lodging Managers'
+	  value: "Natural Sciences Managers",
+	  label: "Natural Sciences Managers"
 	}, {
-	  label: 'Medical and Health Services Managers',
-	  value: 'Medical and Health Services Managers'
+	  value: "Property, Real Estate, and Community Association Managers",
+	  label: "Property, Real Estate, and Community Association Managers"
 	}, {
-	  label: 'Natural Sciences Managers',
-	  value: 'Natural Sciences Managers'
+	  value: "Social and Community Service Managers",
+	  label: "Social and Community Service Managers"
 	}, {
-	  label: 'Property, Real Estate, and Community Association Managers',
-	  value: 'Property, Real Estate, and Community Association Managers'
+	  value: "Emergency Management Directors",
+	  label: "Emergency Management Directors"
 	}, {
-	  label: 'Social and Community Service Managers',
-	  value: 'Social and Community Service Managers'
+	  value: "Managers, All Other",
+	  label: "Managers, All Other"
 	}, {
-	  label: 'Emergency Management Directors',
-	  value: 'Emergency Management Directors'
+	  value: "Wholesale and Retail Buyers, Except Farm Products",
+	  label: "Wholesale and Retail Buyers, Except Farm Products"
 	}, {
-	  label: 'Managers, All Other',
-	  value: 'Managers, All Other'
+	  value: "Purchasing Agents, Except Wholesale, Retail, and Farm Products",
+	  label: "Purchasing Agents, Except Wholesale, Retail, and Farm Products"
 	}, {
-	  label: 'Business and Financial Operations Occupations',
-	  value: 'Business and Financial Operations Occupations'
+	  value: "Claims Adjusters, Examiners, and Investigators",
+	  label: "Claims Adjusters, Examiners, and Investigators"
 	}, {
-	  label: 'Wholesale and Retail Buyers, Except Farm Products',
-	  value: 'Wholesale and Retail Buyers, Except Farm Products'
+	  value: "Compliance Officers",
+	  label: "Compliance Officers"
 	}, {
-	  label: 'Purchasing Agents, Except Wholesale, Retail, and Farm Products',
-	  value: 'Purchasing Agents, Except Wholesale, Retail, and Farm Products'
+	  value: "Cost Estimators",
+	  label: "Cost Estimators"
 	}, {
-	  label: 'Claims Adjusters, Examiners, and Investigators',
-	  value: 'Claims Adjusters, Examiners, and Investigators'
+	  value: "Human Resources Specialists",
+	  label: "Human Resources Specialists"
 	}, {
-	  label: 'Compliance Officers',
-	  value: 'Compliance Officers'
+	  value: "Labor Relations Specialists",
+	  label: "Labor Relations Specialists"
 	}, {
-	  label: 'Cost Estimators',
-	  value: 'Cost Estimators'
+	  value: "Logisticians",
+	  label: "Logisticians"
 	}, {
-	  label: 'Human Resources Specialists',
-	  value: 'Human Resources Specialists'
+	  value: "Management Analysts",
+	  label: "Management Analysts"
 	}, {
-	  label: 'Labor Relations Specialists',
-	  value: 'Labor Relations Specialists'
+	  value: "Meeting, Convention, and Event Planners",
+	  label: "Meeting, Convention, and Event Planners"
 	}, {
-	  label: 'Logisticians',
-	  value: 'Logisticians'
+	  value: "Fundraisers",
+	  label: "Fundraisers"
 	}, {
-	  label: 'Management Analysts',
-	  value: 'Management Analysts'
+	  value: "Compensation, Benefits, and Job Analysis Specialists",
+	  label: "Compensation, Benefits, and Job Analysis Specialists"
 	}, {
-	  label: 'Meeting, Convention, and Event Planners',
-	  value: 'Meeting, Convention, and Event Planners'
+	  value: "Training and Development Specialists",
+	  label: "Training and Development Specialists"
 	}, {
-	  label: 'Fundraisers',
-	  value: 'Fundraisers'
+	  value: "Market Research Analysts and Marketing Specialists",
+	  label: "Market Research Analysts and Marketing Specialists"
 	}, {
-	  label: 'Compensation, Benefits, and Job Analysis Specialists',
-	  value: 'Compensation, Benefits, and Job Analysis Specialists'
+	  value: "Business Operations Specialists, All Other",
+	  label: "Business Operations Specialists, All Other"
 	}, {
-	  label: 'Training and Development Specialists',
-	  value: 'Training and Development Specialists'
+	  value: "Accountants and Auditors",
+	  label: "Accountants and Auditors"
 	}, {
-	  label: 'Market Research Analysts and Marketing Specialists',
-	  value: 'Market Research Analysts and Marketing Specialists'
+	  value: "Appraisers and Assessors of Real Estate",
+	  label: "Appraisers and Assessors of Real Estate"
 	}, {
-	  label: 'Business Operations Specialists, All Other',
-	  value: 'Business Operations Specialists, All Other'
+	  value: "Budget Analysts",
+	  label: "Budget Analysts"
 	}, {
-	  label: 'Accountants and Auditors',
-	  value: 'Accountants and Auditors'
+	  value: "Financial Analysts",
+	  label: "Financial Analysts"
 	}, {
-	  label: 'Appraisers and Assessors of Real Estate',
-	  value: 'Appraisers and Assessors of Real Estate'
+	  value: "Personal Financial Advisors",
+	  label: "Personal Financial Advisors"
 	}, {
-	  label: 'Budget Analysts',
-	  value: 'Budget Analysts'
+	  value: "Insurance Underwriters",
+	  label: "Insurance Underwriters"
 	}, {
-	  label: 'Financial Analysts',
-	  value: 'Financial Analysts'
+	  value: "Financial Examiners",
+	  label: "Financial Examiners"
 	}, {
-	  label: 'Personal Financial Advisors',
-	  value: 'Personal Financial Advisors'
+	  value: "Loan Officers",
+	  label: "Loan Officers"
 	}, {
-	  label: 'Insurance Underwriters',
-	  value: 'Insurance Underwriters'
+	  value: "Tax Examiners and Collectors, and Revenue Agents",
+	  label: "Tax Examiners and Collectors, and Revenue Agents"
 	}, {
-	  label: 'Financial Examiners',
-	  value: 'Financial Examiners'
+	  value: "Tax Preparers",
+	  label: "Tax Preparers"
 	}, {
-	  label: 'Loan Officers',
-	  value: 'Loan Officers'
+	  value: "Financial Specialists, All Other",
+	  label: "Financial Specialists, All Other"
 	}, {
-	  label: 'Tax Examiners and Collectors, and Revenue Agents',
-	  value: 'Tax Examiners and Collectors, and Revenue Agents'
+	  value: "Computer Systems Analysts",
+	  label: "Computer Systems Analysts"
 	}, {
-	  label: 'Tax Preparers',
-	  value: 'Tax Preparers'
+	  value: "Information Security Analysts",
+	  label: "Information Security Analysts"
 	}, {
-	  label: 'Financial Specialists, All Other',
-	  value: 'Financial Specialists, All Other'
+	  value: "Computer Programmers",
+	  label: "Computer Programmers"
 	}, {
-	  label: 'Computer and Mathematical Occupations',
-	  value: 'Computer and Mathematical Occupations'
+	  value: "Software Developers, Applications",
+	  label: "Software Developers, Applications"
 	}, {
-	  label: 'Computer Systems Analysts',
-	  value: 'Computer Systems Analysts'
+	  value: "Software Developers, Systems Software",
+	  label: "Software Developers, Systems Software"
 	}, {
-	  label: 'Information Security Analysts',
-	  value: 'Information Security Analysts'
+	  value: "Web Developers",
+	  label: "Web Developers"
 	}, {
-	  label: 'Computer Programmers',
-	  value: 'Computer Programmers'
+	  value: "Database Administrators",
+	  label: "Database Administrators"
 	}, {
-	  label: 'Software Developers, Applications',
-	  value: 'Software Developers, Applications'
+	  value: "Network and Computer Systems Administrators",
+	  label: "Network and Computer Systems Administrators"
 	}, {
-	  label: 'Software Developers, Systems Software',
-	  value: 'Software Developers, Systems Software'
+	  value: "Computer Network Architects",
+	  label: "Computer Network Architects"
 	}, {
-	  label: 'Web Developers',
-	  value: 'Web Developers'
+	  value: "Computer User Support Specialists",
+	  label: "Computer User Support Specialists"
 	}, {
-	  label: 'Database Administrators',
-	  value: 'Database Administrators'
+	  value: "Computer Network Support Specialists",
+	  label: "Computer Network Support Specialists"
 	}, {
-	  label: 'Network and Computer Systems Administrators',
-	  value: 'Network and Computer Systems Administrators'
+	  value: "Computer Occupations, All Other",
+	  label: "Computer Occupations, All Other"
 	}, {
-	  label: 'Computer Network Architects',
-	  value: 'Computer Network Architects'
+	  value: "Operations Research Analysts",
+	  label: "Operations Research Analysts"
 	}, {
-	  label: 'Computer User Support Specialists',
-	  value: 'Computer User Support Specialists'
+	  value: "Architects, Except Landscape and Naval",
+	  label: "Architects, Except Landscape and Naval"
 	}, {
-	  label: 'Computer Network Support Specialists',
-	  value: 'Computer Network Support Specialists'
+	  value: "Cartographers and Photogrammetrists",
+	  label: "Cartographers and Photogrammetrists"
 	}, {
-	  label: 'Computer Occupations, All Other',
-	  value: 'Computer Occupations, All Other'
+	  value: "Surveyors",
+	  label: "Surveyors"
 	}, {
-	  label: 'Operations Research Analysts',
-	  value: 'Operations Research Analysts'
+	  value: "Chemical Engineers",
+	  label: "Chemical Engineers"
 	}, {
-	  label: 'Architecture and Engineering Occupations',
-	  value: 'Architecture and Engineering Occupations'
+	  value: "Civil Engineers",
+	  label: "Civil Engineers"
 	}, {
-	  label: 'Architects, Except Landscape and Naval',
-	  value: 'Architects, Except Landscape and Naval'
+	  value: "Computer Hardware Engineers",
+	  label: "Computer Hardware Engineers"
 	}, {
-	  label: 'Cartographers and Photogrammetrists',
-	  value: 'Cartographers and Photogrammetrists'
+	  value: "Electrical Engineers",
+	  label: "Electrical Engineers"
 	}, {
-	  label: 'Surveyors',
-	  value: 'Surveyors'
+	  value: "Electronics Engineers, Except Computer",
+	  label: "Electronics Engineers, Except Computer"
 	}, {
-	  label: 'Chemical Engineers',
-	  value: 'Chemical Engineers'
+	  value: "Environmental Engineers",
+	  label: "Environmental Engineers"
 	}, {
-	  label: 'Civil Engineers',
-	  value: 'Civil Engineers'
+	  value: "Health and Safety Engineers, Except Mining Safety Engineers and Inspectors",
+	  label: "Health and Safety Engineers, Except Mining Safety Engineers and Inspectors"
 	}, {
-	  label: 'Computer Hardware Engineers',
-	  value: 'Computer Hardware Engineers'
+	  value: "Industrial Engineers",
+	  label: "Industrial Engineers"
 	}, {
-	  label: 'Electrical Engineers',
-	  value: 'Electrical Engineers'
+	  value: "Mechanical Engineers",
+	  label: "Mechanical Engineers"
 	}, {
-	  label: 'Electronics Engineers, Except Computer',
-	  value: 'Electronics Engineers, Except Computer'
+	  value: "Mining and Geological Engineers, Including Mining Safety Engineers",
+	  label: "Mining and Geological Engineers, Including Mining Safety Engineers"
 	}, {
-	  label: 'Environmental Engineers',
-	  value: 'Environmental Engineers'
+	  value: "Petroleum Engineers",
+	  label: "Petroleum Engineers"
 	}, {
-	  label: 'Health and Safety Engineers, Except Mining Safety Engineers and Inspectors',
-	  value: 'Health and Safety Engineers, Except Mining Safety Engineers and Inspectors'
+	  value: "Engineers, All Other",
+	  label: "Engineers, All Other"
 	}, {
-	  label: 'Industrial Engineers',
-	  value: 'Industrial Engineers'
+	  value: "Architectural and Civil Drafters",
+	  label: "Architectural and Civil Drafters"
 	}, {
-	  label: 'Mechanical Engineers',
-	  value: 'Mechanical Engineers'
+	  value: "Electrical and Electronics Drafters",
+	  label: "Electrical and Electronics Drafters"
 	}, {
-	  label: 'Mining and Geological Engineers, Including Mining Safety Engineers',
-	  value: 'Mining and Geological Engineers, Including Mining Safety Engineers'
+	  value: "Drafters, All Other",
+	  label: "Drafters, All Other"
 	}, {
-	  label: 'Petroleum Engineers',
-	  value: 'Petroleum Engineers'
+	  value: "Civil Engineering Technicians",
+	  label: "Civil Engineering Technicians"
 	}, {
-	  label: 'Engineers, All Other',
-	  value: 'Engineers, All Other'
+	  value: "Electrical and Electronics Engineering Technicians",
+	  label: "Electrical and Electronics Engineering Technicians"
 	}, {
-	  label: 'Architectural and Civil Drafters',
-	  value: 'Architectural and Civil Drafters'
+	  value: "Environmental Engineering Technicians",
+	  label: "Environmental Engineering Technicians"
 	}, {
-	  label: 'Electrical and Electronics Drafters',
-	  value: 'Electrical and Electronics Drafters'
+	  value: "Mechanical Engineering Technicians",
+	  label: "Mechanical Engineering Technicians"
 	}, {
-	  label: 'Drafters, All Other',
-	  value: 'Drafters, All Other'
+	  value: "Engineering Technicians, Except Drafters, All Other",
+	  label: "Engineering Technicians, Except Drafters, All Other"
 	}, {
-	  label: 'Civil Engineering Technicians',
-	  value: 'Civil Engineering Technicians'
+	  value: "Surveying and Mapping Technicians",
+	  label: "Surveying and Mapping Technicians"
 	}, {
-	  label: 'Electrical and Electronics Engineering Technicians',
-	  value: 'Electrical and Electronics Engineering Technicians'
+	  value: "Zoologists and Wildlife Biologists",
+	  label: "Zoologists and Wildlife Biologists"
 	}, {
-	  label: 'Environmental Engineering Technicians',
-	  value: 'Environmental Engineering Technicians'
+	  value: "Biological Scientists, All Other",
+	  label: "Biological Scientists, All Other"
 	}, {
-	  label: 'Mechanical Engineering Technicians',
-	  value: 'Mechanical Engineering Technicians'
+	  value: "Conservation Scientists",
+	  label: "Conservation Scientists"
 	}, {
-	  label: 'Engineering Technicians, Except Drafters, All Other',
-	  value: 'Engineering Technicians, Except Drafters, All Other'
+	  value: "Life Scientists, All Other",
+	  label: "Life Scientists, All Other"
 	}, {
-	  label: 'Surveying and Mapping Technicians',
-	  value: 'Surveying and Mapping Technicians'
+	  value: "Atmospheric and Space Scientists",
+	  label: "Atmospheric and Space Scientists"
 	}, {
-	  label: 'Life, Physical, and Social Science Occupations',
-	  value: 'Life, Physical, and Social Science Occupations'
+	  value: "Chemists",
+	  label: "Chemists"
 	}, {
-	  label: 'Zoologists and Wildlife Biologists',
-	  value: 'Zoologists and Wildlife Biologists'
+	  value: "Environmental Scientists and Specialists, Including Health",
+	  label: "Environmental Scientists and Specialists, Including Health"
 	}, {
-	  label: 'Biological Scientists, All Other',
-	  value: 'Biological Scientists, All Other'
+	  value: "Geoscientists, Except Hydrologists and Geographers",
+	  label: "Geoscientists, Except Hydrologists and Geographers"
 	}, {
-	  label: 'Conservation Scientists',
-	  value: 'Conservation Scientists'
+	  value: "Hydrologists",
+	  label: "Hydrologists"
 	}, {
-	  label: 'Life Scientists, All Other',
-	  value: 'Life Scientists, All Other'
+	  value: "Physical Scientists, All Other",
+	  label: "Physical Scientists, All Other"
 	}, {
-	  label: 'Atmospheric and Space Scientists',
-	  value: 'Atmospheric and Space Scientists'
+	  value: "Clinical, Counseling, and School Psychologists",
+	  label: "Clinical, Counseling, and School Psychologists"
 	}, {
-	  label: 'Chemists',
-	  value: 'Chemists'
+	  value: "Psychologists, All Other",
+	  label: "Psychologists, All Other"
 	}, {
-	  label: 'Environmental Scientists and Specialists, Including Health',
-	  value: 'Environmental Scientists and Specialists, Including Health'
+	  value: "Urban and Regional Planners",
+	  label: "Urban and Regional Planners"
 	}, {
-	  label: 'Geoscientists, Except Hydrologists and Geographers',
-	  value: 'Geoscientists, Except Hydrologists and Geographers'
+	  value: "Anthropologists and Archeologists",
+	  label: "Anthropologists and Archeologists"
 	}, {
-	  label: 'Hydrologists',
-	  value: 'Hydrologists'
+	  value: "Social Scientists and Related Workers, All Other",
+	  label: "Social Scientists and Related Workers, All Other"
 	}, {
-	  label: 'Physical Scientists, All Other',
-	  value: 'Physical Scientists, All Other'
+	  value: "Biological Technicians",
+	  label: "Biological Technicians"
 	}, {
-	  label: 'Clinical, Counseling, and School Psychologists',
-	  value: 'Clinical, Counseling, and School Psychologists'
+	  value: "Geological and Petroleum Technicians",
+	  label: "Geological and Petroleum Technicians"
 	}, {
-	  label: 'Psychologists, All Other',
-	  value: 'Psychologists, All Other'
+	  value: "Environmental Science and Protection Technicians, Including Health",
+	  label: "Environmental Science and Protection Technicians, Including Health"
 	}, {
-	  label: 'Urban and Regional Planners',
-	  value: 'Urban and Regional Planners'
+	  value: "Forest and Conservation Technicians",
+	  label: "Forest and Conservation Technicians"
 	}, {
-	  label: 'Anthropologists and Archeologists',
-	  value: 'Anthropologists and Archeologists'
+	  value: "Life, Physical, and Social Science Technicians, All Other",
+	  label: "Life, Physical, and Social Science Technicians, All Other"
 	}, {
-	  label: 'Social Scientists and Related Workers, All Other',
-	  value: 'Social Scientists and Related Workers, All Other'
+	  value: "Substance Abuse and Behavioral Disorder Counselors",
+	  label: "Substance Abuse and Behavioral Disorder Counselors"
 	}, {
-	  label: 'Biological Technicians',
-	  value: 'Biological Technicians'
+	  value: "Educational, Guidance, School, and Vocational Counselors",
+	  label: "Educational, Guidance, School, and Vocational Counselors"
 	}, {
-	  label: 'Geological and Petroleum Technicians',
-	  value: 'Geological and Petroleum Technicians'
+	  value: "Mental Health Counselors",
+	  label: "Mental Health Counselors"
 	}, {
-	  label: 'Environmental Science and Protection Technicians, Including Health',
-	  value: 'Environmental Science and Protection Technicians, Including Health'
+	  value: "Rehabilitation Counselors",
+	  label: "Rehabilitation Counselors"
 	}, {
-	  label: 'Forest and Conservation Technicians',
-	  value: 'Forest and Conservation Technicians'
+	  value: "Counselors, All Other",
+	  label: "Counselors, All Other"
 	}, {
-	  label: 'Life, Physical, and Social Science Technicians, All Other',
-	  value: 'Life, Physical, and Social Science Technicians, All Other'
+	  value: "Child, Family, and School Social Workers",
+	  label: "Child, Family, and School Social Workers"
 	}, {
-	  label: 'Community and Social Service Occupations',
-	  value: 'Community and Social Service Occupations'
+	  value: "Healthcare Social Workers",
+	  label: "Healthcare Social Workers"
 	}, {
-	  label: 'Substance Abuse and Behavioral Disorder Counselors',
-	  value: 'Substance Abuse and Behavioral Disorder Counselors'
+	  value: "Mental Health and Substance Abuse Social Workers",
+	  label: "Mental Health and Substance Abuse Social Workers"
 	}, {
-	  label: 'Educational, Guidance, School, and Vocational Counselors',
-	  value: 'Educational, Guidance, School, and Vocational Counselors'
+	  value: "Social Workers, All Other",
+	  label: "Social Workers, All Other"
 	}, {
-	  label: 'Mental Health Counselors',
-	  value: 'Mental Health Counselors'
+	  value: "Health Educators",
+	  label: "Health Educators"
 	}, {
-	  label: 'Rehabilitation Counselors',
-	  value: 'Rehabilitation Counselors'
+	  value: "Probation Officers and Correctional Treatment Specialists",
+	  label: "Probation Officers and Correctional Treatment Specialists"
 	}, {
-	  label: 'Counselors, All Other',
-	  value: 'Counselors, All Other'
+	  value: "Social and Human Service Assistants",
+	  label: "Social and Human Service Assistants"
 	}, {
-	  label: 'Child, Family, and School Social Workers',
-	  value: 'Child, Family, and School Social Workers'
+	  value: "Community Health Workers",
+	  label: "Community Health Workers"
 	}, {
-	  label: 'Healthcare Social Workers',
-	  value: 'Healthcare Social Workers'
+	  value: "Community and Social Service Specialists, All Other",
+	  label: "Community and Social Service Specialists, All Other"
 	}, {
-	  label: 'Mental Health and Substance Abuse Social Workers',
-	  value: 'Mental Health and Substance Abuse Social Workers'
+	  value: "Clergy",
+	  label: "Clergy"
 	}, {
-	  label: 'Social Workers, All Other',
-	  value: 'Social Workers, All Other'
+	  value: "Lawyers",
+	  label: "Lawyers"
 	}, {
-	  label: 'Health Educators',
-	  value: 'Health Educators'
+	  value: "Paralegals and Legal Assistants",
+	  label: "Paralegals and Legal Assistants"
 	}, {
-	  label: 'Probation Officers and Correctional Treatment Specialists',
-	  value: 'Probation Officers and Correctional Treatment Specialists'
+	  value: "Title Examiners, Abstractors, and Searchers",
+	  label: "Title Examiners, Abstractors, and Searchers"
 	}, {
-	  label: 'Social and Human Service Assistants',
-	  value: 'Social and Human Service Assistants'
+	  value: "Business Teachers, Postsecondary",
+	  label: "Business Teachers, Postsecondary"
 	}, {
-	  label: 'Community Health Workers',
-	  value: 'Community Health Workers'
+	  value: "Criminal Justice and Law Enforcement Teachers, Postsecondary",
+	  label: "Criminal Justice and Law Enforcement Teachers, Postsecondary"
 	}, {
-	  label: 'Community and Social Service Specialists, All Other',
-	  value: 'Community and Social Service Specialists, All Other'
+	  value: "Vocational Education Teachers, Postsecondary",
+	  label: "Vocational Education Teachers, Postsecondary"
 	}, {
-	  label: 'Clergy',
-	  value: 'Clergy'
+	  value: "Postsecondary Teachers, All Other",
+	  label: "Postsecondary Teachers, All Other"
 	}, {
-	  label: 'Legal Occupations',
-	  value: 'Legal Occupations'
+	  value: "Preschool Teachers, Except Special Education",
+	  label: "Preschool Teachers, Except Special Education"
 	}, {
-	  label: 'Lawyers',
-	  value: 'Lawyers'
+	  value: "Elementary School Teachers, Except Special Education",
+	  label: "Elementary School Teachers, Except Special Education"
 	}, {
-	  label: 'Paralegals and Legal Assistants',
-	  value: 'Paralegals and Legal Assistants'
+	  value: "Secondary School Teachers, Except Special and Career/Technical Education",
+	  label: "Secondary School Teachers, Except Special and Career/Technical Education"
 	}, {
-	  label: 'Title Examiners, Abstractors, and Searchers',
-	  value: 'Title Examiners, Abstractors, and Searchers'
+	  value: "Special Education Teachers, Preschool",
+	  label: "Special Education Teachers, Preschool"
 	}, {
-	  label: 'Education, Training, and Library Occupations',
-	  value: 'Education, Training, and Library Occupations'
+	  value: "Special Education Teachers, Kindergarten and Elementary School",
+	  label: "Special Education Teachers, Kindergarten and Elementary School"
 	}, {
-	  label: 'Business Teachers, Postsecondary',
-	  value: 'Business Teachers, Postsecondary'
+	  value: "Adult Basic and Secondary Education and Literacy Teachers and Instructors",
+	  label: "Adult Basic and Secondary Education and Literacy Teachers and Instructors"
 	}, {
-	  label: 'Criminal Justice and Law Enforcement Teachers, Postsecondary',
-	  value: 'Criminal Justice and Law Enforcement Teachers, Postsecondary'
+	  value: "Self-Enrichment Education Teachers",
+	  label: "Self-Enrichment Education Teachers"
 	}, {
-	  label: 'Vocational Education Teachers, Postsecondary',
-	  value: 'Vocational Education Teachers, Postsecondary'
+	  value: "Teachers and Instructors, All Other, Except Substitute Teachers",
+	  label: "Teachers and Instructors, All Other, Except Substitute Teachers"
 	}, {
-	  label: 'Postsecondary Teachers, All Other',
-	  value: 'Postsecondary Teachers, All Other'
+	  value: "Substitute Teachers",
+	  label: "Substitute Teachers"
 	}, {
-	  label: 'Preschool Teachers, Except Special Education',
-	  value: 'Preschool Teachers, Except Special Education'
+	  value: "Librarians",
+	  label: "Librarians"
 	}, {
-	  label: 'Elementary School Teachers, Except Special Education',
-	  value: 'Elementary School Teachers, Except Special Education'
+	  value: "Library Technicians",
+	  label: "Library Technicians"
 	}, {
-	  label: 'Secondary School Teachers, Except Special and Career/Technical Education',
-	  value: 'Secondary School Teachers, Except Special and Career/Technical Education'
+	  value: "Instructional Coordinators",
+	  label: "Instructional Coordinators"
 	}, {
-	  label: 'Special Education Teachers, Preschool',
-	  value: 'Special Education Teachers, Preschool'
+	  value: "Teacher Assistants",
+	  label: "Teacher Assistants"
 	}, {
-	  label: 'Special Education Teachers, Kindergarten and Elementary School',
-	  value: 'Special Education Teachers, Kindergarten and Elementary School'
+	  value: "Floral Designers",
+	  label: "Floral Designers"
 	}, {
-	  label: 'Adult Basic and Secondary Education and Literacy Teachers and Instructors',
-	  value: 'Adult Basic and Secondary Education and Literacy Teachers and Instructors'
+	  value: "Graphic Designers",
+	  label: "Graphic Designers"
 	}, {
-	  label: 'Self-Enrichment Education Teachers',
-	  value: 'Self-Enrichment Education Teachers'
+	  value: "Interior Designers",
+	  label: "Interior Designers"
 	}, {
-	  label: 'Teachers and Instructors, All Other, Except Substitute Teachers',
-	  value: 'Teachers and Instructors, All Other, Except Substitute Teachers'
+	  value: "Merchandise Displayers and Window Trimmers",
+	  label: "Merchandise Displayers and Window Trimmers"
 	}, {
-	  label: 'Substitute Teachers',
-	  value: 'Substitute Teachers'
+	  value: "Producers and Directors",
+	  label: "Producers and Directors"
 	}, {
-	  label: 'Librarians',
-	  value: 'Librarians'
+	  value: "Coaches and Scouts",
+	  label: "Coaches and Scouts"
 	}, {
-	  label: 'Library Technicians',
-	  value: 'Library Technicians'
+	  value: "Umpires, Referees, and Other Sports Officials",
+	  label: "Umpires, Referees, and Other Sports Officials"
 	}, {
-	  label: 'Instructional Coordinators',
-	  value: 'Instructional Coordinators'
+	  value: "Radio and Television Announcers",
+	  label: "Radio and Television Announcers"
 	}, {
-	  label: 'Teacher Assistants',
-	  value: 'Teacher Assistants'
+	  value: "Reporters and Correspondents",
+	  label: "Reporters and Correspondents"
 	}, {
-	  label: 'Arts, Design, Entertainment, Sports, and Media Occupations',
-	  value: 'Arts, Design, Entertainment, Sports, and Media Occupations'
+	  value: "Public Relations Specialists",
+	  label: "Public Relations Specialists"
 	}, {
-	  label: 'Floral Designers',
-	  value: 'Floral Designers'
+	  value: "Editors",
+	  label: "Editors"
 	}, {
-	  label: 'Graphic Designers',
-	  value: 'Graphic Designers'
+	  value: "Technical Writers",
+	  label: "Technical Writers"
 	}, {
-	  label: 'Interior Designers',
-	  value: 'Interior Designers'
+	  value: "Writers and Authors",
+	  label: "Writers and Authors"
 	}, {
-	  label: 'Merchandise Displayers and Window Trimmers',
-	  value: 'Merchandise Displayers and Window Trimmers'
+	  value: "Interpreters and Translators",
+	  label: "Interpreters and Translators"
 	}, {
-	  label: 'Producers and Directors',
-	  value: 'Producers and Directors'
+	  value: "Media and Communication Workers, All Other",
+	  label: "Media and Communication Workers, All Other"
 	}, {
-	  label: 'Coaches and Scouts',
-	  value: 'Coaches and Scouts'
+	  value: "Audio and Video Equipment Technicians",
+	  label: "Audio and Video Equipment Technicians"
 	}, {
-	  label: 'Umpires, Referees, and Other Sports Officials',
-	  value: 'Umpires, Referees, and Other Sports Officials'
+	  value: "Broadcast Technicians",
+	  label: "Broadcast Technicians"
 	}, {
-	  label: 'Radio and Television Announcers',
-	  value: 'Radio and Television Announcers'
+	  value: "Photographers",
+	  label: "Photographers"
 	}, {
-	  label: 'Reporters and Correspondents',
-	  value: 'Reporters and Correspondents'
+	  value: "Film and Video Editors",
+	  label: "Film and Video Editors"
 	}, {
-	  label: 'Public Relations Specialists',
-	  value: 'Public Relations Specialists'
+	  value: "Media and Communication Equipment Workers, All Other",
+	  label: "Media and Communication Equipment Workers, All Other"
 	}, {
-	  label: 'Editors',
-	  value: 'Editors'
+	  value: "Chiropractors",
+	  label: "Chiropractors"
 	}, {
-	  label: 'Technical Writers',
-	  value: 'Technical Writers'
+	  value: "Dentists, General",
+	  label: "Dentists, General"
 	}, {
-	  label: 'Writers and Authors',
-	  value: 'Writers and Authors'
+	  value: "Dietitians and Nutritionists",
+	  label: "Dietitians and Nutritionists"
 	}, {
-	  label: 'Interpreters and Translators',
-	  value: 'Interpreters and Translators'
+	  value: "Optometrists",
+	  label: "Optometrists"
 	}, {
-	  label: 'Media and Communication Workers, All Other',
-	  value: 'Media and Communication Workers, All Other'
+	  value: "Pharmacists",
+	  label: "Pharmacists"
 	}, {
-	  label: 'Audio and Video Equipment Technicians',
-	  value: 'Audio and Video Equipment Technicians'
+	  value: "Family and General Practitioners",
+	  label: "Family and General Practitioners"
 	}, {
-	  label: 'Broadcast Technicians',
-	  value: 'Broadcast Technicians'
+	  value: "Internists, General",
+	  label: "Internists, General"
 	}, {
-	  label: 'Photographers',
-	  value: 'Photographers'
+	  value: "Obstetricians and Gynecologists",
+	  label: "Obstetricians and Gynecologists"
 	}, {
-	  label: 'Film and Video Editors',
-	  value: 'Film and Video Editors'
+	  value: "Surgeons",
+	  label: "Surgeons"
 	}, {
-	  label: 'Media and Communication Equipment Workers, All Other',
-	  value: 'Media and Communication Equipment Workers, All Other'
+	  value: "Physicians and Surgeons, All Other",
+	  label: "Physicians and Surgeons, All Other"
 	}, {
-	  label: 'Healthcare Practitioners and Technical Occupations',
-	  value: 'Healthcare Practitioners and Technical Occupations'
+	  value: "Physician Assistants",
+	  label: "Physician Assistants"
 	}, {
-	  label: 'Chiropractors',
-	  value: 'Chiropractors'
+	  value: "Occupational Therapists",
+	  label: "Occupational Therapists"
 	}, {
-	  label: 'Dentists, General',
-	  value: 'Dentists, General'
+	  value: "Physical Therapists",
+	  label: "Physical Therapists"
 	}, {
-	  label: 'Dietitians and Nutritionists',
-	  value: 'Dietitians and Nutritionists'
+	  value: "Respiratory Therapists",
+	  label: "Respiratory Therapists"
 	}, {
-	  label: 'Optometrists',
-	  value: 'Optometrists'
+	  value: "Speech-Language Pathologists",
+	  label: "Speech-Language Pathologists"
 	}, {
-	  label: 'Pharmacists',
-	  value: 'Pharmacists'
+	  value: "Veterinarians",
+	  label: "Veterinarians"
 	}, {
-	  label: 'Family and General Practitioners',
-	  value: 'Family and General Practitioners'
+	  value: "Registered Nurses",
+	  label: "Registered Nurses"
 	}, {
-	  label: 'Internists, General',
-	  value: 'Internists, General'
+	  value: "Nurse Practitioners",
+	  label: "Nurse Practitioners"
 	}, {
-	  label: 'Obstetricians and Gynecologists',
-	  value: 'Obstetricians and Gynecologists'
+	  value: "Health Diagnosing and Treating Practitioners, All Other",
+	  label: "Health Diagnosing and Treating Practitioners, All Other"
 	}, {
-	  label: 'Surgeons',
-	  value: 'Surgeons'
+	  value: "Medical and Clinical Laboratory Technologists",
+	  label: "Medical and Clinical Laboratory Technologists"
 	}, {
-	  label: 'Physicians and Surgeons, All Other',
-	  value: 'Physicians and Surgeons, All Other'
+	  value: "Medical and Clinical Laboratory Technicians",
+	  label: "Medical and Clinical Laboratory Technicians"
 	}, {
-	  label: 'Physician Assistants',
-	  value: 'Physician Assistants'
+	  value: "Dental Hygienists",
+	  label: "Dental Hygienists"
 	}, {
-	  label: 'Occupational Therapists',
-	  value: 'Occupational Therapists'
+	  value: "Cardiovascular Technologists and Technicians",
+	  label: "Cardiovascular Technologists and Technicians"
 	}, {
-	  label: 'Physical Therapists',
-	  value: 'Physical Therapists'
+	  value: "Diagnostic Medical Sonographers",
+	  label: "Diagnostic Medical Sonographers"
 	}, {
-	  label: 'Respiratory Therapists',
-	  value: 'Respiratory Therapists'
+	  value: "Nuclear Medicine Technologists",
+	  label: "Nuclear Medicine Technologists"
 	}, {
-	  label: 'Speech-Language Pathologists',
-	  value: 'Speech-Language Pathologists'
+	  value: "Radiologic Technologists",
+	  label: "Radiologic Technologists"
 	}, {
-	  label: 'Veterinarians',
-	  value: 'Veterinarians'
+	  value: "Magnetic Resonance Imaging Technologists",
+	  label: "Magnetic Resonance Imaging Technologists"
 	}, {
-	  label: 'Registered Nurses',
-	  value: 'Registered Nurses'
+	  value: "Emergency Medical Technicians and Paramedics",
+	  label: "Emergency Medical Technicians and Paramedics"
 	}, {
-	  label: 'Nurse Practitioners',
-	  value: 'Nurse Practitioners'
+	  value: "Pharmacy Technicians",
+	  label: "Pharmacy Technicians"
 	}, {
-	  label: 'Health Diagnosing and Treating Practitioners, All Other',
-	  value: 'Health Diagnosing and Treating Practitioners, All Other'
+	  value: "Psychiatric Technicians",
+	  label: "Psychiatric Technicians"
 	}, {
-	  label: 'Medical and Clinical Laboratory Technologists',
-	  value: 'Medical and Clinical Laboratory Technologists'
+	  value: "Surgical Technologists",
+	  label: "Surgical Technologists"
 	}, {
-	  label: 'Medical and Clinical Laboratory Technicians',
-	  value: 'Medical and Clinical Laboratory Technicians'
+	  value: "Veterinary Technologists and Technicians",
+	  label: "Veterinary Technologists and Technicians"
 	}, {
-	  label: 'Dental Hygienists',
-	  value: 'Dental Hygienists'
+	  value: "Licensed Practical and Licensed Vocational Nurses",
+	  label: "Licensed Practical and Licensed Vocational Nurses"
 	}, {
-	  label: 'Cardiovascular Technologists and Technicians',
-	  value: 'Cardiovascular Technologists and Technicians'
+	  value: "Medical Records and Health Information Technicians",
+	  label: "Medical Records and Health Information Technicians"
 	}, {
-	  label: 'Diagnostic Medical Sonographers',
-	  value: 'Diagnostic Medical Sonographers'
+	  value: "Opticians, Dispensing",
+	  label: "Opticians, Dispensing"
 	}, {
-	  label: 'Nuclear Medicine Technologists',
-	  value: 'Nuclear Medicine Technologists'
+	  value: "Occupational Health and Safety Specialists",
+	  label: "Occupational Health and Safety Specialists"
 	}, {
-	  label: 'Radiologic Technologists',
-	  value: 'Radiologic Technologists'
+	  value: "Occupational Health and Safety Technicians",
+	  label: "Occupational Health and Safety Technicians"
 	}, {
-	  label: 'Magnetic Resonance Imaging Technologists',
-	  value: 'Magnetic Resonance Imaging Technologists'
+	  value: "Healthcare Practitioners and Technical Workers, All Other",
+	  label: "Healthcare Practitioners and Technical Workers, All Other"
 	}, {
-	  label: 'Emergency Medical Technicians and Paramedics',
-	  value: 'Emergency Medical Technicians and Paramedics'
+	  value: "Home Health Aides",
+	  label: "Home Health Aides"
 	}, {
-	  label: 'Pharmacy Technicians',
-	  value: 'Pharmacy Technicians'
+	  value: "Psychiatric Aides",
+	  label: "Psychiatric Aides"
 	}, {
-	  label: 'Psychiatric Technicians',
-	  value: 'Psychiatric Technicians'
+	  value: "Nursing Assistants",
+	  label: "Nursing Assistants"
 	}, {
-	  label: 'Surgical Technologists',
-	  value: 'Surgical Technologists'
+	  value: "Physical Therapist Assistants",
+	  label: "Physical Therapist Assistants"
 	}, {
-	  label: 'Veterinary Technologists and Technicians',
-	  value: 'Veterinary Technologists and Technicians'
+	  value: "Massage Therapists",
+	  label: "Massage Therapists"
 	}, {
-	  label: 'Licensed Practical and Licensed Vocational Nurses',
-	  value: 'Licensed Practical and Licensed Vocational Nurses'
+	  value: "Dental Assistants",
+	  label: "Dental Assistants"
 	}, {
-	  label: 'Medical Records and Health Information Technicians',
-	  value: 'Medical Records and Health Information Technicians'
+	  value: "Medical Assistants",
+	  label: "Medical Assistants"
 	}, {
-	  label: 'Opticians, Dispensing',
-	  value: 'Opticians, Dispensing'
+	  value: "Medical Equipment Preparers",
+	  label: "Medical Equipment Preparers"
 	}, {
-	  label: 'Occupational Health and Safety Specialists',
-	  value: 'Occupational Health and Safety Specialists'
+	  value: "Medical Transcriptionists",
+	  label: "Medical Transcriptionists"
 	}, {
-	  label: 'Occupational Health and Safety Technicians',
-	  value: 'Occupational Health and Safety Technicians'
+	  value: "Pharmacy Aides",
+	  label: "Pharmacy Aides"
 	}, {
-	  label: 'Healthcare Practitioners and Technical Workers, All Other',
-	  value: 'Healthcare Practitioners and Technical Workers, All Other'
+	  value: "Veterinary Assistants and Laboratory Animal Caretakers",
+	  label: "Veterinary Assistants and Laboratory Animal Caretakers"
 	}, {
-	  label: 'Healthcare Support Occupations',
-	  value: 'Healthcare Support Occupations'
+	  value: "Phlebotomists",
+	  label: "Phlebotomists"
 	}, {
-	  label: 'Home Health Aides',
-	  value: 'Home Health Aides'
+	  value: "Healthcare Support Workers, All Other",
+	  label: "Healthcare Support Workers, All Other"
 	}, {
-	  label: 'Psychiatric Aides',
-	  value: 'Psychiatric Aides'
+	  value: "First-Line Supervisors of Police and Detectives",
+	  label: "First-Line Supervisors of Police and Detectives"
 	}, {
-	  label: 'Nursing Assistants',
-	  value: 'Nursing Assistants'
+	  value: "First-Line Supervisors of Fire Fighting and Prevention Workers",
+	  label: "First-Line Supervisors of Fire Fighting and Prevention Workers"
 	}, {
-	  label: 'Physical Therapist Assistants',
-	  value: 'Physical Therapist Assistants'
+	  value: "First-Line Supervisors of Protective Service Workers, All Other",
+	  label: "First-Line Supervisors of Protective Service Workers, All Other"
 	}, {
-	  label: 'Massage Therapists',
-	  value: 'Massage Therapists'
+	  value: "Firefighters",
+	  label: "Firefighters"
 	}, {
-	  label: 'Dental Assistants',
-	  value: 'Dental Assistants'
+	  value: "Detectives and Criminal Investigators",
+	  label: "Detectives and Criminal Investigators"
 	}, {
-	  label: 'Medical Assistants',
-	  value: 'Medical Assistants'
+	  value: "Police and Sheriff's Patrol Officers",
+	  label: "Police and Sheriff's Patrol Officers"
 	}, {
-	  label: 'Medical Equipment Preparers',
-	  value: 'Medical Equipment Preparers'
+	  value: "Security Guards",
+	  label: "Security Guards"
 	}, {
-	  label: 'Medical Transcriptionists',
-	  value: 'Medical Transcriptionists'
+	  value: "Crossing Guards",
+	  label: "Crossing Guards"
 	}, {
-	  label: 'Pharmacy Aides',
-	  value: 'Pharmacy Aides'
+	  value: "Lifeguards, Ski Patrol, and Other Recreational Protective Service Workers",
+	  label: "Lifeguards, Ski Patrol, and Other Recreational Protective Service Workers"
 	}, {
-	  label: 'Veterinary Assistants and Laboratory Animal Caretakers',
-	  value: 'Veterinary Assistants and Laboratory Animal Caretakers'
+	  value: "Transportation Security Screeners",
+	  label: "Transportation Security Screeners"
 	}, {
-	  label: 'Phlebotomists',
-	  value: 'Phlebotomists'
+	  value: "Protective Service Workers, All Other",
+	  label: "Protective Service Workers, All Other"
 	}, {
-	  label: 'Healthcare Support Workers, All Other',
-	  value: 'Healthcare Support Workers, All Other'
+	  value: "Chefs and Head Cooks",
+	  label: "Chefs and Head Cooks"
 	}, {
-	  label: 'Protective Service Occupations',
-	  value: 'Protective Service Occupations'
+	  value: "First-Line Supervisors of Food Preparation and Serving Workers",
+	  label: "First-Line Supervisors of Food Preparation and Serving Workers"
 	}, {
-	  label: 'First-Line Supervisors of Police and Detectives',
-	  value: 'First-Line Supervisors of Police and Detectives'
+	  value: "Cooks, Fast Food",
+	  label: "Cooks, Fast Food"
 	}, {
-	  label: 'First-Line Supervisors of Fire Fighting and Prevention Workers',
-	  value: 'First-Line Supervisors of Fire Fighting and Prevention Workers'
+	  value: "Cooks, Institution and Cafeteria",
+	  label: "Cooks, Institution and Cafeteria"
 	}, {
-	  label: 'First-Line Supervisors of Protective Service Workers, All Other',
-	  value: 'First-Line Supervisors of Protective Service Workers, All Other'
+	  value: "Cooks, Restaurant",
+	  label: "Cooks, Restaurant"
 	}, {
-	  label: 'Firefighters',
-	  value: 'Firefighters'
+	  value: "Cooks, Short Order",
+	  label: "Cooks, Short Order"
 	}, {
-	  label: 'Detectives and Criminal Investigators',
-	  value: 'Detectives and Criminal Investigators'
+	  value: "Cooks, All Other",
+	  label: "Cooks, All Other"
 	}, {
-	  label: "Police and Sheriff's Patrol Officers",
-	  value: "Police and Sheriff's Patrol Officers"
+	  value: "Food Preparation Workers",
+	  label: "Food Preparation Workers"
 	}, {
-	  label: 'Security Guards',
-	  value: 'Security Guards'
+	  value: "Bartenders",
+	  label: "Bartenders"
 	}, {
-	  label: 'Crossing Guards',
-	  value: 'Crossing Guards'
+	  value: "Combined Food Preparation and Serving Workers, Including Fast Food",
+	  label: "Combined Food Preparation and Serving Workers, Including Fast Food"
 	}, {
-	  label: 'Lifeguards, Ski Patrol, and Other Recreational Protective Service Workers',
-	  value: 'Lifeguards, Ski Patrol, and Other Recreational Protective Service Workers'
+	  value: "Counter Attendants, Cafeteria, Food Concession, and Coffee Shop",
+	  label: "Counter Attendants, Cafeteria, Food Concession, and Coffee Shop"
 	}, {
-	  label: 'Transportation Security Screeners',
-	  value: 'Transportation Security Screeners'
+	  value: "Waiters and Waitresses",
+	  label: "Waiters and Waitresses"
 	}, {
-	  label: 'Protective Service Workers, All Other',
-	  value: 'Protective Service Workers, All Other'
+	  value: "Food Servers, Nonrestaurant",
+	  label: "Food Servers, Nonrestaurant"
 	}, {
-	  label: 'Food Preparation and Serving Related Occupations',
-	  value: 'Food Preparation and Serving Related Occupations'
+	  value: "Dining Room and Cafeteria Attendants and Bartender Helpers",
+	  label: "Dining Room and Cafeteria Attendants and Bartender Helpers"
 	}, {
-	  label: 'Chefs and Head Cooks',
-	  value: 'Chefs and Head Cooks'
+	  value: "Dishwashers",
+	  label: "Dishwashers"
 	}, {
-	  label: 'First-Line Supervisors of Food Preparation and Serving Workers',
-	  value: 'First-Line Supervisors of Food Preparation and Serving Workers'
+	  value: "Hosts and Hostesses, Restaurant, Lounge, and Coffee Shop",
+	  label: "Hosts and Hostesses, Restaurant, Lounge, and Coffee Shop"
 	}, {
-	  label: 'Cooks, Fast Food',
-	  value: 'Cooks, Fast Food'
+	  value: "Food Preparation and Serving Related Workers, All Other",
+	  label: "Food Preparation and Serving Related Workers, All Other"
 	}, {
-	  label: 'Cooks, Institution and Cafeteria',
-	  value: 'Cooks, Institution and Cafeteria'
+	  value: "First-Line Supervisors of Housekeeping and Janitorial Workers",
+	  label: "First-Line Supervisors of Housekeeping and Janitorial Workers"
 	}, {
-	  label: 'Cooks, Restaurant',
-	  value: 'Cooks, Restaurant'
+	  value: "First-Line Supervisors of Landscaping, Lawn Service, and Groundskeeping Workers",
+	  label: "First-Line Supervisors of Landscaping, Lawn Service, and Groundskeeping Workers"
 	}, {
-	  label: 'Cooks, Short Order',
-	  value: 'Cooks, Short Order'
+	  value: "Janitors and Cleaners, Except Maids and Housekeeping Cleaners",
+	  label: "Janitors and Cleaners, Except Maids and Housekeeping Cleaners"
 	}, {
-	  label: 'Cooks, All Other',
-	  value: 'Cooks, All Other'
+	  value: "Maids and Housekeeping Cleaners",
+	  label: "Maids and Housekeeping Cleaners"
 	}, {
-	  label: 'Food Preparation Workers',
-	  value: 'Food Preparation Workers'
+	  value: "Landscaping and Groundskeeping Workers",
+	  label: "Landscaping and Groundskeeping Workers"
 	}, {
-	  label: 'Bartenders',
-	  value: 'Bartenders'
+	  value: "Grounds Maintenance Workers, All Other",
+	  label: "Grounds Maintenance Workers, All Other"
 	}, {
-	  label: 'Combined Food Preparation and Serving Workers, Including Fast Food',
-	  value: 'Combined Food Preparation and Serving Workers, Including Fast Food'
+	  value: "First-Line Supervisors of Personal Service Workers",
+	  label: "First-Line Supervisors of Personal Service Workers"
 	}, {
-	  label: 'Counter Attendants, Cafeteria, Food Concession, and Coffee Shop',
-	  value: 'Counter Attendants, Cafeteria, Food Concession, and Coffee Shop'
+	  value: "Nonfarm Animal Caretakers",
+	  label: "Nonfarm Animal Caretakers"
 	}, {
-	  label: 'Waiters and Waitresses',
-	  value: 'Waiters and Waitresses'
+	  value: "Gaming and Sports Book Writers and Runners",
+	  label: "Gaming and Sports Book Writers and Runners"
 	}, {
-	  label: 'Food Servers, Nonrestaurant',
-	  value: 'Food Servers, Nonrestaurant'
+	  value: "Ushers, Lobby Attendants, and Ticket Takers",
+	  label: "Ushers, Lobby Attendants, and Ticket Takers"
 	}, {
-	  label: 'Dining Room and Cafeteria Attendants and Bartender Helpers',
-	  value: 'Dining Room and Cafeteria Attendants and Bartender Helpers'
+	  value: "Amusement and Recreation Attendants",
+	  label: "Amusement and Recreation Attendants"
 	}, {
-	  label: 'Dishwashers',
-	  value: 'Dishwashers'
+	  value: "Locker Room, Coatroom, and Dressing Room Attendants",
+	  label: "Locker Room, Coatroom, and Dressing Room Attendants"
 	}, {
-	  label: 'Hosts and Hostesses, Restaurant, Lounge, and Coffee Shop',
-	  value: 'Hosts and Hostesses, Restaurant, Lounge, and Coffee Shop'
+	  value: "Entertainment Attendants and Related Workers, All Other",
+	  label: "Entertainment Attendants and Related Workers, All Other"
 	}, {
-	  label: 'Food Preparation and Serving Related Workers, All Other',
-	  value: 'Food Preparation and Serving Related Workers, All Other'
+	  value: "Hairdressers, Hairstylists, and Cosmetologists",
+	  label: "Hairdressers, Hairstylists, and Cosmetologists"
 	}, {
-	  label: 'Building and Grounds Cleaning and Maintenance Occupations',
-	  value: 'Building and Grounds Cleaning and Maintenance Occupations'
+	  value: "Manicurists and Pedicurists",
+	  label: "Manicurists and Pedicurists"
 	}, {
-	  label: 'First-Line Supervisors of Housekeeping and Janitorial Workers',
-	  value: 'First-Line Supervisors of Housekeeping and Janitorial Workers'
+	  value: "Skincare Specialists",
+	  label: "Skincare Specialists"
 	}, {
-	  label: 'First-Line Supervisors of Landscaping, Lawn Service, and Groundskeeping Workers',
-	  value: 'First-Line Supervisors of Landscaping, Lawn Service, and Groundskeeping Workers'
+	  value: "Baggage Porters and Bellhops",
+	  label: "Baggage Porters and Bellhops"
 	}, {
-	  label: 'Janitors and Cleaners, Except Maids and Housekeeping Cleaners',
-	  value: 'Janitors and Cleaners, Except Maids and Housekeeping Cleaners'
+	  value: "Concierges",
+	  label: "Concierges"
 	}, {
-	  label: 'Maids and Housekeeping Cleaners',
-	  value: 'Maids and Housekeeping Cleaners'
+	  value: "Tour Guides and Escorts",
+	  label: "Tour Guides and Escorts"
 	}, {
-	  label: 'Landscaping and Groundskeeping Workers',
-	  value: 'Landscaping and Groundskeeping Workers'
+	  value: "Childcare Workers",
+	  label: "Childcare Workers"
 	}, {
-	  label: 'Grounds Maintenance Workers, All Other',
-	  value: 'Grounds Maintenance Workers, All Other'
+	  value: "Personal Care Aides",
+	  label: "Personal Care Aides"
 	}, {
-	  label: 'Personal Care and Service Occupations',
-	  value: 'Personal Care and Service Occupations'
+	  value: "Fitness Trainers and Aerobics Instructors",
+	  label: "Fitness Trainers and Aerobics Instructors"
 	}, {
-	  label: 'First-Line Supervisors of Personal Service Workers',
-	  value: 'First-Line Supervisors of Personal Service Workers'
+	  value: "Recreation Workers",
+	  label: "Recreation Workers"
 	}, {
-	  label: 'Nonfarm Animal Caretakers',
-	  value: 'Nonfarm Animal Caretakers'
+	  value: "Residential Advisors",
+	  label: "Residential Advisors"
 	}, {
-	  label: 'Gaming and Sports Book Writers and Runners',
-	  value: 'Gaming and Sports Book Writers and Runners'
+	  value: "Personal Care and Service Workers, All Other",
+	  label: "Personal Care and Service Workers, All Other"
 	}, {
-	  label: 'Ushers, Lobby Attendants, and Ticket Takers',
-	  value: 'Ushers, Lobby Attendants, and Ticket Takers'
+	  value: "First-Line Supervisors of Retail Sales Workers",
+	  label: "First-Line Supervisors of Retail Sales Workers"
 	}, {
-	  label: 'Amusement and Recreation Attendants',
-	  value: 'Amusement and Recreation Attendants'
+	  value: "First-Line Supervisors of Non-Retail Sales Workers",
+	  label: "First-Line Supervisors of Non-Retail Sales Workers"
 	}, {
-	  label: 'Locker Room, Coatroom, and Dressing Room Attendants',
-	  value: 'Locker Room, Coatroom, and Dressing Room Attendants'
+	  value: "Cashiers",
+	  label: "Cashiers"
 	}, {
-	  label: 'Entertainment Attendants and Related Workers, All Other',
-	  value: 'Entertainment Attendants and Related Workers, All Other'
+	  value: "Counter and Rental Clerks",
+	  label: "Counter and Rental Clerks"
 	}, {
-	  label: 'Hairdressers, Hairstylists, and Cosmetologists',
-	  value: 'Hairdressers, Hairstylists, and Cosmetologists'
+	  value: "Parts Salespersons",
+	  label: "Parts Salespersons"
 	}, {
-	  label: 'Manicurists and Pedicurists',
-	  value: 'Manicurists and Pedicurists'
+	  value: "Retail Salespersons",
+	  label: "Retail Salespersons"
 	}, {
-	  label: 'Skincare Specialists',
-	  value: 'Skincare Specialists'
+	  value: "Advertising Sales Agents",
+	  label: "Advertising Sales Agents"
 	}, {
-	  label: 'Baggage Porters and Bellhops',
-	  value: 'Baggage Porters and Bellhops'
+	  value: "Insurance Sales Agents",
+	  label: "Insurance Sales Agents"
 	}, {
-	  label: 'Concierges',
-	  value: 'Concierges'
+	  value: "Securities, Commodities, and Financial Services Sales Agents",
+	  label: "Securities, Commodities, and Financial Services Sales Agents"
 	}, {
-	  label: 'Tour Guides and Escorts',
-	  value: 'Tour Guides and Escorts'
+	  value: "Travel Agents",
+	  label: "Travel Agents"
 	}, {
-	  label: 'Childcare Workers',
-	  value: 'Childcare Workers'
+	  value: "Sales Representatives, Services, All Other",
+	  label: "Sales Representatives, Services, All Other"
 	}, {
-	  label: 'Personal Care Aides',
-	  value: 'Personal Care Aides'
+	  value: "Sales Representatives, Wholesale and Manufacturing, Technical and Scientific Products",
+	  label: "Sales Representatives, Wholesale and Manufacturing, Technical and Scientific Products"
 	}, {
-	  label: 'Fitness Trainers and Aerobics Instructors',
-	  value: 'Fitness Trainers and Aerobics Instructors'
+	  value: "Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",
+	  label: "Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products"
 	}, {
-	  label: 'Recreation Workers',
-	  value: 'Recreation Workers'
+	  value: "Demonstrators and Product Promoters",
+	  label: "Demonstrators and Product Promoters"
 	}, {
-	  label: 'Residential Advisors',
-	  value: 'Residential Advisors'
+	  value: "Real Estate Sales Agents",
+	  label: "Real Estate Sales Agents"
 	}, {
-	  label: 'Personal Care and Service Workers, All Other',
-	  value: 'Personal Care and Service Workers, All Other'
+	  value: "Sales Engineers",
+	  label: "Sales Engineers"
 	}, {
-	  label: 'Sales and Related Occupations',
-	  value: 'Sales and Related Occupations'
+	  value: "Door-to-Door Sales Workers, News and Street Vendors, and Related Workers",
+	  label: "Door-to-Door Sales Workers, News and Street Vendors, and Related Workers"
 	}, {
-	  label: 'First-Line Supervisors of Retail Sales Workers',
-	  value: 'First-Line Supervisors of Retail Sales Workers'
+	  value: "Sales and Related Workers, All Other",
+	  label: "Sales and Related Workers, All Other"
 	}, {
-	  label: 'First-Line Supervisors of Non-Retail Sales Workers',
-	  value: 'First-Line Supervisors of Non-Retail Sales Workers'
+	  value: "First-Line Supervisors of Office and Administrative Support Workers",
+	  label: "First-Line Supervisors of Office and Administrative Support Workers"
 	}, {
-	  label: 'Cashiers',
-	  value: 'Cashiers'
+	  value: "Switchboard Operators, Including Answering Service",
+	  label: "Switchboard Operators, Including Answering Service"
 	}, {
-	  label: 'Counter and Rental Clerks',
-	  value: 'Counter and Rental Clerks'
+	  value: "Bill and Account Collectors",
+	  label: "Bill and Account Collectors"
 	}, {
-	  label: 'Parts Salespersons',
-	  value: 'Parts Salespersons'
+	  value: "Billing and Posting Clerks",
+	  label: "Billing and Posting Clerks"
 	}, {
-	  label: 'Retail Salespersons',
-	  value: 'Retail Salespersons'
+	  value: "Bookkeeping, Accounting, and Auditing Clerks",
+	  label: "Bookkeeping, Accounting, and Auditing Clerks"
 	}, {
-	  label: 'Advertising Sales Agents',
-	  value: 'Advertising Sales Agents'
+	  value: "Payroll and Timekeeping Clerks",
+	  label: "Payroll and Timekeeping Clerks"
 	}, {
-	  label: 'Insurance Sales Agents',
-	  value: 'Insurance Sales Agents'
+	  value: "Procurement Clerks",
+	  label: "Procurement Clerks"
 	}, {
-	  label: 'Securities, Commodities, and Financial Services Sales Agents',
-	  value: 'Securities, Commodities, and Financial Services Sales Agents'
+	  value: "Tellers",
+	  label: "Tellers"
 	}, {
-	  label: 'Travel Agents',
-	  value: 'Travel Agents'
+	  value: "Financial Clerks, All Other",
+	  label: "Financial Clerks, All Other"
 	}, {
-	  label: 'Sales Representatives, Services, All Other',
-	  value: 'Sales Representatives, Services, All Other'
+	  value: "Brokerage Clerks",
+	  label: "Brokerage Clerks"
 	}, {
-	  label: 'Sales Representatives, Wholesale and Manufacturing, Technical and Scientific Products',
-	  value: 'Sales Representatives, Wholesale and Manufacturing, Technical and Scientific Products'
+	  value: "Court, Municipal, and License Clerks",
+	  label: "Court, Municipal, and License Clerks"
 	}, {
-	  label: 'Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products',
-	  value: 'Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products'
+	  value: "Credit Authorizers, Checkers, and Clerks",
+	  label: "Credit Authorizers, Checkers, and Clerks"
 	}, {
-	  label: 'Demonstrators and Product Promoters',
-	  value: 'Demonstrators and Product Promoters'
+	  value: "Customer Service Representatives",
+	  label: "Customer Service Representatives"
 	}, {
-	  label: 'Real Estate Sales Agents',
-	  value: 'Real Estate Sales Agents'
+	  value: "Eligibility Interviewers, Government Programs",
+	  label: "Eligibility Interviewers, Government Programs"
 	}, {
-	  label: 'Sales Engineers',
-	  value: 'Sales Engineers'
+	  value: "File Clerks",
+	  label: "File Clerks"
 	}, {
-	  label: 'Door-to-Door Sales Workers, News and Street Vendors, and Related Workers',
-	  value: 'Door-to-Door Sales Workers, News and Street Vendors, and Related Workers'
+	  value: "Hotel, Motel, and Resort Desk Clerks",
+	  label: "Hotel, Motel, and Resort Desk Clerks"
 	}, {
-	  label: 'Sales and Related Workers, All Other',
-	  value: 'Sales and Related Workers, All Other'
+	  value: "Interviewers, Except Eligibility and Loan",
+	  label: "Interviewers, Except Eligibility and Loan"
 	}, {
-	  label: 'Office and Administrative Support Occupations',
-	  value: 'Office and Administrative Support Occupations'
+	  value: "Library Assistants, Clerical",
+	  label: "Library Assistants, Clerical"
 	}, {
-	  label: 'First-Line Supervisors of Office and Administrative Support Workers',
-	  value: 'First-Line Supervisors of Office and Administrative Support Workers'
+	  value: "Loan Interviewers and Clerks",
+	  label: "Loan Interviewers and Clerks"
 	}, {
-	  label: 'Switchboard Operators, Including Answering Service',
-	  value: 'Switchboard Operators, Including Answering Service'
+	  value: "Order Clerks",
+	  label: "Order Clerks"
 	}, {
-	  label: 'Bill and Account Collectors',
-	  value: 'Bill and Account Collectors'
+	  value: "Human Resources Assistants, Except Payroll and Timekeeping",
+	  label: "Human Resources Assistants, Except Payroll and Timekeeping"
 	}, {
-	  label: 'Billing and Posting Clerks',
-	  value: 'Billing and Posting Clerks'
+	  value: "Receptionists and Information Clerks",
+	  label: "Receptionists and Information Clerks"
 	}, {
-	  label: 'Bookkeeping, Accounting, and Auditing Clerks',
-	  value: 'Bookkeeping, Accounting, and Auditing Clerks'
+	  value: "Reservation and Transportation Ticket Agents and Travel Clerks",
+	  label: "Reservation and Transportation Ticket Agents and Travel Clerks"
 	}, {
-	  label: 'Payroll and Timekeeping Clerks',
-	  value: 'Payroll and Timekeeping Clerks'
+	  value: "Information and Record Clerks, All Other",
+	  label: "Information and Record Clerks, All Other"
 	}, {
-	  label: 'Procurement Clerks',
-	  value: 'Procurement Clerks'
+	  value: "Cargo and Freight Agents",
+	  label: "Cargo and Freight Agents"
 	}, {
-	  label: 'Tellers',
-	  value: 'Tellers'
+	  value: "Couriers and Messengers",
+	  label: "Couriers and Messengers"
 	}, {
-	  label: 'Financial Clerks, All Other',
-	  value: 'Financial Clerks, All Other'
+	  value: "Police, Fire, and Ambulance Dispatchers",
+	  label: "Police, Fire, and Ambulance Dispatchers"
 	}, {
-	  label: 'Brokerage Clerks',
-	  value: 'Brokerage Clerks'
+	  value: "Dispatchers, Except Police, Fire, and Ambulance",
+	  label: "Dispatchers, Except Police, Fire, and Ambulance"
 	}, {
-	  label: 'Court, Municipal, and License Clerks',
-	  value: 'Court, Municipal, and License Clerks'
+	  value: "Postal Service Clerks",
+	  label: "Postal Service Clerks"
 	}, {
-	  label: 'Credit Authorizers, Checkers, and Clerks',
-	  value: 'Credit Authorizers, Checkers, and Clerks'
+	  value: "Postal Service Mail Carriers",
+	  label: "Postal Service Mail Carriers"
 	}, {
-	  label: 'Customer Service Representatives',
-	  value: 'Customer Service Representatives'
+	  value: "Postal Service Mail Sorters, Processors, and Processing Machine Operators",
+	  label: "Postal Service Mail Sorters, Processors, and Processing Machine Operators"
 	}, {
-	  label: 'Eligibility Interviewers, Government Programs',
-	  value: 'Eligibility Interviewers, Government Programs'
+	  value: "Production, Planning, and Expediting Clerks",
+	  label: "Production, Planning, and Expediting Clerks"
 	}, {
-	  label: 'File Clerks',
-	  value: 'File Clerks'
+	  value: "Shipping, Receiving, and Traffic Clerks",
+	  label: "Shipping, Receiving, and Traffic Clerks"
 	}, {
-	  label: 'Hotel, Motel, and Resort Desk Clerks',
-	  value: 'Hotel, Motel, and Resort Desk Clerks'
+	  value: "Stock Clerks and Order Fillers",
+	  label: "Stock Clerks and Order Fillers"
 	}, {
-	  label: 'Interviewers, Except Eligibility and Loan',
-	  value: 'Interviewers, Except Eligibility and Loan'
+	  value: "Weighers, Measurers, Checkers, and Samplers, Recordkeeping",
+	  label: "Weighers, Measurers, Checkers, and Samplers, Recordkeeping"
 	}, {
-	  label: 'Library Assistants, Clerical',
-	  value: 'Library Assistants, Clerical'
+	  value: "Executive Secretaries and Executive Administrative Assistants",
+	  label: "Executive Secretaries and Executive Administrative Assistants"
 	}, {
-	  label: 'Loan Interviewers and Clerks',
-	  value: 'Loan Interviewers and Clerks'
+	  value: "Legal Secretaries",
+	  label: "Legal Secretaries"
 	}, {
-	  label: 'Order Clerks',
-	  value: 'Order Clerks'
+	  value: "Medical Secretaries",
+	  label: "Medical Secretaries"
 	}, {
-	  label: 'Human Resources Assistants, Except Payroll and Timekeeping',
-	  value: 'Human Resources Assistants, Except Payroll and Timekeeping'
+	  value: "Secretaries and Administrative Assistants, Except Legal, Medical, and Executive",
+	  label: "Secretaries and Administrative Assistants, Except Legal, Medical, and Executive"
 	}, {
-	  label: 'Receptionists and Information Clerks',
-	  value: 'Receptionists and Information Clerks'
+	  value: "Computer Operators",
+	  label: "Computer Operators"
 	}, {
-	  label: 'Reservation and Transportation Ticket Agents and Travel Clerks',
-	  value: 'Reservation and Transportation Ticket Agents and Travel Clerks'
+	  value: "Data Entry Keyers",
+	  label: "Data Entry Keyers"
 	}, {
-	  label: 'Information and Record Clerks, All Other',
-	  value: 'Information and Record Clerks, All Other'
+	  value: "Word Processors and Typists",
+	  label: "Word Processors and Typists"
 	}, {
-	  label: 'Cargo and Freight Agents',
-	  value: 'Cargo and Freight Agents'
+	  value: "Insurance Claims and Policy Processing Clerks",
+	  label: "Insurance Claims and Policy Processing Clerks"
 	}, {
-	  label: 'Couriers and Messengers',
-	  value: 'Couriers and Messengers'
+	  value: "Mail Clerks and Mail Machine Operators, Except Postal Service",
+	  label: "Mail Clerks and Mail Machine Operators, Except Postal Service"
 	}, {
-	  label: 'Police, Fire, and Ambulance Dispatchers',
-	  value: 'Police, Fire, and Ambulance Dispatchers'
+	  value: "Office Clerks, General",
+	  label: "Office Clerks, General"
 	}, {
-	  label: 'Dispatchers, Except Police, Fire, and Ambulance',
-	  value: 'Dispatchers, Except Police, Fire, and Ambulance'
+	  value: "Office Machine Operators, Except Computer",
+	  label: "Office Machine Operators, Except Computer"
 	}, {
-	  label: 'Postal Service Clerks',
-	  value: 'Postal Service Clerks'
+	  value: "Office and Administrative Support Workers, All Other",
+	  label: "Office and Administrative Support Workers, All Other"
 	}, {
-	  label: 'Postal Service Mail Carriers',
-	  value: 'Postal Service Mail Carriers'
+	  value: "First-Line Supervisors of Construction Trades and Extraction Workers",
+	  label: "First-Line Supervisors of Construction Trades and Extraction Workers"
 	}, {
-	  label: 'Postal Service Mail Sorters, Processors, and Processing Machine Operators',
-	  value: 'Postal Service Mail Sorters, Processors, and Processing Machine Operators'
+	  value: "Carpenters",
+	  label: "Carpenters"
 	}, {
-	  label: 'Production, Planning, and Expediting Clerks',
-	  value: 'Production, Planning, and Expediting Clerks'
+	  value: "Cement Masons and Concrete Finishers",
+	  label: "Cement Masons and Concrete Finishers"
 	}, {
-	  label: 'Shipping, Receiving, and Traffic Clerks',
-	  value: 'Shipping, Receiving, and Traffic Clerks'
+	  value: "Construction Laborers",
+	  label: "Construction Laborers"
 	}, {
-	  label: 'Stock Clerks and Order Fillers',
-	  value: 'Stock Clerks and Order Fillers'
+	  value: "Pile-Driver Operators",
+	  label: "Pile-Driver Operators"
 	}, {
-	  label: 'Weighers, Measurers, Checkers, and Samplers, Recordkeeping',
-	  value: 'Weighers, Measurers, Checkers, and Samplers, Recordkeeping'
+	  value: "Operating Engineers and Other Construction Equipment Operators",
+	  label: "Operating Engineers and Other Construction Equipment Operators"
 	}, {
-	  label: 'Executive Secretaries and Executive Administrative Assistants',
-	  value: 'Executive Secretaries and Executive Administrative Assistants'
+	  value: "Electricians",
+	  label: "Electricians"
 	}, {
-	  label: 'Legal Secretaries',
-	  value: 'Legal Secretaries'
+	  value: "Glaziers",
+	  label: "Glaziers"
 	}, {
-	  label: 'Medical Secretaries',
-	  value: 'Medical Secretaries'
+	  value: "Insulation Workers, Floor, Ceiling, and Wall",
+	  label: "Insulation Workers, Floor, Ceiling, and Wall"
 	}, {
-	  label: 'Secretaries and Administrative Assistants, Except Legal, Medical, and Executive',
-	  value: 'Secretaries and Administrative Assistants, Except Legal, Medical, and Executive'
+	  value: "Insulation Workers, Mechanical",
+	  label: "Insulation Workers, Mechanical"
 	}, {
-	  label: 'Computer Operators',
-	  value: 'Computer Operators'
+	  value: "Painters, Construction and Maintenance",
+	  label: "Painters, Construction and Maintenance"
 	}, {
-	  label: 'Data Entry Keyers',
-	  value: 'Data Entry Keyers'
+	  value: "Plumbers, Pipefitters, and Steamfitters",
+	  label: "Plumbers, Pipefitters, and Steamfitters"
 	}, {
-	  label: 'Word Processors and Typists',
-	  value: 'Word Processors and Typists'
+	  value: "Roofers",
+	  label: "Roofers"
 	}, {
-	  label: 'Insurance Claims and Policy Processing Clerks',
-	  value: 'Insurance Claims and Policy Processing Clerks'
+	  value: "Sheet Metal Workers",
+	  label: "Sheet Metal Workers"
 	}, {
-	  label: 'Mail Clerks and Mail Machine Operators, Except Postal Service',
-	  value: 'Mail Clerks and Mail Machine Operators, Except Postal Service'
+	  value: "Structural Iron and Steel Workers",
+	  label: "Structural Iron and Steel Workers"
 	}, {
-	  label: 'Office Clerks, General',
-	  value: 'Office Clerks, General'
+	  value: "Helpers--Carpenters",
+	  label: "Helpers--Carpenters"
 	}, {
-	  label: 'Office Machine Operators, Except Computer',
-	  value: 'Office Machine Operators, Except Computer'
+	  value: "Helpers--Electricians",
+	  label: "Helpers--Electricians"
 	}, {
-	  label: 'Office and Administrative Support Workers, All Other',
-	  value: 'Office and Administrative Support Workers, All Other'
+	  value: "Construction and Building Inspectors",
+	  label: "Construction and Building Inspectors"
 	}, {
-	  label: 'Farming, Fishing, and Forestry Occupations',
-	  value: 'Farming, Fishing, and Forestry Occupations'
+	  value: "Hazardous Materials Removal Workers",
+	  label: "Hazardous Materials Removal Workers"
 	}, {
-	  label: 'Construction and Extraction Occupations',
-	  value: 'Construction and Extraction Occupations'
+	  value: "Construction and Related Workers, All Other",
+	  label: "Construction and Related Workers, All Other"
 	}, {
-	  label: 'First-Line Supervisors of Construction Trades and Extraction Workers',
-	  value: 'First-Line Supervisors of Construction Trades and Extraction Workers'
+	  value: "Rotary Drill Operators, Oil and Gas",
+	  label: "Rotary Drill Operators, Oil and Gas"
 	}, {
-	  label: 'Carpenters',
-	  value: 'Carpenters'
+	  value: "Service Unit Operators, Oil, Gas, and Mining",
+	  label: "Service Unit Operators, Oil, Gas, and Mining"
 	}, {
-	  label: 'Cement Masons and Concrete Finishers',
-	  value: 'Cement Masons and Concrete Finishers'
+	  value: "Earth Drillers, Except Oil and Gas",
+	  label: "Earth Drillers, Except Oil and Gas"
 	}, {
-	  label: 'Construction Laborers',
-	  value: 'Construction Laborers'
+	  value: "Roustabouts, Oil and Gas",
+	  label: "Roustabouts, Oil and Gas"
 	}, {
-	  label: 'Pile-Driver Operators',
-	  value: 'Pile-Driver Operators'
+	  value: "First-Line Supervisors of Mechanics, Installers, and Repairers",
+	  label: "First-Line Supervisors of Mechanics, Installers, and Repairers"
 	}, {
-	  label: 'Operating Engineers and Other Construction Equipment Operators',
-	  value: 'Operating Engineers and Other Construction Equipment Operators'
+	  value: "Computer, Automated Teller, and Office Machine Repairers",
+	  label: "Computer, Automated Teller, and Office Machine Repairers"
 	}, {
-	  label: 'Electricians',
-	  value: 'Electricians'
+	  value: "Radio, Cellular, and Tower Equipment Installers and Repairers",
+	  label: "Radio, Cellular, and Tower Equipment Installers and Repairers"
 	}, {
-	  label: 'Glaziers',
-	  value: 'Glaziers'
+	  value: "Telecommunications Equipment Installers and Repairers, Except Line Installers",
+	  label: "Telecommunications Equipment Installers and Repairers, Except Line Installers"
 	}, {
-	  label: 'Insulation Workers, Floor, Ceiling, and Wall',
-	  value: 'Insulation Workers, Floor, Ceiling, and Wall'
+	  value: "Avionics Technicians",
+	  label: "Avionics Technicians"
 	}, {
-	  label: 'Insulation Workers, Mechanical',
-	  value: 'Insulation Workers, Mechanical'
+	  value: "Electrical and Electronics Repairers, Commercial and Industrial Equipment",
+	  label: "Electrical and Electronics Repairers, Commercial and Industrial Equipment"
 	}, {
-	  label: 'Painters, Construction and Maintenance',
-	  value: 'Painters, Construction and Maintenance'
+	  value: "Security and Fire Alarm Systems Installers",
+	  label: "Security and Fire Alarm Systems Installers"
 	}, {
-	  label: 'Plumbers, Pipefitters, and Steamfitters',
-	  value: 'Plumbers, Pipefitters, and Steamfitters'
+	  value: "Aircraft Mechanics and Service Technicians",
+	  label: "Aircraft Mechanics and Service Technicians"
 	}, {
-	  label: 'Roofers',
-	  value: 'Roofers'
+	  value: "Automotive Body and Related Repairers",
+	  label: "Automotive Body and Related Repairers"
 	}, {
-	  label: 'Sheet Metal Workers',
-	  value: 'Sheet Metal Workers'
+	  value: "Automotive Service Technicians and Mechanics",
+	  label: "Automotive Service Technicians and Mechanics"
 	}, {
-	  label: 'Structural Iron and Steel Workers',
-	  value: 'Structural Iron and Steel Workers'
+	  value: "Bus and Truck Mechanics and Diesel Engine Specialists",
+	  label: "Bus and Truck Mechanics and Diesel Engine Specialists"
 	}, {
-	  label: 'Helpers--Carpenters',
-	  value: 'Helpers--Carpenters'
+	  value: "Mobile Heavy Equipment Mechanics, Except Engines",
+	  label: "Mobile Heavy Equipment Mechanics, Except Engines"
 	}, {
-	  label: 'Helpers--Electricians',
-	  value: 'Helpers--Electricians'
+	  value: "Motorboat Mechanics and Service Technicians",
+	  label: "Motorboat Mechanics and Service Technicians"
 	}, {
-	  label: 'Construction and Building Inspectors',
-	  value: 'Construction and Building Inspectors'
+	  value: "Motorcycle Mechanics",
+	  label: "Motorcycle Mechanics"
 	}, {
-	  label: 'Hazardous Materials Removal Workers',
-	  value: 'Hazardous Materials Removal Workers'
+	  value: "Tire Repairers and Changers",
+	  label: "Tire Repairers and Changers"
 	}, {
-	  label: 'Construction and Related Workers, All Other',
-	  value: 'Construction and Related Workers, All Other'
+	  value: "Control and Valve Installers and Repairers, Except Mechanical Door",
+	  label: "Control and Valve Installers and Repairers, Except Mechanical Door"
 	}, {
-	  label: 'Rotary Drill Operators, Oil and Gas',
-	  value: 'Rotary Drill Operators, Oil and Gas'
+	  value: "Heating, Air Conditioning, and Refrigeration Mechanics and Installers",
+	  label: "Heating, Air Conditioning, and Refrigeration Mechanics and Installers"
 	}, {
-	  label: 'Service Unit Operators, Oil, Gas, and Mining',
-	  value: 'Service Unit Operators, Oil, Gas, and Mining'
+	  value: "Home Appliance Repairers",
+	  label: "Home Appliance Repairers"
 	}, {
-	  label: 'Earth Drillers, Except Oil and Gas',
-	  value: 'Earth Drillers, Except Oil and Gas'
+	  value: "Industrial Machinery Mechanics",
+	  label: "Industrial Machinery Mechanics"
 	}, {
-	  label: 'Roustabouts, Oil and Gas',
-	  value: 'Roustabouts, Oil and Gas'
+	  value: "Maintenance Workers, Machinery",
+	  label: "Maintenance Workers, Machinery"
 	}, {
-	  label: 'Installation, Maintenance, and Repair Occupations',
-	  value: 'Installation, Maintenance, and Repair Occupations'
+	  value: "Electrical Power-Line Installers and Repairers",
+	  label: "Electrical Power-Line Installers and Repairers"
 	}, {
-	  label: 'First-Line Supervisors of Mechanics, Installers, and Repairers',
-	  value: 'First-Line Supervisors of Mechanics, Installers, and Repairers'
+	  value: "Telecommunications Line Installers and Repairers",
+	  label: "Telecommunications Line Installers and Repairers"
 	}, {
-	  label: 'Computer, Automated Teller, and Office Machine Repairers',
-	  value: 'Computer, Automated Teller, and Office Machine Repairers'
+	  value: "Medical Equipment Repairers",
+	  label: "Medical Equipment Repairers"
 	}, {
-	  label: 'Radio, Cellular, and Tower Equipment Installers and Repairers',
-	  value: 'Radio, Cellular, and Tower Equipment Installers and Repairers'
+	  value: "Precision Instrument and Equipment Repairers, All Other",
+	  label: "Precision Instrument and Equipment Repairers, All Other"
 	}, {
-	  label: 'Telecommunications Equipment Installers and Repairers, Except Line Installers',
-	  value: 'Telecommunications Equipment Installers and Repairers, Except Line Installers'
+	  value: "Maintenance and Repair Workers, General",
+	  label: "Maintenance and Repair Workers, General"
 	}, {
-	  label: 'Avionics Technicians',
-	  value: 'Avionics Technicians'
+	  value: "Riggers",
+	  label: "Riggers"
 	}, {
-	  label: 'Electrical and Electronics Repairers, Commercial and Industrial Equipment',
-	  value: 'Electrical and Electronics Repairers, Commercial and Industrial Equipment'
+	  value: "Helpers--Installation, Maintenance, and Repair Workers",
+	  label: "Helpers--Installation, Maintenance, and Repair Workers"
 	}, {
-	  label: 'Security and Fire Alarm Systems Installers',
-	  value: 'Security and Fire Alarm Systems Installers'
+	  value: "Installation, Maintenance, and Repair Workers, All Other",
+	  label: "Installation, Maintenance, and Repair Workers, All Other"
 	}, {
-	  label: 'Aircraft Mechanics and Service Technicians',
-	  value: 'Aircraft Mechanics and Service Technicians'
+	  value: "First-Line Supervisors of Production and Operating Workers",
+	  label: "First-Line Supervisors of Production and Operating Workers"
 	}, {
-	  label: 'Automotive Body and Related Repairers',
-	  value: 'Automotive Body and Related Repairers'
+	  value: "Team Assemblers",
+	  label: "Team Assemblers"
 	}, {
-	  label: 'Automotive Service Technicians and Mechanics',
-	  value: 'Automotive Service Technicians and Mechanics'
+	  value: "Assemblers and Fabricators, All Other",
+	  label: "Assemblers and Fabricators, All Other"
 	}, {
-	  label: 'Bus and Truck Mechanics and Diesel Engine Specialists',
-	  value: 'Bus and Truck Mechanics and Diesel Engine Specialists'
+	  value: "Bakers",
+	  label: "Bakers"
 	}, {
-	  label: 'Mobile Heavy Equipment Mechanics, Except Engines',
-	  value: 'Mobile Heavy Equipment Mechanics, Except Engines'
+	  value: "Butchers and Meat Cutters",
+	  label: "Butchers and Meat Cutters"
 	}, {
-	  label: 'Motorboat Mechanics and Service Technicians',
-	  value: 'Motorboat Mechanics and Service Technicians'
+	  value: "Food Batchmakers",
+	  label: "Food Batchmakers"
 	}, {
-	  label: 'Motorcycle Mechanics',
-	  value: 'Motorcycle Mechanics'
+	  value: "Cutting, Punching, and Press Machine Setters, Operators, and Tenders, Metal and Plastic",
+	  label: "Cutting, Punching, and Press Machine Setters, Operators, and Tenders, Metal and Plastic"
 	}, {
-	  label: 'Tire Repairers and Changers',
-	  value: 'Tire Repairers and Changers'
+	  value: "Machinists",
+	  label: "Machinists"
 	}, {
-	  label: 'Control and Valve Installers and Repairers, Except Mechanical Door',
-	  value: 'Control and Valve Installers and Repairers, Except Mechanical Door'
+	  value: "Welders, Cutters, Solderers, and Brazers",
+	  label: "Welders, Cutters, Solderers, and Brazers"
 	}, {
-	  label: 'Heating, Air Conditioning, and Refrigeration Mechanics and Installers',
-	  value: 'Heating, Air Conditioning, and Refrigeration Mechanics and Installers'
+	  value: "Printing Press Operators",
+	  label: "Printing Press Operators"
 	}, {
-	  label: 'Home Appliance Repairers',
-	  value: 'Home Appliance Repairers'
+	  value: "Print Binding and Finishing Workers",
+	  label: "Print Binding and Finishing Workers"
 	}, {
-	  label: 'Industrial Machinery Mechanics',
-	  value: 'Industrial Machinery Mechanics'
+	  value: "Laundry and Dry-Cleaning Workers",
+	  label: "Laundry and Dry-Cleaning Workers"
 	}, {
-	  label: 'Maintenance Workers, Machinery',
-	  value: 'Maintenance Workers, Machinery'
+	  value: "Cabinetmakers and Bench Carpenters",
+	  label: "Cabinetmakers and Bench Carpenters"
 	}, {
-	  label: 'Electrical Power-Line Installers and Repairers',
-	  value: 'Electrical Power-Line Installers and Repairers'
+	  value: "Power Plant Operators",
+	  label: "Power Plant Operators"
 	}, {
-	  label: 'Telecommunications Line Installers and Repairers',
-	  value: 'Telecommunications Line Installers and Repairers'
+	  value: "Water and Wastewater Treatment Plant and System Operators",
+	  label: "Water and Wastewater Treatment Plant and System Operators"
 	}, {
-	  label: 'Medical Equipment Repairers',
-	  value: 'Medical Equipment Repairers'
+	  value: "Gas Plant Operators",
+	  label: "Gas Plant Operators"
 	}, {
-	  label: 'Precision Instrument and Equipment Repairers, All Other',
-	  value: 'Precision Instrument and Equipment Repairers, All Other'
+	  value: "Petroleum Pump System Operators, Refinery Operators, and Gaugers",
+	  label: "Petroleum Pump System Operators, Refinery Operators, and Gaugers"
 	}, {
-	  label: 'Maintenance and Repair Workers, General',
-	  value: 'Maintenance and Repair Workers, General'
+	  value: "Plant and System Operators, All Other",
+	  label: "Plant and System Operators, All Other"
 	}, {
-	  label: 'Riggers',
-	  value: 'Riggers'
+	  value: "Separating, Filtering, Clarifying, Precipitating, and Still Machine Setters, Operators, and Tenders",
+	  label: "Separating, Filtering, Clarifying, Precipitating, and Still Machine Setters, Operators, and Tenders"
 	}, {
-	  label: 'Helpers--Installation, Maintenance, and Repair Workers',
-	  value: 'Helpers--Installation, Maintenance, and Repair Workers'
+	  value: "Mixing and Blending Machine Setters, Operators, and Tenders",
+	  label: "Mixing and Blending Machine Setters, Operators, and Tenders"
 	}, {
-	  label: 'Installation, Maintenance, and Repair Workers, All Other',
-	  value: 'Installation, Maintenance, and Repair Workers, All Other'
+	  value: "Inspectors, Testers, Sorters, Samplers, and Weighers",
+	  label: "Inspectors, Testers, Sorters, Samplers, and Weighers"
 	}, {
-	  label: 'Production Occupations',
-	  value: 'Production Occupations'
+	  value: "Dental Laboratory Technicians",
+	  label: "Dental Laboratory Technicians"
 	}, {
-	  label: 'First-Line Supervisors of Production and Operating Workers',
-	  value: 'First-Line Supervisors of Production and Operating Workers'
+	  value: "Packaging and Filling Machine Operators and Tenders",
+	  label: "Packaging and Filling Machine Operators and Tenders"
 	}, {
-	  label: 'Team Assemblers',
-	  value: 'Team Assemblers'
+	  value: "Photographic Process Workers and Processing Machine Operators",
+	  label: "Photographic Process Workers and Processing Machine Operators"
 	}, {
-	  label: 'Assemblers and Fabricators, All Other',
-	  value: 'Assemblers and Fabricators, All Other'
+	  value: "Molders, Shapers, and Casters, Except Metal and Plastic",
+	  label: "Molders, Shapers, and Casters, Except Metal and Plastic"
 	}, {
-	  label: 'Bakers',
-	  value: 'Bakers'
+	  value: "Helpers--Production Workers",
+	  label: "Helpers--Production Workers"
 	}, {
-	  label: 'Butchers and Meat Cutters',
-	  value: 'Butchers and Meat Cutters'
+	  value: "Production Workers, All Other",
+	  label: "Production Workers, All Other"
 	}, {
-	  label: 'Food Batchmakers',
-	  value: 'Food Batchmakers'
+	  value: "Aircraft Cargo Handling Supervisors",
+	  label: "Aircraft Cargo Handling Supervisors"
 	}, {
-	  label: 'Cutting, Punching, and Press Machine Setters, Operators, and Tenders, Metal and Plastic',
-	  value: 'Cutting, Punching, and Press Machine Setters, Operators, and Tenders, Metal and Plastic'
+	  value: "First-Line Supervisors of Helpers, Laborers, and Material Movers, Hand",
+	  label: "First-Line Supervisors of Helpers, Laborers, and Material Movers, Hand"
 	}, {
-	  label: 'Machinists',
-	  value: 'Machinists'
+	  value: "First-Line Supervisors of Transportation and Material-Moving Machine and Vehicle Operators",
+	  label: "First-Line Supervisors of Transportation and Material-Moving Machine and Vehicle Operators"
 	}, {
-	  label: 'Welders, Cutters, Solderers, and Brazers',
-	  value: 'Welders, Cutters, Solderers, and Brazers'
+	  value: "Airline Pilots, Copilots, and Flight Engineers",
+	  label: "Airline Pilots, Copilots, and Flight Engineers"
 	}, {
-	  label: 'Printing Press Operators',
-	  value: 'Printing Press Operators'
+	  value: "Commercial Pilots",
+	  label: "Commercial Pilots"
 	}, {
-	  label: 'Print Binding and Finishing Workers',
-	  value: 'Print Binding and Finishing Workers'
+	  value: "Air Traffic Controllers",
+	  label: "Air Traffic Controllers"
 	}, {
-	  label: 'Laundry and Dry-Cleaning Workers',
-	  value: 'Laundry and Dry-Cleaning Workers'
+	  value: "Airfield Operations Specialists",
+	  label: "Airfield Operations Specialists"
 	}, {
-	  label: 'Cabinetmakers and Bench Carpenters',
-	  value: 'Cabinetmakers and Bench Carpenters'
+	  value: "Flight Attendants",
+	  label: "Flight Attendants"
 	}, {
-	  label: 'Power Plant Operators',
-	  value: 'Power Plant Operators'
+	  value: "Bus Drivers, Transit and Intercity",
+	  label: "Bus Drivers, Transit and Intercity"
 	}, {
-	  label: 'Water and Wastewater Treatment Plant and System Operators',
-	  value: 'Water and Wastewater Treatment Plant and System Operators'
+	  value: "Bus Drivers, School or Special Client",
+	  label: "Bus Drivers, School or Special Client"
 	}, {
-	  label: 'Gas Plant Operators',
-	  value: 'Gas Plant Operators'
+	  value: "Driver/Sales Workers",
+	  label: "Driver/Sales Workers"
 	}, {
-	  label: 'Petroleum Pump System Operators, Refinery Operators, and Gaugers',
-	  value: 'Petroleum Pump System Operators, Refinery Operators, and Gaugers'
+	  value: "Heavy and Tractor-Trailer Truck Drivers",
+	  label: "Heavy and Tractor-Trailer Truck Drivers"
 	}, {
-	  label: 'Plant and System Operators, All Other',
-	  value: 'Plant and System Operators, All Other'
+	  value: "Light Truck or Delivery Services Drivers",
+	  label: "Light Truck or Delivery Services Drivers"
 	}, {
-	  label: 'Separating, Filtering, Clarifying, Precipitating, and Still Machine Setters, Operators, and Tenders',
-	  value: 'Separating, Filtering, Clarifying, Precipitating, and Still Machine Setters, Operators, and Tenders'
+	  value: "Taxi Drivers and Chauffeurs",
+	  label: "Taxi Drivers and Chauffeurs"
 	}, {
-	  label: 'Mixing and Blending Machine Setters, Operators, and Tenders',
-	  value: 'Mixing and Blending Machine Setters, Operators, and Tenders'
+	  value: "Motor Vehicle Operators, All Other",
+	  label: "Motor Vehicle Operators, All Other"
 	}, {
-	  label: 'Inspectors, Testers, Sorters, Samplers, and Weighers',
-	  value: 'Inspectors, Testers, Sorters, Samplers, and Weighers'
+	  value: "Sailors and Marine Oilers",
+	  label: "Sailors and Marine Oilers"
 	}, {
-	  label: 'Dental Laboratory Technicians',
-	  value: 'Dental Laboratory Technicians'
+	  value: "Captains, Mates, and Pilots of Water Vessels",
+	  label: "Captains, Mates, and Pilots of Water Vessels"
 	}, {
-	  label: 'Packaging and Filling Machine Operators and Tenders',
-	  value: 'Packaging and Filling Machine Operators and Tenders'
+	  value: "Ship Engineers",
+	  label: "Ship Engineers"
 	}, {
-	  label: 'Photographic Process Workers and Processing Machine Operators',
-	  value: 'Photographic Process Workers and Processing Machine Operators'
+	  value: "Parking Lot Attendants",
+	  label: "Parking Lot Attendants"
 	}, {
-	  label: 'Molders, Shapers, and Casters, Except Metal and Plastic',
-	  value: 'Molders, Shapers, and Casters, Except Metal and Plastic'
+	  value: "Automotive and Watercraft Service Attendants",
+	  label: "Automotive and Watercraft Service Attendants"
 	}, {
-	  label: 'Helpers--Production Workers',
-	  value: 'Helpers--Production Workers'
+	  value: "Transportation Inspectors",
+	  label: "Transportation Inspectors"
 	}, {
-	  label: 'Production Workers, All Other',
-	  value: 'Production Workers, All Other'
+	  value: "Transportation Workers, All Other",
+	  label: "Transportation Workers, All Other"
 	}, {
-	  label: 'Transportation and Material Moving Occupations',
-	  value: 'Transportation and Material Moving Occupations'
+	  value: "Excavating and Loading Machine and Dragline Operators",
+	  label: "Excavating and Loading Machine and Dragline Operators"
 	}, {
-	  label: 'Aircraft Cargo Handling Supervisors',
-	  value: 'Aircraft Cargo Handling Supervisors'
+	  value: "Industrial Truck and Tractor Operators",
+	  label: "Industrial Truck and Tractor Operators"
 	}, {
-	  label: 'First-Line Supervisors of Helpers, Laborers, and Material Movers, Hand',
-	  value: 'First-Line Supervisors of Helpers, Laborers, and Material Movers, Hand'
+	  value: "Cleaners of Vehicles and Equipment",
+	  label: "Cleaners of Vehicles and Equipment"
 	}, {
-	  label: 'First-Line Supervisors of Transportation and Material-Moving Machine and Vehicle Operators',
-	  value: 'First-Line Supervisors of Transportation and Material-Moving Machine and Vehicle Operators'
+	  value: "Laborers and Freight, Stock, and Material Movers, Hand",
+	  label: "Laborers and Freight, Stock, and Material Movers, Hand"
 	}, {
-	  label: 'Airline Pilots, Copilots, and Flight Engineers',
-	  value: 'Airline Pilots, Copilots, and Flight Engineers'
+	  value: "Packers and Packagers, Hand",
+	  label: "Packers and Packagers, Hand"
 	}, {
-	  label: 'Commercial Pilots',
-	  value: 'Commercial Pilots'
+	  value: "Refuse and Recyclable Material Collectors",
+	  label: "Refuse and Recyclable Material Collectors"
 	}, {
-	  label: 'Air Traffic Controllers',
-	  value: 'Air Traffic Controllers'
+	  value: "Kindergarten Teachers, Except Special Education",
+	  label: "Kindergarten Teachers, Except Special Education"
 	}, {
-	  label: 'Airfield Operations Specialists',
-	  value: 'Airfield Operations Specialists'
+	  value: "Education, Training, and Library Workers, All Other",
+	  label: "Education, Training, and Library Workers, All Other"
 	}, {
-	  label: 'Flight Attendants',
-	  value: 'Flight Attendants'
+	  value: "Mechanical Drafters",
+	  label: "Mechanical Drafters"
 	}, {
-	  label: 'Bus Drivers, Transit and Intercity',
-	  value: 'Bus Drivers, Transit and Intercity'
+	  value: "Chemical Technicians",
+	  label: "Chemical Technicians"
 	}, {
-	  label: 'Bus Drivers, School or Special Client',
-	  value: 'Bus Drivers, School or Special Client'
+	  value: "Middle School Teachers, Except Special and Career/Technical Education",
+	  label: "Middle School Teachers, Except Special and Career/Technical Education"
 	}, {
-	  label: 'Driver/Sales Workers',
-	  value: 'Driver/Sales Workers'
+	  value: "Health Technologists and Technicians, All Other",
+	  label: "Health Technologists and Technicians, All Other"
 	}, {
-	  label: 'Heavy and Tractor-Trailer Truck Drivers',
-	  value: 'Heavy and Tractor-Trailer Truck Drivers'
+	  value: "Correctional Officers and Jailers",
+	  label: "Correctional Officers and Jailers"
 	}, {
-	  label: 'Light Truck or Delivery Services Drivers',
-	  value: 'Light Truck or Delivery Services Drivers'
+	  value: "Pipelayers",
+	  label: "Pipelayers"
 	}, {
-	  label: 'Taxi Drivers and Chauffeurs',
-	  value: 'Taxi Drivers and Chauffeurs'
+	  value: "Highway Maintenance Workers",
+	  label: "Highway Maintenance Workers"
 	}, {
-	  label: 'Motor Vehicle Operators, All Other',
-	  value: 'Motor Vehicle Operators, All Other'
+	  value: "Outdoor Power Equipment and Other Small Engine Mechanics",
+	  label: "Outdoor Power Equipment and Other Small Engine Mechanics"
 	}, {
-	  label: 'Sailors and Marine Oilers',
-	  value: 'Sailors and Marine Oilers'
+	  value: "Structural Metal Fabricators and Fitters",
+	  label: "Structural Metal Fabricators and Fitters"
 	}, {
-	  label: 'Captains, Mates, and Pilots of Water Vessels',
-	  value: 'Captains, Mates, and Pilots of Water Vessels'
+	  value: "Meat, Poultry, and Fish Cutters and Trimmers",
+	  label: "Meat, Poultry, and Fish Cutters and Trimmers"
 	}, {
-	  label: 'Ship Engineers',
-	  value: 'Ship Engineers'
+	  value: "Forging Machine Setters, Operators, and Tenders, Metal and Plastic",
+	  label: "Forging Machine Setters, Operators, and Tenders, Metal and Plastic"
 	}, {
-	  label: 'Parking Lot Attendants',
-	  value: 'Parking Lot Attendants'
+	  value: "Grinding, Lapping, Polishing, and Buffing Machine Tool Setters, Operators, and Tenders, Metal and Plastic",
+	  label: "Grinding, Lapping, Polishing, and Buffing Machine Tool Setters, Operators, and Tenders, Metal and Plastic"
 	}, {
-	  label: 'Automotive and Watercraft Service Attendants',
-	  value: 'Automotive and Watercraft Service Attendants'
+	  value: "Multiple Machine Tool Setters, Operators, and Tenders, Metal and Plastic",
+	  label: "Multiple Machine Tool Setters, Operators, and Tenders, Metal and Plastic"
 	}, {
-	  label: 'Transportation Inspectors',
-	  value: 'Transportation Inspectors'
+	  value: "Tool and Die Makers",
+	  label: "Tool and Die Makers"
 	}, {
-	  label: 'Transportation Workers, All Other',
-	  value: 'Transportation Workers, All Other'
+	  value: "Plating and Coating Machine Setters, Operators, and Tenders, Metal and Plastic",
+	  label: "Plating and Coating Machine Setters, Operators, and Tenders, Metal and Plastic"
 	}, {
-	  label: 'Excavating and Loading Machine and Dragline Operators',
-	  value: 'Excavating and Loading Machine and Dragline Operators'
+	  value: "Sewing Machine Operators",
+	  label: "Sewing Machine Operators"
 	}, {
-	  label: 'Industrial Truck and Tractor Operators',
-	  value: 'Industrial Truck and Tractor Operators'
+	  value: "Coating, Painting, and Spraying Machine Setters, Operators, and Tenders",
+	  label: "Coating, Painting, and Spraying Machine Setters, Operators, and Tenders"
 	}, {
-	  label: 'Cleaners of Vehicles and Equipment',
-	  value: 'Cleaners of Vehicles and Equipment'
+	  value: "Painters, Transportation Equipment",
+	  label: "Painters, Transportation Equipment"
 	}, {
-	  label: 'Laborers and Freight, Stock, and Material Movers, Hand',
-	  value: 'Laborers and Freight, Stock, and Material Movers, Hand'
+	  value: "Industrial Engineering Technicians",
+	  label: "Industrial Engineering Technicians"
 	}, {
-	  label: 'Packers and Packagers, Hand',
-	  value: 'Packers and Packagers, Hand'
+	  value: "Special Education Teachers, Secondary School",
+	  label: "Special Education Teachers, Secondary School"
 	}, {
-	  label: 'Refuse and Recyclable Material Collectors',
-	  value: 'Refuse and Recyclable Material Collectors'
+	  value: "Athletic Trainers",
+	  label: "Athletic Trainers"
 	}, {
-	  label: 'Kindergarten Teachers, Except Special Education',
-	  value: 'Kindergarten Teachers, Except Special Education'
+	  value: "Electrical and Electronic Equipment Assemblers",
+	  label: "Electrical and Electronic Equipment Assemblers"
 	}, {
-	  label: 'Education, Training, and Library Workers, All Other',
-	  value: 'Education, Training, and Library Workers, All Other'
+	  value: "Molding, Coremaking, and Casting Machine Setters, Operators, and Tenders, Metal and Plastic",
+	  label: "Molding, Coremaking, and Casting Machine Setters, Operators, and Tenders, Metal and Plastic"
 	}, {
-	  label: 'Mechanical Drafters',
-	  value: 'Mechanical Drafters'
+	  value: "Grinding and Polishing Workers, Hand",
+	  label: "Grinding and Polishing Workers, Hand"
 	}, {
-	  label: 'Chemical Technicians',
-	  value: 'Chemical Technicians'
+	  value: "Legislators",
+	  label: "Legislators"
 	}, {
-	  label: 'Middle School Teachers, Except Special and Career/Technical Education',
-	  value: 'Middle School Teachers, Except Special and Career/Technical Education'
+	  value: "Compensation and Benefits Managers",
+	  label: "Compensation and Benefits Managers"
 	}, {
-	  label: 'Health Technologists and Technicians, All Other',
-	  value: 'Health Technologists and Technicians, All Other'
+	  value: "Postmasters and Mail Superintendents",
+	  label: "Postmasters and Mail Superintendents"
 	}, {
-	  label: 'Correctional Officers and Jailers',
-	  value: 'Correctional Officers and Jailers'
+	  value: "Buyers and Purchasing Agents, Farm Products",
+	  label: "Buyers and Purchasing Agents, Farm Products"
 	}, {
-	  label: 'Pipelayers',
-	  value: 'Pipelayers'
+	  value: "Insurance Appraisers, Auto Damage",
+	  label: "Insurance Appraisers, Auto Damage"
 	}, {
-	  label: 'Highway Maintenance Workers',
-	  value: 'Highway Maintenance Workers'
+	  value: "Credit Analysts",
+	  label: "Credit Analysts"
 	}, {
-	  label: 'Outdoor Power Equipment and Other Small Engine Mechanics',
-	  value: 'Outdoor Power Equipment and Other Small Engine Mechanics'
+	  value: "Actuaries",
+	  label: "Actuaries"
 	}, {
-	  label: 'Structural Metal Fabricators and Fitters',
-	  value: 'Structural Metal Fabricators and Fitters'
+	  value: "Statisticians",
+	  label: "Statisticians"
 	}, {
-	  label: 'Meat, Poultry, and Fish Cutters and Trimmers',
-	  value: 'Meat, Poultry, and Fish Cutters and Trimmers'
+	  value: "Biomedical Engineers",
+	  label: "Biomedical Engineers"
 	}, {
-	  label: 'Forging Machine Setters, Operators, and Tenders, Metal and Plastic',
-	  value: 'Forging Machine Setters, Operators, and Tenders, Metal and Plastic'
+	  value: "Materials Engineers",
+	  label: "Materials Engineers"
 	}, {
-	  label: 'Grinding, Lapping, Polishing, and Buffing Machine Tool Setters, Operators, and Tenders, Metal and Plastic',
-	  value: 'Grinding, Lapping, Polishing, and Buffing Machine Tool Setters, Operators, and Tenders, Metal and Plastic'
+	  value: "Medical Scientists, Except Epidemiologists",
+	  label: "Medical Scientists, Except Epidemiologists"
 	}, {
-	  label: 'Multiple Machine Tool Setters, Operators, and Tenders, Metal and Plastic',
-	  value: 'Multiple Machine Tool Setters, Operators, and Tenders, Metal and Plastic'
+	  value: "Forensic Science Technicians",
+	  label: "Forensic Science Technicians"
 	}, {
-	  label: 'Tool and Die Makers',
-	  value: 'Tool and Die Makers'
+	  value: "Marriage and Family Therapists",
+	  label: "Marriage and Family Therapists"
 	}, {
-	  label: 'Plating and Coating Machine Setters, Operators, and Tenders, Metal and Plastic',
-	  value: 'Plating and Coating Machine Setters, Operators, and Tenders, Metal and Plastic'
+	  value: "Judges, Magistrate Judges, and Magistrates",
+	  label: "Judges, Magistrate Judges, and Magistrates"
 	}, {
-	  label: 'Sewing Machine Operators',
-	  value: 'Sewing Machine Operators'
+	  value: "Court Reporters",
+	  label: "Court Reporters"
 	}, {
-	  label: 'Coating, Painting, and Spraying Machine Setters, Operators, and Tenders',
-	  value: 'Coating, Painting, and Spraying Machine Setters, Operators, and Tenders'
+	  value: "Legal Support Workers, All Other",
+	  label: "Legal Support Workers, All Other"
 	}, {
-	  label: 'Painters, Transportation Equipment',
-	  value: 'Painters, Transportation Equipment'
+	  value: "Computer Science Teachers, Postsecondary",
+	  label: "Computer Science Teachers, Postsecondary"
 	}, {
-	  label: 'Industrial Engineering Technicians',
-	  value: 'Industrial Engineering Technicians'
+	  value: "Mathematical Science Teachers, Postsecondary",
+	  label: "Mathematical Science Teachers, Postsecondary"
 	}, {
-	  label: 'Special Education Teachers, Secondary School',
-	  value: 'Special Education Teachers, Secondary School'
+	  value: "Biological Science Teachers, Postsecondary",
+	  label: "Biological Science Teachers, Postsecondary"
 	}, {
-	  label: 'Athletic Trainers',
-	  value: 'Athletic Trainers'
+	  value: "Chemistry Teachers, Postsecondary",
+	  label: "Chemistry Teachers, Postsecondary"
 	}, {
-	  label: 'Electrical and Electronic Equipment Assemblers',
-	  value: 'Electrical and Electronic Equipment Assemblers'
+	  value: "Physics Teachers, Postsecondary",
+	  label: "Physics Teachers, Postsecondary"
 	}, {
-	  label: 'Molding, Coremaking, and Casting Machine Setters, Operators, and Tenders, Metal and Plastic',
-	  value: 'Molding, Coremaking, and Casting Machine Setters, Operators, and Tenders, Metal and Plastic'
+	  value: "Psychology Teachers, Postsecondary",
+	  label: "Psychology Teachers, Postsecondary"
 	}, {
-	  label: 'Grinding and Polishing Workers, Hand',
-	  value: 'Grinding and Polishing Workers, Hand'
+	  value: "Education Teachers, Postsecondary",
+	  label: "Education Teachers, Postsecondary"
 	}, {
-	  label: 'Legislators',
-	  value: 'Legislators'
+	  value: "Art, Drama, and Music Teachers, Postsecondary",
+	  label: "Art, Drama, and Music Teachers, Postsecondary"
 	}, {
-	  label: 'Compensation and Benefits Managers',
-	  value: 'Compensation and Benefits Managers'
+	  value: "Communications Teachers, Postsecondary",
+	  label: "Communications Teachers, Postsecondary"
 	}, {
-	  label: 'Postmasters and Mail Superintendents',
-	  value: 'Postmasters and Mail Superintendents'
+	  value: "English Language and Literature Teachers, Postsecondary",
+	  label: "English Language and Literature Teachers, Postsecondary"
 	}, {
-	  label: 'Buyers and Purchasing Agents, Farm Products',
-	  value: 'Buyers and Purchasing Agents, Farm Products'
+	  value: "Foreign Language and Literature Teachers, Postsecondary",
+	  label: "Foreign Language and Literature Teachers, Postsecondary"
 	}, {
-	  label: 'Insurance Appraisers, Auto Damage',
-	  value: 'Insurance Appraisers, Auto Damage'
+	  value: "History Teachers, Postsecondary",
+	  label: "History Teachers, Postsecondary"
 	}, {
-	  label: 'Credit Analysts',
-	  value: 'Credit Analysts'
+	  value: "Philosophy and Religion Teachers, Postsecondary",
+	  label: "Philosophy and Religion Teachers, Postsecondary"
 	}, {
-	  label: 'Actuaries',
-	  value: 'Actuaries'
+	  value: "Recreation and Fitness Studies Teachers, Postsecondary",
+	  label: "Recreation and Fitness Studies Teachers, Postsecondary"
 	}, {
-	  label: 'Statisticians',
-	  value: 'Statisticians'
+	  value: "Career/Technical Education Teachers, Secondary School",
+	  label: "Career/Technical Education Teachers, Secondary School"
 	}, {
-	  label: 'Biomedical Engineers',
-	  value: 'Biomedical Engineers'
+	  value: "Special Education Teachers, Middle School",
+	  label: "Special Education Teachers, Middle School"
 	}, {
-	  label: 'Materials Engineers',
-	  value: 'Materials Engineers'
+	  value: "Curators",
+	  label: "Curators"
 	}, {
-	  label: 'Medical Scientists, Except Epidemiologists',
-	  value: 'Medical Scientists, Except Epidemiologists'
+	  value: "Art Directors",
+	  label: "Art Directors"
 	}, {
-	  label: 'Forensic Science Technicians',
-	  value: 'Forensic Science Technicians'
+	  value: "Commercial and Industrial Designers",
+	  label: "Commercial and Industrial Designers"
 	}, {
-	  label: 'Marriage and Family Therapists',
-	  value: 'Marriage and Family Therapists'
+	  value: "Public Address System and Other Announcers",
+	  label: "Public Address System and Other Announcers"
 	}, {
-	  label: 'Judges, Magistrate Judges, and Magistrates',
-	  value: 'Judges, Magistrate Judges, and Magistrates'
+	  value: "Broadcast News Analysts",
+	  label: "Broadcast News Analysts"
 	}, {
-	  label: 'Court Reporters',
-	  value: 'Court Reporters'
+	  value: "Sound Engineering Technicians",
+	  label: "Sound Engineering Technicians"
 	}, {
-	  label: 'Legal Support Workers, All Other',
-	  value: 'Legal Support Workers, All Other'
+	  value: "Camera Operators, Television, Video, and Motion Picture",
+	  label: "Camera Operators, Television, Video, and Motion Picture"
 	}, {
-	  label: 'Computer Science Teachers, Postsecondary',
-	  value: 'Computer Science Teachers, Postsecondary'
+	  value: "Orthodontists",
+	  label: "Orthodontists"
 	}, {
-	  label: 'Mathematical Science Teachers, Postsecondary',
-	  value: 'Mathematical Science Teachers, Postsecondary'
+	  value: "Anesthesiologists",
+	  label: "Anesthesiologists"
 	}, {
-	  label: 'Biological Science Teachers, Postsecondary',
-	  value: 'Biological Science Teachers, Postsecondary'
+	  value: "Pediatricians, General",
+	  label: "Pediatricians, General"
 	}, {
-	  label: 'Chemistry Teachers, Postsecondary',
-	  value: 'Chemistry Teachers, Postsecondary'
+	  value: "Psychiatrists",
+	  label: "Psychiatrists"
 	}, {
-	  label: 'Physics Teachers, Postsecondary',
-	  value: 'Physics Teachers, Postsecondary'
+	  value: "Radiation Therapists",
+	  label: "Radiation Therapists"
 	}, {
-	  label: 'Psychology Teachers, Postsecondary',
-	  value: 'Psychology Teachers, Postsecondary'
+	  value: "Recreational Therapists",
+	  label: "Recreational Therapists"
 	}, {
-	  label: 'Education Teachers, Postsecondary',
-	  value: 'Education Teachers, Postsecondary'
+	  value: "Nurse Anesthetists",
+	  label: "Nurse Anesthetists"
 	}, {
-	  label: 'Art, Drama, and Music Teachers, Postsecondary',
-	  value: 'Art, Drama, and Music Teachers, Postsecondary'
+	  value: "Audiologists",
+	  label: "Audiologists"
 	}, {
-	  label: 'Communications Teachers, Postsecondary',
-	  value: 'Communications Teachers, Postsecondary'
+	  value: "Ophthalmic Medical Technicians",
+	  label: "Ophthalmic Medical Technicians"
 	}, {
-	  label: 'English Language and Literature Teachers, Postsecondary',
-	  value: 'English Language and Literature Teachers, Postsecondary'
+	  value: "Orthotists and Prosthetists",
+	  label: "Orthotists and Prosthetists"
 	}, {
-	  label: 'Foreign Language and Literature Teachers, Postsecondary',
-	  value: 'Foreign Language and Literature Teachers, Postsecondary'
+	  value: "Orderlies",
+	  label: "Orderlies"
 	}, {
-	  label: 'History Teachers, Postsecondary',
-	  value: 'History Teachers, Postsecondary'
+	  value: "Occupational Therapy Assistants",
+	  label: "Occupational Therapy Assistants"
 	}, {
-	  label: 'Philosophy and Religion Teachers, Postsecondary',
-	  value: 'Philosophy and Religion Teachers, Postsecondary'
+	  value: "Occupational Therapy Aides",
+	  label: "Occupational Therapy Aides"
 	}, {
-	  label: 'Recreation and Fitness Studies Teachers, Postsecondary',
-	  value: 'Recreation and Fitness Studies Teachers, Postsecondary'
+	  value: "Physical Therapist Aides",
+	  label: "Physical Therapist Aides"
 	}, {
-	  label: 'Career/Technical Education Teachers, Secondary School',
-	  value: 'Career/Technical Education Teachers, Secondary School'
+	  value: "First-Line Supervisors of Correctional Officers",
+	  label: "First-Line Supervisors of Correctional Officers"
 	}, {
-	  label: 'Special Education Teachers, Middle School',
-	  value: 'Special Education Teachers, Middle School'
+	  value: "Fire Inspectors and Investigators",
+	  label: "Fire Inspectors and Investigators"
 	}, {
-	  label: 'Curators',
-	  value: 'Curators'
+	  value: "Bailiffs",
+	  label: "Bailiffs"
 	}, {
-	  label: 'Art Directors',
-	  value: 'Art Directors'
+	  value: "Animal Control Workers",
+	  label: "Animal Control Workers"
 	}, {
-	  label: 'Commercial and Industrial Designers',
-	  value: 'Commercial and Industrial Designers'
+	  value: "Private Detectives and Investigators",
+	  label: "Private Detectives and Investigators"
 	}, {
-	  label: 'Public Address System and Other Announcers',
-	  value: 'Public Address System and Other Announcers'
+	  value: "Pest Control Workers",
+	  label: "Pest Control Workers"
 	}, {
-	  label: 'Broadcast News Analysts',
-	  value: 'Broadcast News Analysts'
+	  value: "Pesticide Handlers, Sprayers, and Applicators, Vegetation",
+	  label: "Pesticide Handlers, Sprayers, and Applicators, Vegetation"
 	}, {
-	  label: 'Sound Engineering Technicians',
-	  value: 'Sound Engineering Technicians'
+	  value: "Funeral Attendants",
+	  label: "Funeral Attendants"
 	}, {
-	  label: 'Camera Operators, Television, Video, and Motion Picture',
-	  value: 'Camera Operators, Television, Video, and Motion Picture'
+	  value: "Morticians, Undertakers, and Funeral Directors",
+	  label: "Morticians, Undertakers, and Funeral Directors"
 	}, {
-	  label: 'Orthodontists',
-	  value: 'Orthodontists'
+	  value: "Real Estate Brokers",
+	  label: "Real Estate Brokers"
 	}, {
-	  label: 'Anesthesiologists',
-	  value: 'Anesthesiologists'
+	  value: "Telemarketers",
+	  label: "Telemarketers"
 	}, {
-	  label: 'Pediatricians, General',
-	  value: 'Pediatricians, General'
+	  value: "Correspondence Clerks",
+	  label: "Correspondence Clerks"
 	}, {
-	  label: 'Psychiatrists',
-	  value: 'Psychiatrists'
+	  value: "New Accounts Clerks",
+	  label: "New Accounts Clerks"
 	}, {
-	  label: 'Radiation Therapists',
-	  value: 'Radiation Therapists'
+	  value: "Meter Readers, Utilities",
+	  label: "Meter Readers, Utilities"
 	}, {
-	  label: 'Recreational Therapists',
-	  value: 'Recreational Therapists'
+	  value: "First-Line Supervisors of Farming, Fishing, and Forestry Workers",
+	  label: "First-Line Supervisors of Farming, Fishing, and Forestry Workers"
 	}, {
-	  label: 'Nurse Anesthetists',
-	  value: 'Nurse Anesthetists'
+	  value: "Farmworkers and Laborers, Crop, Nursery, and Greenhouse",
+	  label: "Farmworkers and Laborers, Crop, Nursery, and Greenhouse"
 	}, {
-	  label: 'Audiologists',
-	  value: 'Audiologists'
+	  value: "Farmworkers, Farm, Ranch, and Aquacultural Animals",
+	  label: "Farmworkers, Farm, Ranch, and Aquacultural Animals"
 	}, {
-	  label: 'Ophthalmic Medical Technicians',
-	  value: 'Ophthalmic Medical Technicians'
+	  value: "Logging Equipment Operators",
+	  label: "Logging Equipment Operators"
 	}, {
-	  label: 'Orthotists and Prosthetists',
-	  value: 'Orthotists and Prosthetists'
+	  value: "Boilermakers",
+	  label: "Boilermakers"
 	}, {
-	  label: 'Orderlies',
-	  value: 'Orderlies'
+	  value: "Brickmasons and Blockmasons",
+	  label: "Brickmasons and Blockmasons"
 	}, {
-	  label: 'Occupational Therapy Assistants',
-	  value: 'Occupational Therapy Assistants'
+	  value: "Floor Layers, Except Carpet, Wood, and Hard Tiles",
+	  label: "Floor Layers, Except Carpet, Wood, and Hard Tiles"
 	}, {
-	  label: 'Occupational Therapy Aides',
-	  value: 'Occupational Therapy Aides'
+	  value: "Tile and Marble Setters",
+	  label: "Tile and Marble Setters"
 	}, {
-	  label: 'Physical Therapist Aides',
-	  value: 'Physical Therapist Aides'
+	  value: "Paving, Surfacing, and Tamping Equipment Operators",
+	  label: "Paving, Surfacing, and Tamping Equipment Operators"
 	}, {
-	  label: 'First-Line Supervisors of Correctional Officers',
-	  value: 'First-Line Supervisors of Correctional Officers'
+	  value: "Drywall and Ceiling Tile Installers",
+	  label: "Drywall and Ceiling Tile Installers"
 	}, {
-	  label: 'Fire Inspectors and Investigators',
-	  value: 'Fire Inspectors and Investigators'
+	  value: "Helpers--Brickmasons, Blockmasons, Stonemasons, and Tile and Marble Setters",
+	  label: "Helpers--Brickmasons, Blockmasons, Stonemasons, and Tile and Marble Setters"
 	}, {
-	  label: 'Bailiffs',
-	  value: 'Bailiffs'
+	  value: "Helpers--Painters, Paperhangers, Plasterers, and Stucco Masons",
+	  label: "Helpers--Painters, Paperhangers, Plasterers, and Stucco Masons"
 	}, {
-	  label: 'Animal Control Workers',
-	  value: 'Animal Control Workers'
+	  value: "Helpers--Pipelayers, Plumbers, Pipefitters, and Steamfitters",
+	  label: "Helpers--Pipelayers, Plumbers, Pipefitters, and Steamfitters"
 	}, {
-	  label: 'Private Detectives and Investigators',
-	  value: 'Private Detectives and Investigators'
+	  value: "Helpers--Roofers",
+	  label: "Helpers--Roofers"
 	}, {
-	  label: 'Pest Control Workers',
-	  value: 'Pest Control Workers'
+	  value: "Helpers, Construction Trades, All Other",
+	  label: "Helpers, Construction Trades, All Other"
 	}, {
-	  label: 'Pesticide Handlers, Sprayers, and Applicators, Vegetation',
-	  value: 'Pesticide Handlers, Sprayers, and Applicators, Vegetation'
+	  value: "Explosives Workers, Ordnance Handling Experts, and Blasters",
+	  label: "Explosives Workers, Ordnance Handling Experts, and Blasters"
 	}, {
-	  label: 'Funeral Attendants',
-	  value: 'Funeral Attendants'
+	  value: "Continuous Mining Machine Operators",
+	  label: "Continuous Mining Machine Operators"
 	}, {
-	  label: 'Morticians, Undertakers, and Funeral Directors',
-	  value: 'Morticians, Undertakers, and Funeral Directors'
+	  value: "Mine Cutting and Channeling Machine Operators",
+	  label: "Mine Cutting and Channeling Machine Operators"
 	}, {
-	  label: 'Real Estate Brokers',
-	  value: 'Real Estate Brokers'
+	  value: "Roof Bolters, Mining",
+	  label: "Roof Bolters, Mining"
 	}, {
-	  label: 'Telemarketers',
-	  value: 'Telemarketers'
+	  value: "Helpers--Extraction Workers",
+	  label: "Helpers--Extraction Workers"
 	}, {
-	  label: 'Correspondence Clerks',
-	  value: 'Correspondence Clerks'
+	  value: "Extraction Workers, All Other",
+	  label: "Extraction Workers, All Other"
 	}, {
-	  label: 'New Accounts Clerks',
-	  value: 'New Accounts Clerks'
+	  value: "Electric Motor, Power Tool, and Related Repairers",
+	  label: "Electric Motor, Power Tool, and Related Repairers"
 	}, {
-	  label: 'Meter Readers, Utilities',
-	  value: 'Meter Readers, Utilities'
+	  value: "Electrical and Electronics Repairers, Powerhouse, Substation, and Relay",
+	  label: "Electrical and Electronics Repairers, Powerhouse, Substation, and Relay"
 	}, {
-	  label: 'First-Line Supervisors of Farming, Fishing, and Forestry Workers',
-	  value: 'First-Line Supervisors of Farming, Fishing, and Forestry Workers'
+	  value: "Electronic Home Entertainment Equipment Installers and Repairers",
+	  label: "Electronic Home Entertainment Equipment Installers and Repairers"
 	}, {
-	  label: 'Farmworkers and Laborers, Crop, Nursery, and Greenhouse',
-	  value: 'Farmworkers and Laborers, Crop, Nursery, and Greenhouse'
+	  value: "Farm Equipment Mechanics and Service Technicians",
+	  label: "Farm Equipment Mechanics and Service Technicians"
 	}, {
-	  label: 'Farmworkers, Farm, Ranch, and Aquacultural Animals',
-	  value: 'Farmworkers, Farm, Ranch, and Aquacultural Animals'
+	  value: "Mechanical Door Repairers",
+	  label: "Mechanical Door Repairers"
 	}, {
-	  label: 'Logging Equipment Operators',
-	  value: 'Logging Equipment Operators'
+	  value: "Millwrights",
+	  label: "Millwrights"
 	}, {
-	  label: 'Boilermakers',
-	  value: 'Boilermakers'
+	  value: "Coin, Vending, and Amusement Machine Servicers and Repairers",
+	  label: "Coin, Vending, and Amusement Machine Servicers and Repairers"
 	}, {
-	  label: 'Brickmasons and Blockmasons',
-	  value: 'Brickmasons and Blockmasons'
+	  value: "Locksmiths and Safe Repairers",
+	  label: "Locksmiths and Safe Repairers"
 	}, {
-	  label: 'Floor Layers, Except Carpet, Wood, and Hard Tiles',
-	  value: 'Floor Layers, Except Carpet, Wood, and Hard Tiles'
+	  value: "Coil Winders, Tapers, and Finishers",
+	  label: "Coil Winders, Tapers, and Finishers"
 	}, {
-	  label: 'Tile and Marble Setters',
-	  value: 'Tile and Marble Setters'
+	  value: "Food and Tobacco Roasting, Baking, and Drying Machine Operators and Tenders",
+	  label: "Food and Tobacco Roasting, Baking, and Drying Machine Operators and Tenders"
 	}, {
-	  label: 'Paving, Surfacing, and Tamping Equipment Operators',
-	  value: 'Paving, Surfacing, and Tamping Equipment Operators'
+	  value: "Computer-Controlled Machine Tool Operators, Metal and Plastic",
+	  label: "Computer-Controlled Machine Tool Operators, Metal and Plastic"
 	}, {
-	  label: 'Drywall and Ceiling Tile Installers',
-	  value: 'Drywall and Ceiling Tile Installers'
+	  value: "Computer Numerically Controlled Machine Tool Programmers, Metal and Plastic",
+	  label: "Computer Numerically Controlled Machine Tool Programmers, Metal and Plastic"
 	}, {
-	  label: 'Helpers--Brickmasons, Blockmasons, Stonemasons, and Tile and Marble Setters',
-	  value: 'Helpers--Brickmasons, Blockmasons, Stonemasons, and Tile and Marble Setters'
+	  value: "Extruding and Drawing Machine Setters, Operators, and Tenders, Metal and Plastic",
+	  label: "Extruding and Drawing Machine Setters, Operators, and Tenders, Metal and Plastic"
 	}, {
-	  label: 'Helpers--Painters, Paperhangers, Plasterers, and Stucco Masons',
-	  value: 'Helpers--Painters, Paperhangers, Plasterers, and Stucco Masons'
+	  value: "Rolling Machine Setters, Operators, and Tenders, Metal and Plastic",
+	  label: "Rolling Machine Setters, Operators, and Tenders, Metal and Plastic"
 	}, {
-	  label: 'Helpers--Pipelayers, Plumbers, Pipefitters, and Steamfitters',
-	  value: 'Helpers--Pipelayers, Plumbers, Pipefitters, and Steamfitters'
+	  value: "Drilling and Boring Machine Tool Setters, Operators, and Tenders, Metal and Plastic",
+	  label: "Drilling and Boring Machine Tool Setters, Operators, and Tenders, Metal and Plastic"
 	}, {
-	  label: 'Helpers--Roofers',
-	  value: 'Helpers--Roofers'
+	  value: "Lathe and Turning Machine Tool Setters, Operators, and Tenders, Metal and Plastic",
+	  label: "Lathe and Turning Machine Tool Setters, Operators, and Tenders, Metal and Plastic"
 	}, {
-	  label: 'Helpers, Construction Trades, All Other',
-	  value: 'Helpers, Construction Trades, All Other'
+	  value: "Milling and Planing Machine Setters, Operators, and Tenders, Metal and Plastic",
+	  label: "Milling and Planing Machine Setters, Operators, and Tenders, Metal and Plastic"
 	}, {
-	  label: 'Explosives Workers, Ordnance Handling Experts, and Blasters',
-	  value: 'Explosives Workers, Ordnance Handling Experts, and Blasters'
+	  value: "Metal-Refining Furnace Operators and Tenders",
+	  label: "Metal-Refining Furnace Operators and Tenders"
 	}, {
-	  label: 'Continuous Mining Machine Operators',
-	  value: 'Continuous Mining Machine Operators'
+	  value: "Pourers and Casters, Metal",
+	  label: "Pourers and Casters, Metal"
 	}, {
-	  label: 'Mine Cutting and Channeling Machine Operators',
-	  value: 'Mine Cutting and Channeling Machine Operators'
+	  value: "Patternmakers, Metal and Plastic",
+	  label: "Patternmakers, Metal and Plastic"
 	}, {
-	  label: 'Roof Bolters, Mining',
-	  value: 'Roof Bolters, Mining'
+	  value: "Foundry Mold and Coremakers",
+	  label: "Foundry Mold and Coremakers"
 	}, {
-	  label: 'Helpers--Extraction Workers',
-	  value: 'Helpers--Extraction Workers'
+	  value: "Welding, Soldering, and Brazing Machine Setters, Operators, and Tenders",
+	  label: "Welding, Soldering, and Brazing Machine Setters, Operators, and Tenders"
 	}, {
-	  label: 'Extraction Workers, All Other',
-	  value: 'Extraction Workers, All Other'
+	  value: "Layout Workers, Metal and Plastic",
+	  label: "Layout Workers, Metal and Plastic"
 	}, {
-	  label: 'Electric Motor, Power Tool, and Related Repairers',
-	  value: 'Electric Motor, Power Tool, and Related Repairers'
+	  value: "Tool Grinders, Filers, and Sharpeners",
+	  label: "Tool Grinders, Filers, and Sharpeners"
 	}, {
-	  label: 'Electrical and Electronics Repairers, Powerhouse, Substation, and Relay',
-	  value: 'Electrical and Electronics Repairers, Powerhouse, Substation, and Relay'
+	  value: "Metal Workers and Plastic Workers, All Other",
+	  label: "Metal Workers and Plastic Workers, All Other"
 	}, {
-	  label: 'Electronic Home Entertainment Equipment Installers and Repairers',
-	  value: 'Electronic Home Entertainment Equipment Installers and Repairers'
+	  value: "Prepress Technicians and Workers",
+	  label: "Prepress Technicians and Workers"
 	}, {
-	  label: 'Farm Equipment Mechanics and Service Technicians',
-	  value: 'Farm Equipment Mechanics and Service Technicians'
+	  value: "Pressers, Textile, Garment, and Related Materials",
+	  label: "Pressers, Textile, Garment, and Related Materials"
 	}, {
-	  label: 'Mechanical Door Repairers',
-	  value: 'Mechanical Door Repairers'
+	  value: "Tailors, Dressmakers, and Custom Sewers",
+	  label: "Tailors, Dressmakers, and Custom Sewers"
 	}, {
-	  label: 'Millwrights',
-	  value: 'Millwrights'
+	  value: "Sawing Machine Setters, Operators, and Tenders, Wood",
+	  label: "Sawing Machine Setters, Operators, and Tenders, Wood"
 	}, {
-	  label: 'Coin, Vending, and Amusement Machine Servicers and Repairers',
-	  value: 'Coin, Vending, and Amusement Machine Servicers and Repairers'
+	  value: "Woodworking Machine Setters, Operators, and Tenders, Except Sawing",
+	  label: "Woodworking Machine Setters, Operators, and Tenders, Except Sawing"
 	}, {
-	  label: 'Locksmiths and Safe Repairers',
-	  value: 'Locksmiths and Safe Repairers'
+	  value: "Power Distributors and Dispatchers",
+	  label: "Power Distributors and Dispatchers"
 	}, {
-	  label: 'Coil Winders, Tapers, and Finishers',
-	  value: 'Coil Winders, Tapers, and Finishers'
+	  value: "Stationary Engineers and Boiler Operators",
+	  label: "Stationary Engineers and Boiler Operators"
 	}, {
-	  label: 'Food and Tobacco Roasting, Baking, and Drying Machine Operators and Tenders',
-	  value: 'Food and Tobacco Roasting, Baking, and Drying Machine Operators and Tenders'
+	  value: "Chemical Equipment Operators and Tenders",
+	  label: "Chemical Equipment Operators and Tenders"
 	}, {
-	  label: 'Computer-Controlled Machine Tool Operators, Metal and Plastic',
-	  value: 'Computer-Controlled Machine Tool Operators, Metal and Plastic'
+	  value: "Crushing, Grinding, and Polishing Machine Setters, Operators, and Tenders",
+	  label: "Crushing, Grinding, and Polishing Machine Setters, Operators, and Tenders"
 	}, {
-	  label: 'Computer Numerically Controlled Machine Tool Programmers, Metal and Plastic',
-	  value: 'Computer Numerically Controlled Machine Tool Programmers, Metal and Plastic'
+	  value: "Cutters and Trimmers, Hand",
+	  label: "Cutters and Trimmers, Hand"
 	}, {
-	  label: 'Extruding and Drawing Machine Setters, Operators, and Tenders, Metal and Plastic',
-	  value: 'Extruding and Drawing Machine Setters, Operators, and Tenders, Metal and Plastic'
+	  value: "Cutting and Slicing Machine Setters, Operators, and Tenders",
+	  label: "Cutting and Slicing Machine Setters, Operators, and Tenders"
 	}, {
-	  label: 'Rolling Machine Setters, Operators, and Tenders, Metal and Plastic',
-	  value: 'Rolling Machine Setters, Operators, and Tenders, Metal and Plastic'
+	  value: "Extruding, Forming, Pressing, and Compacting Machine Setters, Operators, and Tenders",
+	  label: "Extruding, Forming, Pressing, and Compacting Machine Setters, Operators, and Tenders"
 	}, {
-	  label: 'Drilling and Boring Machine Tool Setters, Operators, and Tenders, Metal and Plastic',
-	  value: 'Drilling and Boring Machine Tool Setters, Operators, and Tenders, Metal and Plastic'
+	  value: "Furnace, Kiln, Oven, Drier, and Kettle Operators and Tenders",
+	  label: "Furnace, Kiln, Oven, Drier, and Kettle Operators and Tenders"
 	}, {
-	  label: 'Lathe and Turning Machine Tool Setters, Operators, and Tenders, Metal and Plastic',
-	  value: 'Lathe and Turning Machine Tool Setters, Operators, and Tenders, Metal and Plastic'
+	  value: "Jewelers and Precious Stone and Metal Workers",
+	  label: "Jewelers and Precious Stone and Metal Workers"
 	}, {
-	  label: 'Milling and Planing Machine Setters, Operators, and Tenders, Metal and Plastic',
-	  value: 'Milling and Planing Machine Setters, Operators, and Tenders, Metal and Plastic'
+	  value: "Medical Appliance Technicians",
+	  label: "Medical Appliance Technicians"
 	}, {
-	  label: 'Metal-Refining Furnace Operators and Tenders',
-	  value: 'Metal-Refining Furnace Operators and Tenders'
+	  value: "Painting, Coating, and Decorating Workers",
+	  label: "Painting, Coating, and Decorating Workers"
 	}, {
-	  label: 'Pourers and Casters, Metal',
-	  value: 'Pourers and Casters, Metal'
+	  value: "Cleaning, Washing, and Metal Pickling Equipment Operators and Tenders",
+	  label: "Cleaning, Washing, and Metal Pickling Equipment Operators and Tenders"
 	}, {
-	  label: 'Patternmakers, Metal and Plastic',
-	  value: 'Patternmakers, Metal and Plastic'
+	  value: "Paper Goods Machine Setters, Operators, and Tenders",
+	  label: "Paper Goods Machine Setters, Operators, and Tenders"
 	}, {
-	  label: 'Foundry Mold and Coremakers',
-	  value: 'Foundry Mold and Coremakers'
+	  value: "Ambulance Drivers and Attendants, Except Emergency Medical Technicians",
+	  label: "Ambulance Drivers and Attendants, Except Emergency Medical Technicians"
 	}, {
-	  label: 'Welding, Soldering, and Brazing Machine Setters, Operators, and Tenders',
-	  value: 'Welding, Soldering, and Brazing Machine Setters, Operators, and Tenders'
+	  value: "Rail Yard Engineers, Dinkey Operators, and Hostlers",
+	  label: "Rail Yard Engineers, Dinkey Operators, and Hostlers"
 	}, {
-	  label: 'Layout Workers, Metal and Plastic',
-	  value: 'Layout Workers, Metal and Plastic'
+	  value: "Railroad Brake, Signal, and Switch Operators",
+	  label: "Railroad Brake, Signal, and Switch Operators"
 	}, {
-	  label: 'Tool Grinders, Filers, and Sharpeners',
-	  value: 'Tool Grinders, Filers, and Sharpeners'
+	  value: "Conveyor Operators and Tenders",
+	  label: "Conveyor Operators and Tenders"
 	}, {
-	  label: 'Metal Workers and Plastic Workers, All Other',
-	  value: 'Metal Workers and Plastic Workers, All Other'
+	  value: "Crane and Tower Operators",
+	  label: "Crane and Tower Operators"
 	}, {
-	  label: 'Prepress Technicians and Workers',
-	  value: 'Prepress Technicians and Workers'
+	  value: "Loading Machine Operators, Underground Mining",
+	  label: "Loading Machine Operators, Underground Mining"
 	}, {
-	  label: 'Pressers, Textile, Garment, and Related Materials',
-	  value: 'Pressers, Textile, Garment, and Related Materials'
+	  value: "Machine Feeders and Offbearers",
+	  label: "Machine Feeders and Offbearers"
 	}, {
-	  label: 'Tailors, Dressmakers, and Custom Sewers',
-	  value: 'Tailors, Dressmakers, and Custom Sewers'
+	  value: "Mine Shuttle Car Operators",
+	  label: "Mine Shuttle Car Operators"
 	}, {
-	  label: 'Sawing Machine Setters, Operators, and Tenders, Wood',
-	  value: 'Sawing Machine Setters, Operators, and Tenders, Wood'
+	  value: "Tank Car, Truck, and Ship Loaders",
+	  label: "Tank Car, Truck, and Ship Loaders"
 	}, {
-	  label: 'Woodworking Machine Setters, Operators, and Tenders, Except Sawing',
-	  value: 'Woodworking Machine Setters, Operators, and Tenders, Except Sawing'
+	  value: "Fiberglass Laminators and Fabricators",
+	  label: "Fiberglass Laminators and Fabricators"
 	}, {
-	  label: 'Power Distributors and Dispatchers',
-	  value: 'Power Distributors and Dispatchers'
+	  value: "Slaughterers and Meat Packers",
+	  label: "Slaughterers and Meat Packers"
 	}, {
-	  label: 'Stationary Engineers and Boiler Operators',
-	  value: 'Stationary Engineers and Boiler Operators'
+	  value: "Agricultural Inspectors",
+	  label: "Agricultural Inspectors"
 	}, {
-	  label: 'Chemical Equipment Operators and Tenders',
-	  value: 'Chemical Equipment Operators and Tenders'
+	  value: "Food Cooking Machine Operators and Tenders",
+	  label: "Food Cooking Machine Operators and Tenders"
 	}, {
-	  label: 'Crushing, Grinding, and Polishing Machine Setters, Operators, and Tenders',
-	  value: 'Crushing, Grinding, and Polishing Machine Setters, Operators, and Tenders'
+	  value: "Tree Trimmers and Pruners",
+	  label: "Tree Trimmers and Pruners"
 	}, {
-	  label: 'Cutters and Trimmers, Hand',
-	  value: 'Cutters and Trimmers, Hand'
+	  value: "Woodworkers, All Other",
+	  label: "Woodworkers, All Other"
 	}, {
-	  label: 'Cutting and Slicing Machine Setters, Operators, and Tenders',
-	  value: 'Cutting and Slicing Machine Setters, Operators, and Tenders'
+	  value: "Computer and Information Research Scientists",
+	  label: "Computer and Information Research Scientists"
 	}, {
-	  label: 'Extruding, Forming, Pressing, and Compacting Machine Setters, Operators, and Tenders',
-	  value: 'Extruding, Forming, Pressing, and Compacting Machine Setters, Operators, and Tenders'
+	  value: "Aerospace Engineers",
+	  label: "Aerospace Engineers"
 	}, {
-	  label: 'Furnace, Kiln, Oven, Drier, and Kettle Operators and Tenders',
-	  value: 'Furnace, Kiln, Oven, Drier, and Kettle Operators and Tenders'
+	  value: "Nuclear Engineers",
+	  label: "Nuclear Engineers"
 	}, {
-	  label: 'Jewelers and Precious Stone and Metal Workers',
-	  value: 'Jewelers and Precious Stone and Metal Workers'
+	  value: "Aerospace Engineering and Operations Technicians",
+	  label: "Aerospace Engineering and Operations Technicians"
 	}, {
-	  label: 'Medical Appliance Technicians',
-	  value: 'Medical Appliance Technicians'
+	  value: "Electro-Mechanical Technicians",
+	  label: "Electro-Mechanical Technicians"
 	}, {
-	  label: 'Painting, Coating, and Decorating Workers',
-	  value: 'Painting, Coating, and Decorating Workers'
+	  value: "Physicists",
+	  label: "Physicists"
 	}, {
-	  label: 'Cleaning, Washing, and Metal Pickling Equipment Operators and Tenders',
-	  value: 'Cleaning, Washing, and Metal Pickling Equipment Operators and Tenders'
+	  value: "Materials Scientists",
+	  label: "Materials Scientists"
 	}, {
-	  label: 'Paper Goods Machine Setters, Operators, and Tenders',
-	  value: 'Paper Goods Machine Setters, Operators, and Tenders'
+	  value: "Engineering Teachers, Postsecondary",
+	  label: "Engineering Teachers, Postsecondary"
 	}, {
-	  label: 'Ambulance Drivers and Attendants, Except Emergency Medical Technicians',
-	  value: 'Ambulance Drivers and Attendants, Except Emergency Medical Technicians'
+	  value: "Multimedia Artists and Animators",
+	  label: "Multimedia Artists and Animators"
 	}, {
-	  label: 'Rail Yard Engineers, Dinkey Operators, and Hostlers',
-	  value: 'Rail Yard Engineers, Dinkey Operators, and Hostlers'
+	  value: "Aircraft Structure, Surfaces, Rigging, and Systems Assemblers",
+	  label: "Aircraft Structure, Surfaces, Rigging, and Systems Assemblers"
 	}, {
-	  label: 'Railroad Brake, Signal, and Switch Operators',
-	  value: 'Railroad Brake, Signal, and Switch Operators'
+	  value: "Electromechanical Equipment Assemblers",
+	  label: "Electromechanical Equipment Assemblers"
 	}, {
-	  label: 'Conveyor Operators and Tenders',
-	  value: 'Conveyor Operators and Tenders'
+	  value: "Engine and Other Machine Assemblers",
+	  label: "Engine and Other Machine Assemblers"
 	}, {
-	  label: 'Crane and Tower Operators',
-	  value: 'Crane and Tower Operators'
+	  value: "Extruding and Forming Machine Setters, Operators, and Tenders, Synthetic and Glass Fibers",
+	  label: "Extruding and Forming Machine Setters, Operators, and Tenders, Synthetic and Glass Fibers"
 	}, {
-	  label: 'Loading Machine Operators, Underground Mining',
-	  value: 'Loading Machine Operators, Underground Mining'
+	  value: "Nursing Instructors and Teachers, Postsecondary",
+	  label: "Nursing Instructors and Teachers, Postsecondary"
 	}, {
-	  label: 'Machine Feeders and Offbearers',
-	  value: 'Machine Feeders and Offbearers'
+	  value: "Respiratory Therapy Technicians",
+	  label: "Respiratory Therapy Technicians"
 	}, {
-	  label: 'Mine Shuttle Car Operators',
-	  value: 'Mine Shuttle Car Operators'
+	  value: "Commercial Divers",
+	  label: "Commercial Divers"
 	}, {
-	  label: 'Tank Car, Truck, and Ship Loaders',
-	  value: 'Tank Car, Truck, and Ship Loaders'
+	  value: "Health Specialties Teachers, Postsecondary",
+	  label: "Health Specialties Teachers, Postsecondary"
 	}, {
-	  label: 'Fiberglass Laminators and Fabricators',
-	  value: 'Fiberglass Laminators and Fabricators'
+	  value: "Graduate Teaching Assistants",
+	  label: "Graduate Teaching Assistants"
 	}, {
-	  label: 'Slaughterers and Meat Packers',
-	  value: 'Slaughterers and Meat Packers'
+	  value: "Archivists",
+	  label: "Archivists"
 	}, {
-	  label: 'Agricultural Inspectors',
-	  value: 'Agricultural Inspectors'
+	  value: "Gaming Supervisors",
+	  label: "Gaming Supervisors"
 	}, {
-	  label: 'Food Cooking Machine Operators and Tenders',
-	  value: 'Food Cooking Machine Operators and Tenders'
+	  value: "Graders and Sorters, Agricultural Products",
+	  label: "Graders and Sorters, Agricultural Products"
 	}, {
-	  label: 'Tree Trimmers and Pruners',
-	  value: 'Tree Trimmers and Pruners'
+	  value: "Agricultural Workers, All Other",
+	  label: "Agricultural Workers, All Other"
 	}, {
-	  label: 'Woodworkers, All Other',
-	  value: 'Woodworkers, All Other'
+	  value: "Musical Instrument Repairers and Tuners",
+	  label: "Musical Instrument Repairers and Tuners"
 	}, {
-	  label: 'Computer and Information Research Scientists',
-	  value: 'Computer and Information Research Scientists'
+	  value: "Adhesive Bonding Machine Operators and Tenders",
+	  label: "Adhesive Bonding Machine Operators and Tenders"
 	}, {
-	  label: 'Aerospace Engineers',
-	  value: 'Aerospace Engineers'
+	  value: "Foresters",
+	  label: "Foresters"
 	}, {
-	  label: 'Nuclear Engineers',
-	  value: 'Nuclear Engineers'
+	  value: "Economics Teachers, Postsecondary",
+	  label: "Economics Teachers, Postsecondary"
 	}, {
-	  label: 'Aerospace Engineering and Operations Technicians',
-	  value: 'Aerospace Engineering and Operations Technicians'
+	  value: "Log Graders and Scalers",
+	  label: "Log Graders and Scalers"
 	}, {
-	  label: 'Electro-Mechanical Technicians',
-	  value: 'Electro-Mechanical Technicians'
+	  value: "Landscape Architects",
+	  label: "Landscape Architects"
 	}, {
-	  label: 'Physicists',
-	  value: 'Physicists'
+	  value: "Food Scientists and Technologists",
+	  label: "Food Scientists and Technologists"
 	}, {
-	  label: 'Materials Scientists',
-	  value: 'Materials Scientists'
+	  value: "Agricultural and Food Science Technicians",
+	  label: "Agricultural and Food Science Technicians"
 	}, {
-	  label: 'Engineering Teachers, Postsecondary',
-	  value: 'Engineering Teachers, Postsecondary'
+	  value: "Food Processing Workers, All Other",
+	  label: "Food Processing Workers, All Other"
 	}, {
-	  label: 'Multimedia Artists and Animators',
-	  value: 'Multimedia Artists and Animators'
+	  value: "Ophthalmic Laboratory Technicians",
+	  label: "Ophthalmic Laboratory Technicians"
 	}, {
-	  label: 'Aircraft Structure, Surfaces, Rigging, and Systems Assemblers',
-	  value: 'Aircraft Structure, Surfaces, Rigging, and Systems Assemblers'
+	  value: "Cooling and Freezing Equipment Operators and Tenders",
+	  label: "Cooling and Freezing Equipment Operators and Tenders"
 	}, {
-	  label: 'Electromechanical Equipment Assemblers',
-	  value: 'Electromechanical Equipment Assemblers'
+	  value: "Gaming Surveillance Officers and Gaming Investigators",
+	  label: "Gaming Surveillance Officers and Gaming Investigators"
 	}, {
-	  label: 'Engine and Other Machine Assemblers',
-	  value: 'Engine and Other Machine Assemblers'
+	  value: "Gaming Change Persons and Booth Cashiers",
+	  label: "Gaming Change Persons and Booth Cashiers"
 	}, {
-	  label: 'Extruding and Forming Machine Setters, Operators, and Tenders, Synthetic and Glass Fibers',
-	  value: 'Extruding and Forming Machine Setters, Operators, and Tenders, Synthetic and Glass Fibers'
+	  value: "Septic Tank Servicers and Sewer Pipe Cleaners",
+	  label: "Septic Tank Servicers and Sewer Pipe Cleaners"
 	}, {
-	  label: 'Nursing Instructors and Teachers, Postsecondary',
-	  value: 'Nursing Instructors and Teachers, Postsecondary'
+	  value: "Derrick Operators, Oil and Gas",
+	  label: "Derrick Operators, Oil and Gas"
 	}, {
-	  label: 'Respiratory Therapy Technicians',
-	  value: 'Respiratory Therapy Technicians'
+	  value: "Rock Splitters, Quarry",
+	  label: "Rock Splitters, Quarry"
 	}, {
-	  label: 'Commercial Divers',
-	  value: 'Commercial Divers'
+	  value: "Automotive Glass Installers and Repairers",
+	  label: "Automotive Glass Installers and Repairers"
 	}, {
-	  label: 'Health Specialties Teachers, Postsecondary',
-	  value: 'Health Specialties Teachers, Postsecondary'
+	  value: "Upholsterers",
+	  label: "Upholsterers"
 	}, {
-	  label: 'Graduate Teaching Assistants',
-	  value: 'Graduate Teaching Assistants'
+	  value: "Animal Trainers",
+	  label: "Animal Trainers"
 	}, {
-	  label: 'Archivists',
-	  value: 'Archivists'
+	  value: "Agricultural Equipment Operators",
+	  label: "Agricultural Equipment Operators"
 	}, {
-	  label: 'Gaming Supervisors',
-	  value: 'Gaming Supervisors'
+	  value: "Credit Counselors",
+	  label: "Credit Counselors"
 	}, {
-	  label: 'Graders and Sorters, Agricultural Products',
-	  value: 'Graders and Sorters, Agricultural Products'
+	  value: "Biochemists and Biophysicists",
+	  label: "Biochemists and Biophysicists"
 	}, {
-	  label: 'Agricultural Workers, All Other',
-	  value: 'Agricultural Workers, All Other'
+	  value: "Microbiologists",
+	  label: "Microbiologists"
 	}, {
-	  label: 'Musical Instrument Repairers and Tuners',
-	  value: 'Musical Instrument Repairers and Tuners'
+	  value: "Epidemiologists",
+	  label: "Epidemiologists"
 	}, {
-	  label: 'Adhesive Bonding Machine Operators and Tenders',
-	  value: 'Adhesive Bonding Machine Operators and Tenders'
+	  value: "Economists",
+	  label: "Economists"
 	}, {
-	  label: 'Foresters',
-	  value: 'Foresters'
+	  value: "Judicial Law Clerks",
+	  label: "Judicial Law Clerks"
 	}, {
-	  label: 'Economics Teachers, Postsecondary',
-	  value: 'Economics Teachers, Postsecondary'
+	  value: "Administrative Law Judges, Adjudicators, and Hearing Officers",
+	  label: "Administrative Law Judges, Adjudicators, and Hearing Officers"
 	}, {
-	  label: 'Log Graders and Scalers',
-	  value: 'Log Graders and Scalers'
+	  value: "Anthropology and Archeology Teachers, Postsecondary",
+	  label: "Anthropology and Archeology Teachers, Postsecondary"
 	}, {
-	  label: 'Landscape Architects',
-	  value: 'Landscape Architects'
+	  value: "Political Science Teachers, Postsecondary",
+	  label: "Political Science Teachers, Postsecondary"
 	}, {
-	  label: 'Food Scientists and Technologists',
-	  value: 'Food Scientists and Technologists'
+	  value: "Sociology Teachers, Postsecondary",
+	  label: "Sociology Teachers, Postsecondary"
 	}, {
-	  label: 'Agricultural and Food Science Technicians',
-	  value: 'Agricultural and Food Science Technicians'
+	  value: "Career/Technical Education Teachers, Middle School",
+	  label: "Career/Technical Education Teachers, Middle School"
 	}, {
-	  label: 'Food Processing Workers, All Other',
-	  value: 'Food Processing Workers, All Other'
+	  value: "Special Education Teachers, All Other",
+	  label: "Special Education Teachers, All Other"
 	}, {
-	  label: 'Ophthalmic Laboratory Technicians',
-	  value: 'Ophthalmic Laboratory Technicians'
+	  value: "Farm and Home Management Advisors",
+	  label: "Farm and Home Management Advisors"
 	}, {
-	  label: 'Cooling and Freezing Equipment Operators and Tenders',
-	  value: 'Cooling and Freezing Equipment Operators and Tenders'
+	  value: "Fine Artists, Including Painters, Sculptors, and Illustrators",
+	  label: "Fine Artists, Including Painters, Sculptors, and Illustrators"
 	}, {
-	  label: 'Gaming Surveillance Officers and Gaming Investigators',
-	  value: 'Gaming Surveillance Officers and Gaming Investigators'
+	  value: "Actors",
+	  label: "Actors"
 	}, {
-	  label: 'Gaming Change Persons and Booth Cashiers',
-	  value: 'Gaming Change Persons and Booth Cashiers'
+	  value: "Dietetic Technicians",
+	  label: "Dietetic Technicians"
 	}, {
-	  label: 'Septic Tank Servicers and Sewer Pipe Cleaners',
-	  value: 'Septic Tank Servicers and Sewer Pipe Cleaners'
+	  value: "Proofreaders and Copy Markers",
+	  label: "Proofreaders and Copy Markers"
 	}, {
-	  label: 'Derrick Operators, Oil and Gas',
-	  value: 'Derrick Operators, Oil and Gas'
+	  value: "Elevator Installers and Repairers",
+	  label: "Elevator Installers and Repairers"
 	}, {
-	  label: 'Rock Splitters, Quarry',
-	  value: 'Rock Splitters, Quarry'
+	  value: "Fence Erectors",
+	  label: "Fence Erectors"
 	}, {
-	  label: 'Automotive Glass Installers and Repairers',
-	  value: 'Automotive Glass Installers and Repairers'
+	  value: "Recreational Vehicle Service Technicians",
+	  label: "Recreational Vehicle Service Technicians"
 	}, {
-	  label: 'Upholsterers',
-	  value: 'Upholsterers'
+	  value: "Tire Builders",
+	  label: "Tire Builders"
 	}, {
-	  label: 'Animal Trainers',
-	  value: 'Animal Trainers'
+	  value: "Transportation Attendants, Except Flight Attendants",
+	  label: "Transportation Attendants, Except Flight Attendants"
 	}, {
-	  label: 'Agricultural Equipment Operators',
-	  value: 'Agricultural Equipment Operators'
+	  value: "Travel Guides",
+	  label: "Travel Guides"
 	}, {
-	  label: 'Credit Counselors',
-	  value: 'Credit Counselors'
+	  value: "Funeral Service Managers",
+	  label: "Funeral Service Managers"
 	}, {
-	  label: 'Biochemists and Biophysicists',
-	  value: 'Biochemists and Biophysicists'
+	  value: "Agents and Business Managers of Artists, Performers, and Athletes",
+	  label: "Agents and Business Managers of Artists, Performers, and Athletes"
 	}, {
-	  label: 'Microbiologists',
-	  value: 'Microbiologists'
+	  value: "Soil and Plant Scientists",
+	  label: "Soil and Plant Scientists"
 	}, {
-	  label: 'Epidemiologists',
-	  value: 'Epidemiologists'
+	  value: "Survey Researchers",
+	  label: "Survey Researchers"
 	}, {
-	  label: 'Economists',
-	  value: 'Economists'
+	  value: "Political Scientists",
+	  label: "Political Scientists"
 	}, {
-	  label: 'Judicial Law Clerks',
-	  value: 'Judicial Law Clerks'
+	  value: "Social Science Research Assistants",
+	  label: "Social Science Research Assistants"
 	}, {
-	  label: 'Administrative Law Judges, Adjudicators, and Hearing Officers',
-	  value: 'Administrative Law Judges, Adjudicators, and Hearing Officers'
+	  value: "Religious Workers, All Other",
+	  label: "Religious Workers, All Other"
 	}, {
-	  label: 'Anthropology and Archeology Teachers, Postsecondary',
-	  value: 'Anthropology and Archeology Teachers, Postsecondary'
+	  value: "Arbitrators, Mediators, and Conciliators",
+	  label: "Arbitrators, Mediators, and Conciliators"
 	}, {
-	  label: 'Political Science Teachers, Postsecondary',
-	  value: 'Political Science Teachers, Postsecondary'
+	  value: "Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary",
+	  label: "Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary"
 	}, {
-	  label: 'Sociology Teachers, Postsecondary',
-	  value: 'Sociology Teachers, Postsecondary'
+	  value: "Area, Ethnic, and Cultural Studies Teachers, Postsecondary",
+	  label: "Area, Ethnic, and Cultural Studies Teachers, Postsecondary"
 	}, {
-	  label: 'Career/Technical Education Teachers, Middle School',
-	  value: 'Career/Technical Education Teachers, Middle School'
+	  value: "Social Work Teachers, Postsecondary",
+	  label: "Social Work Teachers, Postsecondary"
 	}, {
-	  label: 'Special Education Teachers, All Other',
-	  value: 'Special Education Teachers, All Other'
+	  value: "Museum Technicians and Conservators",
+	  label: "Museum Technicians and Conservators"
 	}, {
-	  label: 'Farm and Home Management Advisors',
-	  value: 'Farm and Home Management Advisors'
+	  value: "Audio-Visual and Multimedia Collections Specialists",
+	  label: "Audio-Visual and Multimedia Collections Specialists"
 	}, {
-	  label: 'Fine Artists, Including Painters, Sculptors, and Illustrators',
-	  value: 'Fine Artists, Including Painters, Sculptors, and Illustrators'
+	  value: "Craft Artists",
+	  label: "Craft Artists"
 	}, {
-	  label: 'Actors',
-	  value: 'Actors'
+	  value: "Set and Exhibit Designers",
+	  label: "Set and Exhibit Designers"
 	}, {
-	  label: 'Dietetic Technicians',
-	  value: 'Dietetic Technicians'
+	  value: "Designers, All Other",
+	  label: "Designers, All Other"
 	}, {
-	  label: 'Proofreaders and Copy Markers',
-	  value: 'Proofreaders and Copy Markers'
+	  value: "Athletes and Sports Competitors",
+	  label: "Athletes and Sports Competitors"
 	}, {
-	  label: 'Elevator Installers and Repairers',
-	  value: 'Elevator Installers and Repairers'
+	  value: "Music Directors and Composers",
+	  label: "Music Directors and Composers"
 	}, {
-	  label: 'Fence Erectors',
-	  value: 'Fence Erectors'
+	  value: "Musicians and Singers",
+	  label: "Musicians and Singers"
 	}, {
-	  label: 'Recreational Vehicle Service Technicians',
-	  value: 'Recreational Vehicle Service Technicians'
+	  value: "Dentists, All Other Specialists",
+	  label: "Dentists, All Other Specialists"
 	}, {
-	  label: 'Tire Builders',
-	  value: 'Tire Builders'
+	  value: "Podiatrists",
+	  label: "Podiatrists"
 	}, {
-	  label: 'Transportation Attendants, Except Flight Attendants',
-	  value: 'Transportation Attendants, Except Flight Attendants'
+	  value: "Exercise Physiologists",
+	  label: "Exercise Physiologists"
 	}, {
-	  label: 'Travel Guides',
-	  value: 'Travel Guides'
+	  value: "Therapists, All Other",
+	  label: "Therapists, All Other"
 	}, {
-	  label: 'Funeral Service Managers',
-	  value: 'Funeral Service Managers'
+	  value: "Hearing Aid Specialists",
+	  label: "Hearing Aid Specialists"
 	}, {
-	  label: 'Agents and Business Managers of Artists, Performers, and Athletes',
-	  value: 'Agents and Business Managers of Artists, Performers, and Athletes'
+	  value: "Fish and Game Wardens",
+	  label: "Fish and Game Wardens"
 	}, {
-	  label: 'Soil and Plant Scientists',
-	  value: 'Soil and Plant Scientists'
+	  value: "Parking Enforcement Workers",
+	  label: "Parking Enforcement Workers"
 	}, {
-	  label: 'Survey Researchers',
-	  value: 'Survey Researchers'
+	  value: "Building Cleaning Workers, All Other",
+	  label: "Building Cleaning Workers, All Other"
 	}, {
-	  label: 'Political Scientists',
-	  value: 'Political Scientists'
+	  value: "Motion Picture Projectionists",
+	  label: "Motion Picture Projectionists"
 	}, {
-	  label: 'Social Science Research Assistants',
-	  value: 'Social Science Research Assistants'
+	  value: "Embalmers",
+	  label: "Embalmers"
 	}, {
-	  label: 'Religious Workers, All Other',
-	  value: 'Religious Workers, All Other'
+	  value: "Telephone Operators",
+	  label: "Telephone Operators"
 	}, {
-	  label: 'Arbitrators, Mediators, and Conciliators',
-	  value: 'Arbitrators, Mediators, and Conciliators'
+	  value: "Gaming Cage Workers",
+	  label: "Gaming Cage Workers"
 	}, {
-	  label: 'Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary',
-	  value: 'Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary'
+	  value: "Desktop Publishers",
+	  label: "Desktop Publishers"
 	}, {
-	  label: 'Area, Ethnic, and Cultural Studies Teachers, Postsecondary',
-	  value: 'Area, Ethnic, and Cultural Studies Teachers, Postsecondary'
+	  value: "Statistical Assistants",
+	  label: "Statistical Assistants"
 	}, {
-	  label: 'Social Work Teachers, Postsecondary',
-	  value: 'Social Work Teachers, Postsecondary'
+	  value: "Stonemasons",
+	  label: "Stonemasons"
 	}, {
-	  label: 'Museum Technicians and Conservators',
-	  value: 'Museum Technicians and Conservators'
+	  value: "Carpet Installers",
+	  label: "Carpet Installers"
 	}, {
-	  label: 'Audio-Visual and Multimedia Collections Specialists',
-	  value: 'Audio-Visual and Multimedia Collections Specialists'
+	  value: "Floor Sanders and Finishers",
+	  label: "Floor Sanders and Finishers"
 	}, {
-	  label: 'Craft Artists',
-	  value: 'Craft Artists'
+	  value: "Tapers",
+	  label: "Tapers"
 	}, {
-	  label: 'Set and Exhibit Designers',
-	  value: 'Set and Exhibit Designers'
+	  value: "Paperhangers",
+	  label: "Paperhangers"
 	}, {
-	  label: 'Designers, All Other',
-	  value: 'Designers, All Other'
+	  value: "Plasterers and Stucco Masons",
+	  label: "Plasterers and Stucco Masons"
 	}, {
-	  label: 'Athletes and Sports Competitors',
-	  value: 'Athletes and Sports Competitors'
+	  value: "Reinforcing Iron and Rebar Workers",
+	  label: "Reinforcing Iron and Rebar Workers"
 	}, {
-	  label: 'Music Directors and Composers',
-	  value: 'Music Directors and Composers'
+	  value: "Solar Photovoltaic Installers",
+	  label: "Solar Photovoltaic Installers"
 	}, {
-	  label: 'Musicians and Singers',
-	  value: 'Musicians and Singers'
+	  value: "Rail-Track Laying and Maintenance Equipment Operators",
+	  label: "Rail-Track Laying and Maintenance Equipment Operators"
 	}, {
-	  label: 'Dentists, All Other Specialists',
-	  value: 'Dentists, All Other Specialists'
+	  value: "Electronic Equipment Installers and Repairers, Motor Vehicles",
+	  label: "Electronic Equipment Installers and Repairers, Motor Vehicles"
 	}, {
-	  label: 'Podiatrists',
-	  value: 'Podiatrists'
+	  value: "Rail Car Repairers",
+	  label: "Rail Car Repairers"
 	}, {
-	  label: 'Exercise Physiologists',
-	  value: 'Exercise Physiologists'
+	  value: "Bicycle Repairers",
+	  label: "Bicycle Repairers"
 	}, {
-	  label: 'Therapists, All Other',
-	  value: 'Therapists, All Other'
+	  value: "Camera and Photographic Equipment Repairers",
+	  label: "Camera and Photographic Equipment Repairers"
 	}, {
-	  label: 'Hearing Aid Specialists',
-	  value: 'Hearing Aid Specialists'
+	  value: "Watch Repairers",
+	  label: "Watch Repairers"
 	}, {
-	  label: 'Fish and Game Wardens',
-	  value: 'Fish and Game Wardens'
+	  value: "Heat Treating Equipment Setters, Operators, and Tenders, Metal and Plastic",
+	  label: "Heat Treating Equipment Setters, Operators, and Tenders, Metal and Plastic"
 	}, {
-	  label: 'Parking Enforcement Workers',
-	  value: 'Parking Enforcement Workers'
+	  value: "Textile Cutting Machine Setters, Operators, and Tenders",
+	  label: "Textile Cutting Machine Setters, Operators, and Tenders"
 	}, {
-	  label: 'Building Cleaning Workers, All Other',
-	  value: 'Building Cleaning Workers, All Other'
+	  value: "Textile, Apparel, and Furnishings Workers, All Other",
+	  label: "Textile, Apparel, and Furnishings Workers, All Other"
 	}, {
-	  label: 'Motion Picture Projectionists',
-	  value: 'Motion Picture Projectionists'
+	  value: "Furniture Finishers",
+	  label: "Furniture Finishers"
 	}, {
-	  label: 'Embalmers',
-	  value: 'Embalmers'
+	  value: "Chemical Plant and System Operators",
+	  label: "Chemical Plant and System Operators"
 	}, {
-	  label: 'Telephone Operators',
-	  value: 'Telephone Operators'
+	  value: "Semiconductor Processors",
+	  label: "Semiconductor Processors"
 	}, {
-	  label: 'Gaming Cage Workers',
-	  value: 'Gaming Cage Workers'
+	  value: "Etchers and Engravers",
+	  label: "Etchers and Engravers"
 	}, {
-	  label: 'Desktop Publishers',
-	  value: 'Desktop Publishers'
+	  value: "Railroad Conductors and Yardmasters",
+	  label: "Railroad Conductors and Yardmasters"
 	}, {
-	  label: 'Statistical Assistants',
-	  value: 'Statistical Assistants'
+	  value: "Traffic Technicians",
+	  label: "Traffic Technicians"
 	}, {
-	  label: 'Stonemasons',
-	  value: 'Stonemasons'
+	  value: "Pump Operators, Except Wellhead Pumpers",
+	  label: "Pump Operators, Except Wellhead Pumpers"
 	}, {
-	  label: 'Carpet Installers',
-	  value: 'Carpet Installers'
+	  value: "Material Moving Workers, All Other",
+	  label: "Material Moving Workers, All Other"
 	}, {
-	  label: 'Floor Sanders and Finishers',
-	  value: 'Floor Sanders and Finishers'
+	  value: "Astronomers",
+	  label: "Astronomers"
 	}, {
-	  label: 'Tapers',
-	  value: 'Tapers'
+	  value: "Farmers, Ranchers, and Other Agricultural Managers",
+	  label: "Farmers, Ranchers, and Other Agricultural Managers"
 	}, {
-	  label: 'Paperhangers',
-	  value: 'Paperhangers'
+	  value: "Nuclear Technicians",
+	  label: "Nuclear Technicians"
 	}, {
-	  label: 'Plasterers and Stucco Masons',
-	  value: 'Plasterers and Stucco Masons'
+	  value: "Directors, Religious Activities and Education",
+	  label: "Directors, Religious Activities and Education"
 	}, {
-	  label: 'Reinforcing Iron and Rebar Workers',
-	  value: 'Reinforcing Iron and Rebar Workers'
+	  value: "Geography Teachers, Postsecondary",
+	  label: "Geography Teachers, Postsecondary"
 	}, {
-	  label: 'Solar Photovoltaic Installers',
-	  value: 'Solar Photovoltaic Installers'
+	  value: "Social Sciences Teachers, Postsecondary, All Other",
+	  label: "Social Sciences Teachers, Postsecondary, All Other"
 	}, {
-	  label: 'Rail-Track Laying and Maintenance Equipment Operators',
-	  value: 'Rail-Track Laying and Maintenance Equipment Operators'
+	  value: "Library Science Teachers, Postsecondary",
+	  label: "Library Science Teachers, Postsecondary"
 	}, {
-	  label: 'Electronic Equipment Installers and Repairers, Motor Vehicles',
-	  value: 'Electronic Equipment Installers and Repairers, Motor Vehicles'
+	  value: "Law Teachers, Postsecondary",
+	  label: "Law Teachers, Postsecondary"
 	}, {
-	  label: 'Rail Car Repairers',
-	  value: 'Rail Car Repairers'
+	  value: "Fashion Designers",
+	  label: "Fashion Designers"
 	}, {
-	  label: 'Bicycle Repairers',
-	  value: 'Bicycle Repairers'
+	  value: "Dancers",
+	  label: "Dancers"
 	}, {
-	  label: 'Camera and Photographic Equipment Repairers',
-	  value: 'Camera and Photographic Equipment Repairers'
+	  value: "Nurse Midwives",
+	  label: "Nurse Midwives"
 	}, {
-	  label: 'Watch Repairers',
-	  value: 'Watch Repairers'
+	  value: "Genetic Counselors",
+	  label: "Genetic Counselors"
 	}, {
-	  label: 'Heat Treating Equipment Setters, Operators, and Tenders, Metal and Plastic',
-	  value: 'Heat Treating Equipment Setters, Operators, and Tenders, Metal and Plastic'
+	  value: "Forest Fire Inspectors and Prevention Specialists",
+	  label: "Forest Fire Inspectors and Prevention Specialists"
 	}, {
-	  label: 'Textile Cutting Machine Setters, Operators, and Tenders',
-	  value: 'Textile Cutting Machine Setters, Operators, and Tenders'
+	  value: "Models",
+	  label: "Models"
 	}, {
-	  label: 'Textile, Apparel, and Furnishings Workers, All Other',
-	  value: 'Textile, Apparel, and Furnishings Workers, All Other'
+	  value: "Terrazzo Workers and Finishers",
+	  label: "Terrazzo Workers and Finishers"
 	}, {
-	  label: 'Furniture Finishers',
-	  value: 'Furniture Finishers'
+	  value: "Fabric Menders, Except Garment",
+	  label: "Fabric Menders, Except Garment"
 	}, {
-	  label: 'Chemical Plant and System Operators',
-	  value: 'Chemical Plant and System Operators'
+	  value: "Model Makers, Metal and Plastic",
+	  label: "Model Makers, Metal and Plastic"
 	}, {
-	  label: 'Semiconductor Processors',
-	  value: 'Semiconductor Processors'
+	  value: "Shoe and Leather Workers and Repairers",
+	  label: "Shoe and Leather Workers and Repairers"
 	}, {
-	  label: 'Etchers and Engravers',
-	  value: 'Etchers and Engravers'
+	  value: "Sewers, Hand",
+	  label: "Sewers, Hand"
 	}, {
-	  label: 'Railroad Conductors and Yardmasters',
-	  value: 'Railroad Conductors and Yardmasters'
+	  value: "Textile Bleaching and Dyeing Machine Operators and Tenders",
+	  label: "Textile Bleaching and Dyeing Machine Operators and Tenders"
 	}, {
-	  label: 'Traffic Technicians',
-	  value: 'Traffic Technicians'
+	  value: "Textile Knitting and Weaving Machine Setters, Operators, and Tenders",
+	  label: "Textile Knitting and Weaving Machine Setters, Operators, and Tenders"
 	}, {
-	  label: 'Pump Operators, Except Wellhead Pumpers',
-	  value: 'Pump Operators, Except Wellhead Pumpers'
+	  value: "Fabric and Apparel Patternmakers",
+	  label: "Fabric and Apparel Patternmakers"
 	}, {
-	  label: 'Material Moving Workers, All Other',
-	  value: 'Material Moving Workers, All Other'
+	  value: "Farm Labor Contractors",
+	  label: "Farm Labor Contractors"
 	}, {
-	  label: 'Astronomers',
-	  value: 'Astronomers'
+	  value: "Wind Turbine Service Technicians",
+	  label: "Wind Turbine Service Technicians"
 	}, {
-	  label: 'Farmers, Ranchers, and Other Agricultural Managers',
-	  value: 'Farmers, Ranchers, and Other Agricultural Managers'
+	  value: "Wellhead Pumpers",
+	  label: "Wellhead Pumpers"
 	}, {
-	  label: 'Nuclear Technicians',
-	  value: 'Nuclear Technicians'
+	  value: "Agricultural Engineers",
+	  label: "Agricultural Engineers"
 	}, {
-	  label: 'Directors, Religious Activities and Education',
-	  value: 'Directors, Religious Activities and Education'
+	  value: "Gaming Dealers",
+	  label: "Gaming Dealers"
 	}, {
-	  label: 'Geography Teachers, Postsecondary',
-	  value: 'Geography Teachers, Postsecondary'
+	  value: "Mathematicians",
+	  label: "Mathematicians"
 	}, {
-	  label: 'Social Sciences Teachers, Postsecondary, All Other',
-	  value: 'Social Sciences Teachers, Postsecondary, All Other'
+	  value: "Sociologists",
+	  label: "Sociologists"
 	}, {
-	  label: 'Library Science Teachers, Postsecondary',
-	  value: 'Library Science Teachers, Postsecondary'
+	  value: "Architecture Teachers, Postsecondary",
+	  label: "Architecture Teachers, Postsecondary"
 	}, {
-	  label: 'Law Teachers, Postsecondary',
-	  value: 'Law Teachers, Postsecondary'
+	  value: "Agricultural Sciences Teachers, Postsecondary",
+	  label: "Agricultural Sciences Teachers, Postsecondary"
 	}, {
-	  label: 'Fashion Designers',
-	  value: 'Fashion Designers'
+	  value: "Environmental Science Teachers, Postsecondary",
+	  label: "Environmental Science Teachers, Postsecondary"
 	}, {
-	  label: 'Dancers',
-	  value: 'Dancers'
+	  value: "Home Economics Teachers, Postsecondary",
+	  label: "Home Economics Teachers, Postsecondary"
 	}, {
-	  label: 'Nurse Midwives',
-	  value: 'Nurse Midwives'
+	  value: "Artists and Related Workers, All Other",
+	  label: "Artists and Related Workers, All Other"
 	}, {
-	  label: 'Genetic Counselors',
-	  value: 'Genetic Counselors'
+	  value: "Choreographers",
+	  label: "Choreographers"
 	}, {
-	  label: 'Forest Fire Inspectors and Prevention Specialists',
-	  value: 'Forest Fire Inspectors and Prevention Specialists'
+	  value: "Entertainers and Performers, Sports and Related Workers, All Other",
+	  label: "Entertainers and Performers, Sports and Related Workers, All Other"
 	}, {
-	  label: 'Models',
-	  value: 'Models'
+	  value: "Oral and Maxillofacial Surgeons",
+	  label: "Oral and Maxillofacial Surgeons"
 	}, {
-	  label: 'Terrazzo Workers and Finishers',
-	  value: 'Terrazzo Workers and Finishers'
+	  value: "Gaming Service Workers, All Other",
+	  label: "Gaming Service Workers, All Other"
 	}, {
-	  label: 'Fabric Menders, Except Garment',
-	  value: 'Fabric Menders, Except Garment'
+	  value: "Costume Attendants",
+	  label: "Costume Attendants"
 	}, {
-	  label: 'Model Makers, Metal and Plastic',
-	  value: 'Model Makers, Metal and Plastic'
+	  value: "Barbers",
+	  label: "Barbers"
 	}, {
-	  label: 'Shoe and Leather Workers and Repairers',
-	  value: 'Shoe and Leather Workers and Repairers'
+	  value: "Makeup Artists, Theatrical and Performance",
+	  label: "Makeup Artists, Theatrical and Performance"
 	}, {
-	  label: 'Sewers, Hand',
-	  value: 'Sewers, Hand'
+	  value: "Shampooers",
+	  label: "Shampooers"
 	}, {
-	  label: 'Textile Bleaching and Dyeing Machine Operators and Tenders',
-	  value: 'Textile Bleaching and Dyeing Machine Operators and Tenders'
+	  value: "Communications Equipment Operators, All Other",
+	  label: "Communications Equipment Operators, All Other"
 	}, {
-	  label: 'Textile Knitting and Weaving Machine Setters, Operators, and Tenders',
-	  value: 'Textile Knitting and Weaving Machine Setters, Operators, and Tenders'
+	  value: "Forest and Conservation Workers",
+	  label: "Forest and Conservation Workers"
 	}, {
-	  label: 'Fabric and Apparel Patternmakers',
-	  value: 'Fabric and Apparel Patternmakers'
+	  value: "Electrical and Electronics Installers and Repairers, Transportation Equipment",
+	  label: "Electrical and Electronics Installers and Repairers, Transportation Equipment"
 	}, {
-	  label: 'Farm Labor Contractors',
-	  value: 'Farm Labor Contractors'
+	  value: "Shoe Machine Operators and Tenders",
+	  label: "Shoe Machine Operators and Tenders"
 	}, {
-	  label: 'Wind Turbine Service Technicians',
-	  value: 'Wind Turbine Service Technicians'
+	  value: "Textile Winding, Twisting, and Drawing Out Machine Setters, Operators, and Tenders",
+	  label: "Textile Winding, Twisting, and Drawing Out Machine Setters, Operators, and Tenders"
 	}, {
-	  label: 'Wellhead Pumpers',
-	  value: 'Wellhead Pumpers'
+	  value: "Subway and Streetcar Operators",
+	  label: "Subway and Streetcar Operators"
 	}, {
-	  label: 'Agricultural Engineers',
-	  value: 'Agricultural Engineers'
+	  value: "Rail Transportation Workers, All Other",
+	  label: "Rail Transportation Workers, All Other"
 	}, {
-	  label: 'Gaming Dealers',
-	  value: 'Gaming Dealers'
+	  value: "Gaming Managers",
+	  label: "Gaming Managers"
 	}, {
-	  label: 'Mathematicians',
-	  value: 'Mathematicians'
+	  value: "Slot Supervisors",
+	  label: "Slot Supervisors"
 	}, {
-	  label: 'Sociologists',
-	  value: 'Sociologists'
+	  value: "Historians",
+	  label: "Historians"
 	}, {
-	  label: 'Architecture Teachers, Postsecondary',
-	  value: 'Architecture Teachers, Postsecondary'
+	  value: "Marine Engineers and Naval Architects",
+	  label: "Marine Engineers and Naval Architects"
 	}, {
-	  label: 'Agricultural Sciences Teachers, Postsecondary',
-	  value: 'Agricultural Sciences Teachers, Postsecondary'
+	  value: "Fishers and Related Fishing Workers",
+	  label: "Fishers and Related Fishing Workers"
 	}, {
-	  label: 'Environmental Science Teachers, Postsecondary',
-	  value: 'Environmental Science Teachers, Postsecondary'
+	  value: "Geographers",
+	  label: "Geographers"
 	}, {
-	  label: 'Home Economics Teachers, Postsecondary',
-	  value: 'Home Economics Teachers, Postsecondary'
+	  value: "Mathematical Science Occupations, All Other",
+	  label: "Mathematical Science Occupations, All Other"
 	}, {
-	  label: 'Artists and Related Workers, All Other',
-	  value: 'Artists and Related Workers, All Other'
+	  value: "Industrial-Organizational Psychologists",
+	  label: "Industrial-Organizational Psychologists"
 	}, {
-	  label: 'Choreographers',
-	  value: 'Choreographers'
+	  value: "Radio Operators",
+	  label: "Radio Operators"
 	}, {
-	  label: 'Entertainers and Performers, Sports and Related Workers, All Other',
-	  value: 'Entertainers and Performers, Sports and Related Workers, All Other'
+	  value: "Transit and Railroad Police",
+	  label: "Transit and Railroad Police"
 	}, {
-	  label: 'Oral and Maxillofacial Surgeons',
-	  value: 'Oral and Maxillofacial Surgeons'
+	  value: "Signal and Track Switch Repairers",
+	  label: "Signal and Track Switch Repairers"
 	}, {
-	  label: 'Gaming Service Workers, All Other',
-	  value: 'Gaming Service Workers, All Other'
+	  value: "Locomotive Engineers",
+	  label: "Locomotive Engineers"
 	}, {
-	  label: 'Costume Attendants',
-	  value: 'Costume Attendants'
+	  value: "Motorboat Operators",
+	  label: "Motorboat Operators"
 	}, {
-	  label: 'Barbers',
-	  value: 'Barbers'
+	  value: "Manufactured Building and Mobile Home Installers",
+	  label: "Manufactured Building and Mobile Home Installers"
 	}, {
-	  label: 'Makeup Artists, Theatrical and Performance',
-	  value: 'Makeup Artists, Theatrical and Performance'
+	  value: "Mathematical Technicians",
+	  label: "Mathematical Technicians"
 	}, {
-	  label: 'Shampooers',
-	  value: 'Shampooers'
+	  value: "Animal Scientists",
+	  label: "Animal Scientists"
 	}, {
-	  label: 'Communications Equipment Operators, All Other',
-	  value: 'Communications Equipment Operators, All Other'
+	  value: "Forestry and Conservation Science Teachers, Postsecondary",
+	  label: "Forestry and Conservation Science Teachers, Postsecondary"
 	}, {
-	  label: 'Forest and Conservation Workers',
-	  value: 'Forest and Conservation Workers'
+	  value: "Model Makers, Wood",
+	  label: "Model Makers, Wood"
 	}, {
-	  label: 'Electrical and Electronics Installers and Repairers, Transportation Equipment',
-	  value: 'Electrical and Electronics Installers and Repairers, Transportation Equipment'
+	  value: "Bridge and Lock Tenders",
+	  label: "Bridge and Lock Tenders"
 	}, {
-	  label: 'Shoe Machine Operators and Tenders',
-	  value: 'Shoe Machine Operators and Tenders'
+	  value: "Hoist and Winch Operators",
+	  label: "Hoist and Winch Operators"
 	}, {
-	  label: 'Textile Winding, Twisting, and Drawing Out Machine Setters, Operators, and Tenders',
-	  value: 'Textile Winding, Twisting, and Drawing Out Machine Setters, Operators, and Tenders'
+	  value: "Dredge Operators",
+	  label: "Dredge Operators"
 	}, {
-	  label: 'Subway and Streetcar Operators',
-	  value: 'Subway and Streetcar Operators'
+	  value: "Gas Compressor and Gas Pumping Station Operators",
+	  label: "Gas Compressor and Gas Pumping Station Operators"
 	}, {
-	  label: 'Rail Transportation Workers, All Other',
-	  value: 'Rail Transportation Workers, All Other'
+	  value: "Fallers",
+	  label: "Fallers"
 	}, {
-	  label: 'Gaming Managers',
-	  value: 'Gaming Managers'
+	  value: "Mining Machine Operators, All Other",
+	  label: "Mining Machine Operators, All Other"
 	}, {
-	  label: 'Slot Supervisors',
-	  value: 'Slot Supervisors'
+	  value: "Patternmakers, Wood",
+	  label: "Patternmakers, Wood"
 	}, {
-	  label: 'Historians',
-	  value: 'Historians'
+	  value: "Timing Device Assemblers and Adjusters",
+	  label: "Timing Device Assemblers and Adjusters"
 	}, {
-	  label: 'Marine Engineers and Naval Architects',
-	  value: 'Marine Engineers and Naval Architects'
+	  value: "Nuclear Power Reactor Operators",
+	  label: "Nuclear Power Reactor Operators"
 	}, {
-	  label: 'Fishers and Related Fishing Workers',
-	  value: 'Fishers and Related Fishing Workers'
+	  value: "Refractory Materials Repairers, Except Brickmasons",
+	  label: "Refractory Materials Repairers, Except Brickmasons"
 	}, {
-	  label: 'Geographers',
-	  value: 'Geographers'
-	}, {
-	  label: 'Mathematical Science Occupations, All Other',
-	  value: 'Mathematical Science Occupations, All Other'
-	}, {
-	  label: 'Industrial-Organizational Psychologists',
-	  value: 'Industrial-Organizational Psychologists'
-	}, {
-	  label: 'Radio Operators',
-	  value: 'Radio Operators'
-	}, {
-	  label: 'Transit and Railroad Police',
-	  value: 'Transit and Railroad Police'
-	}, {
-	  label: 'Signal and Track Switch Repairers',
-	  value: 'Signal and Track Switch Repairers'
-	}, {
-	  label: 'Locomotive Engineers',
-	  value: 'Locomotive Engineers'
-	}, {
-	  label: 'Motorboat Operators',
-	  value: 'Motorboat Operators'
-	}, {
-	  label: 'Manufactured Building and Mobile Home Installers',
-	  value: 'Manufactured Building and Mobile Home Installers'
-	}, {
-	  label: 'Mathematical Technicians',
-	  value: 'Mathematical Technicians'
-	}, {
-	  label: 'Animal Scientists',
-	  value: 'Animal Scientists'
-	}, {
-	  label: 'Forestry and Conservation Science Teachers, Postsecondary',
-	  value: 'Forestry and Conservation Science Teachers, Postsecondary'
-	}, {
-	  label: 'Model Makers, Wood',
-	  value: 'Model Makers, Wood'
-	}, {
-	  label: 'Bridge and Lock Tenders',
-	  value: 'Bridge and Lock Tenders'
-	}, {
-	  label: 'Hoist and Winch Operators',
-	  value: 'Hoist and Winch Operators'
-	}, {
-	  label: 'Dredge Operators',
-	  value: 'Dredge Operators'
-	}, {
-	  label: 'Gas Compressor and Gas Pumping Station Operators',
-	  value: 'Gas Compressor and Gas Pumping Station Operators'
-	}, {
-	  label: 'Fallers',
-	  value: 'Fallers'
-	}, {
-	  label: 'Mining Machine Operators, All Other',
-	  value: 'Mining Machine Operators, All Other'
-	}, {
-	  label: 'Patternmakers, Wood',
-	  value: 'Patternmakers, Wood'
-	}, {
-	  label: 'Timing Device Assemblers and Adjusters',
-	  value: 'Timing Device Assemblers and Adjusters'
-	}, {
-	  label: 'Nuclear Power Reactor Operators',
-	  value: 'Nuclear Power Reactor Operators'
-	}, {
-	  label: 'Refractory Materials Repairers, Except Brickmasons',
-	  value: 'Refractory Materials Repairers, Except Brickmasons'
-	}, {
-	  label: 'Logging Workers, All Other',
-	  value: 'Logging Workers, All Other'
+	  value: "Logging Workers, All Other",
+	  label: "Logging Workers, All Other"
 	}];
 
 /***/ },
@@ -31674,7 +31653,7 @@
 
 
 	// module
-	exports.push([module.id, "#metroArea {\n  display: none; }\n\n.slideStart {\n  margin-top: 3em; }\n\n#lowerRange {\n  padding-left: 1.3em; }\n\n#upperRange {\n  padding-left: 0; }\n\n.col-xs-1 {\n  width: 5%;\n  margin-top: 25px; }\n\n.col-xs-4 {\n  width: 40%; }\n\n.input-group-addon div {\n  margin-right: 0.5em;\n  font-size: 1.5em; }\n\n.form-control {\n  color: #000; }\n\n.certificateBlock {\n  border: 20px solid #FFD700;\n  outline: 2px solid #000;\n  width: 100%;\n  height: 20em;\n  font-size: 3em;\n  padding: 2em 1em;\n  margin-left: 0; }\n\n/* Certificate Initial ----------- */\n#initialArrow {\n  height: 10em;\n  background-image: url(" + __webpack_require__(294) + ");\n  background-repeat: no-repeat;\n  background-position: center;\n  -webkit-background-size: contain;\n  -moz-bacbkground-size: contain;\n  background-size: contain; }\n\n#initialText {\n  padding-right: 3em;\n  font-size: 1.2em;\n  text-align: left; }\n\n/* Certificate Updated ----------- */\n.col-xs-12 h1 {\n  font-weight: bold;\n  text-align: center;\n  font-size: 1.8em;\n  margin-top: -0.5em; }\n\n.updatedBlock {\n  text-align: center; }\n\n.updatedContent {\n  margin-top: 1.5em; }\n\n/* Smartphones (portrait and landscape) ----------- */\n@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {\n  #initialText {\n    padding-right: 0;\n    font-size: 1em; }\n  .certificateBlock {\n    height: 15em; }\n  .col-xs-12 h1 {\n    font-size: 1.2em; }\n  .updatedContent {\n    margin-top: 0.5em;\n    font-size: 0.9em; } }\n\n/* iPad portrait ----------- */\n@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {\n  #initialText {\n    padding-right: 0;\n    font-size: 1em; } }\n\ninput[type=range] {\n  -webkit-appearance: none;\n  width: 100%;\n  background: transparent;\n  /* thumb section */\n  /* track section */ }\n  input[type=range]:focus {\n    outline: none; }\n  input[type=range]-webkit-slider {\n    -webkit-appearance: none; }\n  input[type=range]::-webkit-slider-thumb {\n    -webkit-appearance: none;\n    margin-top: -1em;\n    border: 1px solid #000;\n    border-radius: 0;\n    height: 2em;\n    width: 5em;\n    background: #000;\n    cursor: pointer; }\n  input[type=range]:focus::-webkit-slider-thumb {\n    background-color: #FFD700;\n    border: 4px solid black; }\n  input[type=range]::-moz-range-thumb {\n    border: 1px solid #000;\n    border-radius: 0;\n    height: 2em;\n    width: 5em;\n    background: #000;\n    cursor: pointer; }\n  input[type=range]::-ms-thumb {\n    border: 1px solid #000;\n    border-radius: 0;\n    height: 2em;\n    width: 5em;\n    background: #000;\n    cursor: pointer; }\n  input[type=range]::-webkit-slider-runnable-track {\n    width: 100%;\n    height: 5px;\n    cursor: pointer;\n    background: #000;\n    border: 2px solid #000;\n    border-radius: 0; }\n  input[type=range]::-moz-range-track {\n    width: 100%;\n    height: 5px;\n    cursor: pointer;\n    background: #000;\n    border: 2px solid #000;\n    border-radius: 0; }\n\n@font-face {\n  font-family: FoundersGrotesk;\n  src: url(" + __webpack_require__(295) + ");\n  src: url(" + __webpack_require__(296) + ") format(\"woff\"), url(" + __webpack_require__(297) + ") format(\"woff2\");\n  font-weight: normal; }\n\n@font-face {\n  font-family: FoundersGrotesk;\n  src: url(" + __webpack_require__(298) + ");\n  src: url(" + __webpack_require__(299) + ") format(\"woff\"), url(" + __webpack_require__(300) + ") format(\"woff2\");\n  font-weight: bold; }\n\n#root {\n  margin: 2em auto; }\n\nbody {\n  padding: 3em;\n  font-family: FoundersGrotesk;\n  font-weight: normal;\n  color: #000; }\n\n/* Main sizing things */\nh3 {\n  font-size: 2.5em;\n  font-weight: bold; }\n\n.row {\n  margin-bottom: 3em; }\n\n.Select {\n  line-height: 5em; }\n\n.Select-placeholder, .Select-value-label {\n  font-size: 2em;\n  margin-top: 0.6em; }\n\n.Select-value {\n  margin-top: 1.5em;\n  font-weight: bold; }\n\n/********************/\n.Select-placeholder, .Select--single > .Select-control .Select-value {\n  max-width: 90%;\n  color: #000; }\n\n.Select .is-open {\n  color: #FF0000;\n  font-size: 2em; }\n\n.has-value.Select--single > .Select-control .Select-value .Select-value-label, .has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {\n  color: #000; }\n\n.Select-control, .input-group {\n  border-radius: 0;\n  border: 2px solid #000;\n  color: #000; }\n\n.Select-arrow {\n  border-color: #000 transparent transparent;\n  border-width: 10px 10px 0px;\n  margin-right: 1em; }\n\n.Select:focus {\n  outline: none; }\n\n.form-control, .input-group-addon {\n  border: 1px solid transparent;\n  -webkit-box-shadow: none;\n  box-shadow: none; }\n\n.input-group .form-control {\n  z-index: 0; }\n\n.input-group-addon {\n  background-color: #FFF;\n  color: #000; }\n\n.form-control:focus {\n  border: none !important;\n  box-shadow: none;\n  -webkit-box-shadow: none; }\n\n/* Smartphones (portrait and landscape) ----------- */\n", ""]);
+	exports.push([module.id, ".inputBlock {\n  font-size: 0.9em; }\n\n#metroArea {\n  display: none; }\n\n.slideStart {\n  margin-top: 3em; }\n\n#lowerRange {\n  padding-left: 1.3em; }\n\n#upperRange {\n  padding-left: 0; }\n\n.col-xs-1 {\n  width: 5%;\n  margin-top: 25px; }\n\n.col-xs-4 {\n  width: 40%; }\n\n.input-group-addon div {\n  margin-right: 0.5em;\n  font-size: 1.5em; }\n\n.form-control {\n  color: #000; }\n\n.certificateBlock {\n  border: 20px solid #FFD700;\n  outline: 2px solid #000;\n  width: 100%;\n  height: 12em;\n  font-size: 3em;\n  padding: 2em 1em;\n  margin-left: 0; }\n\n/* Certificate Initial ----------- */\n#initialArrow {\n  height: 8em;\n  background-image: url(" + __webpack_require__(294) + ");\n  background-repeat: no-repeat;\n  background-position: center;\n  -webkit-background-size: contain;\n  -moz-bacbkground-size: contain;\n  background-size: contain; }\n\n#initialText {\n  text-align: left;\n  margin-top: 2em; }\n\n/* Certificate Updated ----------- */\n.col-xs-12 h1 {\n  font-weight: bold;\n  text-align: center;\n  font-size: 1.8em;\n  margin-top: -0.5em; }\n\n.updatedBlock {\n  text-align: center; }\n\n.updatedContent {\n  margin-top: 1.5em; }\n\n/* Certificate Ready ----------- */\n#test {\n  background-color: #FFF; }\n\ninput[type=range] {\n  -webkit-appearance: none;\n  width: 100%;\n  background: transparent;\n  /* thumb section */\n  /* track section */ }\n  input[type=range]:focus {\n    outline: none; }\n  input[type=range]-webkit-slider {\n    -webkit-appearance: none; }\n  input[type=range]::-webkit-slider-thumb {\n    -webkit-appearance: none;\n    margin-top: -1em;\n    border: 1px solid #000;\n    border-radius: 0;\n    height: 2em;\n    width: 5em;\n    background: #000;\n    cursor: pointer; }\n  input[type=range]:focus::-webkit-slider-thumb {\n    background-color: #FFD700;\n    border: 4px solid black; }\n  input[type=range]::-moz-range-thumb {\n    border: 1px solid #000;\n    border-radius: 0;\n    height: 2em;\n    width: 5em;\n    background: #000;\n    cursor: pointer; }\n  input[type=range]::-ms-thumb {\n    border: 1px solid #000;\n    border-radius: 0;\n    height: 2em;\n    width: 5em;\n    background: #000;\n    cursor: pointer; }\n  input[type=range]::-webkit-slider-runnable-track {\n    width: 100%;\n    height: 5px;\n    cursor: pointer;\n    background: #000;\n    border: 2px solid #000;\n    border-radius: 0; }\n  input[type=range]::-moz-range-track {\n    width: 100%;\n    height: 5px;\n    cursor: pointer;\n    background: #000;\n    border: 2px solid #000;\n    border-radius: 0; }\n\n/* Smartphones (portrait and landscape) ----------- */\n@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {\n  h3 {\n    font-size: 2.5em; }\n  #initialText {\n    padding-right: 0;\n    font-size: 1em; }\n  #initialArrow {\n    height: 10em; }\n  .certificateBlock {\n    height: 15em; }\n  .col-xs-12 h1 {\n    font-size: 1.2em; }\n  .updatedContent {\n    margin-top: 0.5em;\n    font-size: 0.9em; }\n  .Select {\n    line-height: 5em; }\n  .Select-placeholder, .Select-value-label {\n    font-size: 2em;\n    margin-top: 0.6em; }\n  .Select-value {\n    margin-top: 1.5em;\n    font-weight: bold; }\n  /********************/\n  .Select-placeholder, .Select--single > .Select-control .Select-value {\n    max-width: 90%;\n    color: #000; }\n  .Select .is-open {\n    color: #FF0000;\n    font-size: 2em; } }\n\n/* iPad portrait ----------- */\n@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {\n  #initialText {\n    padding-right: 0;\n    font-size: 1em; } }\n\n@font-face {\n  font-family: FoundersGrotesk;\n  src: url(" + __webpack_require__(295) + ");\n  src: url(" + __webpack_require__(296) + ") format(\"woff\"), url(" + __webpack_require__(297) + ") format(\"woff2\");\n  font-weight: normal; }\n\n@font-face {\n  font-family: FoundersGrotesk;\n  src: url(" + __webpack_require__(298) + ");\n  src: url(" + __webpack_require__(299) + ") format(\"woff\"), url(" + __webpack_require__(300) + ") format(\"woff2\");\n  font-weight: bold; }\n\n#root {\n  margin: 2em auto; }\n\nbody {\n  font-family: FoundersGrotesk;\n  font-weight: normal;\n  color: #000; }\n\n/* Main sizing things */\nh3 {\n  font-weight: bold;\n  margin-top: 10px; }\n\n.row {\n  margin-bottom: 2em; }\n\n.Select {\n  line-height: 3em; }\n\n.Select-placeholder, .Select-value-label {\n  font-size: 1.5em;\n  margin-top: 0.1em; }\n\n.Select-value {\n  margin-top: 0.6em;\n  font-weight: bold; }\n\n/********************/\n.Select-placeholder, .Select--single > .Select-control .Select-value {\n  max-width: 90%;\n  color: #000; }\n\n.Select .is-open {\n  color: #FF0000;\n  font-size: 2em; }\n\n.has-value.Select--single > .Select-control .Select-value .Select-value-label, .has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {\n  color: #000; }\n\n.Select-control, .input-group {\n  border-radius: 0;\n  border: 2px solid #000;\n  color: #000; }\n\n.Select-arrow {\n  border-color: #000 transparent transparent;\n  border-width: 10px 10px 0px;\n  margin-right: 1em; }\n\n.Select:focus {\n  outline: none; }\n\n.form-control, .input-group-addon {\n  border: 1px solid transparent;\n  -webkit-box-shadow: none;\n  box-shadow: none; }\n\n.input-group .form-control {\n  z-index: 0; }\n\n.input-group-addon {\n  background-color: #FFF;\n  color: #000; }\n\n.form-control:focus {\n  border: none !important;\n  box-shadow: none;\n  -webkit-box-shadow: none; }\n\n/* Smartphones (portrait and landscape) ----------- */\n", ""]);
 
 	// exports
 
