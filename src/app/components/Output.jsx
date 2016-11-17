@@ -12,7 +12,8 @@ class Output extends React.Component {
 			state: '',
 			area: '_____',
 			salary_current:'',
-			status: 'initial'
+			status: 'initial',
+			payStatus: ''
 		};
 	}
 
@@ -37,6 +38,7 @@ class Output extends React.Component {
 				</Col>
 			</Col>
 
+
 		if (this.state.status === 'updated') {
 
 			status = 
@@ -53,16 +55,15 @@ class Output extends React.Component {
 					</Col>
 				</Col>
 
-		} else if (this.state.status === 'ready') {
 
-			//$('.certificateBlock').css('background-color','#FFD700')
+		} else if (this.state.status === 'ready') {
 
 			status =
 				<Col xs={12} className="readyBlock">
 					<Col xs={12} id="readyHeader">
 						<h1>NOTICE OF UNDERPAYMENT</h1>
 					</Col>
-					<Row id="test">
+					<Col xs={12} className="readyContentContainer">
 						<Col xs={12} className="readyContent">
 							<p>{this.state.job} in the {this.state.area} area make an average
 							of _____ per year, according to the Bureau of Labor Statistics.</p>
@@ -70,8 +71,10 @@ class Output extends React.Component {
 						<Col xs={12} className="readyContent">
 							<p> Will undervaluing your employee pay off?</p>
 						</Col>
-					</Row>
+					</Col>
 				</Col>
+				
+			$('.certificateBlock').css('background-color', '#FFD700');
 		}
 
 		return(

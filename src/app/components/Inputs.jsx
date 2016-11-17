@@ -21,8 +21,8 @@ class Inputs extends React.Component {
 			job: '_____',
 			state: null,
 			area: '_____',
-			year: null,
-			month: null,
+			year: 2006,
+			month: 'January',
 			salary_start:'34000',
 			salary_current:'48000',
 			status: 'initial'
@@ -84,10 +84,10 @@ class Inputs extends React.Component {
 					<div className="inputBlock">
 						{/* Industry Block */}
 						<Row>
-							<Col xs={6}>
+							<Col xs={5}>
 								<h3 className="sectionHead"> Your Work </h3>
 							</Col>
-							<Col xs={6} className="selector">
+							<Col xs={7} className="selector">
 								<Select
 									name="form-field-name"
 									options={JOBS['titles']}
@@ -101,10 +101,10 @@ class Inputs extends React.Component {
 
 						{/* State Block */}
 						<Row>
-							<Col xs={6}>
+							<Col xs={5}>
 								<h3 className="sectionHead"> Where You Live </h3>
 							</Col>
-							<Col xs={6} className="selector">
+							<Col xs={7} className="selector">
 								<Select
 									name="form-field-name"
 									options={STATES['US']}
@@ -138,7 +138,7 @@ class Inputs extends React.Component {
 							<Col xs={12}>
 								<h3 className="sectionHead"> When You Started Work </h3>
 							</Col>
-							<Col xs={6}className="selector">
+							<Col xs={5} className="selector">
 								<Select
 									name="form-field-name"
 									options={YEARS['YEARS']}
@@ -148,7 +148,7 @@ class Inputs extends React.Component {
 									onChange={this.dropdownChange.bind(this,'year')}
 								/>
 							</Col>						
-							<Col xs={6}className="selector">
+							<Col xs={7} className="selector">
 								<Select
 									name="form-field-name"
 									options={MONTHS['MONTHS']}

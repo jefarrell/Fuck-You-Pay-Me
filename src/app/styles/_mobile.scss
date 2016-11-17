@@ -1,13 +1,15 @@
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
 	
 	h3 {
-		font-size: 2.5em;
+		font-size: 3.5em;
 	}
+
 	#initialText {
-		padding-right: 0;
+		padding-right: 1em;
 		font-size: 1em;
 	}
 
@@ -17,6 +19,7 @@ and (max-device-width : 480px) {
 
 	.certificateBlock {
 		height: 15em;
+		margin: 2em 0 0 0;
 	}
 
 	.col-xs-12 {
@@ -29,22 +32,47 @@ and (max-device-width : 480px) {
 		font-size: 0.9em;
 	}
 
-	.Select {
-		line-height: 5em;
+/////////// Dropdown menu styling
+	.selector {
+		.Select {
+			line-height: 6em;
+		}
+		.Select-value-label {
+			font-size: 2.5em;
+			margin-top: 0.6em;
+		}
 
+		.Select-placeholder {
+			font-size: 3em;
+			margin-top: 0.6em;
+			margin-left: 0.2em;
+		}
 	}
 
-	.Select-placeholder, .Select-value-label {
-		font-size: 2em;
-		margin-top: 0.6em;
+	.col-xs-7 {
+		.Select-control {
+			.Select-value {
+				margin-top: 1.25em;
+				font-size: 1.25em;
+			}
+		}
+	}
+
+	.col-xs-5 #react-select-5--value .Select-value {
+		font-size: 1.25em;
+		margin-top: 1.25em;
+	}
+	.col-xs-7 #react-select-6--value .Select-value {
+		font-size: 1.25em;
+		margin-top: 1.25em;
 	}
 
 	.Select-value {
 		margin-top: 1.5em;
 		font-weight: bold;
 	}
+///////////////////////////
 
-	/********************/
 
 	.Select-placeholder, .Select--single > .Select-control .Select-value {
 		max-width: 90%;
@@ -63,10 +91,6 @@ and (max-device-width : 480px) {
 }
 
 
-
-
-
-
 /* iPad portrait ----------- */
 @media only screen 
 and (min-device-width : 768px) 
@@ -75,6 +99,8 @@ and (max-device-width : 1024px)  {
 	#initialText {
 		padding-right: 0;
 		font-size: 1em;
+		margin-top: 0;
 	}
 
 }
+
