@@ -80,7 +80,7 @@ class Inputs extends React.Component {
 
 		return (
 			<div className="container-fluid">
-				<Col xs={12} md={4}>
+				<Col xs={12} md={5}>
 					<div className="inputBlock">
 						{/* Industry Block */}
 						<Row>
@@ -144,7 +144,7 @@ class Inputs extends React.Component {
 									options={YEARS['YEARS']}
 									value={this.state.year}
 									clearable={false}
-									placeholder="Select Year"
+									placeholder={this.state.year}
 									onChange={this.dropdownChange.bind(this,'year')}
 								/>
 							</Col>						
@@ -195,7 +195,8 @@ class Inputs extends React.Component {
 						</Row>
 					</div>
 				</Col>
-				<Col xs={12} md={8}>
+				<Col md={1} xs={0}></Col>
+				<Col xs={12} md={6}>
 					<Output 
 						job={this.state.job} 
 						state={this.state.state} 

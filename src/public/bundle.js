@@ -21627,7 +21627,7 @@
 					{ className: 'container-fluid' },
 					_react2.default.createElement(
 						_Col2.default,
-						{ xs: 12, md: 4 },
+						{ xs: 12, md: 5 },
 						_react2.default.createElement(
 							'div',
 							{ className: 'inputBlock' },
@@ -21718,7 +21718,7 @@
 										options: YEARS['YEARS'],
 										value: this.state.year,
 										clearable: false,
-										placeholder: 'Select Year',
+										placeholder: this.state.year,
 										onChange: this.dropdownChange.bind(this, 'year')
 									})
 								),
@@ -21789,9 +21789,10 @@
 							)
 						)
 					),
+					_react2.default.createElement(_Col2.default, { md: 1, xs: 0 }),
 					_react2.default.createElement(
 						_Col2.default,
-						{ xs: 12, md: 8 },
+						{ xs: 12, md: 6 },
 						_react2.default.createElement(_Output2.default, {
 							job: this.state.job,
 							state: this.state.state,
@@ -24198,14 +24199,14 @@
 				var status = _react2.default.createElement(
 					_Col2.default,
 					{ xs: 12 },
-					_react2.default.createElement(_Col2.default, { xs: 6, id: "initialArrow", className: "initialBlock" }),
+					_react2.default.createElement(_Col2.default, { xs: 6, md: 12, id: "initialArrow", className: "initialBlock" }),
 					_react2.default.createElement(
 						_Col2.default,
-						{ xs: 6, id: "initialText", className: "initialBlock" },
+						{ xs: 6, md: 12, id: "initialText", className: "initialBlock" },
 						_react2.default.createElement(
 							"p",
 							null,
-							"Fill out the the questions above to see your results"
+							"Fill out the the questions to see your results"
 						)
 					)
 				);
@@ -24220,7 +24221,7 @@
 							{ xs: 12 },
 							_react2.default.createElement(
 								"h1",
-								null,
+								{ className: "certHead" },
 								"YOUR EMPLOYER'S RESULTS"
 							)
 						),
@@ -24256,7 +24257,7 @@
 							{ xs: 12, id: "readyHeader" },
 							_react2.default.createElement(
 								"h1",
-								null,
+								{ className: "certHead" },
 								"NOTICE OF UNDERPAYMENT"
 							)
 						),
@@ -31654,7 +31655,7 @@
 
 
 	// module
-	exports.push([module.id, ".inputBlock {\n  font-size: 0.9em; }\n\n#metroArea {\n  display: none; }\n\n.slideStart {\n  margin-top: 3em; }\n\n#lowerRange {\n  padding-left: 1.3em; }\n\n#upperRange {\n  padding-left: 0; }\n\n.col-xs-1 {\n  width: 5%;\n  margin-top: 25px; }\n\n.col-xs-4 {\n  width: 40%; }\n\n.col-xs-5 {\n  padding-right: 0; }\n\n.input-group-addon div {\n  margin-right: 0.5em;\n  font-size: 1.5em; }\n\n.form-control {\n  color: #000; }\n\n#react-select-6--value .Select-value {\n  margin-top: 0; }\n\n.col-xs-5 #react-select-5--value .Select-value {\n  margin-top: 0; }\n\n.certificateBlock {\n  border: 20px solid #FFD700;\n  outline: 2px solid #000;\n  width: 100%;\n  height: 12em;\n  font-size: 3em;\n  padding: 2em 0em; }\n\n/* Certificate Initial ----------- */\n#initialArrow {\n  height: 8em;\n  background-image: url(" + __webpack_require__(294) + ");\n  background-repeat: no-repeat;\n  background-position: center;\n  -webkit-background-size: contain;\n  -moz-bacbkground-size: contain;\n  background-size: contain; }\n\n#initialText {\n  text-align: left;\n  margin-top: 2em; }\n\n/* Certificate Updated ----------- */\n.col-xs-12 h1 {\n  font-weight: bold;\n  font-size: 1.3em;\n  margin-top: -0.5em; }\n\n.updatedBlock, .readyBlock {\n  text-align: center; }\n\n.updatedContent, .readyContent {\n  font-size: 0.75em;\n  margin-top: 1em; }\n\n/* Certificate Ready ----------- */\n#test {\n  background-color: #FFF; }\n\n.readyContentContainer {\n  background-color: #FFF; }\n\ninput[type=range] {\n  -webkit-appearance: none;\n  width: 100%;\n  background: transparent;\n  /* thumb section */\n  /* track section */ }\n  input[type=range]:focus {\n    outline: none; }\n  input[type=range]-webkit-slider {\n    -webkit-appearance: none; }\n  input[type=range]::-webkit-slider-thumb {\n    -webkit-appearance: none;\n    margin-top: -1em;\n    border: 1px solid #000;\n    border-radius: 0;\n    height: 2em;\n    width: 5em;\n    background: #000;\n    cursor: pointer; }\n  input[type=range]:focus::-webkit-slider-thumb {\n    background-color: #FFD700;\n    border: 4px solid black; }\n  input[type=range]::-moz-range-thumb {\n    border: 1px solid #000;\n    border-radius: 0;\n    height: 2em;\n    width: 5em;\n    background: #000;\n    cursor: pointer; }\n  input[type=range]::-ms-thumb {\n    border: 1px solid #000;\n    border-radius: 0;\n    height: 2em;\n    width: 5em;\n    background: #000;\n    cursor: pointer; }\n  input[type=range]::-webkit-slider-runnable-track {\n    width: 100%;\n    height: 5px;\n    cursor: pointer;\n    background: #000;\n    border: 2px solid #000;\n    border-radius: 0; }\n  input[type=range]::-moz-range-track {\n    width: 100%;\n    height: 5px;\n    cursor: pointer;\n    background: #000;\n    border: 2px solid #000;\n    border-radius: 0; }\n\n/* Smartphones (portrait and landscape) ----------- */\n@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {\n  h3 {\n    font-size: 3.5em; }\n  #initialText {\n    padding-right: 1em;\n    font-size: 1em; }\n  #initialArrow {\n    height: 10em; }\n  .certificateBlock {\n    height: 15em;\n    margin: 2em 0 0 0; }\n  .col-xs-12 h1 {\n    font-size: 1.2em; }\n  .updatedContent {\n    margin-top: 0.5em;\n    font-size: 0.9em; }\n  .selector .Select {\n    line-height: 6em; }\n  .selector .Select-value-label {\n    font-size: 2.5em;\n    margin-top: 0.6em; }\n  .selector .Select-placeholder {\n    font-size: 3em;\n    margin-top: 0.6em;\n    margin-left: 0.2em; }\n  .col-xs-7 .Select-control .Select-value {\n    margin-top: 1.25em;\n    font-size: 1.25em; }\n  .col-xs-5 #react-select-5--value .Select-value {\n    font-size: 1.25em;\n    margin-top: 1.25em; }\n  .col-xs-7 #react-select-6--value .Select-value {\n    font-size: 1.25em;\n    margin-top: 1.25em; }\n  .Select-value {\n    margin-top: 1.5em;\n    font-weight: bold; }\n  .Select-placeholder, .Select--single > .Select-control .Select-value {\n    max-width: 90%;\n    color: #000; }\n  .Select .is-open {\n    color: #FF0000;\n    font-size: 2em; } }\n\n/* iPad portrait ----------- */\n@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {\n  #initialText {\n    padding-right: 0;\n    font-size: 1em;\n    margin-top: 0; } }\n\n@font-face {\n  font-family: FoundersGrotesk;\n  src: url(" + __webpack_require__(295) + ");\n  src: url(" + __webpack_require__(296) + ") format(\"woff\"), url(" + __webpack_require__(297) + ") format(\"woff2\");\n  font-weight: normal; }\n\n@font-face {\n  font-family: FoundersGrotesk;\n  src: url(" + __webpack_require__(298) + ");\n  src: url(" + __webpack_require__(299) + ") format(\"woff\"), url(" + __webpack_require__(300) + ") format(\"woff2\");\n  font-weight: bold; }\n\n#root {\n  margin: 2em auto; }\n\nbody {\n  font-family: FoundersGrotesk;\n  font-weight: normal;\n  color: #000; }\n\n/* Main sizing things */\nh3 {\n  font-weight: bold;\n  margin-top: 10px; }\n\n.row {\n  margin-bottom: 2em; }\n\n.Select {\n  line-height: 3em; }\n\n.Select-placeholder, .Select-value-label {\n  font-size: 1.5em;\n  margin-top: 0.1em;\n  padding-left: 1em; }\n\n.Select-value {\n  margin-top: 0.3em;\n  font-weight: bold; }\n\n/********************/\n.Select-placeholder, .Select--single > .Select-control .Select-value {\n  max-width: 90%;\n  color: #000; }\n\n.Select .is-open {\n  color: #FF0000;\n  font-size: 2em; }\n\n.has-value.Select--single > .Select-control .Select-value .Select-value-label, .has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {\n  color: #000; }\n\n.Select-control, .input-group {\n  border-radius: 0;\n  border: 2px solid #000;\n  color: #000; }\n\n.Select-arrow {\n  border-color: #000 transparent transparent;\n  border-width: 10px 10px 0px;\n  margin-right: 1em; }\n\n.Select:focus {\n  outline: none; }\n\n.form-control, .input-group-addon {\n  border: 1px solid transparent;\n  -webkit-box-shadow: none;\n  box-shadow: none; }\n\n.input-group .form-control {\n  z-index: 0; }\n\n.input-group-addon {\n  background-color: #FFF;\n  color: #000; }\n\n.form-control:focus {\n  border: none !important;\n  box-shadow: none;\n  -webkit-box-shadow: none; }\n\n/* Smartphones (portrait and landscape) ----------- */\n", ""]);
+	exports.push([module.id, ".inputBlock {\n  font-size: 0.9em; }\n\n#metroArea {\n  display: none; }\n\n.slideStart {\n  margin-top: 3em; }\n\n#lowerRange {\n  padding-left: 1.3em; }\n\n#upperRange {\n  padding-left: 0; }\n\n.col-xs-1 {\n  width: 5%;\n  margin-top: 25px; }\n\n.col-xs-4 {\n  width: 40%; }\n\n.col-xs-5 {\n  padding-right: 0; }\n\n.input-group-addon div {\n  margin-right: 0.5em;\n  font-size: 1.5em; }\n\n.form-control {\n  color: #000; }\n\n.certificateBlock {\n  border: 20px solid #FFD700;\n  outline: 2px solid #000;\n  width: 100%;\n  height: 12em;\n  font-size: 3em;\n  padding: 2em 0em; }\n\n/* Certificate Initial ----------- */\n#initialArrow {\n  height: 5em;\n  background-image: url(" + __webpack_require__(294) + ");\n  background-repeat: no-repeat;\n  background-position: center;\n  -webkit-background-size: contain;\n  -moz-bacbkground-size: contain;\n  background-size: contain; }\n\n#initialText {\n  text-align: center;\n  font-size: 0.6em; }\n\n/* Certificate Updated ----------- */\n.certHead {\n  font-family: FoundersGrotesk_Cnd;\n  font-size: 1.3em;\n  margin-top: -0.5em; }\n\n.updatedBlock, .readyBlock {\n  text-align: center; }\n\n.updatedContent, .readyContent {\n  font-size: 0.65em;\n  margin-top: 1em; }\n\n/* Certificate Ready ----------- */\n.readyContentContainer {\n  background-color: #FFF;\n  height: 325px; }\n\ninput[type=range] {\n  -webkit-appearance: none;\n  width: 100%;\n  background: transparent;\n  /* thumb section */\n  /* track section */ }\n  input[type=range]:focus {\n    outline: none; }\n  input[type=range]-webkit-slider {\n    -webkit-appearance: none; }\n  input[type=range]::-webkit-slider-thumb {\n    -webkit-appearance: none;\n    margin-top: -1em;\n    border: 1px solid #000;\n    border-radius: 0;\n    height: 2em;\n    width: 5em;\n    background: #000;\n    cursor: pointer; }\n  input[type=range]:focus::-webkit-slider-thumb {\n    background-color: #FFD700;\n    border: 4px solid black; }\n  input[type=range]::-moz-range-thumb {\n    border: 1px solid #000;\n    border-radius: 0;\n    height: 2em;\n    width: 5em;\n    background: #000;\n    cursor: pointer; }\n  input[type=range]::-ms-thumb {\n    border: 1px solid #000;\n    border-radius: 0;\n    height: 2em;\n    width: 5em;\n    background: #000;\n    cursor: pointer; }\n  input[type=range]::-webkit-slider-runnable-track {\n    width: 100%;\n    height: 5px;\n    cursor: pointer;\n    background: #000;\n    border: 2px solid #000;\n    border-radius: 0; }\n  input[type=range]::-moz-range-track {\n    width: 100%;\n    height: 5px;\n    cursor: pointer;\n    background: #000;\n    border: 2px solid #000;\n    border-radius: 0; }\n\n/* Smartphones (portrait and landscape) ----------- */\n@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {\n  .Select-input input {\n    font-size: 40px !important; }\n  h3 {\n    font-size: 3.5em; }\n  #initialText {\n    padding-right: 1em;\n    font-size: 1em;\n    margin-top: 2em; }\n  #initialArrow {\n    background-image: url(" + __webpack_require__(295) + ");\n    height: 10em; }\n  .certificateBlock {\n    height: 15em;\n    margin: 2em 0 0 0; }\n  .updatedContent {\n    margin-top: 0.5em;\n    font-size: 0.9em; }\n  .selector .Select {\n    line-height: 6em; }\n  .selector .Select-value-label {\n    font-size: 2.5em;\n    margin-top: 0.6em; }\n  .selector .Select-placeholder {\n    font-size: 3em;\n    margin-top: 0.6em;\n    margin-left: 0.2em; }\n  .col-xs-7 .Select-control .Select-value {\n    margin-top: 1.25em;\n    font-size: 1.25em; }\n  .col-xs-5 #react-select-5--value .Select-value {\n    font-size: 1.25em;\n    margin-top: 1.25em; }\n  .col-xs-7 #react-select-6--value .Select-value {\n    font-size: 1.25em;\n    margin-top: 1.25em; }\n  .Select-value {\n    margin-top: 1.5em;\n    font-weight: bold; }\n  .Select.Select--single.is-focused.is-open.is-searchable.has-value {\n    padding-top: 10px; }\n    .Select.Select--single.is-focused.is-open.is-searchable.has-value .Select-value-label {\n      opacity: 0.2; }\n  .Select.Select--single.is-focused.is-open.is-searchable .Select-placeholder {\n    opacity: 0.2;\n    padding-top: 10px; }\n  .Select-placeholder, .Select--single > .Select-control .Select-value {\n    max-width: 90%;\n    color: #000; }\n  .Select .is-open {\n    color: #FF0000;\n    font-size: 2em; }\n  .certHead {\n    font-size: 2.25em; }\n  .readyContentContainer {\n    font-size: 1.5em;\n    height: 400px; } }\n\n/* iPad portrait ----------- */\n@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {\n  #initialText {\n    padding-right: 0;\n    font-size: 1em;\n    margin-top: 0; } }\n\n@font-face {\n  font-family: FoundersGrotesk;\n  src: url(" + __webpack_require__(296) + ");\n  src: url(" + __webpack_require__(297) + ") format(\"woff\"), url(" + __webpack_require__(298) + ") format(\"woff2\");\n  font-weight: bold; }\n\n@font-face {\n  font-family: FoundersGrotesk_Cnd;\n  src: url(" + __webpack_require__(299) + ");\n  src: url(" + __webpack_require__(300) + ") format(\"woff\"), url(" + __webpack_require__(301) + ") format(\"woff2\");\n  font-weight: bold; }\n\n@font-face {\n  font-family: FoundersGrotesk;\n  src: url(" + __webpack_require__(302) + ");\n  src: url(" + __webpack_require__(303) + ") format(\"woff\"), url(" + __webpack_require__(304) + ") format(\"woff2\");\n  font-weight: normal; }\n\n#root {\n  margin: 2em auto; }\n\nbody {\n  font-family: FoundersGrotesk;\n  font-weight: normal;\n  color: #000; }\n\n/* Main sizing things */\nh3 {\n  font-weight: bold;\n  margin-top: 10px; }\n\n.row {\n  margin-bottom: 2em; }\n\n/***********  ALL THE MENU THINGS  ***********/\n/*\nSelect placeholder - start\nvalue-label is span\nvalue is div container\n*/\n.Select {\n  line-height: 3em; }\n\n.Select-placeholder {\n  margin-top: 0.1em; }\n\n.Select-value-label {\n  font-weight: bold; }\n\n.Select-placeholder, .Select-value-label {\n  font-size: 1.5em; }\n\n.Select-value {\n  margin-top: 0.5em; }\n\n.Select-value, .Select-placeholder {\n  padding-left: 20px !important; }\n\n.Select-option {\n  font-size: 1.5em;\n  padding: 0.15em 20px; }\n\n.Select-option.is-focused {\n  background-color: rgba(255, 215, 0, 0.08); }\n\n.Select-menu {\n  border-left-width: 0px;\n  border-right-width: 0px;\n  border-top-width: 0px; }\n\n.Select-menu-outer {\n  border-bottom-right-radius: 0;\n  border-bottom-left-radius: 0; }\n\n.Select-placeholder, .Select--single > .Select-control .Select-value {\n  max-width: 90%;\n  color: #000; }\n\n.Select .is-open {\n  color: #FF0000;\n  font-size: 2em; }\n\n.Select.Select--single.is-focused.is-open.is-searchable .Select-placeholder {\n  font-color: rgba(0, 0, 0, 0.5); }\n\n.has-value.Select--single > .Select-control .Select-value .Select-value-label, .has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {\n  color: #000; }\n\n.Select-control, .input-group {\n  border-radius: 0;\n  border: 2px solid #000;\n  color: #000; }\n\n.Select-arrow {\n  border-color: #000 transparent transparent;\n  border-width: 10px 10px 0px;\n  margin-right: 1em; }\n\n.Select-control {\n  padding-top: 4px; }\n\n.Select:focus {\n  outline: none; }\n\n#react-select-6--value .Select-value {\n  margin-top: 0.1em; }\n\n#react-select-5--value .Select-value {\n  margin-top: 0.1em; }\n\n.form-control, .input-group-addon {\n  border: 1px solid transparent;\n  -webkit-box-shadow: none;\n  box-shadow: none; }\n\n.input-group .form-control {\n  z-index: 0; }\n\n.input-group-addon {\n  background-color: #FFF;\n  color: #000; }\n\n.form-control:focus {\n  border: none !important;\n  box-shadow: none;\n  -webkit-box-shadow: none; }\n", ""]);
 
 	// exports
 
@@ -31663,43 +31664,67 @@
 /* 294 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/app/assets/fonts/arrow.svg";
+	module.exports = __webpack_require__.p + "src/app/assets/fonts/arrow_left.svg";
 
 /***/ },
 /* 295 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/app/assets/fonts/FoundersGroteskWeb-Regular.eot";
+	module.exports = __webpack_require__.p + "src/app/assets/fonts/arrow.svg";
 
 /***/ },
 /* 296 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/app/assets/fonts/FoundersGroteskWeb-Regular.woff";
+	module.exports = __webpack_require__.p + "src/app/assets/fonts/FoundersGroteskWeb-Bold.eot";
 
 /***/ },
 /* 297 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/app/assets/fonts/FoundersGroteskWeb-Regular.woff2";
+	module.exports = __webpack_require__.p + "src/app/assets/fonts/FoundersGroteskWeb-Bold.woff";
 
 /***/ },
 /* 298 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/app/assets/fonts/FoundersGroteskWeb-Bold.eot";
+	module.exports = __webpack_require__.p + "src/app/assets/fonts/FoundersGroteskWeb-Bold.woff2";
 
 /***/ },
 /* 299 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/app/assets/fonts/FoundersGroteskWeb-Bold.woff";
+	module.exports = __webpack_require__.p + "src/app/assets/fonts/FoundersGrotXCondWeb-Bold.eot";
 
 /***/ },
 /* 300 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/app/assets/fonts/FoundersGroteskWeb-Bold.woff2";
+	module.exports = __webpack_require__.p + "src/app/assets/fonts/FoundersGrotXCondWeb-Bold.woff";
+
+/***/ },
+/* 301 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "src/app/assets/fonts/FoundersGrotXCondWeb-Bold.woff2";
+
+/***/ },
+/* 302 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "src/app/assets/fonts/FoundersGroteskWeb-Regular.eot";
+
+/***/ },
+/* 303 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "src/app/assets/fonts/FoundersGroteskWeb-Regular.woff";
+
+/***/ },
+/* 304 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "src/app/assets/fonts/FoundersGroteskWeb-Regular.woff2";
 
 /***/ }
 /******/ ]);

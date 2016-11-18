@@ -32,9 +32,9 @@ class Output extends React.Component {
 
 		let status = 
 			<Col xs={12}>
-				<Col xs={6} id="initialArrow" className="initialBlock"></Col>
-				<Col xs={6} id="initialText" className="initialBlock">
-					<p>Fill out the the questions above to see your results</p>
+				<Col xs={6} md={12} id="initialArrow" className="initialBlock"></Col>
+				<Col xs={6} md={12} id="initialText" className="initialBlock">
+					<p>Fill out the the questions to see your results</p>
 				</Col>
 			</Col>
 
@@ -44,7 +44,7 @@ class Output extends React.Component {
 			status = 
 				<Col xs={12} className="updatedBlock">
 					<Col xs={12}>
-						<h1>YOUR EMPLOYER'S RESULTS</h1>
+						<h1 className="certHead">YOUR EMPLOYER'S RESULTS</h1>
 					</Col>
 					<Col xs={12} className="updatedContent">
 						<p>{this.state.job} in the {this.state.area} area make an average
@@ -61,7 +61,7 @@ class Output extends React.Component {
 			status =
 				<Col xs={12} className="readyBlock">
 					<Col xs={12} id="readyHeader">
-						<h1>NOTICE OF UNDERPAYMENT</h1>
+						<h1 className="certHead">NOTICE OF UNDERPAYMENT</h1>
 					</Col>
 					<Col xs={12} className="readyContentContainer">
 						<Col xs={12} className="readyContent">
@@ -73,7 +73,7 @@ class Output extends React.Component {
 						</Col>
 					</Col>
 				</Col>
-				
+
 			$('.certificateBlock').css('background-color', '#FFD700');
 		}
 
