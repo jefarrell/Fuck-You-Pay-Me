@@ -7,12 +7,12 @@ import Grid from "react-bootstrap/lib/Grid";
 import Row from "react-bootstrap/lib/Row";
 import Col from "react-bootstrap/lib/Col";
 
-
-const STATES = require('../assets/data/states');
-const JOBS = require('../assets/data/jobs');
+let path = '../assets/data/'
+const STATES = require('../assets/data/states.js');
+const JOBS = require('../assets/data/jobs.js');
 const STATE_AREAS = require('../assets/data/state_areas.js');
-const YEARS = require('../assets/data/years');
-const MONTHS = require('../assets/data/months');
+const YEARS = require('../assets/data/years.js');
+const MONTHS = require('../assets/data/months.js');
 
 class Inputs extends React.Component {
 
@@ -47,13 +47,25 @@ class Inputs extends React.Component {
 			this.setState({salary_start: e.target.value});
 		}
 
-		// Maybe not the best but works for now.  Test more
+		// need to run when slider stops or else its gonna load it a bunch of times
 		if (this.state.job !== '_____' && this.state.salary_start !== '34000' && this.state.salary_current !== '48000') {
-			this.setState({status: 'ready'})
+			this.calculatePayment(this.state.state, this.state.area);
 		} 
 		else return;
 		
 	}
+
+
+	calculatePayment(stateName, areaName) {
+		console.log(stateName, areaName);
+		$.getJSON('src/app/assets/data/state_splits/'+stateName+'_salaries.json', function(data) {
+			console.log("loaded: ", stateName);
+			console.log(data[areaName]);
+		})
+	}
+
+
+
 
 	componentDidUpdate() {	
 		if (this.state.status === 'initial') {

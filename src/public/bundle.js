@@ -21543,6 +21543,7 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+	var path = '../assets/data/';
 	var STATES = __webpack_require__(288);
 	var JOBS = __webpack_require__(289);
 	var STATE_AREAS = __webpack_require__(290);
@@ -21590,10 +21591,19 @@
 					this.setState({ salary_start: e.target.value });
 				}
 
-				// Maybe not the best but works for now.  Test more
+				// need to run when slider stops or else its gonna load it a bunch of times
 				if (this.state.job !== '_____' && this.state.salary_start !== '34000' && this.state.salary_current !== '48000') {
-					this.setState({ status: 'ready' });
+					this.calculatePayment(this.state.state, this.state.area);
 				} else return;
+			}
+		}, {
+			key: 'calculatePayment',
+			value: function calculatePayment(stateName, areaName) {
+				console.log(stateName, areaName);
+				$.getJSON('src/app/assets/data/state_splits/' + stateName + '_salaries.json', function (data) {
+					console.log("loaded: ", stateName);
+					console.log(data[areaName]);
+				});
 			}
 		}, {
 			key: 'componentDidUpdate',

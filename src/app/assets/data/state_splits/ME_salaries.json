@@ -1,0 +1,6696 @@
+{
+    "Bangor, ME": [
+        {
+            "job": "Chief Executives", 
+            "salary": "155,670"
+        }, 
+        {
+            "job": "General and Operations Managers", 
+            "salary": "84,520"
+        }, 
+        {
+            "job": "Marketing Managers", 
+            "salary": "102,720"
+        }, 
+        {
+            "job": "Sales Managers", 
+            "salary": "100,240"
+        }, 
+        {
+            "job": "Public Relations and Fundraising Managers", 
+            "salary": "89,380"
+        }, 
+        {
+            "job": "Administrative Services Managers", 
+            "salary": "73,400"
+        }, 
+        {
+            "job": "Computer and Information Systems Managers", 
+            "salary": "*"
+        }, 
+        {
+            "job": "Financial Managers", 
+            "salary": "94,570"
+        }, 
+        {
+            "job": "Industrial Production Managers", 
+            "salary": "80,480"
+        }, 
+        {
+            "job": "Transportation, Storage, and Distribution Managers", 
+            "salary": "82,690"
+        }, 
+        {
+            "job": "Human Resources Managers", 
+            "salary": "85,200"
+        }, 
+        {
+            "job": "Construction Managers", 
+            "salary": "69,300"
+        }, 
+        {
+            "job": "Education Administrators, Elementary and Secondary School", 
+            "salary": "75,760"
+        }, 
+        {
+            "job": "Education Administrators, Postsecondary", 
+            "salary": "91,240"
+        }, 
+        {
+            "job": "Architectural and Engineering Managers", 
+            "salary": "105,820"
+        }, 
+        {
+            "job": "Food Service Managers", 
+            "salary": "47,900"
+        }, 
+        {
+            "job": "Medical and Health Services Managers", 
+            "salary": "86,950"
+        }, 
+        {
+            "job": "Natural Sciences Managers", 
+            "salary": "102,210"
+        }, 
+        {
+            "job": "Property, Real Estate, and Community Association Managers", 
+            "salary": "50,760"
+        }, 
+        {
+            "job": "Social and Community Service Managers", 
+            "salary": "51,920"
+        }, 
+        {
+            "job": "Managers, All Other", 
+            "salary": "81,770"
+        }, 
+        {
+            "job": "Wholesale and Retail Buyers, Except Farm Products", 
+            "salary": "52,290"
+        }, 
+        {
+            "job": "Purchasing Agents, Except Wholesale, Retail, and Farm Products", 
+            "salary": "51,010"
+        }, 
+        {
+            "job": "Compliance Officers", 
+            "salary": "57,520"
+        }, 
+        {
+            "job": "Cost Estimators", 
+            "salary": "51,690"
+        }, 
+        {
+            "job": "Human Resources Specialists", 
+            "salary": "52,510"
+        }, 
+        {
+            "job": "Fundraisers", 
+            "salary": "61,830"
+        }, 
+        {
+            "job": "Training and Development Specialists", 
+            "salary": "44,330"
+        }, 
+        {
+            "job": "Business Operations Specialists, All Other", 
+            "salary": "57,810"
+        }, 
+        {
+            "job": "Accountants and Auditors", 
+            "salary": "60,330"
+        }, 
+        {
+            "job": "Appraisers and Assessors of Real Estate", 
+            "salary": "40,080"
+        }, 
+        {
+            "job": "Personal Financial Advisors", 
+            "salary": "65,180"
+        }, 
+        {
+            "job": "Loan Officers", 
+            "salary": "68,400"
+        }, 
+        {
+            "job": "Tax Examiners and Collectors, and Revenue Agents", 
+            "salary": "50,250"
+        }, 
+        {
+            "job": "Computer Systems Analysts", 
+            "salary": "92,620"
+        }, 
+        {
+            "job": "Computer Programmers", 
+            "salary": "65,320"
+        }, 
+        {
+            "job": "Software Developers, Applications", 
+            "salary": "97,150"
+        }, 
+        {
+            "job": "Web Developers", 
+            "salary": "54,720"
+        }, 
+        {
+            "job": "Network and Computer Systems Administrators", 
+            "salary": "55,040"
+        }, 
+        {
+            "job": "Computer Network Architects", 
+            "salary": "110,140"
+        }, 
+        {
+            "job": "Computer User Support Specialists", 
+            "salary": "38,060"
+        }, 
+        {
+            "job": "Computer Network Support Specialists", 
+            "salary": "41,820"
+        }, 
+        {
+            "job": "Civil Engineers", 
+            "salary": "73,230"
+        }, 
+        {
+            "job": "Electrical Engineers", 
+            "salary": "79,870"
+        }, 
+        {
+            "job": "Architectural and Civil Drafters", 
+            "salary": "35,950"
+        }, 
+        {
+            "job": "Civil Engineering Technicians", 
+            "salary": "*"
+        }, 
+        {
+            "job": "Surveying and Mapping Technicians", 
+            "salary": "40,930"
+        }, 
+        {
+            "job": "Zoologists and Wildlife Biologists", 
+            "salary": "57,690"
+        }, 
+        {
+            "job": "Environmental Scientists and Specialists, Including Health", 
+            "salary": "47,570"
+        }, 
+        {
+            "job": "Clinical, Counseling, and School Psychologists", 
+            "salary": "95,750"
+        }, 
+        {
+            "job": "Biological Technicians", 
+            "salary": "36,990"
+        }, 
+        {
+            "job": "Substance Abuse and Behavioral Disorder Counselors", 
+            "salary": "42,190"
+        }, 
+        {
+            "job": "Educational, Guidance, School, and Vocational Counselors", 
+            "salary": "45,190"
+        }, 
+        {
+            "job": "Mental Health Counselors", 
+            "salary": "59,430"
+        }, 
+        {
+            "job": "Rehabilitation Counselors", 
+            "salary": "38,150"
+        }, 
+        {
+            "job": "Child, Family, and School Social Workers", 
+            "salary": "44,180"
+        }, 
+        {
+            "job": "Healthcare Social Workers", 
+            "salary": "50,380"
+        }, 
+        {
+            "job": "Mental Health and Substance Abuse Social Workers", 
+            "salary": "58,070"
+        }, 
+        {
+            "job": "Social Workers, All Other", 
+            "salary": "52,810"
+        }, 
+        {
+            "job": "Health Educators", 
+            "salary": "*"
+        }, 
+        {
+            "job": "Social and Human Service Assistants", 
+            "salary": "31,870"
+        }, 
+        {
+            "job": "Community Health Workers", 
+            "salary": "30,720"
+        }, 
+        {
+            "job": "Lawyers", 
+            "salary": "88,230"
+        }, 
+        {
+            "job": "Paralegals and Legal Assistants", 
+            "salary": "39,160"
+        }, 
+        {
+            "job": "Business Teachers, Postsecondary", 
+            "salary": "71,740"
+        }, 
+        {
+            "job": "Mathematical Science Teachers, Postsecondary", 
+            "salary": "57,660"
+        }, 
+        {
+            "job": "Health Specialties Teachers, Postsecondary", 
+            "salary": "*"
+        }, 
+        {
+            "job": "Nursing Instructors and Teachers, Postsecondary", 
+            "salary": "62,800"
+        }, 
+        {
+            "job": "Education Teachers, Postsecondary", 
+            "salary": "*"
+        }, 
+        {
+            "job": "English Language and Literature Teachers, Postsecondary", 
+            "salary": "58,300"
+        }, 
+        {
+            "job": "Vocational Education Teachers, Postsecondary", 
+            "salary": "42,000"
+        }, 
+        {
+            "job": "Postsecondary Teachers, All Other", 
+            "salary": "55,590"
+        }, 
+        {
+            "job": "Preschool Teachers, Except Special Education", 
+            "salary": "33,540"
+        }, 
+        {
+            "job": "Kindergarten Teachers, Except Special Education", 
+            "salary": "48,890"
+        }, 
+        {
+            "job": "Elementary School Teachers, Except Special Education", 
+            "salary": "47,260"
+        }, 
+        {
+            "job": "Middle School Teachers, Except Special and Career/Technical Education", 
+            "salary": "59,350"
+        }, 
+        {
+            "job": "Secondary School Teachers, Except Special and Career/Technical Education", 
+            "salary": "51,410"
+        }, 
+        {
+            "job": "Special Education Teachers, Kindergarten and Elementary School", 
+            "salary": "50,030"
+        }, 
+        {
+            "job": "Special Education Teachers, Middle School", 
+            "salary": "58,090"
+        }, 
+        {
+            "job": "Special Education Teachers, Secondary School", 
+            "salary": "51,520"
+        }, 
+        {
+            "job": "Self-Enrichment Education Teachers", 
+            "salary": "40,190"
+        }, 
+        {
+            "job": "Teachers and Instructors, All Other, Except Substitute Teachers", 
+            "salary": "54,920"
+        }, 
+        {
+            "job": "Substitute Teachers", 
+            "salary": "18,790"
+        }, 
+        {
+            "job": "Librarians", 
+            "salary": "44,280"
+        }, 
+        {
+            "job": "Library Technicians", 
+            "salary": "30,840"
+        }, 
+        {
+            "job": "Teacher Assistants", 
+            "salary": "31,510"
+        }, 
+        {
+            "job": "Education, Training, and Library Workers, All Other", 
+            "salary": "34,490"
+        }, 
+        {
+            "job": "Graphic Designers", 
+            "salary": "36,260"
+        }, 
+        {
+            "job": "Merchandise Displayers and Window Trimmers", 
+            "salary": "25,720"
+        }, 
+        {
+            "job": "Producers and Directors", 
+            "salary": "30,050"
+        }, 
+        {
+            "job": "Coaches and Scouts", 
+            "salary": "24,870"
+        }, 
+        {
+            "job": "Radio and Television Announcers", 
+            "salary": "35,560"
+        }, 
+        {
+            "job": "Reporters and Correspondents", 
+            "salary": "30,620"
+        }, 
+        {
+            "job": "Public Relations Specialists", 
+            "salary": "54,850"
+        }, 
+        {
+            "job": "Dentists, General", 
+            "salary": "153,030"
+        }, 
+        {
+            "job": "Dietitians and Nutritionists", 
+            "salary": "56,060"
+        }, 
+        {
+            "job": "Pharmacists", 
+            "salary": "119,110"
+        }, 
+        {
+            "job": "Family and General Practitioners", 
+            "salary": "152,250"
+        }, 
+        {
+            "job": "Psychiatrists", 
+            "salary": "*"
+        }, 
+        {
+            "job": "Surgeons", 
+            "salary": "253,160"
+        }, 
+        {
+            "job": "Physician Assistants", 
+            "salary": "99,140"
+        }, 
+        {
+            "job": "Occupational Therapists", 
+            "salary": "72,590"
+        }, 
+        {
+            "job": "Physical Therapists", 
+            "salary": "79,990"
+        }, 
+        {
+            "job": "Speech-Language Pathologists", 
+            "salary": "58,990"
+        }, 
+        {
+            "job": "Veterinarians", 
+            "salary": "119,630"
+        }, 
+        {
+            "job": "Registered Nurses", 
+            "salary": "67,350"
+        }, 
+        {
+            "job": "Nurse Practitioners", 
+            "salary": "98,560"
+        }, 
+        {
+            "job": "Medical and Clinical Laboratory Technologists", 
+            "salary": "54,520"
+        }, 
+        {
+            "job": "Medical and Clinical Laboratory Technicians", 
+            "salary": "45,950"
+        }, 
+        {
+            "job": "Dental Hygienists", 
+            "salary": "67,230"
+        }, 
+        {
+            "job": "Emergency Medical Technicians and Paramedics", 
+            "salary": "30,760"
+        }, 
+        {
+            "job": "Pharmacy Technicians", 
+            "salary": "28,740"
+        }, 
+        {
+            "job": "Veterinary Technologists and Technicians", 
+            "salary": "32,220"
+        }, 
+        {
+            "job": "Licensed Practical and Licensed Vocational Nurses", 
+            "salary": "43,950"
+        }, 
+        {
+            "job": "Medical Records and Health Information Technicians", 
+            "salary": "33,200"
+        }, 
+        {
+            "job": "Opticians, Dispensing", 
+            "salary": "36,980"
+        }, 
+        {
+            "job": "Health Technologists and Technicians, All Other", 
+            "salary": "77,030"
+        }, 
+        {
+            "job": "Occupational Health and Safety Specialists", 
+            "salary": "70,180"
+        }, 
+        {
+            "job": "Home Health Aides", 
+            "salary": "23,560"
+        }, 
+        {
+            "job": "Nursing Assistants", 
+            "salary": "25,140"
+        }, 
+        {
+            "job": "Dental Assistants", 
+            "salary": "38,720"
+        }, 
+        {
+            "job": "Medical Assistants", 
+            "salary": "30,650"
+        }, 
+        {
+            "job": "Medical Transcriptionists", 
+            "salary": "26,380"
+        }, 
+        {
+            "job": "Phlebotomists", 
+            "salary": "29,730"
+        }, 
+        {
+            "job": "First-Line Supervisors of Fire Fighting and Prevention Workers", 
+            "salary": "52,330"
+        }, 
+        {
+            "job": "First-Line Supervisors of Protective Service Workers, All Other", 
+            "salary": "41,100"
+        }, 
+        {
+            "job": "Firefighters", 
+            "salary": "36,070"
+        }, 
+        {
+            "job": "Detectives and Criminal Investigators", 
+            "salary": "58,770"
+        }, 
+        {
+            "job": "Police and Sheriff's Patrol Officers", 
+            "salary": "41,530"
+        }, 
+        {
+            "job": "Security Guards", 
+            "salary": "22,830"
+        }, 
+        {
+            "job": "Transportation Security Screeners", 
+            "salary": "38,040"
+        }, 
+        {
+            "job": "Chefs and Head Cooks", 
+            "salary": "38,230"
+        }, 
+        {
+            "job": "First-Line Supervisors of Food Preparation and Serving Workers", 
+            "salary": "31,860"
+        }, 
+        {
+            "job": "Cooks, Institution and Cafeteria", 
+            "salary": "27,390"
+        }, 
+        {
+            "job": "Cooks, Restaurant", 
+            "salary": "25,270"
+        }, 
+        {
+            "job": "Cooks, Short Order", 
+            "salary": "20,900"
+        }, 
+        {
+            "job": "Food Preparation Workers", 
+            "salary": "23,280"
+        }, 
+        {
+            "job": "Bartenders", 
+            "salary": "19,930"
+        }, 
+        {
+            "job": "Combined Food Preparation and Serving Workers, Including Fast Food", 
+            "salary": "18,310"
+        }, 
+        {
+            "job": "Counter Attendants, Cafeteria, Food Concession, and Coffee Shop", 
+            "salary": "17,830"
+        }, 
+        {
+            "job": "Waiters and Waitresses", 
+            "salary": "24,640"
+        }, 
+        {
+            "job": "Food Servers, Nonrestaurant", 
+            "salary": "22,680"
+        }, 
+        {
+            "job": "Dining Room and Cafeteria Attendants and Bartender Helpers", 
+            "salary": "22,280"
+        }, 
+        {
+            "job": "Dishwashers", 
+            "salary": "18,450"
+        }, 
+        {
+            "job": "Hosts and Hostesses, Restaurant, Lounge, and Coffee Shop", 
+            "salary": "18,760"
+        }, 
+        {
+            "job": "First-Line Supervisors of Housekeeping and Janitorial Workers", 
+            "salary": "42,070"
+        }, 
+        {
+            "job": "First-Line Supervisors of Landscaping, Lawn Service, and Groundskeeping Workers", 
+            "salary": "41,630"
+        }, 
+        {
+            "job": "Janitors and Cleaners, Except Maids and Housekeeping Cleaners", 
+            "salary": "24,470"
+        }, 
+        {
+            "job": "Maids and Housekeeping Cleaners", 
+            "salary": "20,480"
+        }, 
+        {
+            "job": "Landscaping and Groundskeeping Workers", 
+            "salary": "26,640"
+        }, 
+        {
+            "job": "First-Line Supervisors of Personal Service Workers", 
+            "salary": "31,450"
+        }, 
+        {
+            "job": "Nonfarm Animal Caretakers", 
+            "salary": "26,440"
+        }, 
+        {
+            "job": "Amusement and Recreation Attendants", 
+            "salary": "21,550"
+        }, 
+        {
+            "job": "Hairdressers, Hairstylists, and Cosmetologists", 
+            "salary": "24,120"
+        }, 
+        {
+            "job": "Childcare Workers", 
+            "salary": "21,180"
+        }, 
+        {
+            "job": "Personal Care Aides", 
+            "salary": "21,980"
+        }, 
+        {
+            "job": "Fitness Trainers and Aerobics Instructors", 
+            "salary": "31,270"
+        }, 
+        {
+            "job": "Recreation Workers", 
+            "salary": "23,770"
+        }, 
+        {
+            "job": "Residential Advisors", 
+            "salary": "29,000"
+        }, 
+        {
+            "job": "First-Line Supervisors of Retail Sales Workers", 
+            "salary": "39,220"
+        }, 
+        {
+            "job": "First-Line Supervisors of Non-Retail Sales Workers", 
+            "salary": "61,400"
+        }, 
+        {
+            "job": "Cashiers", 
+            "salary": "19,800"
+        }, 
+        {
+            "job": "Counter and Rental Clerks", 
+            "salary": "21,270"
+        }, 
+        {
+            "job": "Parts Salespersons", 
+            "salary": "36,730"
+        }, 
+        {
+            "job": "Retail Salespersons", 
+            "salary": "23,270"
+        }, 
+        {
+            "job": "Advertising Sales Agents", 
+            "salary": "38,450"
+        }, 
+        {
+            "job": "Insurance Sales Agents", 
+            "salary": "53,260"
+        }, 
+        {
+            "job": "Securities, Commodities, and Financial Services Sales Agents", 
+            "salary": "70,450"
+        }, 
+        {
+            "job": "Sales Representatives, Services, All Other", 
+            "salary": "52,720"
+        }, 
+        {
+            "job": "Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products", 
+            "salary": "64,020"
+        }, 
+        {
+            "job": "Sales Engineers", 
+            "salary": "70,260"
+        }, 
+        {
+            "job": "First-Line Supervisors of Office and Administrative Support Workers", 
+            "salary": "46,670"
+        }, 
+        {
+            "job": "Switchboard Operators, Including Answering Service", 
+            "salary": "24,200"
+        }, 
+        {
+            "job": "Bill and Account Collectors", 
+            "salary": "35,910"
+        }, 
+        {
+            "job": "Billing and Posting Clerks", 
+            "salary": "32,920"
+        }, 
+        {
+            "job": "Bookkeeping, Accounting, and Auditing Clerks", 
+            "salary": "36,770"
+        }, 
+        {
+            "job": "Payroll and Timekeeping Clerks", 
+            "salary": "38,960"
+        }, 
+        {
+            "job": "Procurement Clerks", 
+            "salary": "36,440"
+        }, 
+        {
+            "job": "Tellers", 
+            "salary": "25,700"
+        }, 
+        {
+            "job": "Court, Municipal, and License Clerks", 
+            "salary": "32,610"
+        }, 
+        {
+            "job": "Customer Service Representatives", 
+            "salary": "34,200"
+        }, 
+        {
+            "job": "Eligibility Interviewers, Government Programs", 
+            "salary": "38,290"
+        }, 
+        {
+            "job": "Hotel, Motel, and Resort Desk Clerks", 
+            "salary": "23,020"
+        }, 
+        {
+            "job": "Interviewers, Except Eligibility and Loan", 
+            "salary": "28,250"
+        }, 
+        {
+            "job": "Loan Interviewers and Clerks", 
+            "salary": "34,510"
+        }, 
+        {
+            "job": "Order Clerks", 
+            "salary": "25,430"
+        }, 
+        {
+            "job": "Human Resources Assistants, Except Payroll and Timekeeping", 
+            "salary": "37,530"
+        }, 
+        {
+            "job": "Receptionists and Information Clerks", 
+            "salary": "27,890"
+        }, 
+        {
+            "job": "Information and Record Clerks, All Other", 
+            "salary": "36,310"
+        }, 
+        {
+            "job": "Couriers and Messengers", 
+            "salary": "30,660"
+        }, 
+        {
+            "job": "Police, Fire, and Ambulance Dispatchers", 
+            "salary": "38,110"
+        }, 
+        {
+            "job": "Dispatchers, Except Police, Fire, and Ambulance", 
+            "salary": "35,310"
+        }, 
+        {
+            "job": "Postal Service Clerks", 
+            "salary": "43,300"
+        }, 
+        {
+            "job": "Postal Service Mail Carriers", 
+            "salary": "50,550"
+        }, 
+        {
+            "job": "Postal Service Mail Sorters, Processors, and Processing Machine Operators", 
+            "salary": "49,390"
+        }, 
+        {
+            "job": "Production, Planning, and Expediting Clerks", 
+            "salary": "54,070"
+        }, 
+        {
+            "job": "Shipping, Receiving, and Traffic Clerks", 
+            "salary": "31,160"
+        }, 
+        {
+            "job": "Stock Clerks and Order Fillers", 
+            "salary": "24,380"
+        }, 
+        {
+            "job": "Weighers, Measurers, Checkers, and Samplers, Recordkeeping", 
+            "salary": "23,930"
+        }, 
+        {
+            "job": "Executive Secretaries and Executive Administrative Assistants", 
+            "salary": "45,240"
+        }, 
+        {
+            "job": "Legal Secretaries", 
+            "salary": "33,620"
+        }, 
+        {
+            "job": "Medical Secretaries", 
+            "salary": "34,630"
+        }, 
+        {
+            "job": "Secretaries and Administrative Assistants, Except Legal, Medical, and Executive", 
+            "salary": "32,080"
+        }, 
+        {
+            "job": "Data Entry Keyers", 
+            "salary": "30,420"
+        }, 
+        {
+            "job": "Insurance Claims and Policy Processing Clerks", 
+            "salary": "33,270"
+        }, 
+        {
+            "job": "Office Clerks, General", 
+            "salary": "28,950"
+        }, 
+        {
+            "job": "Farmworkers and Laborers, Crop, Nursery, and Greenhouse", 
+            "salary": "26,980"
+        }, 
+        {
+            "job": "Logging Equipment Operators", 
+            "salary": "34,950"
+        }, 
+        {
+            "job": "First-Line Supervisors of Construction Trades and Extraction Workers", 
+            "salary": "51,170"
+        }, 
+        {
+            "job": "Carpenters", 
+            "salary": "37,380"
+        }, 
+        {
+            "job": "Cement Masons and Concrete Finishers", 
+            "salary": "31,750"
+        }, 
+        {
+            "job": "Construction Laborers", 
+            "salary": "30,880"
+        }, 
+        {
+            "job": "Paving, Surfacing, and Tamping Equipment Operators", 
+            "salary": "35,860"
+        }, 
+        {
+            "job": "Operating Engineers and Other Construction Equipment Operators", 
+            "salary": "37,260"
+        }, 
+        {
+            "job": "Electricians", 
+            "salary": "47,490"
+        }, 
+        {
+            "job": "Painters, Construction and Maintenance", 
+            "salary": "34,920"
+        }, 
+        {
+            "job": "Plumbers, Pipefitters, and Steamfitters", 
+            "salary": "47,080"
+        }, 
+        {
+            "job": "Roofers", 
+            "salary": "36,260"
+        }, 
+        {
+            "job": "Sheet Metal Workers", 
+            "salary": "40,840"
+        }, 
+        {
+            "job": "Structural Iron and Steel Workers", 
+            "salary": "43,980"
+        }, 
+        {
+            "job": "Construction and Building Inspectors", 
+            "salary": "56,550"
+        }, 
+        {
+            "job": "Highway Maintenance Workers", 
+            "salary": "31,600"
+        }, 
+        {
+            "job": "First-Line Supervisors of Mechanics, Installers, and Repairers", 
+            "salary": "61,070"
+        }, 
+        {
+            "job": "Computer, Automated Teller, and Office Machine Repairers", 
+            "salary": "40,950"
+        }, 
+        {
+            "job": "Telecommunications Equipment Installers and Repairers, Except Line Installers", 
+            "salary": "49,470"
+        }, 
+        {
+            "job": "Aircraft Mechanics and Service Technicians", 
+            "salary": "49,740"
+        }, 
+        {
+            "job": "Automotive Body and Related Repairers", 
+            "salary": "40,460"
+        }, 
+        {
+            "job": "Automotive Service Technicians and Mechanics", 
+            "salary": "33,160"
+        }, 
+        {
+            "job": "Bus and Truck Mechanics and Diesel Engine Specialists", 
+            "salary": "43,650"
+        }, 
+        {
+            "job": "Mobile Heavy Equipment Mechanics, Except Engines", 
+            "salary": "48,530"
+        }, 
+        {
+            "job": "Heating, Air Conditioning, and Refrigeration Mechanics and Installers", 
+            "salary": "43,990"
+        }, 
+        {
+            "job": "Industrial Machinery Mechanics", 
+            "salary": "45,540"
+        }, 
+        {
+            "job": "Telecommunications Line Installers and Repairers", 
+            "salary": "44,890"
+        }, 
+        {
+            "job": "Maintenance and Repair Workers, General", 
+            "salary": "35,060"
+        }, 
+        {
+            "job": "Helpers--Installation, Maintenance, and Repair Workers", 
+            "salary": "22,920"
+        }, 
+        {
+            "job": "Installation, Maintenance, and Repair Workers, All Other", 
+            "salary": "35,800"
+        }, 
+        {
+            "job": "First-Line Supervisors of Production and Operating Workers", 
+            "salary": "53,200"
+        }, 
+        {
+            "job": "Structural Metal Fabricators and Fitters", 
+            "salary": "43,340"
+        }, 
+        {
+            "job": "Assemblers and Fabricators, All Other", 
+            "salary": "26,450"
+        }, 
+        {
+            "job": "Bakers", 
+            "salary": "26,060"
+        }, 
+        {
+            "job": "Butchers and Meat Cutters", 
+            "salary": "33,960"
+        }, 
+        {
+            "job": "Welders, Cutters, Solderers, and Brazers", 
+            "salary": "33,690"
+        }, 
+        {
+            "job": "Laundry and Dry-Cleaning Workers", 
+            "salary": "22,520"
+        }, 
+        {
+            "job": "Sewing Machine Operators", 
+            "salary": "25,070"
+        }, 
+        {
+            "job": "Cabinetmakers and Bench Carpenters", 
+            "salary": "35,290"
+        }, 
+        {
+            "job": "Sawing Machine Setters, Operators, and Tenders, Wood", 
+            "salary": "25,030"
+        }, 
+        {
+            "job": "Water and Wastewater Treatment Plant and System Operators", 
+            "salary": "44,340"
+        }, 
+        {
+            "job": "Plant and System Operators, All Other", 
+            "salary": "44,860"
+        }, 
+        {
+            "job": "Helpers--Production Workers", 
+            "salary": "20,570"
+        }, 
+        {
+            "job": "Production Workers, All Other", 
+            "salary": "21,650"
+        }, 
+        {
+            "job": "First-Line Supervisors of Transportation and Material-Moving Machine and Vehicle Operators", 
+            "salary": "47,420"
+        }, 
+        {
+            "job": "Bus Drivers, School or Special Client", 
+            "salary": "35,100"
+        }, 
+        {
+            "job": "Driver/Sales Workers", 
+            "salary": "34,620"
+        }, 
+        {
+            "job": "Heavy and Tractor-Trailer Truck Drivers", 
+            "salary": "40,700"
+        }, 
+        {
+            "job": "Light Truck or Delivery Services Drivers", 
+            "salary": "30,200"
+        }, 
+        {
+            "job": "Taxi Drivers and Chauffeurs", 
+            "salary": "19,430"
+        }, 
+        {
+            "job": "Motor Vehicle Operators, All Other", 
+            "salary": "24,570"
+        }, 
+        {
+            "job": "Automotive and Watercraft Service Attendants", 
+            "salary": "21,890"
+        }, 
+        {
+            "job": "Excavating and Loading Machine and Dragline Operators", 
+            "salary": "45,000"
+        }, 
+        {
+            "job": "Industrial Truck and Tractor Operators", 
+            "salary": "28,500"
+        }, 
+        {
+            "job": "Cleaners of Vehicles and Equipment", 
+            "salary": "22,710"
+        }, 
+        {
+            "job": "Laborers and Freight, Stock, and Material Movers, Hand", 
+            "salary": "25,890"
+        }, 
+        {
+            "job": "Packers and Packagers, Hand", 
+            "salary": "20,390"
+        }, 
+        {
+            "job": "Refuse and Recyclable Material Collectors", 
+            "salary": "23,510"
+        }
+    ], 
+    "Lewiston-Auburn, ME": [
+        {
+            "job": "Chief Executives", 
+            "salary": "170,270"
+        }, 
+        {
+            "job": "General and Operations Managers", 
+            "salary": "78,430"
+        }, 
+        {
+            "job": "Marketing Managers", 
+            "salary": "93,330"
+        }, 
+        {
+            "job": "Sales Managers", 
+            "salary": "111,510"
+        }, 
+        {
+            "job": "Administrative Services Managers", 
+            "salary": "66,070"
+        }, 
+        {
+            "job": "Computer and Information Systems Managers", 
+            "salary": "96,370"
+        }, 
+        {
+            "job": "Financial Managers", 
+            "salary": "107,020"
+        }, 
+        {
+            "job": "Industrial Production Managers", 
+            "salary": "88,820"
+        }, 
+        {
+            "job": "Transportation, Storage, and Distribution Managers", 
+            "salary": "79,260"
+        }, 
+        {
+            "job": "Human Resources Managers", 
+            "salary": "95,020"
+        }, 
+        {
+            "job": "Construction Managers", 
+            "salary": "93,150"
+        }, 
+        {
+            "job": "Education Administrators, Elementary and Secondary School", 
+            "salary": "75,550"
+        }, 
+        {
+            "job": "Architectural and Engineering Managers", 
+            "salary": "108,170"
+        }, 
+        {
+            "job": "Food Service Managers", 
+            "salary": "50,700"
+        }, 
+        {
+            "job": "Lodging Managers", 
+            "salary": "*"
+        }, 
+        {
+            "job": "Medical and Health Services Managers", 
+            "salary": "87,240"
+        }, 
+        {
+            "job": "Property, Real Estate, and Community Association Managers", 
+            "salary": "49,200"
+        }, 
+        {
+            "job": "Social and Community Service Managers", 
+            "salary": "59,160"
+        }, 
+        {
+            "job": "Managers, All Other", 
+            "salary": "79,420"
+        }, 
+        {
+            "job": "Wholesale and Retail Buyers, Except Farm Products", 
+            "salary": "39,580"
+        }, 
+        {
+            "job": "Purchasing Agents, Except Wholesale, Retail, and Farm Products", 
+            "salary": "50,970"
+        }, 
+        {
+            "job": "Claims Adjusters, Examiners, and Investigators", 
+            "salary": "62,590"
+        }, 
+        {
+            "job": "Compliance Officers", 
+            "salary": "51,300"
+        }, 
+        {
+            "job": "Cost Estimators", 
+            "salary": "58,920"
+        }, 
+        {
+            "job": "Human Resources Specialists", 
+            "salary": "49,270"
+        }, 
+        {
+            "job": "Fundraisers", 
+            "salary": "60,560"
+        }, 
+        {
+            "job": "Training and Development Specialists", 
+            "salary": "52,420"
+        }, 
+        {
+            "job": "Business Operations Specialists, All Other", 
+            "salary": "50,910"
+        }, 
+        {
+            "job": "Accountants and Auditors", 
+            "salary": "56,770"
+        }, 
+        {
+            "job": "Insurance Underwriters", 
+            "salary": "45,820"
+        }, 
+        {
+            "job": "Loan Officers", 
+            "salary": "53,790"
+        }, 
+        {
+            "job": "Computer Systems Analysts", 
+            "salary": "68,740"
+        }, 
+        {
+            "job": "Computer Programmers", 
+            "salary": "48,840"
+        }, 
+        {
+            "job": "Software Developers, Applications", 
+            "salary": "78,500"
+        }, 
+        {
+            "job": "Network and Computer Systems Administrators", 
+            "salary": "63,830"
+        }, 
+        {
+            "job": "Computer Network Architects", 
+            "salary": "89,220"
+        }, 
+        {
+            "job": "Computer User Support Specialists", 
+            "salary": "43,320"
+        }, 
+        {
+            "job": "Computer Network Support Specialists", 
+            "salary": "56,550"
+        }, 
+        {
+            "job": "Computer Occupations, All Other", 
+            "salary": "71,310"
+        }, 
+        {
+            "job": "Civil Engineers", 
+            "salary": "63,180"
+        }, 
+        {
+            "job": "Industrial Engineers", 
+            "salary": "84,930"
+        }, 
+        {
+            "job": "Mechanical Engineers", 
+            "salary": "79,720"
+        }, 
+        {
+            "job": "Substance Abuse and Behavioral Disorder Counselors", 
+            "salary": "34,470"
+        }, 
+        {
+            "job": "Educational, Guidance, School, and Vocational Counselors", 
+            "salary": "45,390"
+        }, 
+        {
+            "job": "Child, Family, and School Social Workers", 
+            "salary": "44,990"
+        }, 
+        {
+            "job": "Healthcare Social Workers", 
+            "salary": "49,270"
+        }, 
+        {
+            "job": "Social Workers, All Other", 
+            "salary": "45,540"
+        }, 
+        {
+            "job": "Social and Human Service Assistants", 
+            "salary": "30,050"
+        }, 
+        {
+            "job": "Lawyers", 
+            "salary": "78,820"
+        }, 
+        {
+            "job": "Paralegals and Legal Assistants", 
+            "salary": "40,640"
+        }, 
+        {
+            "job": "Preschool Teachers, Except Special Education", 
+            "salary": "32,520"
+        }, 
+        {
+            "job": "Kindergarten Teachers, Except Special Education", 
+            "salary": "44,520"
+        }, 
+        {
+            "job": "Elementary School Teachers, Except Special Education", 
+            "salary": "44,660"
+        }, 
+        {
+            "job": "Middle School Teachers, Except Special and Career/Technical Education", 
+            "salary": "47,230"
+        }, 
+        {
+            "job": "Secondary School Teachers, Except Special and Career/Technical Education", 
+            "salary": "46,560"
+        }, 
+        {
+            "job": "Special Education Teachers, Kindergarten and Elementary School", 
+            "salary": "47,100"
+        }, 
+        {
+            "job": "Special Education Teachers, Secondary School", 
+            "salary": "45,310"
+        }, 
+        {
+            "job": "Substitute Teachers", 
+            "salary": "21,760"
+        }, 
+        {
+            "job": "Librarians", 
+            "salary": "53,230"
+        }, 
+        {
+            "job": "Library Technicians", 
+            "salary": "31,040"
+        }, 
+        {
+            "job": "Instructional Coordinators", 
+            "salary": "45,750"
+        }, 
+        {
+            "job": "Teacher Assistants", 
+            "salary": "30,320"
+        }, 
+        {
+            "job": "Commercial and Industrial Designers", 
+            "salary": "44,840"
+        }, 
+        {
+            "job": "Graphic Designers", 
+            "salary": "36,050"
+        }, 
+        {
+            "job": "Coaches and Scouts", 
+            "salary": "*"
+        }, 
+        {
+            "job": "Public Relations Specialists", 
+            "salary": "47,920"
+        }, 
+        {
+            "job": "Pharmacists", 
+            "salary": "117,540"
+        }, 
+        {
+            "job": "Anesthesiologists", 
+            "salary": "#"
+        }, 
+        {
+            "job": "Physicians and Surgeons, All Other", 
+            "salary": "254,920"
+        }, 
+        {
+            "job": "Physician Assistants", 
+            "salary": "99,110"
+        }, 
+        {
+            "job": "Occupational Therapists", 
+            "salary": "60,070"
+        }, 
+        {
+            "job": "Physical Therapists", 
+            "salary": "75,090"
+        }, 
+        {
+            "job": "Speech-Language Pathologists", 
+            "salary": "68,680"
+        }, 
+        {
+            "job": "Registered Nurses", 
+            "salary": "62,470"
+        }, 
+        {
+            "job": "Nurse Practitioners", 
+            "salary": "94,890"
+        }, 
+        {
+            "job": "Dental Hygienists", 
+            "salary": "67,990"
+        }, 
+        {
+            "job": "Radiologic Technologists", 
+            "salary": "55,280"
+        }, 
+        {
+            "job": "Emergency Medical Technicians and Paramedics", 
+            "salary": "37,130"
+        }, 
+        {
+            "job": "Pharmacy Technicians", 
+            "salary": "27,300"
+        }, 
+        {
+            "job": "Surgical Technologists", 
+            "salary": "43,520"
+        }, 
+        {
+            "job": "Veterinary Technologists and Technicians", 
+            "salary": "36,040"
+        }, 
+        {
+            "job": "Licensed Practical and Licensed Vocational Nurses", 
+            "salary": "42,180"
+        }, 
+        {
+            "job": "Medical Records and Health Information Technicians", 
+            "salary": "37,410"
+        }, 
+        {
+            "job": "Home Health Aides", 
+            "salary": "30,000"
+        }, 
+        {
+            "job": "Psychiatric Aides", 
+            "salary": "24,080"
+        }, 
+        {
+            "job": "Nursing Assistants", 
+            "salary": "25,240"
+        }, 
+        {
+            "job": "Dental Assistants", 
+            "salary": "37,520"
+        }, 
+        {
+            "job": "Medical Assistants", 
+            "salary": "31,380"
+        }, 
+        {
+            "job": "Phlebotomists", 
+            "salary": "28,000"
+        }, 
+        {
+            "job": "Firefighters", 
+            "salary": "36,770"
+        }, 
+        {
+            "job": "Police and Sheriff's Patrol Officers", 
+            "salary": "44,150"
+        }, 
+        {
+            "job": "Security Guards", 
+            "salary": "27,590"
+        }, 
+        {
+            "job": "Chefs and Head Cooks", 
+            "salary": "41,130"
+        }, 
+        {
+            "job": "First-Line Supervisors of Food Preparation and Serving Workers", 
+            "salary": "31,220"
+        }, 
+        {
+            "job": "Cooks, Institution and Cafeteria", 
+            "salary": "25,380"
+        }, 
+        {
+            "job": "Cooks, Restaurant", 
+            "salary": "24,410"
+        }, 
+        {
+            "job": "Cooks, Short Order", 
+            "salary": "19,860"
+        }, 
+        {
+            "job": "Food Preparation Workers", 
+            "salary": "21,830"
+        }, 
+        {
+            "job": "Bartenders", 
+            "salary": "19,100"
+        }, 
+        {
+            "job": "Combined Food Preparation and Serving Workers, Including Fast Food", 
+            "salary": "19,400"
+        }, 
+        {
+            "job": "Counter Attendants, Cafeteria, Food Concession, and Coffee Shop", 
+            "salary": "18,280"
+        }, 
+        {
+            "job": "Waiters and Waitresses", 
+            "salary": "20,160"
+        }, 
+        {
+            "job": "Food Servers, Nonrestaurant", 
+            "salary": "19,010"
+        }, 
+        {
+            "job": "Dining Room and Cafeteria Attendants and Bartender Helpers", 
+            "salary": "20,930"
+        }, 
+        {
+            "job": "Dishwashers", 
+            "salary": "18,180"
+        }, 
+        {
+            "job": "Hosts and Hostesses, Restaurant, Lounge, and Coffee Shop", 
+            "salary": "20,110"
+        }, 
+        {
+            "job": "First-Line Supervisors of Housekeeping and Janitorial Workers", 
+            "salary": "36,660"
+        }, 
+        {
+            "job": "Janitors and Cleaners, Except Maids and Housekeeping Cleaners", 
+            "salary": "27,530"
+        }, 
+        {
+            "job": "Maids and Housekeeping Cleaners", 
+            "salary": "20,120"
+        }, 
+        {
+            "job": "Landscaping and Groundskeeping Workers", 
+            "salary": "24,380"
+        }, 
+        {
+            "job": "First-Line Supervisors of Personal Service Workers", 
+            "salary": "36,280"
+        }, 
+        {
+            "job": "Nonfarm Animal Caretakers", 
+            "salary": "19,220"
+        }, 
+        {
+            "job": "Amusement and Recreation Attendants", 
+            "salary": "19,000"
+        }, 
+        {
+            "job": "Hairdressers, Hairstylists, and Cosmetologists", 
+            "salary": "33,960"
+        }, 
+        {
+            "job": "Childcare Workers", 
+            "salary": "19,920"
+        }, 
+        {
+            "job": "Personal Care Aides", 
+            "salary": "21,880"
+        }, 
+        {
+            "job": "Fitness Trainers and Aerobics Instructors", 
+            "salary": "40,740"
+        }, 
+        {
+            "job": "Recreation Workers", 
+            "salary": "26,390"
+        }, 
+        {
+            "job": "First-Line Supervisors of Retail Sales Workers", 
+            "salary": "41,590"
+        }, 
+        {
+            "job": "First-Line Supervisors of Non-Retail Sales Workers", 
+            "salary": "49,550"
+        }, 
+        {
+            "job": "Cashiers", 
+            "salary": "19,850"
+        }, 
+        {
+            "job": "Counter and Rental Clerks", 
+            "salary": "27,330"
+        }, 
+        {
+            "job": "Parts Salespersons", 
+            "salary": "37,110"
+        }, 
+        {
+            "job": "Retail Salespersons", 
+            "salary": "30,780"
+        }, 
+        {
+            "job": "Advertising Sales Agents", 
+            "salary": "39,200"
+        }, 
+        {
+            "job": "Insurance Sales Agents", 
+            "salary": "49,390"
+        }, 
+        {
+            "job": "Sales Representatives, Services, All Other", 
+            "salary": "53,370"
+        }, 
+        {
+            "job": "Sales Representatives, Wholesale and Manufacturing, Technical and Scientific Products", 
+            "salary": "110,820"
+        }, 
+        {
+            "job": "Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products", 
+            "salary": "51,610"
+        }, 
+        {
+            "job": "Telemarketers", 
+            "salary": "27,920"
+        }, 
+        {
+            "job": "First-Line Supervisors of Office and Administrative Support Workers", 
+            "salary": "49,280"
+        }, 
+        {
+            "job": "Switchboard Operators, Including Answering Service", 
+            "salary": "25,780"
+        }, 
+        {
+            "job": "Bill and Account Collectors", 
+            "salary": "30,670"
+        }, 
+        {
+            "job": "Billing and Posting Clerks", 
+            "salary": "32,650"
+        }, 
+        {
+            "job": "Bookkeeping, Accounting, and Auditing Clerks", 
+            "salary": "32,610"
+        }, 
+        {
+            "job": "Payroll and Timekeeping Clerks", 
+            "salary": "39,130"
+        }, 
+        {
+            "job": "Tellers", 
+            "salary": "26,050"
+        }, 
+        {
+            "job": "Court, Municipal, and License Clerks", 
+            "salary": "35,520"
+        }, 
+        {
+            "job": "Customer Service Representatives", 
+            "salary": "28,850"
+        }, 
+        {
+            "job": "Eligibility Interviewers, Government Programs", 
+            "salary": "38,640"
+        }, 
+        {
+            "job": "Hotel, Motel, and Resort Desk Clerks", 
+            "salary": "25,780"
+        }, 
+        {
+            "job": "New Accounts Clerks", 
+            "salary": "30,710"
+        }, 
+        {
+            "job": "Receptionists and Information Clerks", 
+            "salary": "26,440"
+        }, 
+        {
+            "job": "Couriers and Messengers", 
+            "salary": "27,160"
+        }, 
+        {
+            "job": "Police, Fire, and Ambulance Dispatchers", 
+            "salary": "36,450"
+        }, 
+        {
+            "job": "Dispatchers, Except Police, Fire, and Ambulance", 
+            "salary": "43,280"
+        }, 
+        {
+            "job": "Postal Service Clerks", 
+            "salary": "48,510"
+        }, 
+        {
+            "job": "Postal Service Mail Carriers", 
+            "salary": "48,680"
+        }, 
+        {
+            "job": "Production, Planning, and Expediting Clerks", 
+            "salary": "45,780"
+        }, 
+        {
+            "job": "Shipping, Receiving, and Traffic Clerks", 
+            "salary": "34,710"
+        }, 
+        {
+            "job": "Stock Clerks and Order Fillers", 
+            "salary": "25,800"
+        }, 
+        {
+            "job": "Weighers, Measurers, Checkers, and Samplers, Recordkeeping", 
+            "salary": "28,100"
+        }, 
+        {
+            "job": "Executive Secretaries and Executive Administrative Assistants", 
+            "salary": "45,890"
+        }, 
+        {
+            "job": "Legal Secretaries", 
+            "salary": "45,030"
+        }, 
+        {
+            "job": "Medical Secretaries", 
+            "salary": "30,840"
+        }, 
+        {
+            "job": "Secretaries and Administrative Assistants, Except Legal, Medical, and Executive", 
+            "salary": "30,770"
+        }, 
+        {
+            "job": "Data Entry Keyers", 
+            "salary": "26,990"
+        }, 
+        {
+            "job": "Office Clerks, General", 
+            "salary": "29,340"
+        }, 
+        {
+            "job": "First-Line Supervisors of Construction Trades and Extraction Workers", 
+            "salary": "48,070"
+        }, 
+        {
+            "job": "Carpenters", 
+            "salary": "37,410"
+        }, 
+        {
+            "job": "Cement Masons and Concrete Finishers", 
+            "salary": "32,130"
+        }, 
+        {
+            "job": "Construction Laborers", 
+            "salary": "29,240"
+        }, 
+        {
+            "job": "Paving, Surfacing, and Tamping Equipment Operators", 
+            "salary": "28,480"
+        }, 
+        {
+            "job": "Operating Engineers and Other Construction Equipment Operators", 
+            "salary": "41,230"
+        }, 
+        {
+            "job": "Electricians", 
+            "salary": "50,010"
+        }, 
+        {
+            "job": "Insulation Workers, Mechanical", 
+            "salary": "34,510"
+        }, 
+        {
+            "job": "Painters, Construction and Maintenance", 
+            "salary": "33,470"
+        }, 
+        {
+            "job": "Pipelayers", 
+            "salary": "42,540"
+        }, 
+        {
+            "job": "Plumbers, Pipefitters, and Steamfitters", 
+            "salary": "49,250"
+        }, 
+        {
+            "job": "Roofers", 
+            "salary": "37,430"
+        }, 
+        {
+            "job": "Sheet Metal Workers", 
+            "salary": "43,380"
+        }, 
+        {
+            "job": "Helpers--Electricians", 
+            "salary": "34,130"
+        }, 
+        {
+            "job": "Highway Maintenance Workers", 
+            "salary": "35,390"
+        }, 
+        {
+            "job": "Septic Tank Servicers and Sewer Pipe Cleaners", 
+            "salary": "32,230"
+        }, 
+        {
+            "job": "First-Line Supervisors of Mechanics, Installers, and Repairers", 
+            "salary": "60,030"
+        }, 
+        {
+            "job": "Computer, Automated Teller, and Office Machine Repairers", 
+            "salary": "36,670"
+        }, 
+        {
+            "job": "Telecommunications Equipment Installers and Repairers, Except Line Installers", 
+            "salary": "63,510"
+        }, 
+        {
+            "job": "Automotive Body and Related Repairers", 
+            "salary": "33,060"
+        }, 
+        {
+            "job": "Automotive Service Technicians and Mechanics", 
+            "salary": "32,610"
+        }, 
+        {
+            "job": "Bus and Truck Mechanics and Diesel Engine Specialists", 
+            "salary": "41,120"
+        }, 
+        {
+            "job": "Mobile Heavy Equipment Mechanics, Except Engines", 
+            "salary": "42,050"
+        }, 
+        {
+            "job": "Tire Repairers and Changers", 
+            "salary": "25,460"
+        }, 
+        {
+            "job": "Heating, Air Conditioning, and Refrigeration Mechanics and Installers", 
+            "salary": "43,640"
+        }, 
+        {
+            "job": "Industrial Machinery Mechanics", 
+            "salary": "52,830"
+        }, 
+        {
+            "job": "Electrical Power-Line Installers and Repairers", 
+            "salary": "55,540"
+        }, 
+        {
+            "job": "Telecommunications Line Installers and Repairers", 
+            "salary": "67,170"
+        }, 
+        {
+            "job": "Maintenance and Repair Workers, General", 
+            "salary": "38,090"
+        }, 
+        {
+            "job": "Installation, Maintenance, and Repair Workers, All Other", 
+            "salary": "38,000"
+        }, 
+        {
+            "job": "First-Line Supervisors of Production and Operating Workers", 
+            "salary": "51,290"
+        }, 
+        {
+            "job": "Team Assemblers", 
+            "salary": "29,000"
+        }, 
+        {
+            "job": "Bakers", 
+            "salary": "24,390"
+        }, 
+        {
+            "job": "Butchers and Meat Cutters", 
+            "salary": "32,320"
+        }, 
+        {
+            "job": "Food Batchmakers", 
+            "salary": "32,420"
+        }, 
+        {
+            "job": "Food Cooking Machine Operators and Tenders", 
+            "salary": "22,190"
+        }, 
+        {
+            "job": "Machinists", 
+            "salary": "41,800"
+        }, 
+        {
+            "job": "Welders, Cutters, Solderers, and Brazers", 
+            "salary": "46,410"
+        }, 
+        {
+            "job": "Printing Press Operators", 
+            "salary": "31,380"
+        }, 
+        {
+            "job": "Laundry and Dry-Cleaning Workers", 
+            "salary": "22,270"
+        }, 
+        {
+            "job": "Sewing Machine Operators", 
+            "salary": "22,190"
+        }, 
+        {
+            "job": "Textile Winding, Twisting, and Drawing Out Machine Setters, Operators, and Tenders", 
+            "salary": "*"
+        }, 
+        {
+            "job": "Cabinetmakers and Bench Carpenters", 
+            "salary": "34,470"
+        }, 
+        {
+            "job": "Mixing and Blending Machine Setters, Operators, and Tenders", 
+            "salary": "36,720"
+        }, 
+        {
+            "job": "Cutting and Slicing Machine Setters, Operators, and Tenders", 
+            "salary": "37,390"
+        }, 
+        {
+            "job": "Extruding, Forming, Pressing, and Compacting Machine Setters, Operators, and Tenders", 
+            "salary": "30,280"
+        }, 
+        {
+            "job": "Inspectors, Testers, Sorters, Samplers, and Weighers", 
+            "salary": "41,990"
+        }, 
+        {
+            "job": "Packaging and Filling Machine Operators and Tenders", 
+            "salary": "33,980"
+        }, 
+        {
+            "job": "Molders, Shapers, and Casters, Except Metal and Plastic", 
+            "salary": "32,620"
+        }, 
+        {
+            "job": "Helpers--Production Workers", 
+            "salary": "29,020"
+        }, 
+        {
+            "job": "Production Workers, All Other", 
+            "salary": "35,730"
+        }, 
+        {
+            "job": "First-Line Supervisors of Helpers, Laborers, and Material Movers, Hand", 
+            "salary": "49,540"
+        }, 
+        {
+            "job": "First-Line Supervisors of Transportation and Material-Moving Machine and Vehicle Operators", 
+            "salary": "48,920"
+        }, 
+        {
+            "job": "Bus Drivers, School or Special Client", 
+            "salary": "29,760"
+        }, 
+        {
+            "job": "Driver/Sales Workers", 
+            "salary": "37,910"
+        }, 
+        {
+            "job": "Heavy and Tractor-Trailer Truck Drivers", 
+            "salary": "43,290"
+        }, 
+        {
+            "job": "Light Truck or Delivery Services Drivers", 
+            "salary": "28,170"
+        }, 
+        {
+            "job": "Taxi Drivers and Chauffeurs", 
+            "salary": "24,050"
+        }, 
+        {
+            "job": "Automotive and Watercraft Service Attendants", 
+            "salary": "19,070"
+        }, 
+        {
+            "job": "Industrial Truck and Tractor Operators", 
+            "salary": "34,500"
+        }, 
+        {
+            "job": "Cleaners of Vehicles and Equipment", 
+            "salary": "22,250"
+        }, 
+        {
+            "job": "Laborers and Freight, Stock, and Material Movers, Hand", 
+            "salary": "29,220"
+        }, 
+        {
+            "job": "Packers and Packagers, Hand", 
+            "salary": "22,170"
+        }, 
+        {
+            "job": "Refuse and Recyclable Material Collectors", 
+            "salary": "23,430"
+        }
+    ], 
+    "Northeast Maine nonmetropolitan area": [
+        {
+            "job": "Chief Executives", 
+            "salary": "164,930"
+        }, 
+        {
+            "job": "General and Operations Managers", 
+            "salary": "67,940"
+        }, 
+        {
+            "job": "Sales Managers", 
+            "salary": "128,270"
+        }, 
+        {
+            "job": "Public Relations and Fundraising Managers", 
+            "salary": "93,840"
+        }, 
+        {
+            "job": "Administrative Services Managers", 
+            "salary": "64,230"
+        }, 
+        {
+            "job": "Computer and Information Systems Managers", 
+            "salary": "90,840"
+        }, 
+        {
+            "job": "Financial Managers", 
+            "salary": "85,020"
+        }, 
+        {
+            "job": "Industrial Production Managers", 
+            "salary": "81,450"
+        }, 
+        {
+            "job": "Transportation, Storage, and Distribution Managers", 
+            "salary": "62,660"
+        }, 
+        {
+            "job": "Human Resources Managers", 
+            "salary": "103,610"
+        }, 
+        {
+            "job": "Construction Managers", 
+            "salary": "54,700"
+        }, 
+        {
+            "job": "Education Administrators, Elementary and Secondary School", 
+            "salary": "66,880"
+        }, 
+        {
+            "job": "Education Administrators, Postsecondary", 
+            "salary": "67,060"
+        }, 
+        {
+            "job": "Education Administrators, All Other", 
+            "salary": "87,170"
+        }, 
+        {
+            "job": "Food Service Managers", 
+            "salary": "48,380"
+        }, 
+        {
+            "job": "Lodging Managers", 
+            "salary": "47,540"
+        }, 
+        {
+            "job": "Medical and Health Services Managers", 
+            "salary": "81,240"
+        }, 
+        {
+            "job": "Postmasters and Mail Superintendents", 
+            "salary": "61,530"
+        }, 
+        {
+            "job": "Property, Real Estate, and Community Association Managers", 
+            "salary": "53,640"
+        }, 
+        {
+            "job": "Social and Community Service Managers", 
+            "salary": "61,030"
+        }, 
+        {
+            "job": "Managers, All Other", 
+            "salary": "91,480"
+        }, 
+        {
+            "job": "Wholesale and Retail Buyers, Except Farm Products", 
+            "salary": "44,420"
+        }, 
+        {
+            "job": "Purchasing Agents, Except Wholesale, Retail, and Farm Products", 
+            "salary": "60,810"
+        }, 
+        {
+            "job": "Compliance Officers", 
+            "salary": "70,230"
+        }, 
+        {
+            "job": "Cost Estimators", 
+            "salary": "58,370"
+        }, 
+        {
+            "job": "Human Resources Specialists", 
+            "salary": "52,780"
+        }, 
+        {
+            "job": "Management Analysts", 
+            "salary": "59,710"
+        }, 
+        {
+            "job": "Fundraisers", 
+            "salary": "56,830"
+        }, 
+        {
+            "job": "Training and Development Specialists", 
+            "salary": "46,370"
+        }, 
+        {
+            "job": "Market Research Analysts and Marketing Specialists", 
+            "salary": "64,480"
+        }, 
+        {
+            "job": "Business Operations Specialists, All Other", 
+            "salary": "63,850"
+        }, 
+        {
+            "job": "Accountants and Auditors", 
+            "salary": "59,320"
+        }, 
+        {
+            "job": "Appraisers and Assessors of Real Estate", 
+            "salary": "47,190"
+        }, 
+        {
+            "job": "Loan Officers", 
+            "salary": "48,790"
+        }, 
+        {
+            "job": "Tax Preparers", 
+            "salary": "26,760"
+        }, 
+        {
+            "job": "Financial Specialists, All Other", 
+            "salary": "63,520"
+        }, 
+        {
+            "job": "Computer Systems Analysts", 
+            "salary": "71,170"
+        }, 
+        {
+            "job": "Computer Programmers", 
+            "salary": "66,440"
+        }, 
+        {
+            "job": "Software Developers, Applications", 
+            "salary": "*"
+        }, 
+        {
+            "job": "Network and Computer Systems Administrators", 
+            "salary": "59,730"
+        }, 
+        {
+            "job": "Computer User Support Specialists", 
+            "salary": "39,940"
+        }, 
+        {
+            "job": "Computer Network Support Specialists", 
+            "salary": "50,350"
+        }, 
+        {
+            "job": "Civil Engineers", 
+            "salary": "66,480"
+        }, 
+        {
+            "job": "Industrial Engineers", 
+            "salary": "83,660"
+        }, 
+        {
+            "job": "Architectural and Civil Drafters", 
+            "salary": "41,880"
+        }, 
+        {
+            "job": "Civil Engineering Technicians", 
+            "salary": "41,120"
+        }, 
+        {
+            "job": "Environmental Engineering Technicians", 
+            "salary": "45,940"
+        }, 
+        {
+            "job": "Foresters", 
+            "salary": "56,480"
+        }, 
+        {
+            "job": "Substance Abuse and Behavioral Disorder Counselors", 
+            "salary": "40,870"
+        }, 
+        {
+            "job": "Educational, Guidance, School, and Vocational Counselors", 
+            "salary": "46,010"
+        }, 
+        {
+            "job": "Mental Health Counselors", 
+            "salary": "37,600"
+        }, 
+        {
+            "job": "Rehabilitation Counselors", 
+            "salary": "31,720"
+        }, 
+        {
+            "job": "Child, Family, and School Social Workers", 
+            "salary": "43,850"
+        }, 
+        {
+            "job": "Healthcare Social Workers", 
+            "salary": "45,390"
+        }, 
+        {
+            "job": "Mental Health and Substance Abuse Social Workers", 
+            "salary": "61,040"
+        }, 
+        {
+            "job": "Health Educators", 
+            "salary": "51,210"
+        }, 
+        {
+            "job": "Social and Human Service Assistants", 
+            "salary": "33,460"
+        }, 
+        {
+            "job": "Community Health Workers", 
+            "salary": "34,850"
+        }, 
+        {
+            "job": "Lawyers", 
+            "salary": "80,070"
+        }, 
+        {
+            "job": "Paralegals and Legal Assistants", 
+            "salary": "44,530"
+        }, 
+        {
+            "job": "Vocational Education Teachers, Postsecondary", 
+            "salary": "53,530"
+        }, 
+        {
+            "job": "Preschool Teachers, Except Special Education", 
+            "salary": "37,420"
+        }, 
+        {
+            "job": "Kindergarten Teachers, Except Special Education", 
+            "salary": "43,830"
+        }, 
+        {
+            "job": "Elementary School Teachers, Except Special Education", 
+            "salary": "45,030"
+        }, 
+        {
+            "job": "Middle School Teachers, Except Special and Career/Technical Education", 
+            "salary": "44,730"
+        }, 
+        {
+            "job": "Secondary School Teachers, Except Special and Career/Technical Education", 
+            "salary": "45,510"
+        }, 
+        {
+            "job": "Special Education Teachers, Kindergarten and Elementary School", 
+            "salary": "41,440"
+        }, 
+        {
+            "job": "Special Education Teachers, Middle School", 
+            "salary": "44,960"
+        }, 
+        {
+            "job": "Special Education Teachers, Secondary School", 
+            "salary": "42,990"
+        }, 
+        {
+            "job": "Self-Enrichment Education Teachers", 
+            "salary": "38,750"
+        }, 
+        {
+            "job": "Substitute Teachers", 
+            "salary": "20,650"
+        }, 
+        {
+            "job": "Librarians", 
+            "salary": "37,190"
+        }, 
+        {
+            "job": "Library Technicians", 
+            "salary": "28,220"
+        }, 
+        {
+            "job": "Instructional Coordinators", 
+            "salary": "51,400"
+        }, 
+        {
+            "job": "Teacher Assistants", 
+            "salary": "29,270"
+        }, 
+        {
+            "job": "Education, Training, and Library Workers, All Other", 
+            "salary": "43,160"
+        }, 
+        {
+            "job": "Floral Designers", 
+            "salary": "25,410"
+        }, 
+        {
+            "job": "Graphic Designers", 
+            "salary": "35,350"
+        }, 
+        {
+            "job": "Coaches and Scouts", 
+            "salary": "20,380"
+        }, 
+        {
+            "job": "Reporters and Correspondents", 
+            "salary": "37,560"
+        }, 
+        {
+            "job": "Public Relations Specialists", 
+            "salary": "47,290"
+        }, 
+        {
+            "job": "Editors", 
+            "salary": "49,940"
+        }, 
+        {
+            "job": "Dentists, General", 
+            "salary": "145,660"
+        }, 
+        {
+            "job": "Pharmacists", 
+            "salary": "127,000"
+        }, 
+        {
+            "job": "Family and General Practitioners", 
+            "salary": "195,710"
+        }, 
+        {
+            "job": "Obstetricians and Gynecologists", 
+            "salary": "#"
+        }, 
+        {
+            "job": "Surgeons", 
+            "salary": "#"
+        }, 
+        {
+            "job": "Physicians and Surgeons, All Other", 
+            "salary": "258,190"
+        }, 
+        {
+            "job": "Physician Assistants", 
+            "salary": "104,880"
+        }, 
+        {
+            "job": "Occupational Therapists", 
+            "salary": "66,710"
+        }, 
+        {
+            "job": "Physical Therapists", 
+            "salary": "74,240"
+        }, 
+        {
+            "job": "Respiratory Therapists", 
+            "salary": "54,150"
+        }, 
+        {
+            "job": "Speech-Language Pathologists", 
+            "salary": "57,830"
+        }, 
+        {
+            "job": "Veterinarians", 
+            "salary": "112,470"
+        }, 
+        {
+            "job": "Registered Nurses", 
+            "salary": "60,290"
+        }, 
+        {
+            "job": "Nurse Anesthetists", 
+            "salary": "205,070"
+        }, 
+        {
+            "job": "Nurse Practitioners", 
+            "salary": "91,700"
+        }, 
+        {
+            "job": "Medical and Clinical Laboratory Technologists", 
+            "salary": "51,820"
+        }, 
+        {
+            "job": "Medical and Clinical Laboratory Technicians", 
+            "salary": "43,030"
+        }, 
+        {
+            "job": "Dental Hygienists", 
+            "salary": "60,450"
+        }, 
+        {
+            "job": "Diagnostic Medical Sonographers", 
+            "salary": "73,470"
+        }, 
+        {
+            "job": "Radiologic Technologists", 
+            "salary": "56,040"
+        }, 
+        {
+            "job": "Emergency Medical Technicians and Paramedics", 
+            "salary": "28,670"
+        }, 
+        {
+            "job": "Pharmacy Technicians", 
+            "salary": "28,190"
+        }, 
+        {
+            "job": "Surgical Technologists", 
+            "salary": "39,100"
+        }, 
+        {
+            "job": "Veterinary Technologists and Technicians", 
+            "salary": "32,770"
+        }, 
+        {
+            "job": "Ophthalmic Medical Technicians", 
+            "salary": "41,410"
+        }, 
+        {
+            "job": "Licensed Practical and Licensed Vocational Nurses", 
+            "salary": "41,220"
+        }, 
+        {
+            "job": "Medical Records and Health Information Technicians", 
+            "salary": "31,760"
+        }, 
+        {
+            "job": "Opticians, Dispensing", 
+            "salary": "34,980"
+        }, 
+        {
+            "job": "Health Technologists and Technicians, All Other", 
+            "salary": "36,280"
+        }, 
+        {
+            "job": "Home Health Aides", 
+            "salary": "21,180"
+        }, 
+        {
+            "job": "Psychiatric Aides", 
+            "salary": "22,860"
+        }, 
+        {
+            "job": "Nursing Assistants", 
+            "salary": "24,340"
+        }, 
+        {
+            "job": "Dental Assistants", 
+            "salary": "36,610"
+        }, 
+        {
+            "job": "Medical Assistants", 
+            "salary": "28,630"
+        }, 
+        {
+            "job": "Medical Equipment Preparers", 
+            "salary": "28,470"
+        }, 
+        {
+            "job": "Medical Transcriptionists", 
+            "salary": "32,620"
+        }, 
+        {
+            "job": "Phlebotomists", 
+            "salary": "25,930"
+        }, 
+        {
+            "job": "First-Line Supervisors of Police and Detectives", 
+            "salary": "55,060"
+        }, 
+        {
+            "job": "First-Line Supervisors of Protective Service Workers, All Other", 
+            "salary": "51,320"
+        }, 
+        {
+            "job": "Firefighters", 
+            "salary": "32,110"
+        }, 
+        {
+            "job": "Correctional Officers and Jailers", 
+            "salary": "33,070"
+        }, 
+        {
+            "job": "Detectives and Criminal Investigators", 
+            "salary": "73,620"
+        }, 
+        {
+            "job": "Police and Sheriff's Patrol Officers", 
+            "salary": "38,090"
+        }, 
+        {
+            "job": "Animal Control Workers", 
+            "salary": "19,190"
+        }, 
+        {
+            "job": "Security Guards", 
+            "salary": "29,440"
+        }, 
+        {
+            "job": "Protective Service Workers, All Other", 
+            "salary": "38,290"
+        }, 
+        {
+            "job": "Chefs and Head Cooks", 
+            "salary": "36,530"
+        }, 
+        {
+            "job": "First-Line Supervisors of Food Preparation and Serving Workers", 
+            "salary": "28,180"
+        }, 
+        {
+            "job": "Cooks, Fast Food", 
+            "salary": "22,270"
+        }, 
+        {
+            "job": "Cooks, Institution and Cafeteria", 
+            "salary": "24,520"
+        }, 
+        {
+            "job": "Cooks, Restaurant", 
+            "salary": "22,940"
+        }, 
+        {
+            "job": "Cooks, Short Order", 
+            "salary": "20,800"
+        }, 
+        {
+            "job": "Food Preparation Workers", 
+            "salary": "22,070"
+        }, 
+        {
+            "job": "Bartenders", 
+            "salary": "19,420"
+        }, 
+        {
+            "job": "Combined Food Preparation and Serving Workers, Including Fast Food", 
+            "salary": "19,790"
+        }, 
+        {
+            "job": "Counter Attendants, Cafeteria, Food Concession, and Coffee Shop", 
+            "salary": "17,680"
+        }, 
+        {
+            "job": "Waiters and Waitresses", 
+            "salary": "25,950"
+        }, 
+        {
+            "job": "Food Servers, Nonrestaurant", 
+            "salary": "21,620"
+        }, 
+        {
+            "job": "Dishwashers", 
+            "salary": "19,860"
+        }, 
+        {
+            "job": "Hosts and Hostesses, Restaurant, Lounge, and Coffee Shop", 
+            "salary": "17,560"
+        }, 
+        {
+            "job": "First-Line Supervisors of Housekeeping and Janitorial Workers", 
+            "salary": "33,110"
+        }, 
+        {
+            "job": "First-Line Supervisors of Landscaping, Lawn Service, and Groundskeeping Workers", 
+            "salary": "45,750"
+        }, 
+        {
+            "job": "Janitors and Cleaners, Except Maids and Housekeeping Cleaners", 
+            "salary": "26,450"
+        }, 
+        {
+            "job": "Maids and Housekeeping Cleaners", 
+            "salary": "21,390"
+        }, 
+        {
+            "job": "Landscaping and Groundskeeping Workers", 
+            "salary": "28,850"
+        }, 
+        {
+            "job": "First-Line Supervisors of Personal Service Workers", 
+            "salary": "35,760"
+        }, 
+        {
+            "job": "Nonfarm Animal Caretakers", 
+            "salary": "17,730"
+        }, 
+        {
+            "job": "Amusement and Recreation Attendants", 
+            "salary": "20,520"
+        }, 
+        {
+            "job": "Funeral Attendants", 
+            "salary": "28,270"
+        }, 
+        {
+            "job": "Hairdressers, Hairstylists, and Cosmetologists", 
+            "salary": "27,340"
+        }, 
+        {
+            "job": "Childcare Workers", 
+            "salary": "22,500"
+        }, 
+        {
+            "job": "Personal Care Aides", 
+            "salary": "22,140"
+        }, 
+        {
+            "job": "Fitness Trainers and Aerobics Instructors", 
+            "salary": "23,730"
+        }, 
+        {
+            "job": "Recreation Workers", 
+            "salary": "27,950"
+        }, 
+        {
+            "job": "Residential Advisors", 
+            "salary": "28,490"
+        }, 
+        {
+            "job": "First-Line Supervisors of Retail Sales Workers", 
+            "salary": "37,140"
+        }, 
+        {
+            "job": "First-Line Supervisors of Non-Retail Sales Workers", 
+            "salary": "52,500"
+        }, 
+        {
+            "job": "Cashiers", 
+            "salary": "20,610"
+        }, 
+        {
+            "job": "Counter and Rental Clerks", 
+            "salary": "24,160"
+        }, 
+        {
+            "job": "Parts Salespersons", 
+            "salary": "29,290"
+        }, 
+        {
+            "job": "Retail Salespersons", 
+            "salary": "26,180"
+        }, 
+        {
+            "job": "Advertising Sales Agents", 
+            "salary": "32,250"
+        }, 
+        {
+            "job": "Insurance Sales Agents", 
+            "salary": "52,150"
+        }, 
+        {
+            "job": "Sales Representatives, Services, All Other", 
+            "salary": "37,940"
+        }, 
+        {
+            "job": "Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products", 
+            "salary": "55,160"
+        }, 
+        {
+            "job": "First-Line Supervisors of Office and Administrative Support Workers", 
+            "salary": "42,630"
+        }, 
+        {
+            "job": "Switchboard Operators, Including Answering Service", 
+            "salary": "23,310"
+        }, 
+        {
+            "job": "Bill and Account Collectors", 
+            "salary": "34,620"
+        }, 
+        {
+            "job": "Billing and Posting Clerks", 
+            "salary": "29,920"
+        }, 
+        {
+            "job": "Bookkeeping, Accounting, and Auditing Clerks", 
+            "salary": "36,270"
+        }, 
+        {
+            "job": "Payroll and Timekeeping Clerks", 
+            "salary": "35,680"
+        }, 
+        {
+            "job": "Procurement Clerks", 
+            "salary": "34,970"
+        }, 
+        {
+            "job": "Tellers", 
+            "salary": "24,930"
+        }, 
+        {
+            "job": "Court, Municipal, and License Clerks", 
+            "salary": "27,370"
+        }, 
+        {
+            "job": "Customer Service Representatives", 
+            "salary": "30,020"
+        }, 
+        {
+            "job": "Eligibility Interviewers, Government Programs", 
+            "salary": "36,120"
+        }, 
+        {
+            "job": "Hotel, Motel, and Resort Desk Clerks", 
+            "salary": "20,550"
+        }, 
+        {
+            "job": "Interviewers, Except Eligibility and Loan", 
+            "salary": "24,830"
+        }, 
+        {
+            "job": "Library Assistants, Clerical", 
+            "salary": "22,430"
+        }, 
+        {
+            "job": "Loan Interviewers and Clerks", 
+            "salary": "32,020"
+        }, 
+        {
+            "job": "Order Clerks", 
+            "salary": "29,130"
+        }, 
+        {
+            "job": "Human Resources Assistants, Except Payroll and Timekeeping", 
+            "salary": "34,990"
+        }, 
+        {
+            "job": "Receptionists and Information Clerks", 
+            "salary": "26,450"
+        }, 
+        {
+            "job": "Information and Record Clerks, All Other", 
+            "salary": "28,690"
+        }, 
+        {
+            "job": "Cargo and Freight Agents", 
+            "salary": "39,020"
+        }, 
+        {
+            "job": "Police, Fire, and Ambulance Dispatchers", 
+            "salary": "34,110"
+        }, 
+        {
+            "job": "Dispatchers, Except Police, Fire, and Ambulance", 
+            "salary": "40,100"
+        }, 
+        {
+            "job": "Postal Service Clerks", 
+            "salary": "43,090"
+        }, 
+        {
+            "job": "Postal Service Mail Carriers", 
+            "salary": "47,270"
+        }, 
+        {
+            "job": "Production, Planning, and Expediting Clerks", 
+            "salary": "43,630"
+        }, 
+        {
+            "job": "Shipping, Receiving, and Traffic Clerks", 
+            "salary": "32,480"
+        }, 
+        {
+            "job": "Stock Clerks and Order Fillers", 
+            "salary": "24,140"
+        }, 
+        {
+            "job": "Weighers, Measurers, Checkers, and Samplers, Recordkeeping", 
+            "salary": "21,560"
+        }, 
+        {
+            "job": "Executive Secretaries and Executive Administrative Assistants", 
+            "salary": "45,060"
+        }, 
+        {
+            "job": "Legal Secretaries", 
+            "salary": "31,430"
+        }, 
+        {
+            "job": "Medical Secretaries", 
+            "salary": "28,410"
+        }, 
+        {
+            "job": "Secretaries and Administrative Assistants, Except Legal, Medical, and Executive", 
+            "salary": "30,590"
+        }, 
+        {
+            "job": "Data Entry Keyers", 
+            "salary": "25,570"
+        }, 
+        {
+            "job": "Insurance Claims and Policy Processing Clerks", 
+            "salary": "38,830"
+        }, 
+        {
+            "job": "Office Clerks, General", 
+            "salary": "29,270"
+        }, 
+        {
+            "job": "Office Machine Operators, Except Computer", 
+            "salary": "24,020"
+        }, 
+        {
+            "job": "First-Line Supervisors of Farming, Fishing, and Forestry Workers", 
+            "salary": "37,630"
+        }, 
+        {
+            "job": "Graders and Sorters, Agricultural Products", 
+            "salary": "25,050"
+        }, 
+        {
+            "job": "Farmworkers and Laborers, Crop, Nursery, and Greenhouse", 
+            "salary": "27,100"
+        }, 
+        {
+            "job": "Logging Equipment Operators", 
+            "salary": "38,960"
+        }, 
+        {
+            "job": "First-Line Supervisors of Construction Trades and Extraction Workers", 
+            "salary": "51,190"
+        }, 
+        {
+            "job": "Brickmasons and Blockmasons", 
+            "salary": "37,330"
+        }, 
+        {
+            "job": "Carpenters", 
+            "salary": "37,650"
+        }, 
+        {
+            "job": "Cement Masons and Concrete Finishers", 
+            "salary": "32,700"
+        }, 
+        {
+            "job": "Construction Laborers", 
+            "salary": "27,110"
+        }, 
+        {
+            "job": "Operating Engineers and Other Construction Equipment Operators", 
+            "salary": "36,360"
+        }, 
+        {
+            "job": "Electricians", 
+            "salary": "44,880"
+        }, 
+        {
+            "job": "Painters, Construction and Maintenance", 
+            "salary": "37,750"
+        }, 
+        {
+            "job": "Plumbers, Pipefitters, and Steamfitters", 
+            "salary": "48,380"
+        }, 
+        {
+            "job": "Sheet Metal Workers", 
+            "salary": "39,480"
+        }, 
+        {
+            "job": "Helpers--Carpenters", 
+            "salary": "26,480"
+        }, 
+        {
+            "job": "Helpers--Electricians", 
+            "salary": "30,840"
+        }, 
+        {
+            "job": "Highway Maintenance Workers", 
+            "salary": "30,910"
+        }, 
+        {
+            "job": "Septic Tank Servicers and Sewer Pipe Cleaners", 
+            "salary": "27,980"
+        }, 
+        {
+            "job": "First-Line Supervisors of Mechanics, Installers, and Repairers", 
+            "salary": "61,720"
+        }, 
+        {
+            "job": "Telecommunications Equipment Installers and Repairers, Except Line Installers", 
+            "salary": "58,900"
+        }, 
+        {
+            "job": "Electrical and Electronics Installers and Repairers, Transportation Equipment", 
+            "salary": "47,590"
+        }, 
+        {
+            "job": "Electrical and Electronics Repairers, Commercial and Industrial Equipment", 
+            "salary": "54,780"
+        }, 
+        {
+            "job": "Automotive Body and Related Repairers", 
+            "salary": "31,320"
+        }, 
+        {
+            "job": "Automotive Service Technicians and Mechanics", 
+            "salary": "38,220"
+        }, 
+        {
+            "job": "Bus and Truck Mechanics and Diesel Engine Specialists", 
+            "salary": "40,420"
+        }, 
+        {
+            "job": "Mobile Heavy Equipment Mechanics, Except Engines", 
+            "salary": "36,800"
+        }, 
+        {
+            "job": "Motorboat Mechanics and Service Technicians", 
+            "salary": "36,830"
+        }, 
+        {
+            "job": "Outdoor Power Equipment and Other Small Engine Mechanics", 
+            "salary": "33,670"
+        }, 
+        {
+            "job": "Heating, Air Conditioning, and Refrigeration Mechanics and Installers", 
+            "salary": "43,300"
+        }, 
+        {
+            "job": "Industrial Machinery Mechanics", 
+            "salary": "47,450"
+        }, 
+        {
+            "job": "Electrical Power-Line Installers and Repairers", 
+            "salary": "49,830"
+        }, 
+        {
+            "job": "Telecommunications Line Installers and Repairers", 
+            "salary": "46,200"
+        }, 
+        {
+            "job": "Maintenance and Repair Workers, General", 
+            "salary": "33,000"
+        }, 
+        {
+            "job": "Helpers--Installation, Maintenance, and Repair Workers", 
+            "salary": "24,380"
+        }, 
+        {
+            "job": "Installation, Maintenance, and Repair Workers, All Other", 
+            "salary": "38,100"
+        }, 
+        {
+            "job": "First-Line Supervisors of Production and Operating Workers", 
+            "salary": "50,710"
+        }, 
+        {
+            "job": "Fiberglass Laminators and Fabricators", 
+            "salary": "33,770"
+        }, 
+        {
+            "job": "Team Assemblers", 
+            "salary": "28,590"
+        }, 
+        {
+            "job": "Bakers", 
+            "salary": "25,590"
+        }, 
+        {
+            "job": "Butchers and Meat Cutters", 
+            "salary": "24,910"
+        }, 
+        {
+            "job": "Meat, Poultry, and Fish Cutters and Trimmers", 
+            "salary": "24,950"
+        }, 
+        {
+            "job": "Food Batchmakers", 
+            "salary": "31,520"
+        }, 
+        {
+            "job": "Food Processing Workers, All Other", 
+            "salary": "23,560"
+        }, 
+        {
+            "job": "Machinists", 
+            "salary": "40,450"
+        }, 
+        {
+            "job": "Welders, Cutters, Solderers, and Brazers", 
+            "salary": "31,570"
+        }, 
+        {
+            "job": "Laundry and Dry-Cleaning Workers", 
+            "salary": "20,480"
+        }, 
+        {
+            "job": "Sewing Machine Operators", 
+            "salary": "28,600"
+        }, 
+        {
+            "job": "Cabinetmakers and Bench Carpenters", 
+            "salary": "31,700"
+        }, 
+        {
+            "job": "Sawing Machine Setters, Operators, and Tenders, Wood", 
+            "salary": "26,960"
+        }, 
+        {
+            "job": "Woodworking Machine Setters, Operators, and Tenders, Except Sawing", 
+            "salary": "32,910"
+        }, 
+        {
+            "job": "Power Plant Operators", 
+            "salary": "73,310"
+        }, 
+        {
+            "job": "Stationary Engineers and Boiler Operators", 
+            "salary": "40,860"
+        }, 
+        {
+            "job": "Water and Wastewater Treatment Plant and System Operators", 
+            "salary": "41,380"
+        }, 
+        {
+            "job": "Plant and System Operators, All Other", 
+            "salary": "33,060"
+        }, 
+        {
+            "job": "Separating, Filtering, Clarifying, Precipitating, and Still Machine Setters, Operators, and Tenders", 
+            "salary": "63,710"
+        }, 
+        {
+            "job": "Mixing and Blending Machine Setters, Operators, and Tenders", 
+            "salary": "41,050"
+        }, 
+        {
+            "job": "Cutting and Slicing Machine Setters, Operators, and Tenders", 
+            "salary": "33,260"
+        }, 
+        {
+            "job": "Inspectors, Testers, Sorters, Samplers, and Weighers", 
+            "salary": "34,160"
+        }, 
+        {
+            "job": "Packaging and Filling Machine Operators and Tenders", 
+            "salary": "28,590"
+        }, 
+        {
+            "job": "Coating, Painting, and Spraying Machine Setters, Operators, and Tenders", 
+            "salary": "44,880"
+        }, 
+        {
+            "job": "Painters, Transportation Equipment", 
+            "salary": "37,390"
+        }, 
+        {
+            "job": "Helpers--Production Workers", 
+            "salary": "34,930"
+        }, 
+        {
+            "job": "Production Workers, All Other", 
+            "salary": "28,360"
+        }, 
+        {
+            "job": "First-Line Supervisors of Helpers, Laborers, and Material Movers, Hand", 
+            "salary": "43,490"
+        }, 
+        {
+            "job": "First-Line Supervisors of Transportation and Material-Moving Machine and Vehicle Operators", 
+            "salary": "45,700"
+        }, 
+        {
+            "job": "Ambulance Drivers and Attendants, Except Emergency Medical Technicians", 
+            "salary": "23,490"
+        }, 
+        {
+            "job": "Bus Drivers, Transit and Intercity", 
+            "salary": "30,500"
+        }, 
+        {
+            "job": "Bus Drivers, School or Special Client", 
+            "salary": "32,070"
+        }, 
+        {
+            "job": "Driver/Sales Workers", 
+            "salary": "26,780"
+        }, 
+        {
+            "job": "Heavy and Tractor-Trailer Truck Drivers", 
+            "salary": "38,490"
+        }, 
+        {
+            "job": "Light Truck or Delivery Services Drivers", 
+            "salary": "27,720"
+        }, 
+        {
+            "job": "Taxi Drivers and Chauffeurs", 
+            "salary": "20,800"
+        }, 
+        {
+            "job": "Sailors and Marine Oilers", 
+            "salary": "32,600"
+        }, 
+        {
+            "job": "Captains, Mates, and Pilots of Water Vessels", 
+            "salary": "50,450"
+        }, 
+        {
+            "job": "Automotive and Watercraft Service Attendants", 
+            "salary": "18,660"
+        }, 
+        {
+            "job": "Conveyor Operators and Tenders", 
+            "salary": "38,660"
+        }, 
+        {
+            "job": "Crane and Tower Operators", 
+            "salary": "39,390"
+        }, 
+        {
+            "job": "Excavating and Loading Machine and Dragline Operators", 
+            "salary": "36,930"
+        }, 
+        {
+            "job": "Industrial Truck and Tractor Operators", 
+            "salary": "31,650"
+        }, 
+        {
+            "job": "Cleaners of Vehicles and Equipment", 
+            "salary": "23,590"
+        }, 
+        {
+            "job": "Laborers and Freight, Stock, and Material Movers, Hand", 
+            "salary": "26,060"
+        }, 
+        {
+            "job": "Machine Feeders and Offbearers", 
+            "salary": "24,760"
+        }, 
+        {
+            "job": "Packers and Packagers, Hand", 
+            "salary": "23,600"
+        }, 
+        {
+            "job": "Refuse and Recyclable Material Collectors", 
+            "salary": "26,440"
+        }
+    ], 
+    "Portland-South Portland, ME": [
+        {
+            "job": "Chief Executives", 
+            "salary": "169,570"
+        }, 
+        {
+            "job": "General and Operations Managers", 
+            "salary": "101,430"
+        }, 
+        {
+            "job": "Advertising and Promotions Managers", 
+            "salary": "102,450"
+        }, 
+        {
+            "job": "Marketing Managers", 
+            "salary": "104,430"
+        }, 
+        {
+            "job": "Sales Managers", 
+            "salary": "118,010"
+        }, 
+        {
+            "job": "Public Relations and Fundraising Managers", 
+            "salary": "96,360"
+        }, 
+        {
+            "job": "Administrative Services Managers", 
+            "salary": "84,450"
+        }, 
+        {
+            "job": "Computer and Information Systems Managers", 
+            "salary": "112,720"
+        }, 
+        {
+            "job": "Financial Managers", 
+            "salary": "108,760"
+        }, 
+        {
+            "job": "Industrial Production Managers", 
+            "salary": "95,700"
+        }, 
+        {
+            "job": "Purchasing Managers", 
+            "salary": "102,110"
+        }, 
+        {
+            "job": "Transportation, Storage, and Distribution Managers", 
+            "salary": "91,420"
+        }, 
+        {
+            "job": "Compensation and Benefits Managers", 
+            "salary": "112,940"
+        }, 
+        {
+            "job": "Human Resources Managers", 
+            "salary": "104,710"
+        }, 
+        {
+            "job": "Training and Development Managers", 
+            "salary": "98,440"
+        }, 
+        {
+            "job": "Construction Managers", 
+            "salary": "84,720"
+        }, 
+        {
+            "job": "Education Administrators, Preschool and Childcare Center/Program", 
+            "salary": "46,000"
+        }, 
+        {
+            "job": "Education Administrators, Elementary and Secondary School", 
+            "salary": "89,330"
+        }, 
+        {
+            "job": "Education Administrators, Postsecondary", 
+            "salary": "84,000"
+        }, 
+        {
+            "job": "Education Administrators, All Other", 
+            "salary": "58,440"
+        }, 
+        {
+            "job": "Architectural and Engineering Managers", 
+            "salary": "130,190"
+        }, 
+        {
+            "job": "Food Service Managers", 
+            "salary": "51,700"
+        }, 
+        {
+            "job": "Lodging Managers", 
+            "salary": "51,450"
+        }, 
+        {
+            "job": "Medical and Health Services Managers", 
+            "salary": "98,390"
+        }, 
+        {
+            "job": "Natural Sciences Managers", 
+            "salary": "104,520"
+        }, 
+        {
+            "job": "Postmasters and Mail Superintendents", 
+            "salary": "70,880"
+        }, 
+        {
+            "job": "Property, Real Estate, and Community Association Managers", 
+            "salary": "57,870"
+        }, 
+        {
+            "job": "Social and Community Service Managers", 
+            "salary": "55,940"
+        }, 
+        {
+            "job": "Managers, All Other", 
+            "salary": "104,680"
+        }, 
+        {
+            "job": "Buyers and Purchasing Agents, Farm Products", 
+            "salary": "42,390"
+        }, 
+        {
+            "job": "Wholesale and Retail Buyers, Except Farm Products", 
+            "salary": "58,840"
+        }, 
+        {
+            "job": "Purchasing Agents, Except Wholesale, Retail, and Farm Products", 
+            "salary": "54,640"
+        }, 
+        {
+            "job": "Claims Adjusters, Examiners, and Investigators", 
+            "salary": "61,550"
+        }, 
+        {
+            "job": "Compliance Officers", 
+            "salary": "64,050"
+        }, 
+        {
+            "job": "Cost Estimators", 
+            "salary": "59,510"
+        }, 
+        {
+            "job": "Human Resources Specialists", 
+            "salary": "57,640"
+        }, 
+        {
+            "job": "Labor Relations Specialists", 
+            "salary": "76,120"
+        }, 
+        {
+            "job": "Logisticians", 
+            "salary": "62,610"
+        }, 
+        {
+            "job": "Management Analysts", 
+            "salary": "67,850"
+        }, 
+        {
+            "job": "Meeting, Convention, and Event Planners", 
+            "salary": "39,230"
+        }, 
+        {
+            "job": "Fundraisers", 
+            "salary": "51,860"
+        }, 
+        {
+            "job": "Compensation, Benefits, and Job Analysis Specialists", 
+            "salary": "58,880"
+        }, 
+        {
+            "job": "Training and Development Specialists", 
+            "salary": "57,490"
+        }, 
+        {
+            "job": "Market Research Analysts and Marketing Specialists", 
+            "salary": "67,130"
+        }, 
+        {
+            "job": "Business Operations Specialists, All Other", 
+            "salary": "59,570"
+        }, 
+        {
+            "job": "Accountants and Auditors", 
+            "salary": "65,770"
+        }, 
+        {
+            "job": "Appraisers and Assessors of Real Estate", 
+            "salary": "69,540"
+        }, 
+        {
+            "job": "Budget Analysts", 
+            "salary": "71,600"
+        }, 
+        {
+            "job": "Credit Analysts", 
+            "salary": "74,420"
+        }, 
+        {
+            "job": "Financial Analysts", 
+            "salary": "69,880"
+        }, 
+        {
+            "job": "Personal Financial Advisors", 
+            "salary": "150,710"
+        }, 
+        {
+            "job": "Insurance Underwriters", 
+            "salary": "69,740"
+        }, 
+        {
+            "job": "Financial Examiners", 
+            "salary": "72,070"
+        }, 
+        {
+            "job": "Credit Counselors", 
+            "salary": "38,800"
+        }, 
+        {
+            "job": "Loan Officers", 
+            "salary": "69,400"
+        }, 
+        {
+            "job": "Tax Examiners and Collectors, and Revenue Agents", 
+            "salary": "57,660"
+        }, 
+        {
+            "job": "Tax Preparers", 
+            "salary": "39,920"
+        }, 
+        {
+            "job": "Financial Specialists, All Other", 
+            "salary": "57,860"
+        }, 
+        {
+            "job": "Computer Systems Analysts", 
+            "salary": "80,610"
+        }, 
+        {
+            "job": "Information Security Analysts", 
+            "salary": "*"
+        }, 
+        {
+            "job": "Computer Programmers", 
+            "salary": "69,720"
+        }, 
+        {
+            "job": "Software Developers, Applications", 
+            "salary": "87,380"
+        }, 
+        {
+            "job": "Software Developers, Systems Software", 
+            "salary": "98,030"
+        }, 
+        {
+            "job": "Web Developers", 
+            "salary": "60,170"
+        }, 
+        {
+            "job": "Database Administrators", 
+            "salary": "70,320"
+        }, 
+        {
+            "job": "Network and Computer Systems Administrators", 
+            "salary": "72,460"
+        }, 
+        {
+            "job": "Computer Network Architects", 
+            "salary": "92,050"
+        }, 
+        {
+            "job": "Computer User Support Specialists", 
+            "salary": "49,360"
+        }, 
+        {
+            "job": "Computer Network Support Specialists", 
+            "salary": "56,830"
+        }, 
+        {
+            "job": "Computer Occupations, All Other", 
+            "salary": "77,980"
+        }, 
+        {
+            "job": "Actuaries", 
+            "salary": "116,720"
+        }, 
+        {
+            "job": "Operations Research Analysts", 
+            "salary": "71,530"
+        }, 
+        {
+            "job": "Architects, Except Landscape and Naval", 
+            "salary": "75,720"
+        }, 
+        {
+            "job": "Landscape Architects", 
+            "salary": "59,020"
+        }, 
+        {
+            "job": "Surveyors", 
+            "salary": "46,570"
+        }, 
+        {
+            "job": "Biomedical Engineers", 
+            "salary": "81,510"
+        }, 
+        {
+            "job": "Civil Engineers", 
+            "salary": "80,530"
+        }, 
+        {
+            "job": "Electrical Engineers", 
+            "salary": "88,420"
+        }, 
+        {
+            "job": "Electronics Engineers, Except Computer", 
+            "salary": "92,300"
+        }, 
+        {
+            "job": "Environmental Engineers", 
+            "salary": "86,080"
+        }, 
+        {
+            "job": "Industrial Engineers", 
+            "salary": "86,260"
+        }, 
+        {
+            "job": "Mechanical Engineers", 
+            "salary": "83,660"
+        }, 
+        {
+            "job": "Engineers, All Other", 
+            "salary": "106,000"
+        }, 
+        {
+            "job": "Architectural and Civil Drafters", 
+            "salary": "52,250"
+        }, 
+        {
+            "job": "Mechanical Drafters", 
+            "salary": "55,490"
+        }, 
+        {
+            "job": "Civil Engineering Technicians", 
+            "salary": "55,100"
+        }, 
+        {
+            "job": "Electrical and Electronics Engineering Technicians", 
+            "salary": "61,280"
+        }, 
+        {
+            "job": "Industrial Engineering Technicians", 
+            "salary": "59,440"
+        }, 
+        {
+            "job": "Mechanical Engineering Technicians", 
+            "salary": "82,950"
+        }, 
+        {
+            "job": "Engineering Technicians, Except Drafters, All Other", 
+            "salary": "46,090"
+        }, 
+        {
+            "job": "Surveying and Mapping Technicians", 
+            "salary": "41,290"
+        }, 
+        {
+            "job": "Microbiologists", 
+            "salary": "62,190"
+        }, 
+        {
+            "job": "Conservation Scientists", 
+            "salary": "53,840"
+        }, 
+        {
+            "job": "Medical Scientists, Except Epidemiologists", 
+            "salary": "78,500"
+        }, 
+        {
+            "job": "Chemists", 
+            "salary": "62,430"
+        }, 
+        {
+            "job": "Environmental Scientists and Specialists, Including Health", 
+            "salary": "67,960"
+        }, 
+        {
+            "job": "Geoscientists, Except Hydrologists and Geographers", 
+            "salary": "64,190"
+        }, 
+        {
+            "job": "Clinical, Counseling, and School Psychologists", 
+            "salary": "73,550"
+        }, 
+        {
+            "job": "Urban and Regional Planners", 
+            "salary": "64,180"
+        }, 
+        {
+            "job": "Social Scientists and Related Workers, All Other", 
+            "salary": "65,900"
+        }, 
+        {
+            "job": "Biological Technicians", 
+            "salary": "45,930"
+        }, 
+        {
+            "job": "Chemical Technicians", 
+            "salary": "34,670"
+        }, 
+        {
+            "job": "Social Science Research Assistants", 
+            "salary": "47,620"
+        }, 
+        {
+            "job": "Environmental Science and Protection Technicians, Including Health", 
+            "salary": "51,490"
+        }, 
+        {
+            "job": "Substance Abuse and Behavioral Disorder Counselors", 
+            "salary": "42,560"
+        }, 
+        {
+            "job": "Educational, Guidance, School, and Vocational Counselors", 
+            "salary": "51,580"
+        }, 
+        {
+            "job": "Mental Health Counselors", 
+            "salary": "50,390"
+        }, 
+        {
+            "job": "Rehabilitation Counselors", 
+            "salary": "49,850"
+        }, 
+        {
+            "job": "Counselors, All Other", 
+            "salary": "45,150"
+        }, 
+        {
+            "job": "Child, Family, and School Social Workers", 
+            "salary": "50,960"
+        }, 
+        {
+            "job": "Healthcare Social Workers", 
+            "salary": "50,000"
+        }, 
+        {
+            "job": "Mental Health and Substance Abuse Social Workers", 
+            "salary": "58,420"
+        }, 
+        {
+            "job": "Social Workers, All Other", 
+            "salary": "48,420"
+        }, 
+        {
+            "job": "Health Educators", 
+            "salary": "52,950"
+        }, 
+        {
+            "job": "Probation Officers and Correctional Treatment Specialists", 
+            "salary": "37,150"
+        }, 
+        {
+            "job": "Social and Human Service Assistants", 
+            "salary": "31,570"
+        }, 
+        {
+            "job": "Community Health Workers", 
+            "salary": "32,610"
+        }, 
+        {
+            "job": "Community and Social Service Specialists, All Other", 
+            "salary": "29,890"
+        }, 
+        {
+            "job": "Lawyers", 
+            "salary": "112,080"
+        }, 
+        {
+            "job": "Paralegals and Legal Assistants", 
+            "salary": "48,430"
+        }, 
+        {
+            "job": "Legal Support Workers, All Other", 
+            "salary": "51,350"
+        }, 
+        {
+            "job": "Business Teachers, Postsecondary", 
+            "salary": "86,710"
+        }, 
+        {
+            "job": "Mathematical Science Teachers, Postsecondary", 
+            "salary": "47,160"
+        }, 
+        {
+            "job": "Biological Science Teachers, Postsecondary", 
+            "salary": "81,810"
+        }, 
+        {
+            "job": "Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary", 
+            "salary": "58,780"
+        }, 
+        {
+            "job": "Psychology Teachers, Postsecondary", 
+            "salary": "65,790"
+        }, 
+        {
+            "job": "Sociology Teachers, Postsecondary", 
+            "salary": "*"
+        }, 
+        {
+            "job": "Social Sciences Teachers, Postsecondary, All Other", 
+            "salary": "42,940"
+        }, 
+        {
+            "job": "Nursing Instructors and Teachers, Postsecondary", 
+            "salary": "71,330"
+        }, 
+        {
+            "job": "Education Teachers, Postsecondary", 
+            "salary": "62,800"
+        }, 
+        {
+            "job": "Art, Drama, and Music Teachers, Postsecondary", 
+            "salary": "70,250"
+        }, 
+        {
+            "job": "English Language and Literature Teachers, Postsecondary", 
+            "salary": "57,660"
+        }, 
+        {
+            "job": "Philosophy and Religion Teachers, Postsecondary", 
+            "salary": "59,580"
+        }, 
+        {
+            "job": "Vocational Education Teachers, Postsecondary", 
+            "salary": "39,670"
+        }, 
+        {
+            "job": "Postsecondary Teachers, All Other", 
+            "salary": "*"
+        }, 
+        {
+            "job": "Preschool Teachers, Except Special Education", 
+            "salary": "29,510"
+        }, 
+        {
+            "job": "Kindergarten Teachers, Except Special Education", 
+            "salary": "55,630"
+        }, 
+        {
+            "job": "Elementary School Teachers, Except Special Education", 
+            "salary": "56,780"
+        }, 
+        {
+            "job": "Middle School Teachers, Except Special and Career/Technical Education", 
+            "salary": "54,590"
+        }, 
+        {
+            "job": "Secondary School Teachers, Except Special and Career/Technical Education", 
+            "salary": "56,810"
+        }, 
+        {
+            "job": "Special Education Teachers, Kindergarten and Elementary School", 
+            "salary": "54,760"
+        }, 
+        {
+            "job": "Special Education Teachers, Middle School", 
+            "salary": "52,180"
+        }, 
+        {
+            "job": "Special Education Teachers, Secondary School", 
+            "salary": "52,430"
+        }, 
+        {
+            "job": "Self-Enrichment Education Teachers", 
+            "salary": "43,280"
+        }, 
+        {
+            "job": "Teachers and Instructors, All Other, Except Substitute Teachers", 
+            "salary": "46,130"
+        }, 
+        {
+            "job": "Substitute Teachers", 
+            "salary": "25,890"
+        }, 
+        {
+            "job": "Curators", 
+            "salary": "44,240"
+        }, 
+        {
+            "job": "Museum Technicians and Conservators", 
+            "salary": "33,780"
+        }, 
+        {
+            "job": "Librarians", 
+            "salary": "54,030"
+        }, 
+        {
+            "job": "Library Technicians", 
+            "salary": "33,700"
+        }, 
+        {
+            "job": "Instructional Coordinators", 
+            "salary": "58,440"
+        }, 
+        {
+            "job": "Teacher Assistants", 
+            "salary": "36,890"
+        }, 
+        {
+            "job": "Education, Training, and Library Workers, All Other", 
+            "salary": "34,590"
+        }, 
+        {
+            "job": "Art Directors", 
+            "salary": "65,670"
+        }, 
+        {
+            "job": "Commercial and Industrial Designers", 
+            "salary": "70,520"
+        }, 
+        {
+            "job": "Fashion Designers", 
+            "salary": "71,070"
+        }, 
+        {
+            "job": "Floral Designers", 
+            "salary": "23,450"
+        }, 
+        {
+            "job": "Graphic Designers", 
+            "salary": "55,810"
+        }, 
+        {
+            "job": "Interior Designers", 
+            "salary": "45,530"
+        }, 
+        {
+            "job": "Merchandise Displayers and Window Trimmers", 
+            "salary": "29,810"
+        }, 
+        {
+            "job": "Producers and Directors", 
+            "salary": "39,550"
+        }, 
+        {
+            "job": "Coaches and Scouts", 
+            "salary": "22,920"
+        }, 
+        {
+            "job": "Musicians and Singers", 
+            "salary": "*"
+        }, 
+        {
+            "job": "Reporters and Correspondents", 
+            "salary": "33,910"
+        }, 
+        {
+            "job": "Public Relations Specialists", 
+            "salary": "57,980"
+        }, 
+        {
+            "job": "Editors", 
+            "salary": "48,010"
+        }, 
+        {
+            "job": "Technical Writers", 
+            "salary": "57,490"
+        }, 
+        {
+            "job": "Writers and Authors", 
+            "salary": "42,700"
+        }, 
+        {
+            "job": "Interpreters and Translators", 
+            "salary": "47,220"
+        }, 
+        {
+            "job": "Audio and Video Equipment Technicians", 
+            "salary": "37,740"
+        }, 
+        {
+            "job": "Broadcast Technicians", 
+            "salary": "40,410"
+        }, 
+        {
+            "job": "Sound Engineering Technicians", 
+            "salary": "50,910"
+        }, 
+        {
+            "job": "Photographers", 
+            "salary": "*"
+        }, 
+        {
+            "job": "Camera Operators, Television, Video, and Motion Picture", 
+            "salary": "29,690"
+        }, 
+        {
+            "job": "Film and Video Editors", 
+            "salary": "35,610"
+        }, 
+        {
+            "job": "Chiropractors", 
+            "salary": "88,430"
+        }, 
+        {
+            "job": "Dentists, General", 
+            "salary": "195,120"
+        }, 
+        {
+            "job": "Dietitians and Nutritionists", 
+            "salary": "58,640"
+        }, 
+        {
+            "job": "Optometrists", 
+            "salary": "116,790"
+        }, 
+        {
+            "job": "Pharmacists", 
+            "salary": "122,110"
+        }, 
+        {
+            "job": "Family and General Practitioners", 
+            "salary": "173,300"
+        }, 
+        {
+            "job": "Internists, General", 
+            "salary": "208,970"
+        }, 
+        {
+            "job": "Obstetricians and Gynecologists", 
+            "salary": "275,390"
+        }, 
+        {
+            "job": "Pediatricians, General", 
+            "salary": "178,430"
+        }, 
+        {
+            "job": "Psychiatrists", 
+            "salary": "210,100"
+        }, 
+        {
+            "job": "Surgeons", 
+            "salary": "#"
+        }, 
+        {
+            "job": "Physicians and Surgeons, All Other", 
+            "salary": "179,620"
+        }, 
+        {
+            "job": "Physician Assistants", 
+            "salary": "102,890"
+        }, 
+        {
+            "job": "Occupational Therapists", 
+            "salary": "65,490"
+        }, 
+        {
+            "job": "Physical Therapists", 
+            "salary": "75,890"
+        }, 
+        {
+            "job": "Respiratory Therapists", 
+            "salary": "58,460"
+        }, 
+        {
+            "job": "Speech-Language Pathologists", 
+            "salary": "66,720"
+        }, 
+        {
+            "job": "Veterinarians", 
+            "salary": "98,160"
+        }, 
+        {
+            "job": "Registered Nurses", 
+            "salary": "66,900"
+        }, 
+        {
+            "job": "Nurse Anesthetists", 
+            "salary": "152,940"
+        }, 
+        {
+            "job": "Nurse Practitioners", 
+            "salary": "96,230"
+        }, 
+        {
+            "job": "Health Diagnosing and Treating Practitioners, All Other", 
+            "salary": "57,230"
+        }, 
+        {
+            "job": "Medical and Clinical Laboratory Technologists", 
+            "salary": "55,720"
+        }, 
+        {
+            "job": "Medical and Clinical Laboratory Technicians", 
+            "salary": "35,310"
+        }, 
+        {
+            "job": "Dental Hygienists", 
+            "salary": "65,630"
+        }, 
+        {
+            "job": "Diagnostic Medical Sonographers", 
+            "salary": "86,500"
+        }, 
+        {
+            "job": "Radiologic Technologists", 
+            "salary": "56,170"
+        }, 
+        {
+            "job": "Magnetic Resonance Imaging Technologists", 
+            "salary": "72,090"
+        }, 
+        {
+            "job": "Emergency Medical Technicians and Paramedics", 
+            "salary": "31,610"
+        }, 
+        {
+            "job": "Pharmacy Technicians", 
+            "salary": "31,900"
+        }, 
+        {
+            "job": "Surgical Technologists", 
+            "salary": "44,380"
+        }, 
+        {
+            "job": "Veterinary Technologists and Technicians", 
+            "salary": "33,070"
+        }, 
+        {
+            "job": "Licensed Practical and Licensed Vocational Nurses", 
+            "salary": "44,780"
+        }, 
+        {
+            "job": "Medical Records and Health Information Technicians", 
+            "salary": "38,360"
+        }, 
+        {
+            "job": "Opticians, Dispensing", 
+            "salary": "47,750"
+        }, 
+        {
+            "job": "Health Technologists and Technicians, All Other", 
+            "salary": "44,760"
+        }, 
+        {
+            "job": "Occupational Health and Safety Specialists", 
+            "salary": "59,410"
+        }, 
+        {
+            "job": "Athletic Trainers", 
+            "salary": "40,450"
+        }, 
+        {
+            "job": "Home Health Aides", 
+            "salary": "24,390"
+        }, 
+        {
+            "job": "Psychiatric Aides", 
+            "salary": "26,850"
+        }, 
+        {
+            "job": "Nursing Assistants", 
+            "salary": "27,830"
+        }, 
+        {
+            "job": "Physical Therapist Assistants", 
+            "salary": "51,860"
+        }, 
+        {
+            "job": "Massage Therapists", 
+            "salary": "36,550"
+        }, 
+        {
+            "job": "Dental Assistants", 
+            "salary": "40,800"
+        }, 
+        {
+            "job": "Medical Assistants", 
+            "salary": "34,670"
+        }, 
+        {
+            "job": "Medical Equipment Preparers", 
+            "salary": "32,170"
+        }, 
+        {
+            "job": "Medical Transcriptionists", 
+            "salary": "33,060"
+        }, 
+        {
+            "job": "Veterinary Assistants and Laboratory Animal Caretakers", 
+            "salary": "27,830"
+        }, 
+        {
+            "job": "Phlebotomists", 
+            "salary": "32,450"
+        }, 
+        {
+            "job": "Healthcare Support Workers, All Other", 
+            "salary": "32,890"
+        }, 
+        {
+            "job": "First-Line Supervisors of Correctional Officers", 
+            "salary": "45,020"
+        }, 
+        {
+            "job": "First-Line Supervisors of Police and Detectives", 
+            "salary": "74,820"
+        }, 
+        {
+            "job": "First-Line Supervisors of Fire Fighting and Prevention Workers", 
+            "salary": "59,580"
+        }, 
+        {
+            "job": "First-Line Supervisors of Protective Service Workers, All Other", 
+            "salary": "48,560"
+        }, 
+        {
+            "job": "Firefighters", 
+            "salary": "31,850"
+        }, 
+        {
+            "job": "Bailiffs", 
+            "salary": "34,500"
+        }, 
+        {
+            "job": "Correctional Officers and Jailers", 
+            "salary": "38,320"
+        }, 
+        {
+            "job": "Detectives and Criminal Investigators", 
+            "salary": "72,970"
+        }, 
+        {
+            "job": "Parking Enforcement Workers", 
+            "salary": "*"
+        }, 
+        {
+            "job": "Police and Sheriff's Patrol Officers", 
+            "salary": "50,080"
+        }, 
+        {
+            "job": "Security Guards", 
+            "salary": "26,650"
+        }, 
+        {
+            "job": "Crossing Guards", 
+            "salary": "21,130"
+        }, 
+        {
+            "job": "Lifeguards, Ski Patrol, and Other Recreational Protective Service Workers", 
+            "salary": "19,310"
+        }, 
+        {
+            "job": "Transportation Security Screeners", 
+            "salary": "38,310"
+        }, 
+        {
+            "job": "Protective Service Workers, All Other", 
+            "salary": "28,740"
+        }, 
+        {
+            "job": "Chefs and Head Cooks", 
+            "salary": "41,740"
+        }, 
+        {
+            "job": "First-Line Supervisors of Food Preparation and Serving Workers", 
+            "salary": "32,160"
+        }, 
+        {
+            "job": "Cooks, Fast Food", 
+            "salary": "23,010"
+        }, 
+        {
+            "job": "Cooks, Institution and Cafeteria", 
+            "salary": "29,600"
+        }, 
+        {
+            "job": "Cooks, Restaurant", 
+            "salary": "24,880"
+        }, 
+        {
+            "job": "Cooks, Short Order", 
+            "salary": "20,650"
+        }, 
+        {
+            "job": "Food Preparation Workers", 
+            "salary": "23,030"
+        }, 
+        {
+            "job": "Bartenders", 
+            "salary": "20,730"
+        }, 
+        {
+            "job": "Combined Food Preparation and Serving Workers, Including Fast Food", 
+            "salary": "20,360"
+        }, 
+        {
+            "job": "Counter Attendants, Cafeteria, Food Concession, and Coffee Shop", 
+            "salary": "18,910"
+        }, 
+        {
+            "job": "Waiters and Waitresses", 
+            "salary": "20,860"
+        }, 
+        {
+            "job": "Food Servers, Nonrestaurant", 
+            "salary": "22,110"
+        }, 
+        {
+            "job": "Dining Room and Cafeteria Attendants and Bartender Helpers", 
+            "salary": "19,040"
+        }, 
+        {
+            "job": "Dishwashers", 
+            "salary": "19,480"
+        }, 
+        {
+            "job": "Hosts and Hostesses, Restaurant, Lounge, and Coffee Shop", 
+            "salary": "19,500"
+        }, 
+        {
+            "job": "First-Line Supervisors of Housekeeping and Janitorial Workers", 
+            "salary": "37,560"
+        }, 
+        {
+            "job": "First-Line Supervisors of Landscaping, Lawn Service, and Groundskeeping Workers", 
+            "salary": "50,240"
+        }, 
+        {
+            "job": "Janitors and Cleaners, Except Maids and Housekeeping Cleaners", 
+            "salary": "28,810"
+        }, 
+        {
+            "job": "Maids and Housekeeping Cleaners", 
+            "salary": "20,950"
+        }, 
+        {
+            "job": "Landscaping and Groundskeeping Workers", 
+            "salary": "30,330"
+        }, 
+        {
+            "job": "Grounds Maintenance Workers, All Other", 
+            "salary": "46,940"
+        }, 
+        {
+            "job": "First-Line Supervisors of Personal Service Workers", 
+            "salary": "33,310"
+        }, 
+        {
+            "job": "Nonfarm Animal Caretakers", 
+            "salary": "24,460"
+        }, 
+        {
+            "job": "Amusement and Recreation Attendants", 
+            "salary": "18,630"
+        }, 
+        {
+            "job": "Locker Room, Coatroom, and Dressing Room Attendants", 
+            "salary": "17,390"
+        }, 
+        {
+            "job": "Hairdressers, Hairstylists, and Cosmetologists", 
+            "salary": "28,110"
+        }, 
+        {
+            "job": "Manicurists and Pedicurists", 
+            "salary": "20,160"
+        }, 
+        {
+            "job": "Skincare Specialists", 
+            "salary": "34,520"
+        }, 
+        {
+            "job": "Baggage Porters and Bellhops", 
+            "salary": "17,440"
+        }, 
+        {
+            "job": "Childcare Workers", 
+            "salary": "23,770"
+        }, 
+        {
+            "job": "Personal Care Aides", 
+            "salary": "20,760"
+        }, 
+        {
+            "job": "Fitness Trainers and Aerobics Instructors", 
+            "salary": "45,630"
+        }, 
+        {
+            "job": "Recreation Workers", 
+            "salary": "26,640"
+        }, 
+        {
+            "job": "Residential Advisors", 
+            "salary": "29,690"
+        }, 
+        {
+            "job": "First-Line Supervisors of Retail Sales Workers", 
+            "salary": "43,800"
+        }, 
+        {
+            "job": "First-Line Supervisors of Non-Retail Sales Workers", 
+            "salary": "77,880"
+        }, 
+        {
+            "job": "Cashiers", 
+            "salary": "21,250"
+        }, 
+        {
+            "job": "Counter and Rental Clerks", 
+            "salary": "23,790"
+        }, 
+        {
+            "job": "Parts Salespersons", 
+            "salary": "29,680"
+        }, 
+        {
+            "job": "Retail Salespersons", 
+            "salary": "26,270"
+        }, 
+        {
+            "job": "Advertising Sales Agents", 
+            "salary": "44,530"
+        }, 
+        {
+            "job": "Insurance Sales Agents", 
+            "salary": "56,240"
+        }, 
+        {
+            "job": "Securities, Commodities, and Financial Services Sales Agents", 
+            "salary": "80,470"
+        }, 
+        {
+            "job": "Travel Agents", 
+            "salary": "37,790"
+        }, 
+        {
+            "job": "Sales Representatives, Services, All Other", 
+            "salary": "59,920"
+        }, 
+        {
+            "job": "Sales Representatives, Wholesale and Manufacturing, Technical and Scientific Products", 
+            "salary": "74,810"
+        }, 
+        {
+            "job": "Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products", 
+            "salary": "60,530"
+        }, 
+        {
+            "job": "Demonstrators and Product Promoters", 
+            "salary": "30,890"
+        }, 
+        {
+            "job": "Real Estate Brokers", 
+            "salary": "62,620"
+        }, 
+        {
+            "job": "Real Estate Sales Agents", 
+            "salary": "44,220"
+        }, 
+        {
+            "job": "Sales Engineers", 
+            "salary": "84,040"
+        }, 
+        {
+            "job": "Telemarketers", 
+            "salary": "27,240"
+        }, 
+        {
+            "job": "First-Line Supervisors of Office and Administrative Support Workers", 
+            "salary": "51,800"
+        }, 
+        {
+            "job": "Switchboard Operators, Including Answering Service", 
+            "salary": "28,540"
+        }, 
+        {
+            "job": "Bill and Account Collectors", 
+            "salary": "37,600"
+        }, 
+        {
+            "job": "Billing and Posting Clerks", 
+            "salary": "36,880"
+        }, 
+        {
+            "job": "Bookkeeping, Accounting, and Auditing Clerks", 
+            "salary": "37,830"
+        }, 
+        {
+            "job": "Payroll and Timekeeping Clerks", 
+            "salary": "42,940"
+        }, 
+        {
+            "job": "Procurement Clerks", 
+            "salary": "34,430"
+        }, 
+        {
+            "job": "Tellers", 
+            "salary": "29,180"
+        }, 
+        {
+            "job": "Brokerage Clerks", 
+            "salary": "49,440"
+        }, 
+        {
+            "job": "Court, Municipal, and License Clerks", 
+            "salary": "36,930"
+        }, 
+        {
+            "job": "Credit Authorizers, Checkers, and Clerks", 
+            "salary": "36,740"
+        }, 
+        {
+            "job": "Customer Service Representatives", 
+            "salary": "35,620"
+        }, 
+        {
+            "job": "Eligibility Interviewers, Government Programs", 
+            "salary": "38,440"
+        }, 
+        {
+            "job": "File Clerks", 
+            "salary": "30,520"
+        }, 
+        {
+            "job": "Hotel, Motel, and Resort Desk Clerks", 
+            "salary": "24,830"
+        }, 
+        {
+            "job": "Interviewers, Except Eligibility and Loan", 
+            "salary": "30,940"
+        }, 
+        {
+            "job": "Library Assistants, Clerical", 
+            "salary": "25,130"
+        }, 
+        {
+            "job": "Loan Interviewers and Clerks", 
+            "salary": "37,270"
+        }, 
+        {
+            "job": "New Accounts Clerks", 
+            "salary": "35,530"
+        }, 
+        {
+            "job": "Order Clerks", 
+            "salary": "34,090"
+        }, 
+        {
+            "job": "Human Resources Assistants, Except Payroll and Timekeeping", 
+            "salary": "36,150"
+        }, 
+        {
+            "job": "Receptionists and Information Clerks", 
+            "salary": "30,950"
+        }, 
+        {
+            "job": "Reservation and Transportation Ticket Agents and Travel Clerks", 
+            "salary": "27,330"
+        }, 
+        {
+            "job": "Information and Record Clerks, All Other", 
+            "salary": "26,880"
+        }, 
+        {
+            "job": "Couriers and Messengers", 
+            "salary": "27,740"
+        }, 
+        {
+            "job": "Police, Fire, and Ambulance Dispatchers", 
+            "salary": "41,400"
+        }, 
+        {
+            "job": "Dispatchers, Except Police, Fire, and Ambulance", 
+            "salary": "41,000"
+        }, 
+        {
+            "job": "Postal Service Clerks", 
+            "salary": "48,810"
+        }, 
+        {
+            "job": "Postal Service Mail Carriers", 
+            "salary": "51,370"
+        }, 
+        {
+            "job": "Postal Service Mail Sorters, Processors, and Processing Machine Operators", 
+            "salary": "51,760"
+        }, 
+        {
+            "job": "Production, Planning, and Expediting Clerks", 
+            "salary": "47,970"
+        }, 
+        {
+            "job": "Shipping, Receiving, and Traffic Clerks", 
+            "salary": "34,450"
+        }, 
+        {
+            "job": "Stock Clerks and Order Fillers", 
+            "salary": "26,320"
+        }, 
+        {
+            "job": "Weighers, Measurers, Checkers, and Samplers, Recordkeeping", 
+            "salary": "25,040"
+        }, 
+        {
+            "job": "Executive Secretaries and Executive Administrative Assistants", 
+            "salary": "49,460"
+        }, 
+        {
+            "job": "Legal Secretaries", 
+            "salary": "40,900"
+        }, 
+        {
+            "job": "Medical Secretaries", 
+            "salary": "35,280"
+        }, 
+        {
+            "job": "Secretaries and Administrative Assistants, Except Legal, Medical, and Executive", 
+            "salary": "35,540"
+        }, 
+        {
+            "job": "Computer Operators", 
+            "salary": "45,870"
+        }, 
+        {
+            "job": "Data Entry Keyers", 
+            "salary": "29,710"
+        }, 
+        {
+            "job": "Word Processors and Typists", 
+            "salary": "37,110"
+        }, 
+        {
+            "job": "Desktop Publishers", 
+            "salary": "31,900"
+        }, 
+        {
+            "job": "Insurance Claims and Policy Processing Clerks", 
+            "salary": "38,160"
+        }, 
+        {
+            "job": "Mail Clerks and Mail Machine Operators, Except Postal Service", 
+            "salary": "26,020"
+        }, 
+        {
+            "job": "Office Clerks, General", 
+            "salary": "32,230"
+        }, 
+        {
+            "job": "Statistical Assistants", 
+            "salary": "51,690"
+        }, 
+        {
+            "job": "Office and Administrative Support Workers, All Other", 
+            "salary": "43,890"
+        }, 
+        {
+            "job": "Farmworkers and Laborers, Crop, Nursery, and Greenhouse", 
+            "salary": "26,060"
+        }, 
+        {
+            "job": "Farmworkers, Farm, Ranch, and Aquacultural Animals", 
+            "salary": "24,660"
+        }, 
+        {
+            "job": "Logging Equipment Operators", 
+            "salary": "34,490"
+        }, 
+        {
+            "job": "First-Line Supervisors of Construction Trades and Extraction Workers", 
+            "salary": "58,620"
+        }, 
+        {
+            "job": "Brickmasons and Blockmasons", 
+            "salary": "46,010"
+        }, 
+        {
+            "job": "Stonemasons", 
+            "salary": "42,160"
+        }, 
+        {
+            "job": "Carpenters", 
+            "salary": "39,060"
+        }, 
+        {
+            "job": "Cement Masons and Concrete Finishers", 
+            "salary": "33,120"
+        }, 
+        {
+            "job": "Construction Laborers", 
+            "salary": "32,810"
+        }, 
+        {
+            "job": "Paving, Surfacing, and Tamping Equipment Operators", 
+            "salary": "36,800"
+        }, 
+        {
+            "job": "Operating Engineers and Other Construction Equipment Operators", 
+            "salary": "38,460"
+        }, 
+        {
+            "job": "Drywall and Ceiling Tile Installers", 
+            "salary": "44,940"
+        }, 
+        {
+            "job": "Tapers", 
+            "salary": "49,560"
+        }, 
+        {
+            "job": "Electricians", 
+            "salary": "50,160"
+        }, 
+        {
+            "job": "Glaziers", 
+            "salary": "37,060"
+        }, 
+        {
+            "job": "Insulation Workers, Floor, Ceiling, and Wall", 
+            "salary": "34,050"
+        }, 
+        {
+            "job": "Painters, Construction and Maintenance", 
+            "salary": "33,360"
+        }, 
+        {
+            "job": "Pipelayers", 
+            "salary": "44,460"
+        }, 
+        {
+            "job": "Plumbers, Pipefitters, and Steamfitters", 
+            "salary": "48,430"
+        }, 
+        {
+            "job": "Roofers", 
+            "salary": "40,230"
+        }, 
+        {
+            "job": "Sheet Metal Workers", 
+            "salary": "44,750"
+        }, 
+        {
+            "job": "Helpers--Brickmasons, Blockmasons, Stonemasons, and Tile and Marble Setters", 
+            "salary": "32,780"
+        }, 
+        {
+            "job": "Helpers--Carpenters", 
+            "salary": "27,470"
+        }, 
+        {
+            "job": "Helpers--Electricians", 
+            "salary": "28,840"
+        }, 
+        {
+            "job": "Helpers--Pipelayers, Plumbers, Pipefitters, and Steamfitters", 
+            "salary": "24,940"
+        }, 
+        {
+            "job": "Construction and Building Inspectors", 
+            "salary": "49,250"
+        }, 
+        {
+            "job": "Highway Maintenance Workers", 
+            "salary": "33,520"
+        }, 
+        {
+            "job": "Septic Tank Servicers and Sewer Pipe Cleaners", 
+            "salary": "40,560"
+        }, 
+        {
+            "job": "Construction and Related Workers, All Other", 
+            "salary": "31,720"
+        }, 
+        {
+            "job": "First-Line Supervisors of Mechanics, Installers, and Repairers", 
+            "salary": "61,080"
+        }, 
+        {
+            "job": "Computer, Automated Teller, and Office Machine Repairers", 
+            "salary": "40,490"
+        }, 
+        {
+            "job": "Radio, Cellular, and Tower Equipment Installers and Repairers", 
+            "salary": "37,640"
+        }, 
+        {
+            "job": "Telecommunications Equipment Installers and Repairers, Except Line Installers", 
+            "salary": "47,540"
+        }, 
+        {
+            "job": "Electrical and Electronics Repairers, Commercial and Industrial Equipment", 
+            "salary": "63,240"
+        }, 
+        {
+            "job": "Security and Fire Alarm Systems Installers", 
+            "salary": "49,130"
+        }, 
+        {
+            "job": "Automotive Body and Related Repairers", 
+            "salary": "44,730"
+        }, 
+        {
+            "job": "Automotive Service Technicians and Mechanics", 
+            "salary": "42,150"
+        }, 
+        {
+            "job": "Bus and Truck Mechanics and Diesel Engine Specialists", 
+            "salary": "45,200"
+        }, 
+        {
+            "job": "Mobile Heavy Equipment Mechanics, Except Engines", 
+            "salary": "49,790"
+        }, 
+        {
+            "job": "Motorboat Mechanics and Service Technicians", 
+            "salary": "35,870"
+        }, 
+        {
+            "job": "Outdoor Power Equipment and Other Small Engine Mechanics", 
+            "salary": "37,440"
+        }, 
+        {
+            "job": "Control and Valve Installers and Repairers, Except Mechanical Door", 
+            "salary": "58,970"
+        }, 
+        {
+            "job": "Heating, Air Conditioning, and Refrigeration Mechanics and Installers", 
+            "salary": "49,760"
+        }, 
+        {
+            "job": "Home Appliance Repairers", 
+            "salary": "44,270"
+        }, 
+        {
+            "job": "Industrial Machinery Mechanics", 
+            "salary": "55,250"
+        }, 
+        {
+            "job": "Millwrights", 
+            "salary": "52,250"
+        }, 
+        {
+            "job": "Electrical Power-Line Installers and Repairers", 
+            "salary": "60,180"
+        }, 
+        {
+            "job": "Telecommunications Line Installers and Repairers", 
+            "salary": "52,590"
+        }, 
+        {
+            "job": "Medical Equipment Repairers", 
+            "salary": "56,800"
+        }, 
+        {
+            "job": "Precision Instrument and Equipment Repairers, All Other", 
+            "salary": "38,730"
+        }, 
+        {
+            "job": "Maintenance and Repair Workers, General", 
+            "salary": "40,990"
+        }, 
+        {
+            "job": "Helpers--Installation, Maintenance, and Repair Workers", 
+            "salary": "25,610"
+        }, 
+        {
+            "job": "Installation, Maintenance, and Repair Workers, All Other", 
+            "salary": "38,400"
+        }, 
+        {
+            "job": "First-Line Supervisors of Production and Operating Workers", 
+            "salary": "54,930"
+        }, 
+        {
+            "job": "Electrical and Electronic Equipment Assemblers", 
+            "salary": "31,000"
+        }, 
+        {
+            "job": "Team Assemblers", 
+            "salary": "29,390"
+        }, 
+        {
+            "job": "Assemblers and Fabricators, All Other", 
+            "salary": "34,710"
+        }, 
+        {
+            "job": "Bakers", 
+            "salary": "25,180"
+        }, 
+        {
+            "job": "Butchers and Meat Cutters", 
+            "salary": "32,570"
+        }, 
+        {
+            "job": "Meat, Poultry, and Fish Cutters and Trimmers", 
+            "salary": "23,240"
+        }, 
+        {
+            "job": "Food Batchmakers", 
+            "salary": "27,560"
+        }, 
+        {
+            "job": "Food Processing Workers, All Other", 
+            "salary": "21,660"
+        }, 
+        {
+            "job": "Computer-Controlled Machine Tool Operators, Metal and Plastic", 
+            "salary": "38,230"
+        }, 
+        {
+            "job": "Computer Numerically Controlled Machine Tool Programmers, Metal and Plastic", 
+            "salary": "46,670"
+        }, 
+        {
+            "job": "Cutting, Punching, and Press Machine Setters, Operators, and Tenders, Metal and Plastic", 
+            "salary": "38,760"
+        }, 
+        {
+            "job": "Grinding, Lapping, Polishing, and Buffing Machine Tool Setters, Operators, and Tenders, Metal and Plastic", 
+            "salary": "45,070"
+        }, 
+        {
+            "job": "Machinists", 
+            "salary": "40,370"
+        }, 
+        {
+            "job": "Multiple Machine Tool Setters, Operators, and Tenders, Metal and Plastic", 
+            "salary": "37,210"
+        }, 
+        {
+            "job": "Tool and Die Makers", 
+            "salary": "44,600"
+        }, 
+        {
+            "job": "Welders, Cutters, Solderers, and Brazers", 
+            "salary": "45,380"
+        }, 
+        {
+            "job": "Welding, Soldering, and Brazing Machine Setters, Operators, and Tenders", 
+            "salary": "44,580"
+        }, 
+        {
+            "job": "Plating and Coating Machine Setters, Operators, and Tenders, Metal and Plastic", 
+            "salary": "36,170"
+        }, 
+        {
+            "job": "Tool Grinders, Filers, and Sharpeners", 
+            "salary": "37,150"
+        }, 
+        {
+            "job": "Printing Press Operators", 
+            "salary": "34,030"
+        }, 
+        {
+            "job": "Print Binding and Finishing Workers", 
+            "salary": "29,740"
+        }, 
+        {
+            "job": "Laundry and Dry-Cleaning Workers", 
+            "salary": "23,030"
+        }, 
+        {
+            "job": "Pressers, Textile, Garment, and Related Materials", 
+            "salary": "22,430"
+        }, 
+        {
+            "job": "Sewing Machine Operators", 
+            "salary": "30,860"
+        }, 
+        {
+            "job": "Tailors, Dressmakers, and Custom Sewers", 
+            "salary": "30,710"
+        }, 
+        {
+            "job": "Textile, Apparel, and Furnishings Workers, All Other", 
+            "salary": "30,530"
+        }, 
+        {
+            "job": "Cabinetmakers and Bench Carpenters", 
+            "salary": "39,820"
+        }, 
+        {
+            "job": "Sawing Machine Setters, Operators, and Tenders, Wood", 
+            "salary": "30,830"
+        }, 
+        {
+            "job": "Woodworking Machine Setters, Operators, and Tenders, Except Sawing", 
+            "salary": "33,630"
+        }, 
+        {
+            "job": "Stationary Engineers and Boiler Operators", 
+            "salary": "40,980"
+        }, 
+        {
+            "job": "Water and Wastewater Treatment Plant and System Operators", 
+            "salary": "48,110"
+        }, 
+        {
+            "job": "Plant and System Operators, All Other", 
+            "salary": "37,340"
+        }, 
+        {
+            "job": "Separating, Filtering, Clarifying, Precipitating, and Still Machine Setters, Operators, and Tenders", 
+            "salary": "34,510"
+        }, 
+        {
+            "job": "Crushing, Grinding, and Polishing Machine Setters, Operators, and Tenders", 
+            "salary": "34,600"
+        }, 
+        {
+            "job": "Mixing and Blending Machine Setters, Operators, and Tenders", 
+            "salary": "36,020"
+        }, 
+        {
+            "job": "Inspectors, Testers, Sorters, Samplers, and Weighers", 
+            "salary": "43,310"
+        }, 
+        {
+            "job": "Jewelers and Precious Stone and Metal Workers", 
+            "salary": "29,230"
+        }, 
+        {
+            "job": "Dental Laboratory Technicians", 
+            "salary": "42,550"
+        }, 
+        {
+            "job": "Packaging and Filling Machine Operators and Tenders", 
+            "salary": "31,780"
+        }, 
+        {
+            "job": "Painters, Transportation Equipment", 
+            "salary": "40,850"
+        }, 
+        {
+            "job": "Helpers--Production Workers", 
+            "salary": "25,170"
+        }, 
+        {
+            "job": "Production Workers, All Other", 
+            "salary": "*"
+        }, 
+        {
+            "job": "First-Line Supervisors of Helpers, Laborers, and Material Movers, Hand", 
+            "salary": "56,250"
+        }, 
+        {
+            "job": "First-Line Supervisors of Transportation and Material-Moving Machine and Vehicle Operators", 
+            "salary": "51,750"
+        }, 
+        {
+            "job": "Bus Drivers, Transit and Intercity", 
+            "salary": "37,500"
+        }, 
+        {
+            "job": "Bus Drivers, School or Special Client", 
+            "salary": "38,060"
+        }, 
+        {
+            "job": "Driver/Sales Workers", 
+            "salary": "33,320"
+        }, 
+        {
+            "job": "Heavy and Tractor-Trailer Truck Drivers", 
+            "salary": "37,970"
+        }, 
+        {
+            "job": "Light Truck or Delivery Services Drivers", 
+            "salary": "33,820"
+        }, 
+        {
+            "job": "Taxi Drivers and Chauffeurs", 
+            "salary": "23,840"
+        }, 
+        {
+            "job": "Motor Vehicle Operators, All Other", 
+            "salary": "20,450"
+        }, 
+        {
+            "job": "Sailors and Marine Oilers", 
+            "salary": "34,700"
+        }, 
+        {
+            "job": "Captains, Mates, and Pilots of Water Vessels", 
+            "salary": "53,890"
+        }, 
+        {
+            "job": "Parking Lot Attendants", 
+            "salary": "31,020"
+        }, 
+        {
+            "job": "Automotive and Watercraft Service Attendants", 
+            "salary": "21,000"
+        }, 
+        {
+            "job": "Transportation Workers, All Other", 
+            "salary": "27,830"
+        }, 
+        {
+            "job": "Conveyor Operators and Tenders", 
+            "salary": "25,910"
+        }, 
+        {
+            "job": "Crane and Tower Operators", 
+            "salary": "48,680"
+        }, 
+        {
+            "job": "Excavating and Loading Machine and Dragline Operators", 
+            "salary": "40,580"
+        }, 
+        {
+            "job": "Industrial Truck and Tractor Operators", 
+            "salary": "34,510"
+        }, 
+        {
+            "job": "Cleaners of Vehicles and Equipment", 
+            "salary": "23,950"
+        }, 
+        {
+            "job": "Laborers and Freight, Stock, and Material Movers, Hand", 
+            "salary": "29,700"
+        }, 
+        {
+            "job": "Machine Feeders and Offbearers", 
+            "salary": "28,500"
+        }, 
+        {
+            "job": "Packers and Packagers, Hand", 
+            "salary": "23,070"
+        }, 
+        {
+            "job": "Pump Operators, Except Wellhead Pumpers", 
+            "salary": "45,930"
+        }, 
+        {
+            "job": "Refuse and Recyclable Material Collectors", 
+            "salary": "29,840"
+        }, 
+        {
+            "job": "Material Moving Workers, All Other", 
+            "salary": "32,410"
+        }
+    ], 
+    "Southwest Maine nonmetropolitan area": [
+        {
+            "job": "Chief Executives", 
+            "salary": "140,810"
+        }, 
+        {
+            "job": "General and Operations Managers", 
+            "salary": "92,440"
+        }, 
+        {
+            "job": "Advertising and Promotions Managers", 
+            "salary": "60,460"
+        }, 
+        {
+            "job": "Marketing Managers", 
+            "salary": "75,200"
+        }, 
+        {
+            "job": "Sales Managers", 
+            "salary": "97,170"
+        }, 
+        {
+            "job": "Public Relations and Fundraising Managers", 
+            "salary": "76,470"
+        }, 
+        {
+            "job": "Administrative Services Managers", 
+            "salary": "69,690"
+        }, 
+        {
+            "job": "Computer and Information Systems Managers", 
+            "salary": "104,970"
+        }, 
+        {
+            "job": "Financial Managers", 
+            "salary": "91,610"
+        }, 
+        {
+            "job": "Industrial Production Managers", 
+            "salary": "87,260"
+        }, 
+        {
+            "job": "Purchasing Managers", 
+            "salary": "91,510"
+        }, 
+        {
+            "job": "Transportation, Storage, and Distribution Managers", 
+            "salary": "65,560"
+        }, 
+        {
+            "job": "Human Resources Managers", 
+            "salary": "91,300"
+        }, 
+        {
+            "job": "Construction Managers", 
+            "salary": "92,980"
+        }, 
+        {
+            "job": "Education Administrators, Preschool and Childcare Center/Program", 
+            "salary": "39,970"
+        }, 
+        {
+            "job": "Education Administrators, Elementary and Secondary School", 
+            "salary": "76,150"
+        }, 
+        {
+            "job": "Education Administrators, Postsecondary", 
+            "salary": "89,510"
+        }, 
+        {
+            "job": "Education Administrators, All Other", 
+            "salary": "65,680"
+        }, 
+        {
+            "job": "Architectural and Engineering Managers", 
+            "salary": "125,010"
+        }, 
+        {
+            "job": "Food Service Managers", 
+            "salary": "46,670"
+        }, 
+        {
+            "job": "Lodging Managers", 
+            "salary": "51,580"
+        }, 
+        {
+            "job": "Medical and Health Services Managers", 
+            "salary": "105,230"
+        }, 
+        {
+            "job": "Natural Sciences Managers", 
+            "salary": "88,560"
+        }, 
+        {
+            "job": "Postmasters and Mail Superintendents", 
+            "salary": "67,210"
+        }, 
+        {
+            "job": "Property, Real Estate, and Community Association Managers", 
+            "salary": "55,090"
+        }, 
+        {
+            "job": "Social and Community Service Managers", 
+            "salary": "56,930"
+        }, 
+        {
+            "job": "Emergency Management Directors", 
+            "salary": "57,080"
+        }, 
+        {
+            "job": "Managers, All Other", 
+            "salary": "90,970"
+        }, 
+        {
+            "job": "Wholesale and Retail Buyers, Except Farm Products", 
+            "salary": "42,220"
+        }, 
+        {
+            "job": "Purchasing Agents, Except Wholesale, Retail, and Farm Products", 
+            "salary": "61,610"
+        }, 
+        {
+            "job": "Claims Adjusters, Examiners, and Investigators", 
+            "salary": "60,910"
+        }, 
+        {
+            "job": "Compliance Officers", 
+            "salary": "55,390"
+        }, 
+        {
+            "job": "Cost Estimators", 
+            "salary": "63,780"
+        }, 
+        {
+            "job": "Human Resources Specialists", 
+            "salary": "53,340"
+        }, 
+        {
+            "job": "Labor Relations Specialists", 
+            "salary": "76,610"
+        }, 
+        {
+            "job": "Logisticians", 
+            "salary": "71,930"
+        }, 
+        {
+            "job": "Management Analysts", 
+            "salary": "57,370"
+        }, 
+        {
+            "job": "Meeting, Convention, and Event Planners", 
+            "salary": "44,670"
+        }, 
+        {
+            "job": "Fundraisers", 
+            "salary": "47,460"
+        }, 
+        {
+            "job": "Compensation, Benefits, and Job Analysis Specialists", 
+            "salary": "57,060"
+        }, 
+        {
+            "job": "Training and Development Specialists", 
+            "salary": "51,250"
+        }, 
+        {
+            "job": "Market Research Analysts and Marketing Specialists", 
+            "salary": "71,900"
+        }, 
+        {
+            "job": "Business Operations Specialists, All Other", 
+            "salary": "58,190"
+        }, 
+        {
+            "job": "Accountants and Auditors", 
+            "salary": "53,200"
+        }, 
+        {
+            "job": "Appraisers and Assessors of Real Estate", 
+            "salary": "47,350"
+        }, 
+        {
+            "job": "Budget Analysts", 
+            "salary": "60,400"
+        }, 
+        {
+            "job": "Financial Analysts", 
+            "salary": "78,400"
+        }, 
+        {
+            "job": "Personal Financial Advisors", 
+            "salary": "*"
+        }, 
+        {
+            "job": "Credit Counselors", 
+            "salary": "41,350"
+        }, 
+        {
+            "job": "Loan Officers", 
+            "salary": "62,190"
+        }, 
+        {
+            "job": "Tax Examiners and Collectors, and Revenue Agents", 
+            "salary": "44,980"
+        }, 
+        {
+            "job": "Tax Preparers", 
+            "salary": "36,560"
+        }, 
+        {
+            "job": "Financial Specialists, All Other", 
+            "salary": "65,370"
+        }, 
+        {
+            "job": "Computer Systems Analysts", 
+            "salary": "73,580"
+        }, 
+        {
+            "job": "Information Security Analysts", 
+            "salary": "66,590"
+        }, 
+        {
+            "job": "Computer Programmers", 
+            "salary": "64,260"
+        }, 
+        {
+            "job": "Software Developers, Applications", 
+            "salary": "82,840"
+        }, 
+        {
+            "job": "Software Developers, Systems Software", 
+            "salary": "99,100"
+        }, 
+        {
+            "job": "Web Developers", 
+            "salary": "43,690"
+        }, 
+        {
+            "job": "Database Administrators", 
+            "salary": "62,670"
+        }, 
+        {
+            "job": "Network and Computer Systems Administrators", 
+            "salary": "65,080"
+        }, 
+        {
+            "job": "Computer Network Architects", 
+            "salary": "80,340"
+        }, 
+        {
+            "job": "Computer User Support Specialists", 
+            "salary": "44,250"
+        }, 
+        {
+            "job": "Computer Network Support Specialists", 
+            "salary": "51,480"
+        }, 
+        {
+            "job": "Computer Occupations, All Other", 
+            "salary": "69,270"
+        }, 
+        {
+            "job": "Operations Research Analysts", 
+            "salary": "73,300"
+        }, 
+        {
+            "job": "Surveyors", 
+            "salary": "56,190"
+        }, 
+        {
+            "job": "Civil Engineers", 
+            "salary": "71,580"
+        }, 
+        {
+            "job": "Electrical Engineers", 
+            "salary": "80,340"
+        }, 
+        {
+            "job": "Environmental Engineers", 
+            "salary": "64,930"
+        }, 
+        {
+            "job": "Health and Safety Engineers, Except Mining Safety Engineers and Inspectors", 
+            "salary": "68,090"
+        }, 
+        {
+            "job": "Industrial Engineers", 
+            "salary": "80,550"
+        }, 
+        {
+            "job": "Mechanical Engineers", 
+            "salary": "87,600"
+        }, 
+        {
+            "job": "Engineers, All Other", 
+            "salary": "127,580"
+        }, 
+        {
+            "job": "Architectural and Civil Drafters", 
+            "salary": "43,730"
+        }, 
+        {
+            "job": "Civil Engineering Technicians", 
+            "salary": "50,080"
+        }, 
+        {
+            "job": "Electrical and Electronics Engineering Technicians", 
+            "salary": "68,120"
+        }, 
+        {
+            "job": "Industrial Engineering Technicians", 
+            "salary": "66,560"
+        }, 
+        {
+            "job": "Mechanical Engineering Technicians", 
+            "salary": "58,140"
+        }, 
+        {
+            "job": "Surveying and Mapping Technicians", 
+            "salary": "36,000"
+        }, 
+        {
+            "job": "Microbiologists", 
+            "salary": "67,700"
+        }, 
+        {
+            "job": "Zoologists and Wildlife Biologists", 
+            "salary": "55,960"
+        }, 
+        {
+            "job": "Conservation Scientists", 
+            "salary": "54,940"
+        }, 
+        {
+            "job": "Chemists", 
+            "salary": "56,720"
+        }, 
+        {
+            "job": "Environmental Scientists and Specialists, Including Health", 
+            "salary": "53,840"
+        }, 
+        {
+            "job": "Geoscientists, Except Hydrologists and Geographers", 
+            "salary": "67,450"
+        }, 
+        {
+            "job": "Clinical, Counseling, and School Psychologists", 
+            "salary": "101,230"
+        }, 
+        {
+            "job": "Social Scientists and Related Workers, All Other", 
+            "salary": "59,840"
+        }, 
+        {
+            "job": "Biological Technicians", 
+            "salary": "38,630"
+        }, 
+        {
+            "job": "Chemical Technicians", 
+            "salary": "46,520"
+        }, 
+        {
+            "job": "Social Science Research Assistants", 
+            "salary": "41,620"
+        }, 
+        {
+            "job": "Environmental Science and Protection Technicians, Including Health", 
+            "salary": "34,850"
+        }, 
+        {
+            "job": "Substance Abuse and Behavioral Disorder Counselors", 
+            "salary": "45,790"
+        }, 
+        {
+            "job": "Educational, Guidance, School, and Vocational Counselors", 
+            "salary": "49,440"
+        }, 
+        {
+            "job": "Mental Health Counselors", 
+            "salary": "43,270"
+        }, 
+        {
+            "job": "Rehabilitation Counselors", 
+            "salary": "35,120"
+        }, 
+        {
+            "job": "Child, Family, and School Social Workers", 
+            "salary": "48,900"
+        }, 
+        {
+            "job": "Healthcare Social Workers", 
+            "salary": "52,040"
+        }, 
+        {
+            "job": "Mental Health and Substance Abuse Social Workers", 
+            "salary": "56,950"
+        }, 
+        {
+            "job": "Social Workers, All Other", 
+            "salary": "57,430"
+        }, 
+        {
+            "job": "Health Educators", 
+            "salary": "43,570"
+        }, 
+        {
+            "job": "Social and Human Service Assistants", 
+            "salary": "31,510"
+        }, 
+        {
+            "job": "Community Health Workers", 
+            "salary": "32,470"
+        }, 
+        {
+            "job": "Community and Social Service Specialists, All Other", 
+            "salary": "47,110"
+        }, 
+        {
+            "job": "Lawyers", 
+            "salary": "86,600"
+        }, 
+        {
+            "job": "Administrative Law Judges, Adjudicators, and Hearing Officers", 
+            "salary": "58,070"
+        }, 
+        {
+            "job": "Judges, Magistrate Judges, and Magistrates", 
+            "salary": "97,060"
+        }, 
+        {
+            "job": "Paralegals and Legal Assistants", 
+            "salary": "43,930"
+        }, 
+        {
+            "job": "Legal Support Workers, All Other", 
+            "salary": "49,590"
+        }, 
+        {
+            "job": "Mathematical Science Teachers, Postsecondary", 
+            "salary": "70,820"
+        }, 
+        {
+            "job": "Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary", 
+            "salary": "81,070"
+        }, 
+        {
+            "job": "Psychology Teachers, Postsecondary", 
+            "salary": "78,640"
+        }, 
+        {
+            "job": "Education Teachers, Postsecondary", 
+            "salary": "52,830"
+        }, 
+        {
+            "job": "English Language and Literature Teachers, Postsecondary", 
+            "salary": "62,460"
+        }, 
+        {
+            "job": "History Teachers, Postsecondary", 
+            "salary": "78,170"
+        }, 
+        {
+            "job": "Vocational Education Teachers, Postsecondary", 
+            "salary": "51,810"
+        }, 
+        {
+            "job": "Postsecondary Teachers, All Other", 
+            "salary": "53,830"
+        }, 
+        {
+            "job": "Preschool Teachers, Except Special Education", 
+            "salary": "30,810"
+        }, 
+        {
+            "job": "Kindergarten Teachers, Except Special Education", 
+            "salary": "48,550"
+        }, 
+        {
+            "job": "Elementary School Teachers, Except Special Education", 
+            "salary": "50,080"
+        }, 
+        {
+            "job": "Middle School Teachers, Except Special and Career/Technical Education", 
+            "salary": "50,860"
+        }, 
+        {
+            "job": "Secondary School Teachers, Except Special and Career/Technical Education", 
+            "salary": "50,900"
+        }, 
+        {
+            "job": "Special Education Teachers, Kindergarten and Elementary School", 
+            "salary": "51,280"
+        }, 
+        {
+            "job": "Special Education Teachers, Middle School", 
+            "salary": "49,090"
+        }, 
+        {
+            "job": "Special Education Teachers, Secondary School", 
+            "salary": "48,930"
+        }, 
+        {
+            "job": "Self-Enrichment Education Teachers", 
+            "salary": "45,230"
+        }, 
+        {
+            "job": "Teachers and Instructors, All Other, Except Substitute Teachers", 
+            "salary": "48,530"
+        }, 
+        {
+            "job": "Substitute Teachers", 
+            "salary": "21,090"
+        }, 
+        {
+            "job": "Curators", 
+            "salary": "55,920"
+        }, 
+        {
+            "job": "Librarians", 
+            "salary": "48,680"
+        }, 
+        {
+            "job": "Library Technicians", 
+            "salary": "33,130"
+        }, 
+        {
+            "job": "Instructional Coordinators", 
+            "salary": "55,160"
+        }, 
+        {
+            "job": "Teacher Assistants", 
+            "salary": "32,020"
+        }, 
+        {
+            "job": "Education, Training, and Library Workers, All Other", 
+            "salary": "35,340"
+        }, 
+        {
+            "job": "Commercial and Industrial Designers", 
+            "salary": "64,800"
+        }, 
+        {
+            "job": "Floral Designers", 
+            "salary": "24,130"
+        }, 
+        {
+            "job": "Graphic Designers", 
+            "salary": "33,930"
+        }, 
+        {
+            "job": "Merchandise Displayers and Window Trimmers", 
+            "salary": "29,610"
+        }, 
+        {
+            "job": "Producers and Directors", 
+            "salary": "50,110"
+        }, 
+        {
+            "job": "Coaches and Scouts", 
+            "salary": "23,040"
+        }, 
+        {
+            "job": "Radio and Television Announcers", 
+            "salary": "27,560"
+        }, 
+        {
+            "job": "Public Address System and Other Announcers", 
+            "salary": "22,280"
+        }, 
+        {
+            "job": "Reporters and Correspondents", 
+            "salary": "28,150"
+        }, 
+        {
+            "job": "Public Relations Specialists", 
+            "salary": "52,890"
+        }, 
+        {
+            "job": "Editors", 
+            "salary": "57,530"
+        }, 
+        {
+            "job": "Photographers", 
+            "salary": "37,580"
+        }, 
+        {
+            "job": "Dentists, General", 
+            "salary": "188,810"
+        }, 
+        {
+            "job": "Dietitians and Nutritionists", 
+            "salary": "59,440"
+        }, 
+        {
+            "job": "Optometrists", 
+            "salary": "122,880"
+        }, 
+        {
+            "job": "Pharmacists", 
+            "salary": "134,350"
+        }, 
+        {
+            "job": "Anesthesiologists", 
+            "salary": "#"
+        }, 
+        {
+            "job": "Family and General Practitioners", 
+            "salary": "183,430"
+        }, 
+        {
+            "job": "Internists, General", 
+            "salary": "205,750"
+        }, 
+        {
+            "job": "Psychiatrists", 
+            "salary": "*"
+        }, 
+        {
+            "job": "Surgeons", 
+            "salary": "260,450"
+        }, 
+        {
+            "job": "Physicians and Surgeons, All Other", 
+            "salary": "201,240"
+        }, 
+        {
+            "job": "Physician Assistants", 
+            "salary": "103,250"
+        }, 
+        {
+            "job": "Occupational Therapists", 
+            "salary": "63,250"
+        }, 
+        {
+            "job": "Physical Therapists", 
+            "salary": "74,860"
+        }, 
+        {
+            "job": "Recreational Therapists", 
+            "salary": "44,150"
+        }, 
+        {
+            "job": "Respiratory Therapists", 
+            "salary": "56,410"
+        }, 
+        {
+            "job": "Speech-Language Pathologists", 
+            "salary": "62,770"
+        }, 
+        {
+            "job": "Veterinarians", 
+            "salary": "77,250"
+        }, 
+        {
+            "job": "Registered Nurses", 
+            "salary": "62,050"
+        }, 
+        {
+            "job": "Nurse Anesthetists", 
+            "salary": "189,760"
+        }, 
+        {
+            "job": "Nurse Practitioners", 
+            "salary": "97,550"
+        }, 
+        {
+            "job": "Health Diagnosing and Treating Practitioners, All Other", 
+            "salary": "78,020"
+        }, 
+        {
+            "job": "Medical and Clinical Laboratory Technologists", 
+            "salary": "58,220"
+        }, 
+        {
+            "job": "Medical and Clinical Laboratory Technicians", 
+            "salary": "41,890"
+        }, 
+        {
+            "job": "Dental Hygienists", 
+            "salary": "57,180"
+        }, 
+        {
+            "job": "Cardiovascular Technologists and Technicians", 
+            "salary": "57,920"
+        }, 
+        {
+            "job": "Diagnostic Medical Sonographers", 
+            "salary": "72,580"
+        }, 
+        {
+            "job": "Radiologic Technologists", 
+            "salary": "56,800"
+        }, 
+        {
+            "job": "Emergency Medical Technicians and Paramedics", 
+            "salary": "34,170"
+        }, 
+        {
+            "job": "Dietetic Technicians", 
+            "salary": "32,680"
+        }, 
+        {
+            "job": "Pharmacy Technicians", 
+            "salary": "30,180"
+        }, 
+        {
+            "job": "Surgical Technologists", 
+            "salary": "43,720"
+        }, 
+        {
+            "job": "Veterinary Technologists and Technicians", 
+            "salary": "33,450"
+        }, 
+        {
+            "job": "Ophthalmic Medical Technicians", 
+            "salary": "32,960"
+        }, 
+        {
+            "job": "Licensed Practical and Licensed Vocational Nurses", 
+            "salary": "40,040"
+        }, 
+        {
+            "job": "Medical Records and Health Information Technicians", 
+            "salary": "36,560"
+        }, 
+        {
+            "job": "Opticians, Dispensing", 
+            "salary": "31,200"
+        }, 
+        {
+            "job": "Health Technologists and Technicians, All Other", 
+            "salary": "54,430"
+        }, 
+        {
+            "job": "Occupational Health and Safety Specialists", 
+            "salary": "56,840"
+        }, 
+        {
+            "job": "Occupational Health and Safety Technicians", 
+            "salary": "45,640"
+        }, 
+        {
+            "job": "Athletic Trainers", 
+            "salary": "40,000"
+        }, 
+        {
+            "job": "Home Health Aides", 
+            "salary": "23,560"
+        }, 
+        {
+            "job": "Psychiatric Aides", 
+            "salary": "28,770"
+        }, 
+        {
+            "job": "Nursing Assistants", 
+            "salary": "23,640"
+        }, 
+        {
+            "job": "Occupational Therapy Assistants", 
+            "salary": "46,480"
+        }, 
+        {
+            "job": "Physical Therapist Assistants", 
+            "salary": "47,990"
+        }, 
+        {
+            "job": "Physical Therapist Aides", 
+            "salary": "25,200"
+        }, 
+        {
+            "job": "Dental Assistants", 
+            "salary": "33,070"
+        }, 
+        {
+            "job": "Medical Assistants", 
+            "salary": "31,500"
+        }, 
+        {
+            "job": "Medical Equipment Preparers", 
+            "salary": "31,980"
+        }, 
+        {
+            "job": "Medical Transcriptionists", 
+            "salary": "38,000"
+        }, 
+        {
+            "job": "Pharmacy Aides", 
+            "salary": "23,820"
+        }, 
+        {
+            "job": "Veterinary Assistants and Laboratory Animal Caretakers", 
+            "salary": "26,530"
+        }, 
+        {
+            "job": "Phlebotomists", 
+            "salary": "28,980"
+        }, 
+        {
+            "job": "Healthcare Support Workers, All Other", 
+            "salary": "37,500"
+        }, 
+        {
+            "job": "First-Line Supervisors of Correctional Officers", 
+            "salary": "43,130"
+        }, 
+        {
+            "job": "First-Line Supervisors of Police and Detectives", 
+            "salary": "60,370"
+        }, 
+        {
+            "job": "First-Line Supervisors of Fire Fighting and Prevention Workers", 
+            "salary": "51,600"
+        }, 
+        {
+            "job": "First-Line Supervisors of Protective Service Workers, All Other", 
+            "salary": "48,200"
+        }, 
+        {
+            "job": "Firefighters", 
+            "salary": "31,450"
+        }, 
+        {
+            "job": "Fire Inspectors and Investigators", 
+            "salary": "*"
+        }, 
+        {
+            "job": "Bailiffs", 
+            "salary": "34,810"
+        }, 
+        {
+            "job": "Correctional Officers and Jailers", 
+            "salary": "37,100"
+        }, 
+        {
+            "job": "Detectives and Criminal Investigators", 
+            "salary": "56,680"
+        }, 
+        {
+            "job": "Fish and Game Wardens", 
+            "salary": "46,790"
+        }, 
+        {
+            "job": "Police and Sheriff's Patrol Officers", 
+            "salary": "41,620"
+        }, 
+        {
+            "job": "Animal Control Workers", 
+            "salary": "25,220"
+        }, 
+        {
+            "job": "Security Guards", 
+            "salary": "30,500"
+        }, 
+        {
+            "job": "Lifeguards, Ski Patrol, and Other Recreational Protective Service Workers", 
+            "salary": "21,190"
+        }, 
+        {
+            "job": "Protective Service Workers, All Other", 
+            "salary": "28,540"
+        }, 
+        {
+            "job": "Chefs and Head Cooks", 
+            "salary": "41,490"
+        }, 
+        {
+            "job": "First-Line Supervisors of Food Preparation and Serving Workers", 
+            "salary": "33,770"
+        }, 
+        {
+            "job": "Cooks, Fast Food", 
+            "salary": "18,970"
+        }, 
+        {
+            "job": "Cooks, Institution and Cafeteria", 
+            "salary": "27,380"
+        }, 
+        {
+            "job": "Cooks, Restaurant", 
+            "salary": "26,000"
+        }, 
+        {
+            "job": "Cooks, Short Order", 
+            "salary": "21,930"
+        }, 
+        {
+            "job": "Cooks, All Other", 
+            "salary": "29,740"
+        }, 
+        {
+            "job": "Food Preparation Workers", 
+            "salary": "22,490"
+        }, 
+        {
+            "job": "Bartenders", 
+            "salary": "24,240"
+        }, 
+        {
+            "job": "Combined Food Preparation and Serving Workers, Including Fast Food", 
+            "salary": "18,460"
+        }, 
+        {
+            "job": "Counter Attendants, Cafeteria, Food Concession, and Coffee Shop", 
+            "salary": "19,620"
+        }, 
+        {
+            "job": "Waiters and Waitresses", 
+            "salary": "21,920"
+        }, 
+        {
+            "job": "Food Servers, Nonrestaurant", 
+            "salary": "20,260"
+        }, 
+        {
+            "job": "Dining Room and Cafeteria Attendants and Bartender Helpers", 
+            "salary": "20,340"
+        }, 
+        {
+            "job": "Dishwashers", 
+            "salary": "19,320"
+        }, 
+        {
+            "job": "Hosts and Hostesses, Restaurant, Lounge, and Coffee Shop", 
+            "salary": "18,320"
+        }, 
+        {
+            "job": "First-Line Supervisors of Housekeeping and Janitorial Workers", 
+            "salary": "41,680"
+        }, 
+        {
+            "job": "First-Line Supervisors of Landscaping, Lawn Service, and Groundskeeping Workers", 
+            "salary": "45,350"
+        }, 
+        {
+            "job": "Janitors and Cleaners, Except Maids and Housekeeping Cleaners", 
+            "salary": "27,470"
+        }, 
+        {
+            "job": "Maids and Housekeeping Cleaners", 
+            "salary": "21,290"
+        }, 
+        {
+            "job": "Pest Control Workers", 
+            "salary": "32,110"
+        }, 
+        {
+            "job": "Landscaping and Groundskeeping Workers", 
+            "salary": "31,630"
+        }, 
+        {
+            "job": "Tree Trimmers and Pruners", 
+            "salary": "32,990"
+        }, 
+        {
+            "job": "First-Line Supervisors of Personal Service Workers", 
+            "salary": "36,190"
+        }, 
+        {
+            "job": "Nonfarm Animal Caretakers", 
+            "salary": "20,240"
+        }, 
+        {
+            "job": "Ushers, Lobby Attendants, and Ticket Takers", 
+            "salary": "20,070"
+        }, 
+        {
+            "job": "Amusement and Recreation Attendants", 
+            "salary": "21,230"
+        }, 
+        {
+            "job": "Funeral Attendants", 
+            "salary": "23,140"
+        }, 
+        {
+            "job": "Morticians, Undertakers, and Funeral Directors", 
+            "salary": "40,310"
+        }, 
+        {
+            "job": "Hairdressers, Hairstylists, and Cosmetologists", 
+            "salary": "24,500"
+        }, 
+        {
+            "job": "Tour Guides and Escorts", 
+            "salary": "19,240"
+        }, 
+        {
+            "job": "Childcare Workers", 
+            "salary": "21,470"
+        }, 
+        {
+            "job": "Personal Care Aides", 
+            "salary": "22,840"
+        }, 
+        {
+            "job": "Fitness Trainers and Aerobics Instructors", 
+            "salary": "32,280"
+        }, 
+        {
+            "job": "Recreation Workers", 
+            "salary": "24,880"
+        }, 
+        {
+            "job": "Residential Advisors", 
+            "salary": "29,250"
+        }, 
+        {
+            "job": "First-Line Supervisors of Retail Sales Workers", 
+            "salary": "39,080"
+        }, 
+        {
+            "job": "First-Line Supervisors of Non-Retail Sales Workers", 
+            "salary": "64,240"
+        }, 
+        {
+            "job": "Cashiers", 
+            "salary": "20,380"
+        }, 
+        {
+            "job": "Counter and Rental Clerks", 
+            "salary": "20,950"
+        }, 
+        {
+            "job": "Parts Salespersons", 
+            "salary": "30,130"
+        }, 
+        {
+            "job": "Retail Salespersons", 
+            "salary": "25,030"
+        }, 
+        {
+            "job": "Advertising Sales Agents", 
+            "salary": "31,600"
+        }, 
+        {
+            "job": "Insurance Sales Agents", 
+            "salary": "55,470"
+        }, 
+        {
+            "job": "Securities, Commodities, and Financial Services Sales Agents", 
+            "salary": "72,110"
+        }, 
+        {
+            "job": "Sales Representatives, Services, All Other", 
+            "salary": "45,770"
+        }, 
+        {
+            "job": "Sales Representatives, Wholesale and Manufacturing, Technical and Scientific Products", 
+            "salary": "94,580"
+        }, 
+        {
+            "job": "Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products", 
+            "salary": "60,970"
+        }, 
+        {
+            "job": "Real Estate Brokers", 
+            "salary": "48,520"
+        }, 
+        {
+            "job": "Sales Engineers", 
+            "salary": "69,640"
+        }, 
+        {
+            "job": "Sales and Related Workers, All Other", 
+            "salary": "27,850"
+        }, 
+        {
+            "job": "First-Line Supervisors of Office and Administrative Support Workers", 
+            "salary": "46,520"
+        }, 
+        {
+            "job": "Switchboard Operators, Including Answering Service", 
+            "salary": "31,290"
+        }, 
+        {
+            "job": "Bill and Account Collectors", 
+            "salary": "31,980"
+        }, 
+        {
+            "job": "Billing and Posting Clerks", 
+            "salary": "33,050"
+        }, 
+        {
+            "job": "Bookkeeping, Accounting, and Auditing Clerks", 
+            "salary": "35,400"
+        }, 
+        {
+            "job": "Payroll and Timekeeping Clerks", 
+            "salary": "39,920"
+        }, 
+        {
+            "job": "Procurement Clerks", 
+            "salary": "35,160"
+        }, 
+        {
+            "job": "Tellers", 
+            "salary": "24,860"
+        }, 
+        {
+            "job": "Court, Municipal, and License Clerks", 
+            "salary": "34,650"
+        }, 
+        {
+            "job": "Customer Service Representatives", 
+            "salary": "34,140"
+        }, 
+        {
+            "job": "Eligibility Interviewers, Government Programs", 
+            "salary": "35,970"
+        }, 
+        {
+            "job": "File Clerks", 
+            "salary": "29,140"
+        }, 
+        {
+            "job": "Hotel, Motel, and Resort Desk Clerks", 
+            "salary": "27,660"
+        }, 
+        {
+            "job": "Interviewers, Except Eligibility and Loan", 
+            "salary": "27,550"
+        }, 
+        {
+            "job": "Library Assistants, Clerical", 
+            "salary": "24,400"
+        }, 
+        {
+            "job": "Loan Interviewers and Clerks", 
+            "salary": "34,210"
+        }, 
+        {
+            "job": "New Accounts Clerks", 
+            "salary": "34,030"
+        }, 
+        {
+            "job": "Order Clerks", 
+            "salary": "28,570"
+        }, 
+        {
+            "job": "Human Resources Assistants, Except Payroll and Timekeeping", 
+            "salary": "37,560"
+        }, 
+        {
+            "job": "Receptionists and Information Clerks", 
+            "salary": "27,470"
+        }, 
+        {
+            "job": "Reservation and Transportation Ticket Agents and Travel Clerks", 
+            "salary": "31,840"
+        }, 
+        {
+            "job": "Information and Record Clerks, All Other", 
+            "salary": "28,200"
+        }, 
+        {
+            "job": "Cargo and Freight Agents", 
+            "salary": "58,110"
+        }, 
+        {
+            "job": "Police, Fire, and Ambulance Dispatchers", 
+            "salary": "39,550"
+        }, 
+        {
+            "job": "Dispatchers, Except Police, Fire, and Ambulance", 
+            "salary": "38,260"
+        }, 
+        {
+            "job": "Postal Service Clerks", 
+            "salary": "44,860"
+        }, 
+        {
+            "job": "Postal Service Mail Carriers", 
+            "salary": "48,210"
+        }, 
+        {
+            "job": "Production, Planning, and Expediting Clerks", 
+            "salary": "61,270"
+        }, 
+        {
+            "job": "Shipping, Receiving, and Traffic Clerks", 
+            "salary": "39,060"
+        }, 
+        {
+            "job": "Stock Clerks and Order Fillers", 
+            "salary": "24,510"
+        }, 
+        {
+            "job": "Weighers, Measurers, Checkers, and Samplers, Recordkeeping", 
+            "salary": "22,760"
+        }, 
+        {
+            "job": "Executive Secretaries and Executive Administrative Assistants", 
+            "salary": "47,410"
+        }, 
+        {
+            "job": "Legal Secretaries", 
+            "salary": "36,710"
+        }, 
+        {
+            "job": "Medical Secretaries", 
+            "salary": "30,280"
+        }, 
+        {
+            "job": "Secretaries and Administrative Assistants, Except Legal, Medical, and Executive", 
+            "salary": "33,810"
+        }, 
+        {
+            "job": "Computer Operators", 
+            "salary": "36,300"
+        }, 
+        {
+            "job": "Data Entry Keyers", 
+            "salary": "30,290"
+        }, 
+        {
+            "job": "Word Processors and Typists", 
+            "salary": "36,730"
+        }, 
+        {
+            "job": "Desktop Publishers", 
+            "salary": "35,970"
+        }, 
+        {
+            "job": "Insurance Claims and Policy Processing Clerks", 
+            "salary": "34,050"
+        }, 
+        {
+            "job": "Mail Clerks and Mail Machine Operators, Except Postal Service", 
+            "salary": "29,730"
+        }, 
+        {
+            "job": "Office Clerks, General", 
+            "salary": "30,270"
+        }, 
+        {
+            "job": "Office Machine Operators, Except Computer", 
+            "salary": "28,820"
+        }, 
+        {
+            "job": "Office and Administrative Support Workers, All Other", 
+            "salary": "32,730"
+        }, 
+        {
+            "job": "First-Line Supervisors of Farming, Fishing, and Forestry Workers", 
+            "salary": "46,110"
+        }, 
+        {
+            "job": "Farmworkers and Laborers, Crop, Nursery, and Greenhouse", 
+            "salary": "25,000"
+        }, 
+        {
+            "job": "Farmworkers, Farm, Ranch, and Aquacultural Animals", 
+            "salary": "31,650"
+        }, 
+        {
+            "job": "Logging Equipment Operators", 
+            "salary": "34,770"
+        }, 
+        {
+            "job": "First-Line Supervisors of Construction Trades and Extraction Workers", 
+            "salary": "53,330"
+        }, 
+        {
+            "job": "Carpenters", 
+            "salary": "39,060"
+        }, 
+        {
+            "job": "Cement Masons and Concrete Finishers", 
+            "salary": "33,200"
+        }, 
+        {
+            "job": "Construction Laborers", 
+            "salary": "28,180"
+        }, 
+        {
+            "job": "Paving, Surfacing, and Tamping Equipment Operators", 
+            "salary": "37,280"
+        }, 
+        {
+            "job": "Operating Engineers and Other Construction Equipment Operators", 
+            "salary": "34,560"
+        }, 
+        {
+            "job": "Drywall and Ceiling Tile Installers", 
+            "salary": "56,190"
+        }, 
+        {
+            "job": "Tapers", 
+            "salary": "41,700"
+        }, 
+        {
+            "job": "Electricians", 
+            "salary": "46,770"
+        }, 
+        {
+            "job": "Insulation Workers, Floor, Ceiling, and Wall", 
+            "salary": "43,130"
+        }, 
+        {
+            "job": "Painters, Construction and Maintenance", 
+            "salary": "40,800"
+        }, 
+        {
+            "job": "Plumbers, Pipefitters, and Steamfitters", 
+            "salary": "48,790"
+        }, 
+        {
+            "job": "Roofers", 
+            "salary": "32,740"
+        }, 
+        {
+            "job": "Sheet Metal Workers", 
+            "salary": "49,390"
+        }, 
+        {
+            "job": "Structural Iron and Steel Workers", 
+            "salary": "43,050"
+        }, 
+        {
+            "job": "Helpers--Brickmasons, Blockmasons, Stonemasons, and Tile and Marble Setters", 
+            "salary": "31,170"
+        }, 
+        {
+            "job": "Helpers--Carpenters", 
+            "salary": "29,480"
+        }, 
+        {
+            "job": "Helpers--Electricians", 
+            "salary": "34,370"
+        }, 
+        {
+            "job": "Helpers--Pipelayers, Plumbers, Pipefitters, and Steamfitters", 
+            "salary": "34,810"
+        }, 
+        {
+            "job": "Construction and Building Inspectors", 
+            "salary": "45,350"
+        }, 
+        {
+            "job": "Highway Maintenance Workers", 
+            "salary": "34,220"
+        }, 
+        {
+            "job": "Septic Tank Servicers and Sewer Pipe Cleaners", 
+            "salary": "30,110"
+        }, 
+        {
+            "job": "Construction and Related Workers, All Other", 
+            "salary": "30,330"
+        }, 
+        {
+            "job": "Earth Drillers, Except Oil and Gas", 
+            "salary": "41,930"
+        }, 
+        {
+            "job": "First-Line Supervisors of Mechanics, Installers, and Repairers", 
+            "salary": "56,840"
+        }, 
+        {
+            "job": "Telecommunications Equipment Installers and Repairers, Except Line Installers", 
+            "salary": "54,950"
+        }, 
+        {
+            "job": "Security and Fire Alarm Systems Installers", 
+            "salary": "45,410"
+        }, 
+        {
+            "job": "Automotive Body and Related Repairers", 
+            "salary": "34,360"
+        }, 
+        {
+            "job": "Automotive Service Technicians and Mechanics", 
+            "salary": "35,160"
+        }, 
+        {
+            "job": "Bus and Truck Mechanics and Diesel Engine Specialists", 
+            "salary": "36,000"
+        }, 
+        {
+            "job": "Farm Equipment Mechanics and Service Technicians", 
+            "salary": "29,930"
+        }, 
+        {
+            "job": "Mobile Heavy Equipment Mechanics, Except Engines", 
+            "salary": "40,320"
+        }, 
+        {
+            "job": "Motorboat Mechanics and Service Technicians", 
+            "salary": "39,060"
+        }, 
+        {
+            "job": "Outdoor Power Equipment and Other Small Engine Mechanics", 
+            "salary": "31,700"
+        }, 
+        {
+            "job": "Tire Repairers and Changers", 
+            "salary": "22,620"
+        }, 
+        {
+            "job": "Heating, Air Conditioning, and Refrigeration Mechanics and Installers", 
+            "salary": "42,590"
+        }, 
+        {
+            "job": "Home Appliance Repairers", 
+            "salary": "36,870"
+        }, 
+        {
+            "job": "Industrial Machinery Mechanics", 
+            "salary": "49,720"
+        }, 
+        {
+            "job": "Maintenance Workers, Machinery", 
+            "salary": "48,420"
+        }, 
+        {
+            "job": "Millwrights", 
+            "salary": "50,150"
+        }, 
+        {
+            "job": "Electrical Power-Line Installers and Repairers", 
+            "salary": "63,480"
+        }, 
+        {
+            "job": "Telecommunications Line Installers and Repairers", 
+            "salary": "56,710"
+        }, 
+        {
+            "job": "Maintenance and Repair Workers, General", 
+            "salary": "41,110"
+        }, 
+        {
+            "job": "Coin, Vending, and Amusement Machine Servicers and Repairers", 
+            "salary": "25,390"
+        }, 
+        {
+            "job": "Manufactured Building and Mobile Home Installers", 
+            "salary": "29,900"
+        }, 
+        {
+            "job": "Helpers--Installation, Maintenance, and Repair Workers", 
+            "salary": "24,000"
+        }, 
+        {
+            "job": "Installation, Maintenance, and Repair Workers, All Other", 
+            "salary": "33,500"
+        }, 
+        {
+            "job": "First-Line Supervisors of Production and Operating Workers", 
+            "salary": "60,010"
+        }, 
+        {
+            "job": "Coil Winders, Tapers, and Finishers", 
+            "salary": "23,420"
+        }, 
+        {
+            "job": "Electrical and Electronic Equipment Assemblers", 
+            "salary": "31,050"
+        }, 
+        {
+            "job": "Structural Metal Fabricators and Fitters", 
+            "salary": "51,140"
+        }, 
+        {
+            "job": "Fiberglass Laminators and Fabricators", 
+            "salary": "34,870"
+        }, 
+        {
+            "job": "Team Assemblers", 
+            "salary": "35,580"
+        }, 
+        {
+            "job": "Assemblers and Fabricators, All Other", 
+            "salary": "28,030"
+        }, 
+        {
+            "job": "Bakers", 
+            "salary": "24,640"
+        }, 
+        {
+            "job": "Butchers and Meat Cutters", 
+            "salary": "31,020"
+        }, 
+        {
+            "job": "Meat, Poultry, and Fish Cutters and Trimmers", 
+            "salary": "23,560"
+        }, 
+        {
+            "job": "Food Batchmakers", 
+            "salary": "38,220"
+        }, 
+        {
+            "job": "Food Processing Workers, All Other", 
+            "salary": "23,430"
+        }, 
+        {
+            "job": "Computer-Controlled Machine Tool Operators, Metal and Plastic", 
+            "salary": "48,560"
+        }, 
+        {
+            "job": "Computer Numerically Controlled Machine Tool Programmers, Metal and Plastic", 
+            "salary": "54,220"
+        }, 
+        {
+            "job": "Extruding and Drawing Machine Setters, Operators, and Tenders, Metal and Plastic", 
+            "salary": "38,140"
+        }, 
+        {
+            "job": "Cutting, Punching, and Press Machine Setters, Operators, and Tenders, Metal and Plastic", 
+            "salary": "31,370"
+        }, 
+        {
+            "job": "Grinding, Lapping, Polishing, and Buffing Machine Tool Setters, Operators, and Tenders, Metal and Plastic", 
+            "salary": "35,560"
+        }, 
+        {
+            "job": "Machinists", 
+            "salary": "47,500"
+        }, 
+        {
+            "job": "Molding, Coremaking, and Casting Machine Setters, Operators, and Tenders, Metal and Plastic", 
+            "salary": "24,910"
+        }, 
+        {
+            "job": "Welders, Cutters, Solderers, and Brazers", 
+            "salary": "47,490"
+        }, 
+        {
+            "job": "Welding, Soldering, and Brazing Machine Setters, Operators, and Tenders", 
+            "salary": "38,150"
+        }, 
+        {
+            "job": "Tool Grinders, Filers, and Sharpeners", 
+            "salary": "42,580"
+        }, 
+        {
+            "job": "Printing Press Operators", 
+            "salary": "32,280"
+        }, 
+        {
+            "job": "Print Binding and Finishing Workers", 
+            "salary": "*"
+        }, 
+        {
+            "job": "Laundry and Dry-Cleaning Workers", 
+            "salary": "21,350"
+        }, 
+        {
+            "job": "Sewing Machine Operators", 
+            "salary": "26,670"
+        }, 
+        {
+            "job": "Shoe and Leather Workers and Repairers", 
+            "salary": "26,960"
+        }, 
+        {
+            "job": "Textile Bleaching and Dyeing Machine Operators and Tenders", 
+            "salary": "29,120"
+        }, 
+        {
+            "job": "Textile Knitting and Weaving Machine Setters, Operators, and Tenders", 
+            "salary": "27,860"
+        }, 
+        {
+            "job": "Textile Winding, Twisting, and Drawing Out Machine Setters, Operators, and Tenders", 
+            "salary": "24,690"
+        }, 
+        {
+            "job": "Upholsterers", 
+            "salary": "24,150"
+        }, 
+        {
+            "job": "Cabinetmakers and Bench Carpenters", 
+            "salary": "40,360"
+        }, 
+        {
+            "job": "Sawing Machine Setters, Operators, and Tenders, Wood", 
+            "salary": "32,270"
+        }, 
+        {
+            "job": "Woodworking Machine Setters, Operators, and Tenders, Except Sawing", 
+            "salary": "27,150"
+        }, 
+        {
+            "job": "Power Plant Operators", 
+            "salary": "61,560"
+        }, 
+        {
+            "job": "Stationary Engineers and Boiler Operators", 
+            "salary": "49,520"
+        }, 
+        {
+            "job": "Water and Wastewater Treatment Plant and System Operators", 
+            "salary": "52,030"
+        }, 
+        {
+            "job": "Plant and System Operators, All Other", 
+            "salary": "36,080"
+        }, 
+        {
+            "job": "Chemical Equipment Operators and Tenders", 
+            "salary": "43,660"
+        }, 
+        {
+            "job": "Separating, Filtering, Clarifying, Precipitating, and Still Machine Setters, Operators, and Tenders", 
+            "salary": "51,390"
+        }, 
+        {
+            "job": "Crushing, Grinding, and Polishing Machine Setters, Operators, and Tenders", 
+            "salary": "39,530"
+        }, 
+        {
+            "job": "Grinding and Polishing Workers, Hand", 
+            "salary": "36,230"
+        }, 
+        {
+            "job": "Mixing and Blending Machine Setters, Operators, and Tenders", 
+            "salary": "52,750"
+        }, 
+        {
+            "job": "Cutting and Slicing Machine Setters, Operators, and Tenders", 
+            "salary": "42,800"
+        }, 
+        {
+            "job": "Furnace, Kiln, Oven, Drier, and Kettle Operators and Tenders", 
+            "salary": "41,420"
+        }, 
+        {
+            "job": "Inspectors, Testers, Sorters, Samplers, and Weighers", 
+            "salary": "45,610"
+        }, 
+        {
+            "job": "Jewelers and Precious Stone and Metal Workers", 
+            "salary": "34,850"
+        }, 
+        {
+            "job": "Packaging and Filling Machine Operators and Tenders", 
+            "salary": "33,680"
+        }, 
+        {
+            "job": "Coating, Painting, and Spraying Machine Setters, Operators, and Tenders", 
+            "salary": "51,430"
+        }, 
+        {
+            "job": "Painters, Transportation Equipment", 
+            "salary": "39,370"
+        }, 
+        {
+            "job": "Molders, Shapers, and Casters, Except Metal and Plastic", 
+            "salary": "29,480"
+        }, 
+        {
+            "job": "Tire Builders", 
+            "salary": "29,120"
+        }, 
+        {
+            "job": "Helpers--Production Workers", 
+            "salary": "29,740"
+        }, 
+        {
+            "job": "Production Workers, All Other", 
+            "salary": "35,110"
+        }, 
+        {
+            "job": "First-Line Supervisors of Helpers, Laborers, and Material Movers, Hand", 
+            "salary": "50,880"
+        }, 
+        {
+            "job": "First-Line Supervisors of Transportation and Material-Moving Machine and Vehicle Operators", 
+            "salary": "46,560"
+        }, 
+        {
+            "job": "Commercial Pilots", 
+            "salary": "76,390"
+        }, 
+        {
+            "job": "Ambulance Drivers and Attendants, Except Emergency Medical Technicians", 
+            "salary": "32,690"
+        }, 
+        {
+            "job": "Bus Drivers, School or Special Client", 
+            "salary": "34,040"
+        }, 
+        {
+            "job": "Driver/Sales Workers", 
+            "salary": "30,380"
+        }, 
+        {
+            "job": "Heavy and Tractor-Trailer Truck Drivers", 
+            "salary": "36,080"
+        }, 
+        {
+            "job": "Light Truck or Delivery Services Drivers", 
+            "salary": "30,400"
+        }, 
+        {
+            "job": "Taxi Drivers and Chauffeurs", 
+            "salary": "21,600"
+        }, 
+        {
+            "job": "Sailors and Marine Oilers", 
+            "salary": "30,930"
+        }, 
+        {
+            "job": "Captains, Mates, and Pilots of Water Vessels", 
+            "salary": "61,600"
+        }, 
+        {
+            "job": "Parking Lot Attendants", 
+            "salary": "22,550"
+        }, 
+        {
+            "job": "Automotive and Watercraft Service Attendants", 
+            "salary": "20,070"
+        }, 
+        {
+            "job": "Transportation Workers, All Other", 
+            "salary": "25,210"
+        }, 
+        {
+            "job": "Conveyor Operators and Tenders", 
+            "salary": "41,140"
+        }, 
+        {
+            "job": "Crane and Tower Operators", 
+            "salary": "48,760"
+        }, 
+        {
+            "job": "Excavating and Loading Machine and Dragline Operators", 
+            "salary": "38,000"
+        }, 
+        {
+            "job": "Industrial Truck and Tractor Operators", 
+            "salary": "33,320"
+        }, 
+        {
+            "job": "Cleaners of Vehicles and Equipment", 
+            "salary": "25,450"
+        }, 
+        {
+            "job": "Laborers and Freight, Stock, and Material Movers, Hand", 
+            "salary": "28,010"
+        }, 
+        {
+            "job": "Machine Feeders and Offbearers", 
+            "salary": "26,260"
+        }, 
+        {
+            "job": "Packers and Packagers, Hand", 
+            "salary": "22,630"
+        }, 
+        {
+            "job": "Refuse and Recyclable Material Collectors", 
+            "salary": "27,040"
+        }
+    ]
+}
