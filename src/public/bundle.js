@@ -66,7 +66,7 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	__webpack_require__(292);
+	__webpack_require__(293);
 
 	var App = function (_React$Component) {
 		_inherits(App, _React$Component);
@@ -21521,7 +21521,7 @@
 
 	var _Output2 = _interopRequireDefault(_Output);
 
-	__webpack_require__(283);
+	__webpack_require__(284);
 
 	var _Grid = __webpack_require__(187);
 
@@ -21543,11 +21543,11 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var STATES = __webpack_require__(287);
-	var JOBS = __webpack_require__(288);
-	var STATE_AREAS = __webpack_require__(289);
-	var YEARS = __webpack_require__(290);
-	var MONTHS = __webpack_require__(291);
+	var STATES = __webpack_require__(288);
+	var JOBS = __webpack_require__(289);
+	var STATE_AREAS = __webpack_require__(290);
+	var YEARS = __webpack_require__(291);
+	var MONTHS = __webpack_require__(292);
 
 	var Inputs = function (_React$Component) {
 		_inherits(Inputs, _React$Component);
@@ -21591,7 +21591,7 @@
 				}
 
 				// Maybe not the best but works for now.  Test more
-				if (this.state.job && this.state.salary_start !== '34000' && this.state.salary_current !== '48000') {
+				if (this.state.job !== '_____' && this.state.salary_start !== '34000' && this.state.salary_current !== '48000') {
 					this.setState({ status: 'ready' });
 				} else return;
 			}
@@ -24154,6 +24154,8 @@
 
 	var _Col2 = _interopRequireDefault(_Col);
 
+	var _reactSocial = __webpack_require__(283);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -24292,9 +24294,38 @@
 				}
 
 				return _react2.default.createElement(
-					_Row2.default,
-					{ className: "certificateBlock" },
-					status
+					"div",
+					null,
+					_react2.default.createElement(
+						_Row2.default,
+						{ className: "certificateBlock" },
+						status
+					),
+					_react2.default.createElement(
+						_Col2.default,
+						{ className: "socialBlock" },
+						_react2.default.createElement(
+							"a",
+							{ className: "fb-xfbml-parse-ignore socialShare", target: "_blank", href: "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.kickstarter.com%2Fprojects%2Fgotenna%2F257342308&t=" },
+							_react2.default.createElement("i", { className: "fa fa-facebook fa-3x", "aria-hidden": "true" })
+						),
+						_react2.default.createElement(
+							_reactSocial.TwitterButton,
+							{
+								message: "{tweet}",
+								url: "",
+								element: "a",
+								className: "socialShare" },
+							_react2.default.createElement("i", { className: "fa fa-twitter fa-3x", "aria-hidden": "true" })
+						),
+						_react2.default.createElement(
+							"a",
+							{
+								href: "mailto:?subject=Join%20my%20mesh%20network!&body=I%20just%20registered%20as%20a%20node%20on%20the%20goTenna%20Mesh%20network%20map.%20Find%20it%20at%20imeshyou.com%20%26%20join%20the%20network%20by%20getting%20your%20own%20goTenna%20Mesh%20devices%20at%20is.gd%2Fgotennamesh.%0A%0AgoTenna%20Mesh%20is%20the%20first%20100%25%20off-grid%2C%20totally%20mobile%2C%20long-range%2C%20consumer-ready%20mesh%20network.%20You%20pair%20a%20goTenna%20Mesh%20device%20to%20your%20existing%20smartphone%20and%20it%20enables%20you%20to%20send%20texts%20%26%20locations%20on%20offline%20maps%20to%20other%20users%20up%20to%20several%20miles%2Fkilometers%20away%2C%20even%20if%20you%20don%E2%80%99t%20have%20service.%20%0A%0AgoTenna%20Mesh%20can%20automatically%20and%20privately%20relay%20your%20messages%20through%20other%20users%E2%80%99%20devices%20to%20reach%20recipients%20who%20are%20out%20of%20point-to-point%20range.%20This%20is%20a%20network%20that%20gets%20stronger%20the%20more%20people%20join%20it!%0A%0AThis%20is%20the%20future%20of%20people-powered%20connectivity%2C%20and%20it%E2%80%99s%20great%20for%20all%20outdoor%20adventures%2C%20crowded%20events%2C%20travel%20abroad%2C%20and%20unplanned%20emergencies.%20%0A%0AJoin%20me%20in%20creating%20this%20mesh%20network%3A%20is.gd%2Fgotennamesh",
+								target: "_blank", title: "Send email" },
+							_react2.default.createElement("i", { className: "fa fa-envelope fa-3x", "aria-hidden": "true" })
+						)
+					)
 				);
 			}
 		}]);
@@ -26987,13 +27018,525 @@
 /* 283 */
 /***/ function(module, exports, __webpack_require__) {
 
+	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;"use strict";
+
+	;(function (root, factory) {
+	  if (typeof module !== "undefined" && module.exports) {
+	    module.exports = factory(__webpack_require__(1));
+	  } else if (true) {
+	    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	  } else {
+	    root.ReactSocial = factory(root.React);
+	  }
+	})(undefined, function (React) {
+	  "use strict";
+
+	  var isBrowser = function isBrowser() {
+	    return !(typeof document === "undefined" || typeof window === "undefined");
+	  };
+
+	  var assign = function assign(dest, src) {
+	    for (var key in src) {
+	      dest[key] = src[key];
+	    }
+
+	    return dest;
+	  };
+
+	  var spread = function spread(obj, omit) {
+	    var clone = assign({}, obj);
+
+	    omit.forEach(function (key) {
+	      delete clone[key];
+	    });
+
+	    return clone;
+	  };
+
+	  var jsonp = function jsonp(url, cb) {
+	    cb = cb || function () {};
+	    var called = false;
+	    var now = +new Date(),
+	        id = now + "_" + Math.floor(Math.random() * 1000);
+
+	    var script = document.createElement("script"),
+	        callback = "jsonp_" + id,
+	        query = url.replace("@", callback);
+
+	    script.setAttribute("type", "text/javascript");
+	    script.setAttribute("src", query);
+	    document.body.appendChild(script);
+
+	    setTimeout(function () {
+	      if (!called) {
+	        called = true;
+	        cb(new Error("jsonp timeout"));
+	      }
+	    }, 10000);
+
+	    window[callback] = function () {
+	      var args = Array.prototype.slice.call(arguments, 0);
+	      args.unshift(null);
+	      if (!called) {
+	        called = true;
+	        cb.apply(this, args);
+	      }
+	    };
+	  };
+
+	  /* Caputre VKontake callbacks */
+	  var vkCallbacks = {};
+
+	  var hookVKCallback = function hookVKCallback() {
+	    if (!isBrowser()) {
+	      return;
+	    }
+
+	    if (!window.VK) {
+	      window.VK = {};
+	    }
+
+	    if (!window.VK.Share) {
+	      window.VK.Share = {};
+	    }
+
+	    var oldCount = window.VK.Share.count;
+
+	    window.VK.Share.count = function (index, count) {
+	      if (typeof vkCallbacks[index] === "function") {
+	        return vkCallbacks[index](count);
+	      }
+
+	      if (typeof oldCount === "function") {
+	        oldCount(index, count);
+	      }
+	    };
+	  };
+
+	  var captureVKCallback = function captureVKCallback(index, cb) {
+	    vkCallbacks[index] = cb;
+	  };
+
+	  hookVKCallback();
+
+	  var exports = {};
+
+	  var Count = {
+	    displayName: "Count",
+
+	    propTypes: {
+	      element: React.PropTypes.string,
+	      url: React.PropTypes.string
+	    },
+
+	    getDefaultProps: function getDefaultProps() {
+	      var location = "";
+
+	      if (isBrowser()) {
+	        location = window.location.href;
+	      }
+
+	      return {
+	        url: location,
+	        element: "span",
+	        onCount: function onCount() {}
+	      };
+	    },
+
+	    getInitialState: function getInitialState() {
+	      return {
+	        count: 0
+	      };
+	    },
+
+	    componentDidMount: function componentDidMount() {
+	      this.updateCount();
+	    },
+
+	    componentWillReceiveProps: function componentWillReceiveProps(nextProps) {
+	      if (this.props.url !== nextProps.url) {
+	        this.setState({
+	          count: 0
+	        }, function () {
+	          this.updateCount();
+	        });
+	      }
+	    },
+
+	    componentDidUpdate: function componentDidUpdate() {
+	      this.props.onCount(this.state.count);
+	    },
+
+	    updateCount: function updateCount() {
+	      if (!isBrowser()) {
+	        return;
+	      }
+
+	      if (typeof this.fetchCount === "function") {
+	        return this.fetchCount(function (count) {
+	          this.setState({ count: count });
+	        }.bind(this));
+	      }
+
+	      var url = this.constructUrl();
+
+	      jsonp(url, function (err, data) {
+	        if (err) {
+	          console.warn("react-social: jsonp timeout for url " + url);
+	          return this.setState({ count: 0 });
+	        }
+
+	        this.setState({
+	          count: this.extractCount(data)
+	        });
+	      }.bind(this));
+	    },
+
+	    getCount: function getCount() {
+	      return this.state.count;
+	    },
+
+	    render: function render() {
+	      return React.createElement(this.props.element, spread(this.props, ["element", "url", "onCount"]), this.state.count);
+	    }
+	  };
+
+	  var Button = {
+	    displayName: "Button",
+
+	    propTypes: {
+	      element: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.func]),
+	      url: React.PropTypes.string,
+	      media: React.PropTypes.string,
+	      message: React.PropTypes.string,
+	      onClick: React.PropTypes.func,
+	      target: React.PropTypes.string,
+	      windowOptions: React.PropTypes.array,
+	      _open: React.PropTypes.bool
+	    },
+
+	    getDefaultProps: function getDefaultProps() {
+	      var location = "";
+
+	      if (isBrowser()) {
+	        location = window.location.href;
+	      }
+
+	      return {
+	        element: "button",
+	        url: location,
+	        media: "",
+	        message: "",
+	        onClick: function onClick() {},
+	        windowOptions: [],
+	        _open: true
+	      };
+	    },
+
+	    click: function click(e) {
+	      var url = this.constructUrl();
+	      var target = this.props.target;
+	      var options = this.props.windowOptions.join(',');
+	      this.props.onClick(e, url, target);
+	      if (isBrowser() && this.props._open) {
+	        window.open(url, target, options);
+	      }
+	    },
+
+	    render: function render() {
+	      var other = spread(this.props, ["onClick", "element", "url", "_open", "message", "appId", "media", "windowOptions"]);
+
+	      return React.createElement(this.props.element, assign({ "onClick": this.click }, other));
+	    }
+	  };
+
+	  var DefaultBlankTarget = {
+	    getDefaultProps: function getDefaultProps() {
+	      return { target: "_blank" };
+	    }
+	  };
+
+	  /* Counts */
+	  exports.FacebookCount = React.createClass({
+	    displayName: "FacebookCount",
+
+	    mixins: [Count],
+
+	    constructUrl: function constructUrl() {
+	      var url = "https://graph.facebook.com/?callback=@&id=" + encodeURIComponent(this.props.url);
+	      return url;
+	    },
+
+	    extractCount: function extractCount(data) {
+	      if (!data || !data.share || !data.share.share_count) {
+	        return 0;
+	      }
+
+	      return data.share.share_count;
+	    }
+	  });
+
+	  exports.TwitterCount = React.createClass({
+	    displayName: "TwitterCount",
+
+	    mixins: [Count],
+
+	    constructUrl: function constructUrl() {
+	      return "https://count.donreach.com/?callback=@&url=" + encodeURIComponent(this.props.url) + "&providers=all";
+	    },
+
+	    extractCount: function extractCount(data) {
+	      return data.shares.twitter || 0;
+	    }
+	  });
+
+	  exports.GooglePlusCount = React.createClass({
+	    displayName: "GooglePlusCount",
+
+	    mixins: [Count],
+
+	    constructUrl: function constructUrl() {
+	      return "https://count.donreach.com/?callback=@&url=" + encodeURIComponent(this.props.url) + "&providers=google";
+	    },
+
+	    extractCount: function extractCount(data) {
+	      return data.shares.google || 0;
+	    }
+	  });
+
+	  exports.PinterestCount = React.createClass({
+	    displayName: "PinterestCount",
+
+	    mixins: [Count],
+
+	    constructUrl: function constructUrl() {
+	      return "https://api.pinterest.com/v1/urls/count.json?callback=@&url=" + encodeURIComponent(this.props.url);
+	    },
+
+	    extractCount: function extractCount(data) {
+	      return data.count || 0;
+	    }
+	  });
+
+	  exports.LinkedInCount = React.createClass({
+	    displayName: "LinkedInCount",
+
+	    mixins: [Count],
+
+	    constructUrl: function constructUrl() {
+	      return "https://www.linkedin.com/countserv/count/share?url=" + encodeURIComponent(this.props.url) + "&callback=@&format=jsonp";
+	    },
+
+	    extractCount: function extractCount(data) {
+	      return data.count || 0;
+	    }
+	  });
+
+	  exports.RedditCount = React.createClass({
+	    displayName: "RedditCount",
+
+	    mixins: [Count],
+
+	    constructUrl: function constructUrl() {
+	      return "https://www.reddit.com/api/info.json?jsonp=@&url=" + encodeURIComponent(this.props.url);
+	    },
+
+	    extractCount: function extractCount(data) {
+	      var count = 0;
+	      var chs = data.data.children;
+
+	      for (var i = 0; i < chs.length; i++) {
+	        count += chs[i].data.score;
+	      }
+
+	      return count;
+	    }
+	  });
+
+	  exports.VKontakteCount = React.createClass({
+	    displayName: "VKontakteCount",
+
+	    mixins: [Count],
+
+	    fetchCount: function fetchCount(cb) {
+	      var index = Math.floor(Math.random() * 10000);
+	      var url = "https://vkontakte.ru/share.php?act=count&index=" + index + "&url=" + encodeURIComponent(this.props.url);
+	      captureVKCallback(index, cb);
+	      jsonp(url);
+	    }
+	  });
+
+	  exports.TumblrCount = React.createClass({
+	    displayName: "TumblrCount",
+
+	    mixins: [Count],
+
+	    constructUrl: function constructUrl() {
+	      return "http://api.tumblr.com/v2/share/stats?url=" + encodeURIComponent(this.props.url) + "&callback=@";
+	    },
+
+	    extractCount: function extractCount(data) {
+	      return data.response.note_count || 0;
+	    }
+	  });
+
+	  exports.PocketCount = React.createClass({
+	    displayName: "PocketCount",
+
+	    mixins: [Count],
+
+	    constructUrl: function constructUrl() {
+	      return "https://count.donreach.com/?callback=@&url=" + encodeURIComponent(this.props.url) + "&providers=pocket";
+	    },
+
+	    extractCount: function extractCount(data) {
+	      return data.shares.pocket || 0;
+	    }
+	  });
+
+	  /* Buttons */
+	  exports.FacebookButton = React.createClass({
+	    displayName: "FacebookButton",
+
+	    mixins: [Button, DefaultBlankTarget],
+
+	    propTypes: {
+	      appId: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.number]).isRequired
+	    },
+
+	    constructUrl: function constructUrl() {
+	      if (this.props.sharer) {
+	        return "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(this.props.url);
+	      }
+
+	      return "https://www.facebook.com/dialog/feed?" + "app_id=" + encodeURIComponent(this.props.appId) + "&display=popup&caption=" + encodeURIComponent(this.props.message) + "&link=" + encodeURIComponent(this.props.url) + "&redirect_uri=" + encodeURIComponent("https://www.facebook.com/");
+	    }
+	  });
+
+	  exports.TwitterButton = React.createClass({
+	    displayName: "TwitterButton",
+
+	    mixins: [Button, DefaultBlankTarget],
+
+	    constructUrl: function constructUrl() {
+	      var msg = this.props.message === "" ? this.props.url : this.props.message + " " + this.props.url;
+	      return "https://twitter.com/intent/tweet?text=" + encodeURIComponent(msg);
+	    }
+	  });
+
+	  exports.EmailButton = React.createClass({
+	    displayName: "EmailButton",
+
+	    mixins: [Button],
+
+	    getDefaultProps: function getDefaultProps() {
+	      return { target: "_self" };
+	    },
+
+	    constructUrl: function constructUrl() {
+	      return "mailto:?subject=" + encodeURIComponent(this.props.message) + "&body=" + encodeURIComponent(this.props.url);
+	    }
+	  });
+
+	  exports.PinterestButton = React.createClass({
+	    displayName: "PinterestButton",
+
+	    mixins: [Button, DefaultBlankTarget],
+
+	    propTypes: {
+	      media: React.PropTypes.string.isRequired
+	    },
+
+	    constructUrl: function constructUrl() {
+	      var url = "https://pinterest.com/pin/create/button/?url=" + encodeURIComponent(this.props.url) + "&media=" + encodeURIComponent(this.props.media) + "&description=" + encodeURIComponent(this.props.message);
+	      return url;
+	    }
+	  });
+
+	  exports.VKontakteButton = React.createClass({
+	    displayName: "VKontakteButton",
+
+	    mixins: [Button, DefaultBlankTarget],
+
+	    constructUrl: function constructUrl() {
+	      return "http://vk.com/share.php?url=" + encodeURIComponent(this.props.url);
+	    }
+	  });
+
+	  exports.GooglePlusButton = React.createClass({
+	    displayName: "GooglePlusButton",
+
+	    mixins: [Button, DefaultBlankTarget],
+
+	    constructUrl: function constructUrl() {
+	      return "https://plus.google.com/share?url=" + encodeURIComponent(this.props.url);
+	    }
+	  });
+
+	  exports.RedditButton = React.createClass({
+	    displayName: "RedditButton",
+
+	    mixins: [Button, DefaultBlankTarget],
+
+	    constructUrl: function constructUrl() {
+	      return "https://www.reddit.com/submit?url=" + encodeURIComponent(this.props.url);
+	    }
+	  });
+
+	  exports.LinkedInButton = React.createClass({
+	    displayName: "LinkedInButton",
+
+	    mixins: [Button, DefaultBlankTarget],
+
+	    constructUrl: function constructUrl() {
+	      return "https://www.linkedin.com/shareArticle?url=" + encodeURIComponent(this.props.url);
+	    }
+	  });
+
+	  exports.XingButton = React.createClass({
+	    displayName: "XingButton",
+
+	    mixins: [Button, DefaultBlankTarget],
+
+	    constructUrl: function constructUrl() {
+	      return "https://www.xing.com/app/user?op=share;url=" + encodeURIComponent(this.props.url) + ";title=" + encodeURIComponent(this.props.message);
+	    }
+	  });
+
+	  exports.TumblrButton = React.createClass({
+	    displayName: "TumblrButton",
+
+	    mixins: [Button, DefaultBlankTarget],
+
+	    constructUrl: function constructUrl() {
+	      return "https://www.tumblr.com/widgets/share/tool?posttype=link&title=" + encodeURIComponent(this.props.message) + "&content=" + encodeURIComponent(this.props.url) + "&canonicalUrl=" + encodeURIComponent(this.props.url) + "&shareSource=tumblr_share_button";
+	    }
+	  });
+
+	  exports.PocketButton = React.createClass({
+	    displayName: "PocketButton",
+
+	    mixins: [Button, DefaultBlankTarget],
+
+	    constructUrl: function constructUrl() {
+	      return "https://getpocket.com/save?url=" + encodeURIComponent(this.props.url) + "&title=" + encodeURIComponent(this.props.message);
+	    }
+	  });
+
+	  return exports;
+	});
+
+/***/ },
+/* 284 */
+/***/ function(module, exports, __webpack_require__) {
+
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(284);
+	var content = __webpack_require__(285);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(286)(content, {});
+	var update = __webpack_require__(287)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -27010,10 +27553,10 @@
 	}
 
 /***/ },
-/* 284 */
+/* 285 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(285)();
+	exports = module.exports = __webpack_require__(286)();
 	// imports
 
 
@@ -27024,7 +27567,7 @@
 
 
 /***/ },
-/* 285 */
+/* 286 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -27079,7 +27622,7 @@
 	};
 
 /***/ },
-/* 286 */
+/* 287 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -27331,7 +27874,7 @@
 
 
 /***/ },
-/* 287 */
+/* 288 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -27339,7 +27882,7 @@
 	exports.US = [{ value: 'AL', label: 'Alabama' }, { value: 'AK', label: 'Alaska' }, { value: 'AZ', label: 'Arizona' }, { value: 'AR', label: 'Arkansas' }, { value: 'CA', label: 'California' }, { value: 'CO', label: 'Colorado' }, { value: 'CT', label: 'Connecticut' }, { value: 'DE', label: 'Delaware' }, { value: 'FL', label: 'Florida' }, { value: 'GA', label: 'Georgia' }, { value: 'HI', label: 'Hawaii' }, { value: 'ID', label: 'Idaho' }, { value: 'IL', label: 'Illinois' }, { value: 'IN', label: 'Indiana' }, { value: 'IA', label: 'Iowa' }, { value: 'KS', label: 'Kansas' }, { value: 'KY', label: 'Kentucky' }, { value: 'LA', label: 'Louisiana' }, { value: 'ME', label: 'Maine' }, { value: 'MD', label: 'Maryland' }, { value: 'MA', label: 'Massachusetts' }, { value: 'MI', label: 'Michigan' }, { value: 'MN', label: 'Minnesota' }, { value: 'MS', label: 'Mississippi' }, { value: 'MO', label: 'Missouri' }, { value: 'MT', label: 'Montana' }, { value: 'NE', label: 'Nebraska' }, { value: 'NV', label: 'Nevada' }, { value: 'NH', label: 'New Hampshire' }, { value: 'NJ', label: 'New Jersey' }, { value: 'NM', label: 'New Mexico' }, { value: 'NY', label: 'New York' }, { value: 'NC', label: 'North Carolina' }, { value: 'ND', label: 'North Dakota' }, { value: 'OH', label: 'Ohio' }, { value: 'OK', label: 'Oklahoma' }, { value: 'OR', label: 'Oregon' }, { value: 'PA', label: 'Pennsylvania' }, { value: 'RI', label: 'Rhode Island' }, { value: 'SC', label: 'South Carolina' }, { value: 'SD', label: 'South Dakota' }, { value: 'TN', label: 'Tennessee' }, { value: 'TX', label: 'Texas' }, { value: 'UT', label: 'Utah' }, { value: 'VT', label: 'Vermont' }, { value: 'VA', label: 'Virginia' }, { value: 'WA', label: 'Washington' }, { value: 'WV', label: 'West Virginia' }, { value: 'WI', label: 'Wisconsin' }, { value: 'WY', label: 'Wyoming' }];
 
 /***/ },
-/* 288 */
+/* 289 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -29792,1820 +30335,1846 @@
 	}];
 
 /***/ },
-/* 289 */
+/* 290 */
 /***/ function(module, exports) {
 
-	'use strict';
+	"use strict";
 
 	exports.AK = [{
-	  'label': 'Anchorage',
-	  'value': 'Anchorage'
+	    "label": "Anchorage, AK",
+	    "value": "Anchorage, AK"
 	}, {
-	  'label': 'Balance of Alaska nonmetropolitan area',
-	  'value': 'Balance of Alaska nonmetropolitan area'
+	    "label": "Balance of Alaska nonmetropolitan area",
+	    "value": "Balance of Alaska nonmetropolitan area"
 	}, {
-	  'label': 'Fairbanks',
-	  'value': 'Fairbanks'
+	    "label": "Fairbanks, AK",
+	    "value": "Fairbanks, AK"
 	}, {
-	  'label': 'Southeast Alaska nonmetropolitan area',
-	  'value': 'Southeast Alaska nonmetropolitan area'
+	    "label": "Southeast Alaska nonmetropolitan area",
+	    "value": "Southeast Alaska nonmetropolitan area"
 	}];
 
 	exports.AL = [{
-	  'label': 'Anniston-Oxford-Jacksonville',
-	  'value': 'Anniston-Oxford-Jacksonville'
+	    "label": "Anniston-Oxford-Jacksonville, AL",
+	    "value": "Anniston-Oxford-Jacksonville, AL"
 	}, {
-	  'label': 'Auburn-Opelika',
-	  'value': 'Auburn-Opelika'
+	    "label": "Auburn-Opelika, AL",
+	    "value": "Auburn-Opelika, AL"
 	}, {
-	  'label': 'Birmingham-Hoover',
-	  'value': 'Birmingham-Hoover'
+	    "label": "Birmingham-Hoover, AL",
+	    "value": "Birmingham-Hoover, AL"
 	}, {
-	  'label': 'Daphne-Fairhope-Foley',
-	  'value': 'Daphne-Fairhope-Foley'
+	    "label": "Daphne-Fairhope-Foley, AL",
+	    "value": "Daphne-Fairhope-Foley, AL"
 	}, {
-	  'label': 'Decatur',
-	  'value': 'Decatur'
+	    "label": "Decatur, AL",
+	    "value": "Decatur, AL"
 	}, {
-	  'label': 'Dothan',
-	  'value': 'Dothan'
+	    "label": "Dothan, AL",
+	    "value": "Dothan, AL"
 	}, {
-	  'label': 'Florence-Muscle Shoals',
-	  'value': 'Florence-Muscle Shoals'
+	    "label": "Florence-Muscle Shoals, AL",
+	    "value": "Florence-Muscle Shoals, AL"
 	}, {
-	  'label': 'Gadsden',
-	  'value': 'Gadsden'
+	    "label": "Gadsden, AL",
+	    "value": "Gadsden, AL"
 	}, {
-	  'label': 'Huntsville',
-	  'value': 'Huntsville'
+	    "label": "Huntsville, AL",
+	    "value": "Huntsville, AL"
 	}, {
-	  'label': 'Mobile',
-	  'value': 'Mobile'
+	    "label": "Mobile, AL",
+	    "value": "Mobile, AL"
 	}, {
-	  'label': 'Montgomery',
-	  'value': 'Montgomery'
+	    "label": "Montgomery, AL",
+	    "value": "Montgomery, AL"
 	}, {
-	  'label': 'Northeast Alabama nonmetropolitan area',
-	  'value': 'Northeast Alabama nonmetropolitan area'
+	    "label": "Northeast Alabama nonmetropolitan area",
+	    "value": "Northeast Alabama nonmetropolitan area"
 	}, {
-	  'label': 'Northwest Alabama nonmetropolitan area',
-	  'value': 'Northwest Alabama nonmetropolitan area'
+	    "label": "Northwest Alabama nonmetropolitan area",
+	    "value": "Northwest Alabama nonmetropolitan area"
 	}, {
-	  'label': 'Southeast Alabama nonmetropolitan area',
-	  'value': 'Southeast Alabama nonmetropolitan area'
+	    "label": "Southeast Alabama nonmetropolitan area",
+	    "value": "Southeast Alabama nonmetropolitan area"
 	}, {
-	  'label': 'Southwest Alabama nonmetropolitan area',
-	  'value': 'Southwest Alabama nonmetropolitan area'
+	    "label": "Southwest Alabama nonmetropolitan area",
+	    "value": "Southwest Alabama nonmetropolitan area"
 	}, {
-	  'label': 'Tuscaloosa',
-	  'value': 'Tuscaloosa'
+	    "label": "Tuscaloosa, AL",
+	    "value": "Tuscaloosa, AL"
 	}];
-	exports.AZ = [{
-	  'label': 'Arizona nonmetropolitan area',
-	  'value': 'Arizona nonmetropolitan area'
-	}, {
-	  'label': 'Flagstaff',
-	  'value': 'Flagstaff'
-	}, {
-	  'label': 'Lake Havasu City-Kingman',
-	  'value': 'Lake Havasu City-Kingman'
-	}, {
-	  'label': 'Phoenix-Mesa-Scottsdale',
-	  'value': 'Phoenix-Mesa-Scottsdale'
-	}, {
-	  'label': 'Prescott',
-	  'value': 'Prescott'
-	}, {
-	  'label': 'Sierra Vista-Douglas',
-	  'value': 'Sierra Vista-Douglas'
-	}, {
-	  'label': 'Tucson',
-	  'value': 'Tucson'
-	}, {
-	  'label': 'Yuma',
-	  'value': 'Yuma'
-	}];
+
 	exports.AR = [{
-	  'label': 'East Arkansas nonmetropolitan area',
-	  'value': 'East Arkansas nonmetropolitan area'
+	    "label": "East Arkansas nonmetropolitan area",
+	    "value": "East Arkansas nonmetropolitan area"
 	}, {
-	  'label': 'Fayetteville-Springdale-Rogers, AR-MO',
-	  'value': 'Fayetteville-Springdale-Rogers, AR-MO'
+	    "label": "Fayetteville-Springdale-Rogers, AR-MO",
+	    "value": "Fayetteville-Springdale-Rogers, AR-MO"
 	}, {
-	  'label': 'Fort Smith, AR-OK',
-	  'value': 'Fort Smith, AR-OK'
+	    "label": "Fort Smith, AR-OK",
+	    "value": "Fort Smith, AR-OK"
 	}, {
-	  'label': 'Hot Springs',
-	  'value': 'Hot Springs'
+	    "label": "Hot Springs, AR",
+	    "value": "Hot Springs, AR"
 	}, {
-	  'label': 'Jonesboro',
-	  'value': 'Jonesboro'
+	    "label": "Jonesboro, AR",
+	    "value": "Jonesboro, AR"
 	}, {
-	  'label': 'Little Rock-North Little Rock-Conway',
-	  'value': 'Little Rock-North Little Rock-Conway'
+	    "label": "Little Rock-North Little Rock-Conway, AR",
+	    "value": "Little Rock-North Little Rock-Conway, AR"
 	}, {
-	  'label': 'North Arkansas nonmetropolitan area',
-	  'value': 'North Arkansas nonmetropolitan area'
+	    "label": "North Arkansas nonmetropolitan area",
+	    "value": "North Arkansas nonmetropolitan area"
 	}, {
-	  'label': 'Pine Bluff',
-	  'value': 'Pine Bluff'
+	    "label": "Pine Bluff, AR",
+	    "value": "Pine Bluff, AR"
 	}, {
-	  'label': 'South Arkansas nonmetropolitan area',
-	  'value': 'South Arkansas nonmetropolitan area'
+	    "label": "South Arkansas nonmetropolitan area",
+	    "value": "South Arkansas nonmetropolitan area"
 	}, {
-	  'label': 'West Arkansas nonmetropolitan area',
-	  'value': 'West Arkansas nonmetropolitan area'
+	    "label": "West Arkansas nonmetropolitan area",
+	    "value": "West Arkansas nonmetropolitan area"
 	}];
+
+	exports.AZ = [{
+	    "label": "Arizona nonmetropolitan area",
+	    "value": "Arizona nonmetropolitan area"
+	}, {
+	    "label": "Flagstaff, AZ",
+	    "value": "Flagstaff, AZ"
+	}, {
+	    "label": "Lake Havasu City-Kingman, AZ",
+	    "value": "Lake Havasu City-Kingman, AZ"
+	}, {
+	    "label": "Phoenix-Mesa-Scottsdale, AZ",
+	    "value": "Phoenix-Mesa-Scottsdale, AZ"
+	}, {
+	    "label": "Prescott, AZ",
+	    "value": "Prescott, AZ"
+	}, {
+	    "label": "Sierra Vista-Douglas, AZ",
+	    "value": "Sierra Vista-Douglas, AZ"
+	}, {
+	    "label": "Tucson, AZ",
+	    "value": "Tucson, AZ"
+	}, {
+	    "label": "Yuma, AZ",
+	    "value": "Yuma, AZ"
+	}];
+
 	exports.CA = [{
-	  'label': 'Anaheim-Santa Ana-Irvine, CA Metropolitan Division',
-	  'value': 'Anaheim-Santa Ana-Irvine, CA Metropolitan Division'
+	    "label": "Anaheim-Santa Ana-Irvine, CA Metropolitan Division",
+	    "value": "Anaheim-Santa Ana-Irvine, CA Metropolitan Division"
 	}, {
-	  'label': 'Bakersfield',
-	  'value': 'Bakersfield'
+	    "label": "Bakersfield, CA",
+	    "value": "Bakersfield, CA"
 	}, {
-	  'label': 'Chico',
-	  'value': 'Chico'
+	    "label": "Chico, CA",
+	    "value": "Chico, CA"
 	}, {
-	  'label': 'Eastern Sierra Region of California nonmetropolitan area',
-	  'value': 'Eastern Sierra Region of California nonmetropolitan area'
+	    "label": "Eastern Sierra Region of California nonmetropolitan area",
+	    "value": "Eastern Sierra Region of California nonmetropolitan area"
 	}, {
-	  'label': 'El Centro',
-	  'value': 'El Centro'
+	    "label": "El Centro, CA",
+	    "value": "El Centro, CA"
 	}, {
-	  'label': 'Fresno',
-	  'value': 'Fresno'
+	    "label": "Fresno, CA",
+	    "value": "Fresno, CA"
 	}, {
-	  'label': 'Hanford-Corcoran',
-	  'value': 'Hanford-Corcoran'
+	    "label": "Hanford-Corcoran, CA",
+	    "value": "Hanford-Corcoran, CA"
 	}, {
-	  'label': 'Los Angeles-Long Beach-Glendale, CA Metropolitan Division',
-	  'value': 'Los Angeles-Long Beach-Glendale, CA Metropolitan Division'
+	    "label": "Los Angeles-Long Beach-Glendale, CA Metropolitan Division",
+	    "value": "Los Angeles-Long Beach-Glendale, CA Metropolitan Division"
 	}, {
-	  'label': 'Madera',
-	  'value': 'Madera'
+	    "label": "Madera, CA",
+	    "value": "Madera, CA"
 	}, {
-	  'label': 'Merced',
-	  'value': 'Merced'
+	    "label": "Merced, CA",
+	    "value": "Merced, CA"
 	}, {
-	  'label': 'Modesto',
-	  'value': 'Modesto'
+	    "label": "Modesto, CA",
+	    "value": "Modesto, CA"
 	}, {
-	  'label': 'Mother Lode Region of California nonmetropolitan area',
-	  'value': 'Mother Lode Region of California nonmetropolitan area'
+	    "label": "Mother Lode Region of California nonmetropolitan area",
+	    "value": "Mother Lode Region of California nonmetropolitan area"
 	}, {
-	  'label': 'Napa',
-	  'value': 'Napa'
+	    "label": "Napa, CA",
+	    "value": "Napa, CA"
 	}, {
-	  'label': 'North Coast Region of California nonmetropolitan area',
-	  'value': 'North Coast Region of California nonmetropolitan area'
+	    "label": "North Coast Region of California nonmetropolitan area",
+	    "value": "North Coast Region of California nonmetropolitan area"
 	}, {
-	  'label': 'North Valley Region of California nonmetropolitan area',
-	  'value': 'North Valley Region of California nonmetropolitan area'
+	    "label": "North Valley Region of California nonmetropolitan area",
+	    "value": "North Valley Region of California nonmetropolitan area"
 	}, {
-	  'label': 'Northern Mountains Region of California nonmetropolitan area',
-	  'value': 'Northern Mountains Region of California nonmetropolitan area'
+	    "label": "Northern Mountains Region of California nonmetropolitan area",
+	    "value": "Northern Mountains Region of California nonmetropolitan area"
 	}, {
-	  'label': 'Oakland-Hayward-Berkeley, CA Metropolitan Division',
-	  'value': 'Oakland-Hayward-Berkeley, CA Metropolitan Division'
+	    "label": "Oakland-Hayward-Berkeley, CA Metropolitan Division",
+	    "value": "Oakland-Hayward-Berkeley, CA Metropolitan Division"
 	}, {
-	  'label': 'Oxnard-Thousand Oaks-Ventura',
-	  'value': 'Oxnard-Thousand Oaks-Ventura'
+	    "label": "Oxnard-Thousand Oaks-Ventura, CA",
+	    "value": "Oxnard-Thousand Oaks-Ventura, CA"
 	}, {
-	  'label': 'Redding',
-	  'value': 'Redding'
+	    "label": "Redding, CA",
+	    "value": "Redding, CA"
 	}, {
-	  'label': 'Riverside-San Bernardino-Ontario',
-	  'value': 'Riverside-San Bernardino-Ontario'
+	    "label": "Riverside-San Bernardino-Ontario, CA",
+	    "value": "Riverside-San Bernardino-Ontario, CA"
 	}, {
-	  'label': 'Sacramento--Roseville--Arden-Arcade',
-	  'value': 'Sacramento--Roseville--Arden-Arcade'
+	    "label": "Sacramento--Roseville--Arden-Arcade, CA",
+	    "value": "Sacramento--Roseville--Arden-Arcade, CA"
 	}, {
-	  'label': 'Salinas',
-	  'value': 'Salinas'
+	    "label": "Salinas, CA",
+	    "value": "Salinas, CA"
 	}, {
-	  'label': 'San Diego-Carlsbad',
-	  'value': 'San Diego-Carlsbad'
+	    "label": "San Diego-Carlsbad, CA",
+	    "value": "San Diego-Carlsbad, CA"
 	}, {
-	  'label': 'San Francisco-Redwood City-South San Francisco, CA Metropolitan Division',
-	  'value': 'San Francisco-Redwood City-South San Francisco, CA Metropolitan Division'
+	    "label": "San Francisco-Redwood City-South San Francisco, CA Metropolitan Division",
+	    "value": "San Francisco-Redwood City-South San Francisco, CA Metropolitan Division"
 	}, {
-	  'label': 'San Jose-Sunnyvale-Santa Clara',
-	  'value': 'San Jose-Sunnyvale-Santa Clara'
+	    "label": "San Jose-Sunnyvale-Santa Clara, CA",
+	    "value": "San Jose-Sunnyvale-Santa Clara, CA"
 	}, {
-	  'label': 'San Luis Obispo-Paso Robles-Arroyo Grande',
-	  'value': 'San Luis Obispo-Paso Robles-Arroyo Grande'
+	    "label": "San Luis Obispo-Paso Robles-Arroyo Grande, CA",
+	    "value": "San Luis Obispo-Paso Robles-Arroyo Grande, CA"
 	}, {
-	  'label': 'San Rafael, CA Metropolitan Division',
-	  'value': 'San Rafael, CA Metropolitan Division'
+	    "label": "San Rafael, CA Metropolitan Division",
+	    "value": "San Rafael, CA Metropolitan Division"
 	}, {
-	  'label': 'Santa Cruz-Watsonville',
-	  'value': 'Santa Cruz-Watsonville'
+	    "label": "Santa Cruz-Watsonville, CA",
+	    "value": "Santa Cruz-Watsonville, CA"
 	}, {
-	  'label': 'Santa Maria-Santa Barbara',
-	  'value': 'Santa Maria-Santa Barbara'
+	    "label": "Santa Maria-Santa Barbara, CA",
+	    "value": "Santa Maria-Santa Barbara, CA"
 	}, {
-	  'label': 'Santa Rosa',
-	  'value': 'Santa Rosa'
+	    "label": "Santa Rosa, CA",
+	    "value": "Santa Rosa, CA"
 	}, {
-	  'label': 'Stockton-Lodi',
-	  'value': 'Stockton-Lodi'
+	    "label": "Stockton-Lodi, CA",
+	    "value": "Stockton-Lodi, CA"
 	}, {
-	  'label': 'Vallejo-Fairfield',
-	  'value': 'Vallejo-Fairfield'
+	    "label": "Vallejo-Fairfield, CA",
+	    "value": "Vallejo-Fairfield, CA"
 	}, {
-	  'label': 'Visalia-Porterville',
-	  'value': 'Visalia-Porterville'
+	    "label": "Visalia-Porterville, CA",
+	    "value": "Visalia-Porterville, CA"
 	}, {
-	  'label': 'Yuba City',
-	  'value': 'Yuba City'
+	    "label": "Yuba City, CA",
+	    "value": "Yuba City, CA"
 	}];
+
 	exports.CO = [{
-	  'label': 'Boulder',
-	  'value': 'Boulder'
+	    "label": "Boulder, CO",
+	    "value": "Boulder, CO"
 	}, {
-	  'label': 'Colorado Springs',
-	  'value': 'Colorado Springs'
+	    "label": "Colorado Springs, CO",
+	    "value": "Colorado Springs, CO"
 	}, {
-	  'label': 'Denver-Aurora-Lakewood',
-	  'value': 'Denver-Aurora-Lakewood'
+	    "label": "Denver-Aurora-Lakewood, CO",
+	    "value": "Denver-Aurora-Lakewood, CO"
 	}, {
-	  'label': 'Eastern and Southern Colorado nonmetropolitan area',
-	  'value': 'Eastern and Southern Colorado nonmetropolitan area'
+	    "label": "Eastern and Southern Colorado nonmetropolitan area",
+	    "value": "Eastern and Southern Colorado nonmetropolitan area"
 	}, {
-	  'label': 'Fort Collins',
-	  'value': 'Fort Collins'
+	    "label": "Fort Collins, CO",
+	    "value": "Fort Collins, CO"
 	}, {
-	  'label': 'Grand Junction',
-	  'value': 'Grand Junction'
+	    "label": "Grand Junction, CO",
+	    "value": "Grand Junction, CO"
 	}, {
-	  'label': 'Greeley',
-	  'value': 'Greeley'
+	    "label": "Greeley, CO",
+	    "value": "Greeley, CO"
 	}, {
-	  'label': 'Northwest Colorado nonmetropolitan area',
-	  'value': 'Northwest Colorado nonmetropolitan area'
+	    "label": "Northwest Colorado nonmetropolitan area",
+	    "value": "Northwest Colorado nonmetropolitan area"
 	}, {
-	  'label': 'Pueblo',
-	  'value': 'Pueblo'
+	    "label": "Pueblo, CO",
+	    "value": "Pueblo, CO"
 	}, {
-	  'label': 'Southwest Colorado nonmetropolitan area',
-	  'value': 'Southwest Colorado nonmetropolitan area'
+	    "label": "Southwest Colorado nonmetropolitan area",
+	    "value": "Southwest Colorado nonmetropolitan area"
 	}];
+
 	exports.CT = [{
-	  'label': 'Bridgeport-Stamford-Norwalk',
-	  'value': 'Bridgeport-Stamford-Norwalk'
+	    "label": "Bridgeport-Stamford-Norwalk, CT",
+	    "value": "Bridgeport-Stamford-Norwalk, CT"
 	}, {
-	  'label': 'Connecticut nonmetropolitan area',
-	  'value': 'Connecticut nonmetropolitan area'
+	    "label": "Connecticut nonmetropolitan area",
+	    "value": "Connecticut nonmetropolitan area"
 	}, {
-	  'label': 'Danbury',
-	  'value': 'Danbury'
+	    "label": "Danbury, CT",
+	    "value": "Danbury, CT"
 	}, {
-	  'label': 'Hartford-West Hartford-East Hartford',
-	  'value': 'Hartford-West Hartford-East Hartford'
+	    "label": "Hartford-West Hartford-East Hartford, CT",
+	    "value": "Hartford-West Hartford-East Hartford, CT"
 	}, {
-	  'label': 'New Haven',
-	  'value': 'New Haven'
+	    "label": "New Haven, CT",
+	    "value": "New Haven, CT"
 	}, {
-	  'label': 'Norwich-New London-Westerly, CT',
-	  'value': 'Norwich-New London-Westerly, CT'
+	    "label": "Norwich-New London-Westerly, CT-RI",
+	    "value": "Norwich-New London-Westerly, CT-RI"
 	}, {
-	  'label': 'Waterbury',
-	  'value': 'Waterbury'
+	    "label": "Waterbury, CT",
+	    "value": "Waterbury, CT"
 	}];
 
 	exports.DE = [{
-	  'label': 'Dover',
-	  'value': 'Dover'
+	    "label": "Dover, DE",
+	    "value": "Dover, DE"
 	}, {
-	  'label': 'Wilmington, DE-MD-NJ Metropolitan Division',
-	  'value': 'Wilmington, DE-MD-NJ Metropolitan Division'
+	    "label": "Wilmington, DE-MD-NJ Metropolitan Division",
+	    "value": "Wilmington, DE-MD-NJ Metropolitan Division"
 	}];
+
 	exports.FL = [{
-	  'label': 'Cape Coral-Fort Myers',
-	  'value': 'Cape Coral-Fort Myers'
+	    "label": "Cape Coral-Fort Myers, FL",
+	    "value": "Cape Coral-Fort Myers, FL"
 	}, {
-	  'label': 'Crestview-Fort Walton Beach-Destin',
-	  'value': 'Crestview-Fort Walton Beach-Destin'
+	    "label": "Crestview-Fort Walton Beach-Destin, FL",
+	    "value": "Crestview-Fort Walton Beach-Destin, FL"
 	}, {
-	  'label': 'Deltona-Daytona Beach-Ormond Beach',
-	  'value': 'Deltona-Daytona Beach-Ormond Beach'
+	    "label": "Deltona-Daytona Beach-Ormond Beach, FL",
+	    "value": "Deltona-Daytona Beach-Ormond Beach, FL"
 	}, {
-	  'label': 'Fort Lauderdale-Pompano Beach-Deerfield Beach, FL Metropolitan Division',
-	  'value': 'Fort Lauderdale-Pompano Beach-Deerfield Beach, FL Metropolitan Division'
+	    "label": "Fort Lauderdale-Pompano Beach-Deerfield Beach, FL Metropolitan Division",
+	    "value": "Fort Lauderdale-Pompano Beach-Deerfield Beach, FL Metropolitan Division"
 	}, {
-	  'label': 'Gainesville',
-	  'value': 'Gainesville'
+	    "label": "Gainesville, FL",
+	    "value": "Gainesville, FL"
 	}, {
-	  'label': 'Homosassa Springs',
-	  'value': 'Homosassa Springs'
+	    "label": "Homosassa Springs, FL",
+	    "value": "Homosassa Springs, FL"
 	}, {
-	  'label': 'Jacksonville',
-	  'value': 'Jacksonville'
+	    "label": "Jacksonville, FL",
+	    "value": "Jacksonville, FL"
 	}, {
-	  'label': 'Lakeland-Winter Haven',
-	  'value': 'Lakeland-Winter Haven'
+	    "label": "Lakeland-Winter Haven, FL",
+	    "value": "Lakeland-Winter Haven, FL"
 	}, {
-	  'label': 'Miami-Miami Beach-Kendall, FL Metropolitan Division',
-	  'value': 'Miami-Miami Beach-Kendall, FL Metropolitan Division'
+	    "label": "Miami-Miami Beach-Kendall, FL Metropolitan Division",
+	    "value": "Miami-Miami Beach-Kendall, FL Metropolitan Division"
 	}, {
-	  'label': 'Naples-Immokalee-Marco Island',
-	  'value': 'Naples-Immokalee-Marco Island'
+	    "label": "Naples-Immokalee-Marco Island, FL",
+	    "value": "Naples-Immokalee-Marco Island, FL"
 	}, {
-	  'label': 'North Port-Sarasota-Bradenton',
-	  'value': 'North Port-Sarasota-Bradenton'
+	    "label": "North Port-Sarasota-Bradenton, FL",
+	    "value": "North Port-Sarasota-Bradenton, FL"
 	}, {
-	  'label': 'Northeast Florida nonmetropolitan area',
-	  'value': 'Northeast Florida nonmetropolitan area'
+	    "label": "Northeast Florida nonmetropolitan area",
+	    "value": "Northeast Florida nonmetropolitan area"
 	}, {
-	  'label': 'Northwest Florida nonmetropolitan area',
-	  'value': 'Northwest Florida nonmetropolitan area'
+	    "label": "Northwest Florida nonmetropolitan area",
+	    "value": "Northwest Florida nonmetropolitan area"
 	}, {
-	  'label': 'Ocala',
-	  'value': 'Ocala'
+	    "label": "Ocala, FL",
+	    "value": "Ocala, FL"
 	}, {
-	  'label': 'Orlando-Kissimmee-Sanford',
-	  'value': 'Orlando-Kissimmee-Sanford'
+	    "label": "Orlando-Kissimmee-Sanford, FL",
+	    "value": "Orlando-Kissimmee-Sanford, FL"
 	}, {
-	  'label': 'Palm Bay-Melbourne-Titusville',
-	  'value': 'Palm Bay-Melbourne-Titusville'
+	    "label": "Palm Bay-Melbourne-Titusville, FL",
+	    "value": "Palm Bay-Melbourne-Titusville, FL"
 	}, {
-	  'label': 'Panama City',
-	  'value': 'Panama City'
+	    "label": "Panama City, FL",
+	    "value": "Panama City, FL"
 	}, {
-	  'label': 'Pensacola-Ferry Pass-Brent',
-	  'value': 'Pensacola-Ferry Pass-Brent'
+	    "label": "Pensacola-Ferry Pass-Brent, FL",
+	    "value": "Pensacola-Ferry Pass-Brent, FL"
 	}, {
-	  'label': 'Port St. Lucie',
-	  'value': 'Port St. Lucie'
+	    "label": "Port St. Lucie, FL",
+	    "value": "Port St. Lucie, FL"
 	}, {
-	  'label': 'Punta Gorda',
-	  'value': 'Punta Gorda'
+	    "label": "Punta Gorda, FL",
+	    "value": "Punta Gorda, FL"
 	}, {
-	  'label': 'Sebastian-Vero Beach',
-	  'value': 'Sebastian-Vero Beach'
+	    "label": "Sebastian-Vero Beach, FL",
+	    "value": "Sebastian-Vero Beach, FL"
 	}, {
-	  'label': 'Sebring',
-	  'value': 'Sebring'
+	    "label": "Sebring, FL",
+	    "value": "Sebring, FL"
 	}, {
-	  'label': 'South Florida nonmetropolitan area',
-	  'value': 'South Florida nonmetropolitan area'
+	    "label": "South Florida nonmetropolitan area",
+	    "value": "South Florida nonmetropolitan area"
 	}, {
-	  'label': 'Tallahassee',
-	  'value': 'Tallahassee'
+	    "label": "Tallahassee, FL",
+	    "value": "Tallahassee, FL"
 	}, {
-	  'label': 'Tampa-St. Petersburg-Clearwater',
-	  'value': 'Tampa-St. Petersburg-Clearwater'
+	    "label": "Tampa-St. Petersburg-Clearwater, FL",
+	    "value": "Tampa-St. Petersburg-Clearwater, FL"
 	}, {
-	  'label': 'The Villages',
-	  'value': 'The Villages'
+	    "label": "The Villages, FL",
+	    "value": "The Villages, FL"
 	}, {
-	  'label': 'West Palm Beach-Boca Raton-Delray Beach, FL Metropolitan Division',
-	  'value': 'West Palm Beach-Boca Raton-Delray Beach, FL Metropolitan Division'
+	    "label": "West Palm Beach-Boca Raton-Delray Beach, FL Metropolitan Division",
+	    "value": "West Palm Beach-Boca Raton-Delray Beach, FL Metropolitan Division"
 	}];
+
 	exports.GA = [{
-	  'label': 'Albany',
-	  'value': 'Albany'
+	    "label": "Albany, GA",
+	    "value": "Albany, GA"
 	}, {
-	  'label': 'Athens-Clarke County',
-	  'value': 'Athens-Clarke County'
+	    "label": "Athens-Clarke County, GA",
+	    "value": "Athens-Clarke County, GA"
 	}, {
-	  'label': 'Atlanta-Sandy Springs-Roswell',
-	  'value': 'Atlanta-Sandy Springs-Roswell'
+	    "label": "Atlanta-Sandy Springs-Roswell, GA",
+	    "value": "Atlanta-Sandy Springs-Roswell, GA"
 	}, {
-	  'label': 'Augusta-Richmond County, GA-SC',
-	  'value': 'Augusta-Richmond County, GA-SC'
+	    "label": "Augusta-Richmond County, GA-SC",
+	    "value": "Augusta-Richmond County, GA-SC"
 	}, {
-	  'label': 'Brunswick',
-	  'value': 'Brunswick'
+	    "label": "Brunswick, GA",
+	    "value": "Brunswick, GA"
 	}, {
-	  'label': 'Columbus, GA-AL',
-	  'value': 'Columbus, GA-AL'
+	    "label": "Columbus, GA-AL",
+	    "value": "Columbus, GA-AL"
 	}, {
-	  'label': 'Dalton',
-	  'value': 'Dalton'
+	    "label": "Dalton, GA",
+	    "value": "Dalton, GA"
 	}, {
-	  'label': 'East Georgia nonmetropolitan area',
-	  'value': 'East Georgia nonmetropolitan area'
+	    "label": "East Georgia nonmetropolitan area",
+	    "value": "East Georgia nonmetropolitan area"
 	}, {
-	  'label': 'Gainesville',
-	  'value': 'Gainesville'
+	    "label": "Gainesville, GA",
+	    "value": "Gainesville, GA"
 	}, {
-	  'label': 'Hinesville',
-	  'value': 'Hinesville'
+	    "label": "Hinesville, GA",
+	    "value": "Hinesville, GA"
 	}, {
-	  'label': 'Macon',
-	  'value': 'Macon'
+	    "label": "Macon, GA",
+	    "value": "Macon, GA"
 	}, {
-	  'label': 'Middle Georgia nonmetropolitan area',
-	  'value': 'Middle Georgia nonmetropolitan area'
+	    "label": "Middle Georgia nonmetropolitan area",
+	    "value": "Middle Georgia nonmetropolitan area"
 	}, {
-	  'label': 'North Georgia nonmetropolitan area',
-	  'value': 'North Georgia nonmetropolitan area'
+	    "label": "North Georgia nonmetropolitan area",
+	    "value": "North Georgia nonmetropolitan area"
 	}, {
-	  'label': 'Rome',
-	  'value': 'Rome'
+	    "label": "Rome, GA",
+	    "value": "Rome, GA"
 	}, {
-	  'label': 'Savannah',
-	  'value': 'Savannah'
+	    "label": "Savannah, GA",
+	    "value": "Savannah, GA"
 	}, {
-	  'label': 'South Georgia nonmetropolitan area',
-	  'value': 'South Georgia nonmetropolitan area'
+	    "label": "South Georgia nonmetropolitan area",
+	    "value": "South Georgia nonmetropolitan area"
 	}, {
-	  'label': 'Valdosta',
-	  'value': 'Valdosta'
+	    "label": "Valdosta, GA",
+	    "value": "Valdosta, GA"
 	}, {
-	  'label': 'Warner Robins',
-	  'value': 'Warner Robins'
+	    "label": "Warner Robins, GA",
+	    "value": "Warner Robins, GA"
 	}];
+
 	exports.HI = [{
-	  'label': 'Hawaii / Kauai nonmetropolitan area',
-	  'value': 'Hawaii / Kauai nonmetropolitan area'
+	    "label": "Hawaii / Kauai nonmetropolitan area",
+	    "value": "Hawaii / Kauai nonmetropolitan area"
 	}, {
-	  'label': 'Kahului-Wailuku-Lahaina',
-	  'value': 'Kahului-Wailuku-Lahaina'
+	    "label": "Kahului-Wailuku-Lahaina, HI",
+	    "value": "Kahului-Wailuku-Lahaina, HI"
 	}, {
-	  'label': 'Urban Honolulu',
-	  'value': 'Urban Honolulu'
+	    "label": "Urban Honolulu, HI",
+	    "value": "Urban Honolulu, HI"
 	}];
 
 	exports.IA = [{
-	  'label': 'Ames',
-	  'value': 'Ames'
+	    "label": "Ames, IA",
+	    "value": "Ames, IA"
 	}, {
-	  'label': 'Cedar Rapids',
-	  'value': 'Cedar Rapids'
+	    "label": "Cedar Rapids, IA",
+	    "value": "Cedar Rapids, IA"
 	}, {
-	  'label': 'Davenport-Moline-Rock Island, I',
-	  'value': 'Davenport-Moline-Rock Island, I'
+	    "label": "Davenport-Moline-Rock Island, IA-IL",
+	    "value": "Davenport-Moline-Rock Island, IA-IL"
 	}, {
-	  'label': 'Des Moines-West Des Moines',
-	  'value': 'Des Moines-West Des Moines'
+	    "label": "Des Moines-West Des Moines, IA",
+	    "value": "Des Moines-West Des Moines, IA"
 	}, {
-	  'label': 'Dubuque',
-	  'value': 'Dubuque'
+	    "label": "Dubuque, IA",
+	    "value": "Dubuque, IA"
 	}, {
-	  'label': 'Iowa City',
-	  'value': 'Iowa City'
+	    "label": "Iowa City, IA",
+	    "value": "Iowa City, IA"
 	}, {
-	  'label': 'Northeast Iowa nonmetropolitan area',
-	  'value': 'Northeast Iowa nonmetropolitan area'
+	    "label": "Northeast Iowa nonmetropolitan area",
+	    "value": "Northeast Iowa nonmetropolitan area"
 	}, {
-	  'label': 'Northwest Iowa nonmetropolitan area',
-	  'value': 'Northwest Iowa nonmetropolitan area'
+	    "label": "Northwest Iowa nonmetropolitan area",
+	    "value": "Northwest Iowa nonmetropolitan area"
 	}, {
-	  'label': 'Sioux City, IA-NE-SD',
-	  'value': 'Sioux City, IA-NE-SD'
+	    "label": "Sioux City, IA-NE-SD",
+	    "value": "Sioux City, IA-NE-SD"
 	}, {
-	  'label': 'Southeast Iowa nonmetropolitan area',
-	  'value': 'Southeast Iowa nonmetropolitan area'
+	    "label": "Southeast Iowa nonmetropolitan area",
+	    "value": "Southeast Iowa nonmetropolitan area"
 	}, {
-	  'label': 'Southwest Iowa nonmetropolitan area',
-	  'value': 'Southwest Iowa nonmetropolitan area'
+	    "label": "Southwest Iowa nonmetropolitan area",
+	    "value": "Southwest Iowa nonmetropolitan area"
 	}, {
-	  'label': 'Waterloo-Cedar Falls',
-	  'value': 'Waterloo-Cedar Falls'
+	    "label": "Waterloo-Cedar Falls, IA",
+	    "value": "Waterloo-Cedar Falls, IA"
 	}];
 
 	exports.ID = [{
-	  'label': 'Boise City',
-	  'value': 'Boise City'
+	    "label": "Boise City, ID",
+	    "value": "Boise City, ID"
 	}, {
-	  'label': "Coeur d'Alene",
-	  'value': "Coeur d'Alene"
+	    "label": "Coeur d'Alene, ID",
+	    "value": "Coeur d'Alene, ID"
 	}, {
-	  'label': 'Idaho Falls',
-	  'value': 'Idaho Falls'
+	    "label": "Idaho Falls, ID",
+	    "value": "Idaho Falls, ID"
 	}, {
-	  'label': 'Lewiston, ID-WA',
-	  'value': 'Lewiston, ID-WA'
+	    "label": "Lewiston, ID-WA",
+	    "value": "Lewiston, ID-WA"
 	}, {
-	  'label': 'Panhandle of Idaho nonmetropolitan area',
-	  'value': 'Panhandle of Idaho nonmetropolitan area'
+	    "label": "Panhandle of Idaho nonmetropolitan area",
+	    "value": "Panhandle of Idaho nonmetropolitan area"
 	}, {
-	  'label': 'Pocatello',
-	  'value': 'Pocatello'
+	    "label": "Pocatello, ID",
+	    "value": "Pocatello, ID"
 	}, {
-	  'label': 'South Central Idaho nonmetropolitan area',
-	  'value': 'South Central Idaho nonmetropolitan area'
+	    "label": "South Central Idaho nonmetropolitan area",
+	    "value": "South Central Idaho nonmetropolitan area"
 	}, {
-	  'label': 'Southeast Idaho nonmetropolitan area',
-	  'value': 'Southeast Idaho nonmetropolitan area'
+	    "label": "Southeast Idaho nonmetropolitan area",
+	    "value": "Southeast Idaho nonmetropolitan area"
 	}, {
-	  'label': 'Southwest Idaho nonmetropolitan area',
-	  'value': 'Southwest Idaho nonmetropolitan area'
+	    "label": "Southwest Idaho nonmetropolitan area",
+	    "value": "Southwest Idaho nonmetropolitan area"
 	}];
 
 	exports.IL = [{
-	  'label': 'Bloomington',
-	  'value': 'Bloomington'
+	    "label": "Bloomington, IL",
+	    "value": "Bloomington, IL"
 	}, {
-	  'label': 'Carbondale-Marion',
-	  'value': 'Carbondale-Marion'
+	    "label": "Carbondale-Marion, IL",
+	    "value": "Carbondale-Marion, IL"
 	}, {
-	  'label': 'Champaign-Urbana',
-	  'value': 'Champaign-Urbana'
+	    "label": "Champaign-Urbana, IL",
+	    "value": "Champaign-Urbana, IL"
 	}, {
-	  'label': 'Chicago-Naperville-Arlington Heights, IL Metropolitan Division',
-	  'value': 'Chicago-Naperville-Arlington Heights, IL Metropolitan Division'
+	    "label": "Chicago-Naperville-Arlington Heights, IL Metropolitan Division",
+	    "value": "Chicago-Naperville-Arlington Heights, IL Metropolitan Division"
 	}, {
-	  'label': 'Danville',
-	  'value': 'Danville'
+	    "label": "Danville, IL",
+	    "value": "Danville, IL"
 	}, {
-	  'label': 'Decatur',
-	  'value': 'Decatur'
+	    "label": "Decatur, IL",
+	    "value": "Decatur, IL"
 	}, {
-	  'label': 'East Central Illinois nonmetropolitan area',
-	  'value': 'East Central Illinois nonmetropolitan area'
+	    "label": "East Central Illinois nonmetropolitan area",
+	    "value": "East Central Illinois nonmetropolitan area"
 	}, {
-	  'label': 'Elgin, IL Metropolitan Division',
-	  'value': 'Elgin, IL Metropolitan Division'
+	    "label": "Elgin, IL Metropolitan Division",
+	    "value": "Elgin, IL Metropolitan Division"
 	}, {
-	  'label': 'Kankakee',
-	  'value': 'Kankakee'
+	    "label": "Kankakee, IL",
+	    "value": "Kankakee, IL"
 	}, {
-	  'label': 'Lake County-Kenosha County, IL-WI Metropolitan Division',
-	  'value': 'Lake County-Kenosha County, IL-WI Metropolitan Division'
+	    "label": "Lake County-Kenosha County, IL-WI Metropolitan Division",
+	    "value": "Lake County-Kenosha County, IL-WI Metropolitan Division"
 	}, {
-	  'label': 'Northwest Illinois nonmetropolitan area',
-	  'value': 'Northwest Illinois nonmetropolitan area'
+	    "label": "Northwest Illinois nonmetropolitan area",
+	    "value": "Northwest Illinois nonmetropolitan area"
 	}, {
-	  'label': 'Peoria',
-	  'value': 'Peoria'
+	    "label": "Peoria, IL",
+	    "value": "Peoria, IL"
 	}, {
-	  'label': 'Rockford',
-	  'value': 'Rockford'
+	    "label": "Rockford, IL",
+	    "value": "Rockford, IL"
 	}, {
-	  'label': 'South Illinois nonmetropolitan area',
-	  'value': 'South Illinois nonmetropolitan area'
+	    "label": "South Illinois nonmetropolitan area",
+	    "value": "South Illinois nonmetropolitan area"
 	}, {
-	  'label': 'Springfield',
-	  'value': 'Springfield'
+	    "label": "Springfield, IL",
+	    "value": "Springfield, IL"
 	}, {
-	  'label': 'West Central Illinois nonmetropolitan area',
-	  'value': 'West Central Illinois nonmetropolitan area'
+	    "label": "West Central Illinois nonmetropolitan area",
+	    "value": "West Central Illinois nonmetropolitan area"
 	}];
 
 	exports.IN = [{
-	  'label': 'Bloomington',
-	  'value': 'Bloomington'
+	    "label": "Bloomington, IN",
+	    "value": "Bloomington, IN"
 	}, {
-	  'label': 'Central Indiana nonmetropolitan area',
-	  'value': 'Central Indiana nonmetropolitan area'
+	    "label": "Central Indiana nonmetropolitan area",
+	    "value": "Central Indiana nonmetropolitan area"
 	}, {
-	  'label': 'Columbus',
-	  'value': 'Columbus'
+	    "label": "Columbus, IN",
+	    "value": "Columbus, IN"
 	}, {
-	  'label': 'Elkhart-Goshen',
-	  'value': 'Elkhart-Goshen'
+	    "label": "Elkhart-Goshen, IN",
+	    "value": "Elkhart-Goshen, IN"
 	}, {
-	  'label': 'Evansville, IN-KY',
-	  'value': 'Evansville, IN-KY'
+	    "label": "Evansville, IN-KY",
+	    "value": "Evansville, IN-KY"
 	}, {
-	  'label': 'Fort Wayne',
-	  'value': 'Fort Wayne'
+	    "label": "Fort Wayne, IN",
+	    "value": "Fort Wayne, IN"
 	}, {
-	  'label': 'Gary, IN Metropolitan Division',
-	  'value': 'Gary, IN Metropolitan Division'
+	    "label": "Gary, IN Metropolitan Division",
+	    "value": "Gary, IN Metropolitan Division"
 	}, {
-	  'label': 'Indianapolis-Carmel-Anderson',
-	  'value': 'Indianapolis-Carmel-Anderson'
+	    "label": "Indianapolis-Carmel-Anderson, IN",
+	    "value": "Indianapolis-Carmel-Anderson, IN"
 	}, {
-	  'label': 'Kokomo',
-	  'value': 'Kokomo'
+	    "label": "Kokomo, IN",
+	    "value": "Kokomo, IN"
 	}, {
-	  'label': 'Lafayette-West Lafayette',
-	  'value': 'Lafayette-West Lafayette'
+	    "label": "Lafayette-West Lafayette, IN",
+	    "value": "Lafayette-West Lafayette, IN"
 	}, {
-	  'label': 'Michigan City-La Porte',
-	  'value': 'Michigan City-La Porte'
+	    "label": "Michigan City-La Porte, IN",
+	    "value": "Michigan City-La Porte, IN"
 	}, {
-	  'label': 'Muncie',
-	  'value': 'Muncie'
+	    "label": "Muncie, IN",
+	    "value": "Muncie, IN"
 	}, {
-	  'label': 'Northern Indiana nonmetropolitan area',
-	  'value': 'Northern Indiana nonmetropolitan area'
+	    "label": "Northern Indiana nonmetropolitan area",
+	    "value": "Northern Indiana nonmetropolitan area"
 	}, {
-	  'label': 'South Bend-Mishawaka, IN-MI',
-	  'value': 'South Bend-Mishawaka, IN-MI'
+	    "label": "South Bend-Mishawaka, IN-MI",
+	    "value": "South Bend-Mishawaka, IN-MI"
 	}, {
-	  'label': 'Southern Indiana nonmetropolitan area',
-	  'value': 'Southern Indiana nonmetropolitan area'
+	    "label": "Southern Indiana nonmetropolitan area",
+	    "value": "Southern Indiana nonmetropolitan area"
 	}, {
-	  'label': 'Terre Haute',
-	  'value': 'Terre Haute'
+	    "label": "Terre Haute, IN",
+	    "value": "Terre Haute, IN"
 	}];
 
 	exports.KS = [{
-	  'label': 'Lawrence',
-	  'value': 'Lawrence'
+	    "label": "Lawrence, KS",
+	    "value": "Lawrence, KS"
 	}, {
-	  'label': 'Manhattan',
-	  'value': 'Manhattan'
+	    "label": "Manhattan, KS",
+	    "value": "Manhattan, KS"
 	}, {
-	  'label': 'Northeast Kansas nonmetropolitan area',
-	  'value': 'Northeast Kansas nonmetropolitan area'
+	    "label": "Northeast Kansas nonmetropolitan area",
+	    "value": "Northeast Kansas nonmetropolitan area"
 	}, {
-	  'label': 'Northwest Kansas nonmetropolitan area',
-	  'value': 'Northwest Kansas nonmetropolitan area'
+	    "label": "Northwest Kansas nonmetropolitan area",
+	    "value": "Northwest Kansas nonmetropolitan area"
 	}, {
-	  'label': 'Southeast Kansas nonmetropolitan area',
-	  'value': 'Southeast Kansas nonmetropolitan area'
+	    "label": "Southeast Kansas nonmetropolitan area",
+	    "value": "Southeast Kansas nonmetropolitan area"
 	}, {
-	  'label': 'Southwest Kansas nonmetropolitan area',
-	  'value': 'Southwest Kansas nonmetropolitan area'
+	    "label": "Southwest Kansas nonmetropolitan area",
+	    "value": "Southwest Kansas nonmetropolitan area"
 	}, {
-	  'label': 'Topeka',
-	  'value': 'Topeka'
+	    "label": "Topeka, KS",
+	    "value": "Topeka, KS"
 	}, {
-	  'label': 'Wichita',
-	  'value': 'Wichita'
+	    "label": "Wichita, KS",
+	    "value": "Wichita, KS"
 	}];
 
 	exports.KY = [{
-	  'label': 'Bowling Green',
-	  'value': 'Bowling Green'
+	    "label": "Bowling Green, KY",
+	    "value": "Bowling Green, KY"
 	}, {
-	  'label': 'Central Kentucky nonmetropolitan area',
-	  'value': 'Central Kentucky nonmetropolitan area'
+	    "label": "Central Kentucky nonmetropolitan area",
+	    "value": "Central Kentucky nonmetropolitan area"
 	}, {
-	  'label': 'East Kentucky nonmetropolitan area',
-	  'value': 'East Kentucky nonmetropolitan area'
+	    "label": "East Kentucky nonmetropolitan area",
+	    "value": "East Kentucky nonmetropolitan area"
 	}, {
-	  'label': 'Elizabethtown-Fort Knox',
-	  'value': 'Elizabethtown-Fort Knox'
+	    "label": "Elizabethtown-Fort Knox, KY",
+	    "value": "Elizabethtown-Fort Knox, KY"
 	}, {
-	  'label': 'Lexington-Fayette',
-	  'value': 'Lexington-Fayette'
+	    "label": "Lexington-Fayette, KY",
+	    "value": "Lexington-Fayette, KY"
 	}, {
-	  'label': 'Louisville/Jefferson County, KY-IN',
-	  'value': 'Louisville/Jefferson County, KY-IN'
+	    "label": "Louisville/Jefferson County, KY-IN",
+	    "value": "Louisville/Jefferson County, KY-IN"
 	}, {
-	  'label': 'Owensboro',
-	  'value': 'Owensboro'
+	    "label": "Owensboro, KY",
+	    "value": "Owensboro, KY"
 	}, {
-	  'label': 'South Central Kentucky nonmetropolitan area',
-	  'value': 'South Central Kentucky nonmetropolitan area'
+	    "label": "South Central Kentucky nonmetropolitan area",
+	    "value": "South Central Kentucky nonmetropolitan area"
 	}, {
-	  'label': 'West Kentucky nonmetropolitan area',
-	  'value': 'West Kentucky nonmetropolitan area'
+	    "label": "West Kentucky nonmetropolitan area",
+	    "value": "West Kentucky nonmetropolitan area"
 	}];
 
 	exports.LA = [{
-	  'label': 'Alexandria',
-	  'value': 'Alexandria'
+	    "label": "Alexandria, LA",
+	    "value": "Alexandria, LA"
 	}, {
-	  'label': 'Baton Rouge',
-	  'value': 'Baton Rouge'
+	    "label": "Baton Rouge, LA",
+	    "value": "Baton Rouge, LA"
 	}, {
-	  'label': 'Central Louisiana nonmetropolitan area',
-	  'value': 'Central Louisiana nonmetropolitan area'
+	    "label": "Central Louisiana nonmetropolitan area",
+	    "value": "Central Louisiana nonmetropolitan area"
 	}, {
-	  'label': 'Hammond',
-	  'value': 'Hammond'
+	    "label": "Hammond, LA",
+	    "value": "Hammond, LA"
 	}, {
-	  'label': 'Houma-Thibodaux',
-	  'value': 'Houma-Thibodaux'
+	    "label": "Houma-Thibodaux, LA",
+	    "value": "Houma-Thibodaux, LA"
 	}, {
-	  'label': 'Lafayette',
-	  'value': 'Lafayette'
+	    "label": "Lafayette, LA",
+	    "value": "Lafayette, LA"
 	}, {
-	  'label': 'Lake Charles',
-	  'value': 'Lake Charles'
+	    "label": "Lake Charles, LA",
+	    "value": "Lake Charles, LA"
 	}, {
-	  'label': 'Monroe',
-	  'value': 'Monroe'
+	    "label": "Monroe, LA",
+	    "value": "Monroe, LA"
 	}, {
-	  'label': 'New Orleans-Metairie',
-	  'value': 'New Orleans-Metairie'
+	    "label": "New Orleans-Metairie, LA",
+	    "value": "New Orleans-Metairie, LA"
 	}, {
-	  'label': 'Northeast Louisiana nonmetropolitan area',
-	  'value': 'Northeast Louisiana nonmetropolitan area'
+	    "label": "Northeast Louisiana nonmetropolitan area",
+	    "value": "Northeast Louisiana nonmetropolitan area"
 	}, {
-	  'label': 'Shreveport-Bossier City',
-	  'value': 'Shreveport-Bossier City'
+	    "label": "Shreveport-Bossier City, LA",
+	    "value": "Shreveport-Bossier City, LA"
 	}, {
-	  'label': 'Southwest Louisiana nonmetropolitan area',
-	  'value': 'Southwest Louisiana nonmetropolitan area'
+	    "label": "Southwest Louisiana nonmetropolitan area",
+	    "value": "Southwest Louisiana nonmetropolitan area"
 	}, {
-	  'label': 'Washington Parish Louisiana nonmetropolitan area',
-	  'value': 'Washington Parish Louisiana nonmetropolitan area'
+	    "label": "Washington Parish Louisiana nonmetropolitan area",
+	    "value": "Washington Parish Louisiana nonmetropolitan area"
 	}];
-	[{
-	  'label': 'Barnstable Town',
-	  'value': 'Barnstable Town'
+
+	exports.MA = [{
+	    "label": "Barnstable Town, MA",
+	    "value": "Barnstable Town, MA"
 	}, {
-	  'label': 'Boston-Cambridge-Newton, MA NECTA Division',
-	  'value': 'Boston-Cambridge-Newton, MA NECTA Division'
+	    "label": "Boston-Cambridge-Newton, MA NECTA Division",
+	    "value": "Boston-Cambridge-Newton, MA NECTA Division"
 	}, {
-	  'label': 'Brockton-Bridgewater-Easton, MA NECTA Division',
-	  'value': 'Brockton-Bridgewater-Easton, MA NECTA Division'
+	    "label": "Brockton-Bridgewater-Easton, MA NECTA Division",
+	    "value": "Brockton-Bridgewater-Easton, MA NECTA Division"
 	}, {
-	  'label': 'Framingham, MA NECTA Division',
-	  'value': 'Framingham, MA NECTA Division'
+	    "label": "Framingham, MA NECTA Division",
+	    "value": "Framingham, MA NECTA Division"
 	}, {
-	  'label': 'Haverhill-Newburyport-Amesbury Town, MA-NH NECTA Division',
-	  'value': 'Haverhill-Newburyport-Amesbury Town, MA-NH NECTA Division'
+	    "label": "Haverhill-Newburyport-Amesbury Town, MA-NH NECTA Division",
+	    "value": "Haverhill-Newburyport-Amesbury Town, MA-NH NECTA Division"
 	}, {
-	  'label': 'Lawrence-Methuen Town-Salem, MA-NH NECTA Division',
-	  'value': 'Lawrence-Methuen Town-Salem, MA-NH NECTA Division'
+	    "label": "Lawrence-Methuen Town-Salem, MA-NH NECTA Division",
+	    "value": "Lawrence-Methuen Town-Salem, MA-NH NECTA Division"
 	}, {
-	  'label': 'Leominster-Gardner',
-	  'value': 'Leominster-Gardner'
+	    "label": "Leominster-Gardner, MA",
+	    "value": "Leominster-Gardner, MA"
 	}, {
-	  'label': 'Lowell-Billerica-Chelmsford, MA-NH NECTA Division',
-	  'value': 'Lowell-Billerica-Chelmsford, MA-NH NECTA Division'
+	    "label": "Lowell-Billerica-Chelmsford, MA-NH NECTA Division",
+	    "value": "Lowell-Billerica-Chelmsford, MA-NH NECTA Division"
 	}, {
-	  'label': 'Lynn-Saugus-Marblehead, MA NECTA Division',
-	  'value': 'Lynn-Saugus-Marblehead, MA NECTA Division'
+	    "label": "Lynn-Saugus-Marblehead, MA NECTA Division",
+	    "value": "Lynn-Saugus-Marblehead, MA NECTA Division"
 	}, {
-	  'label': "Nantucket Island and Martha's Vineyard nonmetropolitan area",
-	  'value': "Nantucket Island and Martha's Vineyard nonmetropolitan area"
+	    "label": "Nantucket Island and Martha's Vineyard nonmetropolitan area",
+	    "value": "Nantucket Island and Martha's Vineyard nonmetropolitan area"
 	}, {
-	  'label': 'New Bedford',
-	  'value': 'New Bedford'
+	    "label": "New Bedford, MA",
+	    "value": "New Bedford, MA"
 	}, {
-	  'label': 'North Central Massachusetts nonmetropolitan area',
-	  'value': 'North Central Massachusetts nonmetropolitan area'
+	    "label": "North Central Massachusetts nonmetropolitan area",
+	    "value": "North Central Massachusetts nonmetropolitan area"
 	}, {
-	  'label': 'Northwest Massachusetts nonmetropolitan area',
-	  'value': 'Northwest Massachusetts nonmetropolitan area'
+	    "label": "Northwest Massachusetts nonmetropolitan area",
+	    "value": "Northwest Massachusetts nonmetropolitan area"
 	}, {
-	  'label': 'Peabody-Salem-Beverly, MA NECTA Division',
-	  'value': 'Peabody-Salem-Beverly, MA NECTA Division'
+	    "label": "Peabody-Salem-Beverly, MA NECTA Division",
+	    "value": "Peabody-Salem-Beverly, MA NECTA Division"
 	}, {
-	  'label': 'Pittsfield',
-	  'value': 'Pittsfield'
+	    "label": "Pittsfield, MA",
+	    "value": "Pittsfield, MA"
 	}, {
-	  'label': 'Southwest Massachusetts nonmetropolitan area',
-	  'value': 'Southwest Massachusetts nonmetropolitan area'
+	    "label": "Southwest Massachusetts nonmetropolitan area",
+	    "value": "Southwest Massachusetts nonmetropolitan area"
 	}, {
-	  'label': 'Springfield, MA-CT',
-	  'value': 'Springfield, MA-CT'
+	    "label": "Springfield, MA-CT",
+	    "value": "Springfield, MA-CT"
 	}, {
-	  'label': 'Taunton-Middleborough-Norton, MA NECTA Division',
-	  'value': 'Taunton-Middleborough-Norton, MA NECTA Division'
+	    "label": "Taunton-Middleborough-Norton, MA NECTA Division",
+	    "value": "Taunton-Middleborough-Norton, MA NECTA Division"
 	}, {
-	  'label': 'Worcester, MA-CT',
-	  'value': 'Worcester, MA-CT'
+	    "label": "Worcester, MA-CT",
+	    "value": "Worcester, MA-CT"
 	}];
 
 	exports.MD = [{
-	  'label': 'Baltimore-Columbia-Towson',
-	  'value': 'Baltimore-Columbia-Towson'
+	    "label": "Baltimore-Columbia-Towson, MD",
+	    "value": "Baltimore-Columbia-Towson, MD"
 	}, {
-	  'label': 'California-Lexington Park',
-	  'value': 'California-Lexington Park'
+	    "label": "California-Lexington Park, MD",
+	    "value": "California-Lexington Park, MD"
 	}, {
-	  'label': 'Cumberland, MD-WV',
-	  'value': 'Cumberland, MD-WV'
+	    "label": "Cumberland, MD-WV",
+	    "value": "Cumberland, MD-WV"
 	}, {
-	  'label': 'Garrett County, Maryland nonmetropolitan area',
-	  'value': 'Garrett County, Maryland nonmetropolitan area'
+	    "label": "Garrett County, Maryland nonmetropolitan area",
+	    "value": "Garrett County, Maryland nonmetropolitan area"
 	}, {
-	  'label': 'Hagerstown-Martinsburg, M',
-	  'value': 'Hagerstown-Martinsburg, M'
+	    "label": "Hagerstown-Martinsburg, MD-WV",
+	    "value": "Hagerstown-Martinsburg, MD-WV"
 	}, {
-	  'label': 'Salisbury, MD-DE',
-	  'value': 'Salisbury, MD-DE'
+	    "label": "Salisbury, MD-DE",
+	    "value": "Salisbury, MD-DE"
 	}, {
-	  'label': 'Silver Spring-Frederick-Rockville, MD Metropolitan Division',
-	  'value': 'Silver Spring-Frederick-Rockville, MD Metropolitan Division'
+	    "label": "Silver Spring-Frederick-Rockville, MD Metropolitan Division",
+	    "value": "Silver Spring-Frederick-Rockville, MD Metropolitan Division"
 	}, {
-	  'label': 'Upper Eastern Shore of Maryland nonmetropolitan area',
-	  'value': 'Upper Eastern Shore of Maryland nonmetropolitan area'
+	    "label": "Upper Eastern Shore of Maryland nonmetropolitan area",
+	    "value": "Upper Eastern Shore of Maryland nonmetropolitan area"
 	}];
 
 	exports.ME = [{
-	  'label': 'Bangor',
-	  'value': 'Bangor'
+	    "label": "Bangor, ME",
+	    "value": "Bangor, ME"
 	}, {
-	  'label': 'Lewiston-Auburn',
-	  'value': 'Lewiston-Auburn'
+	    "label": "Lewiston-Auburn, ME",
+	    "value": "Lewiston-Auburn, ME"
 	}, {
-	  'label': 'Northeast Maine nonmetropolitan area',
-	  'value': 'Northeast Maine nonmetropolitan area'
+	    "label": "Northeast Maine nonmetropolitan area",
+	    "value": "Northeast Maine nonmetropolitan area"
 	}, {
-	  'label': 'Portland-South Portland',
-	  'value': 'Portland-South Portland'
+	    "label": "Portland-South Portland, ME",
+	    "value": "Portland-South Portland, ME"
 	}, {
-	  'label': 'Southwest Maine nonmetropolitan area',
-	  'value': 'Southwest Maine nonmetropolitan area'
+	    "label": "Southwest Maine nonmetropolitan area",
+	    "value": "Southwest Maine nonmetropolitan area"
 	}];
 
 	exports.MI = [{
-	  'label': 'Ann Arbor',
-	  'value': 'Ann Arbor'
+	    "label": "Ann Arbor, MI",
+	    "value": "Ann Arbor, MI"
 	}, {
-	  'label': 'Balance of Lower Peninsula of Michigan nonmetropolitan area',
-	  'value': 'Balance of Lower Peninsula of Michigan nonmetropolitan area'
+	    "label": "Balance of Lower Peninsula of Michigan nonmetropolitan area",
+	    "value": "Balance of Lower Peninsula of Michigan nonmetropolitan area"
 	}, {
-	  'label': 'Battle Creek',
-	  'value': 'Battle Creek'
+	    "label": "Battle Creek, MI",
+	    "value": "Battle Creek, MI"
 	}, {
-	  'label': 'Bay City',
-	  'value': 'Bay City'
+	    "label": "Bay City, MI",
+	    "value": "Bay City, MI"
 	}, {
-	  'label': 'Detroit-Dearborn-Livonia, MI Metropolitan Division',
-	  'value': 'Detroit-Dearborn-Livonia, MI Metropolitan Division'
+	    "label": "Detroit-Dearborn-Livonia, MI Metropolitan Division",
+	    "value": "Detroit-Dearborn-Livonia, MI Metropolitan Division"
 	}, {
-	  'label': 'Flint',
-	  'value': 'Flint'
+	    "label": "Flint, MI",
+	    "value": "Flint, MI"
 	}, {
-	  'label': 'Grand Rapids-Wyoming',
-	  'value': 'Grand Rapids-Wyoming'
+	    "label": "Grand Rapids-Wyoming, MI",
+	    "value": "Grand Rapids-Wyoming, MI"
 	}, {
-	  'label': 'Jackson',
-	  'value': 'Jackson'
+	    "label": "Jackson, MI",
+	    "value": "Jackson, MI"
 	}, {
-	  'label': 'Kalamazoo-Portage',
-	  'value': 'Kalamazoo-Portage'
+	    "label": "Kalamazoo-Portage, MI",
+	    "value": "Kalamazoo-Portage, MI"
 	}, {
-	  'label': 'Lansing-East Lansing',
-	  'value': 'Lansing-East Lansing'
+	    "label": "Lansing-East Lansing, MI",
+	    "value": "Lansing-East Lansing, MI"
 	}, {
-	  'label': 'Midland',
-	  'value': 'Midland'
+	    "label": "Midland, MI",
+	    "value": "Midland, MI"
 	}, {
-	  'label': 'Monroe',
-	  'value': 'Monroe'
+	    "label": "Monroe, MI",
+	    "value": "Monroe, MI"
 	}, {
-	  'label': 'Muskegon',
-	  'value': 'Muskegon'
+	    "label": "Muskegon, MI",
+	    "value": "Muskegon, MI"
 	}, {
-	  'label': 'Niles-Benton Harbor',
-	  'value': 'Niles-Benton Harbor'
+	    "label": "Niles-Benton Harbor, MI",
+	    "value": "Niles-Benton Harbor, MI"
 	}, {
-	  'label': 'Northeast Lower Peninsula of Michigan nonmetropolitan area',
-	  'value': 'Northeast Lower Peninsula of Michigan nonmetropolitan area'
+	    "label": "Northeast Lower Peninsula of Michigan nonmetropolitan area",
+	    "value": "Northeast Lower Peninsula of Michigan nonmetropolitan area"
 	}, {
-	  'label': 'Northwest Lower Peninsula of Michigan nonmetropolitan area',
-	  'value': 'Northwest Lower Peninsula of Michigan nonmetropolitan area'
+	    "label": "Northwest Lower Peninsula of Michigan nonmetropolitan area",
+	    "value": "Northwest Lower Peninsula of Michigan nonmetropolitan area"
 	}, {
-	  'label': 'Saginaw',
-	  'value': 'Saginaw'
+	    "label": "Saginaw, MI",
+	    "value": "Saginaw, MI"
 	}, {
-	  'label': 'Upper Peninsula of Michigan nonmetropolitan area',
-	  'value': 'Upper Peninsula of Michigan nonmetropolitan area'
+	    "label": "Upper Peninsula of Michigan nonmetropolitan area",
+	    "value": "Upper Peninsula of Michigan nonmetropolitan area"
 	}, {
-	  'label': 'Warren-Troy-Farmington Hills, MI Metropolitan Division',
-	  'value': 'Warren-Troy-Farmington Hills, MI Metropolitan Division'
+	    "label": "Warren-Troy-Farmington Hills, MI Metropolitan Division",
+	    "value": "Warren-Troy-Farmington Hills, MI Metropolitan Division"
 	}];
 
 	exports.MN = [{
-	  'label': 'Duluth, MN-WI',
-	  'value': 'Duluth, MN-WI'
+	    "label": "Duluth, MN-WI",
+	    "value": "Duluth, MN-WI"
 	}, {
-	  'label': 'Mankato-North Mankato',
-	  'value': 'Mankato-North Mankato'
+	    "label": "Mankato-North Mankato, MN",
+	    "value": "Mankato-North Mankato, MN"
 	}, {
-	  'label': 'Minneapolis-St. Paul-Bloomington, MN-WI',
-	  'value': 'Minneapolis-St. Paul-Bloomington, MN-WI'
+	    "label": "Minneapolis-St. Paul-Bloomington, MN-WI",
+	    "value": "Minneapolis-St. Paul-Bloomington, MN-WI"
 	}, {
-	  'label': 'Northeast Minnesota nonmetropolitan area',
-	  'value': 'Northeast Minnesota nonmetropolitan area'
+	    "label": "Northeast Minnesota nonmetropolitan area",
+	    "value": "Northeast Minnesota nonmetropolitan area"
 	}, {
-	  'label': 'Northwest Minnesota nonmetropolitan area',
-	  'value': 'Northwest Minnesota nonmetropolitan area'
+	    "label": "Northwest Minnesota nonmetropolitan area",
+	    "value": "Northwest Minnesota nonmetropolitan area"
 	}, {
-	  'label': 'Rochester',
-	  'value': 'Rochester'
+	    "label": "Rochester, MN",
+	    "value": "Rochester, MN"
 	}, {
-	  'label': 'Southeast Minnesota nonmetropolitan area',
-	  'value': 'Southeast Minnesota nonmetropolitan area'
+	    "label": "Southeast Minnesota nonmetropolitan area",
+	    "value": "Southeast Minnesota nonmetropolitan area"
 	}, {
-	  'label': 'Southwest Minnesota nonmetropolitan area',
-	  'value': 'Southwest Minnesota nonmetropolitan area'
+	    "label": "Southwest Minnesota nonmetropolitan area",
+	    "value": "Southwest Minnesota nonmetropolitan area"
 	}, {
-	  'label': 'St. Cloud',
-	  'value': 'St. Cloud'
+	    "label": "St. Cloud, MN",
+	    "value": "St. Cloud, MN"
 	}];
+
 	exports.MO = [{
-	  'label': 'Cape Girardeau, MO-IL',
-	  'value': 'Cape Girardeau, MO-IL'
+	    "label": "Cape Girardeau, MO-IL",
+	    "value": "Cape Girardeau, MO-IL"
 	}, {
-	  'label': 'Central Missouri nonmetropolitan area',
-	  'value': 'Central Missouri nonmetropolitan area'
+	    "label": "Central Missouri nonmetropolitan area",
+	    "value": "Central Missouri nonmetropolitan area"
 	}, {
-	  'label': 'Columbia',
-	  'value': 'Columbia'
+	    "label": "Columbia, MO",
+	    "value": "Columbia, MO"
 	}, {
-	  'label': 'Jefferson City',
-	  'value': 'Jefferson City'
+	    "label": "Jefferson City, MO",
+	    "value": "Jefferson City, MO"
 	}, {
-	  'label': 'Joplin',
-	  'value': 'Joplin'
+	    "label": "Joplin, MO",
+	    "value": "Joplin, MO"
 	}, {
-	  'label': 'Kansas City, MO-KS',
-	  'value': 'Kansas City, MO-KS'
+	    "label": "Kansas City, MO-KS",
+	    "value": "Kansas City, MO-KS"
 	}, {
-	  'label': 'North Missouri nonmetropolitan area',
-	  'value': 'North Missouri nonmetropolitan area'
+	    "label": "North Missouri nonmetropolitan area",
+	    "value": "North Missouri nonmetropolitan area"
 	}, {
-	  'label': 'Southeast Missouri nonmetropolitan area',
-	  'value': 'Southeast Missouri nonmetropolitan area'
+	    "label": "Southeast Missouri nonmetropolitan area",
+	    "value": "Southeast Missouri nonmetropolitan area"
 	}, {
-	  'label': 'Southwest Missouri nonmetropolitan area',
-	  'value': 'Southwest Missouri nonmetropolitan area'
+	    "label": "Southwest Missouri nonmetropolitan area",
+	    "value": "Southwest Missouri nonmetropolitan area"
 	}, {
-	  'label': 'Springfield',
-	  'value': 'Springfield'
+	    "label": "Springfield, MO",
+	    "value": "Springfield, MO"
 	}, {
-	  'label': 'St. Joseph, MO-KS',
-	  'value': 'St. Joseph, MO-KS'
+	    "label": "St. Joseph, MO-KS",
+	    "value": "St. Joseph, MO-KS"
 	}, {
-	  'label': 'St. Louis, MO-IL',
-	  'value': 'St. Louis, MO-IL'
+	    "label": "St. Louis, MO-IL",
+	    "value": "St. Louis, MO-IL"
 	}];
 
 	exports.MS = [{
-	  'label': 'Gulfport-Biloxi-Pascagoula',
-	  'value': 'Gulfport-Biloxi-Pascagoula'
+	    "label": "Gulfport-Biloxi-Pascagoula, MS",
+	    "value": "Gulfport-Biloxi-Pascagoula, MS"
 	}, {
-	  'label': 'Hattiesburg',
-	  'value': 'Hattiesburg'
+	    "label": "Hattiesburg, MS",
+	    "value": "Hattiesburg, MS"
 	}, {
-	  'label': 'Jackson',
-	  'value': 'Jackson'
+	    "label": "Jackson, MS",
+	    "value": "Jackson, MS"
 	}, {
-	  'label': 'Northeast Mississippi nonmetropolitan area',
-	  'value': 'Northeast Mississippi nonmetropolitan area'
+	    "label": "Northeast Mississippi nonmetropolitan area",
+	    "value": "Northeast Mississippi nonmetropolitan area"
 	}, {
-	  'label': 'Northwest Mississippi nonmetropolitan area',
-	  'value': 'Northwest Mississippi nonmetropolitan area'
+	    "label": "Northwest Mississippi nonmetropolitan area",
+	    "value": "Northwest Mississippi nonmetropolitan area"
 	}, {
-	  'label': 'Southeast Mississippi nonmetropolitan area',
-	  'value': 'Southeast Mississippi nonmetropolitan area'
+	    "label": "Southeast Mississippi nonmetropolitan area",
+	    "value": "Southeast Mississippi nonmetropolitan area"
 	}, {
-	  'label': 'Southwest Mississippi nonmetropolitan area',
-	  'value': 'Southwest Mississippi nonmetropolitan area'
+	    "label": "Southwest Mississippi nonmetropolitan area",
+	    "value": "Southwest Mississippi nonmetropolitan area"
 	}];
 
 	exports.MT = [{
-	  'label': 'Billings',
-	  'value': 'Billings'
+	    "label": "Billings, MT",
+	    "value": "Billings, MT"
 	}, {
-	  'label': 'Central Montana nonmetropolitan area',
-	  'value': 'Central Montana nonmetropolitan area'
+	    "label": "Central Montana nonmetropolitan area",
+	    "value": "Central Montana nonmetropolitan area"
 	}, {
-	  'label': 'East Montana nonmetropolitan area',
-	  'value': 'East Montana nonmetropolitan area'
+	    "label": "East Montana nonmetropolitan area",
+	    "value": "East Montana nonmetropolitan area"
 	}, {
-	  'label': 'Great Falls',
-	  'value': 'Great Falls'
+	    "label": "Great Falls, MT",
+	    "value": "Great Falls, MT"
 	}, {
-	  'label': 'Missoula',
-	  'value': 'Missoula'
+	    "label": "Missoula, MT",
+	    "value": "Missoula, MT"
 	}, {
-	  'label': 'Southwest Montana nonmetropolitan area',
-	  'value': 'Southwest Montana nonmetropolitan area'
+	    "label": "Southwest Montana nonmetropolitan area",
+	    "value": "Southwest Montana nonmetropolitan area"
 	}, {
-	  'label': 'West Montana nonmetropolitan area',
-	  'value': 'West Montana nonmetropolitan area'
+	    "label": "West Montana nonmetropolitan area",
+	    "value": "West Montana nonmetropolitan area"
 	}];
 
 	exports.NC = [{
-	  'label': 'Asheville',
-	  'value': 'Asheville'
+	    "label": "Asheville, NC",
+	    "value": "Asheville, NC"
 	}, {
-	  'label': 'Burlington',
-	  'value': 'Burlington'
+	    "label": "Burlington, NC",
+	    "value": "Burlington, NC"
 	}, {
-	  'label': 'Charlotte-Concord-Gastonia, NC-SC',
-	  'value': 'Charlotte-Concord-Gastonia, NC-SC'
+	    "label": "Charlotte-Concord-Gastonia, NC-SC",
+	    "value": "Charlotte-Concord-Gastonia, NC-SC"
 	}, {
-	  'label': 'Durham-Chapel Hill',
-	  'value': 'Durham-Chapel Hill'
+	    "label": "Durham-Chapel Hill, NC",
+	    "value": "Durham-Chapel Hill, NC"
 	}, {
-	  'label': 'Fayetteville',
-	  'value': 'Fayetteville'
+	    "label": "Fayetteville, NC",
+	    "value": "Fayetteville, NC"
 	}, {
-	  'label': 'Goldsboro',
-	  'value': 'Goldsboro'
+	    "label": "Goldsboro, NC",
+	    "value": "Goldsboro, NC"
 	}, {
-	  'label': 'Greensboro-High Point',
-	  'value': 'Greensboro-High Point'
+	    "label": "Greensboro-High Point, NC",
+	    "value": "Greensboro-High Point, NC"
 	}, {
-	  'label': 'Greenville',
-	  'value': 'Greenville'
+	    "label": "Greenville, NC",
+	    "value": "Greenville, NC"
 	}, {
-	  'label': 'Hickory-Lenoir-Morganton',
-	  'value': 'Hickory-Lenoir-Morganton'
+	    "label": "Hickory-Lenoir-Morganton, NC",
+	    "value": "Hickory-Lenoir-Morganton, NC"
 	}, {
-	  'label': 'Jacksonville',
-	  'value': 'Jacksonville'
+	    "label": "Jacksonville, NC",
+	    "value": "Jacksonville, NC"
 	}, {
-	  'label': 'Mountain North Carolina nonmetropolitan area',
-	  'value': 'Mountain North Carolina nonmetropolitan area'
+	    "label": "Mountain North Carolina nonmetropolitan area",
+	    "value": "Mountain North Carolina nonmetropolitan area"
 	}, {
-	  'label': 'New Bern',
-	  'value': 'New Bern'
+	    "label": "New Bern, NC",
+	    "value": "New Bern, NC"
 	}, {
-	  'label': 'Northeast Coastal North Carolina nonmetropolitan area',
-	  'value': 'Northeast Coastal North Carolina nonmetropolitan area'
+	    "label": "Northeast Coastal North Carolina nonmetropolitan area",
+	    "value": "Northeast Coastal North Carolina nonmetropolitan area"
 	}, {
-	  'label': 'Piedmont North Carolina nonmetropolitan area',
-	  'value': 'Piedmont North Carolina nonmetropolitan area'
+	    "label": "Piedmont North Carolina nonmetropolitan area",
+	    "value": "Piedmont North Carolina nonmetropolitan area"
 	}, {
-	  'label': 'Raleigh',
-	  'value': 'Raleigh'
+	    "label": "Raleigh, NC",
+	    "value": "Raleigh, NC"
 	}, {
-	  'label': 'Rocky Mount',
-	  'value': 'Rocky Mount'
+	    "label": "Rocky Mount, NC",
+	    "value": "Rocky Mount, NC"
 	}, {
-	  'label': 'Southeast Coastal North Carolina nonmetropolitan area',
-	  'value': 'Southeast Coastal North Carolina nonmetropolitan area'
+	    "label": "Southeast Coastal North Carolina nonmetropolitan area",
+	    "value": "Southeast Coastal North Carolina nonmetropolitan area"
 	}, {
-	  'label': 'Wilmington',
-	  'value': 'Wilmington'
+	    "label": "Wilmington, NC",
+	    "value": "Wilmington, NC"
 	}, {
-	  'label': 'Winston-Salem',
-	  'value': 'Winston-Salem'
+	    "label": "Winston-Salem, NC",
+	    "value": "Winston-Salem, NC"
 	}];
 
 	exports.ND = [{
-	  'label': 'Bismarck',
-	  'value': 'Bismarck'
+	    "label": "Bismarck, ND",
+	    "value": "Bismarck, ND"
 	}, {
-	  'label': 'East Central North Dakota nonmetropolitan area',
-	  'value': 'East Central North Dakota nonmetropolitan area'
+	    "label": "East Central North Dakota nonmetropolitan area",
+	    "value": "East Central North Dakota nonmetropolitan area"
 	}, {
-	  'label': 'Far East North Dakota nonmetropolitan area',
-	  'value': 'Far East North Dakota nonmetropolitan area'
+	    "label": "Far East North Dakota nonmetropolitan area",
+	    "value": "Far East North Dakota nonmetropolitan area"
 	}, {
-	  'label': 'Far West North Dakota nonmetropolitan area',
-	  'value': 'Far West North Dakota nonmetropolitan area'
+	    "label": "Far West North Dakota nonmetropolitan area",
+	    "value": "Far West North Dakota nonmetropolitan area"
 	}, {
-	  'label': 'Fargo, ND-MN',
-	  'value': 'Fargo, ND-MN'
+	    "label": "Fargo, ND-MN",
+	    "value": "Fargo, ND-MN"
 	}, {
-	  'label': 'Grand Forks, ND-MN',
-	  'value': 'Grand Forks, ND-MN'
+	    "label": "Grand Forks, ND-MN",
+	    "value": "Grand Forks, ND-MN"
 	}, {
-	  'label': 'West Central North Dakota nonmetropolitan area',
-	  'value': 'West Central North Dakota nonmetropolitan area'
+	    "label": "West Central North Dakota nonmetropolitan area",
+	    "value": "West Central North Dakota nonmetropolitan area"
 	}];
 
 	exports.NE = [{
-	  'label': 'Central Nebraska nonmetropolitan area',
-	  'value': 'Central Nebraska nonmetropolitan area'
+	    "label": "Central Nebraska nonmetropolitan area",
+	    "value": "Central Nebraska nonmetropolitan area"
 	}, {
-	  'label': 'Grand Island',
-	  'value': 'Grand Island'
+	    "label": "Grand Island, NE",
+	    "value": "Grand Island, NE"
 	}, {
-	  'label': 'Lincoln',
-	  'value': 'Lincoln'
+	    "label": "Lincoln, NE",
+	    "value": "Lincoln, NE"
 	}, {
-	  'label': 'Northeast Nebraska nonmetropolitan area',
-	  'value': 'Northeast Nebraska nonmetropolitan area'
+	    "label": "Northeast Nebraska nonmetropolitan area",
+	    "value": "Northeast Nebraska nonmetropolitan area"
 	}, {
-	  'label': 'Northwest Nebraska nonmetropolitan area',
-	  'value': 'Northwest Nebraska nonmetropolitan area'
+	    "label": "Northwest Nebraska nonmetropolitan area",
+	    "value": "Northwest Nebraska nonmetropolitan area"
 	}, {
-	  'label': 'Omaha-Council Bluffs, NE-IA',
-	  'value': 'Omaha-Council Bluffs, NE-IA'
+	    "label": "Omaha-Council Bluffs, NE-IA",
+	    "value": "Omaha-Council Bluffs, NE-IA"
 	}, {
-	  'label': 'Southeast Nebraska nonmetropolitan area',
-	  'value': 'Southeast Nebraska nonmetropolitan area'
+	    "label": "Southeast Nebraska nonmetropolitan area",
+	    "value": "Southeast Nebraska nonmetropolitan area"
 	}];
 
 	exports.NH = [{
-	  'label': 'Central New Hampshire nonmetropolitan area',
-	  'value': 'Central New Hampshire nonmetropolitan area'
+	    "label": "Central New Hampshire nonmetropolitan area",
+	    "value": "Central New Hampshire nonmetropolitan area"
 	}, {
-	  'label': 'Dover-Durham, NH-ME',
-	  'value': 'Dover-Durham, NH-ME'
+	    "label": "Dover-Durham, NH-ME",
+	    "value": "Dover-Durham, NH-ME"
 	}, {
-	  'label': 'Manchester',
-	  'value': 'Manchester'
+	    "label": "Manchester, NH",
+	    "value": "Manchester, NH"
 	}, {
-	  'label': 'Nashua, NH-MA NECTA Division',
-	  'value': 'Nashua, NH-MA NECTA Division'
+	    "label": "Nashua, NH-MA NECTA Division",
+	    "value": "Nashua, NH-MA NECTA Division"
 	}, {
-	  'label': 'Northern New Hampshire nonmetropolitan area',
-	  'value': 'Northern New Hampshire nonmetropolitan area'
+	    "label": "Northern New Hampshire nonmetropolitan area",
+	    "value": "Northern New Hampshire nonmetropolitan area"
 	}, {
-	  'label': 'Portsmouth, NH-ME',
-	  'value': 'Portsmouth, NH-ME'
+	    "label": "Portsmouth, NH-ME",
+	    "value": "Portsmouth, NH-ME"
 	}, {
-	  'label': 'Southwest New Hampshire nonmetropolitan area',
-	  'value': 'Southwest New Hampshire nonmetropolitan area'
+	    "label": "Southwest New Hampshire nonmetropolitan area",
+	    "value": "Southwest New Hampshire nonmetropolitan area"
 	}, {
-	  'label': 'West Central New Hampshire nonmetropolitan area',
-	  'value': 'West Central New Hampshire nonmetropolitan area'
+	    "label": "West Central New Hampshire nonmetropolitan area",
+	    "value": "West Central New Hampshire nonmetropolitan area"
 	}];
 
 	exports.NJ = [{
-	  'label': 'Atlantic City-Hammonton',
-	  'value': 'Atlantic City-Hammonton'
+	    "label": "Atlantic City-Hammonton, NJ",
+	    "value": "Atlantic City-Hammonton, NJ"
 	}, {
-	  'label': 'Camden, NJ Metropolitan Division',
-	  'value': 'Camden, NJ Metropolitan Division'
+	    "label": "Camden, NJ Metropolitan Division",
+	    "value": "Camden, NJ Metropolitan Division"
 	}, {
-	  'label': 'Newark, NJ-PA Metropolitan Division',
-	  'value': 'Newark, NJ-PA Metropolitan Division'
+	    "label": "Newark, NJ-PA Metropolitan Division",
+	    "value": "Newark, NJ-PA Metropolitan Division"
 	}, {
-	  'label': 'Ocean City',
-	  'value': 'Ocean City'
+	    "label": "Ocean City, NJ",
+	    "value": "Ocean City, NJ"
 	}, {
-	  'label': 'Trenton',
-	  'value': 'Trenton'
+	    "label": "Trenton, NJ",
+	    "value": "Trenton, NJ"
 	}, {
-	  'label': 'Vineland-Bridgeton',
-	  'value': 'Vineland-Bridgeton'
+	    "label": "Vineland-Bridgeton, NJ",
+	    "value": "Vineland-Bridgeton, NJ"
 	}];
+
 	exports.NM = [{
-	  'label': 'Albuquerque',
-	  'value': 'Albuquerque'
+	    "label": "Albuquerque, NM",
+	    "value": "Albuquerque, NM"
 	}, {
-	  'label': 'Eastern New Mexico nonmetropolitan area',
-	  'value': 'Eastern New Mexico nonmetropolitan area'
+	    "label": "Eastern New Mexico nonmetropolitan area",
+	    "value": "Eastern New Mexico nonmetropolitan area"
 	}, {
-	  'label': 'Farmington',
-	  'value': 'Farmington'
+	    "label": "Farmington, NM",
+	    "value": "Farmington, NM"
 	}, {
-	  'label': 'Las Cruces',
-	  'value': 'Las Cruces'
+	    "label": "Las Cruces, NM",
+	    "value": "Las Cruces, NM"
 	}, {
-	  'label': 'Los Alamos County, New Mexico nonmetropolitan area',
-	  'value': 'Los Alamos County, New Mexico nonmetropolitan area'
+	    "label": "Los Alamos County, New Mexico nonmetropolitan area",
+	    "value": "Los Alamos County, New Mexico nonmetropolitan area"
 	}, {
-	  'label': 'North and West Central New Mexico nonmetropolitan area',
-	  'value': 'North and West Central New Mexico nonmetropolitan area'
+	    "label": "North and West Central New Mexico nonmetropolitan area",
+	    "value": "North and West Central New Mexico nonmetropolitan area"
 	}, {
-	  'label': 'Santa Fe',
-	  'value': 'Santa Fe'
+	    "label": "Santa Fe, NM",
+	    "value": "Santa Fe, NM"
 	}, {
-	  'label': 'Southwestern New Mexico nonmetropolitan area',
-	  'value': 'Southwestern New Mexico nonmetropolitan area'
+	    "label": "Southwestern New Mexico nonmetropolitan area",
+	    "value": "Southwestern New Mexico nonmetropolitan area"
 	}];
 
 	exports.NV = [{
-	  'label': 'Carson City',
-	  'value': 'Carson City'
+	    "label": "Carson City, NV",
+	    "value": "Carson City, NV"
 	}, {
-	  'label': 'Las Vegas-Henderson-Paradise',
-	  'value': 'Las Vegas-Henderson-Paradise'
+	    "label": "Las Vegas-Henderson-Paradise, NV",
+	    "value": "Las Vegas-Henderson-Paradise, NV"
 	}, {
-	  'label': 'North Nevada nonmetropolitan area',
-	  'value': 'North Nevada nonmetropolitan area'
+	    "label": "North Nevada nonmetropolitan area",
+	    "value": "North Nevada nonmetropolitan area"
 	}, {
-	  'label': 'Reno',
-	  'value': 'Reno'
+	    "label": "Reno, NV",
+	    "value": "Reno, NV"
 	}, {
-	  'label': 'South Nevada nonmetropolitan area',
-	  'value': 'South Nevada nonmetropolitan area'
+	    "label": "South Nevada nonmetropolitan area",
+	    "value": "South Nevada nonmetropolitan area"
 	}];
+
 	exports.NY = [{
-	  'label': 'Albany-Schenectady-Troy',
-	  'value': 'Albany-Schenectady-Troy'
+	    "label": "Albany-Schenectady-Troy, NY",
+	    "value": "Albany-Schenectady-Troy, NY"
 	}, {
-	  'label': 'Binghamton',
-	  'value': 'Binghamton'
+	    "label": "Binghamton, NY",
+	    "value": "Binghamton, NY"
 	}, {
-	  'label': 'Buffalo-Cheektowaga-Niagara Falls',
-	  'value': 'Buffalo-Cheektowaga-Niagara Falls'
+	    "label": "Buffalo-Cheektowaga-Niagara Falls, NY",
+	    "value": "Buffalo-Cheektowaga-Niagara Falls, NY"
 	}, {
-	  'label': 'Capital/Northern New York nonmetropolitan area',
-	  'value': 'Capital/Northern New York nonmetropolitan area'
+	    "label": "Capital/Northern New York nonmetropolitan area",
+	    "value": "Capital/Northern New York nonmetropolitan area"
 	}, {
-	  'label': 'Central New York nonmetropolitan area',
-	  'value': 'Central New York nonmetropolitan area'
+	    "label": "Central New York nonmetropolitan area",
+	    "value": "Central New York nonmetropolitan area"
 	}, {
-	  'label': 'Dutchess County-Putnam County, NY Metropolitan Division',
-	  'value': 'Dutchess County-Putnam County, NY Metropolitan Division'
+	    "label": "Dutchess County-Putnam County, NY Metropolitan Division",
+	    "value": "Dutchess County-Putnam County, NY Metropolitan Division"
 	}, {
-	  'label': 'East Central New York nonmetropolitan area',
-	  'value': 'East Central New York nonmetropolitan area'
+	    "label": "East Central New York nonmetropolitan area",
+	    "value": "East Central New York nonmetropolitan area"
 	}, {
-	  'label': 'Elmira',
-	  'value': 'Elmira'
+	    "label": "Elmira, NY",
+	    "value": "Elmira, NY"
 	}, {
-	  'label': 'Glens Falls',
-	  'value': 'Glens Falls'
+	    "label": "Glens Falls, NY",
+	    "value": "Glens Falls, NY"
 	}, {
-	  'label': 'Ithaca',
-	  'value': 'Ithaca'
+	    "label": "Ithaca, NY",
+	    "value": "Ithaca, NY"
 	}, {
-	  'label': 'Kingston',
-	  'value': 'Kingston'
+	    "label": "Kingston, NY",
+	    "value": "Kingston, NY"
 	}, {
-	  'label': 'Nassau County-Suffolk County, NY Metropolitan Division',
-	  'value': 'Nassau County-Suffolk County, NY Metropolitan Division'
+	    "label": "Nassau County-Suffolk County, NY Metropolitan Division",
+	    "value": "Nassau County-Suffolk County, NY Metropolitan Division"
 	}, {
-	  'label': 'New York-Jersey City-White Plains, NY-NJ Metropolitan Division',
-	  'value': 'New York-Jersey City-White Plains, NY-NJ Metropolitan Division'
+	    "label": "New York-Jersey City-White Plains, NY-NJ Metropolitan Division",
+	    "value": "New York-Jersey City-White Plains, NY-NJ Metropolitan Division"
 	}, {
-	  'label': 'Rochester',
-	  'value': 'Rochester'
+	    "label": "Rochester, NY",
+	    "value": "Rochester, NY"
 	}, {
-	  'label': 'Southwest New York nonmetropolitan area',
-	  'value': 'Southwest New York nonmetropolitan area'
+	    "label": "Southwest New York nonmetropolitan area",
+	    "value": "Southwest New York nonmetropolitan area"
 	}, {
-	  'label': 'Syracuse',
-	  'value': 'Syracuse'
+	    "label": "Syracuse, NY",
+	    "value": "Syracuse, NY"
 	}, {
-	  'label': 'Utica-Rome',
-	  'value': 'Utica-Rome'
+	    "label": "Utica-Rome, NY",
+	    "value": "Utica-Rome, NY"
 	}, {
-	  'label': 'Watertown-Fort Drum',
-	  'value': 'Watertown-Fort Drum'
+	    "label": "Watertown-Fort Drum, NY",
+	    "value": "Watertown-Fort Drum, NY"
 	}];
+
 	exports.OH = [{
-	  'label': 'Akron',
-	  'value': 'Akron'
+	    "label": "Akron, OH",
+	    "value": "Akron, OH"
 	}, {
-	  'label': 'Canton-Massillon',
-	  'value': 'Canton-Massillon'
+	    "label": "Canton-Massillon, OH",
+	    "value": "Canton-Massillon, OH"
 	}, {
-	  'label': 'Cincinnati, OH-KY-IN',
-	  'value': 'Cincinnati, OH-KY-IN'
+	    "label": "Cincinnati, OH-KY-IN",
+	    "value": "Cincinnati, OH-KY-IN"
 	}, {
-	  'label': 'Cleveland-Elyria',
-	  'value': 'Cleveland-Elyria'
+	    "label": "Cleveland-Elyria, OH",
+	    "value": "Cleveland-Elyria, OH"
 	}, {
-	  'label': 'Columbus',
-	  'value': 'Columbus'
+	    "label": "Columbus, OH",
+	    "value": "Columbus, OH"
 	}, {
-	  'label': 'Dayton',
-	  'value': 'Dayton'
+	    "label": "Dayton, OH",
+	    "value": "Dayton, OH"
 	}, {
-	  'label': 'Eastern Ohio nonmetropolitan area',
-	  'value': 'Eastern Ohio nonmetropolitan area'
+	    "label": "Eastern Ohio nonmetropolitan area",
+	    "value": "Eastern Ohio nonmetropolitan area"
 	}, {
-	  'label': 'Lima',
-	  'value': 'Lima'
+	    "label": "Lima, OH",
+	    "value": "Lima, OH"
 	}, {
-	  'label': 'Mansfield',
-	  'value': 'Mansfield'
+	    "label": "Mansfield, OH",
+	    "value": "Mansfield, OH"
 	}, {
-	  'label': 'North Northeastern Ohio non-metropolitan area (non-contigu',
-	  'value': 'North Northeastern Ohio non-metropolitan area (non-contigu'
+	    "label": "North Northeastern Ohio non-metropolitan area (non-contiguous)",
+	    "value": "North Northeastern Ohio non-metropolitan area (non-contiguous)"
 	}, {
-	  'label': 'Southern Ohio non-metropolitan ',
-	  'value': 'Southern Ohio non-metropolitan '
+	    "label": "Southern Ohio non-metropolitan area",
+	    "value": "Southern Ohio non-metropolitan area"
 	}, {
-	  'label': 'Springfield',
-	  'value': 'Springfield'
+	    "label": "Springfield, OH",
+	    "value": "Springfield, OH"
 	}, {
-	  'label': 'Toledo',
-	  'value': 'Toledo'
+	    "label": "Toledo, OH",
+	    "value": "Toledo, OH"
 	}, {
-	  'label': 'West Northwestern Ohio nonmetropolitan area',
-	  'value': 'West Northwestern Ohio nonmetropolitan area'
+	    "label": "West Northwestern Ohio nonmetropolitan area",
+	    "value": "West Northwestern Ohio nonmetropolitan area"
 	}, {
-	  'label': 'Youngstown-Warren-Boardman, OH-PA',
-	  'value': 'Youngstown-Warren-Boardman, OH-PA'
+	    "label": "Youngstown-Warren-Boardman, OH-PA",
+	    "value": "Youngstown-Warren-Boardman, OH-PA"
 	}];
+
 	exports.OK = [{
-	  'label': 'Lawton',
-	  'value': 'Lawton'
+	    "label": "Lawton, OK",
+	    "value": "Lawton, OK"
 	}, {
-	  'label': 'Northeast Oklahoma nonmetropolitan area',
-	  'value': 'Northeast Oklahoma nonmetropolitan area'
+	    "label": "Northeast Oklahoma nonmetropolitan area",
+	    "value": "Northeast Oklahoma nonmetropolitan area"
 	}, {
-	  'label': 'Northwest Oklahoma nonmetropolitan area',
-	  'value': 'Northwest Oklahoma nonmetropolitan area'
+	    "label": "Northwest Oklahoma nonmetropolitan area",
+	    "value": "Northwest Oklahoma nonmetropolitan area"
 	}, {
-	  'label': 'Oklahoma City',
-	  'value': 'Oklahoma City'
+	    "label": "Oklahoma City, OK",
+	    "value": "Oklahoma City, OK"
 	}, {
-	  'label': 'Southeast Oklahoma nonmetropolitan area',
-	  'value': 'Southeast Oklahoma nonmetropolitan area'
+	    "label": "Southeast Oklahoma nonmetropolitan area",
+	    "value": "Southeast Oklahoma nonmetropolitan area"
 	}, {
-	  'label': 'Southwest Oklahoma nonmetropolitan area',
-	  'value': 'Southwest Oklahoma nonmetropolitan area'
+	    "label": "Southwest Oklahoma nonmetropolitan area",
+	    "value": "Southwest Oklahoma nonmetropolitan area"
 	}, {
-	  'label': 'Tulsa',
-	  'value': 'Tulsa'
+	    "label": "Tulsa, OK",
+	    "value": "Tulsa, OK"
 	}];
+
 	exports.OR = [{
-	  'label': 'Albany',
-	  'value': 'Albany'
+	    "label": "Albany, OR",
+	    "value": "Albany, OR"
 	}, {
-	  'label': 'Bend-Redmond',
-	  'value': 'Bend-Redmond'
+	    "label": "Bend-Redmond, OR",
+	    "value": "Bend-Redmond, OR"
 	}, {
-	  'label': 'Central Oregon nonmetropolitan area',
-	  'value': 'Central Oregon nonmetropolitan area'
+	    "label": "Central Oregon nonmetropolitan area",
+	    "value": "Central Oregon nonmetropolitan area"
 	}, {
-	  'label': 'Corvallis',
-	  'value': 'Corvallis'
+	    "label": "Corvallis, OR",
+	    "value": "Corvallis, OR"
 	}, {
-	  'label': 'Eastern Oregon nonmetropolitan area',
-	  'value': 'Eastern Oregon nonmetropolitan area'
+	    "label": "Eastern Oregon nonmetropolitan area",
+	    "value": "Eastern Oregon nonmetropolitan area"
 	}, {
-	  'label': 'Eugene',
-	  'value': 'Eugene'
+	    "label": "Eugene, OR",
+	    "value": "Eugene, OR"
 	}, {
-	  'label': 'Grants Pass',
-	  'value': 'Grants Pass'
+	    "label": "Grants Pass, OR",
+	    "value": "Grants Pass, OR"
 	}, {
-	  'label': 'Medford',
-	  'value': 'Medford'
+	    "label": "Medford, OR",
+	    "value": "Medford, OR"
 	}, {
-	  'label': 'North Coast Oregon nonmetropolitan area',
-	  'value': 'North Coast Oregon nonmetropolitan area'
+	    "label": "North Coast Oregon nonmetropolitan area",
+	    "value": "North Coast Oregon nonmetropolitan area"
 	}, {
-	  'label': 'Portland-Vancouver-Hillsboro, OR-WA',
-	  'value': 'Portland-Vancouver-Hillsboro, OR-WA'
+	    "label": "Portland-Vancouver-Hillsboro, OR-WA",
+	    "value": "Portland-Vancouver-Hillsboro, OR-WA"
 	}, {
-	  'label': 'Salem',
-	  'value': 'Salem'
+	    "label": "Salem, OR",
+	    "value": "Salem, OR"
 	}, {
-	  'label': 'South Coast Oregon nonmetropolitan area',
-	  'value': 'South Coast Oregon nonmetropolitan area'
+	    "label": "South Coast Oregon nonmetropolitan area",
+	    "value": "South Coast Oregon nonmetropolitan area"
 	}];
+
 	exports.PA = [{
-	  'label': 'Allentown-Bethlehem-Easton, PA-NJ',
-	  'value': 'Allentown-Bethlehem-Easton, PA-NJ'
+	    "label": "Allentown-Bethlehem-Easton, PA-NJ",
+	    "value": "Allentown-Bethlehem-Easton, PA-NJ"
 	}, {
-	  'label': 'Altoona',
-	  'value': 'Altoona'
+	    "label": "Altoona, PA",
+	    "value": "Altoona, PA"
 	}, {
-	  'label': 'Bloomsburg-Berwick',
-	  'value': 'Bloomsburg-Berwick'
+	    "label": "Bloomsburg-Berwick, PA",
+	    "value": "Bloomsburg-Berwick, PA"
 	}, {
-	  'label': 'Chambersburg-Waynesboro',
-	  'value': 'Chambersburg-Waynesboro'
+	    "label": "Chambersburg-Waynesboro, PA",
+	    "value": "Chambersburg-Waynesboro, PA"
 	}, {
-	  'label': 'East Stroudsburg',
-	  'value': 'East Stroudsburg'
+	    "label": "East Stroudsburg, PA",
+	    "value": "East Stroudsburg, PA"
 	}, {
-	  'label': 'Erie',
-	  'value': 'Erie'
+	    "label": "Erie, PA",
+	    "value": "Erie, PA"
 	}, {
-	  'label': 'Gettysburg',
-	  'value': 'Gettysburg'
+	    "label": "Gettysburg, PA",
+	    "value": "Gettysburg, PA"
 	}, {
-	  'label': 'Harrisburg-Carlisle',
-	  'value': 'Harrisburg-Carlisle'
+	    "label": "Harrisburg-Carlisle, PA",
+	    "value": "Harrisburg-Carlisle, PA"
 	}, {
-	  'label': 'Johnstown',
-	  'value': 'Johnstown'
+	    "label": "Johnstown, PA",
+	    "value": "Johnstown, PA"
 	}, {
-	  'label': 'Lancaster',
-	  'value': 'Lancaster'
+	    "label": "Lancaster, PA",
+	    "value": "Lancaster, PA"
 	}, {
-	  'label': 'Lebanon',
-	  'value': 'Lebanon'
+	    "label": "Lebanon, PA",
+	    "value": "Lebanon, PA"
 	}, {
-	  'label': 'Montgomery County-Bucks County-Chester County, PA Metropolitan Division',
-	  'value': 'Montgomery County-Bucks County-Chester County, PA Metropolitan Division'
+	    "label": "Montgomery County-Bucks County-Chester County, PA Metropolitan Division",
+	    "value": "Montgomery County-Bucks County-Chester County, PA Metropolitan Division"
 	}, {
-	  'label': 'Northern Pennsylvania nonmetropolitan area',
-	  'value': 'Northern Pennsylvania nonmetropolitan area'
+	    "label": "Northern Pennsylvania nonmetropolitan area",
+	    "value": "Northern Pennsylvania nonmetropolitan area"
 	}, {
-	  'label': 'Philadelphia, PA Metropolitan Division',
-	  'value': 'Philadelphia, PA Metropolitan Division'
+	    "label": "Philadelphia, PA Metropolitan Division",
+	    "value": "Philadelphia, PA Metropolitan Division"
 	}, {
-	  'label': 'Pittsburgh',
-	  'value': 'Pittsburgh'
+	    "label": "Pittsburgh, PA",
+	    "value": "Pittsburgh, PA"
 	}, {
-	  'label': 'Reading',
-	  'value': 'Reading'
+	    "label": "Reading, PA",
+	    "value": "Reading, PA"
 	}, {
-	  'label': 'Scranton--Wilkes-Barre--Hazleton',
-	  'value': 'Scranton--Wilkes-Barre--Hazleton'
+	    "label": "Scranton--Wilkes-Barre--Hazleton, PA",
+	    "value": "Scranton--Wilkes-Barre--Hazleton, PA"
 	}, {
-	  'label': 'Southern Pennsylvania nonmetropolitan area',
-	  'value': 'Southern Pennsylvania nonmetropolitan area'
+	    "label": "Southern Pennsylvania nonmetropolitan area",
+	    "value": "Southern Pennsylvania nonmetropolitan area"
 	}, {
-	  'label': 'State College',
-	  'value': 'State College'
+	    "label": "State College, PA",
+	    "value": "State College, PA"
 	}, {
-	  'label': 'Western Pennsylvania nonmetropolitan area',
-	  'value': 'Western Pennsylvania nonmetropolitan area'
+	    "label": "Western Pennsylvania nonmetropolitan area",
+	    "value": "Western Pennsylvania nonmetropolitan area"
 	}, {
-	  'label': 'Williamsport',
-	  'value': 'Williamsport'
+	    "label": "Williamsport, PA",
+	    "value": "Williamsport, PA"
 	}, {
-	  'label': 'York-Hanover',
-	  'value': 'York-Hanover'
+	    "label": "York-Hanover, PA",
+	    "value": "York-Hanover, PA"
 	}];
 
 	exports.RI = [{
-	  'label': 'New Shoreham Town, Rhode Island nonmetropolitan area',
-	  'value': 'New Shoreham Town, Rhode Island nonmetropolitan area'
+	    "label": "New Shoreham Town, Rhode Island nonmetropolitan area",
+	    "value": "New Shoreham Town, Rhode Island nonmetropolitan area"
 	}, {
-	  'label': 'Providence-Warwick, RI-MA',
-	  'value': 'Providence-Warwick, RI-MA'
+	    "label": "Providence-Warwick, RI-MA",
+	    "value": "Providence-Warwick, RI-MA"
 	}];
+
 	exports.SC = [{
-	  'label': 'Charleston-North Charleston',
-	  'value': 'Charleston-North Charleston'
+	    "label": "Charleston-North Charleston, SC",
+	    "value": "Charleston-North Charleston, SC"
 	}, {
-	  'label': 'Columbia',
-	  'value': 'Columbia'
+	    "label": "Columbia, SC",
+	    "value": "Columbia, SC"
 	}, {
-	  'label': 'Florence',
-	  'value': 'Florence'
+	    "label": "Florence, SC",
+	    "value": "Florence, SC"
 	}, {
-	  'label': 'Greenville-Anderson-Mauldin',
-	  'value': 'Greenville-Anderson-Mauldin'
+	    "label": "Greenville-Anderson-Mauldin, SC",
+	    "value": "Greenville-Anderson-Mauldin, SC"
 	}, {
-	  'label': 'Hilton Head Island-Bluffton-Beaufort',
-	  'value': 'Hilton Head Island-Bluffton-Beaufort'
+	    "label": "Hilton Head Island-Bluffton-Beaufort, SC",
+	    "value": "Hilton Head Island-Bluffton-Beaufort, SC"
 	}, {
-	  'label': 'Low Country South Carolina nonmetropolitan area',
-	  'value': 'Low Country South Carolina nonmetropolitan area'
+	    "label": "Low Country South Carolina nonmetropolitan area",
+	    "value": "Low Country South Carolina nonmetropolitan area"
 	}, {
-	  'label': 'Lower Savannah South Carolina nonmetropolitan area',
-	  'value': 'Lower Savannah South Carolina nonmetropolitan area'
+	    "label": "Lower Savannah South Carolina nonmetropolitan area",
+	    "value": "Lower Savannah South Carolina nonmetropolitan area"
 	}, {
-	  'label': 'Myrtle Beach-Conway-North Myrtle Beach, SC-NC',
-	  'value': 'Myrtle Beach-Conway-North Myrtle Beach, SC-NC'
+	    "label": "Myrtle Beach-Conway-North Myrtle Beach, SC-NC",
+	    "value": "Myrtle Beach-Conway-North Myrtle Beach, SC-NC"
 	}, {
-	  'label': 'Pee Dee South Carolina nonmetropolitan area',
-	  'value': 'Pee Dee South Carolina nonmetropolitan area'
+	    "label": "Pee Dee South Carolina nonmetropolitan area",
+	    "value": "Pee Dee South Carolina nonmetropolitan area"
 	}, {
-	  'label': 'Spartanburg',
-	  'value': 'Spartanburg'
+	    "label": "Spartanburg, SC",
+	    "value": "Spartanburg, SC"
 	}, {
-	  'label': 'Sumter',
-	  'value': 'Sumter'
+	    "label": "Sumter, SC",
+	    "value": "Sumter, SC"
 	}, {
-	  'label': 'Upper Savannah South Carolina nonmetropolitan area',
-	  'value': 'Upper Savannah South Carolina nonmetropolitan area'
+	    "label": "Upper Savannah South Carolina nonmetropolitan area",
+	    "value": "Upper Savannah South Carolina nonmetropolitan area"
 	}];
+
 	exports.SD = [{
-	  'label': 'East South Dakota nonmetropolitan area',
-	  'value': 'East South Dakota nonmetropolitan area'
+	    "label": "East South Dakota nonmetropolitan area",
+	    "value": "East South Dakota nonmetropolitan area"
 	}, {
-	  'label': 'Rapid City',
-	  'value': 'Rapid City'
+	    "label": "Rapid City, SD",
+	    "value": "Rapid City, SD"
 	}, {
-	  'label': 'Sioux Falls',
-	  'value': 'Sioux Falls'
+	    "label": "Sioux Falls, SD",
+	    "value": "Sioux Falls, SD"
 	}, {
-	  'label': 'West South Dakota nonmetropolitan area',
-	  'value': 'West South Dakota nonmetropolitan area'
+	    "label": "West South Dakota nonmetropolitan area",
+	    "value": "West South Dakota nonmetropolitan area"
 	}];
+
 	exports.TN = [{
-	  'label': 'Chattanooga, TN-GA',
-	  'value': 'Chattanooga, TN-GA'
+	    "label": "Chattanooga, TN-GA",
+	    "value": "Chattanooga, TN-GA"
 	}, {
-	  'label': 'Clarksville, TN-KY',
-	  'value': 'Clarksville, TN-KY'
+	    "label": "Clarksville, TN-KY",
+	    "value": "Clarksville, TN-KY"
 	}, {
-	  'label': 'Cleveland',
-	  'value': 'Cleveland'
+	    "label": "Cleveland, TN",
+	    "value": "Cleveland, TN"
 	}, {
-	  'label': 'East Tennessee nonmetropolitan area',
-	  'value': 'East Tennessee nonmetropolitan area'
+	    "label": "East Tennessee nonmetropolitan area",
+	    "value": "East Tennessee nonmetropolitan area"
 	}, {
-	  'label': 'Jackson',
-	  'value': 'Jackson'
+	    "label": "Jackson, TN",
+	    "value": "Jackson, TN"
 	}, {
-	  'label': 'Johnson City',
-	  'value': 'Johnson City'
+	    "label": "Johnson City, TN",
+	    "value": "Johnson City, TN"
 	}, {
-	  'label': 'Kingsport-Bristol-Bristol, TN-VA',
-	  'value': 'Kingsport-Bristol-Bristol, TN-VA'
+	    "label": "Kingsport-Bristol-Bristol, TN-VA",
+	    "value": "Kingsport-Bristol-Bristol, TN-VA"
 	}, {
-	  'label': 'Knoxville',
-	  'value': 'Knoxville'
+	    "label": "Knoxville, TN",
+	    "value": "Knoxville, TN"
 	}, {
-	  'label': 'Memphis, TN-MS-AR',
-	  'value': 'Memphis, TN-MS-AR'
+	    "label": "Memphis, TN-MS-AR",
+	    "value": "Memphis, TN-MS-AR"
 	}, {
-	  'label': 'Morristown',
-	  'value': 'Morristown'
+	    "label": "Morristown, TN",
+	    "value": "Morristown, TN"
 	}, {
-	  'label': 'Nashville-Davidson--Murfreesboro--Franklin',
-	  'value': 'Nashville-Davidson--Murfreesboro--Franklin'
+	    "label": "Nashville-Davidson--Murfreesboro--Franklin, TN",
+	    "value": "Nashville-Davidson--Murfreesboro--Franklin, TN"
 	}, {
-	  'label': 'North Central Tennessee nonmetropolitan area',
-	  'value': 'North Central Tennessee nonmetropolitan area'
+	    "label": "North Central Tennessee nonmetropolitan area",
+	    "value": "North Central Tennessee nonmetropolitan area"
 	}, {
-	  'label': 'South Central Tennessee nonmetropolitan area',
-	  'value': 'South Central Tennessee nonmetropolitan area'
+	    "label": "South Central Tennessee nonmetropolitan area",
+	    "value": "South Central Tennessee nonmetropolitan area"
 	}, {
-	  'label': 'West Tennessee nonmetropolitan area',
-	  'value': 'West Tennessee nonmetropolitan area'
+	    "label": "West Tennessee nonmetropolitan area",
+	    "value": "West Tennessee nonmetropolitan area"
 	}];
+
 	exports.TX = [{
-	  'label': 'Abilene',
-	  'value': 'Abilene'
+	    "label": "Abilene, TX",
+	    "value": "Abilene, TX"
 	}, {
-	  'label': 'Amarillo',
-	  'value': 'Amarillo'
+	    "label": "Amarillo, TX",
+	    "value": "Amarillo, TX"
 	}, {
-	  'label': 'Austin-Round Rock',
-	  'value': 'Austin-Round Rock'
+	    "label": "Austin-Round Rock, TX",
+	    "value": "Austin-Round Rock, TX"
 	}, {
-	  'label': 'Beaumont-Port Arthur',
-	  'value': 'Beaumont-Port Arthur'
+	    "label": "Beaumont-Port Arthur, TX",
+	    "value": "Beaumont-Port Arthur, TX"
 	}, {
-	  'label': 'Big Thicket Region of Texas nonmetropolitan area',
-	  'value': 'Big Thicket Region of Texas nonmetropolitan area'
+	    "label": "Big Thicket Region of Texas nonmetropolitan area",
+	    "value": "Big Thicket Region of Texas nonmetropolitan area"
 	}, {
-	  'label': 'Border Region of Texas nonmetropolitan area',
-	  'value': 'Border Region of Texas nonmetropolitan area'
+	    "label": "Border Region of Texas nonmetropolitan area",
+	    "value": "Border Region of Texas nonmetropolitan area"
 	}, {
-	  'label': 'Brownsville-Harlingen',
-	  'value': 'Brownsville-Harlingen'
+	    "label": "Brownsville-Harlingen, TX",
+	    "value": "Brownsville-Harlingen, TX"
 	}, {
-	  'label': 'Coastal Plains Region of Texas nonmetropolitan area',
-	  'value': 'Coastal Plains Region of Texas nonmetropolitan area'
+	    "label": "Coastal Plains Region of Texas nonmetropolitan area",
+	    "value": "Coastal Plains Region of Texas nonmetropolitan area"
 	}, {
-	  'label': 'College Station-Bryan',
-	  'value': 'College Station-Bryan'
+	    "label": "College Station-Bryan, TX",
+	    "value": "College Station-Bryan, TX"
 	}, {
-	  'label': 'Corpus Christi',
-	  'value': 'Corpus Christi'
+	    "label": "Corpus Christi, TX",
+	    "value": "Corpus Christi, TX"
 	}, {
-	  'label': 'Dallas-Plano-Irving, TX Metropolitan Division',
-	  'value': 'Dallas-Plano-Irving, TX Metropolitan Division'
+	    "label": "Dallas-Plano-Irving, TX Metropolitan Division",
+	    "value": "Dallas-Plano-Irving, TX Metropolitan Division"
 	}, {
-	  'label': 'El Paso',
-	  'value': 'El Paso'
+	    "label": "El Paso, TX",
+	    "value": "El Paso, TX"
 	}, {
-	  'label': 'Fort Worth-Arlington, TX Metropolitan Division',
-	  'value': 'Fort Worth-Arlington, TX Metropolitan Division'
+	    "label": "Fort Worth-Arlington, TX Metropolitan Division",
+	    "value": "Fort Worth-Arlington, TX Metropolitan Division"
 	}, {
-	  'label': 'Hill Country Region of Texas nonmetropolitan area',
-	  'value': 'Hill Country Region of Texas nonmetropolitan area'
+	    "label": "Hill Country Region of Texas nonmetropolitan area",
+	    "value": "Hill Country Region of Texas nonmetropolitan area"
 	}, {
-	  'label': 'Houston-The Woodlands-Sugar Land',
-	  'value': 'Houston-The Woodlands-Sugar Land'
+	    "label": "Houston-The Woodlands-Sugar Land, TX",
+	    "value": "Houston-The Woodlands-Sugar Land, TX"
 	}, {
-	  'label': 'Killeen-Temple',
-	  'value': 'Killeen-Temple'
+	    "label": "Killeen-Temple, TX",
+	    "value": "Killeen-Temple, TX"
 	}, {
-	  'label': 'Laredo',
-	  'value': 'Laredo'
+	    "label": "Laredo, TX",
+	    "value": "Laredo, TX"
 	}, {
-	  'label': 'Longview',
-	  'value': 'Longview'
+	    "label": "Longview, TX",
+	    "value": "Longview, TX"
 	}, {
-	  'label': 'Lubbock',
-	  'value': 'Lubbock'
+	    "label": "Lubbock, TX",
+	    "value": "Lubbock, TX"
 	}, {
-	  'label': 'McAllen-Edinburg-Mission',
-	  'value': 'McAllen-Edinburg-Mission'
+	    "label": "McAllen-Edinburg-Mission, TX",
+	    "value": "McAllen-Edinburg-Mission, TX"
 	}, {
-	  'label': 'Midland',
-	  'value': 'Midland'
+	    "label": "Midland, TX",
+	    "value": "Midland, TX"
 	}, {
-	  'label': 'North Texas Region of Texas nonmetropolitan area',
-	  'value': 'North Texas Region of Texas nonmetropolitan area'
+	    "label": "North Texas Region of Texas nonmetropolitan area",
+	    "value": "North Texas Region of Texas nonmetropolitan area"
 	}, {
-	  'label': 'Odessa',
-	  'value': 'Odessa'
+	    "label": "Odessa, TX",
+	    "value": "Odessa, TX"
 	}, {
-	  'label': 'San Angelo',
-	  'value': 'San Angelo'
+	    "label": "San Angelo, TX",
+	    "value": "San Angelo, TX"
 	}, {
-	  'label': 'San Antonio-New Braunfels',
-	  'value': 'San Antonio-New Braunfels'
+	    "label": "San Antonio-New Braunfels, TX",
+	    "value": "San Antonio-New Braunfels, TX"
 	}, {
-	  'label': 'Sherman-Denison',
-	  'value': 'Sherman-Denison'
+	    "label": "Sherman-Denison, TX",
+	    "value": "Sherman-Denison, TX"
 	}, {
-	  'label': 'Texarkana, TX-AR',
-	  'value': 'Texarkana, TX-AR'
+	    "label": "Texarkana, TX-AR",
+	    "value": "Texarkana, TX-AR"
 	}, {
-	  'label': 'Tyler',
-	  'value': 'Tyler'
+	    "label": "Tyler, TX",
+	    "value": "Tyler, TX"
 	}, {
-	  'label': 'Victoria',
-	  'value': 'Victoria'
+	    "label": "Victoria, TX",
+	    "value": "Victoria, TX"
 	}, {
-	  'label': 'Waco',
-	  'value': 'Waco'
+	    "label": "Waco, TX",
+	    "value": "Waco, TX"
 	}, {
-	  'label': 'West Texas Region of Texas nonmetropolitan area',
-	  'value': 'West Texas Region of Texas nonmetropolitan area'
+	    "label": "West Texas Region of Texas nonmetropolitan area",
+	    "value": "West Texas Region of Texas nonmetropolitan area"
 	}, {
-	  'label': 'Wichita Falls',
-	  'value': 'Wichita Falls'
+	    "label": "Wichita Falls, TX",
+	    "value": "Wichita Falls, TX"
 	}];
+
 	exports.UT = [{
-	  'label': 'Central Utah nonmetropolitan area',
-	  'value': 'Central Utah nonmetropolitan area'
+	    "label": "Central Utah nonmetropolitan area",
+	    "value": "Central Utah nonmetropolitan area"
 	}, {
-	  'label': 'Eastern Utah nonmetropolitan area',
-	  'value': 'Eastern Utah nonmetropolitan area'
+	    "label": "Eastern Utah nonmetropolitan area",
+	    "value": "Eastern Utah nonmetropolitan area"
 	}, {
-	  'label': 'Logan, UT-ID',
-	  'value': 'Logan, UT-ID'
+	    "label": "Logan, UT-ID",
+	    "value": "Logan, UT-ID"
 	}, {
-	  'label': 'Ogden-Clearfield',
-	  'value': 'Ogden-Clearfield'
+	    "label": "Ogden-Clearfield, UT",
+	    "value": "Ogden-Clearfield, UT"
 	}, {
-	  'label': 'Provo-Orem',
-	  'value': 'Provo-Orem'
+	    "label": "Provo-Orem, UT",
+	    "value": "Provo-Orem, UT"
 	}, {
-	  'label': 'Salt Lake City',
-	  'value': 'Salt Lake City'
+	    "label": "Salt Lake City, UT",
+	    "value": "Salt Lake City, UT"
 	}, {
-	  'label': 'Southwest Utah nonmetropolitan area',
-	  'value': 'Southwest Utah nonmetropolitan area'
+	    "label": "Southwest Utah nonmetropolitan area",
+	    "value": "Southwest Utah nonmetropolitan area"
 	}, {
-	  'label': 'St. George',
-	  'value': 'St. George'
+	    "label": "St. George, UT",
+	    "value": "St. George, UT"
 	}, {
-	  'label': 'Wasatch Back nonmetropolitan area',
-	  'value': 'Wasatch Back nonmetropolitan area'
+	    "label": "Wasatch Back nonmetropolitan area",
+	    "value": "Wasatch Back nonmetropolitan area"
 	}];
+
 	exports.VA = [{
-	  'label': 'Blacksburg-Christiansburg-Radford',
-	  'value': 'Blacksburg-Christiansburg-Radford'
+	    "label": "Blacksburg-Christiansburg-Radford, VA",
+	    "value": "Blacksburg-Christiansburg-Radford, VA"
 	}, {
-	  'label': 'Charlottesville',
-	  'value': 'Charlottesville'
+	    "label": "Charlottesville, VA",
+	    "value": "Charlottesville, VA"
 	}, {
-	  'label': 'Harrisonburg',
-	  'value': 'Harrisonburg'
+	    "label": "Harrisonburg, VA",
+	    "value": "Harrisonburg, VA"
 	}, {
-	  'label': 'Lynchburg',
-	  'value': 'Lynchburg'
+	    "label": "Lynchburg, VA",
+	    "value": "Lynchburg, VA"
 	}, {
-	  'label': 'Northeast Virginia nonmetropolitan area',
-	  'value': 'Northeast Virginia nonmetropolitan area'
+	    "label": "Northeast Virginia nonmetropolitan area",
+	    "value": "Northeast Virginia nonmetropolitan area"
 	}, {
-	  'label': 'Northwest Virginia nonmetropolitan area',
-	  'value': 'Northwest Virginia nonmetropolitan area'
+	    "label": "Northwest Virginia nonmetropolitan area",
+	    "value": "Northwest Virginia nonmetropolitan area"
 	}, {
-	  'label': 'Richmond',
-	  'value': 'Richmond'
+	    "label": "Richmond, VA",
+	    "value": "Richmond, VA"
 	}, {
-	  'label': 'Roanoke',
-	  'value': 'Roanoke'
+	    "label": "Roanoke, VA",
+	    "value": "Roanoke, VA"
 	}, {
-	  'label': 'Southside Virginia nonmetropolitan area',
-	  'value': 'Southside Virginia nonmetropolitan area'
+	    "label": "Southside Virginia nonmetropolitan area",
+	    "value": "Southside Virginia nonmetropolitan area"
 	}, {
-	  'label': 'Southwest Virginia nonmetropolitan area',
-	  'value': 'Southwest Virginia nonmetropolitan area'
+	    "label": "Southwest Virginia nonmetropolitan area",
+	    "value": "Southwest Virginia nonmetropolitan area"
 	}, {
-	  'label': 'Staunton-Waynesboro',
-	  'value': 'Staunton-Waynesboro'
+	    "label": "Staunton-Waynesboro, VA",
+	    "value": "Staunton-Waynesboro, VA"
 	}, {
-	  'label': 'Virginia Beach-Norfolk-Newport News, VA-NC',
-	  'value': 'Virginia Beach-Norfolk-Newport News, VA-NC'
+	    "label": "Virginia Beach-Norfolk-Newport News, VA-NC",
+	    "value": "Virginia Beach-Norfolk-Newport News, VA-NC"
 	}, {
-	  'label': 'Winchester, V',
-	  'value': 'Winchester, V'
+	    "label": "Winchester, VA-WV",
+	    "value": "Winchester, VA-WV"
 	}];
+
 	exports.VT = [{
-	  'label': 'Burlington-South Burlington',
-	  'value': 'Burlington-South Burlington'
+	    "label": "Burlington-South Burlington, VT",
+	    "value": "Burlington-South Burlington, VT"
 	}, {
-	  'label': 'Northern Vermont nonmetropolitan area',
-	  'value': 'Northern Vermont nonmetropolitan area'
+	    "label": "Northern Vermont nonmetropolitan area",
+	    "value": "Northern Vermont nonmetropolitan area"
 	}, {
-	  'label': 'Southern Vermont nonmetropolitan area',
-	  'value': 'Southern Vermont nonmetropolitan area'
+	    "label": "Southern Vermont nonmetropolitan area",
+	    "value": "Southern Vermont nonmetropolitan area"
 	}];
+
 	exports.WA = [{
-	  'label': 'Bellingham',
-	  'value': 'Bellingham'
+	    "label": "Bellingham, WA",
+	    "value": "Bellingham, WA"
 	}, {
-	  'label': 'Bremerton-Silverdale',
-	  'value': 'Bremerton-Silverdale'
+	    "label": "Bremerton-Silverdale, WA",
+	    "value": "Bremerton-Silverdale, WA"
 	}, {
-	  'label': 'Central Washington nonmetropolitan area',
-	  'value': 'Central Washington nonmetropolitan area'
+	    "label": "Central Washington nonmetropolitan area",
+	    "value": "Central Washington nonmetropolitan area"
 	}, {
-	  'label': 'East Washington nonmetropolitan area',
-	  'value': 'East Washington nonmetropolitan area'
+	    "label": "East Washington nonmetropolitan area",
+	    "value": "East Washington nonmetropolitan area"
 	}, {
-	  'label': 'Kennewick-Richland',
-	  'value': 'Kennewick-Richland'
+	    "label": "Kennewick-Richland, WA",
+	    "value": "Kennewick-Richland, WA"
 	}, {
-	  'label': 'Longview',
-	  'value': 'Longview'
+	    "label": "Longview, WA",
+	    "value": "Longview, WA"
 	}, {
-	  'label': 'Mount Vernon-Anacortes',
-	  'value': 'Mount Vernon-Anacortes'
+	    "label": "Mount Vernon-Anacortes, WA",
+	    "value": "Mount Vernon-Anacortes, WA"
 	}, {
-	  'label': 'Northwest Washington nonmetropolitan area',
-	  'value': 'Northwest Washington nonmetropolitan area'
+	    "label": "Northwest Washington nonmetropolitan area",
+	    "value": "Northwest Washington nonmetropolitan area"
 	}, {
-	  'label': 'Olympia-Tumwater',
-	  'value': 'Olympia-Tumwater'
+	    "label": "Olympia-Tumwater, WA",
+	    "value": "Olympia-Tumwater, WA"
 	}, {
-	  'label': 'Seattle-Bellevue-Everett, WA Metropolitan Division',
-	  'value': 'Seattle-Bellevue-Everett, WA Metropolitan Division'
+	    "label": "Seattle-Bellevue-Everett, WA Metropolitan Division",
+	    "value": "Seattle-Bellevue-Everett, WA Metropolitan Division"
 	}, {
-	  'label': 'Southwest Washington nonmetropolitan area',
-	  'value': 'Southwest Washington nonmetropolitan area'
+	    "label": "Southwest Washington nonmetropolitan area",
+	    "value": "Southwest Washington nonmetropolitan area"
 	}, {
-	  'label': 'Spokane-Spokane Valley',
-	  'value': 'Spokane-Spokane Valley'
+	    "label": "Spokane-Spokane Valley, WA",
+	    "value": "Spokane-Spokane Valley, WA"
 	}, {
-	  'label': 'Tacoma-Lakewood, WA Metropolitan Division',
-	  'value': 'Tacoma-Lakewood, WA Metropolitan Division'
+	    "label": "Tacoma-Lakewood, WA Metropolitan Division",
+	    "value": "Tacoma-Lakewood, WA Metropolitan Division"
 	}, {
-	  'label': 'Walla Walla',
-	  'value': 'Walla Walla'
+	    "label": "Walla Walla, WA",
+	    "value": "Walla Walla, WA"
 	}, {
-	  'label': 'Wenatchee',
-	  'value': 'Wenatchee'
+	    "label": "Wenatchee, WA",
+	    "value": "Wenatchee, WA"
 	}, {
-	  'label': 'Yakima',
-	  'value': 'Yakima'
+	    "label": "Yakima, WA",
+	    "value": "Yakima, WA"
 	}];
+
 	exports.WI = [{
-	  'label': 'Appleton',
-	  'value': 'Appleton'
+	    "label": "Appleton, WI",
+	    "value": "Appleton, WI"
 	}, {
-	  'label': 'Eau Claire',
-	  'value': 'Eau Claire'
+	    "label": "Eau Claire, WI",
+	    "value": "Eau Claire, WI"
 	}, {
-	  'label': 'Fond du Lac',
-	  'value': 'Fond du Lac'
+	    "label": "Fond du Lac, WI",
+	    "value": "Fond du Lac, WI"
 	}, {
-	  'label': 'Green Bay',
-	  'value': 'Green Bay'
+	    "label": "Green Bay, WI",
+	    "value": "Green Bay, WI"
 	}, {
-	  'label': 'Janesville-Beloit',
-	  'value': 'Janesville-Beloit'
+	    "label": "Janesville-Beloit, WI",
+	    "value": "Janesville-Beloit, WI"
 	}, {
-	  'label': 'La Crosse-Onalaska, WI-MN',
-	  'value': 'La Crosse-Onalaska, WI-MN'
+	    "label": "La Crosse-Onalaska, WI-MN",
+	    "value": "La Crosse-Onalaska, WI-MN"
 	}, {
-	  'label': 'Madison',
-	  'value': 'Madison'
+	    "label": "Madison, WI",
+	    "value": "Madison, WI"
 	}, {
-	  'label': 'Milwaukee-Waukesha-West Allis',
-	  'value': 'Milwaukee-Waukesha-West Allis'
+	    "label": "Milwaukee-Waukesha-West Allis, WI",
+	    "value": "Milwaukee-Waukesha-West Allis, WI"
 	}, {
-	  'label': 'Northeastern Wisconsin nonmetropolitan area',
-	  'value': 'Northeastern Wisconsin nonmetropolitan area'
+	    "label": "Northeastern Wisconsin nonmetropolitan area",
+	    "value": "Northeastern Wisconsin nonmetropolitan area"
 	}, {
-	  'label': 'Northwestern Wisconsin nonmetropolitan area',
-	  'value': 'Northwestern Wisconsin nonmetropolitan area'
+	    "label": "Northwestern Wisconsin nonmetropolitan area",
+	    "value": "Northwestern Wisconsin nonmetropolitan area"
 	}, {
-	  'label': 'Oshkosh-Neenah',
-	  'value': 'Oshkosh-Neenah'
+	    "label": "Oshkosh-Neenah, WI",
+	    "value": "Oshkosh-Neenah, WI"
 	}, {
-	  'label': 'Racine',
-	  'value': 'Racine'
+	    "label": "Racine, WI",
+	    "value": "Racine, WI"
 	}, {
-	  'label': 'Sheboygan',
-	  'value': 'Sheboygan'
+	    "label": "Sheboygan, WI",
+	    "value": "Sheboygan, WI"
 	}, {
-	  'label': 'South Central Wisconsin nonmetropolitan area',
-	  'value': 'South Central Wisconsin nonmetropolitan area'
+	    "label": "South Central Wisconsin nonmetropolitan area",
+	    "value": "South Central Wisconsin nonmetropolitan area"
 	}, {
-	  'label': 'Wausau',
-	  'value': 'Wausau'
+	    "label": "Wausau, WI",
+	    "value": "Wausau, WI"
 	}, {
-	  'label': 'Western Wisconsin nonmetropolitan area',
-	  'value': 'Western Wisconsin nonmetropolitan area'
+	    "label": "Western Wisconsin nonmetropolitan area",
+	    "value": "Western Wisconsin nonmetropolitan area"
 	}];
+
 	exports.WV = [{
-	  'label': 'Beckley',
-	  'value': 'Beckley'
+	    "label": "Beckley, WV",
+	    "value": "Beckley, WV"
 	}, {
-	  'label': 'Charleston',
-	  'value': 'Charleston'
+	    "label": "Charleston, WV",
+	    "value": "Charleston, WV"
 	}, {
-	  'label': 'Huntington-Ashland, WV-KY-OH',
-	  'value': 'Huntington-Ashland, WV-KY-OH'
+	    "label": "Huntington-Ashland, WV-KY-OH",
+	    "value": "Huntington-Ashland, WV-KY-OH"
 	}, {
-	  'label': 'Morgantown',
-	  'value': 'Morgantown'
+	    "label": "Morgantown, WV",
+	    "value": "Morgantown, WV"
 	}, {
-	  'label': 'Northern West Virginia nonmetropolitan area',
-	  'value': 'Northern West Virginia nonmetropolitan area'
+	    "label": "Northern West Virginia nonmetropolitan area",
+	    "value": "Northern West Virginia nonmetropolitan area"
 	}, {
-	  'label': 'Parkersburg-Vienna',
-	  'value': 'Parkersburg-Vienna'
+	    "label": "Parkersburg-Vienna, WV",
+	    "value": "Parkersburg-Vienna, WV"
 	}, {
-	  'label': 'Southern West Virginia nonmetropolitan area',
-	  'value': 'Southern West Virginia nonmetropolitan area'
+	    "label": "Southern West Virginia nonmetropolitan area",
+	    "value": "Southern West Virginia nonmetropolitan area"
 	}, {
-	  'label': 'Weirton-Steubenville, W',
-	  'value': 'Weirton-Steubenville, W'
+	    "label": "Weirton-Steubenville, WV-OH",
+	    "value": "Weirton-Steubenville, WV-OH"
 	}, {
-	  'label': 'Wheeling, WV-OH',
-	  'value': 'Wheeling, WV-OH'
+	    "label": "Wheeling, WV-OH",
+	    "value": "Wheeling, WV-OH"
 	}];
 	exports.WY = [{
-	  'label': 'Casper',
-	  'value': 'Casper'
+	    "label": "Casper, WY",
+	    "value": "Casper, WY"
 	}, {
-	  'label': 'Central-Southeast Wyoming nonmetropolitan area',
-	  'value': 'Central-Southeast Wyoming nonmetropolitan area'
+	    "label": "Central-Southeast Wyoming nonmetropolitan area",
+	    "value": "Central-Southeast Wyoming nonmetropolitan area"
 	}, {
-	  'label': 'Cheyenne',
-	  'value': 'Cheyenne'
+	    "label": "Cheyenne, WY",
+	    "value": "Cheyenne, WY"
 	}, {
-	  'label': 'Northeast Wyoming nonmetropolitan area',
-	  'value': 'Northeast Wyoming nonmetropolitan area'
+	    "label": "Northeast Wyoming nonmetropolitan area",
+	    "value": "Northeast Wyoming nonmetropolitan area"
 	}, {
-	  'label': 'Northwest Wyoming nonmetropolitan area',
-	  'value': 'Northwest Wyoming nonmetropolitan area'
+	    "label": "Northwest Wyoming nonmetropolitan area",
+	    "value": "Northwest Wyoming nonmetropolitan area"
 	}, {
-	  'label': 'Southwest Wyoming nonmetropolitan area',
-	  'value': 'Southwest Wyoming nonmetropolitan area'
+	    "label": "Southwest Wyoming nonmetropolitan area",
+	    "value": "Southwest Wyoming nonmetropolitan area"
 	}];
 
 /***/ },
-/* 290 */
+/* 291 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -31613,7 +32182,7 @@
 	exports.YEARS = [{ label: 2016, value: 2016 }, { label: 2015, value: 2015 }, { label: 2014, value: 2014 }, { label: 2013, value: 2013 }, { label: 2012, value: 2012 }, { label: 2011, value: 2011 }, { label: 2010, value: 2010 }, { label: 2009, value: 2009 }, { label: 2008, value: 2008 }, { label: 2007, value: 2007 }, { label: 2006, value: 2006 }, { label: 2005, value: 2005 }, { label: 2004, value: 2004 }, { label: 2003, value: 2003 }, { label: 2002, value: 2002 }, { label: 2001, value: 2001 }, { label: 2000, value: 2000 }, { label: 1999, value: 1999 }, { label: 1998, value: 1998 }, { label: 1997, value: 1997 }, { label: 1996, value: 1996 }, { label: 1995, value: 1995 }, { label: 1994, value: 1994 }, { label: 1993, value: 1993 }, { label: 1992, value: 1992 }, { label: 1991, value: 1991 }, { label: 1990, value: 1990 }, { label: 1989, value: 1989 }, { label: 1988, value: 1988 }, { label: 1987, value: 1987 }, { label: 1986, value: 1986 }, { label: 1985, value: 1985 }, { label: 1984, value: 1984 }, { label: 1983, value: 1983 }, { label: 1982, value: 1982 }, { label: 1981, value: 1981 }, { label: 1980, value: 1980 }, { label: 1979, value: 1979 }, { label: 1978, value: 1978 }, { label: 1977, value: 1977 }, { label: 1976, value: 1976 }, { label: 1975, value: 1975 }, { label: 1974, value: 1974 }, { label: 1973, value: 1973 }, { label: 1972, value: 1972 }, { label: 1971, value: 1971 }, { label: 1970, value: 1970 }, { label: 1969, value: 1969 }, { label: 1968, value: 1968 }, { label: 1967, value: 1967 }, { label: 1966, value: 1966 }, { label: 1965, value: 1965 }, { label: 1964, value: 1964 }, { label: 1963, value: 1963 }, { label: 1962, value: 1962 }, { label: 1961, value: 1961 }, { label: 1960, value: 1960 }, { label: 1959, value: 1959 }, { label: 1958, value: 1958 }, { label: 1957, value: 1957 }, { label: 1956, value: 1956 }, { label: 1955, value: 1955 }, { label: 1954, value: 1954 }, { label: 1953, value: 1953 }, { label: 1952, value: 1952 }, { label: 1951, value: 1951 }, { label: 1950, value: 1950 }, { label: 1949, value: 1949 }, { label: 1948, value: 1948 }, { label: 1947, value: 1947 }, { label: 1946, value: 1946 }, { label: 1945, value: 1945 }, { label: 1944, value: 1944 }, { label: 1943, value: 1943 }, { label: 1942, value: 1942 }, { label: 1941, value: 1941 }, { label: 1940, value: 1940 }, { label: 1939, value: 1939 }, { label: 1938, value: 1938 }, { label: 1937, value: 1937 }, { label: 1936, value: 1936 }, { label: 1935, value: 1935 }, { label: 1934, value: 1934 }, { label: 1933, value: 1933 }, { label: 1932, value: 1932 }, { label: 1931, value: 1931 }, { label: 1930, value: 1930 }, { label: 1929, value: 1929 }, { label: 1928, value: 1928 }, { label: 1927, value: 1927 }, { label: 1926, value: 1926 }, { label: 1925, value: 1925 }, { label: 1924, value: 1924 }, { label: 1923, value: 1923 }, { label: 1922, value: 1922 }, { label: 1921, value: 1921 }, { label: 1920, value: 1920 }, { label: 1919, value: 1919 }, { label: 1918, value: 1918 }, { label: 1917, value: 1917 }, { label: 1916, value: 1916 }, { label: 1915, value: 1915 }, { label: 1914, value: 1914 }, { label: 1913, value: 1913 }, { label: 1912, value: 1912 }, { label: 1911, value: 1911 }, { label: 1910, value: 1910 }, { label: 1909, value: 1909 }, { label: 1908, value: 1908 }, { label: 1907, value: 1907 }, { label: 1906, value: 1906 }, { label: 1905, value: 1905 }, { label: 1904, value: 1904 }, { label: 1903, value: 1903 }, { label: 1902, value: 1902 }, { label: 1901, value: 1901 }, { label: 1900, value: 1900 }];
 
 /***/ },
-/* 291 */
+/* 292 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -31621,16 +32190,16 @@
 	exports.MONTHS = [{ value: 'January', label: 'January' }, { value: 'February', label: 'February' }, { value: 'March', label: 'March' }, { value: 'April', label: 'April' }, { value: 'May', label: 'May' }, { value: 'June', label: 'June' }, { value: 'July', label: 'July' }, { value: 'August', label: 'August' }, { value: 'September', label: 'September' }, { value: 'October', label: 'October' }, { value: 'November', label: 'November' }, { value: 'December', label: 'December' }];
 
 /***/ },
-/* 292 */
+/* 293 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(293);
+	var content = __webpack_require__(294);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(286)(content, {});
+	var update = __webpack_require__(287)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -31647,81 +32216,81 @@
 	}
 
 /***/ },
-/* 293 */
+/* 294 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(285)();
+	exports = module.exports = __webpack_require__(286)();
 	// imports
 
 
 	// module
-	exports.push([module.id, ".inputBlock {\n  font-size: 0.9em; }\n\n#metroArea {\n  display: none; }\n\n.slideStart {\n  margin-top: 3em; }\n\n#lowerRange {\n  padding-left: 1.3em; }\n\n#upperRange {\n  padding-left: 0; }\n\n.col-xs-1 {\n  width: 5%;\n  margin-top: 25px; }\n\n.col-xs-4 {\n  width: 40%; }\n\n.col-xs-5 {\n  padding-right: 0; }\n\n.input-group-addon div {\n  margin-right: 0.5em;\n  font-size: 1.5em; }\n\n.form-control {\n  color: #000; }\n\n.certificateBlock {\n  border: 20px solid #FFD700;\n  outline: 2px solid #000;\n  width: 100%;\n  height: 12em;\n  font-size: 3em;\n  padding: 2em 0em; }\n\n/* Certificate Initial ----------- */\n#initialArrow {\n  height: 5em;\n  background-image: url(" + __webpack_require__(294) + ");\n  background-repeat: no-repeat;\n  background-position: center;\n  -webkit-background-size: contain;\n  -moz-bacbkground-size: contain;\n  background-size: contain; }\n\n#initialText {\n  text-align: center;\n  font-size: 0.6em; }\n\n/* Certificate Updated ----------- */\n.certHead {\n  font-family: FoundersGrotesk_Cnd;\n  font-size: 1.3em;\n  margin-top: -0.5em; }\n\n.updatedBlock, .readyBlock {\n  text-align: center; }\n\n.updatedContent, .readyContent {\n  font-size: 0.65em;\n  margin-top: 1em; }\n\n/* Certificate Ready ----------- */\n.readyContentContainer {\n  background-color: #FFF;\n  height: 325px; }\n\ninput[type=range] {\n  -webkit-appearance: none;\n  width: 100%;\n  background: transparent;\n  /* thumb section */\n  /* track section */ }\n  input[type=range]:focus {\n    outline: none; }\n  input[type=range]-webkit-slider {\n    -webkit-appearance: none; }\n  input[type=range]::-webkit-slider-thumb {\n    -webkit-appearance: none;\n    margin-top: -1em;\n    border: 1px solid #000;\n    border-radius: 0;\n    height: 2em;\n    width: 5em;\n    background: #000;\n    cursor: pointer; }\n  input[type=range]:focus::-webkit-slider-thumb {\n    background-color: #FFD700;\n    border: 4px solid black; }\n  input[type=range]::-moz-range-thumb {\n    border: 1px solid #000;\n    border-radius: 0;\n    height: 2em;\n    width: 5em;\n    background: #000;\n    cursor: pointer; }\n  input[type=range]::-ms-thumb {\n    border: 1px solid #000;\n    border-radius: 0;\n    height: 2em;\n    width: 5em;\n    background: #000;\n    cursor: pointer; }\n  input[type=range]::-webkit-slider-runnable-track {\n    width: 100%;\n    height: 5px;\n    cursor: pointer;\n    background: #000;\n    border: 2px solid #000;\n    border-radius: 0; }\n  input[type=range]::-moz-range-track {\n    width: 100%;\n    height: 5px;\n    cursor: pointer;\n    background: #000;\n    border: 2px solid #000;\n    border-radius: 0; }\n\n/* Smartphones (portrait and landscape) ----------- */\n@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {\n  .Select-input input {\n    font-size: 40px !important; }\n  h3 {\n    font-size: 3.5em; }\n  #initialText {\n    padding-right: 1em;\n    font-size: 1em;\n    margin-top: 2em; }\n  #initialArrow {\n    background-image: url(" + __webpack_require__(295) + ");\n    height: 10em; }\n  .certificateBlock {\n    height: 15em;\n    margin: 2em 0 0 0; }\n  .updatedContent {\n    margin-top: 0.5em;\n    font-size: 0.9em; }\n  .selector .Select {\n    line-height: 6em; }\n  .selector .Select-value-label {\n    font-size: 2.5em;\n    margin-top: 0.6em; }\n  .selector .Select-placeholder {\n    font-size: 3em;\n    margin-top: 0.6em;\n    margin-left: 0.2em; }\n  .col-xs-7 .Select-control .Select-value {\n    margin-top: 1.25em;\n    font-size: 1.25em; }\n  .col-xs-5 #react-select-5--value .Select-value {\n    font-size: 1.25em;\n    margin-top: 1.25em; }\n  .col-xs-7 #react-select-6--value .Select-value {\n    font-size: 1.25em;\n    margin-top: 1.25em; }\n  .Select-value {\n    margin-top: 1.5em;\n    font-weight: bold; }\n  .Select.Select--single.is-focused.is-open.is-searchable.has-value {\n    padding-top: 10px; }\n    .Select.Select--single.is-focused.is-open.is-searchable.has-value .Select-value-label {\n      opacity: 0.2; }\n  .Select.Select--single.is-focused.is-open.is-searchable .Select-placeholder {\n    opacity: 0.2;\n    padding-top: 10px; }\n  .Select-placeholder, .Select--single > .Select-control .Select-value {\n    max-width: 90%;\n    color: #000; }\n  .Select .is-open {\n    color: #FF0000;\n    font-size: 2em; }\n  .certHead {\n    font-size: 2.25em; }\n  .readyContentContainer {\n    font-size: 1.5em;\n    height: 400px; } }\n\n/* iPad portrait ----------- */\n@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {\n  #initialText {\n    padding-right: 0;\n    font-size: 1em;\n    margin-top: 0; } }\n\n@font-face {\n  font-family: FoundersGrotesk;\n  src: url(" + __webpack_require__(296) + ");\n  src: url(" + __webpack_require__(297) + ") format(\"woff\"), url(" + __webpack_require__(298) + ") format(\"woff2\");\n  font-weight: bold; }\n\n@font-face {\n  font-family: FoundersGrotesk_Cnd;\n  src: url(" + __webpack_require__(299) + ");\n  src: url(" + __webpack_require__(300) + ") format(\"woff\"), url(" + __webpack_require__(301) + ") format(\"woff2\");\n  font-weight: bold; }\n\n@font-face {\n  font-family: FoundersGrotesk;\n  src: url(" + __webpack_require__(302) + ");\n  src: url(" + __webpack_require__(303) + ") format(\"woff\"), url(" + __webpack_require__(304) + ") format(\"woff2\");\n  font-weight: normal; }\n\n#root {\n  margin: 2em auto; }\n\nbody {\n  font-family: FoundersGrotesk;\n  font-weight: normal;\n  color: #000; }\n\n/* Main sizing things */\nh3 {\n  font-weight: bold;\n  margin-top: 10px; }\n\n.row {\n  margin-bottom: 2em; }\n\n/***********  ALL THE MENU THINGS  ***********/\n/*\nSelect placeholder - start\nvalue-label is span\nvalue is div container\n*/\n.Select {\n  line-height: 3em; }\n\n.Select-placeholder {\n  margin-top: 0.1em; }\n\n.Select-value-label {\n  font-weight: bold; }\n\n.Select-placeholder, .Select-value-label {\n  font-size: 1.5em; }\n\n.Select-value {\n  margin-top: 0.5em; }\n\n.Select-value, .Select-placeholder {\n  padding-left: 20px !important; }\n\n.Select-option {\n  font-size: 1.5em;\n  padding: 0.15em 20px; }\n\n.Select-option.is-focused {\n  background-color: rgba(255, 215, 0, 0.08); }\n\n.Select-menu {\n  border-left-width: 0px;\n  border-right-width: 0px;\n  border-top-width: 0px; }\n\n.Select-menu-outer {\n  border-bottom-right-radius: 0;\n  border-bottom-left-radius: 0; }\n\n.Select-placeholder, .Select--single > .Select-control .Select-value {\n  max-width: 90%;\n  color: #000; }\n\n.Select .is-open {\n  color: #FF0000;\n  font-size: 2em; }\n\n.Select.Select--single.is-focused.is-open.is-searchable .Select-placeholder {\n  font-color: rgba(0, 0, 0, 0.5); }\n\n.has-value.Select--single > .Select-control .Select-value .Select-value-label, .has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {\n  color: #000; }\n\n.Select-control, .input-group {\n  border-radius: 0;\n  border: 2px solid #000;\n  color: #000; }\n\n.Select-arrow {\n  border-color: #000 transparent transparent;\n  border-width: 10px 10px 0px;\n  margin-right: 1em; }\n\n.Select-control {\n  padding-top: 4px; }\n\n.Select:focus {\n  outline: none; }\n\n#react-select-6--value .Select-value {\n  margin-top: 0.1em; }\n\n#react-select-5--value .Select-value {\n  margin-top: 0.1em; }\n\n.form-control, .input-group-addon {\n  border: 1px solid transparent;\n  -webkit-box-shadow: none;\n  box-shadow: none; }\n\n.input-group .form-control {\n  z-index: 0; }\n\n.input-group-addon {\n  background-color: #FFF;\n  color: #000; }\n\n.form-control:focus {\n  border: none !important;\n  box-shadow: none;\n  -webkit-box-shadow: none; }\n", ""]);
+	exports.push([module.id, ".inputBlock {\n  font-size: 0.9em; }\n\n#metroArea {\n  display: none; }\n\n.slideStart {\n  margin-top: 3em; }\n\n#lowerRange {\n  padding-left: 1.3em; }\n\n#upperRange {\n  padding-left: 0; }\n\n.col-xs-1 {\n  width: 5%;\n  margin-top: 25px; }\n\n.col-xs-4 {\n  width: 40%; }\n\n.col-xs-5 {\n  padding-right: 0; }\n\n.input-group-addon div {\n  margin-right: 0.5em;\n  font-size: 1.5em; }\n\n.form-control {\n  color: #000; }\n\n.certificateBlock {\n  border: 20px solid #FFD700;\n  outline: 2px solid #000;\n  width: 100%;\n  height: 12em;\n  font-size: 3em;\n  padding: 2em 0em; }\n\n.certificateBlock.row {\n  margin-bottom: 1em; }\n\na, i {\n  cursor: pointer; }\n\na {\n  margin: 1em;\n  color: #000; }\n  a:hover {\n    color: #FFD700; }\n  a:visited {\n    color: #000; }\n\ni:hover {\n  color: #FFD700; }\n\ni:visited {\n  color: #000; }\n\n/* Certificate Initial ----------- */\n#initialArrow {\n  height: 5em;\n  background-image: url(" + __webpack_require__(295) + ");\n  background-repeat: no-repeat;\n  background-position: center;\n  -webkit-background-size: contain;\n  -moz-bacbkground-size: contain;\n  background-size: contain; }\n\n#initialText {\n  text-align: center;\n  font-size: 0.6em; }\n\n/* Certificate Updated ----------- */\n.certHead {\n  font-family: FoundersGrotesk_Cnd;\n  font-size: 1.3em;\n  margin-top: -0.5em; }\n\n.updatedBlock, .readyBlock {\n  text-align: center; }\n\n.updatedContent, .readyContent {\n  font-size: 0.65em;\n  margin-top: 1em; }\n\n/* Certificate Ready ----------- */\n.readyContentContainer {\n  background-color: #FFF;\n  height: 325px; }\n\ninput[type=range] {\n  -webkit-appearance: none;\n  width: 100%;\n  background: transparent;\n  /* thumb section */\n  /* track section */ }\n  input[type=range]:focus {\n    outline: none; }\n  input[type=range]-webkit-slider {\n    -webkit-appearance: none; }\n  input[type=range]::-webkit-slider-thumb {\n    -webkit-appearance: none;\n    margin-top: -1em;\n    border: 1px solid #000;\n    border-radius: 0;\n    height: 2em;\n    width: 5em;\n    background: #000;\n    cursor: pointer; }\n  input[type=range]:focus::-webkit-slider-thumb {\n    background-color: #FFD700;\n    border: 4px solid black; }\n  input[type=range]::-moz-range-thumb {\n    border: 1px solid #000;\n    border-radius: 0;\n    height: 2em;\n    width: 5em;\n    background: #000;\n    cursor: pointer; }\n  input[type=range]::-ms-thumb {\n    border: 1px solid #000;\n    border-radius: 0;\n    height: 2em;\n    width: 5em;\n    background: #000;\n    cursor: pointer; }\n  input[type=range]::-webkit-slider-runnable-track {\n    width: 100%;\n    height: 5px;\n    cursor: pointer;\n    background: #000;\n    border: 2px solid #000;\n    border-radius: 0; }\n  input[type=range]::-moz-range-track {\n    width: 100%;\n    height: 5px;\n    cursor: pointer;\n    background: #000;\n    border: 2px solid #000;\n    border-radius: 0; }\n\n/* Smartphones (portrait and landscape) ----------- */\n@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {\n  .Select-input input {\n    font-size: 40px !important; }\n  h3 {\n    font-size: 3.5em; }\n  #initialText {\n    padding-right: 1em;\n    font-size: 1em;\n    margin-top: 2em; }\n  #initialArrow {\n    background-image: url(" + __webpack_require__(296) + ");\n    height: 10em; }\n  .certificateBlock {\n    height: 15em;\n    margin: 2em 0 0 0; }\n  .updatedContent {\n    margin-top: 0.5em;\n    font-size: 0.9em; }\n  .selector .Select {\n    line-height: 6em; }\n  .selector .Select-value-label {\n    font-size: 2.5em;\n    margin-top: 0.6em; }\n  .selector .Select-placeholder {\n    font-size: 3em;\n    margin-top: 0.6em;\n    margin-left: 0.2em; }\n  .col-xs-7 .Select-control .Select-value {\n    margin-top: 1.25em;\n    font-size: 1.25em; }\n  .col-xs-5 #react-select-5--value .Select-value {\n    font-size: 1.25em;\n    margin-top: 1.25em; }\n  .col-xs-7 #react-select-6--value .Select-value {\n    font-size: 1.25em;\n    margin-top: 1.25em; }\n  .Select-value {\n    margin-top: 1.5em;\n    font-weight: bold; }\n  .Select.Select--single.is-focused.is-open.is-searchable.has-value {\n    padding-top: 10px; }\n    .Select.Select--single.is-focused.is-open.is-searchable.has-value .Select-value-label {\n      opacity: 0.2; }\n  .Select.Select--single.is-focused.is-open.is-searchable .Select-placeholder {\n    opacity: 0.2;\n    padding-top: 10px; }\n  .Select-placeholder, .Select--single > .Select-control .Select-value {\n    max-width: 90%;\n    color: #000; }\n  .Select .is-open {\n    color: #FF0000;\n    font-size: 2em; }\n  .certHead {\n    font-size: 2.25em; }\n  .readyContentContainer {\n    font-size: 1.5em;\n    height: 400px; } }\n\n/* iPad portrait ----------- */\n@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {\n  #initialText {\n    padding-right: 0;\n    font-size: 1em;\n    margin-top: 0; } }\n\n@font-face {\n  font-family: FoundersGrotesk;\n  src: url(" + __webpack_require__(297) + ");\n  src: url(" + __webpack_require__(298) + ") format(\"woff\"), url(" + __webpack_require__(299) + ") format(\"woff2\");\n  font-weight: bold; }\n\n@font-face {\n  font-family: FoundersGrotesk_Cnd;\n  src: url(" + __webpack_require__(300) + ");\n  src: url(" + __webpack_require__(301) + ") format(\"woff\"), url(" + __webpack_require__(302) + ") format(\"woff2\");\n  font-weight: bold; }\n\n@font-face {\n  font-family: FoundersGrotesk;\n  src: url(" + __webpack_require__(303) + ");\n  src: url(" + __webpack_require__(304) + ") format(\"woff\"), url(" + __webpack_require__(305) + ") format(\"woff2\");\n  font-weight: normal; }\n\n#root {\n  margin: 2em auto; }\n\nbody {\n  font-family: FoundersGrotesk;\n  font-weight: normal;\n  color: #000; }\n\n/* Main sizing things */\nh3 {\n  font-weight: bold;\n  margin-top: 10px; }\n\n.row {\n  margin-bottom: 2em; }\n\n/***********  ALL THE MENU THINGS  ***********/\n/*\nSelect placeholder - start\nvalue-label is span\nvalue is div container\n*/\n.Select {\n  line-height: 3em; }\n\n.Select-placeholder {\n  margin-top: 0.1em; }\n\n.Select-value-label {\n  font-weight: bold; }\n\n.Select-placeholder, .Select-value-label {\n  font-size: 1.5em; }\n\n.Select-value {\n  margin-top: 0.5em; }\n\n.Select-value, .Select-placeholder {\n  padding-left: 20px !important; }\n\n.Select-option {\n  font-size: 1.5em;\n  padding: 0.15em 20px; }\n\n.Select-option.is-focused {\n  background-color: rgba(255, 215, 0, 0.08); }\n\n.Select-menu {\n  border-left-width: 0px;\n  border-right-width: 0px;\n  border-top-width: 0px; }\n\n.Select-menu-outer {\n  border-bottom-right-radius: 0;\n  border-bottom-left-radius: 0; }\n\n.Select-placeholder, .Select--single > .Select-control .Select-value {\n  max-width: 90%;\n  color: #000; }\n\n.Select .is-open {\n  color: #FF0000;\n  font-size: 2em; }\n\n.Select.Select--single.is-focused.is-open.is-searchable .Select-placeholder {\n  font-color: rgba(0, 0, 0, 0.5); }\n\n.has-value.Select--single > .Select-control .Select-value .Select-value-label, .has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {\n  color: #000; }\n\n.Select-control, .input-group {\n  border-radius: 0;\n  border: 2px solid #000;\n  color: #000; }\n\n.Select-arrow {\n  border-color: #000 transparent transparent;\n  border-width: 10px 10px 0px;\n  margin-right: 1em; }\n\n.Select-control {\n  padding-top: 4px; }\n\n.Select:focus {\n  outline: none; }\n\n#react-select-6--value .Select-value {\n  margin-top: 0.1em; }\n\n#react-select-5--value .Select-value {\n  margin-top: 0.1em; }\n\n.form-control, .input-group-addon {\n  border: 1px solid transparent;\n  -webkit-box-shadow: none;\n  box-shadow: none; }\n\n.input-group .form-control {\n  z-index: 0; }\n\n.input-group-addon {\n  background-color: #FFF;\n  color: #000; }\n\n.form-control:focus {\n  border: none !important;\n  box-shadow: none;\n  -webkit-box-shadow: none; }\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 294 */
+/* 295 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "src/app/assets/fonts/arrow_left.svg";
 
 /***/ },
-/* 295 */
+/* 296 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "src/app/assets/fonts/arrow.svg";
 
 /***/ },
-/* 296 */
+/* 297 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "src/app/assets/fonts/FoundersGroteskWeb-Bold.eot";
 
 /***/ },
-/* 297 */
+/* 298 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "src/app/assets/fonts/FoundersGroteskWeb-Bold.woff";
 
 /***/ },
-/* 298 */
+/* 299 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "src/app/assets/fonts/FoundersGroteskWeb-Bold.woff2";
 
 /***/ },
-/* 299 */
+/* 300 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "src/app/assets/fonts/FoundersGrotXCondWeb-Bold.eot";
 
 /***/ },
-/* 300 */
+/* 301 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "src/app/assets/fonts/FoundersGrotXCondWeb-Bold.woff";
 
 /***/ },
-/* 301 */
+/* 302 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "src/app/assets/fonts/FoundersGrotXCondWeb-Bold.woff2";
 
 /***/ },
-/* 302 */
+/* 303 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "src/app/assets/fonts/FoundersGroteskWeb-Regular.eot";
 
 /***/ },
-/* 303 */
+/* 304 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "src/app/assets/fonts/FoundersGroteskWeb-Regular.woff";
 
 /***/ },
-/* 304 */
+/* 305 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "src/app/assets/fonts/FoundersGroteskWeb-Regular.woff2";

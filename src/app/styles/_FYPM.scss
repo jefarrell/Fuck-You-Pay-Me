@@ -57,7 +57,34 @@ $accent: #FFD700;
 	padding: 2em 0em;
 }
 
+.certificateBlock.row {
+	margin-bottom: 1em;
+}
 
+
+a, i {
+	cursor: pointer;
+}
+a {
+	margin: 1em;
+	color: $black;
+	
+	&:hover {
+		color: $accent;
+	}
+
+	&:visited {
+		color: $black;
+	}
+}
+
+i:hover {
+	color: $accent;
+}
+
+i:visited {
+	color: $black;
+}
 /* Certificate Initial ----------- */
 
 #initialArrow {
@@ -77,13 +104,6 @@ $accent: #FFD700;
 
 
 /* Certificate Updated ----------- */
-
-// .col-xs-12 {
-// 	h1 {
-// 		font-size: 1.3em;
-// 		margin-top: -0.5em;
-// 	}
-// }
 
 .certHead {
 	font-family: FoundersGrotesk_Cnd;
@@ -107,5 +127,6 @@ $accent: #FFD700;
 	background-color: $white;
 	height: 325px;
 }
+
 
 

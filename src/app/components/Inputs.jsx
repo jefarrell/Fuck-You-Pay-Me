@@ -7,6 +7,7 @@ import Grid from "react-bootstrap/lib/Grid";
 import Row from "react-bootstrap/lib/Row";
 import Col from "react-bootstrap/lib/Col";
 
+
 const STATES = require('../assets/data/states');
 const JOBS = require('../assets/data/jobs');
 const STATE_AREAS = require('../assets/data/state_areas.js');
@@ -47,7 +48,7 @@ class Inputs extends React.Component {
 		}
 
 		// Maybe not the best but works for now.  Test more
-		if (this.state.job && this.state.salary_start !== '34000' && this.state.salary_current !== '48000') {
+		if (this.state.job !== '_____' && this.state.salary_start !== '34000' && this.state.salary_current !== '48000') {
 			this.setState({status: 'ready'})
 		} 
 		else return;
