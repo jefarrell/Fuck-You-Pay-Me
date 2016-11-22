@@ -60,7 +60,7 @@ class Output extends React.Component {
 				</Col>
 
 
-		} else if (this.state.status === 'ready') {
+		} else if (this.state.status === 'underpaid') {
 
 			status =
 				<Col xs={12} className="readyBlock">
@@ -74,6 +74,25 @@ class Output extends React.Component {
 						</Col>
 						<Col xs={12} className="readyContent">
 							<p> Will undervaluing your employee pay off?</p>
+						</Col>
+					</Col>
+				</Col>
+			$('.certificateBlock').css('background-color', '#FFD700');
+
+		} else if (this.state.status === 'paid') {
+
+			status =
+				<Col xs={12} className="readyBlock">
+					<Col xs={12} id="readyHeader">
+						<h1 className="certHead">CONGRATULATIONS</h1>
+					</Col>
+					<Col xs={12} className="readyContentContainer">
+						<Col xs={12} className="readyContent">
+							<p>You're $$$$$ ahead of the game.  {this.state.job} in the {this.state.area} area make an average
+							of _____ per year, according to the Bureau of Labor Statistics.</p>
+						</Col>
+						<Col xs={12} className="readyContent">
+							<p>Treat yourself tonight, you've earned it.</p>
 						</Col>
 					</Col>
 				</Col>

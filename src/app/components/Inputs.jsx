@@ -49,6 +49,7 @@ class Inputs extends React.Component {
 		}
 	}
 
+	// Can't be setting state in here....
 	calculatePayment(stateName, areaName) {
 
 		$.getJSON('src/app/assets/data/state_splits/'+stateName+'_salaries.json', (data) => {
@@ -58,13 +59,11 @@ class Inputs extends React.Component {
 
 				if (current < parseInt(data[areaName][this.state.job])) {
 					console.log('less thanz')
-					console.log("data salaryz: ", data[areaName][this.state.job]);
-					console.log('input salaryz: ', this.state.salary_current);
+					//this.setState({ status: 'underpaid' });
 
 				} else if (current >= parseInt(data[areaName][this.state.job])) {
 					console.log('higher thanz');
-					console.log("data salaryz: ", data[areaName][this.state.job]);
-					console.log('input salaryz: ', this.state.salary_current);
+					//this.setState({ status: 'paid' });
 
 				}
 			// Need to figure out something bett here...

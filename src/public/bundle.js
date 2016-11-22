@@ -21592,6 +21592,9 @@
 					this.setState({ salary_start: e.target.value });
 				}
 			}
+
+			// Can't be setting state in here....
+
 		}, {
 			key: 'calculatePayment',
 			value: function calculatePayment(stateName, areaName) {
@@ -21604,12 +21607,10 @@
 
 						if (current < parseInt(data[areaName][_this2.state.job])) {
 							console.log('less thanz');
-							console.log("data salaryz: ", data[areaName][_this2.state.job]);
-							console.log('input salaryz: ', _this2.state.salary_current);
+							//this.setState({ status: 'underpaid' });
 						} else if (current >= parseInt(data[areaName][_this2.state.job])) {
 							console.log('higher thanz');
-							console.log("data salaryz: ", data[areaName][_this2.state.job]);
-							console.log('input salaryz: ', _this2.state.salary_current);
+							//this.setState({ status: 'paid' });
 						}
 						// Need to figure out something bett here...
 					} else {
@@ -24276,7 +24277,7 @@
 							)
 						)
 					);
-				} else if (this.state.status === 'ready') {
+				} else if (this.state.status === 'underpaid') {
 
 					status = _react2.default.createElement(
 						_Col2.default,
@@ -24312,6 +24313,48 @@
 									"p",
 									null,
 									" Will undervaluing your employee pay off?"
+								)
+							)
+						)
+					);
+					$('.certificateBlock').css('background-color', '#FFD700');
+				} else if (this.state.status === 'paid') {
+
+					status = _react2.default.createElement(
+						_Col2.default,
+						{ xs: 12, className: "readyBlock" },
+						_react2.default.createElement(
+							_Col2.default,
+							{ xs: 12, id: "readyHeader" },
+							_react2.default.createElement(
+								"h1",
+								{ className: "certHead" },
+								"CONGRATULATIONS"
+							)
+						),
+						_react2.default.createElement(
+							_Col2.default,
+							{ xs: 12, className: "readyContentContainer" },
+							_react2.default.createElement(
+								_Col2.default,
+								{ xs: 12, className: "readyContent" },
+								_react2.default.createElement(
+									"p",
+									null,
+									"You're $$$$$ ahead of the game.  ",
+									this.state.job,
+									" in the ",
+									this.state.area,
+									" area make an average of _____ per year, according to the Bureau of Labor Statistics."
+								)
+							),
+							_react2.default.createElement(
+								_Col2.default,
+								{ xs: 12, className: "readyContent" },
+								_react2.default.createElement(
+									"p",
+									null,
+									"Treat yourself tonight, you've earned it."
 								)
 							)
 						)
