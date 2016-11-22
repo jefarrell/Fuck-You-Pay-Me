@@ -50,21 +50,21 @@ class Inputs extends React.Component {
 	}
 
 	calculatePayment(stateName, areaName) {
-		let self = this;
-		$.getJSON('src/app/assets/data/state_splits/'+stateName+'_salaries.json', function(data) {
+
+		$.getJSON('src/app/assets/data/state_splits/'+stateName+'_salaries.json', (data) => {
 			
-			if (data[areaName][self.state.job]) {
-				let current = parseInt(self.state.salary_current);
+			if (data[areaName][this.state.job]) {
+				let current = parseInt(this.state.salary_current);
 
-				if (current < parseInt(data[areaName][self.state.job])) {
+				if (current < parseInt(data[areaName][this.state.job])) {
 					console.log('less thanz')
-					console.log("data salaryz: ", data[areaName][self.state.job]);
-					console.log('input salaryz: ', self.state.salary_current);
+					console.log("data salaryz: ", data[areaName][this.state.job]);
+					console.log('input salaryz: ', this.state.salary_current);
 
-				} else if (current >= parseInt(data[areaName][self.state.job])) {
+				} else if (current >= parseInt(data[areaName][this.state.job])) {
 					console.log('higher thanz');
-					console.log("data salaryz: ", data[areaName][self.state.job]);
-					console.log('input salaryz: ', self.state.salary_current);
+					console.log("data salaryz: ", data[areaName][this.state.job]);
+					console.log('input salaryz: ', this.state.salary_current);
 
 				}
 			// Need to figure out something bett here...
@@ -77,11 +77,9 @@ class Inputs extends React.Component {
 		if (this.state.status === 'initial') {
 			this.setState({status: 'updated'});
 		}
-		let self = this;
-		
+
 		// need to run when slider stops or else its gonna load it a bunch of times
 		if (this.state.job !== '_____' && this.state.salary_start !== '34000' && this.state.salary_current !== '48000') {
-			console.log('conditions met, calculating');
 			this.calculatePayment(this.state.state, this.state.area);
 		} 
 		else return;
