@@ -21566,6 +21566,7 @@
 				month: 'January',
 				salary_start: '34000',
 				salary_current: '48000',
+				salary_benchmark: '',
 				status: 'initial'
 			};
 
@@ -21590,27 +21591,44 @@
 				} else {
 					this.setState({ salary_start: e.target.value });
 				}
-
-				// need to run when slider stops or else its gonna load it a bunch of times
-				if (this.state.job !== '_____' && this.state.salary_start !== '34000' && this.state.salary_current !== '48000') {
-					this.calculatePayment(this.state.state, this.state.area);
-				} else return;
 			}
 		}, {
 			key: 'calculatePayment',
 			value: function calculatePayment(stateName, areaName) {
-				console.log(stateName, areaName);
+				var self = this;
 				$.getJSON('src/app/assets/data/state_splits/' + stateName + '_salaries.json', function (data) {
-					console.log("loaded: ", stateName);
-					console.log(data[areaName]);
+
+					if (data[areaName][self.state.job]) {
+						var current = parseInt(self.state.salary_current);
+
+						if (current < parseInt(data[areaName][self.state.job])) {
+							console.log('less thanz');
+							console.log("data salaryz: ", data[areaName][self.state.job]);
+							console.log('input salaryz: ', self.state.salary_current);
+						} else if (current >= parseInt(data[areaName][self.state.job])) {
+							console.log('higher thanz');
+							console.log("data salaryz: ", data[areaName][self.state.job]);
+							console.log('input salaryz: ', self.state.salary_current);
+						}
+						// Need to figure out something bett here...
+					} else {
+						console.log("seems like undefined");
+					}
 				});
 			}
 		}, {
-			key: 'componentDidUpdate',
-			value: function componentDidUpdate() {
+			key: 'componentWillUpdate',
+			value: function componentWillUpdate() {
 				if (this.state.status === 'initial') {
 					this.setState({ status: 'updated' });
 				}
+				var self = this;
+
+				// need to run when slider stops or else its gonna load it a bunch of times
+				if (this.state.job !== '_____' && this.state.salary_start !== '34000' && this.state.salary_current !== '48000') {
+					console.log('conditions met, calculating');
+					this.calculatePayment(this.state.state, this.state.area);
+				} else return;
 			}
 		}, {
 			key: 'formatDollars',
