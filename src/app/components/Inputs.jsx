@@ -25,9 +25,7 @@ class Inputs extends React.Component {
 			year: 2006,
 			month: 'January',
 			salary_start:'34000',
-			salary_current:'48000',
-			salary_benchmark: '',
-			status: 'initial'
+			salary_current:'48000'
 		};
 
 		this.sliderChange = this.sliderChange.bind(this);
@@ -48,42 +46,6 @@ class Inputs extends React.Component {
 			this.setState({salary_start: e.target.value});
 		}
 	}
-
-	// Can't be setting state in here....
-	calculatePayment(stateName, areaName) {
-
-		$.getJSON('src/app/assets/data/state_splits/'+stateName+'_salaries.json', (data) => {
-			
-			if (data[areaName][this.state.job]) {
-				let current = parseInt(this.state.salary_current);
-
-				if (current < parseInt(data[areaName][this.state.job])) {
-					console.log('less thanz')
-					//this.setState({ status: 'underpaid' });
-
-				} else if (current >= parseInt(data[areaName][this.state.job])) {
-					console.log('higher thanz');
-					//this.setState({ status: 'paid' });
-
-				}
-			// Need to figure out something bett here...
-			} else { console.log ("seems like undefined")}
-		});
-	}
-
-
-	componentWillUpdate() {
-		if (this.state.status === 'initial') {
-			this.setState({status: 'updated'});
-		}
-
-		// need to run when slider stops or else its gonna load it a bunch of times
-		if (this.state.job !== '_____' && this.state.salary_start !== '34000' && this.state.salary_current !== '48000') {
-			this.calculatePayment(this.state.state, this.state.area);
-		} 
-		else return;
-	}
-
 
 	formatDollars(amount) {
 		let number = amount.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
@@ -226,7 +188,6 @@ class Inputs extends React.Component {
 						state={this.state.state} 
 						area={this.state.area} 
 						salary_current={this.state.salary_current} 
-						status={this.state.status} 
 					/>
 				</Col>
 			</div>

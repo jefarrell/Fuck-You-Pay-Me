@@ -16,8 +16,7 @@ class Output extends React.Component {
 			state: '',
 			area: '_____',
 			salary_current:'',
-			status: 'initial',
-			payStatus: ''
+			status: 'initial'
 		};
 	}
 
@@ -28,9 +27,43 @@ class Output extends React.Component {
 					this.setState(nextProps);
 				}
 			}
+			if (this.state.job !== '_____' && this.state.area !=='_____' && this.state.salary_current !== '48000') {
+				this.calculatePayment(this.state.state, this.state.area);
+			}
 
 		} else return
 	}
+
+
+	componentDidUpdate() {
+		if (this.state.status === 'initial') {
+			this.setState({ status: 'updated' });
+		}
+	}
+
+	calculatePayment(stateName, areaName) {
+
+		$.getJSON('src/app/assets/data/state_splits/'+stateName+'_salaries.json', (data) => {
+		
+			if (data[areaName][this.state.job]) {
+				let current = parseInt(this.state.salary_current);
+
+				if (current < parseInt(data[areaName][this.state.job])) {
+					console.log('less than')
+					
+					this.setState({ status: 'underpaid' });
+
+				} else if (current > parseInt(data[areaName][this.state.job])) {
+					console.log('higher than');
+				
+					this.setState({ status: 'paid' });
+
+				}
+			// Need to figure out something better here...
+			} else { console.log ("seems like undefined")}
+		});
+	}
+
 
 	render() {
 

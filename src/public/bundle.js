@@ -21565,9 +21565,7 @@
 				year: 2006,
 				month: 'January',
 				salary_start: '34000',
-				salary_current: '48000',
-				salary_benchmark: '',
-				status: 'initial'
+				salary_current: '48000'
 			};
 
 			_this.sliderChange = _this.sliderChange.bind(_this);
@@ -21591,44 +21589,6 @@
 				} else {
 					this.setState({ salary_start: e.target.value });
 				}
-			}
-
-			// Can't be setting state in here....
-
-		}, {
-			key: 'calculatePayment',
-			value: function calculatePayment(stateName, areaName) {
-				var _this2 = this;
-
-				$.getJSON('src/app/assets/data/state_splits/' + stateName + '_salaries.json', function (data) {
-
-					if (data[areaName][_this2.state.job]) {
-						var current = parseInt(_this2.state.salary_current);
-
-						if (current < parseInt(data[areaName][_this2.state.job])) {
-							console.log('less thanz');
-							//this.setState({ status: 'underpaid' });
-						} else if (current >= parseInt(data[areaName][_this2.state.job])) {
-							console.log('higher thanz');
-							//this.setState({ status: 'paid' });
-						}
-						// Need to figure out something bett here...
-					} else {
-						console.log("seems like undefined");
-					}
-				});
-			}
-		}, {
-			key: 'componentWillUpdate',
-			value: function componentWillUpdate() {
-				if (this.state.status === 'initial') {
-					this.setState({ status: 'updated' });
-				}
-
-				// need to run when slider stops or else its gonna load it a bunch of times
-				if (this.state.job !== '_____' && this.state.salary_start !== '34000' && this.state.salary_current !== '48000') {
-					this.calculatePayment(this.state.state, this.state.area);
-				} else return;
 			}
 		}, {
 			key: 'formatDollars',
@@ -21825,8 +21785,7 @@
 							job: this.state.job,
 							state: this.state.state,
 							area: this.state.area,
-							salary_current: this.state.salary_current,
-							status: this.state.status
+							salary_current: this.state.salary_current
 						})
 					)
 				);
@@ -24205,8 +24164,7 @@
 				state: '',
 				area: '_____',
 				salary_current: '',
-				status: 'initial',
-				payStatus: ''
+				status: 'initial'
 			};
 			return _this;
 		}
@@ -24220,7 +24178,42 @@
 							this.setState(nextProps);
 						}
 					}
+					if (this.state.job !== '_____' && this.state.area !== '_____' && this.state.salary_current !== '48000') {
+						this.calculatePayment(this.state.state, this.state.area);
+					}
 				} else return;
+			}
+		}, {
+			key: "componentDidUpdate",
+			value: function componentDidUpdate() {
+				if (this.state.status === 'initial') {
+					this.setState({ status: 'updated' });
+				}
+			}
+		}, {
+			key: "calculatePayment",
+			value: function calculatePayment(stateName, areaName) {
+				var _this2 = this;
+
+				$.getJSON('src/app/assets/data/state_splits/' + stateName + '_salaries.json', function (data) {
+
+					if (data[areaName][_this2.state.job]) {
+						var current = parseInt(_this2.state.salary_current);
+
+						if (current < parseInt(data[areaName][_this2.state.job])) {
+							console.log('less than');
+
+							_this2.setState({ status: 'underpaid' });
+						} else if (current > parseInt(data[areaName][_this2.state.job])) {
+							console.log('higher than');
+
+							_this2.setState({ status: 'paid' });
+						}
+						// Need to figure out something better here...
+					} else {
+						console.log("seems like undefined");
+					}
+				});
 			}
 		}, {
 			key: "render",
