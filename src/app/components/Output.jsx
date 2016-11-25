@@ -16,6 +16,8 @@ class Output extends React.Component {
 			state: '',
 			area: '_____',
 			salary_current:'',
+			salary_data: '_____',
+			salary_difference: '',
 			status: 'initial'
 		};
 	}
@@ -46,18 +48,24 @@ class Output extends React.Component {
 		$.getJSON('src/app/assets/data/state_splits/'+stateName+'_salaries.json', (data) => {
 		
 			if (data[areaName][this.state.job]) {
+				
 				let current = parseInt(this.state.salary_current);
 
 				if (current < parseInt(data[areaName][this.state.job])) {
-					console.log('less than')
-					
-					this.setState({ status: 'underpaid' });
+					console.log('less than: ', parseInt(data[areaName][this.state.job]))
+					this.setState({
+						salary_data: parseInt(data[areaName][this.state.job]),
+						status: 'underpaid'
+					});
 
 				} else if (current > parseInt(data[areaName][this.state.job])) {
-					console.log('higher than');
-				
-					this.setState({ status: 'paid' });
-
+					console.log('higher than: ', parseInt(data[areaName][this.state.job]));
+					let diff = current-parseInt(data[areaName][this.state.job]);
+					this.setState({
+						salary_data: parseInt(data[areaName][this.state.job]),
+						salary_difference: diff,
+						status: 'paid'
+					});
 				}
 			// Need to figure out something better here...
 			} else { console.log ("seems like undefined")}
@@ -85,7 +93,7 @@ class Output extends React.Component {
 					</Col>
 					<Col xs={12} className="updatedContent">
 						<p>{this.state.job} in the {this.state.area} area make an average
-						of _____ per year, according to the Bureau of Labor Statistics.</p>
+						of {this.state.salary_data} per year, according to the Bureau of Labor Statistics.</p>
 					</Col>
 					<Col xs={12} className="updatedContent">
 						<p> Fill out all questions to see your full results.</p>
@@ -103,7 +111,7 @@ class Output extends React.Component {
 					<Col xs={12} className="readyContentContainer">
 						<Col xs={12} className="readyContent">
 							<p>{this.state.job} in the {this.state.area} area make an average
-							of _____ per year, according to the Bureau of Labor Statistics.</p>
+							of ${this.state.salary_data} per year, according to the Bureau of Labor Statistics.</p>
 						</Col>
 						<Col xs={12} className="readyContent">
 							<p> Will undervaluing your employee pay off?</p>
@@ -121,8 +129,8 @@ class Output extends React.Component {
 					</Col>
 					<Col xs={12} className="readyContentContainer">
 						<Col xs={12} className="readyContent">
-							<p>You're $$$$$ ahead of the game.  {this.state.job} in the {this.state.area} area make an average
-							of _____ per year, according to the Bureau of Labor Statistics.</p>
+							<p>You're ${this.state.salary_difference} ahead of the game.  {this.state.job} in the {this.state.area} area make an average
+							of ${this.state.salary_data} per year, according to the Bureau of Labor Statistics.</p>
 						</Col>
 						<Col xs={12} className="readyContent">
 							<p>Treat yourself tonight, you've earned it.</p>

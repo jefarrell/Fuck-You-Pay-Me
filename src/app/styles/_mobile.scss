@@ -1,8 +1,14 @@
 
+/* Little desktop certificate fix ----------- */
+@media screen 
+and (min-width : 1000px) 
+and (max-width : 1200px) {
+	.readyContentContainer, .updatedContent {
+		font-size: 0.5em;
+	}
+}
+
 /* Smartphones (portrait and landscape) ----------- */
-
-
-
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {

@@ -127,7 +127,9 @@ value is div container
 
 .Select.Select--single.is-focused.is-open.is-searchable {	
 	.Select-placeholder {
-		font-color: rgba(0,0,0,0.5);
+		color: rgba(0,0,0,0.1);
+		margin-top: 0.3em;
+		font-size: 1.8em;
 	}
 }
 
@@ -160,21 +162,18 @@ value is div container
 .is-open > .Select-control {	
 }
 
-#react-select-6--value {
+#react-select-6--value, #react-select-5--value {
 	.Select-value {
-		margin-top: 0.1em;
+		margin-top: 0.4em;
 	}
 		
 }
 
-
-
-// this is more specific and is overriding the select-value
-#react-select-5--value {
-	.Select-value {
-		margin-top: 0.1em;
-	}
-}
+// #react-select-2--value {
+// 	.Select-placeholder {
+// 		margin-top: 0.3em;
+// 	}
+// }
 
 
 .form-control, .input-group-addon {
