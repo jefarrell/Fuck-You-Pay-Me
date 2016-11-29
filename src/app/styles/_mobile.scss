@@ -13,6 +13,18 @@ and (max-width : 1200px) {
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
 
+	
+	// input[type=range] {
+	// 	&::-webkit-slider-thumb, &::-moz-range-thumb, &::-ms-thumb{
+	// 		background: red;
+	// 		border: 3px solid blue;
+	// 	}
+
+	// }
+
+
+
+
 	.Select-input {
 		input {
 			font-size: 40px !important;
@@ -46,6 +58,11 @@ and (max-device-width : 480px) {
 		font-size: 0.9em;
 	}
 
+
+	input[type=range] {
+
+
+	}
 /////////// Dropdown menu styling
 	.selector {
 		.Select {

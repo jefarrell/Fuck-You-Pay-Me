@@ -6,7 +6,7 @@ $track_border: #000;
 @mixin thumb {
 	border: 1px solid #000;
 	border-radius: 0;
-	height: 2em;
+	height: 3em;
 	width: 5em;
 	background: #000;
 	cursor: pointer;
@@ -39,7 +39,7 @@ input[type=range] {
 	/* thumb section */
 	&::-webkit-slider-thumb {
 		-webkit-appearance: none;
-		margin-top: -1em;
+		margin-top: -1.5em;
 		@include thumb;
 	}
 
@@ -61,15 +61,11 @@ input[type=range] {
 		@include track;
 	}
 
-	// &:focus::-webkit-slider-runnable-track {
-	// 	background: $track_background;
-	// 	border-color: $track_background_focus;
-	// }
-
 	&::-moz-range-track {
 		@include track;
 	}
 
 
 }
+
 

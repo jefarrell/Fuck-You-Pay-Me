@@ -7,6 +7,7 @@ import {
 	FacebookButton, TwitterButton, EmailButton
 } from 'react-social';
 
+// Handle Certificate output
 class Output extends React.Component {
 
 	constructor(props) {
@@ -22,6 +23,7 @@ class Output extends React.Component {
 		};
 	}
 
+	// Update state as we receive props from Input
 	componentWillReceiveProps(nextProps) {
 		if (this.props !== nextProps) {
 			for (var property in nextProps) {
@@ -29,6 +31,7 @@ class Output extends React.Component {
 					this.setState(nextProps);
 				}
 			}
+			// Once right fields are updated, check the data
 			if (this.state.job !== '_____' && this.state.area !=='_____' && this.state.salary_current !== '48000') {
 				this.calculatePayment(this.state.state, this.state.area);
 			}
@@ -36,30 +39,36 @@ class Output extends React.Component {
 		} else return
 	}
 
-
+	// Once anything is selected, update certificate from initial view
 	componentDidUpdate() {
 		if (this.state.status === 'initial') {
 			this.setState({ status: 'updated' });
 		}
 	}
 
+	formatDollars(amount) {
+		let number = amount.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+		return number;
+	}
+
+	// Check the data
 	calculatePayment(stateName, areaName) {
 
+		// Load JSON file for appropriate state
 		$.getJSON('src/app/assets/data/state_splits/'+stateName+'_salaries.json', (data) => {
-		
+			// See if the job exists for that metro area
 			if (data[areaName][this.state.job]) {
-				
+				// Checking salary input by user against salary in data
 				let current = parseInt(this.state.salary_current);
-
 				if (current < parseInt(data[areaName][this.state.job])) {
-					console.log('less than: ', parseInt(data[areaName][this.state.job]))
+					
 					this.setState({
 						salary_data: parseInt(data[areaName][this.state.job]),
 						status: 'underpaid'
 					});
 
 				} else if (current > parseInt(data[areaName][this.state.job])) {
-					console.log('higher than: ', parseInt(data[areaName][this.state.job]));
+					
 					let diff = current-parseInt(data[areaName][this.state.job]);
 					this.setState({
 						salary_data: parseInt(data[areaName][this.state.job]),
@@ -67,14 +76,16 @@ class Output extends React.Component {
 						status: 'paid'
 					});
 				}
-			// Need to figure out something better here...
+			// What to do if job doesn't exist for metro area
+			//// Need to figure out something better here...
 			} else { console.log ("seems like undefined")}
 		});
 	}
 
 
 	render() {
-
+		// Make several templates to render (initial, updated, underpaid, paid)
+		// Swap them in and out based on result of calculatePayment()
 		let status = 
 			<Col xs={12}>
 				<Col xs={6} md={12} id="initialArrow" className="initialBlock"></Col>
@@ -102,7 +113,8 @@ class Output extends React.Component {
 
 
 		} else if (this.state.status === 'underpaid') {
-
+			
+			let salary_data = this.formatDollars(this.state.salary_data);
 			status =
 				<Col xs={12} className="readyBlock">
 					<Col xs={12} id="readyHeader">
@@ -111,7 +123,7 @@ class Output extends React.Component {
 					<Col xs={12} className="readyContentContainer">
 						<Col xs={12} className="readyContent">
 							<p>{this.state.job} in the {this.state.area} area make an average
-							of ${this.state.salary_data} per year, according to the Bureau of Labor Statistics.</p>
+							of ${salary_data} per year, according to the Bureau of Labor Statistics.</p>
 						</Col>
 						<Col xs={12} className="readyContent">
 							<p> Will undervaluing your employee pay off?</p>
@@ -122,6 +134,8 @@ class Output extends React.Component {
 
 		} else if (this.state.status === 'paid') {
 
+			let salary_data = this.formatDollars(this.state.salary_data);
+			let salary_diff = this.formatDollars(this.state.salary_difference);
 			status =
 				<Col xs={12} className="readyBlock">
 					<Col xs={12} id="readyHeader">
@@ -129,8 +143,8 @@ class Output extends React.Component {
 					</Col>
 					<Col xs={12} className="readyContentContainer">
 						<Col xs={12} className="readyContent">
-							<p>You're ${this.state.salary_difference} ahead of the game.  {this.state.job} in the {this.state.area} area make an average
-							of ${this.state.salary_data} per year, according to the Bureau of Labor Statistics.</p>
+							<p>You're ${salary_diff} ahead of the game.  {this.state.job} in the {this.state.area} area make an average
+							of ${salary_data} per year, according to the Bureau of Labor Statistics.</p>
 						</Col>
 						<Col xs={12} className="readyContent">
 							<p>Treat yourself tonight, you've earned it.</p>

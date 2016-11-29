@@ -14,6 +14,9 @@ const STATE_AREAS = require('../assets/data/state_areas.js');
 const YEARS = require('../assets/data/years.js');
 const MONTHS = require('../assets/data/months.js');
 
+
+// Handles all site inputs (dropdowns, sliders)
+
 class Inputs extends React.Component {
 
 	constructor(props) {
@@ -31,12 +34,14 @@ class Inputs extends React.Component {
 		this.sliderChange = this.sliderChange.bind(this);
 	}
 
+	// Update states for respective dropdowns
 	dropdownChange(name, e) {
 		let change = {};
 		change[name] = e.value;
 		this.setState(change);
 	}
 
+	// Update states for sliders
 	sliderChange(e) {
 		let target = e.target.id;
 
@@ -56,11 +61,13 @@ class Inputs extends React.Component {
 
 		let metroOptions = null;
 
+		// Reveal metro areas dropdown after State selected
 		if (this.state.state) {
 			metroOptions = STATE_AREAS[this.state.state];
 			$('#metroArea').slideDown(400);
 		};
 
+		// Formatting numbers to display as dollars
 		let currFormat = this.formatDollars(this.state.salary_current);
 		let startFormat = this.formatDollars(this.state.salary_start);
 
