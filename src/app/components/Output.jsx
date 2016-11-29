@@ -87,11 +87,10 @@ class Output extends React.Component {
 		// Make several templates to render (initial, updated, underpaid, paid)
 		// Swap them in and out based on result of calculatePayment()
 		let status = 
-			<Col xs={12}>
-				<Col xs={6} md={12} id="initialArrow" className="initialBlock"></Col>
-				<Col xs={6} md={12} id="initialText" className="initialBlock">
+			<Col xs={12} id="initialBlock">
+				
 					<p>Fill out the the questions to see your results</p>
-				</Col>
+
 			</Col>
 
 
