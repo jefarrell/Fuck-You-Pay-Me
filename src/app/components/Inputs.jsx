@@ -58,6 +58,7 @@ class Inputs extends React.Component {
 		return number;
 	}
 
+	// This doesn't feel right but it works
 	componentDidUpdate(prevProps, prevState) {
 		if (this.state.area != prevState.area) {	
 			$.getJSON('src/app/assets/data/job_splits/'+this.state.state+'_jobs.json', (data) => {
@@ -66,18 +67,6 @@ class Inputs extends React.Component {
 			});
 		}
 	}
-	// componentWillUpdate(nextProps, nextState) {
-	// 	if (this.state.area != nextState.area) {
-	// 		console.log("change-- ", nextState.area);
-	
-	// 		$.getJSON('src/app/assets/data/job_splits/'+this.state.state+'_jobs.json', (data) => {
-	// 			jobPlaceholder = data[nextState.area];
-	// 			console.log("after json, ", jobPlaceholder);
-	// 		});
-	// 		console.log("second, ")
-	// 	}
-	// 	console.log("last, ");
-	// }
 
 	render() {
 		let metroOptions = null;
