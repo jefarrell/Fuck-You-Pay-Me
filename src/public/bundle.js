@@ -21550,6 +21550,9 @@
 	var YEARS = __webpack_require__(291);
 	var MONTHS = __webpack_require__(292);
 
+	// We're going to update this with specific metro area data
+	var jobPlaceholder = JOBS['titles'];
+
 	// Handles all site inputs (dropdowns, sliders)
 
 	var Inputs = function (_React$Component) {
@@ -21567,9 +21570,9 @@
 				year: 2006,
 				month: 'January',
 				salary_start: '34000',
-				salary_current: '48000'
+				salary_current: '48000',
+				updater: 'no'
 			};
-
 			_this.sliderChange = _this.sliderChange.bind(_this);
 			return _this;
 		}
@@ -21605,9 +21608,33 @@
 				return number;
 			}
 		}, {
+			key: 'componentDidUpdate',
+			value: function componentDidUpdate(prevProps, prevState) {
+				var _this2 = this;
+
+				if (this.state.area != prevState.area) {
+					$.getJSON('src/app/assets/data/job_splits/' + this.state.state + '_jobs.json', function (data) {
+						jobPlaceholder = data[_this2.state.area];
+						_this2.setState({ updater: 'yes' });
+					});
+				}
+			}
+			// componentWillUpdate(nextProps, nextState) {
+			// 	if (this.state.area != nextState.area) {
+			// 		console.log("change-- ", nextState.area);
+
+			// 		$.getJSON('src/app/assets/data/job_splits/'+this.state.state+'_jobs.json', (data) => {
+			// 			jobPlaceholder = data[nextState.area];
+			// 			console.log("after json, ", jobPlaceholder);
+			// 		});
+			// 		console.log("second, ")
+			// 	}
+			// 	console.log("last, ");
+			// }
+
+		}, {
 			key: 'render',
 			value: function render() {
-
 				var metroOptions = null;
 
 				// Reveal metro areas dropdown after State selected
@@ -21629,31 +21656,6 @@
 						_react2.default.createElement(
 							'div',
 							{ className: 'inputBlock' },
-							_react2.default.createElement(
-								_Row2.default,
-								null,
-								_react2.default.createElement(
-									_Col2.default,
-									{ xs: 5 },
-									_react2.default.createElement(
-										'h3',
-										{ className: 'sectionHead' },
-										' Your Work '
-									)
-								),
-								_react2.default.createElement(
-									_Col2.default,
-									{ xs: 7, className: 'selector' },
-									_react2.default.createElement(_reactSelect2.default, {
-										name: 'form-field-name',
-										options: JOBS['titles'],
-										value: this.state.job,
-										clearable: false,
-										placeholder: 'Select job',
-										onChange: this.dropdownChange.bind(this, 'job')
-									})
-								)
-							),
 							_react2.default.createElement(
 								_Row2.default,
 								null,
@@ -21693,6 +21695,31 @@
 										clearable: false,
 										placeholder: 'Select area',
 										onChange: this.dropdownChange.bind(this, 'area')
+									})
+								)
+							),
+							_react2.default.createElement(
+								_Row2.default,
+								null,
+								_react2.default.createElement(
+									_Col2.default,
+									{ xs: 5 },
+									_react2.default.createElement(
+										'h3',
+										{ className: 'sectionHead' },
+										' Your Work '
+									)
+								),
+								_react2.default.createElement(
+									_Col2.default,
+									{ xs: 7, className: 'selector' },
+									_react2.default.createElement(_reactSelect2.default, {
+										name: 'form-field-name',
+										options: jobPlaceholder,
+										value: this.state.job,
+										clearable: false,
+										placeholder: 'Select job',
+										onChange: this.dropdownChange.bind(this, 'job')
 									})
 								)
 							),
@@ -24194,21 +24221,13 @@
 							this.setState(nextProps);
 						}
 					}
-					console.log(this.state.status);
+
 					// Once right fields are updated, check the data
 					if (this.state.job !== '_____' && this.state.area !== '_____' && this.state.salary_current !== '48000') {
 						this.calculatePayment(this.state.state, this.state.area);
 					}
 				} else return;
 			}
-
-			// Once anything is selected, update certificate from initial view
-			// componentDidUpdate() {
-			// 	if (this.state.status === 'initial') {
-			// 		this.setState({ status: 'updated' });
-			// 	}
-			// }
-
 		}, {
 			key: "formatDollars",
 			value: function formatDollars(amount) {
@@ -24244,17 +24263,13 @@
 								status: 'paid'
 							});
 						}
-						// What to do if job doesn't exist for metro area
-						//// Need to figure out something better here...
-					} else {
-						console.log("seems like undefined");
 					}
 				});
 			}
 		}, {
 			key: "render",
 			value: function render() {
-				// Make several templates to render (initial, updated, underpaid, paid)
+				// Make several templates to render (initial, underpaid, paid)
 				// Swap them in and out based on result of calculatePayment()
 				var status = _react2.default.createElement(_Col2.default, { xs: 12, className: "initialBlock" });
 
@@ -24336,7 +24351,7 @@
 						_react2.default.createElement(
 							"a",
 							{
-								href: "mailto:?subject=Join%20my%20mesh%20network!&body=I%20just%20registered%20as%20a%20node%20on%20the%20goTenna%20Mesh%20network%20map.%20Find%20it%20at%20imeshyou.com%20%26%20join%20the%20network%20by%20getting%20your%20own%20goTenna%20Mesh%20devices%20at%20is.gd%2Fgotennamesh.%0A%0AgoTenna%20Mesh%20is%20the%20first%20100%25%20off-grid%2C%20totally%20mobile%2C%20long-range%2C%20consumer-ready%20mesh%20network.%20You%20pair%20a%20goTenna%20Mesh%20device%20to%20your%20existing%20smartphone%20and%20it%20enables%20you%20to%20send%20texts%20%26%20locations%20on%20offline%20maps%20to%20other%20users%20up%20to%20several%20miles%2Fkilometers%20away%2C%20even%20if%20you%20don%E2%80%99t%20have%20service.%20%0A%0AgoTenna%20Mesh%20can%20automatically%20and%20privately%20relay%20your%20messages%20through%20other%20users%E2%80%99%20devices%20to%20reach%20recipients%20who%20are%20out%20of%20point-to-point%20range.%20This%20is%20a%20network%20that%20gets%20stronger%20the%20more%20people%20join%20it!%0A%0AThis%20is%20the%20future%20of%20people-powered%20connectivity%2C%20and%20it%E2%80%99s%20great%20for%20all%20outdoor%20adventures%2C%20crowded%20events%2C%20travel%20abroad%2C%20and%20unplanned%20emergencies.%20%0A%0AJoin%20me%20in%20creating%20this%20mesh%20network%3A%20is.gd%2Fgotennamesh",
+								href: "",
 								target: "_blank", title: "Send email" },
 							_react2.default.createElement("i", { className: "fa fa-envelope fa-3x", "aria-hidden": "true" })
 						)
@@ -32239,7 +32254,7 @@
 
 
 	// module
-	exports.push([module.id, ".inputBlock {\n  font-size: 0.9em; }\n\n#metroArea {\n  display: none; }\n\n.slideStart {\n  margin-top: 3em; }\n\n#lowerRange {\n  padding-left: 1.3em; }\n\n#upperRange {\n  padding-left: 0; }\n\n.col-xs-1 {\n  width: 5%;\n  margin-top: 25px; }\n\n.col-xs-4 {\n  width: 40%; }\n\n.col-xs-5 {\n  padding-right: 0; }\n\n.input-group-addon div {\n  margin-right: 0.5em;\n  font-size: 1.5em; }\n\n.form-control {\n  color: #000; }\n\na, i {\n  cursor: pointer; }\n\na {\n  margin: 1em;\n  color: #000; }\n  a:hover {\n    color: #FFD700; }\n  a:visited {\n    color: #000; }\n\ni:hover {\n  color: #FFD700; }\n\ni:visited {\n  color: #000; }\n\n/* Certificate General ----------- */\n.certificateBlock {\n  text-align: center; }\n\n/* Certificate INITIAL ----------- */\n.initialBlock {\n  background-image: url(" + __webpack_require__(308) + ");\n  background-repeat: no-repeat;\n  height: 12em;\n  width: 100%;\n  font-size: 3vw; }\n\n.certificateBlock.row {\n  margin-bottom: 1em; }\n\n/* Certificate UNDERPAID ----------- */\n.underBlock {\n  background-image: url(" + __webpack_require__(309) + ");\n  background-repeat: no-repeat;\n  height: 12em;\n  width: 100%;\n  font-size: 3vw; }\n\n.certHead {\n  font-family: FoundersGrotesk_Cnd;\n  font-size: 1.3em;\n  margin-top: -0.5em; }\n\n.paidContent, .underContent {\n  font-size: 1.5vw;\n  font-weight: bold;\n  width: 40vw; }\n\n.paidContent {\n  margin: 9.5em 1em 0 2em; }\n\n.underContent {\n  margin: 10.5em 1em 0 2em; }\n\n/* Certificate PAID ----------- */\n.paidBlock {\n  background-image: url(" + __webpack_require__(310) + ");\n  background-repeat: no-repeat;\n  height: 12em;\n  width: 100%;\n  font-size: 3vw; }\n\ninput[type=range] {\n  -webkit-appearance: none;\n  width: 100%;\n  background: transparent;\n  /* thumb section */\n  /* track section */ }\n  input[type=range]:focus {\n    outline: none; }\n  input[type=range]-webkit-slider {\n    -webkit-appearance: none; }\n  input[type=range]::-webkit-slider-thumb {\n    -webkit-appearance: none;\n    margin-top: -1.5em;\n    border: 1px solid #000;\n    border-radius: 0;\n    height: 3em;\n    width: 5em;\n    background: #000;\n    cursor: pointer; }\n  input[type=range]:focus::-webkit-slider-thumb {\n    background-color: #FFD700;\n    border: 4px solid black; }\n  input[type=range]::-moz-range-thumb {\n    border: 1px solid #000;\n    border-radius: 0;\n    height: 3em;\n    width: 5em;\n    background: #000;\n    cursor: pointer; }\n  input[type=range]::-ms-thumb {\n    border: 1px solid #000;\n    border-radius: 0;\n    height: 3em;\n    width: 5em;\n    background: #000;\n    cursor: pointer; }\n  input[type=range]::-webkit-slider-runnable-track {\n    width: 100%;\n    height: 5px;\n    cursor: pointer;\n    background: #000;\n    border: 2px solid #000;\n    border-radius: 0; }\n  input[type=range]::-moz-range-track {\n    width: 100%;\n    height: 5px;\n    cursor: pointer;\n    background: #000;\n    border: 2px solid #000;\n    border-radius: 0; }\n\n/* Little desktop certificate fix ----------- */\n@media screen and (min-width: 500px) and (max-width: 990px) {\n  .initialBlock, .underBlock, .paidBlock {\n    height: 20em;\n    margin: 2em; } }\n\n/* Smartphones (portrait and landscape) ----------- */\n@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {\n  .Select-input input {\n    font-size: 40px !important; }\n  h3 {\n    font-size: 3.5em; }\n  .initialBlock, .underBlock, .paidBlock {\n    margin: 0; }\n  .certificateBlock {\n    margin: 4em; }\n  .underContent {\n    margin: 13.5em 1em 0 4em;\n    width: 65vw;\n    font-size: 2vw; }\n  .paidContent {\n    margin: 12.5em 1em 0 3em;\n    width: 65vw;\n    font-size: 2vw; }\n  .selector .Select {\n    line-height: 6em; }\n  .selector .Select-value-label {\n    font-size: 2.5em;\n    margin-top: 0.6em; }\n  .selector .Select-placeholder {\n    font-size: 3em;\n    margin-top: 0.6em;\n    margin-left: 0.2em; }\n  .col-xs-7 .Select-control .Select-value {\n    margin-top: 1.25em;\n    font-size: 1.25em; }\n  .col-xs-5 #react-select-5--value .Select-value {\n    font-size: 1.25em;\n    margin-top: 1.25em; }\n  .col-xs-7 #react-select-6--value .Select-value {\n    font-size: 1.25em;\n    margin-top: 1.25em; }\n  .Select-value {\n    margin-top: 1.5em;\n    font-weight: bold; }\n  .Select.Select--single.is-focused.is-open.is-searchable.has-value {\n    padding-top: 10px; }\n    .Select.Select--single.is-focused.is-open.is-searchable.has-value .Select-value-label {\n      opacity: 0.2; }\n  .Select.Select--single.is-focused.is-open.is-searchable .Select-placeholder {\n    opacity: 0.2;\n    padding-top: 10px; }\n  .Select-placeholder, .Select--single > .Select-control .Select-value {\n    max-width: 90%;\n    color: #000; }\n  .Select .is-open {\n    color: #FF0000;\n    font-size: 2em; }\n  .certHead {\n    font-size: 2.25em; }\n  .readyContentContainer {\n    font-size: 1.5em;\n    height: 400px; } }\n\n/* iPad portrait ----------- */\n@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {\n  .initialBlock {\n    margin: 2em;\n    height: 20em; } }\n\n@font-face {\n  font-family: FoundersGrotesk;\n  src: url(" + __webpack_require__(297) + ");\n  src: url(" + __webpack_require__(298) + ") format(\"woff\"), url(" + __webpack_require__(299) + ") format(\"woff2\");\n  font-weight: bold; }\n\n@font-face {\n  font-family: FoundersGrotesk_Cnd;\n  src: url(" + __webpack_require__(300) + ");\n  src: url(" + __webpack_require__(301) + ") format(\"woff\"), url(" + __webpack_require__(302) + ") format(\"woff2\");\n  font-weight: bold; }\n\n@font-face {\n  font-family: FoundersGrotesk;\n  src: url(" + __webpack_require__(303) + ");\n  src: url(" + __webpack_require__(304) + ") format(\"woff\"), url(" + __webpack_require__(305) + ") format(\"woff2\");\n  font-weight: normal; }\n\n#root {\n  margin: 2em auto; }\n\nbody {\n  font-family: FoundersGrotesk;\n  font-weight: normal;\n  color: #000; }\n\n/* Main sizing things */\nh3 {\n  font-weight: bold;\n  margin-top: 10px; }\n\n.row {\n  margin-bottom: 2em; }\n\n/***********  ALL THE MENU THINGS  ***********/\n/*\nSelect placeholder - start\nvalue-label is span\nvalue is div container\n*/\n.Select {\n  line-height: 3em; }\n\n.Select-placeholder {\n  margin-top: 0.1em; }\n\n.Select-value-label {\n  font-weight: bold; }\n\n.Select-placeholder, .Select-value-label {\n  font-size: 1.5em; }\n\n.Select-value {\n  margin-top: 0.5em; }\n\n.Select-value, .Select-placeholder {\n  padding-left: 20px !important; }\n\n.Select-option {\n  font-size: 1.5em;\n  padding: 0.15em 20px; }\n\n.Select-option.is-focused {\n  background-color: rgba(255, 215, 0, 0.08); }\n\n.Select-menu {\n  border-left-width: 0px;\n  border-right-width: 0px;\n  border-top-width: 0px; }\n\n.Select-menu-outer {\n  border-bottom-right-radius: 0;\n  border-bottom-left-radius: 0; }\n\n.Select-placeholder, .Select--single > .Select-control .Select-value {\n  max-width: 90%;\n  color: #000; }\n\n.Select .is-open {\n  color: #FF0000;\n  font-size: 2em; }\n\n.Select.Select--single.is-focused.is-open.is-searchable .Select-placeholder {\n  color: rgba(0, 0, 0, 0.1);\n  margin-top: 0.3em;\n  font-size: 1.8em; }\n\n.has-value.Select--single > .Select-control .Select-value .Select-value-label, .has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {\n  color: #000; }\n\n.Select-control, .input-group {\n  border-radius: 0;\n  border: 2px solid #000;\n  color: #000; }\n\n.Select-arrow {\n  border-color: #000 transparent transparent;\n  border-width: 10px 10px 0px;\n  margin-right: 1em; }\n\n.Select-control {\n  padding-top: 4px; }\n\n.Select:focus {\n  outline: none; }\n\n#react-select-6--value .Select-value, #react-select-5--value .Select-value {\n  margin-top: 0.4em; }\n\n.form-control, .input-group-addon {\n  border: 1px solid transparent;\n  -webkit-box-shadow: none;\n  box-shadow: none; }\n\n.input-group .form-control {\n  z-index: 0; }\n\n.input-group-addon {\n  background-color: #FFF;\n  color: #000; }\n\n.form-control:focus {\n  border: none !important;\n  box-shadow: none;\n  -webkit-box-shadow: none; }\n", ""]);
+	exports.push([module.id, ".inputBlock {\n  font-size: 0.9em; }\n\n#metroArea {\n  display: none; }\n\n.slideStart {\n  margin-top: 3em; }\n\n#lowerRange {\n  padding-left: 1.3em; }\n\n#upperRange {\n  padding-left: 0; }\n\n.col-xs-1 {\n  width: 5%;\n  margin-top: 25px; }\n\n.col-xs-4 {\n  width: 40%; }\n\n.col-xs-5 {\n  padding-right: 0; }\n\n.input-group-addon div {\n  margin-right: 0.5em;\n  font-size: 1.5em; }\n\n.form-control {\n  color: #000; }\n\na, i {\n  cursor: pointer; }\n\na {\n  margin: 1em;\n  color: #000; }\n  a:hover {\n    color: #FFD700; }\n  a:visited {\n    color: #000; }\n\ni:hover {\n  color: #FFD700; }\n\ni:visited {\n  color: #000; }\n\n/* Certificate General ----------- */\n.certificateBlock {\n  text-align: center; }\n\n/* Certificate INITIAL ----------- */\n.initialBlock {\n  background-image: url(" + __webpack_require__(308) + ");\n  background-repeat: no-repeat;\n  height: 12em;\n  width: 100%;\n  font-size: 3vw; }\n\n.certificateBlock.row {\n  margin-bottom: 1em; }\n\n/* Certificate UNDERPAID ----------- */\n.underBlock {\n  background-image: url(" + __webpack_require__(309) + ");\n  background-repeat: no-repeat;\n  height: 12em;\n  width: 100%;\n  font-size: 3vw; }\n\n.certHead {\n  font-family: FoundersGrotesk_Cnd;\n  font-size: 1.3em;\n  margin-top: -0.5em; }\n\n.paidContent, .underContent {\n  font-size: 1.5vw;\n  font-weight: bold;\n  width: 40vw; }\n\n.paidContent {\n  margin: 9.5em 1em 0 2em; }\n\n.underContent {\n  margin: 10.5em 1em 0 2em; }\n\n/* Certificate PAID ----------- */\n.paidBlock {\n  background-image: url(" + __webpack_require__(310) + ");\n  background-repeat: no-repeat;\n  height: 12em;\n  width: 100%;\n  font-size: 3vw; }\n\ninput[type=range] {\n  -webkit-appearance: none;\n  width: 100%;\n  background: transparent;\n  /* thumb section */\n  /* track section */ }\n  input[type=range]:focus {\n    outline: none; }\n  input[type=range]-webkit-slider {\n    -webkit-appearance: none; }\n  input[type=range]::-webkit-slider-thumb {\n    -webkit-appearance: none;\n    margin-top: -1.5em;\n    border: 1px solid #000;\n    border-radius: 0;\n    height: 3em;\n    width: 5em;\n    background: #000;\n    cursor: pointer; }\n  input[type=range]:focus::-webkit-slider-thumb {\n    background-color: #FFD700;\n    border: 4px solid black; }\n  input[type=range]::-moz-range-thumb {\n    border: 1px solid #000;\n    border-radius: 0;\n    height: 3em;\n    width: 5em;\n    background: #000;\n    cursor: pointer; }\n  input[type=range]::-ms-thumb {\n    border: 1px solid #000;\n    border-radius: 0;\n    height: 3em;\n    width: 5em;\n    background: #000;\n    cursor: pointer; }\n  input[type=range]::-webkit-slider-runnable-track {\n    width: 100%;\n    height: 5px;\n    cursor: pointer;\n    background: #000;\n    border: 2px solid #000;\n    border-radius: 0; }\n  input[type=range]::-moz-range-track {\n    width: 100%;\n    height: 5px;\n    cursor: pointer;\n    background: #000;\n    border: 2px solid #000;\n    border-radius: 0; }\n\n/* Little desktop certificate fix ----------- */\n@media screen and (min-width: 500px) and (max-width: 990px) {\n  .initialBlock, .underBlock, .paidBlock {\n    height: 20em;\n    margin: 2em; }\n  .underContent {\n    margin: 13.5em 1em 0 3.5em;\n    width: 65vw;\n    font-size: 2vw; }\n  .paidContent {\n    margin: 12em 1em 0 3.5em;\n    width: 65vw;\n    font-size: 2vw; } }\n\n/* Smartphones (portrait and landscape) ----------- */\n@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {\n  .Select-input input {\n    font-size: 40px !important; }\n  h3 {\n    font-size: 3.5em; }\n  .initialBlock, .underBlock, .paidBlock {\n    margin: 0; }\n  .certificateBlock {\n    margin: 4em; }\n  .underContent {\n    margin: 13.5em 1em 0 4em;\n    width: 65vw;\n    font-size: 2vw; }\n  .paidContent {\n    margin: 12.5em 1em 0 3em;\n    width: 65vw;\n    font-size: 2vw; }\n  .selector .Select {\n    line-height: 6em; }\n  .selector .Select-value-label {\n    font-size: 2.5em;\n    margin-top: 0.6em; }\n  .selector .Select-placeholder {\n    font-size: 3em;\n    margin-top: 0.6em;\n    margin-left: 0.2em; }\n  .col-xs-7 .Select-control .Select-value {\n    margin-top: 1.25em;\n    font-size: 1.25em; }\n  .col-xs-5 #react-select-5--value .Select-value {\n    font-size: 1.25em;\n    margin-top: 1.25em; }\n  .col-xs-7 #react-select-6--value .Select-value {\n    font-size: 1.25em;\n    margin-top: 1.25em; }\n  .Select-value {\n    margin-top: 1.5em;\n    font-weight: bold; }\n  .Select.Select--single.is-focused.is-open.is-searchable.has-value {\n    padding-top: 10px; }\n    .Select.Select--single.is-focused.is-open.is-searchable.has-value .Select-value-label {\n      opacity: 0.2; }\n  .Select.Select--single.is-focused.is-open.is-searchable .Select-placeholder {\n    opacity: 0.2;\n    padding-top: 10px; }\n  .Select-placeholder, .Select--single > .Select-control .Select-value {\n    max-width: 90%;\n    color: #000; }\n  .Select .is-open {\n    color: #FF0000;\n    font-size: 2em; }\n  .certHead {\n    font-size: 2.25em; } }\n\n/* iPad portrait ----------- */\n@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {\n  .initialBlock {\n    margin: 2em;\n    height: 20em; } }\n\n@font-face {\n  font-family: FoundersGrotesk;\n  src: url(" + __webpack_require__(297) + ");\n  src: url(" + __webpack_require__(298) + ") format(\"woff\"), url(" + __webpack_require__(299) + ") format(\"woff2\");\n  font-weight: bold; }\n\n@font-face {\n  font-family: FoundersGrotesk_Cnd;\n  src: url(" + __webpack_require__(300) + ");\n  src: url(" + __webpack_require__(301) + ") format(\"woff\"), url(" + __webpack_require__(302) + ") format(\"woff2\");\n  font-weight: bold; }\n\n@font-face {\n  font-family: FoundersGrotesk;\n  src: url(" + __webpack_require__(303) + ");\n  src: url(" + __webpack_require__(304) + ") format(\"woff\"), url(" + __webpack_require__(305) + ") format(\"woff2\");\n  font-weight: normal; }\n\n#root {\n  margin: 2em auto; }\n\nbody {\n  font-family: FoundersGrotesk;\n  font-weight: normal;\n  color: #000; }\n\n/* Main sizing things */\nh3 {\n  font-weight: bold;\n  margin-top: 10px; }\n\n.row {\n  margin-bottom: 2em; }\n\n/***********  ALL THE MENU THINGS  ***********/\n/*\nSelect placeholder - start\nvalue-label is span\nvalue is div container\n*/\n.Select {\n  line-height: 3em; }\n\n.Select-placeholder {\n  margin-top: 0.1em; }\n\n.Select-value-label {\n  font-weight: bold; }\n\n.Select-placeholder, .Select-value-label {\n  font-size: 1.5em; }\n\n.Select-value {\n  margin-top: 0.5em; }\n\n.Select-value, .Select-placeholder {\n  padding-left: 20px !important; }\n\n.Select-option {\n  font-size: 1.5em;\n  padding: 0.15em 20px; }\n\n.Select-option.is-focused {\n  background-color: rgba(255, 215, 0, 0.08); }\n\n.Select-menu {\n  border-left-width: 0px;\n  border-right-width: 0px;\n  border-top-width: 0px; }\n\n.Select-menu-outer {\n  border-bottom-right-radius: 0;\n  border-bottom-left-radius: 0; }\n\n.Select-placeholder, .Select--single > .Select-control .Select-value {\n  max-width: 90%;\n  color: #000; }\n\n.Select .is-open {\n  color: #FF0000;\n  font-size: 2em; }\n\n.Select.Select--single.is-focused.is-open.is-searchable .Select-placeholder {\n  color: rgba(0, 0, 0, 0.1);\n  margin-top: 0.3em;\n  font-size: 1.8em; }\n\n.has-value.Select--single > .Select-control .Select-value .Select-value-label, .has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {\n  color: #000; }\n\n.Select-control, .input-group {\n  border-radius: 0;\n  border: 2px solid #000;\n  color: #000; }\n\n.Select-arrow {\n  border-color: #000 transparent transparent;\n  border-width: 10px 10px 0px;\n  margin-right: 1em; }\n\n.Select-control {\n  padding-top: 4px; }\n\n.Select:focus {\n  outline: none; }\n\n#react-select-6--value .Select-value, #react-select-5--value .Select-value {\n  margin-top: 0.4em; }\n\n.form-control, .input-group-addon {\n  border: 1px solid transparent;\n  -webkit-box-shadow: none;\n  box-shadow: none; }\n\n.input-group .form-control {\n  z-index: 0; }\n\n.input-group-addon {\n  background-color: #FFF;\n  color: #000; }\n\n.form-control:focus {\n  border: none !important;\n  box-shadow: none;\n  -webkit-box-shadow: none; }\n", ""]);
 
 	// exports
 

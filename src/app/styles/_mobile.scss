@@ -1,19 +1,23 @@
 
 /* Little desktop certificate fix ----------- */
-// @media screen 
-// and (min-width : 1000px) 
-// and (max-width : 1200px) {
-// 	.readyContentContainer, .updatedContent {
-// 		font-size: 0.5em;
-// 	}
-// }
-
 @media screen 
 and (min-width : 500px) 
 and (max-width : 990px) {
 	.initialBlock, .underBlock, .paidBlock {
 		height: 20em;
 		margin: 2em;
+	}
+
+	.underContent {
+		margin: 13.5em 1em 0 3.5em;
+    	width: 65vw;
+    	font-size: 2vw;
+	}
+
+	.paidContent {
+		margin: 12em 1em 0 3.5em;
+		width: 65vw;
+		font-size: 2vw;
 	}
 }
 
@@ -130,10 +134,7 @@ and (max-device-width : 480px) {
 		font-size: 2.25em;
 	}
 
-	.readyContentContainer {
-		font-size: 1.5em;
-		height: 400px;
-	}
+
 }
 
 

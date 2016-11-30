@@ -14,9 +14,10 @@ const STATE_AREAS = require('../assets/data/state_areas.js');
 const YEARS = require('../assets/data/years.js');
 const MONTHS = require('../assets/data/months.js');
 
+// We're going to update this with specific metro area data
+let jobPlaceholder = JOBS['titles'];
 
 // Handles all site inputs (dropdowns, sliders)
-
 class Inputs extends React.Component {
 
 	constructor(props) {
@@ -28,9 +29,9 @@ class Inputs extends React.Component {
 			year: 2006,
 			month: 'January',
 			salary_start:'34000',
-			salary_current:'48000'
+			salary_current:'48000',
+			updater: 'no'
 		};
-
 		this.sliderChange = this.sliderChange.bind(this);
 	}
 
@@ -57,8 +58,28 @@ class Inputs extends React.Component {
 		return number;
 	}
 
-	render() {
+	componentDidUpdate(prevProps, prevState) {
+		if (this.state.area != prevState.area) {	
+			$.getJSON('src/app/assets/data/job_splits/'+this.state.state+'_jobs.json', (data) => {
+				jobPlaceholder = data[this.state.area];
+				this.setState({updater: 'yes'});
+			});
+		}
+	}
+	// componentWillUpdate(nextProps, nextState) {
+	// 	if (this.state.area != nextState.area) {
+	// 		console.log("change-- ", nextState.area);
+	
+	// 		$.getJSON('src/app/assets/data/job_splits/'+this.state.state+'_jobs.json', (data) => {
+	// 			jobPlaceholder = data[nextState.area];
+	// 			console.log("after json, ", jobPlaceholder);
+	// 		});
+	// 		console.log("second, ")
+	// 	}
+	// 	console.log("last, ");
+	// }
 
+	render() {
 		let metroOptions = null;
 
 		// Reveal metro areas dropdown after State selected
@@ -75,22 +96,6 @@ class Inputs extends React.Component {
 			<div className="container-fluid">
 				<Col xs={12} md={5}>
 					<div className="inputBlock">
-						{/* Industry Block */}
-						<Row>
-							<Col xs={5}>
-								<h3 className="sectionHead"> Your Work </h3>
-							</Col>
-							<Col xs={7} className="selector">
-								<Select
-									name="form-field-name"
-									options={JOBS['titles']}
-									value={this.state.job}
-									clearable={false}
-									placeholder="Select job"
-									onChange={this.dropdownChange.bind(this, 'job')}
-								/>
-							</Col>
-						</Row>
 
 						{/* State Block */}
 						<Row>
@@ -125,7 +130,22 @@ class Inputs extends React.Component {
 								/>
 							</Col>
 						</Row>
-
+						{/* Industry Block */}
+						<Row>
+							<Col xs={5}>
+								<h3 className="sectionHead"> Your Work </h3>
+							</Col>
+							<Col xs={7} className="selector">
+								<Select
+									name="form-field-name"
+									options={jobPlaceholder}
+									value={this.state.job}
+									clearable={false}
+									placeholder="Select job"
+									onChange={this.dropdownChange.bind(this, 'job')}
+								/>
+							</Col>
+						</Row>						
 						{/* Date Block */}
 						<Row>
 							<Col xs={12}>
