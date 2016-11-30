@@ -26,9 +26,9 @@ class Inputs extends React.Component {
 			job: '_____',
 			state: null,
 			area: '_____',
-			year: 2006,
-			month: 'January',
-			salary_start:'34000',
+			// year: 2006,
+			// month: 'January',
+			//salary_start:'34000',
 			salary_current:'48000',
 			updater: 'no'
 		};
@@ -46,11 +46,11 @@ class Inputs extends React.Component {
 	sliderChange(e) {
 		let target = e.target.id;
 
-		if (target === 'sal_curr') {
+		//if (target === 'sal_curr') {
 			this.setState({salary_current: e.target.value});
-		} else {
-			this.setState({salary_start: e.target.value});
-		}
+		// } else {
+		// 	this.setState({salary_start: e.target.value});
+		// }
 	}
 
 	formatDollars(amount) {
@@ -79,7 +79,6 @@ class Inputs extends React.Component {
 
 		// Formatting numbers to display as dollars
 		let currFormat = this.formatDollars(this.state.salary_current);
-		let startFormat = this.formatDollars(this.state.salary_start);
 
 		return (
 			<div className="container-fluid">
@@ -135,7 +134,46 @@ class Inputs extends React.Component {
 								/>
 							</Col>
 						</Row>						
-						{/* Date Block */}
+
+						
+						{/* Salary Now Block*/}
+						<Row>
+							<Col xs={12}>
+								<h3 className="sectionHead"> Current Salary: ${currFormat}</h3>
+							</Col>
+							<Col xs={12} className="slideStart">
+								<input
+									id="sal_curr"
+									type="range"
+									min="0" max="200000"
+									value={this.state.salary_current}
+									onChange={this.sliderChange}
+									step="1000"
+								/>
+							</Col>
+						</Row>
+
+					</div>
+				</Col>
+				<Col md={1} xs={0}></Col>
+				<Col xs={12} md={6}>
+					<Output 
+						job={this.state.job} 
+						state={this.state.state} 
+						area={this.state.area} 
+						salary_current={this.state.salary_current} 
+					/>
+				</Col>
+			</div>
+			)
+	}
+}
+
+export default Inputs;
+
+
+/* 
+
 						<Row>
 							<Col xs={12}>
 								<h3 className="sectionHead"> When You Started Work </h3>
@@ -161,25 +199,8 @@ class Inputs extends React.Component {
 								/>
 							</Col>						
 						</Row>
-						
-						{/* Salary Now Block*/}
-						<Row>
-							<Col xs={12}>
-								<h3 className="sectionHead"> Current Salary: ${currFormat}</h3>
-							</Col>
-							<Col xs={12} className="slideStart">
-								<input
-									id="sal_curr"
-									type="range"
-									min="0" max="200000"
-									value={this.state.salary_current}
-									onChange={this.sliderChange}
-									step="1000"
-								/>
-							</Col>
-						</Row>
 
-						{/* Salary Start Block */}
+
 						<Row>
 							<Col xs={12}>
 								<h3 className="sectionHead"> Starting Salary: ${startFormat}</h3>
@@ -195,20 +216,6 @@ class Inputs extends React.Component {
 								/>
 							</Col>
 						</Row>
-					</div>
-				</Col>
-				<Col md={1} xs={0}></Col>
-				<Col xs={12} md={6}>
-					<Output 
-						job={this.state.job} 
-						state={this.state.state} 
-						area={this.state.area} 
-						salary_current={this.state.salary_current} 
-					/>
-				</Col>
-			</div>
-			)
-	}
-}
 
-export default Inputs;
+
+*/
