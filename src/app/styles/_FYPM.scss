@@ -90,7 +90,7 @@ i:visited {
 /* Certificate INITIAL ----------- */
 
 .initialBlock {
-	@include backgroundConfigs('../assets/fonts/bg_init.svg');
+	@include backgroundConfigs('./fonts/bg_init.svg');
 	font-size: 3vw;
 }
 
@@ -102,7 +102,7 @@ i:visited {
 /* Certificate UNDERPAID ----------- */
 
 .underBlock {
-	@include backgroundConfigs('../assets/fonts/bg_under.svg')
+	@include backgroundConfigs('./fonts/bg_under.svg')
 	font-size: 3vw;
 }
 
@@ -131,7 +131,7 @@ i:visited {
 /* Certificate PAID ----------- */
 
 .paidBlock {
-	@include backgroundConfigs('../assets/fonts/bg_paid.svg')
+	@include backgroundConfigs('./fonts/bg_paid.svg')
 	font-size: 3vw;
 }
 

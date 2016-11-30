@@ -9,25 +9,25 @@ $accent: #FFD700;
 
 @font-face {
 	font-family: FoundersGrotesk;
-	src: url('../assets/fonts/FoundersGroteskWeb-Bold.eot');
-	src: url('../assets/fonts/FoundersGroteskWeb-Bold.woff') format('woff'),
-		url('../assets/fonts/FoundersGroteskWeb-Bold.woff2') format('woff2');
+	src: url('./fonts/FoundersGroteskWeb-Bold.eot');
+	src: url('./fonts/FoundersGroteskWeb-Bold.woff') format('woff'),
+		url('./fonts/FoundersGroteskWeb-Bold.woff2') format('woff2');
 	font-weight: bold;
 }
 
 @font-face {
 	font-family: FoundersGrotesk_Cnd;
-	src: url('../assets/fonts/FoundersGrotXCondWeb-Bold.eot');
-	src: url('../assets/fonts/FoundersGrotXCondWeb-Bold.woff') format('woff'),
-		url('../assets/fonts/FoundersGrotXCondWeb-Bold.woff2') format('woff2');
+	src: url('./fonts/FoundersGrotXCondWeb-Bold.eot');
+	src: url('./fonts/FoundersGrotXCondWeb-Bold.woff') format('woff'),
+		url('./fonts/FoundersGrotXCondWeb-Bold.woff2') format('woff2');
 	font-weight: bold;
 }
 
 @font-face {
 	font-family: FoundersGrotesk;
-	src: url('../assets/fonts/FoundersGroteskWeb-Regular.eot');
-	src: url('../assets/fonts/FoundersGroteskWeb-Regular.woff') format('woff'),
-		url('../assets/fonts/FoundersGroteskWeb-Regular.woff2') format('woff2');
+	src: url('./fonts/FoundersGroteskWeb-Regular.eot');
+	src: url('./fonts/FoundersGroteskWeb-Regular.woff') format('woff'),
+		url('./fonts/FoundersGroteskWeb-Regular.woff2') format('woff2');
 	font-weight: normal;
 }
 
