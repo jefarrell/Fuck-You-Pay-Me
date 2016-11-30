@@ -72,25 +72,26 @@ i:visited {
 	color: $black;
 }
 
-/* Certificate Initial ----------- */
 
-.certificateBlock {
-	background-image: url('../assets/fonts/bg_initial.svg');
-	// background-size: cover;
+@mixin backgroundConfigs($bg_url) {
+	background-image: url($bg_url);
 	background-repeat: no-repeat;
-	padding: 1em;
 	height: 12em;
 	width: 100%;
-	font-size: 3vw;
-	padding: 2em 0em;
 }
 
-#initialBlock p {
+
+/* Certificate General ----------- */
+
+.certificateBlock {
 	text-align: center;
+}
+
+/* Certificate INITIAL ----------- */
+
+.initialBlock {
+	@include backgroundConfigs('../assets/fonts/bg_init.svg');
 	font-size: 3vw;
-	font-weight: bold;
-	text-transform: uppercase;
-	padding: 1.25em;
 }
 
 .certificateBlock.row {
@@ -98,7 +99,12 @@ i:visited {
 }
 
 
-/* Certificate Updated ----------- */
+/* Certificate UNDERPAID ----------- */
+
+.underBlock {
+	@include backgroundConfigs('../assets/fonts/bg_under.svg')
+	font-size: 3vw;
+}
 
 .certHead {
 	font-family: FoundersGrotesk_Cnd;
@@ -106,22 +112,30 @@ i:visited {
 	margin-top: -0.5em;
 }
 
-.updatedBlock, .readyBlock {
-	text-align: center;
+
+.paidContent, .underContent {
+	font-size: 1.5vw;
+	font-weight: bold;
+	width: 40vw;
 }
 
-.updatedContent, .readyContent {
-	font-size: 0.60em;
-	margin-top: 1em;
+.paidContent {
+	margin: 9.5em 1em 0 2em;
+}
+
+.underContent {
+	margin: 10.5em 1em 0 2em;
 }
 
 
-/* Certificate Ready ----------- */
+/* Certificate PAID ----------- */
 
-.readyContentContainer {
-	background-color: $white;
-	height: 325px;
+.paidBlock {
+	@include backgroundConfigs('../assets/fonts/bg_paid.svg')
+	font-size: 3vw;
 }
+
+
 
 
 

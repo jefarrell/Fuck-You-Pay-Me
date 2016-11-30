@@ -31,6 +31,7 @@ class Output extends React.Component {
 					this.setState(nextProps);
 				}
 			}
+			console.log(this.state.status);
 			// Once right fields are updated, check the data
 			if (this.state.job !== '_____' && this.state.area !=='_____' && this.state.salary_current !== '48000') {
 				this.calculatePayment(this.state.state, this.state.area);
@@ -40,11 +41,11 @@ class Output extends React.Component {
 	}
 
 	// Once anything is selected, update certificate from initial view
-	componentDidUpdate() {
-		if (this.state.status === 'initial') {
-			this.setState({ status: 'updated' });
-		}
-	}
+	// componentDidUpdate() {
+	// 	if (this.state.status === 'initial') {
+	// 		this.setState({ status: 'updated' });
+	// 	}
+	// }
 
 	formatDollars(amount) {
 		let number = amount.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
@@ -87,71 +88,34 @@ class Output extends React.Component {
 		// Make several templates to render (initial, updated, underpaid, paid)
 		// Swap them in and out based on result of calculatePayment()
 		let status = 
-			<Col xs={12} id="initialBlock">
-				
-					<p>Fill out the the questions to see your results</p>
-
-			</Col>
+			<Col xs={12} className="initialBlock"></Col>
 
 
-		if (this.state.status === 'updated') {
-
-			status = 
-				<Col xs={12} className="updatedBlock">
-					<Col xs={12}>
-						<h1 className="certHead">YOUR EMPLOYER'S RESULTS</h1>
-					</Col>
-					<Col xs={12} className="updatedContent">
-						<p>{this.state.job} in the {this.state.area} area make an average
-						of {this.state.salary_data} per year, according to the Bureau of Labor Statistics.</p>
-					</Col>
-					<Col xs={12} className="updatedContent">
-						<p> Fill out all questions to see your full results.</p>
-					</Col>
-				</Col>
-
-
-		} else if (this.state.status === 'underpaid') {
+		if (this.state.status === 'underpaid') {
 			
 			let salary_data = this.formatDollars(this.state.salary_data);
+			
 			status =
-				<Col xs={12} className="readyBlock">
-					<Col xs={12} id="readyHeader">
-						<h1 className="certHead">NOTICE OF UNDERPAYMENT</h1>
-					</Col>
-					<Col xs={12} className="readyContentContainer">
-						<Col xs={12} className="readyContent">
-							<p>{this.state.job} in the {this.state.area} area make an average
-							of ${salary_data} per year, according to the Bureau of Labor Statistics.</p>
-						</Col>
-						<Col xs={12} className="readyContent">
-							<p> Will undervaluing your employee pay off?</p>
-						</Col>
+				<Col xs={12} className="underBlock">
+					<Col xs={12} className="underContent">
+						<p>{this.state.job} in the {this.state.area} area make an average
+						of ${salary_data} per year, according to the Bureau of Labor Statistics.</p>
 					</Col>
 				</Col>
-			$('.certificateBlock').css('background-color', '#FFD700');
+		
 
 		} else if (this.state.status === 'paid') {
 
 			let salary_data = this.formatDollars(this.state.salary_data);
 			let salary_diff = this.formatDollars(this.state.salary_difference);
+			
 			status =
-				<Col xs={12} className="readyBlock">
-					<Col xs={12} id="readyHeader">
-						<h1 className="certHead">CONGRATULATIONS</h1>
-					</Col>
-					<Col xs={12} className="readyContentContainer">
-						<Col xs={12} className="readyContent">
-							<p>You're ${salary_diff} ahead of the game.  {this.state.job} in the {this.state.area} area make an average
-							of ${salary_data} per year, according to the Bureau of Labor Statistics.</p>
-						</Col>
-						<Col xs={12} className="readyContent">
-							<p>Treat yourself tonight, you've earned it.</p>
-						</Col>
+				<Col xs={12} className="paidBlock">
+					<Col xs={12} className="paidContent">
+						<p>You're ${salary_diff} ahead of the game.  {this.state.job} in the {this.state.area} area make an average
+						of ${salary_data} per year, according to the Bureau of Labor Statistics.</p>
 					</Col>
 				</Col>
-
-			$('.certificateBlock').css('background-color', '#FFD700');
 		}
 
 		return(

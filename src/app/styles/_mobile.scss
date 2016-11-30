@@ -11,16 +11,9 @@
 @media screen 
 and (min-width : 500px) 
 and (max-width : 990px) {
-	.certificateBlock {
+	.initialBlock, .underBlock, .paidBlock {
 		height: 20em;
-	}
-
-	#initialBlock {
-		p {
-			width: 90%;
-			margin-top: 2em;
-			font-size: 4vw;
-		}
+		margin: 2em;
 	}
 }
 
@@ -28,16 +21,6 @@ and (max-width : 990px) {
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
-
-	
-	// input[type=range] {
-	// 	&::-webkit-slider-thumb, &::-moz-range-thumb, &::-ms-thumb{
-	// 		background: red;
-	// 		border: 3px solid blue;
-	// 	}
-
-	// }
-
 
 
 
@@ -52,34 +35,27 @@ and (max-device-width : 480px) {
 		font-size: 3.5em;
 	}
 
-
+	.initialBlock, .underBlock, .paidBlock {
+		margin: 0;
+	}
 
 	.certificateBlock {
-		height: 19em;
-		margin: 2em;
-	}
-
-	#initialBlock {
-		width: 92%;
-
-		p {
-			font-size: 5vw;
-			padding: 2em;
-			margin-top: 0;
-
-		}
-	}
-
-	.updatedContent {
-		margin-top: 0.5em;
-		font-size: 0.9em;
+		margin: 4em;
 	}
 
 
-	input[type=range] {
-
-
+	.underContent {
+		margin: 13.5em 1em 0 4em;
+    	width: 65vw;
+    	font-size: 2vw;
 	}
+
+	.paidContent {
+		margin: 12.5em 1em 0 3em;
+		width: 65vw;
+		font-size: 2vw;
+	}
+
 /////////// Dropdown menu styling
 	.selector {
 		.Select {
@@ -166,17 +142,11 @@ and (max-device-width : 480px) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px)  { 
 
-	.certificateBlock {
+	.initialBlock {
 		margin: 2em;
+		height: 20em;
 	}
 
-	#initialBlock {
-		p {
-			font-size: 5vw;
-			width: 80%;
-			margin: 1em 0.5em;
-		}
-	}
 
 }
 
