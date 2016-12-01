@@ -115,19 +115,19 @@ class Output extends React.Component {
 					{status}
 				</Row>
 				<Col className="socialBlock">
-				    <a className={"fb-xfbml-parse-ignore socialShare"} target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.kickstarter.com%2Fprojects%2Fgotenna%2F257342308&t=">
+				    <a className={"fb-xfbml-parse-ignore socialShare"} target="_blank" href="https://www.facebook.com/sharer.php?u=www.vice.com%2Ftag%2Fmoney">
                         <i className={"fa fa-facebook fa-3x"} aria-hidden="true"></i>                    
                     </a>
 					<TwitterButton 
-                        message="{tweet}"
-                        url=""
+                        message="How much should you be getting paid? Find out with the VICE Money Salary Calculator: "
+                        url="LinkGoesHere"
                         element="a"
                         className="socialShare">
                         <i className={"fa fa-twitter fa-3x"} aria-hidden="true"/>
                     </TwitterButton>
                     <a 
-	                    href=""
-	                    target="_blank" title="Send email">
+	                    href="mailto:?subject=Vice%20Money%20Article&amp;body=How%20much%20should%20you%20be%20getting%20paid%3F%20Find%20out%20with%20the%20VICE%20Money%20Salary%20Calculator%3A%20LINK"
+	                    title="Send email">
 	                    <i className={"fa fa-envelope fa-3x"} aria-hidden="true"></i>
                     </a>
                     <a
