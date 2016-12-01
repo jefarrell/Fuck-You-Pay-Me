@@ -4,6 +4,7 @@ import Row from "react-bootstrap/lib/Row";
 import Col from "react-bootstrap/lib/Col";
 
 import { TwitterButton } from 'react-social';
+import img from './../styles/fonts/geico.jpg';
 
 // Handle Certificate output
 class Output extends React.Component {
@@ -128,6 +129,11 @@ class Output extends React.Component {
 	                    href=""
 	                    target="_blank" title="Send email">
 	                    <i className={"fa fa-envelope fa-3x"} aria-hidden="true"></i>
+                    </a>
+                    <a
+                    	href="http://www.geico.com/"
+                    	target="blank" title="Geico" >
+                    	<img id="geico" src={img} alt="Geico Logo"/>
                     </a>
 				</Col>
 			</div>

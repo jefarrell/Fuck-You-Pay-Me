@@ -28,6 +28,10 @@ module.exports = {
       {
         test: /\.(eot|svg|ttf|woff|woff2)$/,
         loader: 'file-loader?name=./src/public/fonts/[name].[ext]'
+      },
+      {
+        test: /\.(jpg|png)$/,
+        loader: 'url-loader?name=./src/public/fonts[name].[ext]'
       }
     ]
   },

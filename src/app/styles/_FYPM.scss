@@ -72,6 +72,12 @@ i:visited {
 	color: $black;
 }
 
+#geico {
+	width: 6em;
+	height: auto;
+	float: right;
+}
+
 
 @mixin backgroundConfigs($bg_url) {
 	background-image: url($bg_url);
