@@ -47,7 +47,7 @@ body {
 
 /* Main sizing things */
 h3 {
-	//font-size: 2.5em;
+	font-size: 2em;
 	font-weight: bold;
 	margin-top: 10px;
 	// line-height: 1.5;
@@ -79,7 +79,7 @@ value is div container
 }
 
 .Select-placeholder, .Select-value-label {
-	font-size: 1.5em;
+	font-size: 2em;
 }
 
 .Select-value {
@@ -88,20 +88,18 @@ value is div container
 
 .Select-value, .Select-placeholder {
 	padding-left: 20px !important;
-	//padding-left: 1.5em !important;
 }
 
 .Select-option {
-	font-size: 1.5em;
+	font-size: 2em;
 	padding: 0.15em 20px;
 }
 
 .Select-option.is-focused {
-	background-color: rgba(255, 215, 0, 0.08);
+	background-color: rgba(255, 215, 0, 1);
 }
 
 .Select-menu {
-	//border: 2px solid black;
 	border-left-width: 0px;
 	border-right-width: 0px;
 	border-top-width: 0px;
@@ -169,11 +167,10 @@ value is div container
 		
 }
 
-// #react-select-2--value {
-// 	.Select-placeholder {
-// 		margin-top: 0.3em;
-// 	}
-// }
+.is-focused:not(.is-open) > .Select-control {
+	border-color: $accent;
+	box-shadow: none;
+}
 
 
 .form-control, .input-group-addon {
