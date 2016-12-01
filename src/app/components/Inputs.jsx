@@ -11,8 +11,6 @@ let path = '../assets/data/'
 const STATES = require('../assets/data/states.js');
 const JOBS = require('../assets/data/jobs.js');
 const STATE_AREAS = require('../assets/data/state_areas.js');
-const YEARS = require('../assets/data/years.js');
-const MONTHS = require('../assets/data/months.js');
 
 // We're going to update this with specific metro area data
 let jobPlaceholder = JOBS['titles'];
@@ -26,9 +24,6 @@ class Inputs extends React.Component {
 			job: '_____',
 			state: null,
 			area: '_____',
-			// year: 2006,
-			// month: 'January',
-			//salary_start:'34000',
 			salary_current:'48000',
 			updater: 'no'
 		};
@@ -45,12 +40,7 @@ class Inputs extends React.Component {
 	// Update states for sliders
 	sliderChange(e) {
 		let target = e.target.id;
-
-		//if (target === 'sal_curr') {
-			this.setState({salary_current: e.target.value});
-		// } else {
-		// 	this.setState({salary_start: e.target.value});
-		// }
+		this.setState({salary_current: e.target.value});
 	}
 
 	formatDollars(amount) {
@@ -170,52 +160,3 @@ class Inputs extends React.Component {
 }
 
 export default Inputs;
-
-
-/* 
-
-						<Row>
-							<Col xs={12}>
-								<h3 className="sectionHead"> When You Started Work </h3>
-							</Col>
-							<Col xs={5} className="selector">
-								<Select
-									name="form-field-name"
-									options={YEARS['YEARS']}
-									value={this.state.year}
-									clearable={false}
-									placeholder={this.state.year}
-									onChange={this.dropdownChange.bind(this,'year')}
-								/>
-							</Col>						
-							<Col xs={7} className="selector">
-								<Select
-									name="form-field-name"
-									options={MONTHS['MONTHS']}
-									value={this.state.month}
-									clearable={false}
-									placeholder="Select Month"
-									onChange={this.dropdownChange.bind(this,'month')}
-								/>
-							</Col>						
-						</Row>
-
-
-						<Row>
-							<Col xs={12}>
-								<h3 className="sectionHead"> Starting Salary: ${startFormat}</h3>
-							</Col>
-							<Col xs={12}className="slideStart">
-								<input
-									id="sal_start"
-									type="range"
-									min="0" max="200000"
-									value={this.state.salary_start}
-									onChange={this.sliderChange}
-									step="1000"
-								/>
-							</Col>
-						</Row>
-
-
-*/
