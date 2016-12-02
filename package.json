@@ -4,7 +4,9 @@
   "description": "vice money pt. 1",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --watch",
+    "build": "PROD_ENV=1 webpack"
   },
   "author": "",
   "license": "ISC",
