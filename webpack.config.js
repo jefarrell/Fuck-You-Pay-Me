@@ -10,7 +10,6 @@ module.exports = {
     path: './src/public/',
     filename: PROD ? 'bundle.min.js' : 'bundle.js'
   },
-
   module: {
     loaders: [
       {
@@ -47,7 +46,7 @@ module.exports = {
       mangle: {
         except: ['$'],
         screw_ie8: true,
-        keep_fnames: true
+        keep_fnames: false
       }
     })
   ] : []
