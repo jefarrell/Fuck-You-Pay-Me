@@ -1620,8 +1620,8 @@
             value: "Nassau County-Suffolk County, NY Metropolitan Division"
         }, 
         {
-            label: "New York-Jersey City-White Plains, NY-NJ Metropolitan Division", 
-            value: "New York-Jersey City-White Plains, NY-NJ Metropolitan Division"
+            label: "New York City Metro Area", 
+            value: "New York City Metro Area"
         }, 
         {
             label: "Rochester, NY", 

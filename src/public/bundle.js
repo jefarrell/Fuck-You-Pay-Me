@@ -21608,6 +21608,8 @@
 				if (this.state.area != prevState.area) {
 					$.getJSON('src/app/assets/data/job_splits/' + this.state.state + '_jobs.json', function (data) {
 						jobPlaceholder = data[_this2.state.area];
+						console.log("dataz: ", data);
+						console.log("state : ", _this2.state.state, _this2.state.area);
 						_this2.setState({ updater: 'yes' });
 					});
 				}
@@ -31510,8 +31512,8 @@
 	    label: "Nassau County-Suffolk County, NY Metropolitan Division",
 	    value: "Nassau County-Suffolk County, NY Metropolitan Division"
 	}, {
-	    label: "New York-Jersey City-White Plains, NY-NJ Metropolitan Division",
-	    value: "New York-Jersey City-White Plains, NY-NJ Metropolitan Division"
+	    label: "New York City Metro Area",
+	    value: "New York City Metro Area"
 	}, {
 	    label: "Rochester, NY",
 	    value: "Rochester, NY"

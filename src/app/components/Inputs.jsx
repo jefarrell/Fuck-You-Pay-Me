@@ -53,6 +53,8 @@ class Inputs extends React.Component {
 		if (this.state.area != prevState.area) {	
 			$.getJSON('src/app/assets/data/job_splits/'+this.state.state+'_jobs.json', (data) => {
 				jobPlaceholder = data[this.state.area];
+				console.log("dataz: ", data);
+				console.log("state : ", this.state.state, this.state.area);
 				this.setState({updater: 'yes'});
 			});
 		}
