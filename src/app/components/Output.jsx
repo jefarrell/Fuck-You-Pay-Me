@@ -32,7 +32,7 @@ class Output extends React.Component {
 			}
 
 			// Once right fields are updated, check the data
-			if (this.state.job !== '_____' && this.state.area !=='_____' && this.state.salary_current !== '48000') {
+			if (this.state.job !== '_____' && this.state.area !=='_____' && this.state.salary_current !== '') {
 				this.calculatePayment(this.state.state, this.state.area);
 			}
 
@@ -52,16 +52,20 @@ class Output extends React.Component {
 			// See if the job exists for that metro area
 			if (data[areaName][this.state.job]) {
 				// Checking salary input by user against salary in data
-				let current = parseInt(this.state.salary_current);
+				// more wacky formatting
+				let salstate = this.state.salary_current;
+				let salstring = salstate.toString().replace(/\,/g,'')
+				let current = parseInt(salstring);
+
 				if (current < parseInt(data[areaName][this.state.job])) {
-					
+					console.log("less")
 					this.setState({
 						salary_data: parseInt(data[areaName][this.state.job]),
 						status: 'underpaid'
 					});
 
 				} else if (current > parseInt(data[areaName][this.state.job])) {
-					
+					console.log("more")
 					let diff = current-parseInt(data[areaName][this.state.job]);
 					this.setState({
 						salary_data: parseInt(data[areaName][this.state.job]),

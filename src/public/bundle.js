@@ -66,7 +66,7 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	__webpack_require__(292);
+	__webpack_require__(302);
 
 	var App = function (_React$Component) {
 		_inherits(App, _React$Component);
@@ -21535,6 +21535,22 @@
 
 	var _Col2 = _interopRequireDefault(_Col);
 
+	var _FormGroup = __webpack_require__(289);
+
+	var _FormGroup2 = _interopRequireDefault(_FormGroup);
+
+	var _InputGroup = __webpack_require__(291);
+
+	var _InputGroup2 = _interopRequireDefault(_InputGroup);
+
+	var _FormControl = __webpack_require__(294);
+
+	var _FormControl2 = _interopRequireDefault(_FormControl);
+
+	var _InputGroupAddon = __webpack_require__(292);
+
+	var _InputGroupAddon2 = _interopRequireDefault(_InputGroupAddon);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -21544,9 +21560,9 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var path = '../assets/data/';
-	var STATES = __webpack_require__(289);
-	var JOBS = __webpack_require__(290);
-	var STATE_AREAS = __webpack_require__(291);
+	var STATES = __webpack_require__(299);
+	var JOBS = __webpack_require__(300);
+	var STATE_AREAS = __webpack_require__(301);
 
 	// We're going to update this with specific metro area data
 	var jobPlaceholder = JOBS['titles'];
@@ -21565,10 +21581,10 @@
 				job: '_____',
 				state: null,
 				area: '_____',
-				salary_current: '48000',
+				salary_current: '',
 				updater: 'no'
 			};
-			_this.sliderChange = _this.sliderChange.bind(_this);
+			_this.handleChange = _this.handleChange.bind(_this);
 			return _this;
 		}
 
@@ -21582,19 +21598,21 @@
 				change[name] = e.value;
 				this.setState(change);
 			}
-
-			// Update states for sliders
-
 		}, {
-			key: 'sliderChange',
-			value: function sliderChange(e) {
-				var target = e.target.id;
-				this.setState({ salary_current: e.target.value });
+			key: 'handleChange',
+			value: function handleChange(e) {
+				// wacky number formatting	
+				e.target.value = e.target.value.replace(/[^0-9]/g, '');
+				e.target.value = e.target.value || 0;
+				var valString = e.target.value.toString().replace(/\,/g, '');
+				var val = parseInt(valString);
+				val = this.formatDollars(val);
+				this.setState({ salary_current: val });
 			}
 		}, {
 			key: 'formatDollars',
 			value: function formatDollars(amount) {
-				var number = amount.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+				var number = amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 				return number;
 			}
 
@@ -21608,8 +21626,6 @@
 				if (this.state.area != prevState.area) {
 					$.getJSON('src/app/assets/data/job_splits/' + this.state.state + '_jobs.json', function (data) {
 						jobPlaceholder = data[_this2.state.area];
-						console.log("dataz: ", data);
-						console.log("state : ", _this2.state.state, _this2.state.area);
 						_this2.setState({ updater: 'yes' });
 					});
 				}
@@ -21624,9 +21640,6 @@
 					metroOptions = STATE_AREAS[this.state.state];
 					$('#metroArea').slideDown(400);
 				};
-
-				// Formatting numbers to display as dollars
-				var currFormat = this.formatDollars(this.state.salary_current);
 
 				return _react2.default.createElement(
 					'div',
@@ -21709,25 +21722,34 @@
 								null,
 								_react2.default.createElement(
 									_Col2.default,
-									{ xs: 12 },
+									{ xs: 5 },
 									_react2.default.createElement(
 										'h3',
 										{ className: 'sectionHead' },
-										' Current Salary: $',
-										currFormat
+										' Current Salary '
 									)
 								),
 								_react2.default.createElement(
 									_Col2.default,
-									{ xs: 12, className: 'slideStart' },
-									_react2.default.createElement('input', {
-										id: 'sal_curr',
-										type: 'range',
-										min: '0', max: '200000',
-										value: this.state.salary_current,
-										onChange: this.sliderChange,
-										step: '1000'
-									})
+									{ xs: 7, className: 'selector' },
+									_react2.default.createElement(
+										_FormGroup2.default,
+										null,
+										_react2.default.createElement(
+											_InputGroup2.default,
+											null,
+											_react2.default.createElement(
+												_InputGroup2.default.Addon,
+												null,
+												'$'
+											),
+											_react2.default.createElement(_FormControl2.default, {
+												type: 'text',
+												value: this.state.salary_current,
+												onChange: this.handleChange
+											})
+										)
+									)
 								)
 							)
 						)
@@ -24145,7 +24167,7 @@
 					}
 
 					// Once right fields are updated, check the data
-					if (this.state.job !== '_____' && this.state.area !== '_____' && this.state.salary_current !== '48000') {
+					if (this.state.job !== '_____' && this.state.area !== '_____' && this.state.salary_current !== '') {
 						this.calculatePayment(this.state.state, this.state.area);
 					}
 				} else return;
@@ -24169,15 +24191,19 @@
 					// See if the job exists for that metro area
 					if (data[areaName][_this2.state.job]) {
 						// Checking salary input by user against salary in data
-						var current = parseInt(_this2.state.salary_current);
-						if (current < parseInt(data[areaName][_this2.state.job])) {
+						// more wacky formatting
+						var salstate = _this2.state.salary_current;
+						var salstring = salstate.toString().replace(/\,/g, '');
+						var current = parseInt(salstring);
 
+						if (current < parseInt(data[areaName][_this2.state.job])) {
+							console.log("less");
 							_this2.setState({
 								salary_data: parseInt(data[areaName][_this2.state.job]),
 								status: 'underpaid'
 							});
 						} else if (current > parseInt(data[areaName][_this2.state.job])) {
-
+							console.log("more");
 							var diff = current - parseInt(data[areaName][_this2.state.job]);
 							_this2.setState({
 								salary_data: parseInt(data[areaName][_this2.state.job]),
@@ -27840,6 +27866,1035 @@
 
 /***/ },
 /* 289 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.__esModule = true;
+
+	var _extends2 = __webpack_require__(188);
+
+	var _extends3 = _interopRequireDefault(_extends2);
+
+	var _objectWithoutProperties2 = __webpack_require__(226);
+
+	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
+
+	var _classCallCheck2 = __webpack_require__(227);
+
+	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+	var _possibleConstructorReturn2 = __webpack_require__(228);
+
+	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+	var _inherits2 = __webpack_require__(264);
+
+	var _inherits3 = _interopRequireDefault(_inherits2);
+
+	var _classnames = __webpack_require__(175);
+
+	var _classnames2 = _interopRequireDefault(_classnames);
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _bootstrapUtils = __webpack_require__(274);
+
+	var _StyleConfig = __webpack_require__(280);
+
+	var _ValidComponentChildren = __webpack_require__(290);
+
+	var _ValidComponentChildren2 = _interopRequireDefault(_ValidComponentChildren);
+
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { 'default': obj };
+	}
+
+	var propTypes = {
+	  /**
+	   * Sets `id` on `<FormControl>` and `htmlFor` on `<FormGroup.Label>`.
+	   */
+	  controlId: _react2['default'].PropTypes.string,
+	  validationState: _react2['default'].PropTypes.oneOf(['success', 'warning', 'error'])
+	};
+
+	var childContextTypes = {
+	  $bs_formGroup: _react2['default'].PropTypes.object.isRequired
+	};
+
+	var FormGroup = function (_React$Component) {
+	  (0, _inherits3['default'])(FormGroup, _React$Component);
+
+	  function FormGroup() {
+	    (0, _classCallCheck3['default'])(this, FormGroup);
+	    return (0, _possibleConstructorReturn3['default'])(this, _React$Component.apply(this, arguments));
+	  }
+
+	  FormGroup.prototype.getChildContext = function getChildContext() {
+	    var _props = this.props,
+	        controlId = _props.controlId,
+	        validationState = _props.validationState;
+
+	    return {
+	      $bs_formGroup: {
+	        controlId: controlId,
+	        validationState: validationState
+	      }
+	    };
+	  };
+
+	  FormGroup.prototype.hasFeedback = function hasFeedback(children) {
+	    var _this2 = this;
+
+	    return _ValidComponentChildren2['default'].some(children, function (child) {
+	      return child.props.bsRole === 'feedback' || child.props.children && _this2.hasFeedback(child.props.children);
+	    });
+	  };
+
+	  FormGroup.prototype.render = function render() {
+	    var _props2 = this.props,
+	        validationState = _props2.validationState,
+	        className = _props2.className,
+	        children = _props2.children,
+	        props = (0, _objectWithoutProperties3['default'])(_props2, ['validationState', 'className', 'children']);
+
+	    var _splitBsPropsAndOmit = (0, _bootstrapUtils.splitBsPropsAndOmit)(props, ['controlId']),
+	        bsProps = _splitBsPropsAndOmit[0],
+	        elementProps = _splitBsPropsAndOmit[1];
+
+	    var classes = (0, _extends3['default'])({}, (0, _bootstrapUtils.getClassSet)(bsProps), {
+	      'has-feedback': this.hasFeedback(children)
+	    });
+	    if (validationState) {
+	      classes['has-' + validationState] = true;
+	    }
+
+	    return _react2['default'].createElement('div', (0, _extends3['default'])({}, elementProps, {
+	      className: (0, _classnames2['default'])(className, classes)
+	    }), children);
+	  };
+
+	  return FormGroup;
+	}(_react2['default'].Component);
+
+	FormGroup.propTypes = propTypes;
+	FormGroup.childContextTypes = childContextTypes;
+
+	exports['default'] = (0, _bootstrapUtils.bsClass)('form-group', (0, _bootstrapUtils.bsSizes)([_StyleConfig.Size.LARGE, _StyleConfig.Size.SMALL], FormGroup));
+	module.exports = exports['default'];
+
+/***/ },
+/* 290 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.__esModule = true;
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { 'default': obj };
+	}
+
+	/**
+	 * Iterates through children that are typically specified as `props.children`,
+	 * but only maps over children that are "valid components".
+	 *
+	 * The mapFunction provided index will be normalised to the components mapped,
+	 * so an invalid component would not increase the index.
+	 *
+	 * @param {?*} children Children tree container.
+	 * @param {function(*, int)} func.
+	 * @param {*} context Context for func.
+	 * @return {object} Object containing the ordered map of results.
+	 */
+	function map(children, func, context) {
+	  var index = 0;
+
+	  return _react2['default'].Children.map(children, function (child) {
+	    if (!_react2['default'].isValidElement(child)) {
+	      return child;
+	    }
+
+	    return func.call(context, child, index++);
+	  });
+	}
+
+	/**
+	 * Iterates through children that are "valid components".
+	 *
+	 * The provided forEachFunc(child, index) will be called for each
+	 * leaf child with the index reflecting the position relative to "valid components".
+	 *
+	 * @param {?*} children Children tree container.
+	 * @param {function(*, int)} func.
+	 * @param {*} context Context for context.
+	 */
+	// TODO: This module should be ElementChildren, and should use named exports.
+
+	function forEach(children, func, context) {
+	  var index = 0;
+
+	  _react2['default'].Children.forEach(children, function (child) {
+	    if (!_react2['default'].isValidElement(child)) {
+	      return;
+	    }
+
+	    func.call(context, child, index++);
+	  });
+	}
+
+	/**
+	 * Count the number of "valid components" in the Children container.
+	 *
+	 * @param {?*} children Children tree container.
+	 * @returns {number}
+	 */
+	function count(children) {
+	  var result = 0;
+
+	  _react2['default'].Children.forEach(children, function (child) {
+	    if (!_react2['default'].isValidElement(child)) {
+	      return;
+	    }
+
+	    ++result;
+	  });
+
+	  return result;
+	}
+
+	/**
+	 * Finds children that are typically specified as `props.children`,
+	 * but only iterates over children that are "valid components".
+	 *
+	 * The provided forEachFunc(child, index) will be called for each
+	 * leaf child with the index reflecting the position relative to "valid components".
+	 *
+	 * @param {?*} children Children tree container.
+	 * @param {function(*, int)} func.
+	 * @param {*} context Context for func.
+	 * @returns {array} of children that meet the func return statement
+	 */
+	function filter(children, func, context) {
+	  var index = 0;
+	  var result = [];
+
+	  _react2['default'].Children.forEach(children, function (child) {
+	    if (!_react2['default'].isValidElement(child)) {
+	      return;
+	    }
+
+	    if (func.call(context, child, index++)) {
+	      result.push(child);
+	    }
+	  });
+
+	  return result;
+	}
+
+	function find(children, func, context) {
+	  var index = 0;
+	  var result = undefined;
+
+	  _react2['default'].Children.forEach(children, function (child) {
+	    if (result) {
+	      return;
+	    }
+	    if (!_react2['default'].isValidElement(child)) {
+	      return;
+	    }
+
+	    if (func.call(context, child, index++)) {
+	      result = child;
+	    }
+	  });
+
+	  return result;
+	}
+
+	function every(children, func, context) {
+	  var index = 0;
+	  var result = true;
+
+	  _react2['default'].Children.forEach(children, function (child) {
+	    if (!result) {
+	      return;
+	    }
+	    if (!_react2['default'].isValidElement(child)) {
+	      return;
+	    }
+
+	    if (!func.call(context, child, index++)) {
+	      result = false;
+	    }
+	  });
+
+	  return result;
+	}
+
+	function some(children, func, context) {
+	  var index = 0;
+	  var result = false;
+
+	  _react2['default'].Children.forEach(children, function (child) {
+	    if (result) {
+	      return;
+	    }
+	    if (!_react2['default'].isValidElement(child)) {
+	      return;
+	    }
+
+	    if (func.call(context, child, index++)) {
+	      result = true;
+	    }
+	  });
+
+	  return result;
+	}
+
+	function toArray(children) {
+	  var result = [];
+
+	  _react2['default'].Children.forEach(children, function (child) {
+	    if (!_react2['default'].isValidElement(child)) {
+	      return;
+	    }
+
+	    result.push(child);
+	  });
+
+	  return result;
+	}
+
+	exports['default'] = {
+	  map: map,
+	  forEach: forEach,
+	  count: count,
+	  find: find,
+	  filter: filter,
+	  every: every,
+	  some: some,
+	  toArray: toArray
+	};
+	module.exports = exports['default'];
+
+/***/ },
+/* 291 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.__esModule = true;
+
+	var _extends2 = __webpack_require__(188);
+
+	var _extends3 = _interopRequireDefault(_extends2);
+
+	var _objectWithoutProperties2 = __webpack_require__(226);
+
+	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
+
+	var _classCallCheck2 = __webpack_require__(227);
+
+	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+	var _possibleConstructorReturn2 = __webpack_require__(228);
+
+	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+	var _inherits2 = __webpack_require__(264);
+
+	var _inherits3 = _interopRequireDefault(_inherits2);
+
+	var _classnames = __webpack_require__(175);
+
+	var _classnames2 = _interopRequireDefault(_classnames);
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _InputGroupAddon = __webpack_require__(292);
+
+	var _InputGroupAddon2 = _interopRequireDefault(_InputGroupAddon);
+
+	var _InputGroupButton = __webpack_require__(293);
+
+	var _InputGroupButton2 = _interopRequireDefault(_InputGroupButton);
+
+	var _bootstrapUtils = __webpack_require__(274);
+
+	var _StyleConfig = __webpack_require__(280);
+
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { 'default': obj };
+	}
+
+	var InputGroup = function (_React$Component) {
+	  (0, _inherits3['default'])(InputGroup, _React$Component);
+
+	  function InputGroup() {
+	    (0, _classCallCheck3['default'])(this, InputGroup);
+	    return (0, _possibleConstructorReturn3['default'])(this, _React$Component.apply(this, arguments));
+	  }
+
+	  InputGroup.prototype.render = function render() {
+	    var _props = this.props,
+	        className = _props.className,
+	        props = (0, _objectWithoutProperties3['default'])(_props, ['className']);
+
+	    var _splitBsProps = (0, _bootstrapUtils.splitBsProps)(props),
+	        bsProps = _splitBsProps[0],
+	        elementProps = _splitBsProps[1];
+
+	    var classes = (0, _bootstrapUtils.getClassSet)(bsProps);
+
+	    return _react2['default'].createElement('span', (0, _extends3['default'])({}, elementProps, {
+	      className: (0, _classnames2['default'])(className, classes)
+	    }));
+	  };
+
+	  return InputGroup;
+	}(_react2['default'].Component);
+
+	InputGroup.Addon = _InputGroupAddon2['default'];
+	InputGroup.Button = _InputGroupButton2['default'];
+
+	exports['default'] = (0, _bootstrapUtils.bsClass)('input-group', (0, _bootstrapUtils.bsSizes)([_StyleConfig.Size.LARGE, _StyleConfig.Size.SMALL], InputGroup));
+	module.exports = exports['default'];
+
+/***/ },
+/* 292 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.__esModule = true;
+
+	var _extends2 = __webpack_require__(188);
+
+	var _extends3 = _interopRequireDefault(_extends2);
+
+	var _objectWithoutProperties2 = __webpack_require__(226);
+
+	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
+
+	var _classCallCheck2 = __webpack_require__(227);
+
+	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+	var _possibleConstructorReturn2 = __webpack_require__(228);
+
+	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+	var _inherits2 = __webpack_require__(264);
+
+	var _inherits3 = _interopRequireDefault(_inherits2);
+
+	var _classnames = __webpack_require__(175);
+
+	var _classnames2 = _interopRequireDefault(_classnames);
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _bootstrapUtils = __webpack_require__(274);
+
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { 'default': obj };
+	}
+
+	var InputGroupAddon = function (_React$Component) {
+	  (0, _inherits3['default'])(InputGroupAddon, _React$Component);
+
+	  function InputGroupAddon() {
+	    (0, _classCallCheck3['default'])(this, InputGroupAddon);
+	    return (0, _possibleConstructorReturn3['default'])(this, _React$Component.apply(this, arguments));
+	  }
+
+	  InputGroupAddon.prototype.render = function render() {
+	    var _props = this.props,
+	        className = _props.className,
+	        props = (0, _objectWithoutProperties3['default'])(_props, ['className']);
+
+	    var _splitBsProps = (0, _bootstrapUtils.splitBsProps)(props),
+	        bsProps = _splitBsProps[0],
+	        elementProps = _splitBsProps[1];
+
+	    var classes = (0, _bootstrapUtils.getClassSet)(bsProps);
+
+	    return _react2['default'].createElement('span', (0, _extends3['default'])({}, elementProps, {
+	      className: (0, _classnames2['default'])(className, classes)
+	    }));
+	  };
+
+	  return InputGroupAddon;
+	}(_react2['default'].Component);
+
+	exports['default'] = (0, _bootstrapUtils.bsClass)('input-group-addon', InputGroupAddon);
+	module.exports = exports['default'];
+
+/***/ },
+/* 293 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.__esModule = true;
+
+	var _extends2 = __webpack_require__(188);
+
+	var _extends3 = _interopRequireDefault(_extends2);
+
+	var _objectWithoutProperties2 = __webpack_require__(226);
+
+	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
+
+	var _classCallCheck2 = __webpack_require__(227);
+
+	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+	var _possibleConstructorReturn2 = __webpack_require__(228);
+
+	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+	var _inherits2 = __webpack_require__(264);
+
+	var _inherits3 = _interopRequireDefault(_inherits2);
+
+	var _classnames = __webpack_require__(175);
+
+	var _classnames2 = _interopRequireDefault(_classnames);
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _bootstrapUtils = __webpack_require__(274);
+
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { 'default': obj };
+	}
+
+	var InputGroupButton = function (_React$Component) {
+	  (0, _inherits3['default'])(InputGroupButton, _React$Component);
+
+	  function InputGroupButton() {
+	    (0, _classCallCheck3['default'])(this, InputGroupButton);
+	    return (0, _possibleConstructorReturn3['default'])(this, _React$Component.apply(this, arguments));
+	  }
+
+	  InputGroupButton.prototype.render = function render() {
+	    var _props = this.props,
+	        className = _props.className,
+	        props = (0, _objectWithoutProperties3['default'])(_props, ['className']);
+
+	    var _splitBsProps = (0, _bootstrapUtils.splitBsProps)(props),
+	        bsProps = _splitBsProps[0],
+	        elementProps = _splitBsProps[1];
+
+	    var classes = (0, _bootstrapUtils.getClassSet)(bsProps);
+
+	    return _react2['default'].createElement('span', (0, _extends3['default'])({}, elementProps, {
+	      className: (0, _classnames2['default'])(className, classes)
+	    }));
+	  };
+
+	  return InputGroupButton;
+	}(_react2['default'].Component);
+
+	exports['default'] = (0, _bootstrapUtils.bsClass)('input-group-btn', InputGroupButton);
+	module.exports = exports['default'];
+
+/***/ },
+/* 294 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
+
+	exports.__esModule = true;
+
+	var _extends2 = __webpack_require__(188);
+
+	var _extends3 = _interopRequireDefault(_extends2);
+
+	var _objectWithoutProperties2 = __webpack_require__(226);
+
+	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
+
+	var _classCallCheck2 = __webpack_require__(227);
+
+	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+	var _possibleConstructorReturn2 = __webpack_require__(228);
+
+	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+	var _inherits2 = __webpack_require__(264);
+
+	var _inherits3 = _interopRequireDefault(_inherits2);
+
+	var _classnames = __webpack_require__(175);
+
+	var _classnames2 = _interopRequireDefault(_classnames);
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _elementType = __webpack_require__(272);
+
+	var _elementType2 = _interopRequireDefault(_elementType);
+
+	var _warning = __webpack_require__(295);
+
+	var _warning2 = _interopRequireDefault(_warning);
+
+	var _FormControlFeedback = __webpack_require__(296);
+
+	var _FormControlFeedback2 = _interopRequireDefault(_FormControlFeedback);
+
+	var _FormControlStatic = __webpack_require__(298);
+
+	var _FormControlStatic2 = _interopRequireDefault(_FormControlStatic);
+
+	var _bootstrapUtils = __webpack_require__(274);
+
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { 'default': obj };
+	}
+
+	var propTypes = {
+	  componentClass: _elementType2['default'],
+	  /**
+	   * Only relevant if `componentClass` is `'input'`.
+	   */
+	  type: _react2['default'].PropTypes.string,
+	  /**
+	   * Uses `controlId` from `<FormGroup>` if not explicitly specified.
+	   */
+	  id: _react2['default'].PropTypes.string
+	};
+
+	var defaultProps = {
+	  componentClass: 'input'
+	};
+
+	var contextTypes = {
+	  $bs_formGroup: _react2['default'].PropTypes.object
+	};
+
+	var FormControl = function (_React$Component) {
+	  (0, _inherits3['default'])(FormControl, _React$Component);
+
+	  function FormControl() {
+	    (0, _classCallCheck3['default'])(this, FormControl);
+	    return (0, _possibleConstructorReturn3['default'])(this, _React$Component.apply(this, arguments));
+	  }
+
+	  FormControl.prototype.render = function render() {
+	    var formGroup = this.context.$bs_formGroup;
+	    var controlId = formGroup && formGroup.controlId;
+
+	    var _props = this.props,
+	        Component = _props.componentClass,
+	        type = _props.type,
+	        _props$id = _props.id,
+	        id = _props$id === undefined ? controlId : _props$id,
+	        className = _props.className,
+	        props = (0, _objectWithoutProperties3['default'])(_props, ['componentClass', 'type', 'id', 'className']);
+
+	    var _splitBsProps = (0, _bootstrapUtils.splitBsProps)(props),
+	        bsProps = _splitBsProps[0],
+	        elementProps = _splitBsProps[1];
+
+	    process.env.NODE_ENV !== 'production' ? (0, _warning2['default'])(controlId == null || id === controlId, '`controlId` is ignored on `<FormControl>` when `id` is specified.') : void 0;
+
+	    // input[type="file"] should not have .form-control.
+	    var classes = void 0;
+	    if (type !== 'file') {
+	      classes = (0, _bootstrapUtils.getClassSet)(bsProps);
+	    }
+
+	    return _react2['default'].createElement(Component, (0, _extends3['default'])({}, elementProps, {
+	      type: type,
+	      id: id,
+	      className: (0, _classnames2['default'])(className, classes)
+	    }));
+	  };
+
+	  return FormControl;
+	}(_react2['default'].Component);
+
+	FormControl.propTypes = propTypes;
+	FormControl.defaultProps = defaultProps;
+	FormControl.contextTypes = contextTypes;
+
+	FormControl.Feedback = _FormControlFeedback2['default'];
+	FormControl.Static = _FormControlStatic2['default'];
+
+	exports['default'] = (0, _bootstrapUtils.bsClass)('form-control', FormControl);
+	module.exports = exports['default'];
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ },
+/* 295 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {/**
+	 * Copyright 2014-2015, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 */
+
+	'use strict';
+
+	/**
+	 * Similar to invariant but only logs a warning if the condition is not met.
+	 * This can be used to log issues in development environments in critical
+	 * paths. Removing the logging code for production environments will keep the
+	 * same logic and follow the same code paths.
+	 */
+
+	var warning = function warning() {};
+
+	if (process.env.NODE_ENV !== 'production') {
+	  warning = function warning(condition, format, args) {
+	    var len = arguments.length;
+	    args = new Array(len > 2 ? len - 2 : 0);
+	    for (var key = 2; key < len; key++) {
+	      args[key - 2] = arguments[key];
+	    }
+	    if (format === undefined) {
+	      throw new Error('`warning(condition, format, ...args)` requires a warning ' + 'message argument');
+	    }
+
+	    if (format.length < 10 || /^[s\W]*$/.test(format)) {
+	      throw new Error('The warning format should be able to uniquely identify this ' + 'warning. Please, use a more descriptive format than: ' + format);
+	    }
+
+	    if (!condition) {
+	      var argIndex = 0;
+	      var message = 'Warning: ' + format.replace(/%s/g, function () {
+	        return args[argIndex++];
+	      });
+	      if (typeof console !== 'undefined') {
+	        console.error(message);
+	      }
+	      try {
+	        // This error was thrown as a convenience so that you can use this stack
+	        // to find the callsite that caused this warning to fire.
+	        throw new Error(message);
+	      } catch (x) {}
+	    }
+	  };
+	}
+
+	module.exports = warning;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ },
+/* 296 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.__esModule = true;
+
+	var _objectWithoutProperties2 = __webpack_require__(226);
+
+	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
+
+	var _extends2 = __webpack_require__(188);
+
+	var _extends3 = _interopRequireDefault(_extends2);
+
+	var _classCallCheck2 = __webpack_require__(227);
+
+	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+	var _possibleConstructorReturn2 = __webpack_require__(228);
+
+	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+	var _inherits2 = __webpack_require__(264);
+
+	var _inherits3 = _interopRequireDefault(_inherits2);
+
+	var _classnames = __webpack_require__(175);
+
+	var _classnames2 = _interopRequireDefault(_classnames);
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _Glyphicon = __webpack_require__(297);
+
+	var _Glyphicon2 = _interopRequireDefault(_Glyphicon);
+
+	var _bootstrapUtils = __webpack_require__(274);
+
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { 'default': obj };
+	}
+
+	var defaultProps = {
+	  bsRole: 'feedback'
+	};
+
+	var contextTypes = {
+	  $bs_formGroup: _react2['default'].PropTypes.object
+	};
+
+	var FormControlFeedback = function (_React$Component) {
+	  (0, _inherits3['default'])(FormControlFeedback, _React$Component);
+
+	  function FormControlFeedback() {
+	    (0, _classCallCheck3['default'])(this, FormControlFeedback);
+	    return (0, _possibleConstructorReturn3['default'])(this, _React$Component.apply(this, arguments));
+	  }
+
+	  FormControlFeedback.prototype.getGlyph = function getGlyph(validationState) {
+	    switch (validationState) {
+	      case 'success':
+	        return 'ok';
+	      case 'warning':
+	        return 'warning-sign';
+	      case 'error':
+	        return 'remove';
+	      default:
+	        return null;
+	    }
+	  };
+
+	  FormControlFeedback.prototype.renderDefaultFeedback = function renderDefaultFeedback(formGroup, className, classes, elementProps) {
+	    var glyph = this.getGlyph(formGroup && formGroup.validationState);
+	    if (!glyph) {
+	      return null;
+	    }
+
+	    return _react2['default'].createElement(_Glyphicon2['default'], (0, _extends3['default'])({}, elementProps, {
+	      glyph: glyph,
+	      className: (0, _classnames2['default'])(className, classes)
+	    }));
+	  };
+
+	  FormControlFeedback.prototype.render = function render() {
+	    var _props = this.props,
+	        className = _props.className,
+	        children = _props.children,
+	        props = (0, _objectWithoutProperties3['default'])(_props, ['className', 'children']);
+
+	    var _splitBsProps = (0, _bootstrapUtils.splitBsProps)(props),
+	        bsProps = _splitBsProps[0],
+	        elementProps = _splitBsProps[1];
+
+	    var classes = (0, _bootstrapUtils.getClassSet)(bsProps);
+
+	    if (!children) {
+	      return this.renderDefaultFeedback(this.context.$bs_formGroup, className, classes, elementProps);
+	    }
+
+	    var child = _react2['default'].Children.only(children);
+	    return _react2['default'].cloneElement(child, (0, _extends3['default'])({}, elementProps, {
+	      className: (0, _classnames2['default'])(child.props.className, className, classes)
+	    }));
+	  };
+
+	  return FormControlFeedback;
+	}(_react2['default'].Component);
+
+	FormControlFeedback.defaultProps = defaultProps;
+	FormControlFeedback.contextTypes = contextTypes;
+
+	exports['default'] = (0, _bootstrapUtils.bsClass)('form-control-feedback', FormControlFeedback);
+	module.exports = exports['default'];
+
+/***/ },
+/* 297 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.__esModule = true;
+
+	var _extends3 = __webpack_require__(188);
+
+	var _extends4 = _interopRequireDefault(_extends3);
+
+	var _objectWithoutProperties2 = __webpack_require__(226);
+
+	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
+
+	var _classCallCheck2 = __webpack_require__(227);
+
+	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+	var _possibleConstructorReturn2 = __webpack_require__(228);
+
+	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+	var _inherits2 = __webpack_require__(264);
+
+	var _inherits3 = _interopRequireDefault(_inherits2);
+
+	var _classnames = __webpack_require__(175);
+
+	var _classnames2 = _interopRequireDefault(_classnames);
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _bootstrapUtils = __webpack_require__(274);
+
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { 'default': obj };
+	}
+
+	var propTypes = {
+	  /**
+	   * An icon name. See e.g. http://getbootstrap.com/components/#glyphicons
+	   */
+	  glyph: _react2['default'].PropTypes.string.isRequired
+	};
+
+	var Glyphicon = function (_React$Component) {
+	  (0, _inherits3['default'])(Glyphicon, _React$Component);
+
+	  function Glyphicon() {
+	    (0, _classCallCheck3['default'])(this, Glyphicon);
+	    return (0, _possibleConstructorReturn3['default'])(this, _React$Component.apply(this, arguments));
+	  }
+
+	  Glyphicon.prototype.render = function render() {
+	    var _extends2;
+
+	    var _props = this.props,
+	        glyph = _props.glyph,
+	        className = _props.className,
+	        props = (0, _objectWithoutProperties3['default'])(_props, ['glyph', 'className']);
+
+	    var _splitBsProps = (0, _bootstrapUtils.splitBsProps)(props),
+	        bsProps = _splitBsProps[0],
+	        elementProps = _splitBsProps[1];
+
+	    var classes = (0, _extends4['default'])({}, (0, _bootstrapUtils.getClassSet)(bsProps), (_extends2 = {}, _extends2[(0, _bootstrapUtils.prefix)(bsProps, glyph)] = true, _extends2));
+
+	    return _react2['default'].createElement('span', (0, _extends4['default'])({}, elementProps, {
+	      className: (0, _classnames2['default'])(className, classes)
+	    }));
+	  };
+
+	  return Glyphicon;
+	}(_react2['default'].Component);
+
+	Glyphicon.propTypes = propTypes;
+
+	exports['default'] = (0, _bootstrapUtils.bsClass)('glyphicon', Glyphicon);
+	module.exports = exports['default'];
+
+/***/ },
+/* 298 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.__esModule = true;
+
+	var _extends2 = __webpack_require__(188);
+
+	var _extends3 = _interopRequireDefault(_extends2);
+
+	var _objectWithoutProperties2 = __webpack_require__(226);
+
+	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
+
+	var _classCallCheck2 = __webpack_require__(227);
+
+	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+	var _possibleConstructorReturn2 = __webpack_require__(228);
+
+	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+	var _inherits2 = __webpack_require__(264);
+
+	var _inherits3 = _interopRequireDefault(_inherits2);
+
+	var _classnames = __webpack_require__(175);
+
+	var _classnames2 = _interopRequireDefault(_classnames);
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _elementType = __webpack_require__(272);
+
+	var _elementType2 = _interopRequireDefault(_elementType);
+
+	var _bootstrapUtils = __webpack_require__(274);
+
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { 'default': obj };
+	}
+
+	var propTypes = {
+	  componentClass: _elementType2['default']
+	};
+
+	var defaultProps = {
+	  componentClass: 'p'
+	};
+
+	var FormControlStatic = function (_React$Component) {
+	  (0, _inherits3['default'])(FormControlStatic, _React$Component);
+
+	  function FormControlStatic() {
+	    (0, _classCallCheck3['default'])(this, FormControlStatic);
+	    return (0, _possibleConstructorReturn3['default'])(this, _React$Component.apply(this, arguments));
+	  }
+
+	  FormControlStatic.prototype.render = function render() {
+	    var _props = this.props,
+	        Component = _props.componentClass,
+	        className = _props.className,
+	        props = (0, _objectWithoutProperties3['default'])(_props, ['componentClass', 'className']);
+
+	    var _splitBsProps = (0, _bootstrapUtils.splitBsProps)(props),
+	        bsProps = _splitBsProps[0],
+	        elementProps = _splitBsProps[1];
+
+	    var classes = (0, _bootstrapUtils.getClassSet)(bsProps);
+
+	    return _react2['default'].createElement(Component, (0, _extends3['default'])({}, elementProps, {
+	      className: (0, _classnames2['default'])(className, classes)
+	    }));
+	  };
+
+	  return FormControlStatic;
+	}(_react2['default'].Component);
+
+	FormControlStatic.propTypes = propTypes;
+	FormControlStatic.defaultProps = defaultProps;
+
+	exports['default'] = (0, _bootstrapUtils.bsClass)('form-control-static', FormControlStatic);
+	module.exports = exports['default'];
+
+/***/ },
+/* 299 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -27847,7 +28902,7 @@
 	exports.US = [{ value: 'AL', label: 'Alabama' }, { value: 'AK', label: 'Alaska' }, { value: 'AZ', label: 'Arizona' }, { value: 'AR', label: 'Arkansas' }, { value: 'CA', label: 'California' }, { value: 'CO', label: 'Colorado' }, { value: 'CT', label: 'Connecticut' }, { value: 'DE', label: 'Delaware' }, { value: 'FL', label: 'Florida' }, { value: 'GA', label: 'Georgia' }, { value: 'HI', label: 'Hawaii' }, { value: 'ID', label: 'Idaho' }, { value: 'IL', label: 'Illinois' }, { value: 'IN', label: 'Indiana' }, { value: 'IA', label: 'Iowa' }, { value: 'KS', label: 'Kansas' }, { value: 'KY', label: 'Kentucky' }, { value: 'LA', label: 'Louisiana' }, { value: 'ME', label: 'Maine' }, { value: 'MD', label: 'Maryland' }, { value: 'MA', label: 'Massachusetts' }, { value: 'MI', label: 'Michigan' }, { value: 'MN', label: 'Minnesota' }, { value: 'MS', label: 'Mississippi' }, { value: 'MO', label: 'Missouri' }, { value: 'MT', label: 'Montana' }, { value: 'NE', label: 'Nebraska' }, { value: 'NV', label: 'Nevada' }, { value: 'NH', label: 'New Hampshire' }, { value: 'NJ', label: 'New Jersey' }, { value: 'NM', label: 'New Mexico' }, { value: 'NY', label: 'New York' }, { value: 'NC', label: 'North Carolina' }, { value: 'ND', label: 'North Dakota' }, { value: 'OH', label: 'Ohio' }, { value: 'OK', label: 'Oklahoma' }, { value: 'OR', label: 'Oregon' }, { value: 'PA', label: 'Pennsylvania' }, { value: 'RI', label: 'Rhode Island' }, { value: 'SC', label: 'South Carolina' }, { value: 'SD', label: 'South Dakota' }, { value: 'TN', label: 'Tennessee' }, { value: 'TX', label: 'Texas' }, { value: 'UT', label: 'Utah' }, { value: 'VT', label: 'Vermont' }, { value: 'VA', label: 'Virginia' }, { value: 'WA', label: 'Washington' }, { value: 'WV', label: 'West Virginia' }, { value: 'WI', label: 'Wisconsin' }, { value: 'WY', label: 'Wyoming' }];
 
 /***/ },
-/* 290 */
+/* 300 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -30300,7 +31355,7 @@
 	}];
 
 /***/ },
-/* 291 */
+/* 301 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -32139,13 +33194,13 @@
 	}];
 
 /***/ },
-/* 292 */
+/* 302 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(293);
+	var content = __webpack_require__(303);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(288)(content, {});
@@ -32165,7 +33220,7 @@
 	}
 
 /***/ },
-/* 293 */
+/* 303 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(287)();
@@ -32173,79 +33228,79 @@
 
 
 	// module
-	exports.push([module.id, ".inputBlock {\n  font-size: 0.9em; }\n\n#metroArea {\n  display: none;\n  margin-top: -1.75em; }\n\n.slideStart {\n  margin-top: 3em; }\n\n#lowerRange {\n  padding-left: 1.3em; }\n\n#upperRange {\n  padding-left: 0; }\n\n.col-xs-1 {\n  width: 5%;\n  margin-top: 25px; }\n\n.col-xs-4 {\n  width: 40%; }\n\n.col-xs-5 {\n  padding-right: 0; }\n\n.input-group-addon div {\n  margin-right: 0.5em;\n  font-size: 1.5em; }\n\n.form-control {\n  color: #000; }\n\na, i {\n  cursor: pointer; }\n\na {\n  margin: 1em;\n  color: #000; }\n  a:hover {\n    color: #FFD700; }\n  a:visited {\n    color: #000; }\n\ni:hover {\n  color: #FFD700; }\n\ni:visited {\n  color: #000; }\n\n#geico {\n  width: 9em;\n  height: auto;\n  float: right; }\n\n/* Certificate General ----------- */\n.certificateBlock {\n  text-align: center; }\n\n/* Certificate INITIAL ----------- */\n.initialBlock {\n  background-image: url(" + __webpack_require__(294) + ");\n  background-repeat: no-repeat;\n  height: 12em;\n  width: 100%;\n  font-size: 3vw; }\n\n.certificateBlock.row {\n  margin-bottom: 2em; }\n\n/* Certificate UNDERPAID ----------- */\n.underBlock {\n  background-image: url(" + __webpack_require__(295) + ");\n  background-repeat: no-repeat;\n  height: 12em;\n  width: 100%;\n  font-size: 3vw; }\n\n.certHead {\n  font-family: FoundersGrotesk_Cnd;\n  font-size: 1.3em;\n  margin-top: -0.5em; }\n\n.paidContent, .underContent {\n  font-size: 1.35vw;\n  font-weight: bold;\n  width: 40vw; }\n\n.paidContent {\n  margin: 10.5em 1em 0 2em; }\n\n.underContent {\n  margin: 11.5em 1em 0 2em; }\n\n/* Certificate PAID ----------- */\n.paidBlock {\n  background-image: url(" + __webpack_require__(296) + ");\n  background-repeat: no-repeat;\n  height: 12em;\n  width: 100%;\n  font-size: 3vw; }\n\ninput[type=range] {\n  -webkit-appearance: none;\n  width: 100%;\n  background: transparent;\n  /* thumb section */\n  /* track section */ }\n  input[type=range]:focus {\n    outline: none; }\n  input[type=range]-webkit-slider {\n    -webkit-appearance: none; }\n  input[type=range]::-webkit-slider-thumb {\n    -webkit-appearance: none;\n    margin-top: -1.5em;\n    border: 1px solid #000;\n    border-radius: 0;\n    height: 3em;\n    width: 5em;\n    background: #000;\n    cursor: pointer; }\n  input[type=range]:focus::-webkit-slider-thumb {\n    background-color: #FFD700;\n    border: 4px solid black; }\n  input[type=range]::-moz-range-thumb {\n    border: 1px solid #000;\n    border-radius: 0;\n    height: 3em;\n    width: 5em;\n    background: #000;\n    cursor: pointer; }\n  input[type=range]::-ms-thumb {\n    border: 1px solid #000;\n    border-radius: 0;\n    height: 3em;\n    width: 5em;\n    background: #000;\n    cursor: pointer; }\n  input[type=range]::-webkit-slider-runnable-track {\n    width: 100%;\n    height: 5px;\n    cursor: pointer;\n    background: #000;\n    border: 2px solid #000;\n    border-radius: 0; }\n  input[type=range]::-moz-range-track {\n    width: 100%;\n    height: 5px;\n    cursor: pointer;\n    background: #000;\n    border: 2px solid #000;\n    border-radius: 0; }\n\n/* Little desktop certificate fix ----------- */\n@media screen and (min-width: 500px) and (max-width: 990px) {\n  .initialBlock, .underBlock, .paidBlock {\n    height: 20em;\n    margin: 2em; }\n  .underContent {\n    margin: 13.5em 1em 0 3.5em;\n    width: 65vw;\n    font-size: 2vw; }\n  .paidContent {\n    margin: 12em 1em 0 3.5em;\n    width: 65vw;\n    font-size: 2vw; } }\n\n/* Smartphones (portrait and landscape) ----------- */\n@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {\n  .Select-input input {\n    font-size: 40px !important; }\n  h3.sectionHead {\n    font-size: 3.5em; }\n  .initialBlock, .underBlock, .paidBlock {\n    margin: 0; }\n  .certificateBlock {\n    margin: 4em; }\n  .underContent {\n    margin: 13.5em 1em 0 4em;\n    width: 65vw;\n    font-size: 2vw; }\n  .paidContent {\n    margin: 12.5em 1em 0 3em;\n    width: 65vw;\n    font-size: 2vw; }\n  .selector .Select {\n    line-height: 6em; }\n  .selector .Select-value-label {\n    font-size: 2.5em;\n    margin-top: 0.6em; }\n  .selector .Select-placeholder {\n    font-size: 3em;\n    margin-top: 0.6em;\n    margin-left: 0.2em; }\n  .col-xs-7 .Select-control .Select-value {\n    margin-top: 2em;\n    font-size: 1.25em; }\n  .col-xs-5 #react-select-5--value .Select-value {\n    font-size: 1.25em;\n    margin-top: 1.25em; }\n  .col-xs-7 #react-select-6--value .Select-value {\n    font-size: 1.25em;\n    margin-top: 1.25em; }\n  .Select-value {\n    margin-top: 1.5em;\n    font-weight: bold; }\n  .Select.Select--single.is-focused.is-open.is-searchable.has-value {\n    padding-top: 10px; }\n    .Select.Select--single.is-focused.is-open.is-searchable.has-value .Select-value-label {\n      opacity: 0.2; }\n  .Select.Select--single.is-focused.is-open.is-searchable .Select-placeholder {\n    opacity: 0.2;\n    padding-top: 10px; }\n  .Select-placeholder, .Select--single > .Select-control .Select-value {\n    max-width: 90%;\n    color: #000; }\n  .Select .is-open {\n    color: #FF0000;\n    font-size: 2em; }\n  .certHead {\n    font-size: 2.25em; } }\n\n/* iPad portrait ----------- */\n@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {\n  .initialBlock {\n    margin: 2em;\n    height: 20em; } }\n\n@font-face {\n  font-family: FoundersGrotesk;\n  src: url(" + __webpack_require__(297) + ");\n  src: url(" + __webpack_require__(298) + ") format(\"woff\"), url(" + __webpack_require__(299) + ") format(\"woff2\");\n  font-weight: bold; }\n\n@font-face {\n  font-family: FoundersGrotesk_Cnd;\n  src: url(" + __webpack_require__(300) + ");\n  src: url(" + __webpack_require__(301) + ") format(\"woff\"), url(" + __webpack_require__(302) + ") format(\"woff2\");\n  font-weight: bold; }\n\n@font-face {\n  font-family: FoundersGrotesk;\n  src: url(" + __webpack_require__(303) + ");\n  src: url(" + __webpack_require__(304) + ") format(\"woff\"), url(" + __webpack_require__(305) + ") format(\"woff2\");\n  font-weight: normal; }\n\n#root {\n  margin: 2em auto; }\n\nbody {\n  font-family: FoundersGrotesk;\n  font-weight: normal;\n  color: #000; }\n\n/* Main sizing things */\nh3 {\n  font-size: 2em;\n  font-weight: bold;\n  margin-top: 10px; }\n\n.row {\n  margin-bottom: 2em; }\n\n/***********  ALL THE MENU THINGS  ***********/\n/*\nSelect placeholder - start\nvalue-label is span\nvalue is div container\n*/\n.Select {\n  line-height: 3em; }\n\n.Select-placeholder {\n  margin-top: 0.1em; }\n\n.Select-value-label {\n  font-weight: bold; }\n\n.Select-placeholder, .Select-value-label {\n  font-size: 2em; }\n\n.Select-value {\n  margin-top: 0.5em; }\n\n.Select-value, .Select-placeholder {\n  padding-left: 20px !important; }\n\n.Select-option {\n  font-size: 2em;\n  padding: 0.15em 20px; }\n\n.Select-option.is-focused {\n  background-color: gold; }\n\n.Select-menu {\n  border-left-width: 0px;\n  border-right-width: 0px;\n  border-top-width: 0px; }\n\n.Select-menu-outer {\n  border-bottom-right-radius: 0;\n  border-bottom-left-radius: 0; }\n\n.Select-placeholder, .Select--single > .Select-control .Select-value {\n  max-width: 90%;\n  color: #000; }\n\n.Select .is-open {\n  color: #FF0000;\n  font-size: 2em; }\n\n.Select.Select--single.is-focused.is-open.is-searchable .Select-placeholder {\n  color: rgba(0, 0, 0, 0.1);\n  margin-top: 0.3em;\n  font-size: 1.8em; }\n\n.has-value.Select--single > .Select-control .Select-value .Select-value-label, .has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {\n  color: #000; }\n\n.Select-control, .input-group {\n  border-radius: 0;\n  border: 2px solid #000;\n  color: #000; }\n\n.Select-arrow {\n  border-color: #000 transparent transparent;\n  border-width: 10px 10px 0px;\n  margin-right: 1em; }\n\n.Select-control {\n  padding-top: 4px; }\n\n.Select:focus {\n  outline: none; }\n\n#react-select-6--value .Select-value, #react-select-5--value .Select-value {\n  margin-top: 0.4em; }\n\n.is-focused:not(.is-open) > .Select-control {\n  border-color: #FFD700;\n  box-shadow: none; }\n\n.form-control, .input-group-addon {\n  border: 1px solid transparent;\n  -webkit-box-shadow: none;\n  box-shadow: none; }\n\n.input-group .form-control {\n  z-index: 0; }\n\n.input-group-addon {\n  background-color: #FFF;\n  color: #000; }\n\n.form-control:focus {\n  border: none !important;\n  box-shadow: none;\n  -webkit-box-shadow: none; }\n", ""]);
+	exports.push([module.id, ".inputBlock {\n  font-size: 0.9em; }\n\n#metroArea {\n  display: none;\n  margin-top: -1.75em; }\n\n.slideStart {\n  margin-top: 3em; }\n\n#lowerRange {\n  padding-left: 1.3em; }\n\n#upperRange {\n  padding-left: 0; }\n\n.col-xs-1 {\n  width: 5%;\n  margin-top: 25px; }\n\n.col-xs-4 {\n  width: 40%; }\n\n.col-xs-5 {\n  padding-right: 0; }\n\n.input-group-addon div {\n  margin-right: 0.5em;\n  font-size: 1.5em; }\n\n.salaryInput {\n  font-size: 2em;\n  font-weight: bold; }\n\n.form-control {\n  color: #000; }\n\na, i {\n  cursor: pointer; }\n\na {\n  margin: 1em;\n  color: #000; }\n  a:hover {\n    color: #FFD700; }\n  a:visited {\n    color: #000; }\n\ni:hover {\n  color: #FFD700; }\n\ni:visited {\n  color: #000; }\n\n#geico {\n  width: 9em;\n  height: auto;\n  float: right; }\n\n/* Certificate General ----------- */\n.certificateBlock {\n  text-align: center; }\n\n/* Certificate INITIAL ----------- */\n.initialBlock {\n  background-image: url(" + __webpack_require__(304) + ");\n  background-repeat: no-repeat;\n  height: 12em;\n  width: 100%;\n  font-size: 3vw; }\n\n.certificateBlock.row {\n  margin-bottom: 2em; }\n\n/* Certificate UNDERPAID ----------- */\n.underBlock {\n  background-image: url(" + __webpack_require__(305) + ");\n  background-repeat: no-repeat;\n  height: 12em;\n  width: 100%;\n  font-size: 3vw; }\n\n.certHead {\n  font-family: FoundersGrotesk_Cnd;\n  font-size: 1.3em;\n  margin-top: -0.5em; }\n\n.paidContent, .underContent {\n  font-size: 1.35vw;\n  font-weight: bold;\n  width: 40vw; }\n\n.paidContent {\n  margin: 10.5em 1em 0 2em; }\n\n.underContent {\n  margin: 11.5em 1em 0 2em; }\n\n/* Certificate PAID ----------- */\n.paidBlock {\n  background-image: url(" + __webpack_require__(306) + ");\n  background-repeat: no-repeat;\n  height: 12em;\n  width: 100%;\n  font-size: 3vw; }\n\ninput[type=range] {\n  -webkit-appearance: none;\n  width: 100%;\n  background: transparent;\n  /* thumb section */\n  /* track section */ }\n  input[type=range]:focus {\n    outline: none; }\n  input[type=range]-webkit-slider {\n    -webkit-appearance: none; }\n  input[type=range]::-webkit-slider-thumb {\n    -webkit-appearance: none;\n    margin-top: -1.5em;\n    border: 1px solid #000;\n    border-radius: 0;\n    height: 3em;\n    width: 5em;\n    background: #000;\n    cursor: pointer; }\n  input[type=range]:focus::-webkit-slider-thumb {\n    background-color: #FFD700;\n    border: 4px solid black; }\n  input[type=range]::-moz-range-thumb {\n    border: 1px solid #000;\n    border-radius: 0;\n    height: 3em;\n    width: 5em;\n    background: #000;\n    cursor: pointer; }\n  input[type=range]::-ms-thumb {\n    border: 1px solid #000;\n    border-radius: 0;\n    height: 3em;\n    width: 5em;\n    background: #000;\n    cursor: pointer; }\n  input[type=range]::-webkit-slider-runnable-track {\n    width: 100%;\n    height: 5px;\n    cursor: pointer;\n    background: #000;\n    border: 2px solid #000;\n    border-radius: 0; }\n  input[type=range]::-moz-range-track {\n    width: 100%;\n    height: 5px;\n    cursor: pointer;\n    background: #000;\n    border: 2px solid #000;\n    border-radius: 0; }\n\n/* Little desktop certificate fix ----------- */\n@media screen and (min-width: 500px) and (max-width: 990px) {\n  .initialBlock, .underBlock, .paidBlock {\n    height: 20em;\n    margin: 2em; }\n  .underContent {\n    margin: 13.5em 1em 0 3.5em;\n    width: 65vw;\n    font-size: 2vw; }\n  .paidContent {\n    margin: 12em 1em 0 3.5em;\n    width: 65vw;\n    font-size: 2vw; } }\n\n/* Smartphones (portrait and landscape) ----------- */\n@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {\n  .Select-input input {\n    font-size: 40px !important; }\n  h3.sectionHead {\n    font-size: 3.5em; }\n  .initialBlock, .underBlock, .paidBlock {\n    margin: 0; }\n  .certificateBlock {\n    margin: 4em; }\n  .underContent {\n    margin: 13.5em 1em 0 4em;\n    width: 65vw;\n    font-size: 2vw; }\n  .paidContent {\n    margin: 12.5em 1em 0 3em;\n    width: 65vw;\n    font-size: 2vw; }\n  .selector .Select {\n    line-height: 6em; }\n  .selector .Select-value-label {\n    font-size: 2.5em;\n    margin-top: 0.6em; }\n  .selector .Select-placeholder {\n    font-size: 3em;\n    margin-top: 0.6em;\n    margin-left: 0.2em; }\n  .col-xs-7 .Select-control .Select-value {\n    margin-top: 2em;\n    font-size: 1.25em; }\n  .col-xs-5 #react-select-5--value .Select-value {\n    font-size: 1.25em;\n    margin-top: 1.25em; }\n  .col-xs-7 #react-select-6--value .Select-value {\n    font-size: 1.25em;\n    margin-top: 1.25em; }\n  .Select-value {\n    margin-top: 1.5em;\n    font-weight: bold; }\n  .Select.Select--single.is-focused.is-open.is-searchable.has-value {\n    padding-top: 10px; }\n    .Select.Select--single.is-focused.is-open.is-searchable.has-value .Select-value-label {\n      opacity: 0.2; }\n  .Select.Select--single.is-focused.is-open.is-searchable .Select-placeholder {\n    opacity: 0.2;\n    padding-top: 10px; }\n  .Select-placeholder, .Select--single > .Select-control .Select-value {\n    max-width: 90%;\n    color: #000; }\n  .Select .is-open {\n    color: #FF0000;\n    font-size: 2em; }\n  .certHead {\n    font-size: 2.25em; } }\n\n/* iPad portrait ----------- */\n@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {\n  .initialBlock {\n    margin: 2em;\n    height: 20em; } }\n\n@font-face {\n  font-family: FoundersGrotesk;\n  src: url(" + __webpack_require__(307) + ");\n  src: url(" + __webpack_require__(308) + ") format(\"woff\"), url(" + __webpack_require__(309) + ") format(\"woff2\");\n  font-weight: bold; }\n\n@font-face {\n  font-family: FoundersGrotesk_Cnd;\n  src: url(" + __webpack_require__(310) + ");\n  src: url(" + __webpack_require__(311) + ") format(\"woff\"), url(" + __webpack_require__(312) + ") format(\"woff2\");\n  font-weight: bold; }\n\n@font-face {\n  font-family: FoundersGrotesk;\n  src: url(" + __webpack_require__(313) + ");\n  src: url(" + __webpack_require__(314) + ") format(\"woff\"), url(" + __webpack_require__(315) + ") format(\"woff2\");\n  font-weight: normal; }\n\n#root {\n  margin: 2em auto; }\n\nbody {\n  font-family: FoundersGrotesk;\n  font-weight: normal;\n  color: #000; }\n\n/* Main sizing things */\nh3 {\n  font-size: 2em;\n  font-weight: bold;\n  margin-top: 10px; }\n\n.row {\n  margin-bottom: 2em; }\n\n/***********  ALL THE MENU THINGS  ***********/\n/*\nSelect placeholder - start\nvalue-label is span\nvalue is div container\n*/\n.Select {\n  line-height: 3em; }\n\n.Select-placeholder {\n  margin-top: 0.1em; }\n\n.Select-value-label {\n  font-weight: bold; }\n\n.Select-placeholder, .Select-value-label {\n  font-size: 2em; }\n\n.Select-value {\n  margin-top: 0.5em; }\n\n.Select-value, .Select-placeholder {\n  padding-left: 20px !important; }\n\n.Select-option {\n  font-size: 2em;\n  padding: 0.15em 20px; }\n\n.Select-option.is-focused {\n  background-color: gold; }\n\n.Select-menu {\n  border-left-width: 0px;\n  border-right-width: 0px;\n  border-top-width: 0px; }\n\n.Select-menu-outer {\n  border-bottom-right-radius: 0;\n  border-bottom-left-radius: 0; }\n\n.Select-placeholder, .Select--single > .Select-control .Select-value {\n  max-width: 90%;\n  color: #000; }\n\n.Select .is-open {\n  color: #FF0000;\n  font-size: 2em; }\n\n.Select.Select--single.is-focused.is-open.is-searchable .Select-placeholder {\n  color: rgba(0, 0, 0, 0.1);\n  margin-top: 0.3em;\n  font-size: 1.8em; }\n\n.has-value.Select--single > .Select-control .Select-value .Select-value-label, .has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {\n  color: #000; }\n\n.Select-control, .input-group {\n  border-radius: 0;\n  border: 2px solid #000;\n  color: #000; }\n\n.Select-arrow {\n  border-color: #000 transparent transparent;\n  border-width: 10px 10px 0px;\n  margin-right: 1em; }\n\n.Select-control {\n  padding-top: 4px; }\n\n.Select:focus {\n  outline: none; }\n\n#react-select-6--value .Select-value, #react-select-5--value .Select-value {\n  margin-top: 0.4em; }\n\n.is-focused:not(.is-open) > .Select-control {\n  border-color: #FFD700;\n  box-shadow: none; }\n\n.form-control, .input-group-addon {\n  border: 1px solid transparent;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n  font-weight: bold;\n  font-size: 2em; }\n\n.form-control {\n  padding-top: 0.4em; }\n\n.input-group .form-control {\n  z-index: 0; }\n\n.input-group-addon {\n  background-color: #FFF;\n  color: #000; }\n\n.form-control:focus {\n  border: none !important;\n  box-shadow: none;\n  -webkit-box-shadow: none; }\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 294 */
+/* 304 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "./src/public/fonts/bg_init.svg";
 
 /***/ },
-/* 295 */
+/* 305 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "./src/public/fonts/bg_under.svg";
 
 /***/ },
-/* 296 */
+/* 306 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "./src/public/fonts/bg_paid.svg";
 
 /***/ },
-/* 297 */
+/* 307 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "./src/public/fonts/FoundersGroteskWeb-Bold.eot";
 
 /***/ },
-/* 298 */
+/* 308 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "./src/public/fonts/FoundersGroteskWeb-Bold.woff";
 
 /***/ },
-/* 299 */
+/* 309 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "./src/public/fonts/FoundersGroteskWeb-Bold.woff2";
 
 /***/ },
-/* 300 */
+/* 310 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "./src/public/fonts/FoundersGrotXCondWeb-Bold.eot";
 
 /***/ },
-/* 301 */
+/* 311 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "./src/public/fonts/FoundersGrotXCondWeb-Bold.woff";
 
 /***/ },
-/* 302 */
+/* 312 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "./src/public/fonts/FoundersGrotXCondWeb-Bold.woff2";
 
 /***/ },
-/* 303 */
+/* 313 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "./src/public/fonts/FoundersGroteskWeb-Regular.eot";
 
 /***/ },
-/* 304 */
+/* 314 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "./src/public/fonts/FoundersGroteskWeb-Regular.woff";
 
 /***/ },
-/* 305 */
+/* 315 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "./src/public/fonts/FoundersGroteskWeb-Regular.woff2";

@@ -175,6 +175,12 @@ value is div container
 	border: 1px solid transparent;
 	-webkit-box-shadow: none;
 	box-shadow: none;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+.form-control {
+	padding-top: 0.4em;
 }
 
 .input-group .form-control {
