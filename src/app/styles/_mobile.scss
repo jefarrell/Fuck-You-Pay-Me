@@ -60,6 +60,19 @@ and (max-device-width : 480px) {
 		font-size: 2vw;
 	}
 
+	.input-group {
+		font-size: 1.75em;
+	}
+	// override some bootstrap shit
+	.form-control {
+		height: 1.75em;
+		padding-top: 0.175em !important;
+		padding-left: 0 !important;
+		border-bottom: 1px solid #000 !important;
+	}
+
+
+
 /////////// Dropdown menu styling
 	.selector {
 		.Select {
@@ -114,8 +127,13 @@ and (max-device-width : 480px) {
 			padding-top: 10px;
 		}
 	}
-///////////////////////////
 
+	.Select-menu-outer {
+		.Select-option {
+			font-size: 3em;
+		}
+	}
+		
 
 	.Select-placeholder, .Select--single > .Select-control .Select-value {
 		max-width: 90%;
@@ -129,11 +147,19 @@ and (max-device-width : 480px) {
 		}
 		
 	}
+///////////////////////////
+
+	.fa-3x {
+		font-size: 5em;
+	}
 
 	.certHead {
 		font-size: 2.25em;
 	}
 
+	#geico {
+		width: 15em;
+	}
 
 }
 

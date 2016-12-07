@@ -84,7 +84,7 @@ class Inputs extends React.Component {
 						{/* State Block */}
 						<Row>
 							<Col xs={5}>
-								<h3 className="sectionHead"> Where You Live </h3>
+								<h3 className="sectionHead"> Where you live </h3>
 							</Col>
 							<Col xs={7} className="selector">
 								<Select
@@ -117,7 +117,7 @@ class Inputs extends React.Component {
 						{/* Industry Block */}
 						<Row>
 							<Col xs={5}>
-								<h3 className="sectionHead"> Your Work </h3>
+								<h3 className="sectionHead"> Your work </h3>
 							</Col>
 							<Col xs={7} className="selector">
 								<Select
@@ -135,7 +135,7 @@ class Inputs extends React.Component {
 						{/* Salary Now Block*/}
 						<Row>
 							<Col xs={5}>
-								<h3 className="sectionHead"> Current Salary </h3>
+								<h3 className="sectionHead"> Current salary </h3>
 							</Col>
 							<Col xs={7} className="selector">
 								<FormGroup>
