@@ -90,11 +90,9 @@ and (max-width : 480px) {
 		margin-top: -0.8em;
 	}
 
-	.Select-input {
-		input {
-			font-size: 1.5em;
-			margin-top: -1.5em;
-		}
+	.Select-input > input {
+			font-size: 1.5em !important;
+			margin-top: -0.5em !important;
 	}
 
 }
@@ -124,11 +122,9 @@ and (max-width : 480px) {
 	}
 
 
-	.Select-input {
-		input {
-			font-size: 1.5em;
-			margin-top: -1.5em;
-		}
+	.Select-input > input {
+			font-size: 1.5em !important;
+			margin-top: -1.5em !important;
 	}
 
 	.Select-noresults {
