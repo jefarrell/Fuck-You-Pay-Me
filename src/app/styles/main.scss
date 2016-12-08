@@ -141,6 +141,11 @@ value is div container
 	color: $black;
 }
 
+.Select-input > input {
+		font-size: 1.5em !important;
+		margin-top: -0.5em !important;
+}
+
 .Select-arrow {
 	border-color: $black transparent transparent;
 	border-width: 10px 10px 0px;
