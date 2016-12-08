@@ -50,9 +50,8 @@ and (max-width : 480px) {
 
 		.Select-placeholder {
 			font-size: 1.5em;
-			color: red;
-			margin-top: 0;
-			margin-left: 0;
+			margin-top: 0.2em;
+			margin-left: -0.2em;
 		}
 	}
 
@@ -81,14 +80,14 @@ and (max-width : 480px) {
 
 	.underContent {
 		margin: 11.5em 1em 0 0;
-		width: 80vw;
-		font-size: 2.5vw;
+		width: 75vw;
+		font-size: 2.25vw;
 	}
 
 	.paidContent {
-		margin: 10.5em 1em 0 1em;
-		width: 80vw;
-		font-size: 2.5vw;
+		margin: 11em 1em 0 0;
+		width: 75vw;
+		font-size: 2.25vw;
 	}
 
 	.fa-3x {
@@ -101,10 +100,6 @@ and (max-width : 480px) {
 
 	#geico {
 		margin-top: -0.8em;
-	}
-
-	.col-xs-7 .Select-control .Select-value {
-		margin-top: 1.25em
 	}
 
 	.Select-value-label {
@@ -122,6 +117,14 @@ and (max-width : 480px) {
 	.input-group-addon {
 		padding-left: 0.4em;
 		padding-right: 0.4em;
+	}
+
+	.Select-arrow-zone {
+		background-color: #FFF;
+	}
+
+	.Select-option {
+		font-size: 1.5em;
 	}
 }
 /* Smartphones (portrait and landscape) ----------- */
