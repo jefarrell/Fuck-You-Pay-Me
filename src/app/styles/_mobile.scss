@@ -33,6 +33,8 @@ and (max-width : 990px) {
 	}
 }
 
+
+/****** iPhone 5 ********/
 @media only screen 
 and (min-width : 320px) 
 and (max-width : 480px) {
@@ -58,8 +60,42 @@ and (max-width : 480px) {
 	.form-control {
 		font-size: 1.75em;
 	}
+
+	.initialBlock, .underBlock, .paidBlock {
+		height: 22em;
+	}
+
+	.underContent {
+		margin: 11.5em 1em 0 0;
+		width: 75vw;
+		font-size: 2.25vw;
+	}
+
+	.paidContent {
+		margin: 11em 1em 0 0;
+		width: 75vw;
+		font-size: 2.25vw;
+	}
+
+	.fa-3x {
+		font-size: 2em;
+	}
+
+	a {
+		margin: 0.5em;
+	}
+
+	#geico {
+		margin-top: -0.8em;
+	}
+
+
 }
 
+
+
+
+/****** iPhone 6 ********/
 @media only screen 
 and (min-width : 375px) 
 and (max-width : 480px) {
@@ -161,146 +197,3 @@ and (max-width : 480px) {
 		font-size: 1.5em !important;
 	}
 }
-/* Smartphones (portrait and landscape) ----------- */
-/*
-@media only screen 
-and (min-width : 320px) 
-and (max-width : 480px) {
-
-
-
-	.Select-input {
-		input {
-			font-size: 40px !important;
-		}
-	}
-
-
-	h3.sectionHead {
-		font-size: 3.5em;
-	}
-
-	.initialBlock, .underBlock, .paidBlock {
-		margin: 0;
-	}
-
-	.certificateBlock {
-		margin: 4em;
-	}
-
-
-	.underContent {
-		margin: 13.5em 1em 0 4em;
-    	width: 65vw;
-    	font-size: 2vw;
-	}
-
-	.paidContent {
-		margin: 12.5em 1em 0 3em;
-		width: 65vw;
-		font-size: 2vw;
-	}
-
-	.input-group {
-		font-size: 1.75em;
-	}
-	// override some bootstrap shit
-	.form-control {
-		height: 1.75em;
-		padding-top: 0.175em !important;
-		padding-left: 0 !important;
-		border-bottom: 1px solid #000 !important;
-	}
-
-
-
-/////////// Dropdown menu styling
-	.selector {
-		.Select {
-			line-height: 6em;
-		}
-		.Select-value-label {
-			font-size: 2.5em;
-			margin-top: 0.6em;
-		}
-
-		.Select-placeholder {
-			font-size: 3em;
-			margin-top: 0.6em;
-			margin-left: 0.2em;
-		}
-	}
-
-	.col-xs-7 {
-		.Select-control {
-			.Select-value {
-				margin-top: 2em;
-				font-size: 1.25em;
-			}
-		}
-	}
-
-	.col-xs-5 #react-select-5--value .Select-value {
-		font-size: 1.25em;
-		margin-top: 1.25em;
-	}
-	.col-xs-7 #react-select-6--value .Select-value {
-		font-size: 1.25em;
-		margin-top: 1.25em;
-	}
-
-	.Select-value {
-		margin-top: 1.5em;
-		font-weight: bold;
-	}
-
-	.Select.Select--single.is-focused.is-open.is-searchable.has-value {
-		padding-top: 10px;
-
-		.Select-value-label{
-			opacity: 0.2;
-		}
-	}
-
-	.Select.Select--single.is-focused.is-open.is-searchable {		
-		.Select-placeholder {
-			opacity: 0.2;
-			padding-top: 10px;
-		}
-	}
-
-	.Select-menu-outer {
-		.Select-option {
-			font-size: 3em;
-		}
-	}
-		
-
-	.Select-placeholder, .Select--single > .Select-control .Select-value {
-		max-width: 90%;
-		color: $black;
-	}
-
-	.Select {
-		.is-open {
-			color: #FF0000;
-			font-size:2em;
-		}
-		
-	}
-///////////////////////////
-
-	.fa-3x {
-		font-size: 5em;
-	}
-
-	.certHead {
-		font-size: 2.25em;
-	}
-
-	#geico {
-		width: 18em;
-	}
-
-}
-*/
