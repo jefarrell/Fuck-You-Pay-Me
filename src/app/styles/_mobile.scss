@@ -47,8 +47,16 @@ and (max-width : 480px) {
 	}
 
 	.Select-value-label {
-		font-size: 1.5em;
+		font-size: 1.5em !important;
 		margin-left: -0.5em;
+	}
+
+	.Select-option {
+		font-size: 1.2em !important;
+	}
+
+	.form-control {
+		font-size: 1.75em;
 	}
 }
 
