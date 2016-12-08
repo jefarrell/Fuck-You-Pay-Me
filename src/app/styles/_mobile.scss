@@ -66,19 +66,19 @@ and (max-width : 480px) {
 	}
 
 	.underContent {
-		margin: 11.5em 1em 0 0;
+		margin: 12.5em 1em 0 1em;
 		width: 75vw;
 		font-size: 2.25vw;
 	}
 
 	.paidContent {
-		margin: 11em 1em 0 0;
+		margin: 12em 1em 0 1em;
 		width: 75vw;
 		font-size: 2.25vw;
 	}
 
 	.fa-3x {
-		font-size: 2em;
+		font-size: 1.5em;
 	}
 
 	a {
@@ -86,6 +86,7 @@ and (max-width : 480px) {
 	}
 
 	#geico {
+		width: 8em;
 		margin-top: -0.8em;
 	}
 
