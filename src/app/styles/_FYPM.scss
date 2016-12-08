@@ -2,6 +2,10 @@ $white: #FFF;
 $black: #000;
 $accent: #FFD700;
 
+body {
+	max-width: 1440px;
+}
+
 .inputBlock {
 	font-size: 0.9em;
 }
