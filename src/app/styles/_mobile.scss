@@ -35,11 +35,96 @@ and (max-width : 990px) {
 
 
 
-
-/* Smartphones (portrait and landscape) ----------- */
 @media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
+and (min-width : 320px) 
+and (max-width : 480px) {
+
+	h3.sectionHead {
+		font-size: 1.5em;
+	}
+
+	.selector {
+		.Select {
+			line-height: 3em;
+		}
+	}
+
+	.Select-placeholder {
+		font-size: 1.5em;
+		margin-top: 0;
+		margin-left: 0;
+	}
+
+	.input-group {
+		font-size: 0.9em;
+	}
+
+	.form-control {
+		line-height: 1.75em;
+	}
+
+	.certificateBlock {
+		margin: 0;
+	}
+
+	.Select--single>.Select-control .Select-value, .Select-placeholder {
+		overflow: visible;
+	}
+
+	.initialBlock, .underBlock, .paidBlock {
+		height: 22em;
+	}
+
+	.underContent {
+		margin: 11.5em 1em 0 0;
+		width: 80vw;
+		font-size: 2.5vw;
+	}
+
+	.paidContent {
+		margin: 10.5em 1em 0 1em;
+		width: 80vw;
+		font-size: 2.5vw;
+	}
+
+	.fa-3x {
+		font-size: 2em;
+	}
+
+	a {
+		margin: 0.5em;
+	}
+
+	#geico {
+		margin-top: -0.8em;
+	}
+
+	.col-xs-7 .Select-control .Select-value {
+		margin-top: 1.25em
+	}
+
+	.Select-value-label {
+		font-size: 1.5em;
+	}
+
+	.form-control, .input-group-addon {
+		font-size: 1.75em;
+	}
+
+	.Select-placeholder, .Select-value {
+		padding-left: 0;
+	}
+
+	.input-group-addon {
+		padding-left: 0.4em;
+		padding-right: 0.4em;
+	}
+}
+/* Smartphones (portrait and landscape) ----------- */
+/*
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 480px) {
 
 
 
@@ -177,3 +262,4 @@ and (max-device-width : 480px) {
 	}
 
 }
+*/
