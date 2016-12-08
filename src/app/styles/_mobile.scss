@@ -47,14 +47,17 @@ and (max-width : 480px) {
 		.Select {
 			line-height: 3em;
 		}
+
+		.Select-placeholder {
+			font-size: 1.5em;
+			color: red;
+			margin-top: 0;
+			margin-left: 0;
+		}
 	}
 
-	.Select-placeholder {
-		font-size: 1.5em;
-		color: red;
-		margin-top: 0;
-		margin-left: 0;
-	}
+
+
 
 	.input-group {
 		font-size: 0.9em;
