@@ -59,7 +59,12 @@ and (max-width : 480px) {
 	.Select-input {
 		input {
 			font-size: 1.5em;
+			margin-top: -1.5em;
 		}
+	}
+
+	.Select-noresults {
+		font-size: 1.5em;
 	}
 
 	.input-group {
