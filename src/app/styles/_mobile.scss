@@ -1,8 +1,45 @@
 
+
+/* iPad portrait ----------- */
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1024px)  { 
+
+	.initialBlock {
+		margin: 2em;
+		height: 20em;
+	}
+}
+
+/* Little desktop certificate fix ----------- */
+@media screen 
+and (min-width : 500px) 
+and (max-width : 990px) {
+	.initialBlock, .underBlock, .paidBlock {
+		height: 20em;
+		margin: 2em;
+	}
+
+	.underContent {
+		margin: 13.5em 1em 0 3.5em;
+    	width: 65vw;
+    	font-size: 2vw;
+	}
+
+	.paidContent {
+		margin: 12em 1em 0 3.5em;
+		width: 65vw;
+		font-size: 2vw;
+	}
+}
+
+
+
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
-and (min-width : 320px) 
-and (max-width : 480px) {
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
 
 
 
@@ -140,40 +177,3 @@ and (max-width : 480px) {
 	}
 
 }
-
-
-/* Little desktop certificate fix ----------- */
-@media screen 
-and (min-width : 500px) 
-and (max-width : 990px) {
-	.initialBlock, .underBlock, .paidBlock {
-		height: 20em;
-		margin: 2em;
-	}
-
-	.underContent {
-		margin: 13.5em 1em 0 3.5em;
-    	width: 65vw;
-    	font-size: 2vw;
-	}
-
-	.paidContent {
-		margin: 12em 1em 0 3.5em;
-		width: 65vw;
-		font-size: 2vw;
-	}
-}
-
-/* iPad portrait ----------- */
-@media only screen 
-and (min-width : 768px) 
-and (max-width : 1024px)  { 
-
-	.initialBlock {
-		margin: 2em;
-		height: 20em;
-	}
-
-
-}
-
