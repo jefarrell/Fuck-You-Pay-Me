@@ -173,10 +173,6 @@
             "value": "Counter and Rental Clerks"
         }, 
         {
-            "label": "Court, Municipal, and License Clerks", 
-            "value": "Court, Municipal, and License Clerks"
-        }, 
-        {
             "label": "Customer Service Representatives", 
             "value": "Customer Service Representatives"
         }, 
@@ -317,10 +313,6 @@
             "value": "General and Operations Managers"
         }, 
         {
-            "label": "Geological and Petroleum Technicians", 
-            "value": "Geological and Petroleum Technicians"
-        }, 
-        {
             "label": "Geoscientists, Except Hydrologists and Geographers", 
             "value": "Geoscientists, Except Hydrologists and Geographers"
         }, 
@@ -371,10 +363,6 @@
         {
             "label": "Human Resources Specialists", 
             "value": "Human Resources Specialists"
-        }, 
-        {
-            "label": "Industrial Engineers", 
-            "value": "Industrial Engineers"
         }, 
         {
             "label": "Industrial Machinery Mechanics", 
@@ -507,10 +495,6 @@
         {
             "label": "Mental Health Counselors", 
             "value": "Mental Health Counselors"
-        }, 
-        {
-            "label": "Mental Health and Substance Abuse Social Workers", 
-            "value": "Mental Health and Substance Abuse Social Workers"
         }, 
         {
             "label": "Mobile Heavy Equipment Mechanics, Except Engines", 
@@ -1435,10 +1419,6 @@
             "value": "Property, Real Estate, and Community Association Managers"
         }, 
         {
-            "label": "Protective Service Workers, All Other", 
-            "value": "Protective Service Workers, All Other"
-        }, 
-        {
             "label": "Public Relations Specialists", 
             "value": "Public Relations Specialists"
         }, 
@@ -1571,10 +1551,6 @@
             "value": "Teacher Assistants"
         }, 
         {
-            "label": "Teachers and Instructors, All Other, Except Substitute Teachers", 
-            "value": "Teachers and Instructors, All Other, Except Substitute Teachers"
-        }, 
-        {
             "label": "Telecommunications Equipment Installers and Repairers, Except Line Installers", 
             "value": "Telecommunications Equipment Installers and Repairers, Except Line Installers"
         }, 
@@ -1617,10 +1593,6 @@
         {
             "label": "Water and Wastewater Treatment Plant and System Operators", 
             "value": "Water and Wastewater Treatment Plant and System Operators"
-        }, 
-        {
-            "label": "Welders, Cutters, Solderers, and Brazers", 
-            "value": "Welders, Cutters, Solderers, and Brazers"
         }, 
         {
             "label": "Wellhead Pumpers", 
@@ -2313,10 +2285,6 @@
             "value": "Personal Care Aides"
         }, 
         {
-            "label": "Personal Financial Advisors", 
-            "value": "Personal Financial Advisors"
-        }, 
-        {
             "label": "Petroleum Engineers", 
             "value": "Petroleum Engineers"
         }, 
@@ -2457,10 +2425,6 @@
             "value": "Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products"
         }, 
         {
-            "label": "Sales Representatives, Wholesale and Manufacturing, Technical and Scientific Products", 
-            "value": "Sales Representatives, Wholesale and Manufacturing, Technical and Scientific Products"
-        }, 
-        {
             "label": "Secondary School Teachers, Except Special and Career/Technical Education", 
             "value": "Secondary School Teachers, Except Special and Career/Technical Education"
         }, 
@@ -2475,10 +2439,6 @@
         {
             "label": "Security Guards", 
             "value": "Security Guards"
-        }, 
-        {
-            "label": "Self-Enrichment Education Teachers", 
-            "value": "Self-Enrichment Education Teachers"
         }, 
         {
             "label": "Service Unit Operators, Oil, Gas, and Mining", 
@@ -2769,10 +2729,6 @@
         {
             "label": "Counter and Rental Clerks", 
             "value": "Counter and Rental Clerks"
-        }, 
-        {
-            "label": "Court, Municipal, and License Clerks", 
-            "value": "Court, Municipal, and License Clerks"
         }, 
         {
             "label": "Curators", 
@@ -3115,10 +3071,6 @@
             "value": "Maintenance and Repair Workers, General"
         }, 
         {
-            "label": "Management Analysts", 
-            "value": "Management Analysts"
-        }, 
-        {
             "label": "Managers, All Other", 
             "value": "Managers, All Other"
         }, 
@@ -3319,10 +3271,6 @@
             "value": "Property, Real Estate, and Community Association Managers"
         }, 
         {
-            "label": "Protective Service Workers, All Other", 
-            "value": "Protective Service Workers, All Other"
-        }, 
-        {
             "label": "Public Relations Specialists", 
             "value": "Public Relations Specialists"
         }, 
@@ -3341,10 +3289,6 @@
         {
             "label": "Recreation Workers", 
             "value": "Recreation Workers"
-        }, 
-        {
-            "label": "Refuse and Recyclable Material Collectors", 
-            "value": "Refuse and Recyclable Material Collectors"
         }, 
         {
             "label": "Registered Nurses", 
@@ -3659,10 +3603,6 @@
         {
             "label": "Coaches and Scouts", 
             "value": "Coaches and Scouts"
-        }, 
-        {
-            "label": "Coin, Vending, and Amusement Machine Servicers and Repairers", 
-            "value": "Coin, Vending, and Amusement Machine Servicers and Repairers"
         }, 
         {
             "label": "Combined Food Preparation and Serving Workers, Including Fast Food", 
@@ -5035,10 +4975,6 @@
             "value": "Kindergarten Teachers, Except Special Education"
         }, 
         {
-            "label": "Labor Relations Specialists", 
-            "value": "Labor Relations Specialists"
-        }, 
-        {
             "label": "Laborers and Freight, Stock, and Material Movers, Hand", 
             "value": "Laborers and Freight, Stock, and Material Movers, Hand"
         }, 
@@ -5263,10 +5199,6 @@
             "value": "Pesticide Handlers, Sprayers, and Applicators, Vegetation"
         }, 
         {
-            "label": "Petroleum Engineers", 
-            "value": "Petroleum Engineers"
-        }, 
-        {
             "label": "Petroleum Pump System Operators, Refinery Operators, and Gaugers", 
             "value": "Petroleum Pump System Operators, Refinery Operators, and Gaugers"
         }, 
@@ -5289,10 +5221,6 @@
         {
             "label": "Physician Assistants", 
             "value": "Physician Assistants"
-        }, 
-        {
-            "label": "Plant and System Operators, All Other", 
-            "value": "Plant and System Operators, All Other"
         }, 
         {
             "label": "Plumbers, Pipefitters, and Steamfitters", 
@@ -5357,10 +5285,6 @@
         {
             "label": "Railroad Brake, Signal, and Switch Operators", 
             "value": "Railroad Brake, Signal, and Switch Operators"
-        }, 
-        {
-            "label": "Real Estate Sales Agents", 
-            "value": "Real Estate Sales Agents"
         }, 
         {
             "label": "Receptionists and Information Clerks", 

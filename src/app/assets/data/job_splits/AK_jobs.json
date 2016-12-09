@@ -89,10 +89,6 @@
             "value": "Automotive and Watercraft Service Attendants"
         }, 
         {
-            "label": "Avionics Technicians", 
-            "value": "Avionics Technicians"
-        }, 
-        {
             "label": "Baggage Porters and Bellhops", 
             "value": "Baggage Porters and Bellhops"
         }, 
@@ -151,10 +147,6 @@
         {
             "label": "Business Operations Specialists, All Other", 
             "value": "Business Operations Specialists, All Other"
-        }, 
-        {
-            "label": "Business Teachers, Postsecondary", 
-            "value": "Business Teachers, Postsecondary"
         }, 
         {
             "label": "Butchers and Meat Cutters", 
@@ -1001,10 +993,6 @@
             "value": "Mail Clerks and Mail Machine Operators, Except Postal Service"
         }, 
         {
-            "label": "Maintenance Workers, Machinery", 
-            "value": "Maintenance Workers, Machinery"
-        }, 
-        {
             "label": "Maintenance and Repair Workers, General", 
             "value": "Maintenance and Repair Workers, General"
         }, 
@@ -1185,10 +1173,6 @@
             "value": "Operating Engineers and Other Construction Equipment Operators"
         }, 
         {
-            "label": "Operations Research Analysts", 
-            "value": "Operations Research Analysts"
-        }, 
-        {
             "label": "Opticians, Dispensing", 
             "value": "Opticians, Dispensing"
         }, 
@@ -1339,10 +1323,6 @@
         {
             "label": "Preschool Teachers, Except Special Education", 
             "value": "Preschool Teachers, Except Special Education"
-        }, 
-        {
-            "label": "Print Binding and Finishing Workers", 
-            "value": "Print Binding and Finishing Workers"
         }, 
         {
             "label": "Printing Press Operators", 
@@ -1569,10 +1549,6 @@
             "value": "Social and Human Service Assistants"
         }, 
         {
-            "label": "Software Developers, Applications", 
-            "value": "Software Developers, Applications"
-        }, 
-        {
             "label": "Software Developers, Systems Software", 
             "value": "Software Developers, Systems Software"
         }, 
@@ -1759,10 +1735,6 @@
         {
             "label": "Word Processors and Typists", 
             "value": "Word Processors and Typists"
-        }, 
-        {
-            "label": "Writers and Authors", 
-            "value": "Writers and Authors"
         }, 
         {
             "label": "Zoologists and Wildlife Biologists", 
@@ -2107,10 +2079,6 @@
             "value": "Electrical Power-Line Installers and Repairers"
         }, 
         {
-            "label": "Electrical and Electronics Engineering Technicians", 
-            "value": "Electrical and Electronics Engineering Technicians"
-        }, 
-        {
             "label": "Electricians", 
             "value": "Electricians"
         }, 
@@ -2125,10 +2093,6 @@
         {
             "label": "Emergency Medical Technicians and Paramedics", 
             "value": "Emergency Medical Technicians and Paramedics"
-        }, 
-        {
-            "label": "Engineering Technicians, Except Drafters, All Other", 
-            "value": "Engineering Technicians, Except Drafters, All Other"
         }, 
         {
             "label": "Engineers, All Other", 
@@ -2379,10 +2343,6 @@
             "value": "Human Resources Specialists"
         }, 
         {
-            "label": "Industrial Engineering Technicians", 
-            "value": "Industrial Engineering Technicians"
-        }, 
-        {
             "label": "Industrial Engineers", 
             "value": "Industrial Engineers"
         }, 
@@ -2525,10 +2485,6 @@
         {
             "label": "Medical Assistants", 
             "value": "Medical Assistants"
-        }, 
-        {
-            "label": "Medical Records and Health Information Technicians", 
-            "value": "Medical Records and Health Information Technicians"
         }, 
         {
             "label": "Medical Secretaries", 
@@ -3117,16 +3073,8 @@
             "value": "Computer and Information Systems Managers"
         }, 
         {
-            "label": "Construction Laborers", 
-            "value": "Construction Laborers"
-        }, 
-        {
             "label": "Construction Managers", 
             "value": "Construction Managers"
-        }, 
-        {
-            "label": "Construction and Building Inspectors", 
-            "value": "Construction and Building Inspectors"
         }, 
         {
             "label": "Cooks, Fast Food", 
@@ -3437,10 +3385,6 @@
             "value": "Lifeguards, Ski Patrol, and Other Recreational Protective Service Workers"
         }, 
         {
-            "label": "Light Truck or Delivery Services Drivers", 
-            "value": "Light Truck or Delivery Services Drivers"
-        }, 
-        {
             "label": "Loan Interviewers and Clerks", 
             "value": "Loan Interviewers and Clerks"
         }, 
@@ -3733,10 +3677,6 @@
             "value": "Telecommunications Equipment Installers and Repairers, Except Line Installers"
         }, 
         {
-            "label": "Telecommunications Line Installers and Repairers", 
-            "value": "Telecommunications Line Installers and Repairers"
-        }, 
-        {
             "label": "Tellers", 
             "value": "Tellers"
         }, 
@@ -3963,10 +3903,6 @@
             "value": "Computer, Automated Teller, and Office Machine Repairers"
         }, 
         {
-            "label": "Construction Laborers", 
-            "value": "Construction Laborers"
-        }, 
-        {
             "label": "Construction Managers", 
             "value": "Construction Managers"
         }, 
@@ -4029,10 +3965,6 @@
         {
             "label": "Dispatchers, Except Police, Fire, and Ambulance", 
             "value": "Dispatchers, Except Police, Fire, and Ambulance"
-        }, 
-        {
-            "label": "Driver/Sales Workers", 
-            "value": "Driver/Sales Workers"
         }, 
         {
             "label": "Earth Drillers, Except Oil and Gas", 

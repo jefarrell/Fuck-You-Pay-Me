@@ -105,10 +105,6 @@
             "value": "Combined Food Preparation and Serving Workers, Including Fast Food"
         }, 
         {
-            "label": "Community and Social Service Specialists, All Other", 
-            "value": "Community and Social Service Specialists, All Other"
-        }, 
-        {
             "label": "Compliance Officers", 
             "value": "Compliance Officers"
         }, 
@@ -433,10 +429,6 @@
             "value": "Office Clerks, General"
         }, 
         {
-            "label": "Office and Administrative Support Workers, All Other", 
-            "value": "Office and Administrative Support Workers, All Other"
-        }, 
-        {
             "label": "Operating Engineers and Other Construction Equipment Operators", 
             "value": "Operating Engineers and Other Construction Equipment Operators"
         }, 
@@ -607,10 +599,6 @@
             "value": "Accountants and Auditors"
         }, 
         {
-            "label": "Actors", 
-            "value": "Actors"
-        }, 
-        {
             "label": "Administrative Law Judges, Adjudicators, and Hearing Officers", 
             "value": "Administrative Law Judges, Adjudicators, and Hearing Officers"
         }, 
@@ -735,10 +723,6 @@
             "value": "Billing and Posting Clerks"
         }, 
         {
-            "label": "Biological Science Teachers, Postsecondary", 
-            "value": "Biological Science Teachers, Postsecondary"
-        }, 
-        {
             "label": "Biological Scientists, All Other", 
             "value": "Biological Scientists, All Other"
         }, 
@@ -797,10 +781,6 @@
         {
             "label": "Cabinetmakers and Bench Carpenters", 
             "value": "Cabinetmakers and Bench Carpenters"
-        }, 
-        {
-            "label": "Camera Operators, Television, Video, and Motion Picture", 
-            "value": "Camera Operators, Television, Video, and Motion Picture"
         }, 
         {
             "label": "Cardiovascular Technologists and Technicians", 
@@ -1103,10 +1083,6 @@
             "value": "Cutting, Punching, and Press Machine Setters, Operators, and Tenders, Metal and Plastic"
         }, 
         {
-            "label": "Dancers", 
-            "value": "Dancers"
-        }, 
-        {
             "label": "Data Entry Keyers", 
             "value": "Data Entry Keyers"
         }, 
@@ -1281,10 +1257,6 @@
         {
             "label": "Engineers, All Other", 
             "value": "Engineers, All Other"
-        }, 
-        {
-            "label": "Entertainers and Performers, Sports and Related Workers, All Other", 
-            "value": "Entertainers and Performers, Sports and Related Workers, All Other"
         }, 
         {
             "label": "Entertainment Attendants and Related Workers, All Other", 
@@ -1975,10 +1947,6 @@
             "value": "Medical Records and Health Information Technicians"
         }, 
         {
-            "label": "Medical Scientists, Except Epidemiologists", 
-            "value": "Medical Scientists, Except Epidemiologists"
-        }, 
-        {
             "label": "Medical Secretaries", 
             "value": "Medical Secretaries"
         }, 
@@ -2013,10 +1981,6 @@
         {
             "label": "Merchandise Displayers and Window Trimmers", 
             "value": "Merchandise Displayers and Window Trimmers"
-        }, 
-        {
-            "label": "Metal Workers and Plastic Workers, All Other", 
-            "value": "Metal Workers and Plastic Workers, All Other"
         }, 
         {
             "label": "Meter Readers, Utilities", 
@@ -2075,10 +2039,6 @@
             "value": "Musical Instrument Repairers and Tuners"
         }, 
         {
-            "label": "Musicians and Singers", 
-            "value": "Musicians and Singers"
-        }, 
-        {
             "label": "Natural Sciences Managers", 
             "value": "Natural Sciences Managers"
         }, 
@@ -2133,10 +2093,6 @@
         {
             "label": "Office Clerks, General", 
             "value": "Office Clerks, General"
-        }, 
-        {
-            "label": "Office Machine Operators, Except Computer", 
-            "value": "Office Machine Operators, Except Computer"
         }, 
         {
             "label": "Office and Administrative Support Workers, All Other", 
@@ -2369,10 +2325,6 @@
         {
             "label": "Producers and Directors", 
             "value": "Producers and Directors"
-        }, 
-        {
-            "label": "Production Workers, All Other", 
-            "value": "Production Workers, All Other"
         }, 
         {
             "label": "Production, Planning, and Expediting Clerks", 
@@ -2993,10 +2945,6 @@
             "value": "Compliance Officers"
         }, 
         {
-            "label": "Computer Occupations, All Other", 
-            "value": "Computer Occupations, All Other"
-        }, 
-        {
             "label": "Computer User Support Specialists", 
             "value": "Computer User Support Specialists"
         }, 
@@ -3087,10 +3035,6 @@
         {
             "label": "Dispatchers, Except Police, Fire, and Ambulance", 
             "value": "Dispatchers, Except Police, Fire, and Ambulance"
-        }, 
-        {
-            "label": "Driver/Sales Workers", 
-            "value": "Driver/Sales Workers"
         }, 
         {
             "label": "Earth Drillers, Except Oil and Gas", 
@@ -4159,10 +4103,6 @@
             "value": "Education Administrators, Postsecondary"
         }, 
         {
-            "label": "Education Administrators, Preschool and Childcare Center/Program", 
-            "value": "Education Administrators, Preschool and Childcare Center/Program"
-        }, 
-        {
             "label": "Education, Training, and Library Workers, All Other", 
             "value": "Education, Training, and Library Workers, All Other"
         }, 
@@ -4737,10 +4677,6 @@
         {
             "label": "Massage Therapists", 
             "value": "Massage Therapists"
-        }, 
-        {
-            "label": "Material Moving Workers, All Other", 
-            "value": "Material Moving Workers, All Other"
         }, 
         {
             "label": "Meat, Poultry, and Fish Cutters and Trimmers", 
@@ -5395,10 +5331,6 @@
             "value": "Transportation Security Screeners"
         }, 
         {
-            "label": "Transportation Workers, All Other", 
-            "value": "Transportation Workers, All Other"
-        }, 
-        {
             "label": "Transportation, Storage, and Distribution Managers", 
             "value": "Transportation, Storage, and Distribution Managers"
         }, 
@@ -5729,14 +5661,6 @@
             "value": "Dishwashers"
         }, 
         {
-            "label": "Dispatchers, Except Police, Fire, and Ambulance", 
-            "value": "Dispatchers, Except Police, Fire, and Ambulance"
-        }, 
-        {
-            "label": "Drilling and Boring Machine Tool Setters, Operators, and Tenders, Metal and Plastic", 
-            "value": "Drilling and Boring Machine Tool Setters, Operators, and Tenders, Metal and Plastic"
-        }, 
-        {
             "label": "Driver/Sales Workers", 
             "value": "Driver/Sales Workers"
         }, 
@@ -6045,16 +5969,8 @@
             "value": "Laundry and Dry-Cleaning Workers"
         }, 
         {
-            "label": "Lawyers", 
-            "value": "Lawyers"
-        }, 
-        {
             "label": "Legal Secretaries", 
             "value": "Legal Secretaries"
-        }, 
-        {
-            "label": "Legislators", 
-            "value": "Legislators"
         }, 
         {
             "label": "Librarians", 
@@ -6201,10 +6117,6 @@
             "value": "Office Clerks, General"
         }, 
         {
-            "label": "Office and Administrative Support Workers, All Other", 
-            "value": "Office and Administrative Support Workers, All Other"
-        }, 
-        {
             "label": "Operating Engineers and Other Construction Equipment Operators", 
             "value": "Operating Engineers and Other Construction Equipment Operators"
         }, 
@@ -6305,20 +6217,12 @@
             "value": "Property, Real Estate, and Community Association Managers"
         }, 
         {
-            "label": "Protective Service Workers, All Other", 
-            "value": "Protective Service Workers, All Other"
-        }, 
-        {
             "label": "Purchasing Agents, Except Wholesale, Retail, and Farm Products", 
             "value": "Purchasing Agents, Except Wholesale, Retail, and Farm Products"
         }, 
         {
             "label": "Radiologic Technologists", 
             "value": "Radiologic Technologists"
-        }, 
-        {
-            "label": "Real Estate Sales Agents", 
-            "value": "Real Estate Sales Agents"
         }, 
         {
             "label": "Receptionists and Information Clerks", 
@@ -6367,10 +6271,6 @@
         {
             "label": "Secretaries and Administrative Assistants, Except Legal, Medical, and Executive", 
             "value": "Secretaries and Administrative Assistants, Except Legal, Medical, and Executive"
-        }, 
-        {
-            "label": "Securities, Commodities, and Financial Services Sales Agents", 
-            "value": "Securities, Commodities, and Financial Services Sales Agents"
         }, 
         {
             "label": "Security Guards", 
@@ -6423,10 +6323,6 @@
         {
             "label": "Tapers", 
             "value": "Tapers"
-        }, 
-        {
-            "label": "Tax Preparers", 
-            "value": "Tax Preparers"
         }, 
         {
             "label": "Taxi Drivers and Chauffeurs", 

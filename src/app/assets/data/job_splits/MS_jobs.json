@@ -125,10 +125,6 @@
             "value": "Butchers and Meat Cutters"
         }, 
         {
-            "label": "Captains, Mates, and Pilots of Water Vessels", 
-            "value": "Captains, Mates, and Pilots of Water Vessels"
-        }, 
-        {
             "label": "Cardiovascular Technologists and Technicians", 
             "value": "Cardiovascular Technologists and Technicians"
         }, 
@@ -437,10 +433,6 @@
             "value": "Electrical Power-Line Installers and Repairers"
         }, 
         {
-            "label": "Electrical and Electronic Equipment Assemblers", 
-            "value": "Electrical and Electronic Equipment Assemblers"
-        }, 
-        {
             "label": "Electrical and Electronics Engineering Technicians", 
             "value": "Electrical and Electronics Engineering Technicians"
         }, 
@@ -597,10 +589,6 @@
             "value": "First-Line Supervisors of Transportation and Material-Moving Machine and Vehicle Operators"
         }, 
         {
-            "label": "Fitness Trainers and Aerobics Instructors", 
-            "value": "Fitness Trainers and Aerobics Instructors"
-        }, 
-        {
             "label": "Floral Designers", 
             "value": "Floral Designers"
         }, 
@@ -667,10 +655,6 @@
         {
             "label": "Graphic Designers", 
             "value": "Graphic Designers"
-        }, 
-        {
-            "label": "Grinding and Polishing Workers, Hand", 
-            "value": "Grinding and Polishing Workers, Hand"
         }, 
         {
             "label": "Hairdressers, Hairstylists, and Cosmetologists", 
@@ -755,10 +739,6 @@
         {
             "label": "Industrial Engineers", 
             "value": "Industrial Engineers"
-        }, 
-        {
-            "label": "Industrial Machinery Mechanics", 
-            "value": "Industrial Machinery Mechanics"
         }, 
         {
             "label": "Industrial Production Managers", 
@@ -1025,10 +1005,6 @@
             "value": "Nurse Practitioners"
         }, 
         {
-            "label": "Nursing Assistants", 
-            "value": "Nursing Assistants"
-        }, 
-        {
             "label": "Occupational Health and Safety Specialists", 
             "value": "Occupational Health and Safety Specialists"
         }, 
@@ -1109,10 +1085,6 @@
             "value": "Personal Care Aides"
         }, 
         {
-            "label": "Personal Financial Advisors", 
-            "value": "Personal Financial Advisors"
-        }, 
-        {
             "label": "Pest Control Workers", 
             "value": "Pest Control Workers"
         }, 
@@ -1143,10 +1115,6 @@
         {
             "label": "Physical Therapists", 
             "value": "Physical Therapists"
-        }, 
-        {
-            "label": "Physician Assistants", 
-            "value": "Physician Assistants"
         }, 
         {
             "label": "Physicians and Surgeons, All Other", 
@@ -1223,10 +1191,6 @@
         {
             "label": "Psychiatric Aides", 
             "value": "Psychiatric Aides"
-        }, 
-        {
-            "label": "Psychiatric Technicians", 
-            "value": "Psychiatric Technicians"
         }, 
         {
             "label": "Psychologists, All Other", 
@@ -1315,10 +1279,6 @@
         {
             "label": "Sales Representatives, Wholesale and Manufacturing, Technical and Scientific Products", 
             "value": "Sales Representatives, Wholesale and Manufacturing, Technical and Scientific Products"
-        }, 
-        {
-            "label": "Sales and Related Workers, All Other", 
-            "value": "Sales and Related Workers, All Other"
         }, 
         {
             "label": "Secondary School Teachers, Except Special and Career/Technical Education", 
@@ -1575,10 +1535,6 @@
             "value": "Automotive Service Technicians and Mechanics"
         }, 
         {
-            "label": "Automotive and Watercraft Service Attendants", 
-            "value": "Automotive and Watercraft Service Attendants"
-        }, 
-        {
             "label": "Bakers", 
             "value": "Bakers"
         }, 
@@ -1659,10 +1615,6 @@
             "value": "Claims Adjusters, Examiners, and Investigators"
         }, 
         {
-            "label": "Cleaners of Vehicles and Equipment", 
-            "value": "Cleaners of Vehicles and Equipment"
-        }, 
-        {
             "label": "Coaches and Scouts", 
             "value": "Coaches and Scouts"
         }, 
@@ -1689,10 +1641,6 @@
         {
             "label": "Computer User Support Specialists", 
             "value": "Computer User Support Specialists"
-        }, 
-        {
-            "label": "Computer and Information Systems Managers", 
-            "value": "Computer and Information Systems Managers"
         }, 
         {
             "label": "Computer, Automated Teller, and Office Machine Repairers", 
@@ -1797,10 +1745,6 @@
         {
             "label": "Education Administrators, Postsecondary", 
             "value": "Education Administrators, Postsecondary"
-        }, 
-        {
-            "label": "Education Administrators, Preschool and Childcare Center/Program", 
-            "value": "Education Administrators, Preschool and Childcare Center/Program"
         }, 
         {
             "label": "Educational, Guidance, School, and Vocational Counselors", 
@@ -2003,10 +1947,6 @@
             "value": "Industrial Machinery Mechanics"
         }, 
         {
-            "label": "Industrial Production Managers", 
-            "value": "Industrial Production Managers"
-        }, 
-        {
             "label": "Industrial Truck and Tractor Operators", 
             "value": "Industrial Truck and Tractor Operators"
         }, 
@@ -2017,10 +1957,6 @@
         {
             "label": "Inspectors, Testers, Sorters, Samplers, and Weighers", 
             "value": "Inspectors, Testers, Sorters, Samplers, and Weighers"
-        }, 
-        {
-            "label": "Installation, Maintenance, and Repair Workers, All Other", 
-            "value": "Installation, Maintenance, and Repair Workers, All Other"
         }, 
         {
             "label": "Insurance Sales Agents", 
@@ -2045,10 +1981,6 @@
         {
             "label": "Landscaping and Groundskeeping Workers", 
             "value": "Landscaping and Groundskeeping Workers"
-        }, 
-        {
-            "label": "Laundry and Dry-Cleaning Workers", 
-            "value": "Laundry and Dry-Cleaning Workers"
         }, 
         {
             "label": "Lawyers", 
@@ -2097,10 +2029,6 @@
         {
             "label": "Management Analysts", 
             "value": "Management Analysts"
-        }, 
-        {
-            "label": "Market Research Analysts and Marketing Specialists", 
-            "value": "Market Research Analysts and Marketing Specialists"
         }, 
         {
             "label": "Medical Assistants", 
@@ -2403,10 +2331,6 @@
             "value": "Substance Abuse and Behavioral Disorder Counselors"
         }, 
         {
-            "label": "Substitute Teachers", 
-            "value": "Substitute Teachers"
-        }, 
-        {
             "label": "Surgeons", 
             "value": "Surgeons"
         }, 
@@ -2525,10 +2449,6 @@
             "value": "Aircraft Mechanics and Service Technicians"
         }, 
         {
-            "label": "Airline Pilots, Copilots, and Flight Engineers", 
-            "value": "Airline Pilots, Copilots, and Flight Engineers"
-        }, 
-        {
             "label": "Amusement and Recreation Attendants", 
             "value": "Amusement and Recreation Attendants"
         }, 
@@ -2549,10 +2469,6 @@
             "value": "Architectural and Engineering Managers"
         }, 
         {
-            "label": "Art Directors", 
-            "value": "Art Directors"
-        }, 
-        {
             "label": "Art, Drama, and Music Teachers, Postsecondary", 
             "value": "Art, Drama, and Music Teachers, Postsecondary"
         }, 
@@ -2567,10 +2483,6 @@
         {
             "label": "Athletic Trainers", 
             "value": "Athletic Trainers"
-        }, 
-        {
-            "label": "Audio and Video Equipment Technicians", 
-            "value": "Audio and Video Equipment Technicians"
         }, 
         {
             "label": "Automotive Body and Related Repairers", 
@@ -2731,10 +2643,6 @@
         {
             "label": "Clergy", 
             "value": "Clergy"
-        }, 
-        {
-            "label": "Clinical, Counseling, and School Psychologists", 
-            "value": "Clinical, Counseling, and School Psychologists"
         }, 
         {
             "label": "Coaches and Scouts", 
@@ -3059,10 +2967,6 @@
         {
             "label": "Eligibility Interviewers, Government Programs", 
             "value": "Eligibility Interviewers, Government Programs"
-        }, 
-        {
-            "label": "Emergency Management Directors", 
-            "value": "Emergency Management Directors"
         }, 
         {
             "label": "Emergency Medical Technicians and Paramedics", 
@@ -3425,10 +3329,6 @@
             "value": "Internists, General"
         }, 
         {
-            "label": "Interpreters and Translators", 
-            "value": "Interpreters and Translators"
-        }, 
-        {
             "label": "Interviewers, Except Eligibility and Loan", 
             "value": "Interviewers, Except Eligibility and Loan"
         }, 
@@ -3697,10 +3597,6 @@
             "value": "Music Directors and Composers"
         }, 
         {
-            "label": "Musicians and Singers", 
-            "value": "Musicians and Singers"
-        }, 
-        {
             "label": "Natural Sciences Managers", 
             "value": "Natural Sciences Managers"
         }, 
@@ -3865,10 +3761,6 @@
             "value": "Photographers"
         }, 
         {
-            "label": "Physical Therapist Aides", 
-            "value": "Physical Therapist Aides"
-        }, 
-        {
             "label": "Physical Therapist Assistants", 
             "value": "Physical Therapist Assistants"
         }, 
@@ -3879,10 +3771,6 @@
         {
             "label": "Physician Assistants", 
             "value": "Physician Assistants"
-        }, 
-        {
-            "label": "Physicians and Surgeons, All Other", 
-            "value": "Physicians and Surgeons, All Other"
         }, 
         {
             "label": "Pipelayers", 
@@ -4081,10 +3969,6 @@
             "value": "Sales Representatives, Wholesale and Manufacturing, Technical and Scientific Products"
         }, 
         {
-            "label": "Sales and Related Workers, All Other", 
-            "value": "Sales and Related Workers, All Other"
-        }, 
-        {
             "label": "Sawing Machine Setters, Operators, and Tenders, Wood", 
             "value": "Sawing Machine Setters, Operators, and Tenders, Wood"
         }, 
@@ -4113,10 +3997,6 @@
             "value": "Self-Enrichment Education Teachers"
         }, 
         {
-            "label": "Sewing Machine Operators", 
-            "value": "Sewing Machine Operators"
-        }, 
-        {
             "label": "Sheet Metal Workers", 
             "value": "Sheet Metal Workers"
         }, 
@@ -4127,10 +4007,6 @@
         {
             "label": "Skincare Specialists", 
             "value": "Skincare Specialists"
-        }, 
-        {
-            "label": "Slaughterers and Meat Packers", 
-            "value": "Slaughterers and Meat Packers"
         }, 
         {
             "label": "Social Scientists and Related Workers, All Other", 
@@ -4635,10 +4511,6 @@
             "value": "Computer Network Architects"
         }, 
         {
-            "label": "Computer Network Support Specialists", 
-            "value": "Computer Network Support Specialists"
-        }, 
-        {
             "label": "Computer Occupations, All Other", 
             "value": "Computer Occupations, All Other"
         }, 
@@ -4871,14 +4743,6 @@
             "value": "Educational, Guidance, School, and Vocational Counselors"
         }, 
         {
-            "label": "Electric Motor, Power Tool, and Related Repairers", 
-            "value": "Electric Motor, Power Tool, and Related Repairers"
-        }, 
-        {
-            "label": "Electrical Engineers", 
-            "value": "Electrical Engineers"
-        }, 
-        {
             "label": "Electrical Power-Line Installers and Repairers", 
             "value": "Electrical Power-Line Installers and Repairers"
         }, 
@@ -4933,10 +4797,6 @@
         {
             "label": "Environmental Engineers", 
             "value": "Environmental Engineers"
-        }, 
-        {
-            "label": "Environmental Scientists and Specialists, Including Health", 
-            "value": "Environmental Scientists and Specialists, Including Health"
         }, 
         {
             "label": "Excavating and Loading Machine and Dragline Operators", 
@@ -6063,10 +5923,6 @@
             "value": "Tailors, Dressmakers, and Custom Sewers"
         }, 
         {
-            "label": "Tank Car, Truck, and Ship Loaders", 
-            "value": "Tank Car, Truck, and Ship Loaders"
-        }, 
-        {
             "label": "Tax Examiners and Collectors, and Revenue Agents", 
             "value": "Tax Examiners and Collectors, and Revenue Agents"
         }, 
@@ -6881,10 +6737,6 @@
             "value": "Laundry and Dry-Cleaning Workers"
         }, 
         {
-            "label": "Lawyers", 
-            "value": "Lawyers"
-        }, 
-        {
             "label": "Legal Secretaries", 
             "value": "Legal Secretaries"
         }, 
@@ -7031,10 +6883,6 @@
         {
             "label": "Mobile Heavy Equipment Mechanics, Except Engines", 
             "value": "Mobile Heavy Equipment Mechanics, Except Engines"
-        }, 
-        {
-            "label": "Molding, Coremaking, and Casting Machine Setters, Operators, and Tenders, Metal and Plastic", 
-            "value": "Molding, Coremaking, and Casting Machine Setters, Operators, and Tenders, Metal and Plastic"
         }, 
         {
             "label": "Multiple Machine Tool Setters, Operators, and Tenders, Metal and Plastic", 
@@ -7639,10 +7487,6 @@
             "value": "Chefs and Head Cooks"
         }, 
         {
-            "label": "Chemical Equipment Operators and Tenders", 
-            "value": "Chemical Equipment Operators and Tenders"
-        }, 
-        {
             "label": "Chemical Technicians", 
             "value": "Chemical Technicians"
         }, 
@@ -7915,10 +7759,6 @@
             "value": "Electrical and Electronic Equipment Assemblers"
         }, 
         {
-            "label": "Electrical and Electronics Drafters", 
-            "value": "Electrical and Electronics Drafters"
-        }, 
-        {
             "label": "Electrical and Electronics Engineering Technicians", 
             "value": "Electrical and Electronics Engineering Technicians"
         }, 
@@ -8113,10 +7953,6 @@
         {
             "label": "Funeral Attendants", 
             "value": "Funeral Attendants"
-        }, 
-        {
-            "label": "Furnace, Kiln, Oven, Drier, and Kettle Operators and Tenders", 
-            "value": "Furnace, Kiln, Oven, Drier, and Kettle Operators and Tenders"
         }, 
         {
             "label": "Gaming Supervisors", 
@@ -8727,10 +8563,6 @@
             "value": "Property, Real Estate, and Community Association Managers"
         }, 
         {
-            "label": "Protective Service Workers, All Other", 
-            "value": "Protective Service Workers, All Other"
-        }, 
-        {
             "label": "Psychiatric Aides", 
             "value": "Psychiatric Aides"
         }, 
@@ -9077,10 +8909,6 @@
             "value": "Adult Basic and Secondary Education and Literacy Teachers and Instructors"
         }, 
         {
-            "label": "Advertising Sales Agents", 
-            "value": "Advertising Sales Agents"
-        }, 
-        {
             "label": "Amusement and Recreation Attendants", 
             "value": "Amusement and Recreation Attendants"
         }, 
@@ -9171,10 +8999,6 @@
         {
             "label": "Chefs and Head Cooks", 
             "value": "Chefs and Head Cooks"
-        }, 
-        {
-            "label": "Chief Executives", 
-            "value": "Chief Executives"
         }, 
         {
             "label": "Child, Family, and School Social Workers", 
@@ -9375,10 +9199,6 @@
         {
             "label": "Educational, Guidance, School, and Vocational Counselors", 
             "value": "Educational, Guidance, School, and Vocational Counselors"
-        }, 
-        {
-            "label": "Electrical Engineers", 
-            "value": "Electrical Engineers"
         }, 
         {
             "label": "Electrical and Electronics Engineering Technicians", 
@@ -10195,10 +10015,6 @@
         {
             "label": "Water and Wastewater Treatment Plant and System Operators", 
             "value": "Water and Wastewater Treatment Plant and System Operators"
-        }, 
-        {
-            "label": "Weighers, Measurers, Checkers, and Samplers, Recordkeeping", 
-            "value": "Weighers, Measurers, Checkers, and Samplers, Recordkeeping"
         }, 
         {
             "label": "Welders, Cutters, Solderers, and Brazers", 

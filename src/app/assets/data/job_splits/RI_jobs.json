@@ -69,10 +69,6 @@
             "value": "Architectural and Engineering Managers"
         }, 
         {
-            "label": "Architecture Teachers, Postsecondary", 
-            "value": "Architecture Teachers, Postsecondary"
-        }, 
-        {
             "label": "Archivists", 
             "value": "Archivists"
         }, 
@@ -167,10 +163,6 @@
         {
             "label": "Brickmasons and Blockmasons", 
             "value": "Brickmasons and Blockmasons"
-        }, 
-        {
-            "label": "Broadcast News Analysts", 
-            "value": "Broadcast News Analysts"
         }, 
         {
             "label": "Broadcast Technicians", 
@@ -531,10 +523,6 @@
         {
             "label": "Cutting, Punching, and Press Machine Setters, Operators, and Tenders, Metal and Plastic", 
             "value": "Cutting, Punching, and Press Machine Setters, Operators, and Tenders, Metal and Plastic"
-        }, 
-        {
-            "label": "Dancers", 
-            "value": "Dancers"
         }, 
         {
             "label": "Data Entry Keyers", 
@@ -1001,10 +989,6 @@
             "value": "Healthcare Practitioners and Technical Workers, All Other"
         }, 
         {
-            "label": "Healthcare Social Workers", 
-            "value": "Healthcare Social Workers"
-        }, 
-        {
             "label": "Healthcare Support Workers, All Other", 
             "value": "Healthcare Support Workers, All Other"
         }, 
@@ -1179,10 +1163,6 @@
         {
             "label": "Laborers and Freight, Stock, and Material Movers, Hand", 
             "value": "Laborers and Freight, Stock, and Material Movers, Hand"
-        }, 
-        {
-            "label": "Landscape Architects", 
-            "value": "Landscape Architects"
         }, 
         {
             "label": "Landscaping and Groundskeeping Workers", 
@@ -1413,10 +1393,6 @@
             "value": "Mental Health Counselors"
         }, 
         {
-            "label": "Mental Health and Substance Abuse Social Workers", 
-            "value": "Mental Health and Substance Abuse Social Workers"
-        }, 
-        {
             "label": "Merchandise Displayers and Window Trimmers", 
             "value": "Merchandise Displayers and Window Trimmers"
         }, 
@@ -1501,10 +1477,6 @@
             "value": "Music Directors and Composers"
         }, 
         {
-            "label": "Musicians and Singers", 
-            "value": "Musicians and Singers"
-        }, 
-        {
             "label": "Natural Sciences Managers", 
             "value": "Natural Sciences Managers"
         }, 
@@ -1537,10 +1509,6 @@
             "value": "Nursing Assistants"
         }, 
         {
-            "label": "Obstetricians and Gynecologists", 
-            "value": "Obstetricians and Gynecologists"
-        }, 
-        {
             "label": "Occupational Health and Safety Specialists", 
             "value": "Occupational Health and Safety Specialists"
         }, 
@@ -1559,10 +1527,6 @@
         {
             "label": "Office Clerks, General", 
             "value": "Office Clerks, General"
-        }, 
-        {
-            "label": "Office Machine Operators, Except Computer", 
-            "value": "Office Machine Operators, Except Computer"
         }, 
         {
             "label": "Office and Administrative Support Workers, All Other", 
@@ -1843,10 +1807,6 @@
         {
             "label": "Protective Service Workers, All Other", 
             "value": "Protective Service Workers, All Other"
-        }, 
-        {
-            "label": "Psychiatric Aides", 
-            "value": "Psychiatric Aides"
         }, 
         {
             "label": "Psychiatric Technicians", 
@@ -2167,10 +2127,6 @@
         {
             "label": "Tax Examiners and Collectors, and Revenue Agents", 
             "value": "Tax Examiners and Collectors, and Revenue Agents"
-        }, 
-        {
-            "label": "Tax Preparers", 
-            "value": "Tax Preparers"
         }, 
         {
             "label": "Taxi Drivers and Chauffeurs", 

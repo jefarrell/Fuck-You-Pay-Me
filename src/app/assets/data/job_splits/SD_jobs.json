@@ -217,10 +217,6 @@
             "value": "Coating, Painting, and Spraying Machine Setters, Operators, and Tenders"
         }, 
         {
-            "label": "Coil Winders, Tapers, and Finishers", 
-            "value": "Coil Winders, Tapers, and Finishers"
-        }, 
-        {
             "label": "Coin, Vending, and Amusement Machine Servicers and Repairers", 
             "value": "Coin, Vending, and Amusement Machine Servicers and Repairers"
         }, 
@@ -523,10 +519,6 @@
         {
             "label": "Extruding and Drawing Machine Setters, Operators, and Tenders, Metal and Plastic", 
             "value": "Extruding and Drawing Machine Setters, Operators, and Tenders, Metal and Plastic"
-        }, 
-        {
-            "label": "Extruding, Forming, Pressing, and Compacting Machine Setters, Operators, and Tenders", 
-            "value": "Extruding, Forming, Pressing, and Compacting Machine Setters, Operators, and Tenders"
         }, 
         {
             "label": "Family and General Practitioners", 
@@ -1703,10 +1695,6 @@
             "value": "Cleaners of Vehicles and Equipment"
         }, 
         {
-            "label": "Clinical, Counseling, and School Psychologists", 
-            "value": "Clinical, Counseling, and School Psychologists"
-        }, 
-        {
             "label": "Coaches and Scouts", 
             "value": "Coaches and Scouts"
         }, 
@@ -2729,10 +2717,6 @@
             "value": "Amusement and Recreation Attendants"
         }, 
         {
-            "label": "Appraisers and Assessors of Real Estate", 
-            "value": "Appraisers and Assessors of Real Estate"
-        }, 
-        {
             "label": "Architects, Except Landscape and Naval", 
             "value": "Architects, Except Landscape and Naval"
         }, 
@@ -2903,10 +2887,6 @@
         {
             "label": "Combined Food Preparation and Serving Workers, Including Fast Food", 
             "value": "Combined Food Preparation and Serving Workers, Including Fast Food"
-        }, 
-        {
-            "label": "Commercial Pilots", 
-            "value": "Commercial Pilots"
         }, 
         {
             "label": "Commercial and Industrial Designers", 
@@ -3193,10 +3173,6 @@
             "value": "Financial Analysts"
         }, 
         {
-            "label": "Financial Examiners", 
-            "value": "Financial Examiners"
-        }, 
-        {
             "label": "Financial Managers", 
             "value": "Financial Managers"
         }, 
@@ -3267,10 +3243,6 @@
         {
             "label": "Food Preparation Workers", 
             "value": "Food Preparation Workers"
-        }, 
-        {
-            "label": "Food Servers, Nonrestaurant", 
-            "value": "Food Servers, Nonrestaurant"
         }, 
         {
             "label": "Food Service Managers", 
@@ -3851,10 +3823,6 @@
         {
             "label": "Residential Advisors", 
             "value": "Residential Advisors"
-        }, 
-        {
-            "label": "Respiratory Therapists", 
-            "value": "Respiratory Therapists"
         }, 
         {
             "label": "Retail Salespersons", 

@@ -1271,10 +1271,6 @@
             "value": "Community Health Workers"
         }, 
         {
-            "label": "Compensation and Benefits Managers", 
-            "value": "Compensation and Benefits Managers"
-        }, 
-        {
             "label": "Compensation, Benefits, and Job Analysis Specialists", 
             "value": "Compensation, Benefits, and Job Analysis Specialists"
         }, 
@@ -1409,10 +1405,6 @@
         {
             "label": "Database Administrators", 
             "value": "Database Administrators"
-        }, 
-        {
-            "label": "Demonstrators and Product Promoters", 
-            "value": "Demonstrators and Product Promoters"
         }, 
         {
             "label": "Dental Assistants", 
@@ -1867,10 +1859,6 @@
             "value": "Janitors and Cleaners, Except Maids and Housekeeping Cleaners"
         }, 
         {
-            "label": "Jewelers and Precious Stone and Metal Workers", 
-            "value": "Jewelers and Precious Stone and Metal Workers"
-        }, 
-        {
             "label": "Kindergarten Teachers, Except Special Education", 
             "value": "Kindergarten Teachers, Except Special Education"
         }, 
@@ -2147,10 +2135,6 @@
             "value": "Office Machine Operators, Except Computer"
         }, 
         {
-            "label": "Office and Administrative Support Workers, All Other", 
-            "value": "Office and Administrative Support Workers, All Other"
-        }, 
-        {
             "label": "Operating Engineers and Other Construction Equipment Operators", 
             "value": "Operating Engineers and Other Construction Equipment Operators"
         }, 
@@ -2361,10 +2345,6 @@
         {
             "label": "Purchasing Agents, Except Wholesale, Retail, and Farm Products", 
             "value": "Purchasing Agents, Except Wholesale, Retail, and Farm Products"
-        }, 
-        {
-            "label": "Purchasing Managers", 
-            "value": "Purchasing Managers"
         }, 
         {
             "label": "Radiologic Technologists", 
@@ -2871,10 +2851,6 @@
         {
             "label": "Combined Food Preparation and Serving Workers, Including Fast Food", 
             "value": "Combined Food Preparation and Serving Workers, Including Fast Food"
-        }, 
-        {
-            "label": "Community Health Workers", 
-            "value": "Community Health Workers"
         }, 
         {
             "label": "Community and Social Service Specialists, All Other", 
@@ -3799,10 +3775,6 @@
         {
             "label": "Purchasing Agents, Except Wholesale, Retail, and Farm Products", 
             "value": "Purchasing Agents, Except Wholesale, Retail, and Farm Products"
-        }, 
-        {
-            "label": "Purchasing Managers", 
-            "value": "Purchasing Managers"
         }, 
         {
             "label": "Radiation Therapists", 
@@ -4771,10 +4743,6 @@
             "value": "Secretaries and Administrative Assistants, Except Legal, Medical, and Executive"
         }, 
         {
-            "label": "Securities, Commodities, and Financial Services Sales Agents", 
-            "value": "Securities, Commodities, and Financial Services Sales Agents"
-        }, 
-        {
             "label": "Security Guards", 
             "value": "Security Guards"
         }, 
@@ -5333,10 +5301,6 @@
             "value": "Laundry and Dry-Cleaning Workers"
         }, 
         {
-            "label": "Lawyers", 
-            "value": "Lawyers"
-        }, 
-        {
             "label": "Legal Secretaries", 
             "value": "Legal Secretaries"
         }, 
@@ -5419,10 +5383,6 @@
         {
             "label": "Medical and Clinical Laboratory Technicians", 
             "value": "Medical and Clinical Laboratory Technicians"
-        }, 
-        {
-            "label": "Medical and Clinical Laboratory Technologists", 
-            "value": "Medical and Clinical Laboratory Technologists"
         }, 
         {
             "label": "Medical and Health Services Managers", 
@@ -5621,10 +5581,6 @@
             "value": "Registered Nurses"
         }, 
         {
-            "label": "Respiratory Therapists", 
-            "value": "Respiratory Therapists"
-        }, 
-        {
             "label": "Retail Salespersons", 
             "value": "Retail Salespersons"
         }, 
@@ -5795,10 +5751,6 @@
             "value": "Accountants and Auditors"
         }, 
         {
-            "label": "Actors", 
-            "value": "Actors"
-        }, 
-        {
             "label": "Administrative Law Judges, Adjudicators, and Hearing Officers", 
             "value": "Administrative Law Judges, Adjudicators, and Hearing Officers"
         }, 
@@ -5813,10 +5765,6 @@
         {
             "label": "Advertising Sales Agents", 
             "value": "Advertising Sales Agents"
-        }, 
-        {
-            "label": "Advertising and Promotions Managers", 
-            "value": "Advertising and Promotions Managers"
         }, 
         {
             "label": "Aircraft Mechanics and Service Technicians", 
@@ -5837,10 +5785,6 @@
         {
             "label": "Animal Control Workers", 
             "value": "Animal Control Workers"
-        }, 
-        {
-            "label": "Anthropology and Archeology Teachers, Postsecondary", 
-            "value": "Anthropology and Archeology Teachers, Postsecondary"
         }, 
         {
             "label": "Appraisers and Assessors of Real Estate", 
@@ -6051,10 +5995,6 @@
             "value": "Childcare Workers"
         }, 
         {
-            "label": "Chiropractors", 
-            "value": "Chiropractors"
-        }, 
-        {
             "label": "Civil Engineering Technicians", 
             "value": "Civil Engineering Technicians"
         }, 
@@ -6097,10 +6037,6 @@
         {
             "label": "Commercial Pilots", 
             "value": "Commercial Pilots"
-        }, 
-        {
-            "label": "Communications Teachers, Postsecondary", 
-            "value": "Communications Teachers, Postsecondary"
         }, 
         {
             "label": "Community Health Workers", 
@@ -6429,10 +6365,6 @@
         {
             "label": "Eligibility Interviewers, Government Programs", 
             "value": "Eligibility Interviewers, Government Programs"
-        }, 
-        {
-            "label": "Emergency Management Directors", 
-            "value": "Emergency Management Directors"
         }, 
         {
             "label": "Emergency Medical Technicians and Paramedics", 
@@ -7807,20 +7739,12 @@
             "value": "Training and Development Specialists"
         }, 
         {
-            "label": "Transportation Attendants, Except Flight Attendants", 
-            "value": "Transportation Attendants, Except Flight Attendants"
-        }, 
-        {
             "label": "Transportation Inspectors", 
             "value": "Transportation Inspectors"
         }, 
         {
             "label": "Transportation Security Screeners", 
             "value": "Transportation Security Screeners"
-        }, 
-        {
-            "label": "Transportation Workers, All Other", 
-            "value": "Transportation Workers, All Other"
         }, 
         {
             "label": "Transportation, Storage, and Distribution Managers", 
@@ -8343,10 +8267,6 @@
         {
             "label": "First-Line Supervisors of Construction Trades and Extraction Workers", 
             "value": "First-Line Supervisors of Construction Trades and Extraction Workers"
-        }, 
-        {
-            "label": "First-Line Supervisors of Fire Fighting and Prevention Workers", 
-            "value": "First-Line Supervisors of Fire Fighting and Prevention Workers"
         }, 
         {
             "label": "First-Line Supervisors of Food Preparation and Serving Workers", 
@@ -9679,10 +9599,6 @@
             "value": "Middle School Teachers, Except Special and Career/Technical Education"
         }, 
         {
-            "label": "Network and Computer Systems Administrators", 
-            "value": "Network and Computer Systems Administrators"
-        }, 
-        {
             "label": "Nurse Practitioners", 
             "value": "Nurse Practitioners"
         }, 
@@ -9877,10 +9793,6 @@
             "value": "Adhesive Bonding Machine Operators and Tenders"
         }, 
         {
-            "label": "Administrative Law Judges, Adjudicators, and Hearing Officers", 
-            "value": "Administrative Law Judges, Adjudicators, and Hearing Officers"
-        }, 
-        {
             "label": "Administrative Services Managers", 
             "value": "Administrative Services Managers"
         }, 
@@ -9971,10 +9883,6 @@
         {
             "label": "Business Operations Specialists, All Other", 
             "value": "Business Operations Specialists, All Other"
-        }, 
-        {
-            "label": "Business Teachers, Postsecondary", 
-            "value": "Business Teachers, Postsecondary"
         }, 
         {
             "label": "Butchers and Meat Cutters", 
@@ -10829,10 +10737,6 @@
             "value": "Personal Care Aides"
         }, 
         {
-            "label": "Personal Financial Advisors", 
-            "value": "Personal Financial Advisors"
-        }, 
-        {
             "label": "Pest Control Workers", 
             "value": "Pest Control Workers"
         }, 
@@ -11235,10 +11139,6 @@
             "value": "Accountants and Auditors"
         }, 
         {
-            "label": "Administrative Law Judges, Adjudicators, and Hearing Officers", 
-            "value": "Administrative Law Judges, Adjudicators, and Hearing Officers"
-        }, 
-        {
             "label": "Administrative Services Managers", 
             "value": "Administrative Services Managers"
         }, 
@@ -11547,10 +11447,6 @@
             "value": "Educational, Guidance, School, and Vocational Counselors"
         }, 
         {
-            "label": "Electrical Engineers", 
-            "value": "Electrical Engineers"
-        }, 
-        {
             "label": "Electrical Power-Line Installers and Repairers", 
             "value": "Electrical Power-Line Installers and Repairers"
         }, 
@@ -11683,10 +11579,6 @@
             "value": "First-Line Supervisors of Production and Operating Workers"
         }, 
         {
-            "label": "First-Line Supervisors of Protective Service Workers, All Other", 
-            "value": "First-Line Supervisors of Protective Service Workers, All Other"
-        }, 
-        {
             "label": "First-Line Supervisors of Retail Sales Workers", 
             "value": "First-Line Supervisors of Retail Sales Workers"
         }, 
@@ -11697,10 +11589,6 @@
         {
             "label": "Fitness Trainers and Aerobics Instructors", 
             "value": "Fitness Trainers and Aerobics Instructors"
-        }, 
-        {
-            "label": "Food Batchmakers", 
-            "value": "Food Batchmakers"
         }, 
         {
             "label": "Food Cooking Machine Operators and Tenders", 
@@ -11945,10 +11833,6 @@
         {
             "label": "Meat, Poultry, and Fish Cutters and Trimmers", 
             "value": "Meat, Poultry, and Fish Cutters and Trimmers"
-        }, 
-        {
-            "label": "Mechanical Engineers", 
-            "value": "Mechanical Engineers"
         }, 
         {
             "label": "Medical Assistants", 
