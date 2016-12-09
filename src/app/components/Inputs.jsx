@@ -78,6 +78,18 @@ class Inputs extends React.Component {
 
 		return (
 			<div className="container-fluid">
+				<Col xs={12} id="textContainer">
+					<div id="textMid">
+						<div id="textInside">
+							<h1> PAY ME </h1>
+							<p>
+								This is where Matt's text will go.  In the waning days of the Obama administration,
+								there are finally indications that some long-elusive tangible effects of 
+								the economic recovery are starting to be felt by workers.
+							</p>
+						</div>
+					</div>
+				</Col>
 				<Col xs={12} md={5}>
 					<div className="inputBlock">
 
