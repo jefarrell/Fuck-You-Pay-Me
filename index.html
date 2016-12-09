@@ -13,6 +13,11 @@
   </head>
 
   <body>
+    <script>
+      (function () {function vndims() {window.parent.postMessage({
+        vndims: [document.body.offsetWidth, document.body.offsetHeight]
+      }, '*');window.setTimeout(vndims, 100)};vndims();})();
+    </script>
     <div id="root"></div>
 
     <!-- Custom JS & Styles -->
