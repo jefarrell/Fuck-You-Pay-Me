@@ -1,4 +1,13 @@
+@media only screen and (min-width: 1200px) {
+	// .paidContent {
+	// 	margin: 200px 150px 150px 40px;
+	// }
 
+	.paidContent, .underContent {
+		font-size: 20px;
+		width: 600px;
+	}
+}
 
 /* iPad portrait ----------- */
 @media only screen 
