@@ -176,6 +176,8 @@ and (max-width : 480px) {
 
 	.form-control {
 		line-height: 1.75em;
+		padding-top: 1px !important;
+		padding: 0 !important;
 	}
 
 	.certificateBlock {
@@ -238,4 +240,5 @@ and (max-width : 480px) {
 	.Select-option {
 		font-size: 1.5em !important;
 	}
+
 }
