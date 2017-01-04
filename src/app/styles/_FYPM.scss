@@ -84,14 +84,11 @@ i:visited {
 }
 
 #geico {
-	width: 12em;
+	width: 11em;
 	height: auto;
 	float: right;
 }
 
-.fa-3x {
-	font-size: 4em !important;
-}
 
 
 @mixin backgroundConfigs($bg_url) {
