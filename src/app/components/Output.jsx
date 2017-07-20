@@ -134,11 +134,6 @@ class Output extends React.Component {
 	                    title="Send email">
 	                    <i className={"fa fa-envelope fa-3x"} aria-hidden="true"></i>
                     </a>
-                    <a
-                    	href="http://www.geico.com/"
-                    	target="blank" title="Geico" >
-                    	<img id="geico" src={img} alt="Geico Logo"/>
-                    </a>
 				</Col>
 			</div>
 			)

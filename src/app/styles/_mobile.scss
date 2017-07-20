@@ -1,244 +1,244 @@
-@media only screen 
-and (min-width: 1200px) 
-and (max-width: 1400px) {
+// @media only screen 
+// and (min-width: 1200px) 
+// and (max-width: 1400px) {
 
-	.paidContent {
-		margin: 10.4em 1em 0 3em;
-		font-size: 1.30vw;
-	}
+// 	.paidContent {
+// 		margin: 10.4em 1em 0 3em;
+// 		font-size: 1.30vw;
+// 	}
 
-	.underContent {
-		font-size: 1.30vw;
-		margin: 11.5em 1em 0 3em;
-	}
-	.paidContent, .underContent {
-		width: 30em;
-	}
+// 	.underContent {
+// 		font-size: 1.30vw;
+// 		margin: 11.5em 1em 0 3em;
+// 	}
+// 	.paidContent, .underContent {
+// 		width: 30em;
+// 	}
 
-}
+// }
 
-@media only screen 
-and (min-width: 1400px)
-and (max-width: 20000px) {
-	 .underContent {
-	 	margin: 220px 150px 150px 60px;
-	 }
+// @media only screen 
+// and (min-width: 1400px)
+// and (max-width: 20000px) {
+// 	 .underContent {
+// 	 	margin: 220px 150px 150px 60px;
+// 	 }
 
-	 .paidContent {
-	 	margin: 200px 150px 150px 60px;
-	 }
+// 	 .paidContent {
+// 	 	margin: 200px 150px 150px 60px;
+// 	 }
 
-	.paidContent, .underContent {
-		font-size: 19px;
-		width: 550px;
-	}
-}
+// 	.paidContent, .underContent {
+// 		font-size: 19px;
+// 		width: 550px;
+// 	}
+// }
 
-/* iPad portrait ----------- */
-@media only screen 
-and (min-width : 768px) 
-and (max-width : 1024px)  { 
+// /* iPad portrait ----------- */
+// @media only screen 
+// and (min-width : 768px) 
+// and (max-width : 1024px)  { 
 
-	.initialBlock {
-		margin: 2em;
-		height: 20em;
-	}
-}
+// 	.initialBlock {
+// 		margin: 2em;
+// 		height: 20em;
+// 	}
+// }
 
-/* Little desktop certificate fix ----------- */
-@media screen 
-and (min-width : 500px) 
-and (max-width : 990px) {
-	.initialBlock, .underBlock, .paidBlock {
-		height: 20em;
-		margin: 2em;
-	}
+// /* Little desktop certificate fix ----------- */
+// @media screen 
+// and (min-width : 500px) 
+// and (max-width : 990px) {
+// 	.initialBlock, .underBlock, .paidBlock {
+// 		height: 20em;
+// 		margin: 2em;
+// 	}
 
-	.underContent {
-		margin: 13.5em 1em 0 3.5em;
-    	width: 65vw;
-    	font-size: 2vw;
-	}
+// 	.underContent {
+// 		margin: 13.5em 1em 0 3.5em;
+//     	width: 65vw;
+//     	font-size: 2vw;
+// 	}
 
-	.paidContent {
-		margin: 12em 1em 0 3.5em;
-		width: 65vw;
-		font-size: 2vw;
-	}
-}
-
-
-/****** iPhone 5 ********/
-@media only screen 
-and (min-width : 320px) 
-and (max-width : 480px) {
-	h3.sectionHead {
-		font-size: 1.4em;
-		margin-left: -10px;
-	}
-
-	.selector .Select-placeholder {
-		margin-left: -0.5em;
-		font-size: 1.3em;
-	}
-
-	.Select-value-label {
-		font-size: 1.5em !important;
-		margin-left: -0.5em;
-	}
-
-	.Select-option {
-		font-size: 1.2em !important;
-	}
-
-	.form-control {
-		font-size: 1.75em;
-	}
-
-	.initialBlock, .underBlock, .paidBlock {
-		height: 22em;
-	}
-
-	.underContent {
-		margin: 12.5em 1em 0 1em;
-		width: 75vw;
-		font-size: 2.25vw;
-	}
-
-	.paidContent {
-		margin: 12em 1em 0 1em;
-		width: 75vw;
-		font-size: 2.25vw;
-	}
-
-	.fa-3x {
-		font-size: 2em;
-	}
-
-	a {
-		margin: 0.5em;
-	}
-
-	#geico {
-		width: 9em;
-		margin-top: -0.8em;
-	}
-
-	.Select-input > input {
-			font-size: 1.5em !important;
-			margin-top: -0.5em !important;
-	}
-
-	.form-control {
-		padding-top: 1px !important;
-		padding: 0 !important;
-	}
-
-}
+// 	.paidContent {
+// 		margin: 12em 1em 0 3.5em;
+// 		width: 65vw;
+// 		font-size: 2vw;
+// 	}
+// }
 
 
+// /****** iPhone 5 ********/
+// @media only screen 
+// and (min-width : 320px) 
+// and (max-width : 480px) {
+// 	h3.sectionHead {
+// 		font-size: 1.4em;
+// 		margin-left: -10px;
+// 	}
+
+// 	.selector .Select-placeholder {
+// 		margin-left: -0.5em;
+// 		font-size: 1.3em;
+// 	}
+
+// 	.Select-value-label {
+// 		font-size: 1.5em !important;
+// 		margin-left: -0.5em;
+// 	}
+
+// 	.Select-option {
+// 		font-size: 1.2em !important;
+// 	}
+
+// 	.form-control {
+// 		font-size: 1.75em;
+// 	}
+
+// 	.initialBlock, .underBlock, .paidBlock {
+// 		height: 22em;
+// 	}
+
+// 	.underContent {
+// 		margin: 12.5em 1em 0 1em;
+// 		width: 75vw;
+// 		font-size: 2.25vw;
+// 	}
+
+// 	.paidContent {
+// 		margin: 12em 1em 0 1em;
+// 		width: 75vw;
+// 		font-size: 2.25vw;
+// 	}
+
+// 	.fa-3x {
+// 		font-size: 2em;
+// 	}
+
+// 	a {
+// 		margin: 0.5em;
+// 	}
+
+// 	#geico {
+// 		width: 9em;
+// 		margin-top: -0.8em;
+// 	}
+
+// 	.Select-input > input {
+// 			font-size: 1.5em !important;
+// 			margin-top: -0.5em !important;
+// 	}
+
+// 	.form-control {
+// 		padding-top: 1px !important;
+// 		padding: 0 !important;
+// 	}
+
+// }
 
 
-/****** iPhone 6 ********/
-@media only screen 
-and (min-width : 375px) 
-and (max-width : 480px) {
-
-	h3.sectionHead {
-		font-size: 1.5em;
-	}
-
-	.selector {
-		.Select {
-			line-height: 3em;
-		}
-
-		.Select-placeholder {
-			font-size: 1.5em;
-			margin-top: 0.2em;
-			margin-left: -0.2em;
-		}
-	}
 
 
-	.Select-input > input {
-			font-size: 1.5em !important;
-			margin-top: -1.5em !important;
-	}
+// /****** iPhone 6 ********/
+// @media only screen 
+// and (min-width : 375px) 
+// and (max-width : 480px) {
 
-	.Select-noresults {
-		font-size: 1.5em;
-	}
+// 	h3.sectionHead {
+// 		font-size: 1.5em;
+// 	}
 
-	.input-group {
-		font-size: 0.9em;
-	}
+// 	.selector {
+// 		.Select {
+// 			line-height: 3em;
+// 		}
 
-	.form-control {
-		line-height: 1.75em;
-		padding-top: 1px !important;
-		padding: 0 !important;
-	}
+// 		.Select-placeholder {
+// 			font-size: 1.5em;
+// 			margin-top: 0.2em;
+// 			margin-left: -0.2em;
+// 		}
+// 	}
 
-	.certificateBlock {
-		margin: 0;
-	}
 
-	.Select--single>.Select-control .Select-value, .Select-placeholder {
-		overflow: visible;
-	}
+// 	.Select-input > input {
+// 			font-size: 1.5em !important;
+// 			margin-top: -1.5em !important;
+// 	}
 
-	.initialBlock, .underBlock, .paidBlock {
-		height: 22em;
-	}
+// 	.Select-noresults {
+// 		font-size: 1.5em;
+// 	}
 
-	.underContent {
-		margin: 11.5em 1em 0 0;
-		width: 75vw;
-		font-size: 2.25vw;
-	}
+// 	.input-group {
+// 		font-size: 0.9em;
+// 	}
 
-	.paidContent {
-		margin: 11em 1em 0 0;
-		width: 75vw;
-		font-size: 2.25vw;
-	}
+// 	.form-control {
+// 		line-height: 1.75em;
+// 		padding-top: 1px !important;
+// 		padding: 0 !important;
+// 	}
 
-	.fa-3x {
-		font-size: 2em;
-	}
+// 	.certificateBlock {
+// 		margin: 0;
+// 	}
 
-	a {
-		margin: 0.5em;
-	}
+// 	.Select--single>.Select-control .Select-value, .Select-placeholder {
+// 		overflow: visible;
+// 	}
 
-	#geico {
-		margin-top: -0.8em;
-	}
+// 	.initialBlock, .underBlock, .paidBlock {
+// 		height: 22em;
+// 	}
 
-	.Select-value-label {
-		font-size: 1.5em;
-	}
+// 	.underContent {
+// 		margin: 11.5em 1em 0 0;
+// 		width: 75vw;
+// 		font-size: 2.25vw;
+// 	}
 
-	.form-control, .input-group-addon {
-		font-size: 1.75em;
-	}
+// 	.paidContent {
+// 		margin: 11em 1em 0 0;
+// 		width: 75vw;
+// 		font-size: 2.25vw;
+// 	}
 
-	.Select-placeholder, .Select-value {
-		padding-left: 0;
-	}
+// 	.fa-3x {
+// 		font-size: 2em;
+// 	}
 
-	.input-group-addon {
-		padding-left: 0.4em;
-		padding-right: 0.4em;
-	}
+// 	a {
+// 		margin: 0.5em;
+// 	}
 
-	.Select-arrow-zone {
-		background-color: #FFF;
-	}
+// 	#geico {
+// 		margin-top: -0.8em;
+// 	}
 
-	.Select-option {
-		font-size: 1.5em !important;
-	}
+// 	.Select-value-label {
+// 		font-size: 1.5em;
+// 	}
 
-}
+// 	.form-control, .input-group-addon {
+// 		font-size: 1.75em;
+// 	}
+
+// 	.Select-placeholder, .Select-value {
+// 		padding-left: 0;
+// 	}
+
+// 	.input-group-addon {
+// 		padding-left: 0.4em;
+// 		padding-right: 0.4em;
+// 	}
+
+// 	.Select-arrow-zone {
+// 		background-color: #FFF;
+// 	}
+
+// 	.Select-option {
+// 		font-size: 1.5em !important;
+// 	}
+
+// }
